@@ -1,3 +1,5 @@
+<!-- -*- coding: utf-8 -*- -->
+
 OmniCentraj Specifoj  
 OmniCentro Specifications
 ===============================================================================
@@ -22,6 +24,58 @@ Any resemblance to actual persons, living or dead, or actual events
 is purely coincidental.
 
 -------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+Detalaj Informoj  
+Detailed Information
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+
+
+
+### Bulletin
+
+-------------------------------------------------------------------------------
+
+
+
+#### Summary
+
+|                 |  Acronym | Name |
+| --------------- | :------: | ---- |
+| Background      |      | (fictional) Planned New Capital |
+| City Name       | OC   | OmniCentro |
+| Country Name    | RdO  | Regno de Omnijo |
+| Government Name | OCR  | Omnija Centra Registaro |
+| Local Authority | OCG  | OmniCentra    Gvidado   |
+| Country Leader  |      | Reĝino Serena de Omnijo |
+| City Designers  |      | Ĉuĉjo  kaj  Ĝejnjo |
+
+#### Government Structure (Part)
+
+| Departments                  |  Acronym | Name |
+| ---------------------------- | :------: | ---- |
+| Department of Defence        | OCFD | OmniCentra Fako de Defendo |
+| Department of Education      | OCFE | OmniCentra Fako de Edukado kaj Inteligenteco |
+| Department of Fire and Rescue| OCFF | OmniCentra Fako de Fajro kaj Savo |
+| Department of Infrastructure | OCFI | OmniCentra Fako de Infrastrukturo kaj Evoluo |
+| Department of Police         | OCFP | OmniCentra Fako de Polico |
+| Department of Health         | OCFS | OmniCentra Fako de Sano |
+
+| Offices                      |  Acronym | Name |
+| ---------------------------- | :------: | ---- |
+| Office of Finance            | OCOF | OmniCentra Oficejo de Fisko |
+| Office of Foreign Affairs    | OCOE | OmniCentra Oficejo de Eksteraj Aferoj |
+| Office of Home    Affairs    | OCOI | OmniCentra Oficejo de Internaj Aferoj |
 
 
 
@@ -60,14 +114,17 @@ Technical Specifications
 
 #### Brushes Configuration
 
-- Brush N/A: Altitude  600m to 1100m
+- Brush W-D: Altitude  100m to  600m
   - Briches
-- Brush   1: Altitude 1100m to 1400m
+  - etc.
+- Brush   2: Altitude  600m to 1000m
   - Briches
   - Pines
-- Brush N/A: Altitude 1400m to 2000m
+- Brush   1: Altitude 1000m to 1400m
+  - Briches
   - Pines
-- Brush E-G: Altitude 2000m to 3500m
+  - Spruces
+- Brush E-G: Altitude 1400m to 2500m
   - Pines
   - Spruces
 
