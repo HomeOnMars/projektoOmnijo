@@ -85,20 +85,6 @@ Detailed Information
 
 
 
-
-Fonaj Rakontoj  
-Background Stories
--------------------------------------------------------------------------------
-
--------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
 Teknikaj specifoj  
 Technical Specifications
 -------------------------------------------------------------------------------
@@ -127,6 +113,8 @@ Technical Specifications
 - Brush E-G: Altitude 1400m to 2500m
   - Pines
   - Spruces
+- Brush N/A: Very steep terrain
+  - Spruces
 
 
 #### Species
@@ -148,3 +136,19 @@ Technical Specifications
 #### See Also
 
 - https://en.wikipedia.org/wiki/Tree_line#Tree_species_near_tree_line
+
+
+
+
+
+
+
+
+
+Fonaj Rakontoj  
+Background Stories
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+
+(Coming soon.)
