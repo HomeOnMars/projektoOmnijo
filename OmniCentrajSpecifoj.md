@@ -47,35 +47,39 @@ Detailed Information
 -------------------------------------------------------------------------------
 
 
-
 #### Summary
 
-|                 |  Acronym | Name |
-| --------------- | :------: | ---- |
-| Background      |      | (fictional) Planned New Capital |
-| City Name       | OC   | OmniCentro |
-| Country Name    | RdO  | Regno de Omnijo |
-| Government Name | OCR  | Omnija Centra Registaro |
-| Local Authority | OCG  | OmniCentra    Gvidado   |
-| Country Leader  |      | Reĝino Serena de Omnijo |
-| City Designers  |      | Ĉuĉjo  kaj  Ĝejnjo |
+| Summary           |  Acronym | Name                |
+| :---------------- | :------: | :-----------------: |
+| City Name         | OC   | OmniCentro              |
+| Country Name      | RdO  | Regno de Omnijo         |
+| Government Name   | OCR  | Omnija Centra Registaro |
+| Local Authority   | OCG  | OmniCentra    Gvidado   |
+
+| Background        | Name |
+| :---------------- | ---- |
+| City Background   | [fictional] Planned New Capital |
+| Official Language | Esperanto (transitioning from English in the next 20 years) |
+| Country Leader    | Reĝino Serena de Omnijo |
+| City Designers    | Ĉuĉjo la Arkitekto  kaj  Ĝejnjo la Suvereno |
+
 
 #### Government Structure (Part)
 
 | Departments                  |  Acronym | Name |
 | ---------------------------- | :------: | ---- |
 | Department of Defence        | OCFD | OmniCentra Fako de Defendo |
-| Department of Education      | OCFE | OmniCentra Fako de Edukado kaj Inteligenteco |
+| Department of Education      | OCFE | OmniCentra Fako de Edukado |
 | Department of Fire and Rescue| OCFF | OmniCentra Fako de Fajro kaj Savo |
-| Department of Infrastructure | OCFI | OmniCentra Fako de Infrastrukturo kaj Evoluo |
-| Department of Police         | OCFP | OmniCentra Fako de Polico |
-| Department of Health         | OCFS | OmniCentra Fako de Sano |
+| Department of Infrastructure | OCFI | OmniCentra Fako de Infrastrukturo |
+| Department of Police         | OCFP | OmniCentra Fako de Polico  |
+| Department of Health         | OCFS | OmniCentra Fako de Sano    |
 
 | Offices                      |  Acronym | Name |
 | ---------------------------- | :------: | ---- |
-| Office of Finance            | OCOF | OmniCentra Oficejo de Fisko |
-| Office of Foreign Affairs    | OCOE | OmniCentra Oficejo de Eksteraj Aferoj |
-| Office of Home    Affairs    | OCOI | OmniCentra Oficejo de Internaj Aferoj |
+| Office of Finance            | OCOF | Omnija Centra Oficejo de Fisko |
+| Office of Foreign Affairs    | OCOE | Omnija Centra Oficejo de Eksteraj Aferoj |
+| Office of Home    Affairs    | OCOI | Omnija Centra Oficejo de Internaj Aferoj |
 
 
 
