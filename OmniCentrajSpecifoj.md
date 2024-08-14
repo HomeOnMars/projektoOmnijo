@@ -51,16 +51,18 @@ Detailed Information
 
 #### Summary
 
-| Summary           |  Acronym | Name                |
+(Again, everything here is fictional.)
+
+| Settings          |  Acronym | Name                |
 | :---------------- | :------: | :-----------------: |
 | City Name         | OC   | OmniCentro              |
 | Country Name      | RdO  | Regno de Omnijo         |
 | Government Name   | OCR  | Omnija Centra Registaro |
 | Local Authority   | OCG  | OmniCentra    Gvidado   |
 
-| Background        | Name |
+| [Fictional] Background | Name |
 | :---------------- | ---- |
-| City Background   | [fictional] Planned New Capital |
+| City Background   | Planned New Capital |
 | Official Language | Esperanto (transitioning from English in the next 20 years) |
 | Country Leader    | Reĝino Serena de Omnijo |
 | City Designers    | Ĉuĉjo la Arkitekto  kaj  Ĝejnjo la Suvereno |
