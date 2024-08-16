@@ -149,6 +149,7 @@ TBD.
       - Source: [2024-08-16] https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii
         (Lithgow Zig Zag)
   - Speed limit: [TBD]
+  - Length limit (for track intersections): 500m (25 cars with 20m per car)
 - High Speed Railways
   - Gradient  limit:
     - [Recommended] $ \leq 3.5\% $;
