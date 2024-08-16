@@ -170,11 +170,11 @@ TBD.
   - Gradient  limit:
     - [Recommended] $ \leq 5.5\% $.
     - [Mandatory] $ < 7\% $.
-    - Source: [2024-08-16] https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways
-      (Höllentalbahn (Black Forest), Germany; Bernina Railway, Switzerland.)
   - Curvature limit:
     - TBD.
   - Speed limit: $ 100 \mathrm{km/h} $
+  - Source: [2024-08-16] https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways
+    (Höllentalbahn (Black Forest), Germany; Bernina Railway, Switzerland.)
 - Trams
   - Gradient  limit:
     - [Recommended] $ \leq 10\% $.
