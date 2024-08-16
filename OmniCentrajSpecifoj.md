@@ -86,6 +86,21 @@ Detailed Information
 | Office of Home    Affairs    | OCOI | Omnija Centra Oficejo de Internaj Aferoj |
 
 
+#### Single letter abbreviations
+
+| Acronym | Esperanto     | English  |
+| ------- | ------------- | -------- |
+|    N    | **N**orda     | Northern |
+|    S    | **S**uda      | Southern |
+|    R    | o**R**ienta   | Eastern  |
+|    K    | o**K**cidenta | Western  |
+|    L    | **L**iva      | Left     |
+|    C    | **C**entra    | Center   |
+|    D    | **D**ekstra   | Right    |
+|    P    | **P**lus / Maldekstruma / S->N / K->R | Plus / Counterclockwise / S->N / W->E |
+|    M    | **M**inus / Dekstruma / N->S / R->K   | Minus /       Clockwise / N->S / E->W |
+
+
 
 
 
