@@ -135,18 +135,16 @@ TBD.
     - Source: [2024-08-16] https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#
   - Curvature limit:
     - [Recommended] $ \geq 640 \mathrm{m} $.
-      - This translates to a curve of (512m, 512m, $ \geq 102.7\deg $).
-      - ... or a curve of (256m, 256m, $ \geq 136.4\deg $).
-      - ... or a curve of (128m, 128m, $ \geq 157.4\deg $).
-      - ... or a curve of (640m, 640m, $  =   90.0\deg $).
+      - This translates to a curve of (512m, 512m, $ \geq 103\deg $).
+      - ... or a curve of (256m, 256m, $ \geq 137\deg $).
+      - ... or a curve of (128m, 128m, $ \geq 158\deg $).
+      - ... or a curve of (640m, 640m, $  =    90\deg $).
       - Supporting $ v_\mathrm{max} \simeq 120 \mathrm{km/h} $.
       - Source: [2024-08-16] https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant
     - [Mandatory] $ \geq 160 \mathrm{m} $.
-      - This translates to a curve of (512m, 512m, $ \geq 34.8\deg $).
-      - ... or a curve of (256m, 256m, $ \geq 64.1\deg $).
-      - ... or a curve of (128m, 128m, $ \geq 102.7\deg $).
-      - ... or a curve of ( 64m,  64m, $ \geq 136.4\deg $).
-      - ... or a curve of (160m, 160m, $  =   90.0\deg $).
+      - This translates to a curve of (128m, 128m, $ \geq 103\deg $).
+      - ... or a curve of ( 64m,  64m, $ \geq 137\deg $).
+      - ... or a curve of (160m, 160m, $  =   90\deg $).
       - Supporting $ v_\mathrm{max} \simeq 40 \mathrm{km/h} $.
       - Source: [2024-08-16] https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii
         (Lithgow Zig Zag)
@@ -158,10 +156,10 @@ TBD.
     - Source: [2024-08-16] https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#
   - Curvature limit:
     - [Recommended] $ \geq 4000 \mathrm{m} $.
-      - This translates to a curve of (512m, 512m, $ \geq 165.5\deg $).
+      - This translates to a curve of (512m, 512m, $ \geq 166\deg $).
       - Supporting $ v_\mathrm{max} \simeq 300 \mathrm{km/h} $.
     - [Mandatory] $ \geq 3500 \mathrm{m} $ (Except near stations).
-      - This translates to a curve of (512m, 512m, $ \geq 163.4\deg $).
+      - This translates to a curve of (512m, 512m, $ \geq 164\deg $).
       <!--- Angle equation: 2*np.atan(3500/512)/np.pi*180 --->
       - Supporting $ v_\mathrm{max} \simeq 250 \mathrm{km/h} $.
     - Source: [2024-08-16] https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii
