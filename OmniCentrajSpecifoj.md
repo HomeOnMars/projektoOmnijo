@@ -159,58 +159,49 @@ Technical Specifications
 #### Rails
 
 - Freight and old Passenger Railways
-  - Gradient  limit:
-    - [Recommended] $ \leq 1.5\% $.
-    - [ Mandatory ] $ < 3.5\% $ (liberties have been taken due to steep terrain in the map- also it's more fun).
-    - Source: [2024-08-16] https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#
-  - Curvature limit:
-    - [Recommended] $ \geq 640 \mathrm{m} $.
-      - This translates to a curve of (512m, 512m, $ \geq 103\deg $).
-      - ... or a curve of (256m, 256m, $ \geq 137\deg $).
-      - ... or a curve of (128m, 128m, $ \geq 158\deg $).
-      - ... or a curve of (640m, 640m, $  =    90\deg $).
-      - Supporting $ v_\mathrm{max} \simeq 120 \mathrm{km/h} $.
-      - Source: [2024-08-16] https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant
-    - [ Mandatory ] $ \geq 160 \mathrm{m} $.
-      - This translates to a curve of (128m, 128m, $ \geq 103\deg $).
-      - ... or a curve of ( 64m,  64m, $ \geq 137\deg $).
-      - ... or a curve of (160m, 160m, $  =   90\deg $).
-      - Supporting $ v_\mathrm{max} \simeq 40 \mathrm{km/h} $.
-      - Source: [2024-08-16] https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii
-        (Lithgow Zig Zag)
-  - Speed limit: [TBD]
+  - Gradient $ s $ and Curvature $ R $ limit:
+    
+    |             | Gradient $ s $    | Curvature $ R $            | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Real world examples |
+    | ----------- | :---------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
+    | Recommended |  $ \leq  1.5\% $  |  $ \geq  640 \mathrm{m} $  |  $ \simeq 120 \mathrm{km/h} $  | $ \geq 103\degree $ | $ \geq 137\degree $ | $ \geq 158\degree $ | $ \geq 169\degree $ | |
+    | Mandatory   |  $ \leq  3.5\% $  |  $ \geq  160 \mathrm{m} $  |  $ \simeq  40 \mathrm{km/h} $  | -                   | -                   | $ \geq 103\degree $ | $ \geq 137\degree $ | Lithgow Zig Zag |
+    
+    - $ \theta_{d} $ refers to the angle displayed when building a 2-phases curve of $d$ - $d$ in game.
+      i.e., $ \theta_\mathrm{512m} $ is the angle displayed in game when building a curve with 1 bend and both radius being 512m and 512m.
+      <!--- Angle equation: 2*np.atan(3500/512)/np.pi*180 --->
+    - Source: [2024-08-16] ($ R $) https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant
+    - Source: [2024-08-16] ($ R $) https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii (Lithgow Zig Zag)
+    - Source: [2024-08-16] ($ s $) https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#
+    - Note: Liberties have been taken for the mandatory limit of $s$ due to steep terrain in the map. Also steeper is more fun.
   - Length limit (for track intersections): $ > 500\mathrm{m} $ (25 cars with 20m per car)
 - High Speed Railways
-  - Gradient  limit:
-    - [Recommended] $ \leq 3.5\% $;
-    - [ Mandatory ] $ < 4\% $.
+  - Gradient $ s $ and Curvature $ R $ limit:
+    
+    |             | Gradient $ s $    | Curvature $ R $            | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Real world examples |
+    | ----------- | :---------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
+    | Recommended |  $ \leq  3.5\% $  |  $ \geq 4000 \mathrm{m} $  |  $ \simeq 300 \mathrm{km/h} $  | $ \geq 166\degree $ | $ \geq 173\degree $ | $ \geq 177\degree $ | $ \geq 179\degree $ | |
+    | Mandatory   |  $ \leq  4  \% $  |  $ \geq 3500 \mathrm{m} $  |  $ \simeq 250 \mathrm{km/h} $  | $ \geq 164\degree $ | $ \geq 172\degree $ | $ \geq 176\degree $ | $ \geq 178\degree $ | |
+    
     - Source: [2024-08-16] https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#
-  - Curvature limit:
-    - [Recommended] $ \geq 4000 \mathrm{m} $.
-      - This translates to a curve of (512m, 512m, $ \geq 166\deg $).
-      - Supporting $ v_\mathrm{max} \simeq 300 \mathrm{km/h} $.
-    - [ Mandatory ] $ \geq 3500 \mathrm{m} $ (Except near stations).
-      - This translates to a curve of (512m, 512m, $ \geq 164\deg $).
-      <!--- Angle equation: 2*np.atan(3500/512)/np.pi*180 --->
-      - Supporting $ v_\mathrm{max} \simeq 250 \mathrm{km/h} $.
     - Source: [2024-08-16] https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii
-  - Speed limit: $ 300 \mathrm{km/h} $
 - Metro / Subway / Passenger Railways
-  - Gradient  limit:
-    - [Recommended] $ \leq 5.5\% $.
-    - [ Mandatory ] $ < 7\% $.
-  - Curvature limit:
-    - TBD.
-  - Speed limit: $ 100 \mathrm{km/h} $
+  - Gradient $ s $ limit:
+    
+    |             | Gradient $ s $    | Curvature $ R $            | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Real world examples |
+    | ----------- | :---------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
+    | Recommended |  $ \leq  5.5\% $  |  TBD                       |  $ \simeq 100 \mathrm{km/h} $  | TBD                 | TBD                 | TBD                  | TBD                 | Höllentalbahn (Black Forest), Germany |
+    | Mandatory   |  $ \leq  7  \% $  |  TBD                       |  $ \simeq 100 \mathrm{km/h} $  | TBD                 | TBD                 | TBD                  | TBD                 | Bernina Railway, Switzerland |
+    
   - Source: [2024-08-16] https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways
-    (Höllentalbahn (Black Forest), Germany; Bernina Railway, Switzerland.)
 - Trams
-  - Gradient  limit:
-    - [Recommended] $ \leq 10\% $.
-    - [ Mandatory ] $ < 13.5\% $.
-  - Speed limit: $ 90 \mathrm{km/h} $
+  - Gradient $ s $ limit:
+    
+    |             | Gradient $ s $    | Speed limit $ v_\mathrm{max} $ | Real world examples |
+    | ----------- | :---------------: | :----------------------------: | ------------------- |
+    | Recommended |  $ \leq 10  \% $  |  $ \simeq  90 \mathrm{km/h} $  | Sheffield Supertram, Sheffield |
+    | Mandatory   |  $ \leq 13.5\% $  |  $ \simeq  70?\mathrm{km/h} $  | Lisbon Tramways, Portugal |
+    
   - Source: [2024-08-16] https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#Examples
-    (Sheffield Supertram, Sheffield, England; Lisbon Tramways, Portugal.)
 
 
 
