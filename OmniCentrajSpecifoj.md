@@ -173,7 +173,7 @@ Technical Specifications
       ```
           # python code
           import numpy as np
-          # remember to translate radian to degree
+          # remember to translate radian into degree
           theta_deg = lambda R, d: np.ceil(2*np.atan(R/d)/np.pi*180)
           theta_deg(R=4000, d=512)
       ```
@@ -197,10 +197,11 @@ Technical Specifications
     
     |             | Gradient $ s $    | Curvature $ R $            | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Real world examples |
     | ----------- | :---------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
-    | Recommended |  $ \leq  5.5\% $  |  TBD                       |  $ \simeq 120?\mathrm{km/h} $  | TBD                 | TBD                 | TBD                  | TBD                 | Höllentalbahn (Black Forest), Germany |
-    | Mandatory   |  $ \leq  7  \% $  |  TBD                       |  $ \simeq 100 \mathrm{km/h} $  | TBD                 | TBD                 | TBD                  | TBD                 | Bernina Railway, Switzerland |
+    | Recommended |  $ \leq  5.5\% $  |  $ \geq  128 \mathrm{m} $  |  $ \simeq 120 \mathrm{km/h} $  | -                   | -                   | $ \geq   90\degree $  | $ \geq 127\degree $ | Höllentalbahn (Black Forest), Germany;<br>Bay Area Rapid Transit, United States. |
+    | Mandatory   |  $ \leq  7  \% $  |  $ \geq   64 \mathrm{m} $  |  $ \simeq 100 \mathrm{km/h} $  | -                   | -                   | -                     | $ \geq  90\degree $ | Bernina Railway, Switzerland;<br>Central line, London Underground, United Kingdom. |
     
   - Source: [2024-08-16] https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways
+  - Source: [2024-08-17] https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii
 - Trams
   - Gradient $ s $ limit:
     
