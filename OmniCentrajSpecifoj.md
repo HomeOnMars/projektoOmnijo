@@ -42,6 +42,9 @@ Detailed Information
 
 -------------------------------------------------------------------------------
 
+***Again, everything here is fictional.***
+
+
 
 
 ### Bulletin
@@ -50,8 +53,6 @@ Detailed Information
 
 
 #### Summary
-
-(Again, everything here is fictional.)
 
 | Settings          |  Acronym | Name                |
 | :---------------- | :------: | :-----------------: |
@@ -72,12 +73,12 @@ Detailed Information
 
 | Departments                  |  Acronym | Name |
 | ---------------------------- | :------: | ---- |
-| Department of Defence        | OCFD | OmniCentra Fako de Defendo |
-| Department of Education      | OCFE | OmniCentra Fako de Edukado |
-| Department of Fire and Rescue| OCFF | OmniCentra Fako de Fajro kaj Savo |
-| Department of Infrastructure | OCFI | OmniCentra Fako de Infrastrukturo |
-| Department of Police         | OCFP | OmniCentra Fako de Polico  |
-| Department of Health         | OCFS | OmniCentra Fako de Sano    |
+| Department of Defence        | OCFD | Omnija Centra Fako de Defendo |
+| Department of Education      | OCFE | Omnija Centra Fako de Edukado |
+| Department of Fire and Rescue| OCFF | Omnija Centra Fako de Fajro kaj Savo |
+| Department of Infrastructure | OCFI | Omnija Centra Fako de Infrastrukturo |
+| Department of Police         | OCFP | Omnija Centra Fako de Polico  |
+| Department of Health         | OCFS | Omnija Centra Fako de Sano    |
 
 | Offices                      |  Acronym | Name |
 | ---------------------------- | :------: | ---- |
@@ -114,6 +115,14 @@ Technical Specifications
 
 -------------------------------------------------------------------------------
 
+***Warning:
+Information here is gathered from the internet for gameplay purposes,
+so not much effort has been spent on ensuring its accuracy.
+Some maybe incorrect or outdated.
+Some are just chosen arbitrarily.
+Use at your own risk.***
+
+
 
 
 ### Networks
@@ -128,14 +137,14 @@ Technical Specifications
     
     |             | Gradient $ s $    | Curvature $ R $            | Speed limit $ v_\mathrm{max} $ | Notes |
     | ----------- | :---------------: | :------------------------: | :----------------------------: | ----- |
-    | Recommended |  $ \leq  4  \% $  |  $ \geq  720 \mathrm{m} $  |  $ \simeq 120 \mathrm{km/h} $  | |
-    | Soft Limit  |  $ \leq  6  \% $  |  $ \geq  400 \mathrm{m} $  |  $ \simeq 100 \mathrm{km/h} $  | |
+    | Soft Limit  |  $ \leq  4  \% $  |  $ \geq  720 \mathrm{m} $  |  $ \simeq 120 \mathrm{km/h} $  | |
+    | Recommended |  $ \leq  6  \% $  |  $ \geq  400 \mathrm{m} $  |  $ \simeq 100 \mathrm{km/h} $  | |
     | Soft Limit  |  $ \leq  8  \% $  |  $ \geq  216 \mathrm{m} $  |  $ \simeq  80 \mathrm{km/h} $  | For ramps / In mountains |
     | Mandatory   |  $ \leq 10  \% $  |  $ \geq  120 \mathrm{m} $  |  $ \simeq  60 \mathrm{km/h} $  | For ramps / In mountains |
     
     - Source: [2024-08-17] (US) https://en.wikipedia.org/wiki/Grade_(slope)#Roads
     - Source: [2024-08-17] (EU) https://en.wikipedia.org/wiki/International_E-road_network#Road_design_standards
-      - According to source,
+      - According to the source,
         $ R \geq 1000 \mathrm{m} $ for $ v_\mathrm{max} \simeq 140 \mathrm{km/h} $; and
         $ R \geq  120 \mathrm{m} $ for $ v_\mathrm{max} \simeq  60 \mathrm{km/h} $.
       - Assuming the curvature limit $ R \propto v_\mathrm{max}^2 $,
@@ -173,8 +182,9 @@ Technical Specifications
       ```
           # python code
           import numpy as np
-          # remember to translate radian into degree
+          # Remember to translate radian into degree
           theta_deg = lambda R, d: np.ceil(2*np.atan(R/d)/np.pi*180)
+          # Example
           theta_deg(R=4000, d=512)
       ```
     - Source: [2024-08-16] ($ R $) https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant
@@ -193,15 +203,15 @@ Technical Specifications
     - Source: [2024-08-16] https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#
     - Source: [2024-08-16] https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii
 - Metro / Subway / Passenger Railways
-  - Gradient $ s $ limit:
+  - Gradient $ s $ and Curvature $ R $ limit:
     
     |             | Gradient $ s $    | Curvature $ R $            | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Real world examples |
     | ----------- | :---------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
-    | Recommended |  $ \leq  5.5\% $  |  $ \geq  128 \mathrm{m} $  |  $ \simeq 120 \mathrm{km/h} $  | -                   | -                   | $ \geq   90\degree $  | $ \geq 127\degree $ | Höllentalbahn (Black Forest), Germany;<br>Bay Area Rapid Transit, United States. |
-    | Mandatory   |  $ \leq  7  \% $  |  $ \geq   64 \mathrm{m} $  |  $ \simeq 100 \mathrm{km/h} $  | -                   | -                   | -                     | $ \geq  90\degree $ | Bernina Railway, Switzerland;<br>Central line, London Underground, United Kingdom. |
+    | Recommended |  $ \leq  5.5\% $  |  $ \geq  128 \mathrm{m} $  |  $ \simeq 120 \mathrm{km/h} $  | -                   | -                   | $ \geq   90\degree $  | $ \geq 127\degree $ | [$ s $] Höllentalbahn (Black Forest), Germany;<br>[$ R $] Bay Area Rapid Transit, United States. |
+    | Mandatory   |  $ \leq  7  \% $  |  $ \geq   64 \mathrm{m} $  |  $ \simeq 100 \mathrm{km/h} $  | -                   | -                   | -                     | $ \geq  90\degree $ | [$ s $] Bernina Railway, Switzerland;<br>[$ R $] Central line, London Underground, United Kingdom. |
     
-  - Source: [2024-08-16] https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways
-  - Source: [2024-08-17] https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii
+  - Source: [2024-08-16] ($ s $) https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways
+  - Source: [2024-08-17] ($ R $) https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii
 - Trams
   - Gradient $ s $ limit:
     
@@ -272,5 +282,7 @@ Background Stories
 -------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------
+
+***Again, everything here is fictional.***
 
 (Coming soon.)
