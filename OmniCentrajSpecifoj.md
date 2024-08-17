@@ -168,7 +168,15 @@ Technical Specifications
     
     - $ \theta_{d} $ refers to the angle displayed when building a 2-phases curve of $d$ - $d$ in game.
       i.e., $ \theta_\mathrm{512m} $ is the angle displayed in game when building a curve with 1 bend and both radius being 512m and 512m.
-      <!--- Angle equation: 2*np.atan(3500/512)/np.pi*180 --->
+    - Angle $ \theta_{d} $ equation:
+      $ \theta_{d} = 2 \tan^{-1}{\frac{R}{d}} $
+      ```
+          # python code
+          import numpy as np
+          # remember to translate radian to degree
+          theta_deg = lambda R, d: np.ceil(2*np.atan(R/d)/np.pi*180)
+          theta_deg(R=4000, d=512)
+      ```
     - Source: [2024-08-16] ($ R $) https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant
     - Source: [2024-08-16] ($ R $) https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii (Lithgow Zig Zag)
     - Source: [2024-08-16] ($ s $) https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#
@@ -189,7 +197,7 @@ Technical Specifications
     
     |             | Gradient $ s $    | Curvature $ R $            | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Real world examples |
     | ----------- | :---------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
-    | Recommended |  $ \leq  5.5\% $  |  TBD                       |  $ \simeq 100 \mathrm{km/h} $  | TBD                 | TBD                 | TBD                  | TBD                 | Höllentalbahn (Black Forest), Germany |
+    | Recommended |  $ \leq  5.5\% $  |  TBD                       |  $ \simeq 120?\mathrm{km/h} $  | TBD                 | TBD                 | TBD                  | TBD                 | Höllentalbahn (Black Forest), Germany |
     | Mandatory   |  $ \leq  7  \% $  |  TBD                       |  $ \simeq 100 \mathrm{km/h} $  | TBD                 | TBD                 | TBD                  | TBD                 | Bernina Railway, Switzerland |
     
   - Source: [2024-08-16] https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways
