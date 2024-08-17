@@ -65,7 +65,7 @@ Detailed Information
 | City Background   | Planned New Capital |
 | Official Language | Esperanto (transitioning from English in the next 20 years) |
 | Country Leader    | Reĝino Serena de Omnijo |
-| City Designers    | Ĉuĉjo la Arkitekto  kaj  Ĝejnjo la Suvereno |
+| City Designers    | Ĉuĉjo la Arkitekto  kaj  Ĝejnjo la Suverenino |
 
 
 #### Government Structure (Part)
@@ -123,7 +123,37 @@ Technical Specifications
 
 #### Roads
 
-TBD.
+- Highways
+  - Gradient $ s $ and Curvature $ R $ limit:
+    
+    |             | Gradient $ s $    | Curvature $ R $            | Speed limit $ v_\mathrm{max} $ | Notes |
+    | ----------- | :---------------: | :------------------------: | :----------------------------: | ----- |
+    | Recommended |  $ \leq  4  \% $  |  $ \geq  720 \mathrm{m} $  |  $ \simeq 120 \mathrm{km/h} $  | |
+    | Soft Limit  |  $ \leq  6  \% $  |  $ \geq  400 \mathrm{m} $  |  $ \simeq 100 \mathrm{km/h} $  | |
+    | Soft Limit  |  $ \leq  8  \% $  |  $ \geq  216 \mathrm{m} $  |  $ \simeq  80 \mathrm{km/h} $  | For ramps / In mountains |
+    | Mandatory   |  $ \leq 10  \% $  |  $ \geq  120 \mathrm{m} $  |  $ \simeq  60 \mathrm{km/h} $  | For ramps / In mountains |
+    
+    - Source: [2024-08-17] (US) https://en.wikipedia.org/wiki/Grade_(slope)#Roads
+    - Source: [2024-08-17] (EU) https://en.wikipedia.org/wiki/International_E-road_network#Road_design_standards
+      - According to source,
+        $ R \geq 1000 \mathrm{m} $ for $ v_\mathrm{max} \simeq 140 \mathrm{km/h} $; and
+        $ R \geq  120 \mathrm{m} $ for $ v_\mathrm{max} \simeq  60 \mathrm{km/h} $.
+      - Assuming the curvature limit $ R \propto v_\mathrm{max}^2 $,
+        i.e. $ R \approx v_\mathrm{max}^2 / (30 \mathrm{mh/km}) $ for lower  limit,
+        and  $ R \approx v_\mathrm{max}^2 / (20 \mathrm{mh/km}) $ for higher limit.
+- Arterial / Collector / Local Roads
+  - Gradient  limit:
+    (Arbitrarily set to:)
+    
+    |             | Gradient $ s $    | Curvature $ R $            | Speed limit $ v_\mathrm{max} $ | Notes |
+    | ----------- | :---------------: | :------------------------: | :----------------------------: | ----- |
+    | Recommended |  $ \leq 10  \% $  |  -                         |  $ \simeq  60 \mathrm{km/h} $  | Arterial |
+    | Mandatory   |  $ \leq 36  \% $  |  -                         |  $ \simeq  25 \mathrm{km/h} $  | Local roads |
+    
+- Bike paths
+  - TBD
+- Ped  paths
+  - TBD
 
 
 #### Rails
@@ -131,7 +161,7 @@ TBD.
 - Freight and old Passenger Railways
   - Gradient  limit:
     - [Recommended] $ \leq 1.5\% $.
-    - [Mandatory] $ < 3.5\% $ (liberties have been taken due to steep terrain in the map- also it's more fun).
+    - [ Mandatory ] $ < 3.5\% $ (liberties have been taken due to steep terrain in the map- also it's more fun).
     - Source: [2024-08-16] https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#
   - Curvature limit:
     - [Recommended] $ \geq 640 \mathrm{m} $.
@@ -141,7 +171,7 @@ TBD.
       - ... or a curve of (640m, 640m, $  =    90\deg $).
       - Supporting $ v_\mathrm{max} \simeq 120 \mathrm{km/h} $.
       - Source: [2024-08-16] https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant
-    - [Mandatory] $ \geq 160 \mathrm{m} $.
+    - [ Mandatory ] $ \geq 160 \mathrm{m} $.
       - This translates to a curve of (128m, 128m, $ \geq 103\deg $).
       - ... or a curve of ( 64m,  64m, $ \geq 137\deg $).
       - ... or a curve of (160m, 160m, $  =   90\deg $).
@@ -149,17 +179,17 @@ TBD.
       - Source: [2024-08-16] https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii
         (Lithgow Zig Zag)
   - Speed limit: [TBD]
-  - Length limit (for track intersections): 500m (25 cars with 20m per car)
+  - Length limit (for track intersections): $ > 500\mathrm{m} $ (25 cars with 20m per car)
 - High Speed Railways
   - Gradient  limit:
     - [Recommended] $ \leq 3.5\% $;
-    - [Mandatory] $ < 4\% $.
+    - [ Mandatory ] $ < 4\% $.
     - Source: [2024-08-16] https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#
   - Curvature limit:
     - [Recommended] $ \geq 4000 \mathrm{m} $.
       - This translates to a curve of (512m, 512m, $ \geq 166\deg $).
       - Supporting $ v_\mathrm{max} \simeq 300 \mathrm{km/h} $.
-    - [Mandatory] $ \geq 3500 \mathrm{m} $ (Except near stations).
+    - [ Mandatory ] $ \geq 3500 \mathrm{m} $ (Except near stations).
       - This translates to a curve of (512m, 512m, $ \geq 164\deg $).
       <!--- Angle equation: 2*np.atan(3500/512)/np.pi*180 --->
       - Supporting $ v_\mathrm{max} \simeq 250 \mathrm{km/h} $.
@@ -168,7 +198,7 @@ TBD.
 - Metro / Subway / Passenger Railways
   - Gradient  limit:
     - [Recommended] $ \leq 5.5\% $.
-    - [Mandatory] $ < 7\% $.
+    - [ Mandatory ] $ < 7\% $.
   - Curvature limit:
     - TBD.
   - Speed limit: $ 100 \mathrm{km/h} $
@@ -177,7 +207,7 @@ TBD.
 - Trams
   - Gradient  limit:
     - [Recommended] $ \leq 10\% $.
-    - [Mandatory] $ < 13.5\% $.
+    - [ Mandatory ] $ < 13.5\% $.
   - Speed limit: $ 90 \mathrm{km/h} $
   - Source: [2024-08-16] https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#Examples
     (Sheffield Supertram, Sheffield, England; Lisbon Tramways, Portugal.)
