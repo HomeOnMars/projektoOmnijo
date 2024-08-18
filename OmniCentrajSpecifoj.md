@@ -135,13 +135,15 @@ Use at your own risk.***
 - Highways
   - Gradient $ s $ and Curvature $ R $ limit:
     
-    |             | Gradient $ s $    | Curvature $ R $            | Speed limit $ v_\mathrm{max} $ | Notes |
-    | ----------- | :---------------: | :------------------------: | :----------------------------: | ----- |
-    | Soft Limit  |  $ \leq  4  \% $  |  $ \geq  720 \mathrm{m} $  |  $ \simeq 120 \mathrm{km/h} $  | |
-    | Recommended |  $ \leq  6  \% $  |  $ \geq  400 \mathrm{m} $  |  $ \simeq 100 \mathrm{km/h} $  | |
-    | Soft Limit  |  $ \leq  8  \% $  |  $ \geq  216 \mathrm{m} $  |  $ \simeq  80 \mathrm{km/h} $  | For ramps / In mountains |
-    | Mandatory   |  $ \leq 10  \% $  |  $ \geq  120 \mathrm{m} $  |  $ \simeq  60 \mathrm{km/h} $  | For ramps / In mountains |
+    |             | Gradient $ s $    | Curvature $ R $            | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Notes |
+    | ----------- | :---------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ----- |
+    | Soft Limit  |  $ \leq  4  \% $  |  $ \geq  720 \mathrm{m} $  |  $ \simeq 120 \mathrm{km/h} $  | $ \geq 110\degree $ | $ \geq 141\degree $ | $ \geq 160\degree $ | $ \geq 170\degree $ | |
+    | Recommended |  $ \leq  6  \% $  |  $ \geq  400 \mathrm{m} $  |  $ \simeq 100 \mathrm{km/h} $  | -                   | $ \geq 115\degree $ | $ \geq 145\degree $ | $ \geq 162\degree $ | |
+    | Soft Limit  |  $ \leq  8  \% $  |  $ \geq  216 \mathrm{m} $  |  $ \simeq  80 \mathrm{km/h} $  | -                   | -                   | $ \geq 119\degree $ | $ \geq 147\degree $ | For ramps / In mountains |
+    | Mandatory   |  $ \leq 10  \% $  |  $ \geq  128 \mathrm{m} $  |  $ \simeq  60 \mathrm{km/h} $  | -                   | -                   | -                     | $ \geq 124\degree $ | For ramps / In mountains |
     
+    - $ \theta_{d} $ refers to the angle displayed when building a 2-phases curve of $d$ - $d$ in game.
+      i.e., $ \theta_\mathrm{512m} $ is the angle displayed in game when building a curve with 1 bend and both radius being 512m and 512m.
     - Source: [2024-08-17] (US) https://en.wikipedia.org/wiki/Grade_(slope)#Roads
     - Source: [2024-08-17] (EU) https://en.wikipedia.org/wiki/International_E-road_network#Road_design_standards
       - According to the source,
@@ -185,7 +187,8 @@ Use at your own risk.***
           # Remember to translate radian into degree
           theta_deg = lambda R, d: np.ceil(2*np.atan(R/d)/np.pi*180)
           # Example
-          theta_deg(R=4000, d=512)
+          print([(d, theta_deg(R=720, d=d)) for d in (512, 256, 128, 64)])
+          print(theta_deg(R=4000, d=512))
       ```
     - Source: [2024-08-16] ($ R $) https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant
     - Source: [2024-08-16] ($ R $) https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii (Lithgow Zig Zag)
