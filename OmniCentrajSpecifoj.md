@@ -87,10 +87,18 @@ Detailed Information
 | Office of Home    Affairs    | OCOI | Omnija Centra Oficejo de Internaj Aferoj |
 
 
-#### Single letter abbreviations
 
-| Acronym | Esperanto     | English  |
-| ------- | ------------- | -------- |
+
+### Sigloj<br>Acronyms
+
+-------------------------------------------------------------------------------
+
+
+#### Direktoj<br>Directions
+
+
+| Siglo<br>Acronym | En esperanto<br>In Esperanto | En la angla<br>In English |
+| :-----: | ------------- | -------- |
 |    N    | **N**orda     | Northern |
 |    S    | **S**uda      | Southern |
 |    R    | o**R**ienta   | Eastern  |
@@ -100,6 +108,40 @@ Detailed Information
 |    D    | **D**ekstra   | Right    |
 |    P    | **P**lus / Maldekstruma / S->N / K->R | Plus / Counterclockwise / S->N / W->E |
 |    M    | **M**inus / Dekstruma / N->S / R->K   | Minus /       Clockwise / N->S / E->W |
+
+Note: P/M follows positive and negative directions in mathematics (thus P for counterclockwise directions).
+
+
+#### Stratetoj<br>Lanes
+
+| Siglo<br>Acronym | Strateta Tipo<br>(en esperanto) | Lane Type<br>(in English) | Strateta Larĝeco<br>Lane Width |
+| :-----: | ------------------- | ------------------- | :---------: |
+|    H    | **H**omo/Piediranto | Human/Pedestrian    | $\geq$ 1m   |
+|    B    | **B**iciklo         | Bike                |        ?    |
+|    A    | **A**ŭtomobilo      | Car                 |        3m   |
+|    T    | **T**ransporto<br>(Buso, Tramo)   | Transit<br>(Bus, Tram)         |        3m   |
+|    V    | **V**agonaro/Trajno | Train               |        4m?  |
+|    G    | Neŭtrala **G**rundo<br>Meza Strio | Neutral Ground<br>Median Strip | $\geq$ 1m   |
+|    i    | **i**nverse         | vice versa          | -           |
+
+De-capitalize for lanes with inverted directions.
+
+Road name format examples:
+
+- HBA2Gi
+  - pedestrain path (H) - bike (B) - 2 car lanes (A2) - median (G) - same for the other half of the road (i)
+  - Median road with bike
+- Ha2TGi
+  - pedestrain path (H) - 2 inverted car lanes (A2) - transit lane (T) - median (G) - same for the other half (i)
+  - Median road for diverging diamond interchanges
+- HA3a2h
+  - pedestrain path (H) - 3 car lanes (A3) - 2 inverted car lanes (A2) - inverted pedestrain path (h)
+  - Asymmetrical median road
+
+See also:
+
+- Road Builder mod by TDW: https://mods.paradoxplaza.com/mods/87190/Windows
+
 
 
 
@@ -143,7 +185,7 @@ Use at your own risk.***
     | Hard Limit  |  $ \leq 10  \% $  |  $ \geq  128 \mathrm{m} $  |  $ \simeq  60 \mathrm{km/h} $  | -                   | -                   | -                     | $ \geq 124\degree $ | For ramps / In mountains |
     
     - $ \theta_{d} $ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
-      i.e., $ \theta_\mathrm{512m} $ is the angle displayed in game when building a curve with 1 bend and both radius being 512m and 512m.
+      i.e., $ \theta_\mathrm{512m} $ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 512m.
     - Source: [2024-08-17] (US) https://en.wikipedia.org/wiki/Grade_(slope)#Roads
     - Source: [2024-08-17] (EU) https://en.wikipedia.org/wiki/International_E-road_network#Road_design_standards
       - According to the source,
@@ -178,7 +220,7 @@ Use at your own risk.***
     | Hard Limit  |  $ \leq  3.5\% $  |  $ \geq  160 \mathrm{m} $  |  $ \simeq  40 \mathrm{km/h} $  | -                   | -                   | $ \geq 103\degree $ | $ \geq 137\degree $ | Lithgow Zig Zag |
     
     - $ \theta_{d} $ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
-      i.e., $ \theta_\mathrm{512m} $ is the angle displayed in game when building a curve with 1 bend and both radius being 512m and 512m.
+      i.e., $ \theta_\mathrm{512m} $ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 512m.
     - Angle $ \theta_{d} $ equation:
       $ \theta_{d} = 2 \tan^{-1}{\frac{R}{d}} $
       ```
