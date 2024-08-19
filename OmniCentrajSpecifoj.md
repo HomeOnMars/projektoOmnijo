@@ -143,6 +143,30 @@ See also:
 - Road Builder mod by TDW: https://mods.paradoxplaza.com/mods/87190/Windows
 
 
+#### Publika Transportaj Linioj<br>Public Transit Lines
+
+Note that the letters are overlapping other acronyms in other categories - and they are not necessarily the same. 
+
+| Siglo<br>Acronym | Strateta Tipo<br>(en esperanto) | Lane Type<br>(in English) | Notes |
+| :-----: | ------------------- | ------------------- | ----------- |
+|    B    | **B**uso            | Bus                 | |
+|    T    | **T**ramo           | Tram                | |
+|    M    | **M**etroo          | Metro<br>Monorail<br>Train (Intracity) | |
+|    V    | **V**agonaro/Trajno | Train (Intercity)   | |
+|    P    | **P**ramo           | Ferry (Intracity)   | |
+|    Sx   | **Ŝ**ipo            | Ship (Intercity)    | |
+|    A    | **A**viadilo        | Airplane            | |
+|    K-   | **K**argo-          | Cargo-              | |
+
+Examples:
+
+- Bus route 123: B123
+- Train line 3: V3
+- Cargo train line 1: KV1
+- Cargo barge route 4: KP4
+- Cargo container ship route 2: KSx2
+- Cargo Airline 5: KA5
+
 
 
 
