@@ -133,33 +133,33 @@ Use at your own risk.***
 #### Roads
 
 - Highways
-  - Gradient $ s $ and Curvature $ R $ limit:
+  - Gradient $ s $ and Radius of Curvature $ R $ limit:
     
-    |             | Gradient $ s $    | Curvature $ R $            | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Notes |
+    |             | Gradient $ s $    | Radius of Curvature $ R $  | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Notes |
     | ----------- | :---------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ----- |
-    | Soft Limit  |  $ \leq  4  \% $  |  $ \geq  720 \mathrm{m} $  |  $ \simeq 120 \mathrm{km/h} $  | $ \geq 110\degree $ | $ \geq 141\degree $ | $ \geq 160\degree $ | $ \geq 170\degree $ | |
+    | -           |  $ \leq  4  \% $  |  $ \geq  720 \mathrm{m} $  |  $ \simeq 120 \mathrm{km/h} $  | $ \geq 110\degree $ | $ \geq 141\degree $ | $ \geq 160\degree $ | $ \geq 170\degree $ | |
     | Recommended |  $ \leq  6  \% $  |  $ \geq  400 \mathrm{m} $  |  $ \simeq 100 \mathrm{km/h} $  | -                   | $ \geq 115\degree $ | $ \geq 145\degree $ | $ \geq 162\degree $ | |
-    | Soft Limit  |  $ \leq  8  \% $  |  $ \geq  216 \mathrm{m} $  |  $ \simeq  80 \mathrm{km/h} $  | -                   | -                   | $ \geq 119\degree $ | $ \geq 147\degree $ | For ramps / In mountains |
-    | Mandatory   |  $ \leq 10  \% $  |  $ \geq  128 \mathrm{m} $  |  $ \simeq  60 \mathrm{km/h} $  | -                   | -                   | -                     | $ \geq 124\degree $ | For ramps / In mountains |
+    | -           |  $ \leq  8  \% $  |  $ \geq  216 \mathrm{m} $  |  $ \simeq  80 \mathrm{km/h} $  | -                   | -                   | $ \geq 119\degree $ | $ \geq 147\degree $ | For ramps / In mountains |
+    | Hard Limit  |  $ \leq 10  \% $  |  $ \geq  128 \mathrm{m} $  |  $ \simeq  60 \mathrm{km/h} $  | -                   | -                   | -                     | $ \geq 124\degree $ | For ramps / In mountains |
     
-    - $ \theta_{d} $ refers to the angle displayed when building a 2-phases curve of $d$ - $d$ in game.
+    - $ \theta_{d} $ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
       i.e., $ \theta_\mathrm{512m} $ is the angle displayed in game when building a curve with 1 bend and both radius being 512m and 512m.
     - Source: [2024-08-17] (US) https://en.wikipedia.org/wiki/Grade_(slope)#Roads
     - Source: [2024-08-17] (EU) https://en.wikipedia.org/wiki/International_E-road_network#Road_design_standards
       - According to the source,
         $ R \geq 1000 \mathrm{m} $ for $ v_\mathrm{max} \simeq 140 \mathrm{km/h} $; and
         $ R \geq  120 \mathrm{m} $ for $ v_\mathrm{max} \simeq  60 \mathrm{km/h} $.
-      - Assuming the curvature limit $ R \propto v_\mathrm{max}^2 $,
+      - Assuming the radius of curvature limit $ R \propto v_\mathrm{max}^2 $,
         i.e. $ R \approx v_\mathrm{max}^2 / (30 \mathrm{mh/km}) $ for lower  limit,
         and  $ R \approx v_\mathrm{max}^2 / (20 \mathrm{mh/km}) $ for higher limit.
 - Arterial / Collector / Local Roads
   - Gradient  limit:
     (Arbitrarily set to:)
     
-    |             | Gradient $ s $    | Curvature $ R $            | Speed limit $ v_\mathrm{max} $ | Notes |
-    | ----------- | :---------------: | :------------------------: | :----------------------------: | ----- |
-    | Recommended |  $ \leq 10  \% $  |  -                         |  $ \simeq  60 \mathrm{km/h} $  | Arterial |
-    | Mandatory   |  $ \leq 36  \% $  |  -                         |  $ \simeq  25 \mathrm{km/h} $  | Local roads |
+    |             | Gradient $ s $    | Speed limit $ v_\mathrm{max} $ | Notes |
+    | ----------- | :---------------: | :----------------------------: | ----- |
+    | Recommended |  $ \leq 10  \% $  |  $ \simeq  60 \mathrm{km/h} $  | Arterial |
+    | Hard Limit  |  $ \leq 36  \% $  |  $ \simeq  25 \mathrm{km/h} $  | Local roads |
     
 - Bike paths
   - TBD
@@ -170,14 +170,14 @@ Use at your own risk.***
 #### Rails
 
 - Freight and old Passenger Railways
-  - Gradient $ s $ and Curvature $ R $ limit:
+  - Gradient $ s $ and Radius of Curvature $ R $ limit:
     
-    |             | Gradient $ s $    | Curvature $ R $            | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Real world examples |
+    |             | Gradient $ s $    | Radius of Curvature $ R $  | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Real world examples |
     | ----------- | :---------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
     | Recommended |  $ \leq  1.5\% $  |  $ \geq  640 \mathrm{m} $  |  $ \simeq 120 \mathrm{km/h} $  | $ \geq 103\degree $ | $ \geq 137\degree $ | $ \geq 158\degree $ | $ \geq 169\degree $ | |
-    | Mandatory   |  $ \leq  3.5\% $  |  $ \geq  160 \mathrm{m} $  |  $ \simeq  40 \mathrm{km/h} $  | -                   | -                   | $ \geq 103\degree $ | $ \geq 137\degree $ | Lithgow Zig Zag |
+    | Hard Limit  |  $ \leq  3.5\% $  |  $ \geq  160 \mathrm{m} $  |  $ \simeq  40 \mathrm{km/h} $  | -                   | -                   | $ \geq 103\degree $ | $ \geq 137\degree $ | Lithgow Zig Zag |
     
-    - $ \theta_{d} $ refers to the angle displayed when building a 2-phases curve of $d$ - $d$ in game.
+    - $ \theta_{d} $ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
       i.e., $ \theta_\mathrm{512m} $ is the angle displayed in game when building a curve with 1 bend and both radius being 512m and 512m.
     - Angle $ \theta_{d} $ equation:
       $ \theta_{d} = 2 \tan^{-1}{\frac{R}{d}} $
@@ -193,25 +193,25 @@ Use at your own risk.***
     - Source: [2024-08-16] ($ R $) https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant
     - Source: [2024-08-16] ($ R $) https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii (Lithgow Zig Zag)
     - Source: [2024-08-16] ($ s $) https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#
-    - Note: Liberties have been taken for the mandatory limit of $s$ due to steep terrain in the map. Also steeper is more fun.
+    - Note: Liberties have been taken for the hard limit of $s$ due to steep terrain in the map. Also steeper is more fun.
   - Length limit (for track intersections): $ > 500\mathrm{m} $ (25 cars with 20m per car)
 - High Speed Railways
-  - Gradient $ s $ and Curvature $ R $ limit:
+  - Gradient $ s $ and Radius of Curvature $ R $ limit:
     
-    |             | Gradient $ s $    | Curvature $ R $            | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Real world examples |
+    |             | Gradient $ s $    | Radius of Curvature $ R $  | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Real world examples |
     | ----------- | :---------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
     | Recommended |  $ \leq  3.5\% $  |  $ \geq 4000 \mathrm{m} $  |  $ \simeq 300 \mathrm{km/h} $  | $ \geq 166\degree $ | $ \geq 173\degree $ | $ \geq 177\degree $ | $ \geq 179\degree $ | |
-    | Mandatory   |  $ \leq  4  \% $  |  $ \geq 3500 \mathrm{m} $  |  $ \simeq 250 \mathrm{km/h} $  | $ \geq 164\degree $ | $ \geq 172\degree $ | $ \geq 176\degree $ | $ \geq 178\degree $ | |
+    | Hard Limit  |  $ \leq  4  \% $  |  $ \geq 3500 \mathrm{m} $  |  $ \simeq 250 \mathrm{km/h} $  | $ \geq 164\degree $ | $ \geq 172\degree $ | $ \geq 176\degree $ | $ \geq 178\degree $ | |
     
     - Source: [2024-08-16] https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#
     - Source: [2024-08-16] https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii
 - Metro / Subway / Passenger Railways
-  - Gradient $ s $ and Curvature $ R $ limit:
+  - Gradient $ s $ and Radius of Curvature $ R $ limit:
     
-    |             | Gradient $ s $    | Curvature $ R $            | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Real world examples |
+    |             | Gradient $ s $    | Radius of Curvature $ R $  | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Real world examples |
     | ----------- | :---------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
     | Recommended |  $ \leq  5.5\% $  |  $ \geq  128 \mathrm{m} $  |  $ \simeq 120 \mathrm{km/h} $  | -                   | -                   | $ \geq   90\degree $  | $ \geq 127\degree $ | [$ s $] Höllentalbahn (Black Forest), Germany;<br>[$ R $] Bay Area Rapid Transit, United States. |
-    | Mandatory   |  $ \leq  7  \% $  |  $ \geq   64 \mathrm{m} $  |  $ \simeq 100 \mathrm{km/h} $  | -                   | -                   | -                     | $ \geq  90\degree $ | [$ s $] Bernina Railway, Switzerland;<br>[$ R $] Central line, London Underground, United Kingdom. |
+    | Hard Limit  |  $ \leq  7  \% $  |  $ \geq   64 \mathrm{m} $  |  $ \simeq 100 \mathrm{km/h} $  | -                   | -                   | -                     | $ \geq  90\degree $ | [$ s $] Bernina Railway, Switzerland;<br>[$ R $] Central line, London Underground, United Kingdom. |
     
   - Source: [2024-08-16] ($ s $) https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways
   - Source: [2024-08-17] ($ R $) https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii
@@ -221,7 +221,7 @@ Use at your own risk.***
     |             | Gradient $ s $    | Speed limit $ v_\mathrm{max} $ | Real world examples |
     | ----------- | :---------------: | :----------------------------: | ------------------- |
     | Recommended |  $ \leq 10  \% $  |  $ \simeq  90 \mathrm{km/h} $  | Sheffield Supertram, Sheffield |
-    | Mandatory   |  $ \leq 13.5\% $  |  $ \simeq  70?\mathrm{km/h} $  | Lisbon Tramways, Portugal |
+    | Hard Limit  |  $ \leq 13.5\% $  |  $ \simeq  70?\mathrm{km/h} $  | Lisbon Tramways, Portugal |
     
   - Source: [2024-08-16] https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#Examples
 
