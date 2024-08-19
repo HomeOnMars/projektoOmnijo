@@ -96,7 +96,6 @@ Detailed Information
 
 #### Direktoj<br>Directions
 
-
 | Siglo<br>Acronym | En esperanto<br>In Esperanto | En la angla<br>In English |
 | :-----: | ------------- | -------- |
 |    N    | **N**orda     | Northern |
@@ -106,8 +105,8 @@ Detailed Information
 |    L    | **L**iva      | Left     |
 |    C    | **C**entra    | Center   |
 |    D    | **D**ekstra   | Right    |
-|    P    | **P**lus / Maldekstruma / S->N / K->R | Plus / Counterclockwise / S->N / W->E |
-|    M    | **M**inus / Dekstruma / N->S / R->K   | Minus /       Clockwise / N->S / E->W |
+|    P    | **P**lus  / Pozitiva /<br>Maldekstruma /<br>S->N / K->R | Plus  / Positive /<br>Counterclockwise /<br>S->N / W->E |
+|    M    | **M**inus / Negativa /<br>Dekstruma    /<br>N->S / R->K | Minus / Negative /<br>       Clockwise /<br>N->S / E->W |
 
 Note: P/M follows positive and negative directions in mathematics (thus P for counterclockwise directions).
 
