@@ -115,23 +115,25 @@ Note: P/M follows positive and negative directions in mathematics (thus P for co
 
 | Siglo<br>Acronym | Strateta Tipo<br>(en esperanto) | Lane Type<br>(in English) | Strateta Larĝeco<br>Lane Width |
 | :-----: | ------------------- | ------------------- | :---------: |
-|    H    | **H**omo/Piediranto | Human/Pedestrian    | $\geq$ 1m   |
+|    H    | **H**omo/Piediranto | Human/Pedestrian    | $\geq$ 3.5m |
 |    B    | **B**iciklo         | Bike                |        ?    |
 |    A    | **A**ŭtomobilo      | Car                 |        3m   |
 |    T    | **T**ransporto<br>(Buso, Tramo)   | Transit<br>(Bus, Tram)         |        3m   |
-|    V    | **V**agonaro/Trajno | Train               |        4m?  |
+|    E    | f**E**rvojo/m**E**troo | Railway/Metro    |        4m   |
+|    V    | **V**agonaro/Trajno | Train               |        4m   |
 |    G    | Neŭtrala **G**rundo<br>Meza Strio | Neutral Ground<br>Median Strip | $\geq$ 1m   |
+|    O    | l**O**kokupilo      | Placeholder         | -           |
 |    i    | **i**nverse         | vice versa          | -           |
 
 De-capitalize for lanes with inverted directions.
 
 Road name format examples:
 
-- HBA2Gi
-  - pedestrain path (H) - bike (B) - 2 car lanes (A2) - median (G) - same for the other half of the road (i)
+- HBA2gi
+  - pedestrain path (H) - bike (B) - 2 car lanes (A2) - central median (g) - same for the other half of the road (i)
   - Median road with bike
-- Ha2TGi
-  - pedestrain path (H) - 2 inverted car lanes (A2) - transit lane (T) - median (G) - same for the other half (i)
+- Ha2Tgi
+  - pedestrain path (H) - 2 inverted car lanes (A2) - transit lane (T) - central median (g) - same for the other half (i)
   - Median road for diverging diamond interchanges
 - HA3a2h
   - pedestrain path (H) - 3 car lanes (A3) - 2 inverted car lanes (A2) - inverted pedestrain path (h)
@@ -150,17 +152,21 @@ Note that the letters are overlapping other acronyms in other categories - and t
 | :-----: | ------------------- | ------------------- | ----------- |
 |    B    | **B**uso            | Bus                 | |
 |    T    | **T**ramo           | Tram                | |
-|    M    | **M**etroo          | Metro<br>Monorail<br>Train (Intracity) | |
-|    V    | **V**agonaro/Trajno | Train (Intercity)   | |
+|    E    | f**E**rvojo/m**E**troo | Railway/Metro<br>Monorail<br>Train (Intracity) | |
+|    V    | **V**agonaro/Trajno | Train (Intercity, high speed)   | |
 |    P    | **P**ramo           | Ferry (Intracity)   | |
 |    Sx   | **Ŝ**ipo            | Ship (Intercity)    | |
 |    A    | **A**viadilo        | Airplane            | |
 |    K-   | **K**argo-          | Cargo-              | |
+|    H-   | **H**omo-/Pasaĝero- | Human-/Passenger-   | |
+
+
+H prefix is usually omitted.
 
 Examples:
 
-- Bus route 123: B123
-- Train line 3: V3
+- Bus route 123: B123 (short for HB123)
+- Train line 3: V3 (short for HV3)
 - Cargo train line 1: KV1
 - Cargo barge route 4: KP4
 - Cargo container ship route 2: KSx2
@@ -204,8 +210,9 @@ Use at your own risk.***
     | ----------- | :---------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ----- |
     | -           |  $ \leq  4  \% $  |  $ \geq  720 \mathrm{m} $  |  $ \simeq 120 \mathrm{km/h} $  | $ \geq 110\degree $ | $ \geq 141\degree $ | $ \geq 160\degree $ | $ \geq 170\degree $ | |
     | Recommended |  $ \leq  6  \% $  |  $ \geq  400 \mathrm{m} $  |  $ \simeq 100 \mathrm{km/h} $  | -                   | $ \geq 115\degree $ | $ \geq 145\degree $ | $ \geq 162\degree $ | |
-    | -           |  $ \leq  8  \% $  |  $ \geq  216 \mathrm{m} $  |  $ \simeq  80 \mathrm{km/h} $  | -                   | -                   | $ \geq 119\degree $ | $ \geq 147\degree $ | For ramps / In mountains |
-    | Hard Limit  |  $ \leq 10  \% $  |  $ \geq  128 \mathrm{m} $  |  $ \simeq  60 \mathrm{km/h} $  | -                   | -                   | -                     | $ \geq 124\degree $ | For ramps / In mountains |
+    | Soft Limit  |  $ \leq  8  \% $  |  $ \geq  216 \mathrm{m} $  |  $ \simeq  80 \mathrm{km/h} $  | -                   | -                   | $ \geq 119\degree $ | $ \geq 147\degree $ | For ramps / In mountains |
+    | -           |  $ \leq 10  \% $  |  $ \geq  120 \mathrm{m} $  |  $ \simeq  60 \mathrm{km/h} $  | -                   | -                   | -                     | $ \geq 124\degree $ | For ramps / In mountains |
+    | Hard Limit  |  $ \leq 12  \% $  |  $ \geq   32 \mathrm{m} $  |  $ \simeq  40 \mathrm{km/h} $  | -                   | -                   | -                   | -                   | For ramps / In mountains |
     
     - $ \theta_{d} $ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
       i.e., $ \theta_\mathrm{512m} $ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 512m.
