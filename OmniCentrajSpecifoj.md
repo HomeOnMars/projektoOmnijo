@@ -208,11 +208,11 @@ Use at your own risk.***
     
     |             | Gradient $ s $    | Radius of Curvature $ R $  | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Notes |
     | ----------- | :---------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ----- |
-    | -           |  $ \leq  4  \% $  |  $ \geq  720 \mathrm{m} $  |  $ \simeq 120 \mathrm{km/h} $  | $ \geq 110\degree $ | $ \geq 141\degree $ | $ \geq 160\degree $ | $ \geq 170\degree $ | |
-    | Recommended |  $ \leq  6  \% $  |  $ \geq  400 \mathrm{m} $  |  $ \simeq 100 \mathrm{km/h} $  | -                   | $ \geq 115\degree $ | $ \geq 145\degree $ | $ \geq 162\degree $ | |
-    | Soft Limit  |  $ \leq  8  \% $  |  $ \geq  216 \mathrm{m} $  |  $ \simeq  80 \mathrm{km/h} $  | -                   | -                   | $ \geq 119\degree $ | $ \geq 147\degree $ | For ramps / In mountains |
-    | -           |  $ \leq 10  \% $  |  $ \geq  120 \mathrm{m} $  |  $ \simeq  60 \mathrm{km/h} $  | -                   | -                   | -                     | $ \geq 124\degree $ | For ramps / In mountains |
-    | Hard Limit  |  $ \leq 12  \% $  |  $ \geq   32 \mathrm{m} $  |  $ \simeq  40 \mathrm{km/h} $  | -                   | -                   | -                   | -                   | For ramps / In mountains |
+    | -           |  $ \leq  4  \% $  |  $ \geq  512 \mathrm{m} $  |  $ \simeq 120 \mathrm{km/h} $  | $ \geq  90\degree $ | $ \geq 127\degree $ | $ \geq 152\degree $ | $ \geq 166\degree $ | |
+    | Recommended |  $ \leq  6  \% $  |  $ \geq  288 \mathrm{m} $  |  $ \simeq 100 \mathrm{km/h} $  | -                   | $ \geq  97\degree $ | $ \geq 133\degree $ | $ \geq 155\degree $ | |
+    | Soft Limit  |  $ \leq  8  \% $  |  $ \geq  184 \mathrm{m} $  |  $ \simeq  80 \mathrm{km/h} $  | -                   | -                   | $ \geq 111\degree $ | $ \geq 142\degree $ | For ramps / In mountains |
+    | -           |  $ \leq  9  \% $  |  $ \geq  120 \mathrm{m} $  |  $ \simeq  60 \mathrm{km/h} $  | -                   | -                   | -                     | $ \geq 124\degree $ | For ramps / In mountains |
+    | Hard Limit  |  $ \leq 10  \% $  |  $ \geq   32 \mathrm{m} $  |  $ \simeq  40 \mathrm{km/h} $  | -                   | -                   | -                   | -                   | For ramps / In mountains |
     
     - $ \theta_{d} $ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
       i.e., $ \theta_\mathrm{512m} $ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 512m.
@@ -221,16 +221,21 @@ Use at your own risk.***
       - According to the source,
         $ R \geq 1000 \mathrm{m} $ for $ v_\mathrm{max} \simeq 140 \mathrm{km/h} $; and
         $ R \geq  120 \mathrm{m} $ for $ v_\mathrm{max} \simeq  60 \mathrm{km/h} $.
-      - Assuming the radius of curvature limit $ R \propto v_\mathrm{max}^2 $,
+      - ~~Assuming the radius of curvature limit $ R \propto v_\mathrm{max}^2 $,
         i.e. $ R \approx v_\mathrm{max}^2 / (30 \mathrm{mh/km}) $ for lower  limit,
-        and  $ R \approx v_\mathrm{max}^2 / (20 \mathrm{mh/km}) $ for higher limit.
+        and  $ R \approx v_\mathrm{max}^2 / (20 \mathrm{mh/km}) $ for higher limit~~.
+    - Source: [2024-08-23] (for $R$) https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256301  
+      - figure 9: Predictions of speed thresholds of the truck in a sharp turn with different superelevation rates  
+        https://journals.plos.org/plosone/article/figure?id=10.1371/journal.pone.0256301.g009
+        .
 - Arterial / Collector / Local Roads
   - Gradient  limit:
     (Arbitrarily set to:)
     
     |             | Gradient $ s $    | Speed limit $ v_\mathrm{max} $ | Notes |
     | ----------- | :---------------: | :----------------------------: | ----- |
-    | Recommended |  $ \leq 10  \% $  |  $ \simeq  60 \mathrm{km/h} $  | Arterial |
+    | Recommended |  $ \leq 10  \% $  |  $ \simeq  60 \mathrm{km/h} $  | Arterial    |
+    | Soft Limit  |  $ \leq 13.5\% $  |  $ \simeq  50 \mathrm{km/h} $  | Collector   |
     | Hard Limit  |  $ \leq 36  \% $  |  $ \simeq  25 \mathrm{km/h} $  | Local roads |
     
 - Bike paths
