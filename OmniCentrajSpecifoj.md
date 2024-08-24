@@ -236,7 +236,9 @@ Use at your own risk.***
     | ----------- | :---------------: | :----------------------------: | ----- |
     | Recommended |  $ \leq 10  \% $  |  $ \simeq  60 \mathrm{km/h} $  | Arterial    |
     | Soft Limit  |  $ \leq 13.5\% $  |  $ \simeq  50 \mathrm{km/h} $  | Collector   |
-    | Hard Limit  |  $ \leq 36  \% $  |  $ \simeq  25 \mathrm{km/h} $  | Local roads |
+    | Hard Limit  |  $ \leq 30  \% $* |  $ \simeq  25 \mathrm{km/h} $  | Local roads |
+
+    * Note that vanilla game by default only allow up to $20 \%$ gradient.
     
 - Bike paths
   - TBD
@@ -252,7 +254,7 @@ Use at your own risk.***
     |             | Gradient $ s $    | Radius of Curvature $ R $  | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Real world examples |
     | ----------- | :---------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
     | Recommended |  $ \leq  1.5\% $  |  $ \geq  640 \mathrm{m} $  |  $ \simeq 120 \mathrm{km/h} $  | $ \geq 103\degree $ | $ \geq 137\degree $ | $ \geq 158\degree $ | $ \geq 169\degree $ | |
-    | Hard Limit  |  $ \leq  3.5\% $  |  $ \geq  160 \mathrm{m} $  |  $ \simeq  40 \mathrm{km/h} $  | -                   | -                   | $ \geq 103\degree $ | $ \geq 137\degree $ | Lithgow Zig Zag |
+    | Hard Limit  |  $ \leq  3.5\% $  |  $ \geq  160 \mathrm{m} $  |  $ \simeq  60 \mathrm{km/h} $  | -                   | -                   | $ \geq 103\degree $ | $ \geq 137\degree $ | Lithgow Zig Zag |
     
     - $ \theta_{d} $ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
       i.e., $ \theta_\mathrm{512m} $ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 512m.
@@ -298,7 +300,7 @@ Use at your own risk.***
     |             | Gradient $ s $    | Speed limit $ v_\mathrm{max} $ | Real world examples |
     | ----------- | :---------------: | :----------------------------: | ------------------- |
     | Recommended |  $ \leq 10  \% $  |  $ \simeq  90 \mathrm{km/h} $  | Sheffield Supertram, Sheffield |
-    | Hard Limit  |  $ \leq 13.5\% $  |  $ \simeq  70?\mathrm{km/h} $  | Lisbon Tramways, Portugal |
+    | Hard Limit  |  $ \leq 13.5\% $  |  $ \simeq  60 \mathrm{km/h} $  | Lisbon Tramways, Portugal |
     
   - Source: [2024-08-16] https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#Examples
 
