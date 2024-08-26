@@ -225,8 +225,8 @@ Use at your own risk.***
         i.e. $ R \approx v_\mathrm{max}^2 / (30 \mathrm{mh/km}) $ for lower  limit,
         and  $ R \approx v_\mathrm{max}^2 / (20 \mathrm{mh/km}) $ for higher limit~~.
     - Source: [2024-08-23] (for $R$) https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256301  
-      - figure 9: Predictions of speed thresholds of the truck in a sharp turn with different superelevation rates  
-        https://journals.plos.org/plosone/article/figure?id=10.1371/journal.pone.0256301.g009
+      - figure 8: Predictions of speed thresholds of the truck in a sharp turn 
+        https://doi.org/10.1371/journal.pone.0256301.g008
         .
 - Arterial / Collector / Local Roads
   - Gradient  limit:
@@ -314,6 +314,8 @@ Use at your own risk.***
 
 #### Brushes Configuration
 
+- Brush   3: Altitude $<$100m; Beaches
+  - Palm Trees (Coconut, Florida, Royal)
 - Brush W-D: Altitude  100m to  600m
   - Briches
   - etc.
@@ -333,6 +335,11 @@ Use at your own risk.***
 
 #### Species
 
+- Palm Trees
+  - Esperanto Name: Palmo
+  - Intolerable towards cold climates, so not really appropriate here.
+    Still, they look so cool! So I am taking some liberties.
+  - Source: https://en.wikipedia.org/wiki/Arecaceae#Range_and_habitat
 - Briches
   - Esperanto Name: Betulo
   - Altitude:  600m to 1400m
