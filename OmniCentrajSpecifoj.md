@@ -118,6 +118,7 @@ Note: P/M follows positive and negative directions in mathematics (thus P for co
 |    H    | **H**omo/Piediranto | Human/Pedestrian    | $\geq$ 3.5m |
 |    B    | **B**iciklo         | Bike                |        ?    |
 |    A    | **A**ŭtomobilo      | Car                 |        3m   |
+|    J    | parke**J**o         | Parking Space       | $\geq$ 2m   |
 |    T    | **T**ransporto<br>(Buso, Tramo)   | Transit<br>(Bus, Tram)         |        3m   |
 |    E    | f**E**rvojo/m**E**troo | Railway/Metro    |        4m   |
 |    V    | **V**agonaro/Trajno | Train               |        4m   |
@@ -148,7 +149,7 @@ See also:
 
 Note that the letters are overlapping other acronyms in other categories - and they are not necessarily the same. 
 
-| Siglo<br>Acronym | Strateta Tipo<br>(en esperanto) | Lane Type<br>(in English) | Notes |
+| Siglo<br>Acronym | Nomo<br>(en esperanto) | Lane Type<br>(in English) | Notes |
 | :-----: | ------------------- | ------------------- | ----------- |
 |    B    | **B**uso            | Bus                 | |
 |    T    | **T**ramo           | Tram                | |
@@ -157,8 +158,10 @@ Note that the letters are overlapping other acronyms in other categories - and t
 |    P    | **P**ramo           | Ferry (Intracity)   | |
 |    Sx   | **Ŝ**ipo            | Ship (Intercity)    | |
 |    A    | **A**viadilo        | Airplane            | |
-|    K-   | **K**argo-          | Cargo-              | |
+|    Ux   | a**Ŭ**tovojo        | Motorway            | |
 |    H-   | **H**omo-/Pasaĝero- | Human-/Passenger-   | |
+|    K-   | **K**argo-          | Cargo-              | |
+
 
 
 H prefix is usually omitted.
@@ -167,6 +170,7 @@ Examples:
 
 - Bus route 123: B123 (short for HB123)
 - Train line 3: V3 (short for HV3)
+- Motorway 2 N->S: Ux2-M (M for Negative)
 - Cargo train line 1: KV1
 - Cargo barge route 4: KP4
 - Cargo container ship route 2: KSx2
