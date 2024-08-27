@@ -149,14 +149,14 @@ See also:
 
 Note that the letters are overlapping other acronyms in other categories - and they are not necessarily the same. 
 
-| Siglo<br>Acronym | Nomo<br>(en esperanto) | Lane Type<br>(in English) | Notes |
+| Siglo<br>Acronym | Nomo<br>(en esperanto) | Name<br>(in English) | Rimarkoj<br>Remarks |
 | :-----: | ------------------- | ------------------- | ----------- |
 |    B    | **B**uso            | Bus                 | |
-|    T    | **T**ramo           | Tram                | |
-|    E    | f**E**rvojo/m**E**troo | Railway/Metro<br>Monorail<br>Train (Intracity) | |
-|    V    | **V**agonaro/Trajno | Train (Intercity, high speed)   | |
-|    P    | **P**ramo           | Ferry (Intracity)   | |
-|    Sx   | **Ŝ**ipo            | Ship (Intercity)    | |
+|    T    | **T**ramo           | Tram                | Regiona<br>Regional |
+|    E    | f**E**rvojo/m**E**troo | Railway/Metro<br>Monorail<br>Train | Regiona<br>Regional |
+|    V    | **V**agonaro/Trajno | Train (high speed)  | Interurba<br>Intercity |
+|    P    | **P**ramo           | Ferry               | Regiona<br>Regional |
+|    Sx   | **Ŝ**ipo            | Ship                | Interurba<br>Intercity |
 |    A    | **A**viadilo        | Airplane            | |
 |    Ux   | a**Ŭ**tovojo        | Motorway            | |
 |    H-   | **H**omo-/Pasaĝero- | Human-/Passenger-   | |
