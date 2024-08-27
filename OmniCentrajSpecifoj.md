@@ -65,6 +65,7 @@ Detailed Information
 | :---------------- | ---- |
 | City Background   | Planned New Capital |
 | Official Language | Esperanto (transitioning from English in the next 20 years) |
+| Official Religion | Pastafarianismo |
 | Country Leader    | Reĝino Serena de Omnijo |
 | City Designers    | Ĉuĉjo la Arkitekto  kaj  Ĝejnjo la Suverenino |
 
@@ -154,7 +155,7 @@ Note that the letters are overlapping other acronyms in other categories - and t
 |    B    | **B**uso            | Bus                 | |
 |    T    | **T**ramo           | Tram                | Regiona<br>Regional |
 |    E    | f**E**rvojo/m**E**troo | Railway/Metro<br>Monorail<br>Train | Regiona<br>Regional |
-|    V    | **V**agonaro/Trajno | Train (high speed)  | Interurba<br>Intercity |
+|    V    | **V**agonaro/Trajno | Train               | Grandrapida Interurba<br>High-speed Intercity |
 |    P    | **P**ramo           | Ferry               | Regiona<br>Regional |
 |    Sx   | **Ŝ**ipo            | Ship                | Interurba<br>Intercity |
 |    A    | **A**viadilo        | Airplane            | |
@@ -169,7 +170,7 @@ H prefix is usually omitted.
 Examples:
 
 - Bus route 123: B123 (short for HB123)
-- Train line 3: V3 (short for HV3)
+- High-speed Train line 3: V3 (short for HV3)
 - Motorway 2 N->S: Ux2-M (M for Negative)
 - Cargo train line 1: KV1
 - Cargo barge route 4: KP4
