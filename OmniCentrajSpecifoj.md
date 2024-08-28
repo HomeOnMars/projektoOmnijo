@@ -152,14 +152,14 @@ Note that the letters are overlapping other acronyms in other categories - and t
 
 | Siglo<br>Acronym | Nomo<br>(en esperanto) | Name<br>(in English) | Rimarkoj<br>Remarks |
 | :-----: | ------------------- | ------------------- | ----------- |
+|    A    | **A**viadilo        | Airplane            | |
+|    Ux   | a**Ŭ**tovojo        | Motorway            | |
 |    B    | **B**uso            | Bus                 | |
 |    T    | **T**ramo           | Tram                | Regiona<br>Regional |
 |    E    | f**E**rvojo/m**E**troo | Railway/Metro<br>Monorail<br>Train | Regiona<br>Regional |
 |    V    | **V**agonaro/Trajno | Train               | Grandrapida Interurba<br>High-speed Intercity |
 |    P    | **P**ramo           | Ferry               | Regiona<br>Regional |
 |    Sx   | **Ŝ**ipo            | Ship                | Interurba<br>Intercity |
-|    A    | **A**viadilo        | Airplane            | |
-|    Ux   | a**Ŭ**tovojo        | Motorway            | |
 |    H-   | **H**omo-/Pasaĝero- | Human-/Passenger-   | |
 |    K-   | **K**argo-          | Cargo-              | |
 
