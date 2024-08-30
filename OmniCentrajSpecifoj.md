@@ -112,14 +112,14 @@ Detailed Information
 Note: P/M follows positive and negative directions in mathematics (thus P for counterclockwise directions).
 
 
-#### Stratetoj<br>Lanes
+#### Vojoj kaj Stratetoj<br>Roads and Lanes
 
 | Siglo<br>Acronym | Strateta Tipo<br>(en esperanto) | Lane Type<br>(in English) | Strateta Larĝeco<br>Lane Width |
 | :-----: | ------------------- | ------------------- | :---------: |
 |    H    | **H**omo/Piediranto | Human/Pedestrian    | $\geq$ 3.5m |
 |    B    | **B**iciklo         | Bike                |        ?    |
-|    A    | **A**ŭtomobilo      | Car                 |        3m   |
 |    J    | parke**J**o         | Parking Space       | $\geq$ 2m   |
+|    A    | **A**ŭtomobilo      | Car                 |        3m   |
 |    T    | **T**ransporto<br>(Buso, Tramo)   | Transit<br>(Bus, Tram)         |        3m   |
 |    E    | f**E**rvojo/m**E**troo | Railway/Metro    |        4m   |
 |    V    | **V**agonaro/Trajno | Train               |        4m   |
