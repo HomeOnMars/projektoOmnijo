@@ -361,9 +361,10 @@ Results
           import numpy as np
           # Remember to translate radian into degree
           theta_deg = lambda R, d: np.ceil(2*np.atan(R/d)/np.pi*180)
+          get_R = lambda theta_deg, d: np.tan(theta_deg/2/180*np.pi)*d
           # Example
           print([(d, theta_deg(R=720, d=d)) for d in (512, 256, 128, 64)])
-          print(theta_deg(R=4000, d=512))
+          print(theta_deg(R=4000, d=512), get_R(theta_deg=166, d=512))
       ```
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant): $R$ info
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples (see Lithgow Zig Zag)
