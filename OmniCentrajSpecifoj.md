@@ -214,7 +214,7 @@ Use at your own risk.***
 Based on [Planck natural units](https://en.wikipedia.org/wiki/Natural_units#Planck_units).
 
 Track gauge in *RdO* for trains, metros, and trams are the same:
-$$d_\mathrm{gauge} \equiv \pi e \, 2^{113} \, l_P = 1.4333~\mathrm{m},$$
+$$d_\mathrm{gauge} \equiv \pi e~2^{113}~l_P = 1.4333~\mathrm{m},$$
 which is compatible with the standard gauge ($1.4351~\mathrm{m}$)
 with a difference of only $2~\mathrm{mm}$.
 (Hopefully that's small enough...)
@@ -269,7 +269,9 @@ Code illustrations
     temp_refs_K = temp_refs_C.to(units.K, equivalencies=units.equivalencies.temperature())
     
     
-    print("\n".join([f"{k:4}: unit = {u_rdo[k]:6.4f} \t ==  {u_rdo_eff[k]:3.2f} * 2**{u_rdo_exp[k]: 4d} * [naturalUnit: {v:.4e}]" for k, v in u_nat.items()]))
+    print("\n".join([
+        f"{k:4}: unit = {u_rdo[k]:6.4f} \t ==  {u_rdo_eff[k]:3.2f} * 2**{u_rdo_exp[k]: 4d} * [naturalUnit: {v:.4e}]"
+        for k, v in u_nat.items()]))
     print()
     print(f"dist: {track_standard_gauge = } is {track_standard_gauge.to(u_rdo['dist']):6.4f}")
     print(f"dist: proposed new guage: {track_rdo_gauge:6.4f}")
@@ -300,13 +302,13 @@ Results
 #### Roads
 
 - Highways
-  - Gradient $s$and Curve radius $R$limit:
+  - Gradient $s$ and Curve radius $R$ limit:
     
     |             |  Gradient $s$   |  Curve radius $R$        | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Notes |
     | ----------- | :-------------: | :----------------------: | :--------------------------: | --- | --- | --- | --- | ----- |
     | -           |  $\leq  4  \%$  |  $\geq  512 \mathrm{m}$  |  $\simeq 120 \mathrm{km/h}$  | $\geq  90\degree$ | $\geq 127\degree$ | $\geq 152\degree$ | $\geq 166\degree$ | |
     | Recommended |  $\leq  6  \%$  |  $\geq  288 \mathrm{m}$  |  $\simeq 100 \mathrm{km/h}$  | -                 | $\geq  97\degree$ | $\geq 133\degree$ | $\geq 155\degree$ | |
-    | Soft Limit  |  $\leq  8  \%$  |  $\geq  184 \mathrm{m}$  |  $\simeq  80 \mathrm{km/h}$  | -                 | -                 | $\geq 111\degree$ | $ \geq 142\degree $ | For ramps / In mountains |
+    | Soft Limit  |  $\leq  8  \%$  |  $\geq  184 \mathrm{m}$  |  $\simeq  80 \mathrm{km/h}$  | -                 | -                 | $\geq 111\degree$ | $\geq 142\degree$ | For ramps / In mountains |
     | -           |  $\leq  8  \%$  |  $\geq  120 \mathrm{m}$  |  $\simeq  60 \mathrm{km/h}$  | -                 | -                 | -                  | $\geq 124\degree$ | For ramps / In mountains |
     | Hard Limit  |  $\leq  8  \%$  |  $\geq   32 \mathrm{m}$  |  $\simeq  40 \mathrm{km/h}$  | -                 | -                 | -                  | -                 | For ramps / In mountains |
     
