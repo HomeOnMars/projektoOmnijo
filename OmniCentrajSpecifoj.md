@@ -304,13 +304,13 @@ Results
 - Highways
   - Gradient $s$ and Curve radius $R$ limit:
     
-    |             |  Gradient $s$   |  Curve radius $R$        | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Notes |
-    | ----------- | :-------------: | :----------------------: | :--------------------------: | --- | --- | --- | --- | ----- |
-    | -           |  $\leq  4  \%$  |  $\geq  512 \mathrm{m}$  |  $\simeq 120 \mathrm{km/h}$  | $\geq  90\degree$ | $\geq 127\degree$ | $\geq 152\degree$ | $\geq 166\degree$ | |
-    | Recommended |  $\leq  6  \%$  |  $\geq  288 \mathrm{m}$  |  $\simeq 100 \mathrm{km/h}$  | -                 | $\geq  97\degree$ | $\geq 133\degree$ | $\geq 155\degree$ | |
-    | Soft Limit  |  $\leq  8  \%$  |  $\geq  184 \mathrm{m}$  |  $\simeq  80 \mathrm{km/h}$  | -                 | -                 | $\geq 111\degree$ | $\geq 142\degree$ | For ramps / In mountains |
-    | -           |  $\leq  8  \%$  |  $\geq  120 \mathrm{m}$  |  $\simeq  60 \mathrm{km/h}$  | -                 | -                 | -                  | $\geq 124\degree$ | For ramps / In mountains |
-    | Hard Limit  |  $\leq  8  \%$  |  $\geq   32 \mathrm{m}$  |  $\simeq  40 \mathrm{km/h}$  | -                 | -                 | -                  | -                 | For ramps / In mountains |
+    |             |  Gradient $s/\\%$ |  Curve radius $R$        | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Notes |
+    | ----------- | :---------------: | :----------------------: | :--------------------------: | --- | --- | --- | --- | ----- |
+    | -           |  $\leq  4   \%$   |  $\geq  512 \mathrm{m}$  |  $\simeq 120 \mathrm{km/h}$  | $\geq  90\degree$ | $\geq 127\degree$ | $\geq 152\degree$ | $\geq 166\degree$ | |
+    | Recommended |  $\leq  6   \%$   |  $\geq  288 \mathrm{m}$  |  $\simeq 100 \mathrm{km/h}$  | -                 | $\geq  97\degree$ | $\geq 133\degree$ | $\geq 155\degree$ | |
+    | Soft Limit  |  $\leq  8   \%$   |  $\geq  184 \mathrm{m}$  |  $\simeq  80 \mathrm{km/h}$  | -                 | -                 | $\geq 111\degree$ | $\geq 142\degree$ | For ramps / In mountains |
+    | -           |  $\leq  8   \%$   |  $\geq  120 \mathrm{m}$  |  $\simeq  60 \mathrm{km/h}$  | -                 | -                 | -                  | $\geq 124\degree$ | For ramps / In mountains |
+    | Hard Limit  |  $\leq  8   \%$   |  $\geq   32 \mathrm{m}$  |  $\simeq  40 \mathrm{km/h}$  | -                 | -                 | -                  | -                 | For ramps / In mountains |
     
     - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
       i.e., $\theta_\mathrm{512m}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 512m.
@@ -328,7 +328,7 @@ Results
   - Gradient  limit:
     (Arbitrarily set to:)
     
-    |             | Gradient $s$     | Speed limit $v_\mathrm{max}$ | Notes |
+    |             | Gradient $s/\\%$ | Speed limit $v_\mathrm{max}$ | Notes |
     | ----------- | :--------------: | :--------------------------: | ----- |
     | Recommended |  $\leq 10  \%$   |  $\simeq  60 \mathrm{km/h}$  | Arterial    |
     | Soft Limit  |  $\leq 13.5\%$   |  $\simeq  50 \mathrm{km/h}$  | Collector   |
@@ -347,10 +347,10 @@ Results
 - Freight and old Passenger Railways
   - Gradient $s$ and Curve radius $R$ limit:
     
-    |             | Gradient $s$    | Curve radius $R$         | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
-    | ----------- | :-------------: | :----------------------: | :--------------------------: | --- | --- | --- | --- | ------------------- |
-    | Recommended |  $\leq  1.5\%$  |  $\geq  640 \mathrm{m}$  |  $\simeq 120 \mathrm{km/h}$  | $\geq 103\degree$ | $\geq 137\degree$ | $\geq 158\degree$ | $\geq 169\degree$ | |
-    | Hard Limit  |  $\leq  3.5\%$  |  $\geq  160 \mathrm{m}$  |  $\simeq  60 \mathrm{km/h}$  | -                 | -                 | $\geq 103\degree$ | $\geq 137\degree$ | Lithgow Zig Zag |
+    |             | Gradient $s/\\%$ | Curve radius $R$         | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
+    | ----------- | :--------------: | :----------------------: | :--------------------------: | --- | --- | --- | --- | ------------------- |
+    | Recommended |  $\leq  1.5 \%$  |  $\geq  640 \mathrm{m}$  |  $\simeq 120 \mathrm{km/h}$  | $\geq 103\degree$ | $\geq 137\degree$ | $\geq 158\degree$ | $\geq 169\degree$ | |
+    | Hard Limit  |  $\leq  3.5 \%$  |  $\geq  160 \mathrm{m}$  |  $\simeq  60 \mathrm{km/h}$  | -                 | -                 | $\geq 103\degree$ | $\geq 137\degree$ | Lithgow Zig Zag |
     
     - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
       i.e., $\theta_\mathrm{512m}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 512m.
@@ -373,20 +373,20 @@ Results
 - High Speed Railways
   - Gradient $s$ and Curve radius $R$ limit:
     
-    |             | Gradient $s$    | Curve radius $R$         | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
-    | ----------- | :-------------: | :----------------------: | :--------------------------: | --- | --- | --- | --- | ------------------- |
-    | Recommended |  $\leq  3.5\%$  |  $\geq 4000 \mathrm{m}$  |  $\simeq 300 \mathrm{km/h}$  | $\geq 166\degree$ | $\geq 173\degree$ | $\geq 177\degree$ | $\geq 179\degree$ | |
-    | Hard Limit  |  $\leq  4  \%$  |  $\geq 3500 \mathrm{m}$  |  $\simeq 250 \mathrm{km/h}$  | $\geq 164\degree$ | $\geq 172\degree$ | $\geq 176\degree$ | $\geq 178\degree$ | |
+    |             | Gradient $s/\\%$ | Curve radius $R$         | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
+    | ----------- | :--------------: | :----------------------: | :--------------------------: | --- | --- | --- | --- | ------------------- |
+    | Recommended |  $\leq  3.5 \%$  |  $\geq 4000 \mathrm{m}$  |  $\simeq 300 \mathrm{km/h}$  | $\geq 166\degree$ | $\geq 173\degree$ | $\geq 177\degree$ | $\geq 179\degree$ | |
+    | Hard Limit  |  $\leq  4   \%$  |  $\geq 3500 \mathrm{m}$  |  $\simeq 250 \mathrm{km/h}$  | $\geq 164\degree$ | $\geq 172\degree$ | $\geq 176\degree$ | $\geq 178\degree$ | |
     
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
 - Metro / Subway / Passenger Railways
   - Gradient $s$ and Curve radius $R$ limit:
     
-    |             | Gradient $s$    | Curve radius $R$  | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
-    | ----------- | :---------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
-    | Recommended |  $\leq  5.5\%$  |  $\geq  448 \mathrm{m}$  |  $\simeq 120 \mathrm{km/h}$  | -                 | $\geq 121\degree$ | $\geq   149\degree$ | $\geq 164\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;<br>($R$) Assuming tilting trains: see [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant). |
-    | Hard Limit  |  $\leq  7  \%$  |  $\geq  128 \mathrm{m}$  |  $\simeq 100 \mathrm{km/h}$  | -                 | -                 | $\geq   90\degree$  | $\geq 127\degree$ | ($s$) Bernina Railway, Switzerland;<br>($R$) Bay Area Rapid Transit, United States. |
+    |             | Gradient $s/\\%$ | Curve radius $R$  | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
+    | ----------- | :--------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
+    | Recommended |  $\leq  5.5 \%$  |  $\geq  448 \mathrm{m}$  |  $\simeq 120 \mathrm{km/h}$  | -                 | $\geq 121\degree$ | $\geq   149\degree$ | $\geq 164\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;<br>($R$) Assuming tilting trains: see [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant). |
+    | Hard Limit  |  $\leq  7   \%$  |  $\geq  128 \mathrm{m}$  |  $\simeq 100 \mathrm{km/h}$  | -                 | -                 | $\geq   90\degree$  | $\geq 127\degree$ | ($s$) Bernina Railway, Switzerland;<br>($R$) Bay Area Rapid Transit, United States. |
     
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
   - Source: (2024-08-17) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
@@ -395,10 +395,10 @@ Results
 - Trams
   - Gradient $s$ limit:
     
-    |             | Gradient $s$    | Speed limit $v_\mathrm{max}$ | Real world examples |
-    | ----------- | :-------------: | :--------------------------: | ------------------- |
-    | Recommended |  $\leq 10  \%$  |  $\simeq  90 \mathrm{km/h}$  | Sheffield Supertram, Sheffield |
-    | Hard Limit  |  $\leq 13.5\%$  |  $\simeq  60 \mathrm{km/h}$  | Lisbon Tramways, Portugal |
+    |             | Gradient $s/\\%$ | Speed limit $v_\mathrm{max}$ | Real world examples |
+    | ----------- | :--------------: | :--------------------------: | ------------------- |
+    | Recommended |  $\leq 10   \%$  |  $\simeq  90 \mathrm{km/h}$  | Sheffield Supertram, Sheffield |
+    | Hard Limit  |  $\leq 13.5 \%$  |  $\simeq  60 \mathrm{km/h}$  | Lisbon Tramways, Portugal |
     
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
 
