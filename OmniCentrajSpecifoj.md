@@ -349,7 +349,7 @@ Results
     
     |             | Gradient $s$    | Curve radius $R$         | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
     | ----------- | :-------------: | :----------------------: | :--------------------------: | --- | --- | --- | --- | ------------------- |
-    | Recommended |  $\leq  1.5\%$  |  $\geq  640 \mathrm{m}$  |  $\simeq 120 \mathrm{km/h}$  | $\geq 103\degree$ | $\geq 137\degree$ | $\geq 158\degree$ | $ \geq 169\degree $ | |
+    | Recommended |  $\leq  1.5\%$  |  $\geq  640 \mathrm{m}$  |  $\simeq 120 \mathrm{km/h}$  | $\geq 103\degree$ | $\geq 137\degree$ | $\geq 158\degree$ | $\geq 169\degree$ | |
     | Hard Limit  |  $\leq  3.5\%$  |  $\geq  160 \mathrm{m}$  |  $\simeq  60 \mathrm{km/h}$  | -                 | -                 | $\geq 103\degree$ | $\geq 137\degree$ | Lithgow Zig Zag |
     
     - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
@@ -435,26 +435,27 @@ Results
 
 - Palm Trees
   - Esperanto Name: Palmo
-  - Intolerable towards cold climates, so not really appropriate here.
+  - Intolerable towards cold climates, with latitude upto $44\degree \mathrm{N/S}$ only,
+    so they are not really appropriate here.
     Still, they look so cool! So I am taking some liberties.
-  - Source: https://en.wikipedia.org/wiki/Arecaceae#Range_and_habitat
+  - Source: (2024-09-12) [Wikipedia](https://en.wikipedia.org/wiki/Arecaceae#Range_and_habitat)
 - Briches
   - Esperanto Name: Betulo
   - Altitude:  600m to 1400m
-  - Source: https://www.srs.fs.usda.gov/pubs/misc/ag_654/volume_2/betula/lenta.htm
+  - Source: (2024-09-12) [US Dept. of Agriculture](https://www.srs.fs.usda.gov/pubs/misc/ag_654/volume_2/betula/lenta.htm)
 - Pines
   - Esperanto Name: Pino
   - Altitude: 1100m to 4000m
-  - Source: https://research.fs.usda.gov/rmrs/projects/high-elevation-white-pines
+  - Source: (2024-09-12) [US Dept. of Agriculture](https://research.fs.usda.gov/rmrs/projects/high-elevation-white-pines)
 - Spruces
   - Esperanto Name: Piceo
   - Altitude: 2000m to 3500m
-  - Source: https://csfs.colostate.edu/colorado-trees/colorados-major-tree-species/
+  - Source: (2024-09-12) [Colorado State University](https://csfs.colostate.edu/colorado-trees/colorados-major-tree-species/)
 
 
 #### See Also
 
-- https://en.wikipedia.org/wiki/Tree_line#Tree_species_near_tree_line
+- (2024-09-12) [Wikipedia: Tree line](https://en.wikipedia.org/wiki/Tree_line#Tree_species_near_tree_line)
 
 
 
