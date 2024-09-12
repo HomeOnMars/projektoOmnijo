@@ -143,7 +143,7 @@ Road name format examples:
 
 See also:
 
-- Road Builder mod by TDW: https://mods.paradoxplaza.com/mods/87190/Windows
+- (2024-09-12) [Road Builder mod](https://mods.paradoxplaza.com/mods/87190/Windows) by TDW
 
 
 #### Publika Transportaj Linioj<br>Public Transit Lines
@@ -412,7 +412,7 @@ Results
 
 #### Brushes Configuration
 
-- Brush   3: Altitude $<$100m; Beaches
+- Brush   3: Altitude $<$ 100m; Beaches
   - Palm Trees (Coconut, Florida, Royal)
 - Brush W-D: Altitude  100m to  600m
   - Briches
