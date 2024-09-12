@@ -214,9 +214,7 @@ Use at your own risk.***
 Based on [Planck natural units](https://en.wikipedia.org/wiki/Natural_units#Planck_units).
 
 Track gauge in *RdO* for trains, metros, and trams are the same:
-$$
-    d_\mathrm{gauge} \equiv \pi e \, 2^{113} \, l_P = 1.4333~\mathrm{m},
-$$
+$$d_\mathrm{gauge} \equiv \pi e \, 2^{113} \, l_P = 1.4333~\mathrm{m},$$
 which is compatible with the standard gauge ($1.4351~\mathrm{m}$)
 with a difference of only $2~\mathrm{mm}$.
 (Hopefully that's small enough...)
@@ -224,7 +222,7 @@ with a difference of only $2~\mathrm{mm}$.
 ---
 
 Note:
-$ l_P \equiv \sqrt{\frac{\hbar G}{c^3}} $
+$l_P \equiv \sqrt{\frac{\hbar G}{c^3}}$
 is the [Planck length](https://simple.wikipedia.org/wiki/Planck_length#):
 $c$
 is the speed of light,
@@ -302,41 +300,39 @@ Results
 #### Roads
 
 - Highways
-  - Gradient $ s $ and Curve radius $ R $ limit:
+  - Gradient $s$and Curve radius $R$limit:
     
-    |             | Gradient $ s $    | Curve radius $ R $         | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Notes |
-    | ----------- | :---------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ----- |
-    | -           |  $ \leq  4  \% $  |  $ \geq  512 \mathrm{m} $  |  $ \simeq 120 \mathrm{km/h} $  | $ \geq  90\degree $ | $ \geq 127\degree $ | $ \geq 152\degree $ | $ \geq 166\degree $ | |
-    | Recommended |  $ \leq  6  \% $  |  $ \geq  288 \mathrm{m} $  |  $ \simeq 100 \mathrm{km/h} $  | -                   | $ \geq  97\degree $ | $ \geq 133\degree $ | $ \geq 155\degree $ | |
-    | Soft Limit  |  $ \leq  8  \% $  |  $ \geq  184 \mathrm{m} $  |  $ \simeq  80 \mathrm{km/h} $  | -                   | -                   | $ \geq 111\degree $ | $ \geq 142\degree $ | For ramps / In mountains |
-    | -           |  $ \leq  8  \% $  |  $ \geq  120 \mathrm{m} $  |  $ \simeq  60 \mathrm{km/h} $  | -                   | -                   | -                     | $ \geq 124\degree $ | For ramps / In mountains |
-    | Hard Limit  |  $ \leq  8  \% $  |  $ \geq   32 \mathrm{m} $  |  $ \simeq  40 \mathrm{km/h} $  | -                   | -                   | -                   | -                   | For ramps / In mountains |
+    |             |  Gradient $s$   |  Curve radius $R$        | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Notes |
+    | ----------- | :-------------: | :----------------------: | :--------------------------: | --- | --- | --- | --- | ----- |
+    | -           |  $\leq  4  \%$  |  $\geq  512 \mathrm{m}$  |  $\simeq 120 \mathrm{km/h}$  | $\geq  90\degree$ | $\geq 127\degree$ | $\geq 152\degree$ | $\geq 166\degree$ | |
+    | Recommended |  $\leq  6  \%$  |  $\geq  288 \mathrm{m}$  |  $\simeq 100 \mathrm{km/h}$  | -                 | $\geq  97\degree$ | $\geq 133\degree$ | $\geq 155\degree$ | |
+    | Soft Limit  |  $\leq  8  \%$  |  $\geq  184 \mathrm{m}$  |  $\simeq  80 \mathrm{km/h}$  | -                 | -                 | $\geq 111\degree$ | $ \geq 142\degree $ | For ramps / In mountains |
+    | -           |  $\leq  8  \%$  |  $\geq  120 \mathrm{m}$  |  $\simeq  60 \mathrm{km/h}$  | -                 | -                 | -                  | $\geq 124\degree$ | For ramps / In mountains |
+    | Hard Limit  |  $\leq  8  \%$  |  $\geq   32 \mathrm{m}$  |  $\simeq  40 \mathrm{km/h}$  | -                 | -                 | -                  | -                 | For ramps / In mountains |
     
-    - $ \theta_{d} $ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
-      i.e., $ \theta_\mathrm{512m} $ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 512m.
-    - Source: [2024-08-17] (US) https://en.wikipedia.org/wiki/Grade_(slope)#Roads
-    - Source: [2024-08-17] (EU) https://en.wikipedia.org/wiki/International_E-road_network#Road_design_standards
+    - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
+      i.e., $\theta_\mathrm{512m}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 512m.
+    - Source: (2024-08-17) [Wikipedia](https://en.wikipedia.org/wiki/Grade_(slope)#Roads): US
+    - Source: (2024-08-17) [Wikipedia](https://en.wikipedia.org/wiki/International_E-road_network#Road_design_standards): EU
       - According to the source,
-        $ R \geq 1000 \mathrm{m} $ for $ v_\mathrm{max} \simeq 140 \mathrm{km/h} $; and
-        $ R \geq  120 \mathrm{m} $ for $ v_\mathrm{max} \simeq  60 \mathrm{km/h} $.
-      - ~~Assuming the Curve radius limit $ R \propto v_\mathrm{max}^2 $,
-        i.e. $ R \approx v_\mathrm{max}^2 / (30 \mathrm{mh/km}) $ for lower  limit,
-        and  $ R \approx v_\mathrm{max}^2 / (20 \mathrm{mh/km}) $ for higher limit~~.
-    - Source: [2024-08-23] (for $R$) https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256301  
-      - figure 8: Predictions of speed thresholds of the truck in a sharp turn 
-        https://doi.org/10.1371/journal.pone.0256301.g008
-        .
+        $R \geq 1000 \mathrm{m}$ for $v_\mathrm{max} \simeq 140 \mathrm{km/h}$; and
+        $R \geq  120 \mathrm{m}$ for $v_\mathrm{max} \simeq  60 \mathrm{km/h}$.
+      - ~~Assuming the Curve radius limit $R \propto v_\mathrm{max}^2$,
+        i.e. $R \approx v_\mathrm{max}^2 / (30 \mathrm{mh/km})$ for lower  limit,
+        and  $R \approx v_\mathrm{max}^2 / (20 \mathrm{mh/km})$ for higher limit~~.
+    - Source: (2024-08-23) [Xin et al. (2021)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256301): for $R$
+      - [figure 8](https://doi.org/10.1371/journal.pone.0256301.g008): Predictions of speed thresholds of the truck in a sharp turn 
 - Arterial / Collector / Local Roads
   - Gradient  limit:
     (Arbitrarily set to:)
     
-    |             | Gradient $ s $    | Speed limit $ v_\mathrm{max} $ | Notes |
-    | ----------- | :---------------: | :----------------------------: | ----- |
-    | Recommended |  $ \leq 10  \% $  |  $ \simeq  60 \mathrm{km/h} $  | Arterial    |
-    | Soft Limit  |  $ \leq 13.5\% $  |  $ \simeq  50 \mathrm{km/h} $  | Collector   |
-    | Hard Limit  |  $ \leq 30  \% $* |  $ \simeq  25 \mathrm{km/h} $  | Local roads |
+    |             | Gradient $s$     | Speed limit $v_\mathrm{max}$ | Notes |
+    | ----------- | :--------------: | :--------------------------: | ----- |
+    | Recommended |  $\leq 10  \%$   |  $\simeq  60 \mathrm{km/h}$  | Arterial    |
+    | Soft Limit  |  $\leq 13.5\%$   |  $\simeq  50 \mathrm{km/h}$  | Collector   |
+    | Hard Limit  |  $\leq 30  \%$\* |  $\simeq  25 \mathrm{km/h}$  | Local roads |
 
-    * Note that vanilla game by default only allow up to $20 \%$ gradient.
+    \* Note that vanilla game by default only allow up to $20 \%$ gradient.
     
 - Bike paths
   - TBD
