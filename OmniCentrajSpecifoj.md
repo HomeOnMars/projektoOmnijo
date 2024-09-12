@@ -201,6 +201,94 @@ Use at your own risk.***
 
 
 
+### Normoj<br>Standards
+
+-------------------------------------------------------------------------------
+
+
+#### Sistemo de Unuoj<br>System of Units
+
+
+(Detailed descriptions coming soon)
+
+Based on [Planck natural units](https://en.wikipedia.org/wiki/Natural_units#Planck_units).
+
+Track gauge in *RdO* for trains, metros, and trams are the same:
+$ d_\mathrm{gauge} \equiv \pi e \, 2^{113} \, l_P = 1.4333 \mathrm{m} $,
+which is compatible with the standard gauge ($ 1.4351 \mathrm{m} $)
+with a difference of only $ 2 \mathrm{mm}$.
+(Hopefully that's small enough...)
+
+---
+
+Note:
+$l_P \equiv \sqrt{\frac{\hbar G}{c^3}}$ is the [Planck length](https://simple.wikipedia.org/wiki/Planck_length#):
+$c$ is the speed of light,
+$\hbar$ is the reduced Planck constant, and
+$G$ is the gravitational constant.
+
+---
+
+Code illustrations
+
+```python
+    # natural units
+    # https://en.wikipedia.org/wiki/Natural_units#Planck_units
+    
+    from astropy import units
+    from astropy import constants as const
+    from numpy import pi
+    import numpy as np
+    
+    
+    u_nat : dict[str, units.UnitBase|units.Quantity] = {}
+    u_nat['dist'] = ((const.hbar * const.G / const.c**3)**0.5).si
+    u_nat['mass'] = ((const.hbar * const.c / const.G   )**0.5).si
+    u_nat['time'] = ((const.hbar * const.G / const.c**5)**0.5).si
+    u_nat['temp'] = ((const.hbar * const.c**5 / const.G)**0.5 / const.k_B).si
+    
+    # exponent
+    u_rdo_exp : dict[str, int] = {k: np.ceil(-np.log2(v.si.value)) for k, v in u_nat.items()} # default
+    u_rdo_exp['dist'] = 115   # = 5 * 23
+    u_rdo_exp['mass'] = 24    # = 2**3 * 3
+    u_rdo_exp['time'] = 144   # = 2**4 * 3**2
+    u_rdo_exp['temp'] =-107
+    # coefficient
+    u_rdo_eff : dict[str, float] = {k: 1.0 for k, v in u_nat.items()}
+    u_rdo_eff['dist'] = 1.5
+    
+    u_rdo = {k: u_nat[k] * u_rdo_eff[k] * 2**u_rdo_exp[k] for k in u_nat.keys()}
+
+    
+    track_standard_gauge = (4*units.imperial.foot + 8.5 * units.imperial.inch).si
+    track_rdo_gauge = np.pi*np.e/6 * u_rdo['dist'] # i.e., np.pi * np.e * 2**113 * u_nat['dist']
+    temp_refs_C = [0., 36.8, 100.] * units.deg_C
+    temp_refs_K = temp_refs_C.to(units.K, equivalencies=units.equivalencies.temperature())
+    
+    
+    print("\n".join([f"{k:4}: unit = {u_rdo[k]:6.4f} \t ==  {u_rdo_eff[k]:3.2f} * 2**{u_rdo_exp[k]: 4d} * [naturalUnit: {v:.4e}]" for k, v in u_nat.items()]))
+    print()
+    print(f"dist: {track_standard_gauge = } is {track_standard_gauge.to(u_rdo['dist']):6.4f}")
+    print(f"dist: proposed new guage: {track_rdo_gauge:6.4f}")
+    print(f"temp: {temp_refs_C} is {temp_refs_K}, which is {temp_refs_K.to(u_rdo['temp'])} ")
+```
+
+Results
+
+```python
+    dist: unit = 1.0070 m 	 ==  1.50 * 2** 115 * [naturalUnit: 1.6163e-35 m]
+    mass: unit = 0.3651 kg 	 ==  1.00 * 2**  24 * [naturalUnit: 2.1764e-08 kg]
+    time: unit = 1.2023 s 	 ==  1.00 * 2** 144 * [naturalUnit: 5.3912e-44 s]
+    temp: unit = 0.8732 K 	 ==  1.00 * 2**-107 * [naturalUnit: 1.4168e+32 K]
+    
+    dist: track_standard_gauge = <Quantity 1.4351 m> is 1.4251 1.00705 m
+    dist: proposed new guage: 1.4333 m
+    temp: [  0.   36.8 100. ] deg_C is [273.15 309.95 373.15] K, which is [312.82902964 354.97476748 427.35549116] 0.873161 K
+```
+
+
+
+
 ### Networks
 
 -------------------------------------------------------------------------------
@@ -265,7 +353,7 @@ Use at your own risk.***
       i.e., $ \theta_\mathrm{512m} $ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 512m.
     - Angle $ \theta_{d} $ equation:
       $ \theta_{d} = 2 \tan^{-1}{\frac{R}{d}} $
-      ```
+      ```python
           # python code
           import numpy as np
           # Remember to translate radian into degree
