@@ -214,9 +214,9 @@ Use at your own risk.***
 Based on [Planck natural units](https://en.wikipedia.org/wiki/Natural_units#Planck_units).
 
 Track gauge in *RdO* for trains, metros, and trams are the same:
-$$d_\mathrm{gauge} \equiv \pi e ~ 2^{113} ~ l_P = 1.4333~\mathrm{m},$$
-which is compatible with the standard gauge ($1.4351~\mathrm{m}$)
-with a difference of only $2~\mathrm{mm}$.
+$$d_\mathrm{gauge} \equiv \pi e ~ 2^{113} ~ l_P = 1.4333 \mathrm{m},$$
+which is compatible with the standard gauge ($1.4351 \mathrm{m}$)
+with a difference of only $2 \mathrm{mm}$.
 (Hopefully that's small enough...)
 
 ---
@@ -345,17 +345,17 @@ Results
 #### Rails
 
 - Freight and old Passenger Railways
-  - Gradient $ s $ and Curve radius $ R $ limit:
+  - Gradient $s$ and Curve radius $R$ limit:
     
-    |             | Gradient $ s $    | Curve radius $ R $         | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Real world examples |
-    | ----------- | :---------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
-    | Recommended |  $ \leq  1.5\% $  |  $ \geq  640 \mathrm{m} $  |  $ \simeq 120 \mathrm{km/h} $  | $ \geq 103\degree $ | $ \geq 137\degree $ | $ \geq 158\degree $ | $ \geq 169\degree $ | |
-    | Hard Limit  |  $ \leq  3.5\% $  |  $ \geq  160 \mathrm{m} $  |  $ \simeq  60 \mathrm{km/h} $  | -                   | -                   | $ \geq 103\degree $ | $ \geq 137\degree $ | Lithgow Zig Zag |
+    |             | Gradient $s$    | Curve radius $R$         | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
+    | ----------- | :-------------: | :----------------------: | :--------------------------: | --- | --- | --- | --- | ------------------- |
+    | Recommended |  $\leq  1.5\%$  |  $\geq  640 \mathrm{m}$  |  $\simeq 120 \mathrm{km/h}$  | $\geq 103\degree$ | $\geq 137\degree$ | $\geq 158\degree$ | $ \geq 169\degree $ | |
+    | Hard Limit  |  $\leq  3.5\%$  |  $\geq  160 \mathrm{m}$  |  $\simeq  60 \mathrm{km/h}$  | -                 | -                 | $\geq 103\degree$ | $\geq 137\degree$ | Lithgow Zig Zag |
     
-    - $ \theta_{d} $ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
-      i.e., $ \theta_\mathrm{512m} $ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 512m.
-    - Angle $ \theta_{d} $ equation:
-      $ \theta_{d} = 2 \tan^{-1}{\frac{R}{d}} $
+    - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
+      i.e., $\theta_\mathrm{512m}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 512m.
+    - Angle $\theta_{d}$ equation:
+      $\theta_{d} = 2 \tan^{-1}{\frac{R}{d}}$
       ```python
           # python code
           import numpy as np
@@ -365,42 +365,42 @@ Results
           print([(d, theta_deg(R=720, d=d)) for d in (512, 256, 128, 64)])
           print(theta_deg(R=4000, d=512))
       ```
-    - Source: [2024-08-16] ($ R $) https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant
-    - Source: [2024-08-16] ($ R $) https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii (Lithgow Zig Zag)
-    - Source: [2024-08-16] ($ s $) https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#
+    - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant): $R$ info
+    - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples (see Lithgow Zig Zag)
+    - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
     - Note: Liberties have been taken for the hard limit of $s$ due to steep terrain in the map. Also steeper is more fun.
-  - Length limit (for track intersections): $ > 500\mathrm{m} $ (25 cars with 20m per car)
+  - Length limit (for track intersections): $> 500\mathrm{m}$ (25 cars with 20m per car)
 - High Speed Railways
-  - Gradient $ s $ and Curve radius $ R $ limit:
+  - Gradient $s$ and Curve radius $R$ limit:
     
-    |             | Gradient $ s $    | Curve radius $ R $         | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Real world examples |
-    | ----------- | :---------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
-    | Recommended |  $ \leq  3.5\% $  |  $ \geq 4000 \mathrm{m} $  |  $ \simeq 300 \mathrm{km/h} $  | $ \geq 166\degree $ | $ \geq 173\degree $ | $ \geq 177\degree $ | $ \geq 179\degree $ | |
-    | Hard Limit  |  $ \leq  4  \% $  |  $ \geq 3500 \mathrm{m} $  |  $ \simeq 250 \mathrm{km/h} $  | $ \geq 164\degree $ | $ \geq 172\degree $ | $ \geq 176\degree $ | $ \geq 178\degree $ | |
+    |             | Gradient $s$    | Curve radius $R$         | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
+    | ----------- | :-------------: | :----------------------: | :--------------------------: | --- | --- | --- | --- | ------------------- |
+    | Recommended |  $\leq  3.5\%$  |  $\geq 4000 \mathrm{m}$  |  $\simeq 300 \mathrm{km/h}$  | $\geq 166\degree$ | $\geq 173\degree$ | $\geq 177\degree$ | $\geq 179\degree$ | |
+    | Hard Limit  |  $\leq  4  \%$  |  $\geq 3500 \mathrm{m}$  |  $\simeq 250 \mathrm{km/h}$  | $\geq 164\degree$ | $\geq 172\degree$ | $\geq 176\degree$ | $\geq 178\degree$ | |
     
-    - Source: [2024-08-16] https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#
-    - Source: [2024-08-16] https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii
+    - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
+    - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
 - Metro / Subway / Passenger Railways
-  - Gradient $ s $ and Curve radius $ R $ limit:
+  - Gradient $s$ and Curve radius $R$ limit:
     
-    |             | Gradient $ s $    | Curve radius $ R $  | Speed limit $ v_\mathrm{max} $ | $ \theta_\mathrm{512m} $ | $ \theta_\mathrm{256m} $ | $ \theta_\mathrm{128m} $ | $ \theta_\mathrm{64m} $ | Real world examples |
+    |             | Gradient $s$    | Curve radius $R$  | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
     | ----------- | :---------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
-    | Recommended |  $ \leq  5.5\% $  |  $ \geq  448 \mathrm{m} $  |  $ \simeq 120 \mathrm{km/h} $  | -                   | $ \geq 121\degree $ | $ \geq   149\degree $ | $ \geq 164\degree $ | [$ s $] Höllentalbahn (Black Forest), Germany;<br>[$ R $] (Assumed tilting trains; See https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant ) |
-    | Hard Limit  |  $ \leq  7  \% $  |  $ \geq  128 \mathrm{m} $  |  $ \simeq 100 \mathrm{km/h} $  | -                   | -                   | $ \geq   90\degree $  | $ \geq 127\degree $ | [$ s $] Bernina Railway, Switzerland;<br>[$ R $] Bay Area Rapid Transit, United States. |
+    | Recommended |  $\leq  5.5\%$  |  $\geq  448 \mathrm{m}$  |  $\simeq 120 \mathrm{km/h}$  | -                 | $\geq 121\degree$ | $\geq   149\degree$ | $\geq 164\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;<br>($R$) Assuming tilting trains: see [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant). |
+    | Hard Limit  |  $\leq  7  \%$  |  $\geq  128 \mathrm{m}$  |  $\simeq 100 \mathrm{km/h}$  | -                 | -                 | $\geq   90\degree$  | $\geq 127\degree$ | ($s$) Bernina Railway, Switzerland;<br>($R$) Bay Area Rapid Transit, United States. |
     
-  - Source: [2024-08-16] ($ s $) https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways
-  - Source: [2024-08-17] ($ R $) https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii
+  - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
+  - Source: (2024-08-17) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
     - Note: $R$ can go as low as 64m as seen in Central line, London Underground, United Kingdom; but that's probably too tight.
-  - Source: [2024-08-27] ($ R $) https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant
+  - Source: (2024-08-27) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant): $R$ info.
 - Trams
-  - Gradient $ s $ limit:
+  - Gradient $s$ limit:
     
-    |             | Gradient $ s $    | Speed limit $ v_\mathrm{max} $ | Real world examples |
-    | ----------- | :---------------: | :----------------------------: | ------------------- |
-    | Recommended |  $ \leq 10  \% $  |  $ \simeq  90 \mathrm{km/h} $  | Sheffield Supertram, Sheffield |
-    | Hard Limit  |  $ \leq 13.5\% $  |  $ \simeq  60 \mathrm{km/h} $  | Lisbon Tramways, Portugal |
+    |             | Gradient $s$    | Speed limit $v_\mathrm{max}$ | Real world examples |
+    | ----------- | :-------------: | :--------------------------: | ------------------- |
+    | Recommended |  $\leq 10  \%$  |  $\simeq  90 \mathrm{km/h}$  | Sheffield Supertram, Sheffield |
+    | Hard Limit  |  $\leq 13.5\%$  |  $\simeq  60 \mathrm{km/h}$  | Lisbon Tramways, Portugal |
     
-  - Source: [2024-08-16] https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#Examples
+  - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
 
 
 
