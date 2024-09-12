@@ -214,18 +214,23 @@ Use at your own risk.***
 Based on [Planck natural units](https://en.wikipedia.org/wiki/Natural_units#Planck_units).
 
 Track gauge in *RdO* for trains, metros, and trams are the same:
-$ d_\mathrm{gauge} \equiv \pi e \, 2^{113} \, l_P = 1.4333 \mathrm{m} $,
-which is compatible with the standard gauge ($ 1.4351 \mathrm{m} $)
-with a difference of only $ 2 \mathrm{mm}$.
+$$
+    d_\mathrm{gauge} \equiv \pi e \, 2^{113} \, l_P = 1.4333~\mathrm{m},
+$$
+which is compatible with the standard gauge ($1.4351~\mathrm{m}$)
+with a difference of only $2~\mathrm{mm}$.
 (Hopefully that's small enough...)
 
 ---
 
 Note:
-$l_P \equiv \sqrt{\frac{\hbar G}{c^3}}$ is the [Planck length](https://simple.wikipedia.org/wiki/Planck_length#):
-$c$ is the speed of light,
+$ l_P \equiv \sqrt{\frac{\hbar G}{c^3}} $
+is the [Planck length](https://simple.wikipedia.org/wiki/Planck_length#):
+$c$
+is the speed of light,
 $\hbar$ is the reduced Planck constant, and
-$G$ is the gravitational constant.
+$G$
+is the gravitational constant.
 
 ---
 
