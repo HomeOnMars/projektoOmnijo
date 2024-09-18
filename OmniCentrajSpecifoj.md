@@ -261,10 +261,10 @@ Code illustrations
     u_rdo_exp['temp'] =-106   # = 2    * 53
     # coefficient
     u_rdo_eff : dict[str, float] = {k: 1.0 for k, v in u_nat.items()} # default
-    u_rdo_eff['dist'] = 12/16    # 3/4
-    u_rdo_eff['mass'] = 11/16    #
-    u_rdo_eff['time'] = 13/16    #
-    u_rdo_eff['temp'] =  9/16    #
+    u_rdo_eff['dist'] = 191/256
+    u_rdo_eff['mass'] = 175/256
+    u_rdo_eff['time'] = 213/256
+    u_rdo_eff['temp'] = 147/256
     
     u_rdo = {k: u_nat[k] * u_rdo_eff[k] * 2**u_rdo_exp[k] for k in u_nat.keys()}
     
@@ -276,7 +276,7 @@ Code illustrations
     
     
     print("\n".join([
-        f"{k:4}: unit = {u_rdo[k]:6.4f} \t ==  {u_rdo_eff[k]:6.4f} * 2**{u_rdo_exp[k]: 4d} * [naturalUnit: {v:.4e}]"
+        f"{k:4}: unit = {u_rdo[k]:6.4f} \t ==  {u_rdo_eff[k]:10.8f} * 2**{u_rdo_exp[k]: 4d} * [naturalUnit: {v:.4e}]"
         for k, v in u_nat.items()]))
     print()
     print(f"dist: {track_standard_gauge = } is {track_standard_gauge.to(u_rdo['dist']):6.4f}")
@@ -287,14 +287,14 @@ Code illustrations
 Results
 
 ```python
-    dist: unit = 1.0070 m 	 ==  0.7500 * 2** 116 * [naturalUnit: 1.6163e-35 m]
-    mass: unit = 1.0041 kg 	 ==  0.6875 * 2**  26 * [naturalUnit: 2.1764e-08 kg]
-    time: unit = 0.9769 s 	 ==  0.8125 * 2** 144 * [naturalUnit: 5.3912e-44 s]
-    temp: unit = 0.9823 K 	 ==  0.5625 * 2**-106 * [naturalUnit: 1.4168e+32 K]
+    dist: unit = 1.0018 m 	 ==  0.74609375 * 2** 116 * [naturalUnit: 1.6163e-35 m]
+    mass: unit = 0.9984 kg 	 ==  0.68359375 * 2**  26 * [naturalUnit: 2.1764e-08 kg]
+    time: unit = 1.0003 s 	 ==  0.83203125 * 2** 144 * [naturalUnit: 5.3912e-44 s]
+    temp: unit = 1.0028 K 	 ==  0.57421875 * 2**-106 * [naturalUnit: 1.4168e+32 K]
     
-    dist: track_standard_gauge = <Quantity 1.4351 m> is 1.4251 1.00705 m
-    dist: proposed new guage: 1.4333 m 	i.e.  1.4233 1.00705 m
-    temp: [  0.   36.8 100. ] deg_C is [273.15 309.95 373.15] K, which is [278.07024857 315.53312665 379.8715477 ] 0.982306 K
+    dist: track_standard_gauge = <Quantity 1.4351 m> is 1.4325 1.0018 m
+    dist: proposed new guage: 1.4259 m 	i.e.  1.4233 1.0018 m
+    temp: [  0.   36.8 100. ] deg_C is [273.15 309.95 373.15] K, which is [272.39534554 309.09367509 372.11906713] 1.00277 K
 ```
 
 
