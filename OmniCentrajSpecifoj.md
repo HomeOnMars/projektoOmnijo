@@ -245,24 +245,29 @@ Code illustrations
     import numpy as np
     
     
+    # u_nat: Planck natural units
     u_nat : dict[str, units.UnitBase|units.Quantity] = {}
     u_nat['dist'] = ((const.hbar * const.G / const.c**3)**0.5).si
     u_nat['mass'] = ((const.hbar * const.c / const.G   )**0.5).si
     u_nat['time'] = ((const.hbar * const.G / const.c**5)**0.5).si
     u_nat['temp'] = ((const.hbar * const.c**5 / const.G)**0.5 / const.k_B).si
     
+    # u_rdo: RdO standard units
     # exponent
     u_rdo_exp : dict[str, int] = {k: np.ceil(-np.log2(v.si.value)) for k, v in u_nat.items()} # default
-    u_rdo_exp['dist'] = 115   # = 5 * 23
-    u_rdo_exp['mass'] = 24    # = 2**3 * 3
+    u_rdo_exp['dist'] = 116   # = 2**2 * 29
+    u_rdo_exp['mass'] = 26    # = 2    * 13
     u_rdo_exp['time'] = 144   # = 2**4 * 3**2
-    u_rdo_exp['temp'] =-107
+    u_rdo_exp['temp'] =-106   # = 2    * 53
     # coefficient
-    u_rdo_eff : dict[str, float] = {k: 1.0 for k, v in u_nat.items()}
-    u_rdo_eff['dist'] = 1.5
+    u_rdo_eff : dict[str, float] = {k: 1.0 for k, v in u_nat.items()} # default
+    u_rdo_eff['dist'] = 12/16    # 3/4
+    u_rdo_eff['mass'] = 11/16    #
+    u_rdo_eff['time'] = 13/16    #
+    u_rdo_eff['temp'] =  9/16    #
     
     u_rdo = {k: u_nat[k] * u_rdo_eff[k] * 2**u_rdo_exp[k] for k in u_nat.keys()}
-
+    
     
     track_standard_gauge = (4*units.imperial.foot + 8.5 * units.imperial.inch).si
     track_rdo_gauge = np.pi*np.e/6 * u_rdo['dist'] # i.e., np.pi * np.e * 2**113 * u_nat['dist']
@@ -271,27 +276,26 @@ Code illustrations
     
     
     print("\n".join([
-        f"{k:4}: unit = {u_rdo[k]:6.4f} \t ==  {u_rdo_eff[k]:3.2f} * 2**{u_rdo_exp[k]: 4d} * [naturalUnit: {v:.4e}]"
+        f"{k:4}: unit = {u_rdo[k]:6.4f} \t ==  {u_rdo_eff[k]:6.4f} * 2**{u_rdo_exp[k]: 4d} * [naturalUnit: {v:.4e}]"
         for k, v in u_nat.items()]))
     print()
     print(f"dist: {track_standard_gauge = } is {track_standard_gauge.to(u_rdo['dist']):6.4f}")
-    print(f"dist: proposed new guage: {track_rdo_gauge:6.4f}")
+    print(f"dist: proposed new guage: {track_rdo_gauge:6.4f} \ti.e.  {track_rdo_gauge.to(u_rdo['dist']):6.4f}")
     print(f"temp: {temp_refs_C} is {temp_refs_K}, which is {temp_refs_K.to(u_rdo['temp'])} ")
 ```
 
 Results
 
 ```python
-    dist: unit = 1.0070 m 	 ==  1.50 * 2** 115 * [naturalUnit: 1.6163e-35 m]
-    mass: unit = 0.3651 kg 	 ==  1.00 * 2**  24 * [naturalUnit: 2.1764e-08 kg]
-    time: unit = 1.2023 s 	 ==  1.00 * 2** 144 * [naturalUnit: 5.3912e-44 s]
-    temp: unit = 0.8732 K 	 ==  1.00 * 2**-107 * [naturalUnit: 1.4168e+32 K]
+    dist: unit = 1.0070 m 	 ==  0.7500 * 2** 116 * [naturalUnit: 1.6163e-35 m]
+    mass: unit = 1.0041 kg 	 ==  0.6875 * 2**  26 * [naturalUnit: 2.1764e-08 kg]
+    time: unit = 0.9769 s 	 ==  0.8125 * 2** 144 * [naturalUnit: 5.3912e-44 s]
+    temp: unit = 0.9823 K 	 ==  0.5625 * 2**-106 * [naturalUnit: 1.4168e+32 K]
     
     dist: track_standard_gauge = <Quantity 1.4351 m> is 1.4251 1.00705 m
-    dist: proposed new guage: 1.4333 m
-    temp: [  0.   36.8 100. ] deg_C is [273.15 309.95 373.15] K, which is [312.82902964 354.97476748 427.35549116] 0.873161 K
+    dist: proposed new guage: 1.4333 m 	i.e.  1.4233 1.00705 m
+    temp: [  0.   36.8 100. ] deg_C is [273.15 309.95 373.15] K, which is [278.07024857 315.53312665 379.8715477 ] 0.982306 K
 ```
-
 
 
 
