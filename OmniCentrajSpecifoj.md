@@ -61,13 +61,14 @@ Detailed Information
 | Government Name   | OCR  | Omnija Centra Registaro |
 | Local Authority   | OCG  | OmniCentra    Gvidado   |
 
-| [Fictional] Background | Name |
+| (Fikciaj) Fonaj Informoj<br>(Fictional) Background Information | Priskribo<br>Description |
 | :---------------- | ---- |
-| City Background   | Planned New Capital |
-| Official Language | Esperanto (transitioning from English in the next 20 years) |
-| Official Religion | Pastafarianismo |
-| Country Leader    | Reĝino Serena de Omnijo |
-| City Designers    | Ĉuĉjo la Arkitekto  kaj  Ĝejnjo la Suverenino |
+| Urba Fono<br>City Background   | Planned New Capital |
+| Oficiala Lingvo<br>Official Language | Esperanto (transitioning from English in the next 20 years) |
+| Oficiala Religio<br>Official Religion | Pastafarianismo |
+| Oficialaj Koloroj<br>Official Colors   | <span style="color:Sliver">Arĝento/Silver #C0C0C0</span>, symbolizing the harsh unbending reality, where beauty and complexities hidden deep underneath.<br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span>, symbolizing insights, understanding, and rationality; to see the world as it is.<br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span>, as a mixture of pink and blue, symbolizing empathies combined with resolutions; to mould the world with our will.  |
+| Ŝtatestro<br>Head of State | <span style="color:Silver">Reĝino Serena de Omnijo</span> |
+| Urbaj Projektistoj<br>City Designers | <span style="color:DeepSkyBlue">Ĉuĉjo la Arkitekto</span>  kaj  <span style="color:MediumPurple">Ĝejnjo la Suvereno</span> de OCFI |
 
 
 #### Government Structure (Part)
