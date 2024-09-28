@@ -416,8 +416,8 @@ Results
 
     |             | Gradient $s/\\%$ | Curve radius $R$  | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
     | ----------- | :--------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
-    | Recommended |  $\leq  10  \%$  |  TBD                     |  $\simeq 100 \mathrm{km/h}$  | -                 | -                 | -                 | -                 | -                 |
-    | Hard Limit  |  $\leq  12  \%$  |  TBD                     |  $\simeq  80 \mathrm{km/h}$  | -                 | -                 | -                 | -                 | -                 |
+    | Recommended |  $\leq  10  \%$  |  TBD                     |  $\simeq  80 \mathrm{km/h}$  | -                 | -                 | -                 | -                 | TBD               |
+    | Hard Limit  |  $\leq  12  \%$  |  TBD                     |  $\simeq  70 \mathrm{km/h}$  | -                 | -                 | -                 | -                 | TBD               |
 
     - Source: (2024-09-28) [Miller et al. (2014)](https://www.researchgate.net/publication/301302321_Monorails_for_sustainable_transportation_-_a_review)
         - Table 4.1 $s$ info (Multiplied by 2 since its estimated values seems too conservative in general- see above; same as the speed limit $v_\mathrm{max}$. Also it's a game and steeper/faster is more fun.)
