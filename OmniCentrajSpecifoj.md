@@ -376,6 +376,7 @@ Results
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
     - Note: Liberties have been taken for the hard limit of $s$ due to steep terrain in the map. Also steeper is more fun.
   - Length limit (for track intersections): $> 500\mathrm{m}$ (25 cars with 20m per car)
+
 - High Speed Railways
   - Gradient $s$ and Curve radius $R$ limit:
     
@@ -386,6 +387,7 @@ Results
     
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
+
 - Metro / Subway / Passenger Railways
   - Gradient $s$ and Curve radius $R$ limit:
     
@@ -398,15 +400,27 @@ Results
   - Source: (2024-08-17) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
     - Note: $R$ can go as low as 64m as seen in Central line, London Underground, United Kingdom; but that's probably too tight.
   - Source: (2024-08-27) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant): $R$ info.
+
 - Trams
   - Gradient $s$ limit:
     
     |             | Gradient $s/\\%$ | Speed limit $v_\mathrm{max}$ | Real world examples |
     | ----------- | :--------------: | :--------------------------: | ------------------- |
-    | Recommended |  $\leq 10   \%$  |  $\simeq  90 \mathrm{km/h}$  | Sheffield Supertram, Sheffield |
+    | Recommended |  $\leq 10   \%$  |  $\simeq  80 \mathrm{km/h}$  | Sheffield Supertram, Sheffield |
     | Hard Limit  |  $\leq 13.5 \%$  |  $\simeq  60 \mathrm{km/h}$  | Lisbon Tramways, Portugal |
     
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
+
+- Monorails
+    - Gradient $s$ and Curve radius $R$ limit:
+
+    |             | Gradient $s/\\%$ | Curve radius $R$  | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
+    | ----------- | :--------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
+    | Recommended |  $\leq  10  \%$  |  TBD                     |  $\simeq 100 \mathrm{km/h}$  | -                 | -                 | -                 | -                 | -                 |
+    | Hard Limit  |  $\leq  12  \%$  |  TBD                     |  $\simeq  80 \mathrm{km/h}$  | -                 | -                 | -                 | -                 | -                 |
+
+    - Source: (2024-09-28) [Miller et al. (2014)](https://www.researchgate.net/publication/301302321_Monorails_for_sustainable_transportation_-_a_review)
+        - Table 4.1 $s$ info (Multiplied by 2 since its estimated values seems too conservative in general- see above; same as the speed limit $v_\mathrm{max}$. Also it's a game and steeper/faster is more fun.)
 
 
 
