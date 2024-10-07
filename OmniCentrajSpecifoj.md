@@ -93,13 +93,13 @@ Then, the trend stopped, with the evolution of the global economic depression tr
 Regno de Omnijo surprisingly (again) did much better than most of the rest of the world, attracting people to stay.
 <span style="color:Silver">Serena</span> took the chance to public-ize a lot of her country, from transportation infrastructure to manufacturing industries- effectively buying her own country.
 
-The Queen even announced her new pet project of building her a brand new capital, free from the burden of the history.
+The <span style="color:Silver">Queen</span> even announced her new pet project of building her a brand new capital, free from the burden of the history.
 She decided to call it **OmniCentro**. (The level of arrogance... just sound like <span style="color:Silver">Serena</span>'s handiwork.)
-The official reason for building a new capital is that the Queen think it "would be fun. AND cool."
+The official reason for building a new capital is that the <span style="color:Silver">Queen</span> think it "would be fun. AND cool."
 On the other hand, the building creates many new jobs to keep people employed and motivated.
 After all, someone has to build the things! and manufracture the materials!
 And double-check everything. And triple-check. And quadruple-check.
-Yeah, the queen is kind of a perfectionist, and she has the money now to live out her fantasy...
+Yeah, the <span style="color:Silver">Queen</span> is kind of a perfectionist, and she now has the money to live out her fantasy.
 
 The actual design of the city, though not many cared, falls on <span style="color:Silver">Serena</span>'s two friends-
 <span style="color:DeepSkyBlue">Ĉuĉjo</span> the Architect, and <span style="color:MediumPurple">Ĝejnjo</span> the Sovereign, of the newly founded *Omnija Department of Infrastructure* (OCFI).
@@ -109,8 +109,8 @@ It's decided that the new capital will be built in a valley where mountains meet
 A totally ridiculous place to build a capital city from anyone's point of view, of course,
 with its lack of flat areas for easy expansion, and its steep altitude changes posing significant problems for buildings and transportation, and the temperature changes at different altitude are rather significant; the local farmers there are famous for not willing to give up their lands.
 The only significant potential there is the several places for building dams- but hey, who would ever want a dam (or dams!) this close to the city? What if they break??
-... And the queen apparently said that all of those factors would make the final city "look even COOLER".
-And then it was so.
+... And the <span style="color:Silver">Queen</span> apparently said that all of those factors would make the final city "look even COOLER".
+And then, it was so.
 Our heros now begins the journey, of building the impossible capital city, in the valley of Ĉemarvalo.
 
 
