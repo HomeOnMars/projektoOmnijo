@@ -63,7 +63,7 @@ it used to have a different name **just half a year ago**.
 In (fictional) fact, it used to have a different flag, a different national color, a dfferent anthem, and even a different official language, despite also being plagued by the corruption in the government.
 However, so much has changed since that faithful day.
 
-<span style="color:Silver">Queen Serena</span> was only **18** when it all happened.
+<span style="color:Silver">Serena</span> was only **18** when it all happened.
 Being your typical long-forgotten heir to the royal throne,
 <span style="color:Silver">Serena</span> was pushed to coronate only days after the (public) re-discovery of her royal blood after the sudden tragic "accidental" death of the old king, by the corrupted ministers and councilors who saw her as young and easy-to-manipulate for their own personal gain.
 But <span style="color:Silver">Serena</span> has proven to be much more impulsive, arrogant, and harder-to-control than they expected.
@@ -79,38 +79,42 @@ Yet, not much as happened.
 Granted, the corruption has gone down significantly with the reshuffling of the power,
 and the friends she put onto the positions are surprisingly efficient and capable,
 and the public good were increased significantly with more funding re-directed there
-(for example, significantly better staffed and maintained hospitals, which are even capable of handling the surge of the patients from the sudden increases in accident rates since the coronation day),
+(for example, significantly better staffed and maintained hospitals, which are even capable of handling the surge of the patients from the sudden increases in accident rates since around the coronation day),
 but surely people, being irrational beings at heart, would anger and rebel on the change of everything they know of their own country?
 
-... Or they would leave. Which is now easier-than-ever, by the way,
+... Or they could leave. Which is now easier-than-ever, by the way,
 as <span style="color:Silver">Reĝino Serena</span> passed several laws
 to allow renunciation of citizenship,
 to recognize dual citizenship, and
 to provide heavy subsidies for transportations leaving the country.
-Which many people did take advantage of, and emigration peaks for the following a month or two.
+Which many people did take advantage of, and emigration peaks for the following one month or two.
 
-Then, the trend stopped, with the evolution of the global economic depression triggered from the burst of the AI bubble weeks after the coronation day.
+Then, the trend stopped, with the evolution of the global economic depression triggered by the burst of the AI bubble weeks after the coronation day.
 Regno de Omnijo surprisingly (again) did much better than most of the rest of the world, attracting people to stay.
-<span style="color:Silver">Serena</span> took the chance to public-ize a lot of her country, from transportation infrastructure to manufacturing industries- effectively buying her own country.
+<span style="color:Silver">Serena</span> took the chance to re-public-ize a lot of the private companies inher country, from public transportation, to infrastructures, and to manufacturing industries- effectively buying back her own country.
 
-The <span style="color:Silver">Queen</span> even announced her new pet project of building her a brand new capital, free from the burden of the history.
+The <span style="color:Silver">Queen</span> even announced her new pet project of building a brand new capital, free from the burden of the history.
 She decided to call it **OmniCentro**. (The level of arrogance... just sound like <span style="color:Silver">Serena</span>'s handiwork.)
 The official reason for building a new capital is that the <span style="color:Silver">Queen</span> think it "would be fun. AND cool."
 On the other hand, the building creates many new jobs to keep people employed and motivated.
 After all, someone has to build the things! and manufracture the materials!
 And double-check everything. And triple-check. And quadruple-check.
-Yeah, the <span style="color:Silver">Queen</span> is kind of a perfectionist, and she now has the money to live out her fantasy.
+Yeah, the <span style="color:Silver">Queen</span> is kinda perfectionist, and she now has the money to live out her fantasy.
 
-The actual design of the city, though not many cared, falls on <span style="color:Silver">Serena</span>'s two friends-
+The actual design of the city, though not many care, falls on <span style="color:Silver">Serena</span>'s two friends-
 <span style="color:DeepSkyBlue">Ĉuĉjo</span> the Architect, and <span style="color:MediumPurple">Ĝejnjo</span> the Sovereign, of the newly founded *Omnija Department of Infrastructure* (OCFI).
 (These are not their real name, by the way; it's <span style="color:Silver">Serena</span>'s nicknames for them.)
 
-It's decided that the new capital will be built in a valley where mountains meets the sea, a place where they call it the [Seaside Valley](https://mods.paradoxplaza.com/mods/82544/Any), Or "Ĉemarvalo".
+It's decided that the new capital will be built in a valley where mountains meets the sea, a place called the [Seaside Valley](https://mods.paradoxplaza.com/mods/82544/Any), Or "Ĉemarvalo", about 300km away from the current capital.
 A totally ridiculous place to build a capital city from anyone's point of view, of course,
-with its lack of flat areas for easy expansion, and its steep altitude changes posing significant problems for buildings and transportation, and the temperature changes at different altitude are rather significant; the local farmers there are famous for not willing to give up their lands.
+with its lack of flat areas for easy expansion, and its steep altitude changes posing significant problems for buildings and transportation, and the temperature changes at different altitude are rather significant;
+not to mention that the local farmers there are famous for not willing to give up their lands.
 The only significant potential there is the several places for building dams- but hey, who would ever want a dam (or dams!) this close to the city? What if they break??
-... And the <span style="color:Silver">Queen</span> apparently said that all of those factors would make the final city "look even COOLER".
+
+... And the <span style="color:Silver">Queen</span> apparently said: "All of those factors would make the city look even COOLER!".
+
 And then, it was so.
+
 Our heros now begins the journey, of building the impossible capital city, in the valley of Ĉemarvalo.
 
 
