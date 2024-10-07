@@ -52,7 +52,23 @@ Detailed Information
 -------------------------------------------------------------------------------
 
 
-#### Summary
+#### Background Summary
+
+**Regno de Omnijo** (English: Kingdom of Omnijo) is a fictional monarchy
+located in an fictional island (with the size of approximately iceland, i.e. $\sim 100\, 000\, \mathrm{km}^2$)
+in the Southern Hemisphere, somewhere in the middle between Chile and New Zealand.
+
+
+#### Descriptions
+
+| Settings          |  Acronym | Name                |
+| :---------------- | :------: | :-----------------: |
+| City Name         | OC   | OmniCentro              |
+| Country Name      | RdO  | Regno de Omnijo         |
+| Government Name   | OCR  | Omnija Centra Registaro |
+| Local Authority   | OCG  | OmniCentra    Gvidado   |
+
+| (Fikciaj) Fonaj Informoj<br>(Fictional) Background Information | Priskribo<br>Description |
 
 | Settings          |  Acronym | Name                |
 | :---------------- | :------: | :-----------------: |
@@ -64,11 +80,12 @@ Detailed Information
 | (Fikciaj) Fonaj Informoj<br>(Fictional) Background Information | Priskribo<br>Description |
 | :---------------- | ---- |
 | Urba Fono<br>City Background   | Planned New Capital |
-| Oficiala Lingvo<br>Official Language | Esperanto (transitioning from English in the next 20 years) |
-| Oficiala Religio<br>Official Religion | Pastafarianismo |
-| Oficialaj Koloroj<br>Official Colors   | <span style="color:Sliver">Arĝento/Silver #C0C0C0</span>, symbolizing the harsh unbending reality, where beauty and complexities hidden deep underneath.<br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span>, symbolizing insights, understanding, and rationality; to see the world as it is.<br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span>, as a mixture of pink and blue, symbolizing empathies combined with resolutions; to mould the world into what we desire.  |
 | Ŝtatestro<br>Head of State | <span style="color:Silver">Reĝino Serena de Omnijo</span> (kiu lastatempe transprenis la tronon post la abdiko de la antaŭa reĝo.) |
 | Urbaj Projektistoj<br>City Designers | <span style="color:DeepSkyBlue">Ĉuĉjo la Arkitekto</span>  kaj  <span style="color:MediumPurple">Ĝejnjo la Suvereno</span> de OCFI |
+| Oficiala Lingvo<br>Official Language | *Esperanto++* (A.k.a. ***E++***, pronounced as "eppo")<br>An artificial variant of esperanto specified by Reĝino Serena herself, aiming to offer maximum regularity for easy learning, while conforming to existing world status as much as possible.<br>E.g. decimal point in ordinary esperanto is ',', but in E++ it is '.' (same as in English).<br>Transitioning from English in the next 20 years |
+| Oficiala Religio<br>Official Religion | Pastafarianismo |
+| Oficialaj Koloroj<br>Official Colors   | <span style="color:Sliver">Arĝento/Silver #C0C0C0</span>, symbolizing the harsh unbending reality, where beauty and complexities hidden deep underneath.<br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span>, symbolizing insights, understanding, and rationality; to see the world as it is.<br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span>, as a mixture of pink and blue, symbolizing empathies combined with resolutions; to mould the world into what we desire.  |
+| Oficialaj Koloroj<br>Official Anthem | *Oceans* (*Where Feet May Fail*)<br>(acoustic cover version by Jada Facer and Jonah Baker, though the original credits go to Hillsong UNITED))<br>Hand picked by Reĝino Serena herself (Surprise, surprise), even though she is an atheist.<br>The official reason is that she "likes the sound of it";<br>The unofficial reason is that it serves as a reminder of the state's self-imposed role as the Saviour to its people, its promises and duty to protect and guide its people, and its call on people's trust and faith.   |
 
 
 #### Government Structure (Part)
