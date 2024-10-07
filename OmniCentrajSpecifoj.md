@@ -58,6 +58,61 @@ Detailed Information
 located in an fictional island (with the size of approximately iceland, i.e. $\sim 100\, 000\, \mathrm{km}^2$)
 in the Southern Hemisphere, somewhere in the middle between Chile and New Zealand.
 
+Although it has always been a monarchy since time immemorial even before the Colonial era,
+it used to have a different name **just half a year ago**.
+In (fictional) fact, it used to have a different flag, a different national color, a dfferent anthem, and even a different official language, even though it was also plagued by the corruption in the government.
+However, so much changed since that faithful day.
+
+Queen Serena was only **18** when it all happened.
+Being your typical long-forgotten heir to the royal throne,
+Serena was pushed to coronate only days after the (public) re-discovery of her royal blood after the sudden tragic "accidental" death of the old king, by the corrupted ministers and councilors who saw her as young and easy-to-manipulate for their own personal gain.
+But Serena has proven to be much more impulsive, arrogant, and harder-to-control than they expected.
+The corrupted ministers and councilors then wanted to replace or retire her with a regime change.
+Which they would have succeeded (they are not stupid, you see, after all they control the military), if were not for a tragic accident where the building (next to the one where they were plotting in) blew up due to a random gas leak, killing every single one of them.
+How very unfortunate.
+
+After this, Serena replaced most of the governmental head with her friends (whom no one has ever heard of), then re-structured the whole thing, and then decided to tweak every aspect of country to her own liking.
+One could certainly say that letting someone this young to rule over a country is starting to show its problems ("Yeah, Who would have thought??"), and such blatant offence on democracy and even the country's core identity would surely result in total chaos and disarray.
+
+Yet, not much as happened.
+
+Granted, the corruption has gone down significantly with the reshuffling of the power,
+and the friends she put onto the positions are surprisingly efficient and capable,
+and the public good were increased significantly with more funding re-directed there
+(for example, significantly better staffed and maintained hospitals, which are even capable of handling the surge of the patients from the sudden increases in accident rates since the coronation day),
+but surely people, being irrational beings at heart, would anger and rebel on the change of everything they know of their own country?
+
+... Or they would leave. Which is now easier-than-ever, by the way,
+as Reĝino Serena passed several laws
+to allow renunciation of citizenship,
+to recognize dual citizenship, and
+to provide heavy subsidies for transportations leaving the country.
+Which many people did take advantage of, and emigration peaks for the following a month or two.
+
+Then, the trend stopped, with the evolution of the global economic depression triggered from the burst of the AI bubble weeks after the coronation day.
+Regno de Omnijo surprisingly (again) did much better than most of the rest of the world, attracting people to stay.
+Serena took the chance to public-ize a lot of her country, from transportation infrastructure to manufacturing industries- effectively buying her own country.
+
+The Queen even announced her new pet project of building her a brand new capital, free from the burden of the history.
+She decided to call it **OmniCentro**. (The level of arrogance... just sound like Serena's handiwork.)
+The official reason for building a new capital is that the Queen think it "would be fun. AND cool."
+On the other hand, the building creates many new jobs to keep people employed and motivated.
+After all, someone has to build the things! and manufracture the materials!
+And double-check everything. And triple-check. And quadruple-check.
+Yeah, the queen is kind of a perfectionist, and she has the money now to live out her fantasy...
+
+The actual design of the city, though not many cared, falls on Serena's two friends-
+<span style="color:DeepSkyBlue">Ĉuĉjo</span> the Architect, and <span style="color:MediumPurple">Ĝejnjo</span> the Sovereign, of the newly fuonded Omnija Department of Infrastructure.
+These are not their real name, by the way; it's <span style="color:Silver">Serena</span>'s nicknames for them.
+
+It's decided that the new capital will be built in a valley where mountains meets the sea, a place where they call it the [Seaside Valley](https://mods.paradoxplaza.com/mods/82544/Any), Or "Ĉemarvalo".
+A totally ridiculous place to build a capital city from anyone's point of view, of course,
+with its lack of flat areas for easy expansion, and its steep altitude changes posing significant problems for buildings and transportation, and the temperature changes at different altitude are rather significant; the local farmers there are famous for not willing to give up their lands.
+The only significant potential there is the several places for building dams- but hey, who would ever want a dam (or dams!) this close to the city? What if they break??
+... And the queen apparently said that all of those factors would make the final city "look even COOLER".
+And then it was so.
+Our heros now begins the journey, of building the impossible capital city, in the valley of Ĉemarvalo.
+
 
 #### Descriptions
 
