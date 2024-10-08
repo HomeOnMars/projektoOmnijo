@@ -56,7 +56,8 @@ Detailed Information
 
 **Regno de Omnijo** (English: Kingdom of Omnijo) is a fictional monarchy
 located on an fictional island
-(with the size of approximately iceland, i.e. $\, \sim 100\, 000\, \mathrm{km}^2$)
+(with the size of approximately iceland,
+i.e. $\, \sim 100\, 000\, \mathrm{km}^2$)
 in the Southern Hemisphere,
 somewhere in the middle between Chile and New Zealand.
 
@@ -96,8 +97,8 @@ then re-structured the whole thing,
 and then decided to tweak every aspect of country to her own liking.
 One could certainly say that
 letting someone this young to rule over a country
-is starting to show its problems ("Yeah, Who would have thought??"), and
-such blatant offence on the ideal of democracy and
+is starting to have its toll ("Yeah, Who would have thought??"), and
+such naivety and blatant offence on the ideal of democracy and
 even the country's core identity
 would surely result in total chaos and disarray.
 
@@ -167,7 +168,7 @@ in a valley where mountains meets the sea- a place called the
 [Seaside Valley](https://mods.paradoxplaza.com/mods/82544/Any), Or "Ĉemarvalo",
 about 300km away from the current capital.
 A totally ridiculous place
-to build a capital city from anyone's point of view, of course,
+to build a capital city for anyone sensible, of course,
 with its lack of flat areas for easy expansion,
 and its steep altitude changes posing significant problems
 for building both buildings and transportation,
