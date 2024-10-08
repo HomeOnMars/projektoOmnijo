@@ -1,0 +1,14 @@
+{
+    "markdownlint.config": {
+        "MD003": {
+            "style": "setext_with_atx",
+        },
+        "MD010": {
+            "code_blocks": false,
+        },
+        "MD033": {
+            "allowed_elements": [ "br", "span" ]
+        },
+        "no-multiple-blanks": false,
+    }
+}
