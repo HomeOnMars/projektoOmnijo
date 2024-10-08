@@ -159,7 +159,7 @@ falls on <span style="color:Silver">Serena</span>'s two friends-
 <span style="color:MediumPurple">Ĝejnjo</span> the Sovereign,
 of the newly founded *Omnija Department of Infrastructure* (OCFI).
 (These are not their real name, by the way;
-it's <span style="color:Silver">Serena</span>'s nicknames for them.)
+it's <span style="color:Silver">Serena</span>'s nicknames for the couple.)
 
 It's decided that the new capital will be built
 in a valley where mountains meets the sea- a place called the
@@ -183,7 +183,7 @@ What if they break??
 
 And then, it was so.
 
-Our heros now begins the journey,
+Our (soon-to-be) legendary duo now begins the journey,
 of building the impossible capital city,
 in the valley of *Ĉemarvalo*.
 
