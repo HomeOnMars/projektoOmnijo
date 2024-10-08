@@ -80,7 +80,8 @@ by the corrupted ministers and councilors
 who saw her as young and easy-to-manipulate for their own personal gain.
 But <span style="color:Silver">Serena</span> has proven to be
 much more impulsive, arrogant, and harder-to-control than they expected.
-The corrupted ministers and councilors then wanted to replace or retire her with a regime change.
+The corrupted ministers and councilors then wanted
+to replace or retire her with a regime change.
 Which they would have succeeded
 (they are not stupid, you see, after all they control the military),
 if were not for a tragic accident where the building
@@ -158,7 +159,7 @@ falls on <span style="color:Silver">Serena</span>'s two friends-
 <span style="color:DeepSkyBlue">Ĉuĉjo</span> the Architect, and
 <span style="color:MediumPurple">Ĝejnjo</span> the Sovereign,
 of the newly founded *Omnija Department of Infrastructure* (OCFI).
-(These are not their real name, by the way;
+(These are not their full name, by the way;
 it's <span style="color:Silver">Serena</span>'s nicknames for the couple.)
 
 It's decided that the new capital will be built
