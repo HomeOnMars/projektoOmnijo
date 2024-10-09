@@ -577,7 +577,8 @@ Which they would have succeeded
 (they are not stupid, you see, after all they control the military),
 if were not for a tragic accident where the building
 (next to the one where they were plotting in)
-randomly blew up due to gas leaks and CO sensor malfunctions, killing every single one of them.
+randomly blew up due to gas leaks and CO sensor malfunctions,
+killing every single one of them.
 How very unfortunate.
 
 After this, <span style="color:Silver">Serena</span>
@@ -626,19 +627,19 @@ recognizing dual citizenship, and
 providing heavy subsidies for transportations
 both coming to and leaving from the country.
 Which many people did take advantage of,
-and emigration rate peaks for months.
+and emigration rate skyrocketed for weeks.
 
 Then this trend slowed down and stopped.
 
 With the evolution of the great global economic recession
-triggered by the burst of the AI bubble weeks after the coronation day,
-many countries are tighting their immigration rules.
-Regno de Omnijo surprisingly (again) did much better
-than most of the rest of the world, attracting people to stay.
-<span style="color:Silver">Serena</span> took the chance
+(triggered by the burst of the AI bubble weeks after the coronation day),
+many countries are struggling and tighting their immigration rules.
+Regno de Omnijo, however, did surprisingly (again) well,
+attracting people to stay.
+Actually, from an outsider perspective, Omnijo's response was almost perfect.
+<span style="color:Silver">Serena</span> was even able to take the chance
 to re-nationalize many of the private companies in her country,
-from public transportation, to infrastructures,
-and to manufacturing industries-
+from public transportation to infrastructures and manufacturing industries-
 effectively buying out her own country.
 
 The <span style="color:Silver">Queen</span>
@@ -666,7 +667,8 @@ it's <span style="color:Silver">Serena</span>'s nicknames for the couple.)
 
 It's decided that the new capital will be built
 in a valley where mountains meets the sea- a place called the
-[Seaside Valley](https://mods.paradoxplaza.com/mods/82544/Any), Or "Ĉemarvalo",
+[Seaside Valley](https://mods.paradoxplaza.com/mods/82544/Any),
+Or "Ĉemarvalo",
 about 300km away from the current capital.
 A totally ridiculous place
 to build a capital city, of course,
