@@ -13,7 +13,7 @@ PDX Mod Link: ***TBD***
 
 ![Omnija Centra Gvidado (OCG) logo](fig/OCG.svg)
 
-OmniCentro local government Emblem (fictional).  
+OmniCentro local government emblem (fictional).  
 See [below](#emblemo) for more info and image generation code.
 
 
@@ -650,10 +650,11 @@ See [Background Bulletin](#background-bulletin) for more info.
 ```python
 # Omnija Emblemo Generado
 
+# imports (built-in)
+from math import pi, sin, cos
 # imports (3rd party)
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-from math import pi, sin, cos
 
 # params
 output_path = "fig/OCG.svg"
@@ -663,8 +664,8 @@ colors_dict = {
     'C' : '#00BFFF',
     'G' : '#9370DB',
     'x0': '#B7E1A1',  # ^ light grey green  B7E1A1
-    'x1': '#D6B4FC',  # > light violet  D6B4FC
-    'x2': '#95D0FC',  # < light blue  95D0FC
+    'x1': '#D6B4FC',  # < light violet  D6B4FC
+    'x2': '#95D0FC',  # > light blue  95D0FC
 }
 
 # funcs
