@@ -203,7 +203,7 @@ in the valley of *Ĉemarvalo*.
 | Government Name   | OCR  | Omnija Centra Registaro |
 | Local Authority   | OCG  | OmniCentra    Gvidado   |
 
-| (Fikciaj) Fonaj Informoj  <br>  (Fictional) Background Information | Priskribo  <br>  Description |
+| (Fikciaj) Fonaj Informoj  <br>(Fictional) Background Information | Priskribo  <br>Description |
 
 | Settings          |  Acronym | Name                |
 | :---------------- | :------: | :-----------------: |
@@ -212,16 +212,16 @@ in the valley of *Ĉemarvalo*.
 | Government Name   | OCR  | Omnija Centra Registaro |
 | Local Authority   | OCG  | OmniCentra    Gvidado   |
 
-| (Fikciaj) Fonaj Informoj  <br>  (Fictional) Background Information | Priskribo  <br>  Description |
+| (Fikciaj) Fonaj Informoj  <br>(Fictional) Background Information | Priskribo  <br>Description |
 | :---------------- | ---- |
-| Urba Fono  <br>  City Background | Planned New Capital |
-| Ŝtatestro  <br>  Head of State   | <span style="color:Silver">Reĝino Serena de Omnijo</span> (kiu lastatempe transprenis la tronon post la abdiko de la antaŭa reĝo.) |
-| Registara Tipo  <br>  Government Type   | Konstitucia Monarkio / Bonfara Diktaturo / Morala Demokratio / Totalisma Reĝimo, depende de kiu vi demandas.  <br>  Constitutional Monarchy / Benevolent Dictatorship / Moral Democracy / Totalitarian Regime, depending on who you ask.  |
-| Urbaj Projektistoj  <br>  City Designers | <span style="color:DeepSkyBlue">Ĉuĉjo la Arkitekto</span>  kaj  <span style="color:MediumPurple">Ĝejnjo la Suvereno</span> de OCFI |
-| Oficiala Lingvo  <br>  Official Language | *Esperanto++* (A.k.a. ***E++***, pronounced as "eppo")  <br>  An artificial variant of esperanto specified by <span style="color:Silver">Reĝino Serena</span> herself, aiming to offer maximum regularity for easy learning, while conforming to existing world status as much as possible.  <br>  E.g. Completely eliminated the character `ĥ`; <br> replaced the decimal point in ordinary esperanto from ',' to '.' (same as in English).  <br>  Transitioning from English in the next 20 years. |
-| Oficiala Religio  <br>  Official Religion | Pastafarianismo |
-| Oficialaj Koloroj  <br>  Official Colors   | <span style="color:Sliver">Arĝento/Silver #C0C0C0</span>, symbolizing the harsh unbending reality, where beauty and complexities hidden deep underneath.  <br>  <span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span>, symbolizing insights, understanding, and rationality; to see the world as it is.  <br>  <span style="color:MediumPurple">Purpuro/Purple #9370DB</span>, as a mixture of pink and blue, symbolizing empathies combined with resolutions; to mould the world into what we desire.  |
-| Oficialaj Himno  <br>  Official Anthem | *Oceans* (*Where Feet May Fail*)  <br>  (acoustic cover version by Jada Facer and Jonah Baker, though the original credits go to Hillsong UNITED)  <br>  Hand picked by <span style="color:Silver">Reĝino Serena</span> herself (Surprise, surprise), even though she is an atheist.  <br>  The official reason is that she "likes the sound of it";  <br>  The unofficial reason is that it serves as a reminder of the state's self-imposed role as the Saviour to its people, its promises and duty to protect and guide its people, and its call on people's trust and faith for the state.   |
+| Urba Fono  <br>City Background | Planned New Capital |
+| Ŝtatestro  <br>Head of State   | <span style="color:Silver">Reĝino Serena de Omnijo</span> (kiu lastatempe transprenis la tronon post la abdiko de la antaŭa reĝo.) |
+| Registara Tipo  <br>Government Type   | Konstitucia Monarkio / Bonfara Diktaturo / Morala Demokratio / Totalisma Reĝimo, depende de kiu vi demandas.  <br>Constitutional Monarchy / Benevolent Dictatorship / Moral Democracy / Totalitarian Regime, depending on who you ask.  |
+| Urbaj Projektistoj  <br>City Designers | <span style="color:DeepSkyBlue">Ĉuĉjo la Arkitekto</span>  kaj  <span style="color:MediumPurple">Ĝejnjo la Suvereno</span> de OCFI |
+| Oficiala Lingvo  <br>Official Language | *Esperanto++* (A.k.a. ***E++***, pronounced as "eppo")  <br>An artificial variant of esperanto specified by <span style="color:Silver">Reĝino Serena</span> herself, aiming to offer maximum regularity for easy learning, while conforming to existing world status as much as possible.  <br>E.g. Completely eliminated the character `ĥ`; <br> replaced the decimal point in ordinary esperanto from ',' to '.' (same as in English).  <br>Transitioning from English in the next 20 years. |
+| Oficiala Religio  <br>Official Religion | Pastafarianismo |
+| Oficialaj Koloroj  <br>Official Colors   | <span style="color:Sliver">Arĝento/Silver #C0C0C0</span>, symbolizing the harsh unbending reality, where beauty and complexities hidden deep underneath.  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span>, symbolizing insights, understanding, and rationality; to see the world as it is.  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span>, as a mixture of pink and blue, symbolizing empathies combined with resolutions; to mould the world into what we desire.  |
+| Oficialaj Himno  <br>Official Anthem | *Oceans* (*Where Feet May Fail*)  <br>(acoustic cover version by Jada Facer and Jonah Baker, though the original credits go to Hillsong UNITED)  <br>Hand picked by <span style="color:Silver">Reĝino Serena</span> herself (Surprise, surprise), even though she is an atheist.  <br>The official reason is that she "likes the sound of it";  <br>The unofficial reason is that it serves as a reminder of the state's self-imposed role as the Saviour to its people, its promises and duty to protect and guide its people, and its call on people's trust and faith for the state.   |
 
 
 #### Government Structure (Part)
@@ -244,14 +244,14 @@ in the valley of *Ĉemarvalo*.
 
 
 
-### Sigloj  <br>  Acronyms
+### Sigloj  <br>Acronyms
 
 -------------------------------------------------------------------------------
 
 
-#### Direktoj  <br>  Directions
+#### Direktoj  <br>Directions
 
-| Siglo  <br>  Acronym | En esperanto  <br>  In Esperanto | En la angla  <br>  In English |
+| Siglo  <br>Acronym | En esperanto  <br>In Esperanto | En la angla  <br>In English |
 | :-----: | ------------- | -------- |
 |    N    | **N**orda     | Northern |
 |    S    | **S**uda      | Southern |
@@ -260,24 +260,24 @@ in the valley of *Ĉemarvalo*.
 |    L    | **L**iva      | Left     |
 |    C    | **C**entra    | Center   |
 |    D    | **D**ekstra   | Right    |
-|    P    | **P**lus  / Pozitiva /  <br>  Maldekstruma /  <br>  S->N / K->R | Plus  / Positive /  <br>  Counterclockwise /  <br>  S->N / W->E |
-|    M    | **M**inus / Negativa /  <br>  Dekstruma    /  <br>  N->S / R->K | Minus / Negative /  <br>         Clockwise /  <br>  N->S / E->W |
+|    P    | **P**lus  / Pozitiva /  <br>Maldekstruma /  <br>S->N / K->R | Plus  / Positive /  <br>Counterclockwise /  <br>S->N / W->E |
+|    M    | **M**inus / Negativa /  <br>Dekstruma    /  <br>N->S / R->K | Minus / Negative /  <br>       Clockwise /  <br>N->S / E->W |
 
 Note: P/M follows positive and negative directions in mathematics (thus P for counterclockwise directions).
 
 
-#### Vojoj kaj Stratetoj  <br>  Roads and Lanes
+#### Vojoj kaj Stratetoj  <br>Roads and Lanes
 
-| Siglo  <br>  Acronym | Strateta Tipo  <br>  (en esperanto) | Lane Type  <br>  (in English) | Strateta Larĝeco  <br>  Lane Width |
+| Siglo  <br>Acronym | Strateta Tipo  <br>(en esperanto) | Lane Type  <br>(in English) | Strateta Larĝeco  <br>Lane Width |
 | :-----: | ------------------- | ------------------- | :---------: |
 |    H    | **H**omo/Piediranto | Human/Pedestrian    | $\geq$ 3.5m |
 |    B    | **B**iciklo         | Bike                |        ?    |
 |    J    | parke**J**o         | Parking Space       | $\geq$ 2m   |
 |    A    | **A**ŭtomobilo      | Car                 |        3m   |
-|    T    | **T**ransporto  <br>  (Buso, Tramo)   | Transit  <br>  (Bus, Tram)         |        3m   |
+|    T    | **T**ransporto  <br>(Buso, Tramo)   | Transit  <br>(Bus, Tram)         |        3m   |
 |    E    | f**E**rvojo/m**E**troo | Railway/Metro    |        4m   |
 |    V    | **V**agonaro/Trajno | Train               |        4m   |
-|    G    | Neŭtrala **G**rundo  <br>  Meza Strio | Neutral Ground  <br>  Median Strip | $\geq$ 1m   |
+|    G    | Neŭtrala **G**rundo  <br>Meza Strio | Neutral Ground  <br>Median Strip | $\geq$ 1m   |
 |    O    | l**O**kokupilo      | Placeholder         | -           |
 |    i    | **i**nverse         | vice versa          | -           |
 
@@ -300,20 +300,20 @@ See also:
 - (2024-09-12) [Road Builder mod](https://mods.paradoxplaza.com/mods/87190/Windows) by TDW
 
 
-#### Publika Transportaj Linioj  <br>  Public Transit Lines
+#### Publika Transportaj Linioj  <br>Public Transit Lines
 
 Note that the letters are overlapping other acronyms in other categories - and they are not necessarily the same.
 
-| Siglo  <br>  Acronym | Nomo  <br>  (en esperanto) | Name  <br>  (in English) | Rimarkoj  <br>  Remarks |
+| Siglo  <br>Acronym | Nomo  <br>(en esperanto) | Name  <br>(in English) | Rimarkoj  <br>Remarks |
 | :-----: | ------------------- | ------------------- | ----------- |
 |    A    | **A**viadilo        | Airplane            | |
 |    Ux   | a**Ŭ**tovojo        | Motorway            | |
 |    B    | **B**uso            | Bus                 | |
-|    T    | **T**ramo           | Tram                | Regiona  <br>  Regional |
-|    E    | f**E**rvojo/m**E**troo | Railway/Metro  <br>  Monorail  <br>  Train | Regiona  <br>  Regional |
-|    V    | **V**agonaro/Trajno | Train               | Grandrapida Interurba  <br>  High-speed Intercity |
-|    P    | **P**ramo           | Ferry               | Regiona  <br>  Regional |
-|    Sx   | **Ŝ**ipo            | Ship                | Interurba  <br>  Intercity |
+|    T    | **T**ramo           | Tram                | Regiona  <br>Regional |
+|    E    | f**E**rvojo/m**E**troo | Railway/Metro  <br>Monorail  <br>Train | Regiona  <br>Regional |
+|    V    | **V**agonaro/Trajno | Train               | Grandrapida Interurba  <br>High-speed Intercity |
+|    P    | **P**ramo           | Ferry               | Regiona  <br>Regional |
+|    Sx   | **Ŝ**ipo            | Ship                | Interurba  <br>Intercity |
 |    H-   | **H**omo-/Pasaĝero- | Human-/Passenger-   | |
 |    K-   | **K**argo-          | Cargo-              | |
 
@@ -355,12 +355,12 @@ Use at your own risk.***
 
 
 
-### Normoj  <br>  Standards
+### Normoj  <br>Standards
 
 -------------------------------------------------------------------------------
 
 
-#### Sistemo de Unuoj  <br>  System of Units
+#### Sistemo de Unuoj  <br>System of Units
 
 
 (Detailed descriptions coming soon)
@@ -548,8 +548,8 @@ Results
 
     |             | Gradient $s/\\%$ | Curve radius $R$  | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
     | ----------- | :--------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
-    | Recommended |  $\leq  5.5 \%$  |  $\geq  448 \mathrm{m}$  |  $\simeq 120 \mathrm{km/h}$  | -                 | $\geq 121\degree$ | $\geq   149\degree$ | $\geq 164\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;  <br>  ($R$) Assuming tilting trains: see [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant). |
-    | Hard Limit  |  $\leq  7   \%$  |  $\geq  128 \mathrm{m}$  |  $\simeq 100 \mathrm{km/h}$  | -                 | -                 | $\geq   90\degree$  | $\geq 127\degree$ | ($s$) Bernina Railway, Switzerland;  <br>  ($R$) Bay Area Rapid Transit, United States. |
+    | Recommended |  $\leq  5.5 \%$  |  $\geq  448 \mathrm{m}$  |  $\simeq 120 \mathrm{km/h}$  | -                 | $\geq 121\degree$ | $\geq   149\degree$ | $\geq 164\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;  <br>($R$) Assuming tilting trains: see [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant). |
+    | Hard Limit  |  $\leq  7   \%$  |  $\geq  128 \mathrm{m}$  |  $\simeq 100 \mathrm{km/h}$  | -                 | -                 | $\geq   90\degree$  | $\geq 127\degree$ | ($s$) Bernina Railway, Switzerland;  <br>($R$) Bay Area Rapid Transit, United States. |
 
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
   - Source: (2024-08-17) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
