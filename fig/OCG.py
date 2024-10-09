@@ -3,7 +3,7 @@
 
 """
 O.C.G. Emblem Generation.
-O.C.G. stands for Omnija Centra Gvidado (in esperanto).
+O.C.G. stands for OmniCentra Gvidado (in Esperanto/E++).
 
 Author: HomeOnMars
 

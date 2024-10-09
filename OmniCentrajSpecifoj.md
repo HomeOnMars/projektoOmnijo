@@ -184,7 +184,7 @@ is the several places for building dams-
 but hey, who would ever want a dam (or dams!) this close to the city?
 What if they break??
 
-... To which the <span style="color:Silver">Queen</span> responded with:
+... To which the <span style="color:Silver">Queen</span> simply responded with:
 "All of those factors would make the city look even COOLER in the end!".
 
 And then, it was so.
