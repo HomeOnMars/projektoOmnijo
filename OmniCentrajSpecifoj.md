@@ -57,12 +57,11 @@ located on an fictional island
 (with the size of approximately iceland,
 i.e. $\, \sim 100\, 000\, \mathrm{km}^2$)
 in the Southern Hemisphere,
-somewhere in the middle between Chile and New Zealand.
-
+somewhere in the middle between Chile and New Zealand.  
 OmniCentro is its planned new capital,
 commissioned by Omnijo's young new queen
 <span style="color:Silver">Serena</span>,
-who was coronated just about half a year ago.
+who was just coronated about half a year ago.
 
 (For more details, see the history of Omnijo [here](#the-history).)
 
@@ -599,15 +598,24 @@ Granted,
 the corruption was essentially gone with the reshuffling of the power,
 and the friends she put onto the positions
 are surprisingly upright and capable,
-and the public goods had increased significantly
-with more funding re-directed there
-(for example, in response to the surge of new patients
-from the sudden increases in accident rates since around the coronation day,
-<span style="color:Silver">Serena</span> greatly increased hospitals funding,
-ensuring them being better staffed and maintained,
-which stood the test of time to this day),
-but surely people, being irrational beings at heart, would anger and rebel
-on the change of everything they know of their own country?
+and within weeks the public goods increased significantly
+as more fundings were re-directed there
+(for example,
+
+- More telecom towers were built and maintained,
+  ensuring good coverage in even the most remote area in the island;
+- Transportation were also improved and subsidized,
+  with free public transit trial started in several major cities;
+- Hospitals received more funding
+  to keep them well staffed and maintained,
+  even allowing them to handle the surge of new patients
+  from the recent sudden increases in accident rates;
+- Even mental healthcare was given the attention it deserves,
+  combating the worrying trend of internet burnout epidemic.
+
+),
+but surely people, being people, would anger and rebel
+on the change of everything they know about their own country?
 
 ... Or they could leave.
 Which is now easier-than-ever, by the way,
@@ -618,15 +626,17 @@ recognizing dual citizenship, and
 providing heavy subsidies for transportations
 both coming to and leaving from the country.
 Which many people did take advantage of,
-and emigration rate peaks for the following one month or two.
+and emigration rate peaks for months.
 
-Then, the trend stopped,
-with the evolution of the global economic depression
-triggered by the burst of the AI bubble weeks after the coronation day.
+Then this trend slowed down and stopped.
+
+With the evolution of the great global economic recession
+triggered by the burst of the AI bubble weeks after the coronation day,
+many countries are tighting their immigration rules.
 Regno de Omnijo surprisingly (again) did much better
 than most of the rest of the world, attracting people to stay.
 <span style="color:Silver">Serena</span> took the chance
-to re-public-ize many of the private companies in her country,
+to re-nationalize many of the private companies in her country,
 from public transportation, to infrastructures,
 and to manufacturing industries-
 effectively buying out her own country.
@@ -638,9 +648,9 @@ She decided to call it **OmniCentro**.
 (The level of arrogance...
 just sound like <span style="color:Silver">Serena</span>'s handiwork.)
 The official reason for building a new capital is that
-the <span style="color:Silver">Queen</span> think it "would be fun. AND cool."
+the <span style="color:Silver">Queen</span> think it "would be FUN and COOL."
 On the other hand,
-the building creates many new jobs to keep people employed and motivated.
+the project also creates many new jobs to keep people employed and motivated.
 After all, someone has to build the things! and manufracture the materials!
 And double-check everything. And triple-check. And quadruple-check.
 Yeah, the <span style="color:Silver">Queen</span> is kinda perfectionist,
@@ -648,8 +658,8 @@ and she now has the money and the power to live out her own fantasy.
 
 The actual design of the city, though not many care,
 falls on <span style="color:Silver">Serena</span>'s two friends-
-<span style="color:DeepSkyBlue">Ĉuĉjo</span> the Architect, and
-<span style="color:MediumPurple">Ĝejnjo</span> the Sovereign,
+<span style="color:DeepSkyBlue">Ĉuĉjo</span> the Architect and
+<span style="color:MediumPurple">Ĝejnjo</span> the Sovereign
 of the newly founded *Omnija Department of Infrastructure* (OCFI).
 (These are not their full name, by the way;
 it's <span style="color:Silver">Serena</span>'s nicknames for the couple.)
@@ -659,19 +669,20 @@ in a valley where mountains meets the sea- a place called the
 [Seaside Valley](https://mods.paradoxplaza.com/mods/82544/Any), Or "Ĉemarvalo",
 about 300km away from the current capital.
 A totally ridiculous place
-to build a capital city for anyone sensible, of course,
+to build a capital city, of course,
 with its lack of flat areas for easy expansion,
-and its steep altitude changes posing significant problems
+its steep altitude changes posing significant problems
 for building both buildings and transportation,
-and the temperature changes at different altitude are rather significant;
-not to mention that
+and the temperature and wind speed changes at different altitude
+are just brutal.
+Not to mention that
 the local farmers there are famous for not willing to give up their lands.
-The only significant potential there
-is the several places for building dams-
-but hey, who would ever want a dam (or dams!) this close to the city?
+The only easily capitalizable thing there
+is the several good spots for building dams-
+but hey, who would ever want a dam / dams this close to the city??
 What if they break??
 
-... To which the <span style="color:Silver">Queen</span> simply responded with:
+... To which the <span style="color:Silver">Queen</span> simply replied:
 "All of those factors would make the city look even COOLER in the end!".
 
 And then, it was so.
