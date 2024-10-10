@@ -8,6 +8,11 @@ Documents for my upcoming Cities: Skylines 2 cities,
 in the fictional country *Regno de Omnijo* (Kingdom of Omnijo)
 created by my imagination.
 
+![Omnija Centra Gvidado (OCG) emblem](fig/OCG.svg)
+
+Regno de Omnijo Capital *OmniCentro* local authority *Omnija Centra Gvidado* (OCG) emblem (fictional).  
+See [OmniCentro documentation](OmniCentrajSpecifoj.md#emblemo) for more information.
+
 
 Disclaimer
 -------------------------------------------------------------------------------

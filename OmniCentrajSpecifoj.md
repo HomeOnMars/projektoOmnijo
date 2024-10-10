@@ -12,7 +12,7 @@ PDX Mod Link: ***TBD***
 ![Omnija Centra Gvidado (OCG) emblem](fig/OCG.svg)
 
 OmniCentro local authority *Omnija Centra Gvidado* (OCG) emblem (fictional).  
-See [below](#emblemo) for more info and image generation codes.
+See [below](#emblemo) for more information and image generation codes.
 
 
 Malgarantio  
