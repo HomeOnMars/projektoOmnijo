@@ -24,7 +24,7 @@ import matplotlib.pyplot as plt
 output_path = "./OCG.svg"
 colors_dict = {
     # see also: https://xkcd.com/color/rgb/
-    'O' : '#C0C0C0',
+    'O' : '#C5C9C7', # C5C9C7 b7c9e2 5e9b8a
     'C' : '#00BFFF',
     'G' : '#9370DB',
     'x0': '#B7E1A1',  # ^ light grey green  B7E1A1

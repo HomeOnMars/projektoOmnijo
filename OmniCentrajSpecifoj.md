@@ -9,10 +9,10 @@ for my upcoming fictional Cities: Skylines 2 city *OmniCentro*.
 
 PDX Mod Link: ***TBD***
 
-![Omnija Centra Gvidado (OCG) logo](fig/OCG.svg)
+![Omnija Centra Gvidado (OCG) emblem](fig/OCG.svg)
 
-OmniCentro local government emblem (fictional).  
-See [below](#emblemo) for more info and image generation code.
+OmniCentro local authority *Omnija Centra Gvidado* (OCG) emblem (fictional).  
+See [below](#emblemo) for more info and image generation codes.
 
 
 Malgarantio  
@@ -517,7 +517,7 @@ See [Background Bulletin](#background-bulletin) for more info.
 
 #### Emblem generation code
 
-The Emblem of OCG was generated using my python code
+The emblem of OCG was generated using my python code
 [here](fig/OCG.py).
 
 
