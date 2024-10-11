@@ -11,7 +11,7 @@ PDX Mod Link: ***TBD***
 
 ![Omnija Centra Gvidado (OCG) emblem](fig/OCG.svg)
 
-OmniCentro local authority *Omnija Centra Gvidado* (OCG) emblem (fictional).  
+Regno de Omnijo central authority *Omnija Centra Gvidado* (OCG) emblem (fictional).  
 See [below](#emblemo) for more information and image generation codes.
 
 
@@ -68,21 +68,12 @@ who was just coronated about half a year ago.
 
 #### Background Bulletin
 
-| Settings          |  Acronym | Name                |
-| :---------------- | :------: | :-----------------: |
-| City Name         | OC   | OmniCentro              |
-| Country Name      | RdO  | Regno de Omnijo         |
-| Government Name   | OCR  | Omnija Centra Registaro |
-| Local Authority   | OCG  | OmniCentra    Gvidado   |
-
-| (Fikciaj) Fonaj Informoj  <br>(Fictional) Background Information | Priskribo  <br>Description |
-
-| Settings          |  Acronym | Name                |
-| :---------------- | :------: | :-----------------: |
-| City Name         | OC   | OmniCentro              |
-| Country Name      | RdO  | Regno de Omnijo         |
-| Government Name   | OCR  | Omnija Centra Registaro |
-| Local Authority   | OCG  | OmniCentra    Gvidado   |
+| Settings                | Acronym | Name                    |
+| :---------------------- | :-----: | :---------------------: |
+| City Name               |   OC    | OmniCentro              |
+| Country Name            |   RdO   | Regno de Omnijo         |
+| Central Authority Name  |   OCG   | Omnija Centra Gvidado   |
+| Government Service Name |   OCR   | Omnija Centra Registaro |
 
 | (Fikciaj) Fonaj Informoj  <br>(Fictional) Background Information | Priskribo  <br>Description |
 | :---------------- | ---- |
@@ -91,7 +82,7 @@ who was just coronated about half a year ago.
 | Urbaj Projektistoj  <br>City Designers | <span style="color:DeepSkyBlue">Ĉuĉjo la Arkitekto</span>  kaj  <span style="color:MediumPurple">Ĝejnjo la Suvereno</span> de OCFI |
 | Oficiala Lingvo  <br>Official Language | *Esperanto++* (A.k.a. ***E++***, pronounced as "eppo")  <br>An artificial variant of esperanto specified by <span style="color:Silver">Reĝino Serena</span> herself, aiming to offer maximum regularity for easy learning, while conforming to the existing world as much as possible.  <br>E.g. Officially eliminated `ĥ` from the alphabet (mostly replaced with `k`);  <br>Decimal point in E++ is `.` instead of `,`.  <br>Transitioning from English in the next 20 years. |
 | Oficiala Religio  <br>Official Religion | Pastafarianismo |
-| Oficialaj Koloroj  <br>Official Colors   | <span style="color:Sliver">Arĝento/Silver #C0C0C0</span>, symbolizing the harsh unbending reality, where beauty and complexities hidden deep underneath.  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span>, symbolizing insights, understanding, and rationality; to see the world as it is.  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span>, as a mixture of pink and blue, symbolizing empathies combined with resolutions; to mould the world into what we desire.  |
+| Oficialaj Koloroj  <br>Official Colors   | <span style="color:Silver">Arĝento/Silver #C0C0C0</span>, symbolizing the harsh unbending reality, where beauty and complexities hidden deep underneath.  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span>, symbolizing insights, understanding, and rationality; to see the world as it is.  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span>, as a mixture of pink and blue, symbolizing empathies combined with resolutions; to mould the world into what we desire.  |
 | Oficialaj Himno  <br>Official Anthem | *Oceans* (*Where Feet May Fail*), originally by Hillsong UNITED  <br>Modified acoustic version.  <br>Hand picked by <span style="color:Silver">Reĝino Serena</span> herself (Surprise, surprise), even though she claims to be an atheist.  <br>The official reason is that she "likes the sound of it";  <br>The unofficial reason may be that it serves as a reminder of the state's self-imposed role as the Saviour to its people, its promises and duty for their protection and guidance, and its call on people's trust and faith for the state.   |
 
 
@@ -517,7 +508,7 @@ See [Background Bulletin](#background-bulletin) for more info.
 #### Emblem generation code
 
 The emblem of OCG was generated using my python code
-[here](fig/OCG.py).
+[here](fig/draw_OCG.py).
 
 
 
@@ -689,7 +680,7 @@ What if they break??
 And then, it was so.
 
 Our (soon-to-be) legendary duo now begins the journey,
-of building the impossible capital city,
+of building the so-called impossible capital city,
 in the valley of *Ĉemarvalo*.
 
 

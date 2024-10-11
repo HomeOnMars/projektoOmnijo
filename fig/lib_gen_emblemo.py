@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-O.C.G. Emblem Generation.
-O.C.G. stands for OmniCentra Gvidado (in Esperanto/E++).
+Library for Emblem Generation.
 
 Author: HomeOnMars
 
@@ -18,16 +17,14 @@ To view a copy of this license, visit <https://creativecommons.org/licenses/by-n
 from math import pi, sin, cos
 # imports (3rd party)
 import matplotlib as mpl
-import matplotlib.pyplot as plt
 
 # params
-output_path = "./OCG.svg"
 colors_dict = {
-    # see also: https://xkcd.com/color/rgb/
-    'O' : '#C5C9C7', # C5C9C7 b7c9e2 5e9b8a
+    # see also: <https://xkcd.com/color/rgb/>
+    'O' : '#C0C0C0',  # Silver C0C0C0 / Green 5E9B8A
     'C' : '#00BFFF',
     'G' : '#9370DB',
-    'x0': '#B7E1A1',  # ^ light grey green  B7E1A1
+    'x0': '#B7E1A1',  # ^ light grey green  B7E1A1 / beige  E6DAA6
     'x1': '#D6B4FC',  # < light violet  D6B4FC
     'x2': '#95D0FC',  # > light blue  95D0FC
 }
@@ -97,34 +94,3 @@ def draw_hat(
                 **kwargs,
         ))
     ]
-        
-if __name__ == '__main__':
-    
-    # plot
-    fig, ax = plt.subplots(figsize=[4, 4])
-    # params for G
-    t_g_2, r_g_1 = 14, 7/16
-    # --- arcs
-    draw_arc(ax, radius=11/16, thetas=ts( 5.50, 19.50), color=colors_dict['O'])
-    draw_arc(ax, radius= 9/16, thetas=ts( 2.25, 14.25), color=colors_dict['C'])
-    draw_arc(ax, radius=r_g_1, thetas=ts( 2.25, t_g_2), color=colors_dict['G'])
-    center_tg3 = (cos(t_g_2/8*pi)*r_g_1/2, sin(t_g_2/8*pi)*r_g_1/2)
-    center_tg3 = (    # shift a little to remove the white gap in-between
-        center_tg3[0] + center_tg3[1]/128,
-        center_tg3[1] - center_tg3[0]/128)
-    draw_arc(ax, radius=[r_g_1/2, r_g_1/8*5], thetas=ts(0, 8),
-             center=center_tg3, angle=t(t_g_2), color=colors_dict['G'],
-    )
-    # --- hats
-    a = draw_hat(ax, radius=14.5/16, length=9/16,
-             angle=t(4), theta=t(50/9), color=colors_dict['x0'])
-    for i in range(1, 3):
-        draw_hat(ax, radius=15/16, length=7/16,
-                 angle=t(4+i*16/3), color=colors_dict[f'x{i}'])
-    
-    # format and save
-    ax.set_xlim(-1, 1)
-    ax.set_ylim(-1, 1)
-    ax.set_axis_off()
-    ax.set_position([0, 0, 1, 1])
-    fig.savefig(output_path, transparent=True)
