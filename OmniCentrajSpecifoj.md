@@ -80,7 +80,7 @@ who was just coronated about half a year ago.
 | Ŝtatestro  <br>Head of State   | <span style="color:Silver">Reĝino Serena de Omnijo</span> |
 | Registara Tipo  <br>Government Type   | Konstitucia Monarkio / Bonfara Diktaturo / Totalisma Reĝimo, depende de kiu vi demandas.  <br>Constitutional Monarchy / Benevolent Dictatorship / Totalitarian Regime, depending on who you ask.  |
 | Urbaj Projektistoj  <br>City Designers | <span style="color:DeepSkyBlue">Ĉuĉjo la Arkitekto</span>  kaj  <span style="color:MediumPurple">Ĝejnjo la Suvereno</span> de OCFI |
-| Oficiala Lingvo  <br>Official Language | *Esperanto++* (A.k.a. ***E++***, pronounced as "eppo")  <br>An artificial variant of esperanto specified by <span style="color:Silver">Reĝino Serena</span> herself, aiming to offer maximum regularity for easy learning, while conforming to the existing world as much as possible.  <br>E.g. Officially eliminated `ĥ` from the alphabet (mostly replaced with `k`);  <br>Decimal point in E++ is `.` instead of `,`.  <br>Transitioning from English in the next 20 years. |
+| Oficiala Lingvo  <br>Official Language | *Esperanto++* (A.k.a. ***E++***, pronounced as "eppo")  <br>An artificial variant of esperanto specified by <span style="color:Silver">Reĝino Serena</span> herself, aiming to offer maximum regularity for easy learning, while conforming to the existing world as much as possible.  <br>E.g. Officially eliminated `ĥ` from the alphabet (mostly replaced with `k`);  <br>Decimal separator in E++ is `.` instead of `,`, and thousands separator is space(` `) instead of `.`;<!-- markdownlint-disable-line no-space-in-code -->  <br>Transitioning from English in the next 20 years. |
 | Oficiala Religio  <br>Official Religion | Pastafarianismo |
 | Oficialaj Koloroj  <br>Official Colors   | <span style="color:Silver">Arĝento/Silver #C0C0C0</span>, symbolizing the harsh unbending reality, where beauty and complexities hidden deep underneath.  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span>, symbolizing insights, understanding, and rationality; to see the world as it is.  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span>, as a mixture of pink and blue, symbolizing empathies combined with resolutions; to mould the world into what we desire.  |
 | Oficialaj Himno  <br>Official Anthem | *Oceans* (*Where Feet May Fail*), originally by Hillsong UNITED  <br>Modified acoustic version.  <br>Hand picked by <span style="color:Silver">Reĝino Serena</span> herself (Surprise, surprise), even though she claims to be an atheist.  <br>The official reason is that she "likes the sound of it";  <br>The unofficial reason may be that it serves as a reminder of the state's self-imposed role as the Saviour to its people, its promises and duty for their protection and guidance, and its call on people's trust and faith for the state.   |
@@ -251,20 +251,20 @@ Code illustrations
 ```python
     # natural units
     # https://en.wikipedia.org/wiki/Natural_units#Planck_units
-    
+
     from astropy import units
     from astropy import constants as const
     from numpy import pi
     import numpy as np
-    
-    
+
+
     # u_nat: Planck natural units
     u_nat : dict[str, units.UnitBase|units.Quantity] = {}
     u_nat['dist'] = ((const.hbar * const.G / const.c**3)**0.5).si
     u_nat['mass'] = ((const.hbar * const.c / const.G   )**0.5).si
     u_nat['time'] = ((const.hbar * const.G / const.c**5)**0.5).si
     u_nat['temp'] = ((const.hbar * const.c**5 / const.G)**0.5 / const.k_B).si
-    
+
     # u_rdo: RdO standard units
     # exponent
     u_rdo_exp : dict[str, int] = {k: np.ceil(-np.log2(v.si.value)) for k, v in u_nat.items()} # default
@@ -274,40 +274,41 @@ Code illustrations
     u_rdo_exp['temp'] =-106   # = 2    * 53
     # coefficient
     u_rdo_eff : dict[str, float] = {k: 1.0 for k, v in u_nat.items()} # default
-    u_rdo_eff['dist'] = 191/256
-    u_rdo_eff['mass'] = 175/256
-    u_rdo_eff['time'] = 213/256
-    u_rdo_eff['temp'] = 147/256
-    
+    u_rdo_eff['dist'] = 12/16  #  96/128  #
+    u_rdo_eff['mass'] = 11/16  #  88/128  #
+    u_rdo_eff['time'] = 13/16  # 106/128  #
+    u_rdo_eff['temp'] =  9/16  #  73/128  #
+
     u_rdo = {k: u_nat[k] * u_rdo_eff[k] * 2**u_rdo_exp[k] for k in u_nat.keys()}
-    
-    
+
+    # track gauges
     track_standard_gauge = (4*units.imperial.foot + 8.5 * units.imperial.inch).si
     track_rdo_gauge = np.pi*np.e/6 * u_rdo['dist'] # i.e., np.pi * np.e * 2**113 * u_nat['dist']
     temp_refs_C = [0., 36.8, 100.] * units.deg_C
     temp_refs_K = temp_refs_C.to(units.K, equivalencies=units.equivalencies.temperature())
-    
-    
+
+    # output
     print("\n".join([
-        f"{k:4}: unit = {u_rdo[k]:6.4f} \t ==  {u_rdo_eff[k]:10.8f} * 2**{u_rdo_exp[k]: 4d} * [naturalUnit: {v:.4e}]"
+        f"{k:4}: unit = {u_rdo[k]:6.4f} \t ==  {u_rdo_eff[k]:6.4f} * 2**{u_rdo_exp[k]: 4d} * [naturalUnit: {v:.4e}]"
         for k, v in u_nat.items()]))
     print()
     print(f"dist: {track_standard_gauge = } is {track_standard_gauge.to(u_rdo['dist']):6.4f}")
-    print(f"dist: proposed new guage: {track_rdo_gauge:6.4f} \ti.e.  {track_rdo_gauge.to(u_rdo['dist']):6.4f}")
+    print(f"dist: proposed new gauge: {track_rdo_gauge:6.4f} \t i.e.  {track_rdo_gauge.to(u_rdo['dist']):6.4f}",
+          f"\t Deviation from std gauge: {(track_rdo_gauge-track_standard_gauge).to(units.mm):4.1f}")
     print(f"temp: {temp_refs_C} is {temp_refs_K}, which is {temp_refs_K.to(u_rdo['temp'])} ")
 ```
 
 Results
 
 ```python
-    dist: unit = 1.0018 m 	 ==  0.74609375 * 2** 116 * [naturalUnit: 1.6163e-35 m]
-    mass: unit = 0.9984 kg 	 ==  0.68359375 * 2**  26 * [naturalUnit: 2.1764e-08 kg]
-    time: unit = 1.0003 s 	 ==  0.83203125 * 2** 144 * [naturalUnit: 5.3912e-44 s]
-    temp: unit = 1.0028 K 	 ==  0.57421875 * 2**-106 * [naturalUnit: 1.4168e+32 K]
-    
-    dist: track_standard_gauge = <Quantity 1.4351 m> is 1.4325 1.0018 m
-    dist: proposed new guage: 1.4259 m 	i.e.  1.4233 1.0018 m
-    temp: [  0.   36.8 100. ] deg_C is [273.15 309.95 373.15] K, which is [272.39534554 309.09367509 372.11906713] 1.00277 K
+    dist: unit = 1.0070 m 	 ==  0.7500 * 2** 116 * [naturalUnit: 1.6163e-35 m]
+    mass: unit = 1.0041 kg 	 ==  0.6875 * 2**  26 * [naturalUnit: 2.1764e-08 kg]
+    time: unit = 0.9769 s 	 ==  0.8125 * 2** 144 * [naturalUnit: 5.3912e-44 s]
+    temp: unit = 0.9823 K 	 ==  0.5625 * 2**-106 * [naturalUnit: 1.4168e+32 K]
+
+    dist: track_standard_gauge = <Quantity 1.4351 m> is 1.4251 1.00705 m
+    dist: proposed new gauge: 1.4333 m 	 i.e.  1.4233 1.00705 m 	 Deviation from std gauge: -1.8 mm
+    temp: [  0.   36.8 100. ] deg_C is [273.15 309.95 373.15] K, which is [278.07024857 315.53312665 379.8715477 ] 0.982306 K
 ```
 
 
