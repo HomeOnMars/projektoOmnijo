@@ -220,96 +220,10 @@ Use at your own risk.***
 -------------------------------------------------------------------------------
 
 
-#### Sistemo de Unuoj  <br>System of Units
+#### List
 
+[Sistemo de Unuoj / System of Units](teknikajxoj/unuosistemo.md#Informoj)
 
-(Detailed descriptions coming soon)
-
-Based on [Planck natural units](https://en.wikipedia.org/wiki/Natural_units#Planck_units).
-
-Track gauge in *RdO* for trains, metros, and trams are the same:
-$$d_\mathrm{gauge} \equiv \pi e ~ 2^{113} ~ l_P = 1.4333 \mathrm{m},$$
-which is compatible with the standard gauge ($1.4351 \mathrm{m}$)
-with a difference of only $2 \mathrm{mm}$.
-(Hopefully that's small enough...)
-
--------------------------------------------------------------------------------
-
-Note:
-$l_P \equiv \sqrt{\frac{\hbar G}{c^3}}$
-is the [Planck length](https://simple.wikipedia.org/wiki/Planck_length#):
-$c$
-is the speed of light,
-$\hbar$ is the reduced Planck constant, and
-$G$
-is the gravitational constant.
-
--------------------------------------------------------------------------------
-
-Code illustrations
-
-```python
-    # natural units
-    # https://en.wikipedia.org/wiki/Natural_units#Planck_units
-
-    from astropy import units
-    from astropy import constants as const
-    from numpy import pi
-    import numpy as np
-
-
-    # u_nat: Planck natural units
-    u_nat : dict[str, units.UnitBase|units.Quantity] = {}
-    u_nat['dist'] = ((const.hbar * const.G / const.c**3)**0.5).si
-    u_nat['mass'] = ((const.hbar * const.c / const.G   )**0.5).si
-    u_nat['time'] = ((const.hbar * const.G / const.c**5)**0.5).si
-    u_nat['temp'] = ((const.hbar * const.c**5 / const.G)**0.5 / const.k_B).si
-
-    # u_rdo: RdO standard units
-    # exponent
-    u_rdo_exp : dict[str, int] = {k: np.ceil(-np.log2(v.si.value)) for k, v in u_nat.items()} # default
-    u_rdo_exp['dist'] = 116   # = 2**2 * 29
-    u_rdo_exp['mass'] = 26    # = 2    * 13
-    u_rdo_exp['time'] = 144   # = 2**4 * 3**2
-    u_rdo_exp['temp'] =-106   # = 2    * 53
-    # coefficient
-    u_rdo_eff : dict[str, float] = {k: 1.0 for k, v in u_nat.items()} # default
-    u_rdo_eff['dist'] = 12/16  #  96/128  #
-    u_rdo_eff['mass'] = 11/16  #  88/128  #
-    u_rdo_eff['time'] = 13/16  # 106/128  #
-    u_rdo_eff['temp'] =  9/16  #  73/128  #
-
-    u_rdo = {k: u_nat[k] * u_rdo_eff[k] * 2**u_rdo_exp[k] for k in u_nat.keys()}
-
-    # track gauges
-    track_standard_gauge = (4*units.imperial.foot + 8.5 * units.imperial.inch).si
-    track_rdo_gauge = np.pi*np.e/6 * u_rdo['dist'] # i.e., np.pi * np.e * 2**113 * u_nat['dist']
-    temp_refs_C = [0., 36.8, 100.] * units.deg_C
-    temp_refs_K = temp_refs_C.to(units.K, equivalencies=units.equivalencies.temperature())
-
-    # output
-    print("\n".join([
-        f"{k:4}: unit = {u_rdo[k]:6.4f} \t ==  {u_rdo_eff[k]:6.4f} * 2**{u_rdo_exp[k]: 4d} * [naturalUnit: {v:.4e}]"
-        for k, v in u_nat.items()]))
-    print()
-    print(f"dist: {track_standard_gauge = } is {track_standard_gauge.to(u_rdo['dist']):6.4f}")
-    print(f"dist: proposed new gauge: {track_rdo_gauge:6.4f} \t i.e.  {track_rdo_gauge.to(u_rdo['dist']):6.4f}",
-          f"\t Deviation from std gauge: {(track_rdo_gauge-track_standard_gauge).to(units.mm):4.1f}")
-    print(f"temp: {temp_refs_C} is {temp_refs_K}, which is {temp_refs_K.to(u_rdo['temp'])} ")
-```
-
-Results
-
-```python
-    dist: unit = 1.0070 m 	 ==  0.7500 * 2** 116 * [naturalUnit: 1.6163e-35 m]
-    mass: unit = 1.0041 kg 	 ==  0.6875 * 2**  26 * [naturalUnit: 2.1764e-08 kg]
-    time: unit = 0.9769 s 	 ==  0.8125 * 2** 144 * [naturalUnit: 5.3912e-44 s]
-    temp: unit = 0.9823 K 	 ==  0.5625 * 2**-106 * [naturalUnit: 1.4168e+32 K]
-
-    dist: track_standard_gauge = <Quantity 1.4351 m> is 1.4251 1.00705 m
-    dist: proposed new gauge: 1.4333 m 	 i.e.  1.4233 1.00705 m 	 Deviation from std gauge: -1.8 mm
-    temp: [  0.   36.8 100. ] deg_C is [273.15 309.95 373.15] K, which is [278.07024857 315.53312665 379.8715477 ] 0.982306 K
-```
 
 
 
