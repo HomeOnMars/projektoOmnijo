@@ -222,7 +222,8 @@ Use at your own risk.***
 
 #### List
 
-[Sistemo de Unuoj / System of Units](teknikajxoj/unuosistemo.md#Informoj)
+- [Sistemo de Unuoj / System of Units](teknikajxoj/unuosistemo.md#Informoj)
+- [ONKIO table (ASCII equivalent)](teknikajxoj/ONKIO.md)
 
 
 
