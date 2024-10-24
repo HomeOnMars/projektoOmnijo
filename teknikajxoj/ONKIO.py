@@ -12,8 +12,8 @@ Note: Esperanto letter hx/Hx is not present in this table,
 
 Code author: HomeOnMars
 
-This work © 2024 by HomeOnMars is licensed under CC BY-NC-SA 4.0.
-To view a copy of this license, visit <https://creativecommons.org/licenses/by-nc-sa/4.0/>
+ONKIO © 2024 by HomeOnMars is licensed under CC BY 4.0.
+To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/
 
 -------------------------------------------------------------------------------
 """
