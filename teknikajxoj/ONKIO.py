@@ -56,14 +56,16 @@ ONKIO_2_ASCII_DICT[chr(0x3d)] = chr(0x10e)    # = -> Ď
 ONKIO_2_ASCII_DICT[chr(0x3e)] = chr(0x11a)    # > -> Ě
 ONKIO_2_ASCII_DICT[chr(0x3f)] = chr(0x11e)    # ? -> Ğ
 #     Punctuation & Symbols
-ONKIO_2_ASCII_DICT[chr(0x10)] = chr(0x5c)    # 0x10 -> \
-ONKIO_2_ASCII_DICT[chr(0x11)] = chr(0x7c)    # 0x11 -> |
-ONKIO_2_ASCII_DICT[chr(0x12)] = chr(0x7b)    # 0x12 -> {
+ONKIO_2_ASCII_DICT[chr(0x5f)] = chr(0x2011)  # _ -> ‑
+ONKIO_2_ASCII_DICT[chr(0x0f)] = chr(0x5c)    # 0x0f -> \
+ONKIO_2_ASCII_DICT[chr(0x10)] = chr(0x5f)    # 0x10 -> _
+ONKIO_2_ASCII_DICT[chr(0x11)] = chr(0x7b)    # 0x11 -> {
+ONKIO_2_ASCII_DICT[chr(0x12)] = chr(0x7c)    # 0x12 -> |
 ONKIO_2_ASCII_DICT[chr(0x13)] = chr(0x7d)    # 0x13 -> }
-ONKIO_2_ASCII_DICT[chr(0x14)] = chr(0x40)    # 0x14 -> @
+ONKIO_2_ASCII_DICT[chr(0x14)] = chr(0x7e)    # 0x14 -> ~
 ONKIO_2_ASCII_DICT[chr(0x15)] = chr(0x60)    # 0x15 -> `
 ONKIO_2_ASCII_DICT[chr(0x16)] = chr(0x5e)    # 0x16 -> ^
-ONKIO_2_ASCII_DICT[chr(0x17)] = chr(0x7e)    # 0x17 -> ~
+ONKIO_2_ASCII_DICT[chr(0x17)] = chr(0x40)    # 0x17 -> @
 ONKIO_2_ASCII_DICT[chr(0x18)] = chr(0x5b)    # 0x18 -> [
 ONKIO_2_ASCII_DICT[chr(0x19)] = chr(0x5d)    # 0x19 -> ]
 ONKIO_2_ASCII_DICT[chr(0x1a)] = chr(0x3a)    # 0x1a -> :
@@ -72,12 +74,9 @@ ONKIO_2_ASCII_DICT[chr(0x1c)] = chr(0x3c)    # 0x1c -> <
 ONKIO_2_ASCII_DICT[chr(0x1d)] = chr(0x3d)    # 0x1d -> =
 ONKIO_2_ASCII_DICT[chr(0x1e)] = chr(0x3e)    # 0x1e -> >
 ONKIO_2_ASCII_DICT[chr(0x1f)] = chr(0x3f)    # 0x1f -> ?
-ONKIO_2_ASCII_DICT[chr(0x2a)] = chr(0x5f)    # * -> _
-ONKIO_2_ASCII_DICT[chr(0x2d)] = chr(0x2a)    # - -> *
-ONKIO_2_ASCII_DICT[chr(0x5f)] = chr(0x2d)    # _ -> -
 #    Control Sequences (limit to 0x0_)
-ONKIO_2_ASCII_DICT[chr(0x0e)] = chr(0x1a)    # SUB -> 0x0e
-ONKIO_2_ASCII_DICT[chr(0x0f)] = chr(0x1b)    # ESC -> 0x0f
+ONKIO_2_ASCII_DICT[chr(0x0d)] = chr(0x1a)    # SUB -> 0x0d
+ONKIO_2_ASCII_DICT[chr(0x0e)] = chr(0x1b)    # ESC -> 0x0e
 
 
 
@@ -109,7 +108,9 @@ def chr_2_txt_ascii(c: int, highlight: bool = False) -> str:
     if c <= 32:
         if c == 0x00:
             return formatter('NULL', highlight)
-        elif c == 0x07:
+        elif c == 0x04:    # End of Transmission
+            return formatter('EOT',  highlight)
+        elif c == 0x07:    # Alert
             return formatter('BELL', highlight)
         elif c == 0x08:    # Backspace
             return formatter(r'BS \\b', highlight)
