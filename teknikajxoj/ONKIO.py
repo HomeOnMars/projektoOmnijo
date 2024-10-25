@@ -53,8 +53,8 @@ MARKDOWN_ESCAPABLES : set = {
 ONKIO_2_ASCII_DICT = {chr(ascii_c): chr(ascii_c) for ascii_c in range(128)}
 # Differences
 #    Letters
-ONKIO_2_ASCII_DICT[chr(0x40)] = chr(0x16c)    # @ -> Ŭ    # Ctrl-Shift-\ + U
-ONKIO_2_ASCII_DICT[chr(0x60)] = chr(0x16d)    # ` -> ŭ    # Ctrl-Shift-\ + u
+ONKIO_2_ASCII_DICT[chr(0x40)] = chr(0x20)     # @ -> SPACE
+ONKIO_2_ASCII_DICT[chr(0x60)] = chr(0x2011)   # ` -> ‑
 ONKIO_2_ASCII_DICT[chr(0x5b)] = chr(0x108)    # [ -> Ĉ
 ONKIO_2_ASCII_DICT[chr(0x7b)] = chr(0x109)    # { -> ĉ
 ONKIO_2_ASCII_DICT[chr(0x5c)] = chr(0x11c)    # \ -> Ĝ
@@ -63,6 +63,8 @@ ONKIO_2_ASCII_DICT[chr(0x5d)] = chr(0x134)    # ] -> Ĵ
 ONKIO_2_ASCII_DICT[chr(0x7d)] = chr(0x135)    # } -> ĵ
 ONKIO_2_ASCII_DICT[chr(0x5e)] = chr(0x15c)    # ^ -> Ŝ
 ONKIO_2_ASCII_DICT[chr(0x7e)] = chr(0x15d)    # ~ -> ŝ
+ONKIO_2_ASCII_DICT[chr(0x5f)] = chr(0x16c)    #  _  -> Ŭ    # Ctrl-Shift-\ + U
+ONKIO_2_ASCII_DICT[chr(0x7f)] = chr(0x16d)    # DEL -> ŭ    # Ctrl-Shift-\ + u
 #    Hexadecimal characters
 ONKIO_2_ASCII_DICT[chr(0x3a)] = chr(0x102)    # : -> Ă
 ONKIO_2_ASCII_DICT[chr(0x3b)] = chr(0x158)    # ; -> Ř
@@ -71,9 +73,7 @@ ONKIO_2_ASCII_DICT[chr(0x3d)] = chr(0x10e)    # = -> Ď
 ONKIO_2_ASCII_DICT[chr(0x3e)] = chr(0x11a)    # > -> Ě
 ONKIO_2_ASCII_DICT[chr(0x3f)] = chr(0x11e)    # ? -> Ğ
 #     Punctuation & Symbols
-ONKIO_2_ASCII_DICT[chr(0x5f)] = chr(0x2011)  # _ -> ‑
-ONKIO_2_ASCII_DICT[chr(0x0f)] = chr(0x5c)    # 0x0f -> \
-ONKIO_2_ASCII_DICT[chr(0x10)] = chr(0x5f)    # 0x10 -> _
+ONKIO_2_ASCII_DICT[chr(0x10)] = chr(0x5c)    # 0x10 -> \
 ONKIO_2_ASCII_DICT[chr(0x11)] = chr(0x7b)    # 0x11 -> {
 ONKIO_2_ASCII_DICT[chr(0x12)] = chr(0x7c)    # 0x12 -> |
 ONKIO_2_ASCII_DICT[chr(0x13)] = chr(0x7d)    # 0x13 -> }
@@ -89,9 +89,11 @@ ONKIO_2_ASCII_DICT[chr(0x1c)] = chr(0x3c)    # 0x1c -> <
 ONKIO_2_ASCII_DICT[chr(0x1d)] = chr(0x3d)    # 0x1d -> =
 ONKIO_2_ASCII_DICT[chr(0x1e)] = chr(0x3e)    # 0x1e -> >
 ONKIO_2_ASCII_DICT[chr(0x1f)] = chr(0x3f)    # 0x1f -> ?
+ONKIO_2_ASCII_DICT[chr(0x20)] = chr(0x5f)    # SPACE -> _
 #    Control Sequences (limit to 0x0_)
-ONKIO_2_ASCII_DICT[chr(0x0d)] = chr(0x1a)    # SUB -> 0x0d
-ONKIO_2_ASCII_DICT[chr(0x0e)] = chr(0x1b)    # ESC -> 0x0e
+ONKIO_2_ASCII_DICT[chr(0x0d)] = chr(0x1a)    # 0x0d -> SUB
+ONKIO_2_ASCII_DICT[chr(0x0e)] = chr(0x1b)    # 0x0e -> ESC
+ONKIO_2_ASCII_DICT[chr(0x0f)] = chr(0x7f)    # 0x0f -> DEL
 
 
 
