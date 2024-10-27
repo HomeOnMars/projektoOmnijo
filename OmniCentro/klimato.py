@@ -25,23 +25,40 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 import numpy as np
 from astropy import units as u
+from matplotlib import pyplot as plt
+
+
+
+# helper gaussian func for months; 12 and 6 because there are 12 months in a year
+# i_month=6 for hot July
+gaussian = lambda i_month=6, sig=2: np.exp(-0.5*(((np.arange(12)-i_month+6)%12-6)/sig)**2)
+
+
 
 # Climate of [Reykjavik](https://en.wikipedia.org/wiki/Reykjav%C3%ADk#Climate) (2024-10-23)
 
 # record temperature max by month
-Tr_max= np.array([11.6, 10.2, 14.2, 17.1, 20.6, 22.4, 25.7, 24.8, 20.1, 15.7, 12.7, 12.0])*u.deg_C + 2.0*u.deg_C
+Tr_max= np.array([11.6, 10.2, 14.2, 17.1, 20.6, 22.4, 25.7, 24.8, 20.1, 15.7, 12.7, 12.0])*u.deg_C + (
+    1.0 + 6.0*gaussian(6) - 1.0*gaussian(0, sig=0.5) + 1.0*gaussian(1, sig=0.5))*u.deg_C
 # average temperature max by month
-T_max = np.array([ 3.2,  3.3,  4.2,  6.9, 10.1, 13.0, 14.9, 14.1, 11.4,  7.6,  4.7,  3.3])*u.deg_C + 1.5*u.deg_C
+T_max = np.array([ 3.2,  3.3,  4.2,  6.9, 10.1, 13.0, 14.9, 14.1, 11.4,  7.6,  4.7,  3.3])*u.deg_C + (
+    -1.5 + 4.0*gaussian(6))*u.deg_C
 # record temperature min by month
-Tr_min= np.array([-24.5, -17.6, -16.4, -16.4, -7.7, -0.7, 1.4, -0.4, -4.4, -10.6, -15.1, -16.8])*u.deg_C + 0.0*u.deg_C
+Tr_min= np.array([-24.5, -17.6, -16.4, -16.4, -7.7, -0.7, 1.4, -0.4, -4.4, -10.6, -15.1, -16.8])*u.deg_C + (
+    1.0 + 8.0*gaussian(0, sig=4) + 5.0*gaussian(0, sig=0.5) + 4.0*gaussian(3, sig=0.5) - 2.0*gaussian(11, sig=0.5))*u.deg_C
 # average temperature min by month
-T_min = np.array([-1.7, -1.9, -1.3,  1.0,  4.0,  7.2,  9.1,  8.6,  6.2,  2.7, -0.1,  1.6])*u.deg_C + 0.5*u.deg_C
+T_min = np.array([-1.7, -1.9, -1.3,  1.0,  4.0,  7.2,  9.1,  8.6,  6.2,  2.7, -0.1,  1.6])*u.deg_C + (
+    -2.0 + 1.0*gaussian(0, sig=4) + 4.0*gaussian(3) + 3.0*gaussian(6) + 1.0*gaussian(9) + 2.0*gaussian(10, sig=1) - 3.0*gaussian(11, sig=0.5))*u.deg_C
 # average temperature by month
-T_avg = np.array([ 0.7,  0.5,  1.2,  3.7,  6.7,  9.8, 11.6, 11.0,  8.5,  4.9,  2.2,  0.8])*u.deg_C + 1.0*u.deg_C
+T_avg = np.array([ 0.7,  0.5,  1.2,  3.7,  6.7,  9.8, 11.6, 11.0,  8.5,  4.9,  2.2,  0.8])*u.deg_C + (
+    0.0  + 1.0*gaussian(3) + 3.0*gaussian(6) - 0.5*gaussian(0, sig=0.5))*u.deg_C
 # chance of rain
 p_rain=(np.array([15.3, 15.0, 14.2, 12.0, 10.8,  9.3, 10.3, 11.6, 15.0, 13.1, 13.7, 14.6]) / 30) * 100*u.percent * 0.75
 # amount of rain
 v_rain= np.array([87.1, 90.6, 80.7, 59.0, 52.6, 43.3, 49.9, 64.5, 87.0, 79.8, 86.5, 94.9])*u.mm
+
+
+# Cloudiness data see 
 
 
 
@@ -62,9 +79,19 @@ for k in ss.keys():
     ss[k]['rain_v' ] = np.mean(v_rain[ss[k]['indeksoj']])
     ss[k]['rain_d' ] = (np.std(v_rain[ss[k]['indeksoj']])*0.75+np.std(v_rain)*0.25)
 
+
+
 if __name__ == '__main__':
     for k in ss.keys():
         print(f"{k}")
         print(f"\tT_min: \t{ss[k]['T_min_v'] :5.2f} +/- {ss[k]['T_min_d'] :5.2f}")
         print(f"\tT_max: \t{ss[k]['T_max_v'] :5.2f} +/- {ss[k]['T_max_d'] :5.2f}")
         print(f"\train : \t({ss[k]['rain_p'] :6.2f} )  {ss[k]['rain_v'] :6.2f} +/- {ss[k]['rain_d'] :5.2f}")
+    
+    if False:    # commented
+        plt.plot(T_min, label='T_min')
+        plt.plot(T_max, label='T_max')
+        plt.plot(T_avg, label='T_avg')
+        plt.plot(Tr_min, label='Tr_min')
+        plt.plot(Tr_max, label='Tr_max')
+        plt.legend()

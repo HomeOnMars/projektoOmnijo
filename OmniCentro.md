@@ -169,28 +169,30 @@ Note that the letters are overlapping other acronyms in other categories - and t
 | Siglo  <br>Acronym | Nomo  <br>(en esperanto) | Name  <br>(in English) | Rimarkoj  <br>Remarks |
 | :-----: | ------------------- | ------------------- | ----------- |
 |    A    | **A**viadilo        | Airplane            | |
-|    Ux   | a**Ŭ**tovojo        | Motorway            | |
+|  Ŭ / Ux | a**Ŭ**tovojo        | Motorway            | |
 |    B    | **B**uso            | Bus                 | |
 |    T    | **T**ramo           | Tram                | Regiona  <br>Regional |
 |    E    | f**E**rvojo/m**E**troo | Railway/Metro  <br>Monorail  <br>Train | Regiona  <br>Regional |
 |    V    | **V**agonaro/Trajno | Train               | Grandrapida Interurba  <br>High-speed Intercity |
 |    P    | **P**ramo           | Ferry               | Regiona  <br>Regional |
-|    Sx   | **Ŝ**ipo            | Ship                | Interurba  <br>Intercity |
+|  Ŝ / Sx | **Ŝ**ipo            | Ship                | Interurba  <br>Intercity |
 |    H-   | **H**omo-/Pasaĝero- | Human-/Passenger-   | |
 |    K-   | **K**argo-          | Cargo-              | |
 
 
+Extra notes:
 
-H prefix is usually omitted.
+1. H prefix is usually omitted.
+2. Line numbers are hexadecimal (see [ONKIO table](teknikajxoj/ONKIO.md#onkio-tablo) 0x3_ column for respective symbols of 10~15).
 
 Examples:
 
-- Bus route 123: B123 (short for HB123)
+- Bus route 431 (i.e. 0x1af): B1ĂĞ (short for HB1ĂĞ)
 - High-speed Train line 3: V3 (short for HV3)
-- Motorway 2 N->S: Ux2-M (M for Negative)
-- Cargo train line 1: KV1
+- Motorway 2 N->S: Ŭ2-M (or Ux2-M for ASCII encoding; M for Negative)
+- Cargo train line 12: KVČ
 - Cargo barge route 4: KP4
-- Cargo container ship route 2: KSx2
+- Cargo container ship route 14: KŜĚ (or KSxE for ASCII encoding)
 - Cargo Airline 5: KA5
 
 
