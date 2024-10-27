@@ -53,7 +53,7 @@ T_min = np.array([-1.7, -1.9, -1.3,  1.0,  4.0,  7.2,  9.1,  8.6,  6.2,  2.7, -0
 T_avg = np.array([ 0.7,  0.5,  1.2,  3.7,  6.7,  9.8, 11.6, 11.0,  8.5,  4.9,  2.2,  0.8])*u.deg_C + (
     0.0  + 1.0*gaussian(3) + 3.0*gaussian(6) - 0.5*gaussian(0, sig=0.5))*u.deg_C
 # chance of rain
-rain_p=(np.array([15.3, 15.0, 14.2, 12.0, 10.8,  9.3, 10.3, 11.6, 15.0, 13.1, 13.7, 14.6]) / 30) * 100*u.percent * 0.75
+rain_p=((np.array([15.3, 15.0, 14.2, 12.0, 10.8,  9.3, 10.3, 11.6, 15.0, 13.1, 13.7, 14.6]) / 30) - 1/8) * 100*u.percent
 # amount of rain
 rain_v= np.array([87.1, 90.6, 80.7, 59.0, 52.6, 43.3, 49.9, 64.5, 87.0, 79.8, 86.5, 94.9])*u.mm
 
@@ -78,7 +78,7 @@ clouds_raw= np.array([
 ], dtype=np.float64)*u.percent
 clouds_ref= np.array([0., 20., 40., 60., 80., 100.])*u.percent
 clouds_refmid = (clouds_ref[1:]+clouds_ref[:-1])/2
-clouds  = 100*u.percent - (100*u.percent - clouds_raw*2)*(7/8)
+clouds  = 100*u.percent - (100*u.percent - clouds_raw*1.5)*(6/8)
 clouds  = np.where(clouds > 100*u.percent, 100*u.percent, clouds)
 clouds  = np.hstack((    # normalize by add before 0 and after 100
     np.full(clouds.shape[0], 0)[:, np.newaxis]*u.percent,
@@ -128,7 +128,7 @@ for k in ss.keys():
     ss[k]['cloud_d' ] = np.std(np.concatenate([
         clouds_samples[index][clouds_samples[index] > cloudy_def]
         for index in ss[k]['indeksoj']
-    ])) * (1.5 + 0.5 * ss[k]['cloud_v' ]/cloudy_mean)
+    ])) * (0.5 + 1.0 * ss[k]['cloud_v' ]/cloudy_mean)
 
 
 
