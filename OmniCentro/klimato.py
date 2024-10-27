@@ -53,14 +53,59 @@ T_min = np.array([-1.7, -1.9, -1.3,  1.0,  4.0,  7.2,  9.1,  8.6,  6.2,  2.7, -0
 T_avg = np.array([ 0.7,  0.5,  1.2,  3.7,  6.7,  9.8, 11.6, 11.0,  8.5,  4.9,  2.2,  0.8])*u.deg_C + (
     0.0  + 1.0*gaussian(3) + 3.0*gaussian(6) - 0.5*gaussian(0, sig=0.5))*u.deg_C
 # chance of rain
-p_rain=(np.array([15.3, 15.0, 14.2, 12.0, 10.8,  9.3, 10.3, 11.6, 15.0, 13.1, 13.7, 14.6]) / 30) * 100*u.percent * 0.75
+rain_p=(np.array([15.3, 15.0, 14.2, 12.0, 10.8,  9.3, 10.3, 11.6, 15.0, 13.1, 13.7, 14.6]) / 30) * 100*u.percent * 0.75
 # amount of rain
-v_rain= np.array([87.1, 90.6, 80.7, 59.0, 52.6, 43.3, 49.9, 64.5, 87.0, 79.8, 86.5, 94.9])*u.mm
+rain_v= np.array([87.1, 90.6, 80.7, 59.0, 52.6, 43.3, 49.9, 64.5, 87.0, 79.8, 86.5, 94.9])*u.mm
 
 
-# Cloudiness data see 
-
-
+# Cloudiness data see https://weatherspark.com/y/31501/Average-Weather-in-Reykjav%C3%ADk-Iceland-Year-Round#Figures-CloudCover
+clouds_raw= np.array([
+    # each column represens: (in unit of percent)
+    # chance of <= 20% / 40% / 60% / 80% clouds
+    # values approximated from weatherspark graph by eyeballing
+    [ 7, 13, 22, 39],    # Jan
+    [ 8, 14, 24, 41],    # Feb
+    [ 9, 16, 29, 46],    # Mar
+    [12, 22, 38, 53],    # Apr
+    [16, 28, 43, 57],    # May
+    [15, 25, 39, 55],    # Jun
+    [14, 24, 38, 56],    # Jul
+    [15, 24, 36, 53],    # Aug
+    [14, 23, 35, 50],    # Sep
+    [12, 22, 35, 50],    # Oct
+    [ 9, 17, 30, 45],    # Nov
+    [ 8, 15, 27, 43],    # Dec
+], dtype=np.float64)*u.percent
+clouds_ref= np.array([0., 20., 40., 60., 80., 100.])*u.percent
+clouds_refmid = (clouds_ref[1:]+clouds_ref[:-1])/2
+clouds  = 100*u.percent - (100*u.percent - clouds_raw*2)*(7/8)
+clouds  = np.where(clouds > 100*u.percent, 100*u.percent, clouds)
+clouds  = np.hstack((    # normalize by add before 0 and after 100
+    np.full(clouds.shape[0], 0)[:, np.newaxis]*u.percent,
+    clouds,
+    np.full(clouds.shape[0], 100.)[:, np.newaxis]*u.percent)
+)
+clouds_samples_fac : int = 4    # 4 becuase 0.75*4 is an integer
+clouds_samples = [    # generate samples according to the CDF described by cloud
+    np.concatenate([     # CDF: Cumulative distribution function
+        np.linspace(clouds_ref[i], clouds_ref[i+1], int(chance.value*clouds_samples_fac))
+        for i, chance in enumerate(np.diff(cloud))
+    ]) for cloud in clouds
+]
+# average cloud intensity
+cloudy_def : int = 5/8*100*u.percent    # cloudy def: > 62.5% of the sky is covered by clouds
+cloud_p = np.array([
+    np.count_nonzero(sample > cloudy_def) / sample.size
+    for sample in clouds_samples])*100*u.percent
+cloudy_mean = np.mean(np.concatenate(clouds_samples))
+cloud_v = np.array([    # exaggerate cloudiness differences in-between seasons for gameplay purposes
+    (cloudy_mean - 3*(cloudy_mean - np.mean(sample))).to_value(u.dimensionless_unscaled)
+    for sample in clouds_samples
+]) * 100*u.percent
+# cloud_d = np.array([
+#     np.std(sample[sample > cloudy_def])
+#     for sample in clouds_samples
+# ])
 
 
 ss = {
@@ -75,9 +120,15 @@ for k in ss.keys():
     ss[k]['T_min_d'] = np.std(T_min[ss[k]['indeksoj']]) + np.mean((T_avg - Tr_min)[ss[k]['indeksoj']])/(2*np.e)
     ss[k]['T_max_v'] = np.max(T_max[ss[k]['indeksoj']])*0.75 + np.mean(T_max[ss[k]['indeksoj']])*0.25
     ss[k]['T_max_d'] = np.std(T_max[ss[k]['indeksoj']]) + np.mean((Tr_max - T_avg)[ss[k]['indeksoj']])/(2*np.e)
-    ss[k]['rain_p' ] = np.mean(p_rain[ss[k]['indeksoj']])
-    ss[k]['rain_v' ] = np.mean(v_rain[ss[k]['indeksoj']])
-    ss[k]['rain_d' ] = (np.std(v_rain[ss[k]['indeksoj']])*0.75+np.std(v_rain)*0.25)
+    ss[k]['rain_p' ] = np.mean(rain_p[ss[k]['indeksoj']])
+    ss[k]['rain_v' ] = np.mean(rain_v[ss[k]['indeksoj']])
+    ss[k]['rain_d' ] = (np.std(rain_v[ss[k]['indeksoj']])*1.5+np.std(rain_v)*0.5)
+    ss[k]['cloud_p' ] = np.mean(cloud_p[ss[k]['indeksoj']])
+    ss[k]['cloud_v' ] = np.mean(cloud_v[ss[k]['indeksoj']])
+    ss[k]['cloud_d' ] = np.std(np.concatenate([
+        clouds_samples[index][clouds_samples[index] > cloudy_def]
+        for index in ss[k]['indeksoj']
+    ])) * (1.5 + 0.5 * ss[k]['cloud_v' ]/cloudy_mean)
 
 
 
@@ -86,7 +137,8 @@ if __name__ == '__main__':
         print(f"{k}")
         print(f"\tT_min: \t{ss[k]['T_min_v'] :5.2f} +/- {ss[k]['T_min_d'] :5.2f}")
         print(f"\tT_max: \t{ss[k]['T_max_v'] :5.2f} +/- {ss[k]['T_max_d'] :5.2f}")
-        print(f"\train : \t({ss[k]['rain_p'] :6.2f} )  {ss[k]['rain_v'] :6.2f} +/- {ss[k]['rain_d'] :5.2f}")
+        print(f"\tCloud: \t({ss[k]['cloud_p']:6.2f} )  {ss[k]['cloud_v']:6.2f} +/- {ss[k]['cloud_d']:5.2f}")
+        print(f"\tRain : \t({ss[k]['rain_p'] :6.2f} )  {ss[k]['rain_v'] :6.2f} +/- {ss[k]['rain_d'] :5.2f}")
     
     if False:    # commented
         plt.plot(T_min, label='T_min')
