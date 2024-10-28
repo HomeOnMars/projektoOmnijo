@@ -47,12 +47,18 @@ Differences from the ASCII table are highlighted with **bold** text.
 |  **0x\_7**  |   *BELL*    |   **\@**    |      '      |      7      |      G      |      W      |      g      |      w      |
 |  **0x\_8**  |  *BS \\b*   |   **\[**    |     \(      |      8      |      H      |      X      |      h      |      x      |
 |  **0x\_9**  |  *HT \\t*   |   **\]**    |     \)      |      9      |      I      |      Y      |      i      |      y      |
-|  **0x\_a**  |  *LF \\n*   |    **:**    |     \*      |    **Ă**    |      J      |      Z      |      j      |      z      |
-|  **0x\_b**  |  *VT \\v*   |    **;**    |     \+      |    **Ř**    |      K      |    **Ĉ**    |      k      |    **ĉ**    |
-|  **0x\_c**  |  *FF \\f*   |   **\<**    |      ,      |    **Č**    |      L      |    **Ĝ**    |      l      |    **ĝ**    |
-|  **0x\_d**  |  ***SUB***  |    **=**    |     \-      |    **Ď**    |      M      |    **Ĵ**    |      m      |    **ĵ**    |
-|  **0x\_e**  |  ***ESC***  |   **\>**    |     \.      |    **Ě**    |      N      |    **Ŝ**    |      n      |    **ŝ**    |
-|  **0x\_f**  |  ***DEL***  |    **?**    |      /      |    **Ğ**    |      O      |    **Ŭ**    |      o      |    **ŭ**    |
+|  **0x\_a**  |  *LF \\n*   |    **:**    |     \*      |    **α**    |      J      |      Z      |      j      |      z      |
+|  **0x\_b**  |  *VT \\v*   |    **;**    |     \+      |    **Δ**    |      K      |    **Ĉ**    |      k      |    **ĉ**    |
+|  **0x\_c**  |  *FF \\f*   |   **\<**    |      ,      |    **ω**    |      L      |    **Ĝ**    |      l      |    **ĝ**    |
+|  **0x\_d**  |  ***SUB***  |    **=**    |     \-      |    **Χ**    |      M      |    **Ĵ**    |      m      |    **ĵ**    |
+|  **0x\_e**  |  ***ESC***  |   **\>**    |     \.      |    **γ**    |      N      |    **Ŝ**    |      n      |    **ŝ**    |
+|  **0x\_f**  |  ***DEL***  |    **?**    |      /      |    **ζ**    |      O      |    **Ŭ**    |      o      |    **ŭ**    |
+
+Notes:
+
+- Built-in support for unique *hexadecimal* characters: 10~15 are represented as `α Δ ω Χ γ ζ`, as shown in the column `0x3\_` in the above table.
+- Only 16 control characters (all in the column `0x0\_`) instead of 33 in ASCII table, as most of those extra control characters are obsolete in modern days.
+- Removed `CR \\r` and moved `DEL` from `0x7f` to `0x0f` to maximize regularity.
 
 
 
