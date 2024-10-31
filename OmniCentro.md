@@ -1,8 +1,9 @@
 <!-- -*- coding: utf-8 -*- -->
 
-OmniCentraj Specifoj  
-OmniCentro Specifications
+OmniCentraj Specifoj
 ===============================================================================
+
+OmniCentro Specifications.
 
 Background stories and technical specifications
 for my upcoming fictional Cities: Skylines 2 city *OmniCentro*.
@@ -459,15 +460,20 @@ i.e. $\, \sim 100\, 000\, \mathrm{km}^2$)
 in the Southern Hemisphere,
 somewhere in the middle between Chile and New Zealand.
 
+
+#### Foundation of *Regno de Omnijo*
+
 Although it has always been a monarchy since time immemorial
 even before the Colonial era,
 it used to have a different name **just half a year ago**.
 In (fictional) fact, it used to have
 a different flag,
 a different national color,
-a dfferent anthem, and even
-a different official language,
-despite also being plagued by the corruption in the government.
+a dfferent anthem,
+a different official religion, and even
+a different official language.
+Despite also being plagued by the corruption in the government,
+life there was mostly just fine.
 However, so much has changed since that faithful day.
 
 <span style="color:Silver">Serena</span> was only **18** when it all happened.
@@ -517,8 +523,8 @@ as more fundings were re-directed there
   with free public transit trial started in several major cities;
 - Hospitals received more funding
   to keep them well staffed and maintained,
-  even allowing them to handle the surge of new patients
-  from the recent sudden increases in accident rates;
+  allowing them to handle the surge of patients
+  from the recent increases in accident rates;
 - Even mental healthcare was given the attention it deserves,
   combating the worrying trend of internet burnout epidemic.
 
@@ -549,6 +555,9 @@ Actually, from an outsider perspective, Omnijo's response was almost perfect.
 to re-nationalize many of the private companies in her country,
 from public transportation to infrastructures and manufacturing industries-
 effectively buying out her own country.
+
+
+#### Foundation of *OmniCentro*
 
 The <span style="color:Silver">Queen</span>
 even announced her new pet project of building a brand new capital,
@@ -602,9 +611,10 @@ of building the so-called impossible capital city,
 in the valley of *Ĉemarvalo*.
 
 
+#### Author's notes (link to spoilers)
 
-
-
+Regarding ***spoilers*** about the true nature of RdO,
+see here: [Warning: Spoilers!!!](intrigmalkasxo/KomentoPriLaOmniCentro.md#behind-the-background).
 
 
 

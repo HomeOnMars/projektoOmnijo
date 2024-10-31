@@ -7,7 +7,11 @@
             "code_blocks": false,
         },
         "MD033": {
-            "allowed_elements": [ "br", "span", "p", "a", "img" ]
+            "allowed_elements": [
+                "br", "span", "p", "a", "b", "em",
+                "img",
+                "details", "summary",
+            ]
         },
         "no-multiple-blanks": false,
     }
