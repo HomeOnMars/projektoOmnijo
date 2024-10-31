@@ -180,20 +180,19 @@ Note that the letters are overlapping other acronyms in other categories - and t
 |    H-   | **H**omo-/Pasaĝero- | Human-/Passenger-   | |
 |    K-   | **K**argo-          | Cargo-              | |
 
-
-Extra notes:
-
-1. H prefix is usually omitted.
-2. Line numbers are hexadecimal (see [ONKIO table](teknikajxoj/ONKIO.md#onkio-tablo) 0x3_ column for respective symbols of 10~15).
+> [!NOTE]
+>
+> 1. H prefix is usually omitted.
+> 2. All Line numbers are *hexadecimal* (see [ONKIO table](teknikajxoj/ONKIO.md#onkio-tablo) `0x3_` column for respective symbols of 10~15: `α Δ ω Χ γ ζ`).
 
 Examples:
 
-- Bus route 431 (i.e. 0x1af): B1ĂĞ (short for HB1ĂĞ)
+- Bus route 431 (i.e. 0x1af): B1αζ (short for HB1αζ)
 - High-speed Train line 3: V3 (short for HV3)
 - Motorway 2 N->S: Ŭ2-M (or Ux2-M for ASCII encoding; M for Negative)
-- Cargo train line 12: KVČ
+- Cargo train line 12: KVω
 - Cargo barge route 4: KP4
-- Cargo container ship route 14: KŜĚ (or KSxE for ASCII encoding)
+- Cargo container ship route 14: KŜγ (or KSxE for ASCII encoding)
 - Cargo Airline 5: KA5
 
 

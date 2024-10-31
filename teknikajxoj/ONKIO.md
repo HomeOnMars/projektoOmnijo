@@ -54,11 +54,15 @@ Differences from the ASCII table are highlighted with **bold** text.
 |  **0x\_e**  |  ***ESC***  |   **\>**    |     \.      |    **γ**    |      N      |    **Ŝ**    |      n      |    **ŝ**    |
 |  **0x\_f**  |  ***DEL***  |    **?**    |      /      |    **ζ**    |      O      |    **Ŭ**    |      o      |    **ŭ**    |
 
-Notes:
-
-- Built-in support for unique *hexadecimal* characters: 10~15 are represented as `α Δ ω Χ γ ζ`, as shown in the column `0x3\_` in the above table.
-- Only 16 control characters (all in the column `0x0\_`) instead of 33 in ASCII table, as most of those extra control characters are obsolete in modern days.
-- Removed `CR \\r` and moved `DEL` from `0x7f` to `0x0f` to maximize regularity.
+> [!NOTE]
+>
+> - Built-in support for *hexadecimal* characters :-D
+>   - 10~15 are represented as greek letters `α Δ ω Χ γ ζ`, as shown in the column `0x3_` in the above table.
+>   - Note that `Χ` is greek letter χ (but capitalized), not English letter X.
+>   - The design has `α Δ` as 10 and 11, and `ω Χ γ ζ` as 12-15 (which looks like W X Y Z, for easy memorization.) `β` was avoided deliberately due to it looks like 8 under certain fonts. Conventional English characters `A B C D E F` were also avoided, to allow differentiation between numbers and texts. etc. etc.
+>   - the center of mass of the even numbers `α ω γ` are lower than ood ones `Δ Χ ζ`, allowing easier distinguishments.
+> - Only 16 control characters (all in the column `0x0_`) instead of 33 in ASCII table, as most of those extra control characters are obsolete in modern days.
+> - Removed `CR \r` and moved `DEL` from `0x7f` to `0x0f` to maximize regularity.
 
 
 
