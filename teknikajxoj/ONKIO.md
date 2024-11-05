@@ -47,20 +47,23 @@ Differences from the ASCII table are highlighted with **bold** text.
 |  **0x\_7**  |   *BELL*    |   **\@**    |      '      |      7      |      G      |      W      |      g      |      w      |
 |  **0x\_8**  |  *BS \\b*   |   **\[**    |     \(      |      8      |      H      |      X      |      h      |      x      |
 |  **0x\_9**  |  *HT \\t*   |   **\]**    |     \)      |      9      |      I      |      Y      |      i      |      y      |
-|  **0x\_a**  |  *LF \\n*   |    **:**    |     \*      |    **α**    |      J      |      Z      |      j      |      z      |
-|  **0x\_b**  |  *VT \\v*   |    **;**    |     \+      |    **Δ**    |      K      |    **Ĉ**    |      k      |    **ĉ**    |
-|  **0x\_c**  |  *FF \\f*   |   **\<**    |      ,      |    **ω**    |      L      |    **Ĝ**    |      l      |    **ĝ**    |
+|  **0x\_a**  |  *LF \\n*   |    **:**    |     \*      |    **Δ**    |      J      |      Z      |      j      |      z      |
+|  **0x\_b**  |  *VT \\v*   |    **;**    |     \+      |    **λ**    |      K      |    **Ĉ**    |      k      |    **ĉ**    |
+|  **0x\_c**  |  *FF \\f*   |   **\<**    |      ,      |    **Ψ**    |      L      |    **Ĝ**    |      l      |    **ĝ**    |
 |  **0x\_d**  |  ***SUB***  |    **=**    |     \-      |    **Χ**    |      M      |    **Ĵ**    |      m      |    **ĵ**    |
-|  **0x\_e**  |  ***ESC***  |   **\>**    |     \.      |    **γ**    |      N      |    **Ŝ**    |      n      |    **ŝ**    |
-|  **0x\_f**  |  ***DEL***  |    **?**    |      /      |    **ζ**    |      O      |    **Ŭ**    |      o      |    **ŭ**    |
+|  **0x\_e**  |  ***ESC***  |   **\>**    |     \.      |    **Υ**    |      N      |    **Ŝ**    |      n      |    **ŝ**    |
+|  **0x\_f**  |  ***DEL***  |    **?**    |      /      |    **Σ**    |      O      |    **Ŭ**    |      o      |    **ŭ**    |
 
 > [!NOTE]
 >
 > - Built-in support for *hexadecimal* characters :-D
->   - 10~15 are represented as greek letters `α Δ ω Χ γ ζ`, as shown in the column `0x3_` in the above table.
->   - Note that `Χ` is greek letter χ (but capitalized), not English letter X.
->   - The design has `α Δ` as 10 and 11, and `ω Χ γ ζ` as 12-15 (which looks like W X Y Z, for easy memorization.) `β` was avoided deliberately due to it looks like 8 under certain fonts. Conventional English characters `A B C D E F` were also avoided, to allow differentiation between numbers and texts. etc. etc.
->   - the center of mass of the even numbers `α ω γ` are lower than odd ones `Δ Χ ζ`, allowing easier distinguishments.
+>   - 10~15 are represented as greek letters `Δ λ Ψ Χ Υ Σ`, as shown in the column `0x3_` in the above table.
+>   - Note that `Χ` and `Υ` are greek letters `χ` and `γ` (but capitalized), not English letter `X` or `Y`.
+>   - Designs:
+>     - `Δ λ` as 10 and 11, and `Ψ Χ Υ Σ` as 12-15 (which looks like W X Y Z, for easy memorization.)
+>     - `β` was avoided deliberately due to it looks like 8 under certain fonts. So are `δ~6`, `θ/Θ/Ω~0`, `ξ~3`, `Γ~7`, `ζ~2/5`, `Ξ~111`.
+>     - Conventional English characters `A B C D E F` were also avoided, to allow differentiation between numbers and texts. etc. etc.
+>     - the center of mass of the numbers `ΔλΨΧΥΣ` are the about the same as `0-9`, unlike most lower case greek letters.
 > - Only 16 control characters (all in the column `0x0_`) instead of 33 in ASCII table, as most of those extra control characters are obsolete in modern days.
 > - Removed `CR \r` and moved `DEL` from `0x7f` to `0x0f` to maximize regularity.
 
