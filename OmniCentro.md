@@ -610,12 +610,6 @@ of building the so-called impossible capital city,
 in the valley of *Ĉemarvalo*.
 
 
-#### Author's notes (link to spoilers)
-
-Regarding ***spoilers*** about the true nature of RdO,
-see here: [Warning: Spoilers!!!](intrigmalkasxo/KomentoPriLaOmniCentro.md#behind-the-background).
-
-
 
 
 (More coming soon.)
