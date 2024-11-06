@@ -490,7 +490,7 @@ Which they would have succeeded
 (they are not stupid, you see, after all they control the military),
 if were not for a tragic accident where the building
 (next to the one where they were plotting in)
-randomly blew up due to gas leaks and CO sensor malfunctions,
+blew up due to a randomly gas leak and CO sensor malfunctions,
 killing every single one of them.
 How very unfortunate.
 
@@ -540,9 +540,11 @@ recognizing dual citizenship, and
 providing heavy subsidies for transportations
 both coming to and leaving from the country.
 Which many people did take advantage of,
-and emigration rate skyrocketed for weeks.
+and emigration rate skyrocketed for weeks,
+and the population quickly dropped,
+despite the increased immigration influx during the same period.
 
-Then this trend slowed down and stopped.
+Then this trend slowed down.
 
 With the evolution of the great global economic recession
 (triggered by the burst of the AI bubble weeks after the coronation day),
