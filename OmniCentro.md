@@ -525,9 +525,8 @@ as more fundings were re-directed there
   allowing them to handle the surge of patients
   from the recent increases in accident rates;
 - Even mental healthcare was given the attention it deserves,
-  combating the worrying trend of internet burnout epidemic.
+  combating the worrying trend of internet burnout epidemic.),
 
-),
 but surely people, being people, would anger and rebel
 on the change of everything they know about their own country?
 
@@ -541,13 +540,18 @@ providing heavy subsidies for transportations
 both coming to and leaving from the country.
 Which many people did take advantage of,
 and emigration rate skyrocketed for weeks,
-and the population quickly dropped,
-despite the increased immigration influx during the same period.
+and the population quickly dropped.
+As a counter measure, <span style="color:Silver">Serena</span>
+passed laws to streamline immigration process
+as well as to encourage immigrants to move in,
+and the immigration influx did increase.
+However, it wasn't nearly enough to stop the population drop-
+in the beginning.
 
 Then this trend slowed down.
 
-With the evolution of the great global economic recession
-(triggered by the burst of the AI bubble weeks after the coronation day),
+As the next great global economic recession unfolds
+(triggered by the bursting of the AI bubble weeks after the coronation day),
 many countries are struggling and tighting their immigration rules.
 Regno de Omnijo, however, did surprisingly (again) well,
 attracting people to stay.
@@ -560,8 +564,8 @@ effectively buying out her own country.
 
 #### Foundation of *OmniCentro*
 
-The <span style="color:Silver">Queen</span>
-even announced her new pet project of building a brand new capital,
+Soon after, the <span style="color:Silver">Queen</span>
+announced her new pet project of building a brand new capital,
 free from the burden of the history.
 She decided to call it **OmniCentro**.
 (The level of arrogance...

@@ -9,6 +9,7 @@
         "MD033": {
             "allowed_elements": [
                 "br", "span", "p", "a", "b", "em",
+                "ul", "li",
                 "img",
                 "details", "summary",
             ]
