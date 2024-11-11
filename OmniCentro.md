@@ -283,10 +283,10 @@ Use at your own risk.***
 - Freight and old Passenger Railways
   - Gradient $s$ and Curve radius $R$ limit:
 
-    |             | Gradient $s/\\%$ | Curve radius $R$         | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
-    | ----------- | :--------------: | :----------------------: | :--------------------------: | --- | --- | --- | --- | ------------------- |
-    | Recommended |  $\leq  1.5 \%$  |  $\geq  640 \mathrm{m}$  |  $\simeq 120 \mathrm{km/h}$  | $\geq 103\degree$ | $\geq 137\degree$ | $\geq 158\degree$ | $\geq 169\degree$ | |
-    | Hard Limit  |  $\leq  3.5 \%$  |  $\geq  160 \mathrm{m}$  |  $\simeq  60 \mathrm{km/h}$  | -                 | -                 | $\geq 103\degree$ | $\geq 137\degree$ | Lithgow Zig Zag |
+    |             | max Gradient $s$ | min Curve radius $R$ | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
+    | ----------- | :--------------: | :------------------: | :--------------------------: | --- | --- | --- | --- | ------------------- |
+    | Recommended |  1.5 \%  |  800m (100u)  |  135 km/h  | $115\degree$ | $145\degree$ | $162\degree$ | $171\degree$ | |
+    | Hard Limit  |  3.5 \%  |  160m  (20u)  |   60 km/h  | -            | -            | $103\degree$ | $137\degree$ | Lithgow Zig Zag |
 
     - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
       i.e., $\theta_\mathrm{512m}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 512m.
@@ -304,19 +304,67 @@ Use at your own risk.***
           print(theta_deg(R=4000, d=512), get_R(theta_deg=166, d=512))
       ```
 
+    - Curve radius is obtained by $R \propto v_\mathrm{max}^2$ (See [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant).)
+    - Analysis of train engine's ability to haul cars:
+      ```python
+      # getting how many containers/trailers can a train engine haul
+      from numpy import sqrt, sin, cos, pi
+      from astropy import units as u
+      g = 9.8 * u.m / u.s**2
+      hp = 746 * u.W
+      # load_per_FEU = 24 * u.t    # 24t per trailer / FEU / 2TEU; note default CSL2 is 25t per FEU
+      # note: in CSL2, by default,
+      #    truck can carry 1 FEU;
+      #    freight train can carry 12 FEUs;
+      #    container ships can carry 7(height)*6(width)*5(length)+6*5*0.5=225 FEUs;
+      #    assuming 24t per FEU, this means truck / train / ships should carry 24t / 288t / 5400t goods.
+      # Planned adjustments:
+      #    adjust trains to carry 24 FEUs (with 24 trailers and 1 engine;
+      #        as 2u/16m per trailer, this means a 400m long train; reserve 28u/448m for rail junctions)
+      #        576t goods per train
+      #    adjust cargo airplanes to carry 5 FEU-equivalent weight (i.e. 120t goods per plane)
+
+      def n_car_f(
+          v, grad,
+          load_full = 40*u.t,    # cargo+trailer weight
+          load_capa = 24*u.t,    # cargo weight alone (per FEU container)
+          engine_p = 6760*hp,    # engine power  (ref: see <https://en.wikipedia.org/wiki/British_Rail_Class_92>)
+          engine_m = 120*u.t,    # engine weight (ref: see <https://en.wikipedia.org/wiki/British_Rail_Class_92>)
+          C_rr = 0.0004,     # rolling resistence (see <https://en.wikipedia.org/wiki/Rolling_resistance#Rolling_resistance_coefficient_examples>)
+          air_fac = 1.,    # fraction of air drag coeff w.r.t. to C_rr (<= 1 for up to v <= 140 km/h)
+      ):
+          # how many cars can this train engine haul
+          n_car = (engine_p / ((grad/sqrt(1+grad**2) + (1.+air_fac)*C_rr/sqrt(1+grad**2))*load_full*g*v) - engine_m/load_full).si
+          # how much cargo (in tons) can this train engine haul
+          capa  = int(n_car)*load_capa
+          # how long will this train (part) be
+          length= int(n_car+1)*16*u.m    # +1 to account train engine itself
+          return n_car, capa, length
+
+      # assuming more powerful electric trains: 8600hp (in contrast to 6760hp realistic estimate (from UK class 92 electric freight locomotive <https://en.wikipedia.org/wiki/British_Rail_Class_92> ))
+      # remember we need to drag 24 cars, so n_car > 24 is minimum.
+
+      >>> n_car_f(grad=1.5*u.percent, v=135*u.km/u.h, engine_p=8600*hp)
+      (<Quantity 24.62559939>, <Quantity 576. t>, <Quantity 400. m>)
+      >>> n_car_f(grad=3.5*u.percent, v=60*u.km/u.h, engine_p=8600*hp)
+      (<Quantity 24.44639302>, <Quantity 576. t>, <Quantity 400. m>)
+      ```
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant): $R$ info
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples (see Lithgow Zig Zag)
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
     - Note: Liberties have been taken for the hard limit of $s$ due to steep terrain in the map. Also steeper is more fun.
-  - Length limit (for track intersections): $> 500\mathrm{m}$ (25 cars with 20m per car)
+  - Length limit
+    - train length: 25 cars (400m; 50u): 1 engine + 24 trailers.
+    - For track intersections: $\geq$ 448m (56u).
 
 - High Speed Railways
   - Gradient $s$ and Curve radius $R$ limit:
 
-    |             | Gradient $s/\\%$ | Curve radius $R$         | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
+    |             | max Gradient $s$ | min Curve radius $R$ | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
     | ----------- | :--------------: | :----------------------: | :--------------------------: | --- | --- | --- | --- | ------------------- |
-    | Recommended |  $\leq  3.5 \%$  |  $\geq 4000 \mathrm{m}$  |  $\simeq 300 \mathrm{km/h}$  | $\geq 166\degree$ | $\geq 173\degree$ | $\geq 177\degree$ | $\geq 179\degree$ | |
-    | Hard Limit  |  $\leq  4   \%$  |  $\geq 3500 \mathrm{m}$  |  $\simeq 250 \mathrm{km/h}$  | $\geq 164\degree$ | $\geq 172\degree$ | $\geq 176\degree$ | $\geq 178\degree$ | |
+    | -           |  3.1 \%  |  5000m (625u)  |  337.5 km/h  | $169\degree$ | $175\degree$ | $178\degree$ | $179\degree$ | |
+    | Recommended |  3.5 \%  |  4000m (500u)  |  300 km/h  | $166\degree$ | $173\degree$ | $177\degree$ | $179\degree$ | |
+    | Hard Limit  |  4   \%  |  2800m (350u)  |  250 km/h  | $164\degree$ | $172\degree$ | $176\degree$ | $178\degree$ | |
 
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
@@ -324,11 +372,14 @@ Use at your own risk.***
 - Metro / Subway / Passenger Railways
   - Gradient $s$ and Curve radius $R$ limit:
 
-    |             | Gradient $s/\\%$ | Curve radius $R$  | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
+    |             | max Gradient $s$ | min Curve radius $R$  | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
     | ----------- | :--------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
-    | Recommended |  $\leq  5.5 \%$  |  $\geq  448 \mathrm{m}$  |  $\simeq 120 \mathrm{km/h}$  | -                 | $\geq 121\degree$ | $\geq   149\degree$ | $\geq 164\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;  <br>($R$) Assuming tilting trains: see [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant). |
-    | Hard Limit  |  $\leq  7   \%$  |  $\geq  128 \mathrm{m}$  |  $\simeq 100 \mathrm{km/h}$  | -                 | -                 | $\geq   90\degree$  | $\geq 127\degree$ | ($s$) Bernina Railway, Switzerland;  <br>($R$) Bay Area Rapid Transit, United States. |
+    | Recommended |  5   \%  |  576m (72u)  |  135 km/h  | $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;  <br>($R$) Assuming tilting trains: see [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant). |
+    | Hard Limit  |  7   \%  |  320m (40u)  |  100 km/h  | -                 | $103\degree$ | $137\degree$  | $158\degree$ | ($s$) Bernina Railway, Switzerland;  <br>($R$) Bay Area Rapid Transit, United States. |
 
+  - Note: curve radius restrictions may be relaxed when exiting / entering stations where speed is slow.
+  - Assuming train engine power 3200hp per car (citaion needed).
+  - Assuming tilting trains.
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
   - Source: (2024-08-17) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
     - Note: $R$ can go as low as 64m as seen in Central line, London Underground, United Kingdom; but that's probably too tight.
@@ -337,20 +388,23 @@ Use at your own risk.***
 - Trams
   - Gradient $s$ limit:
 
-    |             | Gradient $s/\\%$ | Speed limit $v_\mathrm{max}$ | Real world examples |
-    | ----------- | :--------------: | :--------------------------: | ------------------- |
-    | Recommended |  $\leq 10   \%$  |  $\simeq  80 \mathrm{km/h}$  | Sheffield Supertram, Sheffield |
-    | Hard Limit  |  $\leq 13.5 \%$  |  $\simeq  60 \mathrm{km/h}$  | Lisbon Tramways, Portugal |
+    |             | max Gradient $s$ | min Curve radius $R$ (without slowing)  | Speed limit $v_\mathrm{max}$ | Real world examples |
+    | ----------- | :--------------: | :--------------: | :--------------------------: | ------------------- |
+    | Recommended |  10   \%  |  216m (27u)  |  70 km/h  | Sheffield Supertram, Sheffield |
+    | Hard Limit  |  13.5 \%  |  112m (14u)  |  50 km/h  | Lisbon Tramways, Portugal |
 
+  - Note: faster speed may be allowed with gentler gradient and larger curve radius (see above metro section.)
+  - Curve radius limit here can be ignored, as trams slow down near intersections.
+  - Assuming non-tilting trains.
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
 
 - Monorails
   - Gradient $s$ and Curve radius $R$ limit:
 
-  |             | Gradient $s/\\%$ | Curve radius $R$  | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
+  |             | max Gradient $s$ | min Curve radius $R$  | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
   | ----------- | :--------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
-  | Recommended |  $\leq  10  \%$  |  TBD                     |  $\simeq  80 \mathrm{km/h}$  | -                 | -                 | -                 | -                 | TBD               |
-  | Hard Limit  |  $\leq  12  \%$  |  TBD                     |  $\simeq  70 \mathrm{km/h}$  | -                 | -                 | -                 | -                 | TBD               |
+  | Recommended |  10  \%  |  TBD                     |  80 km/h  | -                 | -                 | -                 | -                 | TBD               |
+  | Hard Limit  |  12  \%  |  TBD                     |  70 km/h  | -                 | -                 | -                 | -                 | TBD               |
 
   - Source: (2024-09-28) [Miller et al. (2014)](https://www.researchgate.net/publication/301302321_Monorails_for_sustainable_transportation_-_a_review)
     - Table 4.1 $s$ info (Multiplied by 2 since its estimated values seems too conservative in general- see above; same as the speed limit $v_\mathrm{max}$. Also it's a game and steeper/faster is more fun.)
