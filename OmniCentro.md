@@ -242,13 +242,13 @@ Use at your own risk.***
 - Highways
   - Gradient $s$ and Curve radius $R$ limit:
 
-    |             |  Gradient $s/\\%$ |  Curve radius $R$        | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Notes |
-    | ----------- | :---------------: | :----------------------: | :--------------------------: | --- | --- | --- | --- | ----- |
-    | -           |  $\leq  4   \%$   |  $\geq  512 \mathrm{m}$  |  $\simeq 120 \mathrm{km/h}$  | $\geq  90\degree$ | $\geq 127\degree$ | $\geq 152\degree$ | $\geq 166\degree$ | |
-    | Recommended |  $\leq  6   \%$   |  $\geq  288 \mathrm{m}$  |  $\simeq 100 \mathrm{km/h}$  | -                 | $\geq  97\degree$ | $\geq 133\degree$ | $\geq 155\degree$ | |
-    | Soft Limit  |  $\leq  8   \%$   |  $\geq  184 \mathrm{m}$  |  $\simeq  80 \mathrm{km/h}$  | -                 | -                 | $\geq 111\degree$ | $\geq 142\degree$ | For ramps / In mountains |
-    | -           |  $\leq  8   \%$   |  $\geq  120 \mathrm{m}$  |  $\simeq  60 \mathrm{km/h}$  | -                 | -                 | -                  | $\geq 124\degree$ | For ramps / In mountains |
-    | Hard Limit  |  $\leq  8   \%$   |  $\geq   32 \mathrm{m}$  |  $\simeq  40 \mathrm{km/h}$  | -                 | -                 | -                  | -                 | For ramps / In mountains |
+    |             |  max Gradient $s$ |  min Curve radius $R$        | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Notes |
+    | ----------- | :-------: | :----------: | :--------: | --- | --- | --- | --- | ----- |
+    | -           |  4   \%   |  504m (63u)  |  120 km/h  |  $90\degree$ | $127\degree$ | $152\degree$ | $166\degree$ | |
+    | Recommended |  6   \%   |  352m (44u)  |  100 km/h  | -            | $108\degree$ | $141\degree$ | $160\degree$ | |
+    | Soft Limit  |  8   \%   |  224m (28u)  |   80 km/h  | -            | -            | $121\degree$ | $149\degree$ | For ramps / In mountains |
+    | -           | 10   \%   |  128m (16u)  |   60 km/h  | -            | -            |  $90\degree$ | $127\degree$ | Mountains Only |
+    | Hard Limit  | 10   \%   |   32m  (4u)  |   30 km/h  | -            | -            | -            |  $90\degree$ | Mountains Only |
 
     - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
       i.e., $\theta_\mathrm{512m}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 512m.
@@ -266,11 +266,11 @@ Use at your own risk.***
   - Gradient  limit:
     (Arbitrarily set to:)
 
-    |             | Gradient $s/\\%$ | Speed limit $v_\mathrm{max}$ | Notes |
-    | ----------- | :--------------: | :--------------------------: | ----- |
-    | Recommended |  $\leq 10  \%$   |  $\simeq  60 \mathrm{km/h}$  | Arterial    |
-    | Soft Limit  |  $\leq 13.5\%$   |  $\simeq  50 \mathrm{km/h}$  | Collector   |
-    | Hard Limit  |  $\leq 30  \%$\* |  $\simeq  25 \mathrm{km/h}$  | Local roads |
+    |             | max Gradient $s$ | Speed limit $v_\mathrm{max}$ | Notes |
+    | ----------- | :-------: | :-------: | ----------- |
+    | Recommended |  10  \%   |  60 km/h  | Arterial    |
+    | Soft Limit  |  13.5\%   |  50 km/h  | Collector   |
+    | Hard Limit  |  30  \%\* |  25 km/h  | Local roads |
 
     \* Note that vanilla game by default only allow up to $20 \%$ gradient.
 
@@ -307,7 +307,8 @@ Use at your own risk.***
       ```
 
     - Curve radius is obtained by $R \propto v_\mathrm{max}^2$ (See [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant).)
-    - Analysis of train engine's ability to haul cars:
+    - Analysis of train/truck engine's ability to haul cars:
+
       ```python
       # getting how many containers/trailers can a train engine haul
       from numpy import sqrt, sin, cos, pi
@@ -333,24 +334,142 @@ Use at your own risk.***
           engine_p = 6760*hp,    # engine power  (ref: see <https://en.wikipedia.org/wiki/British_Rail_Class_92>)
           engine_m = 120*u.t,    # engine weight (ref: see <https://en.wikipedia.org/wiki/British_Rail_Class_92>)
           C_rr = 0.0004,     # rolling resistence (see <https://en.wikipedia.org/wiki/Rolling_resistance#Rolling_resistance_coefficient_examples>)
-          air_fac = 1.,    # fraction of air drag coeff w.r.t. to C_rr (<= 1 for up to v <= 140 km/h)
+          #    for air resistence calc, see this article here <https://www.engineeringtoolbox.com/drag-coefficient-d_627.html>
+          C_d  = 0.2, # drag coefficient- for high speed trian, see <https://iopscience.iop.org/article/10.1088/1757-899X/184/1/012015/pdf> table 1.
+          rho_air = 1.225*u.kg/u.m**3,    # air density
+          A_d  = 3*4/2*u.m**2,    # frontal area (for calc air drag)
       ):
           # how many cars can this train engine haul
-          n_car = (engine_p / ((grad/sqrt(1+grad**2) + (1.+air_fac)*C_rr/sqrt(1+grad**2))*load_full*g*v) - engine_m/load_full).si
+          #n_car = (engine_p / ((grad/sqrt(1+grad**2) + (1.+air_fac)*C_rr/sqrt(1+grad**2))*load_full*g*v) - engine_m/load_full).si
+          n_car = (
+              engine_p / v / (
+                  # gravity and rolling resistance force
+                  (grad/sqrt(1+grad**2) + C_rr/sqrt(1+grad**2))*load_full*g
+                  # air drag force
+                  + 0.5 * C_d * rho_air * A_d * v**2
+              )
+              - engine_m/load_full
+          ).si
           # how much cargo (in tons) can this train engine haul
           capa  = int(n_car)*load_capa
           # how long will this train (part) be
           length= int(n_car+1)*16*u.m    # +1 to account train engine itself
           return n_car, capa, length
 
-      # assuming more powerful electric trains: 8600hp (in contrast to 6760hp realistic estimate (from UK class 92 electric freight locomotive <https://en.wikipedia.org/wiki/British_Rail_Class_92> ))
-      # remember we need to drag 24 cars, so n_car > 24 is minimum.
+      def print_info(**params):
+          n_car, capa, length = n_car_f(**params)
+          txt = f"\t{params = }\n\t{n_car =:6.2f}\t{capa =:4.0f}\t{length =:4.0f}\n"
+          print(txt)
+          return txt
 
-      >>> n_car_f(grad=1.5*u.percent, v=135*u.km/u.h, engine_p=8600*hp)
-      (<Quantity 24.62559939>, <Quantity 576. t>, <Quantity 400. m>)
-      >>> n_car_f(grad=3.5*u.percent, v=60*u.km/u.h, engine_p=8600*hp)
-      (<Quantity 24.44639302>, <Quantity 576. t>, <Quantity 400. m>)
+
+      if __name__ == '__main__':
+          # Assuming more powerful electric trains: 9600hp (in contrast to 6760hp realistic estimate
+          #    (from UK class 92 electric freight locomotive <https://en.wikipedia.org/wiki/British_Rail_Class_92> ))
+          # remember we need to drag 24 cars, so n_car > 24 is minimum.
+          
+          print("Rail")
+          
+          print_info(grad=1.5*u.percent, v=135*u.km/u.h, engine_p=(9600*hp).to(hp))
+          print_info(grad=3.5*u.percent, v= 65*u.km/u.h, engine_p=(9600*hp).to(hp))
+          
+          print("High Speed Rail (per car)")
+          
+          print_info(grad=3.0*u.percent, v=340*u.km/u.h, engine_p=(9600*hp).to(hp))
+          print_info(grad=3.5*u.percent, v=320*u.km/u.h, engine_p=(9600*hp).to(hp))
+          print_info(grad=4.0*u.percent, v=300*u.km/u.h, engine_p=(9600*hp).to(hp))
+          print_info(grad=5.0*u.percent, v=270*u.km/u.h, engine_p=(9600*hp).to(hp))
+          
+          
+          print("Metro (per car)")
+          
+          print_info(grad=5.0*u.percent, v=135*u.km/u.h, engine_p=(3200*hp).to(hp), engine_m=80*u.t,)
+          print_info(grad=7.0*u.percent, v=100*u.km/u.h, engine_p=(3200*hp).to(hp), engine_m=80*u.t,)
+          
+
+          print("Tram (per car)")
+
+          print_info(grad=10.0*u.percent, v=80*u.km/u.h, engine_p=(2400*hp).to(hp), engine_m=40*u.t,)
+          print_info(grad=13.5*u.percent, v=60*u.km/u.h, engine_p=(2400*hp).to(hp), engine_m=40*u.t,)
+          
+
+          print("Road")
+          
+          # Assuming more powerful trucks: 860hp (instead of 600hp realistic estimate
+          #    (See Iveco Eurocargo specifications <https://www.iveco.com/Eurocargo>
+          #    <https://static.iveco.com.au/download/media%2F5524d082-2a03-40c0-96de-9d6ab73f3681.pdf/Eurocargo%20Specifications.pdf>
+          #    For Engine Maximum Output, GVM (Gross Vehicle Mass) and GCM (Gross Combination Mass) info))
+          
+          print_info(grad=4*u.percent, v=125*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
+          print_info(grad=6*u.percent, v=100*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
+          print_info(grad=8*u.percent, v= 80*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
+
+
+          print("Local Road")
+          
+          print_info(grad=10  *u.percent, v= 60*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
+          print_info(grad=13.5*u.percent, v= 50*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
+          print_info(grad=30  *u.percent, v= 25*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
       ```
+
+      Results:
+
+      ```python
+      Rail
+        params = {'grad': <Quantity 1.5 %>, 'v': <Quantity 135. km / h>, 'engine_p': <Quantity 9600. 746 W>}
+        n_car = 24.01	capa = 576 t	length = 400 m
+
+        params = {'grad': <Quantity 3.5 %>, 'v': <Quantity 65. km / h>, 'engine_p': <Quantity 9600. 746 W>}
+        n_car = 25.11	capa = 600 t	length = 416 m
+
+      High Speed Rail (per car)
+        params = {'grad': <Quantity 3. %>, 'v': <Quantity 340. km / h>, 'engine_p': <Quantity 9600. 746 W>}
+        n_car =  1.11	capa =  24 t	length =  32 m
+
+        params = {'grad': <Quantity 3.5 %>, 'v': <Quantity 320. km / h>, 'engine_p': <Quantity 9600. 746 W>}
+        n_car =  1.09	capa =  24 t	length =  32 m
+
+        params = {'grad': <Quantity 4. %>, 'v': <Quantity 300. km / h>, 'engine_p': <Quantity 9600. 746 W>}
+        n_car =  1.11	capa =  24 t	length =  32 m
+
+        params = {'grad': <Quantity 5. %>, 'v': <Quantity 270. km / h>, 'engine_p': <Quantity 9600. 746 W>}
+        n_car =  1.00	capa =  24 t	length =  32 m
+
+      Metro (per car)
+        params = {'grad': <Quantity 5. %>, 'v': <Quantity 135. km / h>, 'engine_p': <Quantity 3200. 746 W>, 'engine_m': <Quantity 80. t>}
+        n_car =  1.07	capa =  24 t	length =  32 m
+
+        params = {'grad': <Quantity 7. %>, 'v': <Quantity 100. km / h>, 'engine_p': <Quantity 3200. 746 W>, 'engine_m': <Quantity 80. t>}
+        n_car =  1.06	capa =  24 t	length =  32 m
+
+      Tram (per car)
+        params = {'grad': <Quantity 10. %>, 'v': <Quantity 80. km / h>, 'engine_p': <Quantity 2400. 746 W>, 'engine_m': <Quantity 40. t>}
+        n_car =  1.04	capa =  24 t	length =  32 m
+
+        params = {'grad': <Quantity 13.5 %>, 'v': <Quantity 60. km / h>, 'engine_p': <Quantity 2400. 746 W>, 'engine_m': <Quantity 40. t>}
+        n_car =  1.03	capa =  24 t	length =  32 m
+
+      Road
+        params = {'grad': <Quantity 4. %>, 'v': <Quantity 125. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
+        n_car =  1.04	capa =  24 t	length =  32 m
+
+        params = {'grad': <Quantity 6. %>, 'v': <Quantity 100. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
+        n_car =  1.01	capa =  24 t	length =  32 m
+
+        params = {'grad': <Quantity 8. %>, 'v': <Quantity 80. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
+        n_car =  1.02	capa =  24 t	length =  32 m
+
+      Local Road
+        params = {'grad': <Quantity 10. %>, 'v': <Quantity 60. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
+        n_car =  1.17	capa =  24 t	length =  32 m
+
+        params = {'grad': <Quantity 13.5 %>, 'v': <Quantity 50. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
+        n_car =  1.05	capa =  24 t	length =  32 m
+
+        params = {'grad': <Quantity 30. %>, 'v': <Quantity 25. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
+        n_car =  1.00	capa =  24 t	length =  32 m
+      ```
+
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant): $R$ info
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples (see Lithgow Zig Zag)
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
@@ -363,10 +482,11 @@ Use at your own risk.***
   - Gradient $s$ and Curve radius $R$ limit:
 
     |             | max Gradient $s$ | min Curve radius $R$ | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
-    | ----------- | :--------------: | :----------------------: | :--------------------------: | --- | --- | --- | --- | ------------------- |
-    | -           |  3.1 \%  |  5000m (625u)  |  337.5 km/h  | $169\degree$ | $175\degree$ | $178\degree$ | $179\degree$ | |
-    | Recommended |  3.5 \%  |  4000m (500u)  |  300 km/h  | $166\degree$ | $173\degree$ | $177\degree$ | $179\degree$ | |
-    | Hard Limit  |  4   \%  |  2800m (350u)  |  250 km/h  | $164\degree$ | $172\degree$ | $176\degree$ | $178\degree$ | |
+    | ----------- | :------: | :------------: | :--------: | --- | --- | --- | --- | ------------------- |
+    | -           |  3   \%  |  5000m (625u)  |  335 km/h  | $169\degree$ | $175\degree$ | $178\degree$ | $179\degree$ | |
+    | Recommended |  3.5 \%  |  4500m (562u)  |  320 km/h  | $168\degree$ | $174\degree$ | $177\degree$ | $179\degree$ | |
+    | -           |  4   \%  |  4000m (500u)  |  300 km/h  | $166\degree$ | $173\degree$ | $177\degree$ | $179\degree$ | |
+    | Hard Limit  |  5   \%  |  3200m (400u)  |  270 km/h  | $164\degree$ | $172\degree$ | $176\degree$ | $178\degree$ | |
 
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
@@ -392,8 +512,8 @@ Use at your own risk.***
 
     |             | max Gradient $s$ | min Curve radius $R$ (without slowing)  | Speed limit $v_\mathrm{max}$ | Real world examples |
     | ----------- | :--------------: | :--------------: | :--------------------------: | ------------------- |
-    | Recommended |  10   \%  |  216m (27u)  |  70 km/h  | Sheffield Supertram, Sheffield |
-    | Hard Limit  |  13.5 \%  |  112m (14u)  |  50 km/h  | Lisbon Tramways, Portugal |
+    | Recommended |  10   \%  |  288m (36u)  |  80 km/h  | Sheffield Supertram, Sheffield |
+    | Hard Limit  |  13.5 \%  |  160m (20u)  |  60 km/h  | Lisbon Tramways, Portugal |
 
   - Note: faster speed may be allowed with gentler gradient and larger curve radius (see above metro section.)
   - Curve radius limit here can be ignored, as trams slow down near intersections.
