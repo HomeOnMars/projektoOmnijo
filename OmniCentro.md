@@ -236,6 +236,12 @@ Use at your own risk.***
 
 -------------------------------------------------------------------------------
 
+> [!NOTE]
+> Both trains' and trucks' engine power has been exaggerated by 40\% to 50\%
+> compared to real life, since *RdO* enjoys technological superiority.  
+> See [below verification section](#networks-specification-details-and-verification)
+> for calculations.
+
 
 #### Roads
 
@@ -244,7 +250,7 @@ Use at your own risk.***
 
     |             |  max Gradient $s$ |  min Curve radius $R$        | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Notes |
     | ----------- | :-------: | :----------: | :--------: | --- | --- | --- | --- | ----- |
-    | -           |  4   \%   |  504m (63u)  |  120 km/h  |  $90\degree$ | $127\degree$ | $152\degree$ | $166\degree$ | |
+    | -           |  4   \%   |  552m (69u)  |  125 km/h  |  $95\degree$ | $131\degree$ | $154\degree$ | $167\degree$ | |
     | Recommended |  6   \%   |  352m (44u)  |  100 km/h  | -            | $108\degree$ | $141\degree$ | $160\degree$ | |
     | Soft Limit  |  8   \%   |  224m (28u)  |   80 km/h  | -            | -            | $121\degree$ | $149\degree$ | For ramps / In mountains |
     | -           | 10   \%   |  128m (16u)  |   60 km/h  | -            | -            |  $90\degree$ | $127\degree$ | Mountains Only |
@@ -292,184 +298,7 @@ Use at your own risk.***
 
     - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
       i.e., $\theta_\mathrm{512m}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 512m.
-    - Angle $\theta_{d}$ equation:
-      $\theta_{d} = 2 \tan^{-1}{\frac{R}{d}}$
-
-      ```python
-          # python code
-          import numpy as np
-          # Remember to translate radian into degree
-          theta_deg = lambda R, d: np.ceil(2*np.atan(R/d)/np.pi*180)
-          get_R = lambda theta_deg, d: np.tan(theta_deg/2/180*np.pi)*d
-          # Example
-          print([(d, theta_deg(R=720, d=d)) for d in (512, 256, 128, 64)])
-          print(theta_deg(R=4000, d=512), get_R(theta_deg=166, d=512))
-      ```
-
     - Curve radius is obtained by $R \propto v_\mathrm{max}^2$ (See [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant).)
-    - Analysis of train/truck engine's ability to haul cars:
-
-      ```python
-      # getting how many containers/trailers can a train engine haul
-      from numpy import sqrt, sin, cos, pi
-      from astropy import units as u
-      g = 9.8 * u.m / u.s**2
-      hp = 746 * u.W
-      # load_per_FEU = 24 * u.t    # 24t per trailer / FEU / 2TEU; note default CSL2 is 25t per FEU
-      # note: in CSL2, by default,
-      #    truck can carry 1 FEU;
-      #    freight train can carry 12 FEUs;
-      #    container ships can carry 7(height)*6(width)*5(length)+6*5*0.5=225 FEUs;
-      #    assuming 24t per FEU, this means truck / train / ships should carry 24t / 288t / 5400t goods.
-      # Planned adjustments:
-      #    adjust trains to carry 24 FEUs (with 24 trailers and 1 engine;
-      #        as 2u/16m per trailer, this means a 400m long train; reserve 28u/448m for rail junctions)
-      #        576t goods per train
-      #    adjust cargo airplanes to carry 5 FEU-equivalent weight (i.e. 120t goods per plane)
-
-      def n_car_f(
-          v, grad,
-          load_full = 40*u.t,    # cargo+trailer weight
-          load_capa = 24*u.t,    # cargo weight alone (per FEU container)
-          engine_p = 6760*hp,    # engine power  (ref: see <https://en.wikipedia.org/wiki/British_Rail_Class_92>)
-          engine_m = 120*u.t,    # engine weight (ref: see <https://en.wikipedia.org/wiki/British_Rail_Class_92>)
-          C_rr = 0.0004,     # rolling resistence (see <https://en.wikipedia.org/wiki/Rolling_resistance#Rolling_resistance_coefficient_examples>)
-          #    for air resistence calc, see this article here <https://www.engineeringtoolbox.com/drag-coefficient-d_627.html>
-          C_d  = 0.2, # drag coefficient- for high speed trian, see <https://iopscience.iop.org/article/10.1088/1757-899X/184/1/012015/pdf> table 1.
-          rho_air = 1.225*u.kg/u.m**3,    # air density
-          A_d  = 3*4/2*u.m**2,    # frontal area (for calc air drag)
-      ):
-          # how many cars can this train engine haul
-          #n_car = (engine_p / ((grad/sqrt(1+grad**2) + (1.+air_fac)*C_rr/sqrt(1+grad**2))*load_full*g*v) - engine_m/load_full).si
-          n_car = (
-              engine_p / v / (
-                  # gravity and rolling resistance force
-                  (grad/sqrt(1+grad**2) + C_rr/sqrt(1+grad**2))*load_full*g
-                  # air drag force
-                  + 0.5 * C_d * rho_air * A_d * v**2
-              )
-              - engine_m/load_full
-          ).si
-          # how much cargo (in tons) can this train engine haul
-          capa  = int(n_car)*load_capa
-          # how long will this train (part) be
-          length= int(n_car+1)*16*u.m    # +1 to account train engine itself
-          return n_car, capa, length
-
-      def print_info(**params):
-          n_car, capa, length = n_car_f(**params)
-          txt = f"\t{params = }\n\t{n_car =:6.2f}\t{capa =:4.0f}\t{length =:4.0f}\n"
-          print(txt)
-          return txt
-
-
-      if __name__ == '__main__':
-          # Assuming more powerful electric trains: 9600hp (in contrast to 6760hp realistic estimate
-          #    (from UK class 92 electric freight locomotive <https://en.wikipedia.org/wiki/British_Rail_Class_92> ))
-          # remember we need to drag 24 cars, so n_car > 24 is minimum.
-          
-          print("Rail")
-          
-          print_info(grad=1.5*u.percent, v=135*u.km/u.h, engine_p=(9600*hp).to(hp))
-          print_info(grad=3.5*u.percent, v= 65*u.km/u.h, engine_p=(9600*hp).to(hp))
-          
-          print("High Speed Rail (per car)")
-          
-          print_info(grad=3.0*u.percent, v=340*u.km/u.h, engine_p=(9600*hp).to(hp))
-          print_info(grad=3.5*u.percent, v=320*u.km/u.h, engine_p=(9600*hp).to(hp))
-          print_info(grad=4.0*u.percent, v=300*u.km/u.h, engine_p=(9600*hp).to(hp))
-          print_info(grad=5.0*u.percent, v=270*u.km/u.h, engine_p=(9600*hp).to(hp))
-          
-          
-          print("Metro (per car)")
-          
-          print_info(grad=5.0*u.percent, v=135*u.km/u.h, engine_p=(3200*hp).to(hp), engine_m=80*u.t,)
-          print_info(grad=7.0*u.percent, v=100*u.km/u.h, engine_p=(3200*hp).to(hp), engine_m=80*u.t,)
-          
-
-          print("Tram (per car)")
-
-          print_info(grad=10.0*u.percent, v=80*u.km/u.h, engine_p=(2400*hp).to(hp), engine_m=40*u.t,)
-          print_info(grad=13.5*u.percent, v=60*u.km/u.h, engine_p=(2400*hp).to(hp), engine_m=40*u.t,)
-          
-
-          print("Road")
-          
-          # Assuming more powerful trucks: 860hp (instead of 600hp realistic estimate
-          #    (See Iveco Eurocargo specifications <https://www.iveco.com/Eurocargo>
-          #    <https://static.iveco.com.au/download/media%2F5524d082-2a03-40c0-96de-9d6ab73f3681.pdf/Eurocargo%20Specifications.pdf>
-          #    For Engine Maximum Output, GVM (Gross Vehicle Mass) and GCM (Gross Combination Mass) info))
-          
-          print_info(grad=4*u.percent, v=125*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
-          print_info(grad=6*u.percent, v=100*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
-          print_info(grad=8*u.percent, v= 80*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
-
-
-          print("Local Road")
-          
-          print_info(grad=10  *u.percent, v= 60*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
-          print_info(grad=13.5*u.percent, v= 50*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
-          print_info(grad=30  *u.percent, v= 25*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
-      ```
-
-      Results:
-
-      ```python
-      Rail
-        params = {'grad': <Quantity 1.5 %>, 'v': <Quantity 135. km / h>, 'engine_p': <Quantity 9600. 746 W>}
-        n_car = 24.01	capa = 576 t	length = 400 m
-
-        params = {'grad': <Quantity 3.5 %>, 'v': <Quantity 65. km / h>, 'engine_p': <Quantity 9600. 746 W>}
-        n_car = 25.11	capa = 600 t	length = 416 m
-
-      High Speed Rail (per car)
-        params = {'grad': <Quantity 3. %>, 'v': <Quantity 340. km / h>, 'engine_p': <Quantity 9600. 746 W>}
-        n_car =  1.11	capa =  24 t	length =  32 m
-
-        params = {'grad': <Quantity 3.5 %>, 'v': <Quantity 320. km / h>, 'engine_p': <Quantity 9600. 746 W>}
-        n_car =  1.09	capa =  24 t	length =  32 m
-
-        params = {'grad': <Quantity 4. %>, 'v': <Quantity 300. km / h>, 'engine_p': <Quantity 9600. 746 W>}
-        n_car =  1.11	capa =  24 t	length =  32 m
-
-        params = {'grad': <Quantity 5. %>, 'v': <Quantity 270. km / h>, 'engine_p': <Quantity 9600. 746 W>}
-        n_car =  1.00	capa =  24 t	length =  32 m
-
-      Metro (per car)
-        params = {'grad': <Quantity 5. %>, 'v': <Quantity 135. km / h>, 'engine_p': <Quantity 3200. 746 W>, 'engine_m': <Quantity 80. t>}
-        n_car =  1.07	capa =  24 t	length =  32 m
-
-        params = {'grad': <Quantity 7. %>, 'v': <Quantity 100. km / h>, 'engine_p': <Quantity 3200. 746 W>, 'engine_m': <Quantity 80. t>}
-        n_car =  1.06	capa =  24 t	length =  32 m
-
-      Tram (per car)
-        params = {'grad': <Quantity 10. %>, 'v': <Quantity 80. km / h>, 'engine_p': <Quantity 2400. 746 W>, 'engine_m': <Quantity 40. t>}
-        n_car =  1.04	capa =  24 t	length =  32 m
-
-        params = {'grad': <Quantity 13.5 %>, 'v': <Quantity 60. km / h>, 'engine_p': <Quantity 2400. 746 W>, 'engine_m': <Quantity 40. t>}
-        n_car =  1.03	capa =  24 t	length =  32 m
-
-      Road
-        params = {'grad': <Quantity 4. %>, 'v': <Quantity 125. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
-        n_car =  1.04	capa =  24 t	length =  32 m
-
-        params = {'grad': <Quantity 6. %>, 'v': <Quantity 100. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
-        n_car =  1.01	capa =  24 t	length =  32 m
-
-        params = {'grad': <Quantity 8. %>, 'v': <Quantity 80. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
-        n_car =  1.02	capa =  24 t	length =  32 m
-
-      Local Road
-        params = {'grad': <Quantity 10. %>, 'v': <Quantity 60. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
-        n_car =  1.17	capa =  24 t	length =  32 m
-
-        params = {'grad': <Quantity 13.5 %>, 'v': <Quantity 50. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
-        n_car =  1.05	capa =  24 t	length =  32 m
-
-        params = {'grad': <Quantity 30. %>, 'v': <Quantity 25. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
-        n_car =  1.00	capa =  24 t	length =  32 m
-      ```
-
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant): $R$ info
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples (see Lithgow Zig Zag)
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
@@ -530,6 +359,186 @@ Use at your own risk.***
 
   - Source: (2024-09-28) [Miller et al. (2014)](https://www.researchgate.net/publication/301302321_Monorails_for_sustainable_transportation_-_a_review)
     - Table 4.1 $s$ info (Multiplied by 2 since its estimated values seems too conservative in general- see above; same as the speed limit $v_\mathrm{max}$. Also it's a game and steeper/faster is more fun.)
+
+
+#### Networks specification details and verification
+
+- Angle $\theta_{d}$ equation:
+  $\theta_{d} = 2 \tan^{-1}{\frac{R}{d}}$
+
+  ```python
+      # python code
+      import numpy as np
+      # Remember to translate radian into degree
+      theta_deg = lambda R, d: np.ceil(2*np.atan(R/d)/np.pi*180)
+      get_R = lambda theta_deg, d: np.tan(theta_deg/2/180*np.pi)*d
+      # Example
+      print([(d, theta_deg(R=720, d=d)) for d in (512, 256, 128, 64)])
+      print(theta_deg(R=4000, d=512), get_R(theta_deg=166, d=512))
+  ```
+
+- Analysis of train/truck engine's ability to haul cars:
+
+  ```python
+  # getting how many containers/trailers can a train engine haul
+  from numpy import sqrt, sin, cos, pi
+  from astropy import units as u
+  g = 9.8 * u.m / u.s**2
+  hp = 746 * u.W
+  # load_per_FEU = 24 * u.t    # 24t per trailer / FEU / 2TEU; note default CSL2 is 25t per FEU
+  # note: in CSL2, by default,
+  #    truck can carry 1 FEU;
+  #    freight train can carry 12 FEUs;
+  #    container ships can carry 7(height)*6(width)*5(length)+6*5*0.5=225 FEUs;
+  #    assuming 24t per FEU, this means truck / train / ships should carry 24t / 288t / 5400t goods.
+  # Planned adjustments:
+  #    adjust trains to carry 24 FEUs (with 24 trailers and 1 engine;
+  #        as 2u/16m per trailer, this means a 400m long train; reserve 28u/448m for rail junctions)
+  #        576t goods per train
+  #    adjust cargo airplanes to carry 5 FEU-equivalent weight (i.e. 120t goods per plane)
+
+  def n_car_f(
+      v, grad,
+      load_full = 40*u.t,    # cargo+trailer weight
+      load_capa = 24*u.t,    # cargo weight alone (per FEU container)
+      engine_p = 6760*hp,    # engine power  (ref: see <https://en.wikipedia.org/wiki/British_Rail_Class_92>)
+      engine_m = 120*u.t,    # engine weight (ref: see <https://en.wikipedia.org/wiki/British_Rail_Class_92>)
+      C_rr = 0.0004,     # rolling resistence (see <https://en.wikipedia.org/wiki/Rolling_resistance#Rolling_resistance_coefficient_examples>)
+      #    for air resistence calc, see this article here <https://www.engineeringtoolbox.com/drag-coefficient-d_627.html>
+      C_d  = 0.2, # drag coefficient- for high speed trian, see <https://iopscience.iop.org/article/10.1088/1757-899X/184/1/012015/pdf> table 1.
+      rho_air = 1.225*u.kg/u.m**3,    # air density
+      A_d  = 3*4/2*u.m**2,    # frontal area (for calc air drag)
+  ):
+      # how many cars can this train engine haul
+      #n_car = (engine_p / ((grad/sqrt(1+grad**2) + (1.+air_fac)*C_rr/sqrt(1+grad**2))*load_full*g*v) - engine_m/load_full).si
+      n_car = (
+          engine_p / v / (
+              # gravity and rolling resistance force
+              (grad/sqrt(1+grad**2) + C_rr/sqrt(1+grad**2))*load_full*g
+              # air drag force
+              + 0.5 * C_d * rho_air * A_d * v**2
+          )
+          - engine_m/load_full
+      ).si
+      # how much cargo (in tons) can this train engine haul
+      capa  = int(n_car)*load_capa
+      # how long will this train (part) be
+      length= int(n_car+1)*16*u.m    # +1 to account train engine itself
+      return n_car, capa, length
+
+  def print_info(**params):
+      n_car, capa, length = n_car_f(**params)
+      txt = f"\t{params = }\n\t{n_car =:6.2f}\t{capa =:4.0f}\t{length =:4.0f}\n"
+      print(txt)
+      return txt
+
+
+  if __name__ == '__main__':
+      # Assuming more powerful electric trains: 9600hp (in contrast to 6760hp realistic estimate
+      #    (from UK class 92 electric freight locomotive <https://en.wikipedia.org/wiki/British_Rail_Class_92> ))
+      # remember we need to drag 24 cars, so n_car > 24 is minimum.
+      
+      print("Rail")
+      
+      print_info(grad=1.5*u.percent, v=135*u.km/u.h, engine_p=(9600*hp).to(hp))
+      print_info(grad=3.5*u.percent, v= 65*u.km/u.h, engine_p=(9600*hp).to(hp))
+      
+      print("High Speed Rail (per car)")
+      
+      print_info(grad=3.0*u.percent, v=340*u.km/u.h, engine_p=(9600*hp).to(hp))
+      print_info(grad=3.5*u.percent, v=320*u.km/u.h, engine_p=(9600*hp).to(hp))
+      print_info(grad=4.0*u.percent, v=300*u.km/u.h, engine_p=(9600*hp).to(hp))
+      print_info(grad=5.0*u.percent, v=270*u.km/u.h, engine_p=(9600*hp).to(hp))
+      
+      
+      print("Metro (per car)")
+      
+      print_info(grad=5.0*u.percent, v=135*u.km/u.h, engine_p=(3200*hp).to(hp), engine_m=80*u.t,)
+      print_info(grad=7.0*u.percent, v=100*u.km/u.h, engine_p=(3200*hp).to(hp), engine_m=80*u.t,)
+      
+
+      print("Tram (per car)")
+
+      print_info(grad=10.0*u.percent, v=80*u.km/u.h, engine_p=(2400*hp).to(hp), engine_m=40*u.t,)
+      print_info(grad=13.5*u.percent, v=60*u.km/u.h, engine_p=(2400*hp).to(hp), engine_m=40*u.t,)
+      
+
+      print("Road")
+      
+      # Assuming more powerful trucks: 860hp (instead of 600hp realistic estimate
+      #    (See Iveco Eurocargo specifications <https://www.iveco.com/Eurocargo>
+      #    <https://static.iveco.com.au/download/media%2F5524d082-2a03-40c0-96de-9d6ab73f3681.pdf/Eurocargo%20Specifications.pdf>
+      #    For Engine Maximum Output, GVM (Gross Vehicle Mass) and GCM (Gross Combination Mass) info))
+      
+      print_info(grad=4*u.percent, v=125*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
+      print_info(grad=6*u.percent, v=100*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
+      print_info(grad=8*u.percent, v= 80*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
+
+
+      print("Local Road")
+      
+      print_info(grad=10  *u.percent, v= 60*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
+      print_info(grad=13.5*u.percent, v= 50*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
+      print_info(grad=30  *u.percent, v= 25*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
+  ```
+
+  Results:
+
+  ```python
+  Rail
+    params = {'grad': <Quantity 1.5 %>, 'v': <Quantity 135. km / h>, 'engine_p': <Quantity 9600. 746 W>}
+    n_car = 24.01	capa = 576 t	length = 400 m
+
+    params = {'grad': <Quantity 3.5 %>, 'v': <Quantity 65. km / h>, 'engine_p': <Quantity 9600. 746 W>}
+    n_car = 25.11	capa = 600 t	length = 416 m
+
+  High Speed Rail (per car)
+    params = {'grad': <Quantity 3. %>, 'v': <Quantity 340. km / h>, 'engine_p': <Quantity 9600. 746 W>}
+    n_car =  1.11	capa =  24 t	length =  32 m
+
+    params = {'grad': <Quantity 3.5 %>, 'v': <Quantity 320. km / h>, 'engine_p': <Quantity 9600. 746 W>}
+    n_car =  1.09	capa =  24 t	length =  32 m
+
+    params = {'grad': <Quantity 4. %>, 'v': <Quantity 300. km / h>, 'engine_p': <Quantity 9600. 746 W>}
+    n_car =  1.11	capa =  24 t	length =  32 m
+
+    params = {'grad': <Quantity 5. %>, 'v': <Quantity 270. km / h>, 'engine_p': <Quantity 9600. 746 W>}
+    n_car =  1.00	capa =  24 t	length =  32 m
+
+  Metro (per car)
+    params = {'grad': <Quantity 5. %>, 'v': <Quantity 135. km / h>, 'engine_p': <Quantity 3200. 746 W>, 'engine_m': <Quantity 80. t>}
+    n_car =  1.07	capa =  24 t	length =  32 m
+
+    params = {'grad': <Quantity 7. %>, 'v': <Quantity 100. km / h>, 'engine_p': <Quantity 3200. 746 W>, 'engine_m': <Quantity 80. t>}
+    n_car =  1.06	capa =  24 t	length =  32 m
+
+  Tram (per car)
+    params = {'grad': <Quantity 10. %>, 'v': <Quantity 80. km / h>, 'engine_p': <Quantity 2400. 746 W>, 'engine_m': <Quantity 40. t>}
+    n_car =  1.04	capa =  24 t	length =  32 m
+
+    params = {'grad': <Quantity 13.5 %>, 'v': <Quantity 60. km / h>, 'engine_p': <Quantity 2400. 746 W>, 'engine_m': <Quantity 40. t>}
+    n_car =  1.03	capa =  24 t	length =  32 m
+
+  Road
+    params = {'grad': <Quantity 4. %>, 'v': <Quantity 125. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
+    n_car =  1.04	capa =  24 t	length =  32 m
+
+    params = {'grad': <Quantity 6. %>, 'v': <Quantity 100. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
+    n_car =  1.01	capa =  24 t	length =  32 m
+
+    params = {'grad': <Quantity 8. %>, 'v': <Quantity 80. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
+    n_car =  1.02	capa =  24 t	length =  32 m
+
+  Local Road
+    params = {'grad': <Quantity 10. %>, 'v': <Quantity 60. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
+    n_car =  1.17	capa =  24 t	length =  32 m
+
+    params = {'grad': <Quantity 13.5 %>, 'v': <Quantity 50. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
+    n_car =  1.05	capa =  24 t	length =  32 m
+
+    params = {'grad': <Quantity 30. %>, 'v': <Quantity 25. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
+    n_car =  1.00	capa =  24 t	length =  32 m
+  ```
 
 
 
