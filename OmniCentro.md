@@ -74,7 +74,7 @@ For more details, see the history of Omnijo [here](#the-history).)
 | Settings                | Acronym | Name                    |
 | :---------------------- | :-----: | :---------------------: |
 | City Name               |   OC    | OmniCentro              |
-| Country Name            |   RdO   | Regno de Omnijo         |
+| Country Name            |   RdO   | La Regno de Omnijo      |
 | Central Authority Name  |   OCG   | Omnija Centra Gvidado   |
 | Government Service Name |   OCR   | Omnija Centra Registaro |
 
@@ -209,12 +209,12 @@ Teknikaj specifoj
 Technical Specifications
 -------------------------------------------------------------------------------
 
-***Warning:
-Information here is gathered from the internet for gameplay purposes,
-so not much effort has been spent on ensuring its accuracy.
-Some maybe incorrect or outdated.
-Some are just chosen arbitrarily.
-Use at your own risk.***
+> [!WARNING]
+> Information here is gathered from the internet for gameplay purposes,
+> ***so not much effort has been spent on ensuring its accuracy***.
+> Some maybe incorrect or outdated.
+> Some are just chosen arbitrarily.  
+> ***Use at your own risk.***
 
 
 
@@ -743,7 +743,7 @@ Then this trend slowed down.
 As the next great global economic recession unfolds
 (triggered by the bursting of the AI bubble weeks after the coronation day),
 many countries are struggling and tighting their immigration rules.
-Regno de Omnijo, however, did surprisingly (again) well,
+La Regno de Omnijo, however, did surprisingly (again) well,
 attracting people to stay.
 Actually, from an outsider perspective, Omnijo's response was almost perfect.
 <span style="color:Silver">Serena</span> was even able to take the chance
