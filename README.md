@@ -5,13 +5,13 @@ Projekto Omnijo  <br>  Project Omnijo
 
 
 Documents for my upcoming Cities: Skylines 2 cities,
-in the fictional country *Regno de Omnijo* (Kingdom of Omnijo)
+in the fictional country *la Regno de Omnijo* (the Kingdom of Omnijo)
 created by my imagination.
 
 ![RdO emblem](fig/RdO.svg)
 
-*Regno de Omnijo* (RdO) emblem (fictional).  
-See [OmniCentro documentation](OmniCentro.md#emblemo) for more information.
+*La Regno de Omnijo* (RdO) emblem (fictional).  
+See [OmniCentro documentation](OmniCentro.md#emblemo) for more information on the emblem.
 
 
 Disclaimer

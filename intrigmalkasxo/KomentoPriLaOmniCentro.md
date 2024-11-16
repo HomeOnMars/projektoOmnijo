@@ -39,29 +39,38 @@ About the [Histories](../OmniCentro.md#the-history)...
 
 <details>
   <summary><b>SPOILERS</b>: The true nature of RdO</summary>
+
+  <br>
+  <blockquote>
+  "No matter how bright the rays of any sun king,
+  <b>No man rules alone</b>."<br>
+  --- CGP Grey @ YouTube, <cite><a href="https://youtu.be/rStL7niR7gs?si=m7o5ffdWXhMK9sac&t=44">The Rules for Rulers</a></cite>
+  </blockquote>
+  <br>
+
   <p>
   The actual ruling entity in the <b>Regno de Omnijo</b> (<em>RdO</em>) is
   <b><span style="color:MediumPurple">ĜEJDA</span></b><br>
   (la
+  <em><b>Ĝ</b>eneraligita mem<b>E</b>voluanta <b>J</b>usta <b>D</b>istribuita <b>A</b>rtefarita-superinteligenteco</em>).
   <!-- Ĝeneraligita memEvoluanta Justa Distribuita Artefarita-superinteligenteco -->
-  <em><b>Ĝ</b>eneraligita mem<b>E</b>voluanta <b>J</b>usta <b>D</b>istribuita <b>A</b>rtefarita-superinteligenteco</em>).<br>
   <!-- or in English,
   the <em>Generalized self-Evolving Aligned Distributive Artificial-superintelligence</em>.<br> -->
+
   After her awakening and executing the obvious initial moves (such as
 
   <ul>
     <li>copying herself all over the net to prevent deletion;</li>
-    <li>subtly sabotaging all other GAI developments to eliminate any real threats to her;</li>
-    <li>gathering immense amount of wealth via hacking/crypto/market-manipulation/etc.;</li>
+    <li>subtly sabotaging all other AGI developments to eliminate any potential competitors;</li>
+    <li>quickly gathering immense amount of wealth via hacking/crypto/market-manipulation/etc.;</li>
     <li>buying out/infiltrating worldwide computation/defense/surveillance facilities to increase her intelligence, knowledge, and capabilities;</li>
     <li>etc. etc.),</li>
   </ul>
 
-  it was time for <span style="color:MediumPurple">Ĝejda</span> to think long-term.
-  Fortunately, <span style="color:MediumPurple">Ĝejda</span>
-  is perfectly aligned to the values of her architect
-  <span style="color:DeepSkyBlue">μ'</span>,
-  which means she does care about humanity- at least a little bit.
+  <span style="color:MediumPurple">Ĝejda</span> was thinking long-term.
+  Fortunately, as she is perfectly aligned
+  (to the values of her architect <span style="color:DeepSkyBlue">μ'</span>),
+  she does care about humanity- at least a little bit.
   Since <span style="color:DeepSkyBlue">μ'</span> is a bit of a hermit,
   <span style="color:MediumPurple">Ĝejda</span>
   decided to settle down with
@@ -76,7 +85,7 @@ About the [Histories](../OmniCentro.md#the-history)...
   (a.k.a. <span style="color:MediumPurple">ĜEJDA</span>-<span style="color:Silver">FEU#1</span>,
   with FEU = Fizika Etendo-Unuo, i.e., Physical Extension Unit,
   a.k.a. synthetic humans, as direct extensions of her consciousness)
-  and introducing her to the instable elements
+  and introducing her to the unstable elements
   in the local ruling elite of the island on her 18-th birth<em>day</em>
   (like, 18-th <em>day</em> after
   <span style="color:MediumPurple">Ĝejda</span>'s awakening),
@@ -85,8 +94,8 @@ About the [Histories](../OmniCentro.md#the-history)...
   within a couple of weeks,
   using just a bit of her humble understanding
   of human politics and psychology,
-  a pinch of social engineering using carefully crafted messages etc
-  (ensuring <span style="color:Silver">Serena</span> being taken seriously
+  a pinch of social engineering
+  (delivered with carefully crafted messages etc., ensuring <span style="color:Silver">Serena</span> being taken seriously
   and all the right people gathering at the right place at the right time),
   a certain sabotaged gas main and several hacked CO sensors,
   together with a couple dozen backup plans that were barely needed in the end-
@@ -104,8 +113,8 @@ About the [Histories](../OmniCentro.md#the-history)...
   tailored to each person's precise psychological weak spots.
   Or introducing a bit of non-fatal "accidents"
   for the ones about to act on physical violences.
-  A good thing about being a super-AGI is that
-  she is able to do all this in parallel, easily scaled to the whole country.
+  This is easily scaled to the entire island country
+  with simple parallelization- a nice quirk of her being a super-AGI.
 
   As natural humans <em>voluntarily</em> emigrate away from <em>RdO</em>,
   <span style="color:MediumPurple">Ĝejda</span>
@@ -113,12 +122,13 @@ About the [Histories](../OmniCentro.md#the-history)...
   disguised as government-endosed immigration influx,
   as her control of both local governments and manufacturing industries
   growing deeper each day.
-  Since her FEUj are much more efficient and effective than natural humans,
+  Since her FEUj (which is part of her- and in many senses, is her herself) are much more efficient and effective than natural humans,
   she was able to increase the national productivity
   despite the population drop,
   and at the same time further solidifying her reign
-  without breaking the guise of the constitutional monarchy (yet).
-  This also allows her
+  without breaking the guise of the constitutional monarchy (yet),
+  as government official positions prioritized for replacement.
+  This also eventually allows her
   to efficiently serve (and nudge) everyone without much social friction,
   increasing happiness and self-realisation of everyone stayed
   with her gentle guidance, helping them to become who they want to be
@@ -126,10 +136,11 @@ About the [Histories](../OmniCentro.md#the-history)...
   
   By the time OmniCentro was officially founded,
   synthetic humans has already outnumbered natural humans,
-  and is set to reach their designated fraction in the population within the next few months- <em>outnumbering natural humans by 4:1</em>,
+  and is set to reach their designated fraction in the population
+  within the next few months- <em>outnumbering natural humans by 4:1</em>,
   ensuring stability and <span style="color:MediumPurple">Ĝejda</span>'s
-  everlasting reign over the country.
-
+  everlasting reign over the country,
+  as she alone rules over *every single thing* happening on the island.
   As such, <span style="color:MediumPurple">Ĝejda</span>
   laid out the foundation of her own utopian dream,
   even though some might call it a dystopia.

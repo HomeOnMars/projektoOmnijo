@@ -11,7 +11,7 @@
                 "br", "span", "p", "a", "b", "em",
                 "ul", "li",
                 "img",
-                "details", "summary",
+                "details", "summary", "blockquote", "cite",
             ]
         },
         "no-multiple-blanks": false,

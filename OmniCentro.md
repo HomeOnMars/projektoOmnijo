@@ -12,7 +12,8 @@ PDX Mod Link: ***TBD***
 
 ![Omnija Centra Gvidado (OCG) emblem](fig/OCG.svg)
 
-Regno de Omnijo central authority *Omnija Centra Gvidado* (OCG) emblem (fictional).  
+La Regno de Omnijo central authority
+*Omnija Centra Gvidado* (OCG) emblem (fictional).  
 See [below](#emblemo) for more information and image generation codes.
 
 
@@ -53,18 +54,19 @@ Detailed Information
 
 #### Background Summary
 
-**Regno de Omnijo** (English: Kingdom of Omnijo) is a fictional monarchy
+**OmniCentro** is the new planned capital of the fictional island country **la Regno de Omnijo**,
+as commissioned by Omnijo's new young queen
+<span style="color:Silver">Serena</span>,
+who has already earned herself a reputation of arrogance and recklessness since her coronation just about half a year ago.
+
+(*La Regno de Omnijo* (English: Kingdom of Omnijo) is a fictional monarchy
 located on an fictional island
 (with the size of approximately iceland,
 i.e. $\, \sim 100\, 000\, \mathrm{km}^2$)
 in the Southern Hemisphere,
-somewhere in the middle between Chile and New Zealand.  
-OmniCentro is its planned new capital,
-commissioned by Omnijo's young new queen
-<span style="color:Silver">Serena</span>,
-who was just coronated about half a year ago.
+somewhere in between Chile and New Zealand.
 
-(For more details, see the history of Omnijo [here](#the-history).)
+For more details, see the history of Omnijo [here](#the-history).)
 
 
 #### Background Bulletin
@@ -506,15 +508,15 @@ Background Stories
 
 (Shorter summary [here](#background-summary).)
 
-**Regno de Omnijo** (English: Kingdom of Omnijo) is a fictional monarchy
+**La Regno de Omnijo** (English: Kingdom of Omnijo) is a fictional monarchy
 located on an fictional island
 (with the size of approximately iceland,
 i.e. $\, \sim 100\, 000\, \mathrm{km}^2$)
 in the Southern Hemisphere,
-somewhere in the middle between Chile and New Zealand.
+somewhere in between Chile and New Zealand.
 
 
-#### Foundation of *Regno de Omnijo*
+#### Foundation of *la Regno de Omnijo*
 
 Although it has always been a monarchy since time immemorial
 even before the Colonial era,
@@ -525,7 +527,7 @@ a different national color,
 a dfferent anthem,
 a different official religion, and even
 a different official language.
-Despite also being plagued by the corruption in the government,
+Despite the widespread corruption in the government,
 life there was mostly just fine.
 However, so much has changed since that faithful day.
 
@@ -567,7 +569,8 @@ the corruption was essentially gone with the reshuffling of the power,
 and the friends she put onto the positions
 are surprisingly upright and capable,
 and within weeks the public goods increased significantly
-as more fundings were re-directed there
+as <span style="color:Silver">Serena</span> disbanded the armies
+and re-directed the military fundings there
 (for example,
 
 - More telecom towers were built and maintained,
@@ -591,12 +594,16 @@ passed several laws
 allowing the renunciation of citizenship,
 recognizing dual citizenship, and
 providing heavy subsidies for transportations
-both coming to and leaving from the country.
-Which many people did take advantage of,
+both coming to and leaving from the country,
+as well as a farewell gift package
+for those who are leaving but either poor or veteran,
+allowing them to easily establish a new life elsewhere.
+(It almost felt like she wanted people to leave, or are testing them somehow.)
+Regardless, many people did take advantage of this,
 and emigration rate skyrocketed for weeks,
-and the population quickly dropped.
+as the population quickly dropped.
 As a counter measure, <span style="color:Silver">Serena</span>
-passed laws to streamline immigration process
+also passed laws to streamline immigration process
 as well as to encourage immigrants to move in,
 and the immigration influx did increase.
 However, it wasn't nearly enough to stop the population drop-
