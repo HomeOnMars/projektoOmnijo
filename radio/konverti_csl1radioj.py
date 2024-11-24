@@ -34,6 +34,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” 
 import os
 from os import sep
 import shutil
+import json
 
 
 # parameters - modify below lines to suit your own system
@@ -49,7 +50,7 @@ CSL2_RADIO_PATH: str = "./"    # will need to copy the output from this folder t
 
 def mkdir(path: str, dry_run: bool = False, verbose: bool = True):
     if not os.path.exists(path):
-        if verbose: print(f"$ makedir: {path}")
+        if verbose: print(f"\t$ makedir: {path}")
         if not dry_run: os.makedirs(path)
     return
 
@@ -70,10 +71,10 @@ def cp(
         else:
             if verbose: print(f"*   Warning: Skipping existing file '{dst}'.")
     elif hardlink:
-        if verbose: print(f"$ link: '{src}' '{dst}'")
+        if verbose: print(f"\t$ link: '{src}' '{dst}'")
         if not dry_run: os.link(src, dst)
     else:
-        if verbose: print(f"$ copy: '{src}' '{dst}'")
+        if verbose: print(f"\t$ copy: '{src}' '{dst}'")
         if not dry_run: shutil.copy2(src, dst)
     return
 
@@ -109,19 +110,41 @@ def convert_csl1_radio(
     mkdir(new_radio_network_path, dry_run=dry_run, verbose=verbose)
     
     for channel in old_radio_channels:
-        if verbose: print(f"For Channel '{channel}':")
+        channel_name = ''.join(' ' + char if char.isupper() else char.strip() for char in channel).strip()
+        if verbose: print(f"For Channel {channel_name} ('{channel}'):")
 
         new_radio_channel_path = os.path.normpath(f'{new_radio_network_path}{sep}{channel}')
         mkdir(new_radio_channel_path, dry_run=dry_run, verbose=verbose)
 
+        # write channel json file
+        json_path = f'{new_radio_channel_path}{sep}RadioChannel.json'
+        write_json = True
+        if os.path.exists(json_path):
+            if overwrite is None:
+                raise FileExistsError(f"File '{json_path}' already exists.")
+            elif not overwrite:
+                if verbose: print(f"*   Warning: Skipping existing file '{json_path}'.")
+                write_json = False
+        if write_json:
+            if verbose: print(f"Adding '{json_path}'.")
+            if not dry_run:
+                with open(json_path, 'w') as fp:
+                    data : dict[str, str]= {    # RadioChannel.json
+                        "name": channel_name,
+                        "description": channel_name,
+                        "icon": "coui://extendedradio/resources/DefaultIcon.svg",
+                    }
+                    json.dump(data, fp, indent=4)
+        
         # create radio program
         new_radio_program_path = os.path.normpath(f'{new_radio_channel_path}{sep}{channel}')
         mkdir(new_radio_program_path, dry_run=dry_run, verbose=verbose)
 
         # segment: Playlist
-        if 'Music' in old_included_types:
-            old_radio_segment_path = os.path.normpath(f'{old_radio_path}{sep}Music{sep}{channel}{sep}')
-            new_radio_segment_path = os.path.normpath(f'{new_radio_program_path}{sep}Playlist{sep}')
+        type_ = 'Music'
+        if type_ in old_included_types:
+            old_radio_segment_path = os.path.normpath(f'{old_radio_path}{sep}{type_}{sep}{channel}{sep}')
+            new_radio_segment_path = os.path.normpath(f'{new_radio_program_path}{sep}Playlist{sep}{type_}{sep}')
             mkdir(new_radio_segment_path, dry_run=dry_run, verbose=verbose)
             for file in [f for f in os.listdir(old_radio_segment_path)]:
                 cp(
@@ -136,6 +159,8 @@ def convert_csl1_radio(
             mkdir(new_radio_segment_path, dry_run=dry_run, verbose=verbose)
         for type_ in types:
             old_radio_segment_path = os.path.normpath(f'{old_radio_path}{sep}{type_}{sep}{channel}{sep}')
+            new_radio_segment_path = os.path.normpath(f'{new_radio_program_path}{sep}Talkshow{sep}{type_}{sep}')
+            mkdir(new_radio_segment_path, dry_run=dry_run, verbose=verbose)
             if os.path.exists(old_radio_segment_path):
                 for file in [f for f in os.listdir(old_radio_segment_path)]:
                     cp(
