@@ -41,6 +41,7 @@ import json
 
 CSL1_PATH: str = '/mnt/d/Games/SteamLibrary/steamapps/common/Cities_Skylines/'
 CSL1_RADIO_PATH: str = os.path.normpath(f'{CSL1_PATH}{sep}Files{sep}Radio{sep}')
+# CSL1_RADIO_ICON_PATH: str = os.path.normpath(f'{CSL1_PATH}{sep}Cities Skylines - Soundtrack{sep}AlbumArtwork.png')
 CSL2_RADIO_PATH: str = "./"    # will need to copy the output from this folder to the below example path
 # CSL2_RADIO_PATH Example:
 # /mnt/c/Users/{Your-User-Name}/AppData/LocalLow/Colossal Order/Cities Skylines II/ModsData/ExtendedRadio/CustomRadios/
@@ -78,6 +79,32 @@ def cp(
         if not dry_run: shutil.copy2(src, dst)
     return
 
+def do_write_file(file_path: str, overwrite: None|bool = None, verbose: bool = True) -> bool:
+    if os.path.exists(file_path):
+        if overwrite is None:
+            raise FileExistsError(f"File '{file_path}' already exists.")
+        elif not overwrite:
+            if verbose: print(f"*   Warning: Skipping existing file '{file_path}'.")
+            return False
+    return True
+
+def write_json(
+    data: dict,
+    json_path: str,
+    overwrite: None|bool = None,
+    dry_run: bool = False,
+    verbose: bool = True,
+):
+    if do_write_file(json_path, overwrite=overwrite, verbose=verbose):
+        if verbose: print(f"Adding '{json_path}'...", end='')
+        if not dry_run:
+            with open(json_path, 'w') as fp:
+                json.dump(data, fp, indent=4)
+        if verbose: print(f" Done.")
+    return
+
+
+
 # main function
 
 def convert_csl1_radio(
@@ -86,6 +113,7 @@ def convert_csl1_radio(
     old_included_types: set[str] = {'Music', 'Blurb', 'Talk'},
     radio_network_path: str = 'CSL1RadioNetwork',
     radio_network_name: str = "Classic Skylines Network",
+    radio_network_desc: str = "Cities: Skylines 1 radio stations",
     overwrite: None|bool = None,
     hardlink: bool = False,
     dry_run: bool = False,
@@ -106,43 +134,70 @@ def convert_csl1_radio(
 
     if verbose: print(f"Creating ExtendedRadio CustomRadios file structures...")
 
+    # create radio network
     new_radio_network_path = os.path.normpath(f'{new_radio_path}{sep}{radio_network_path}')
     mkdir(new_radio_network_path, dry_run=dry_run, verbose=verbose)
+    write_json(
+        data = {
+            "name": radio_network_name,
+            "description": radio_network_desc,
+            "icon": "coui://extendedradio/resources/DefaultIcon.svg",
+            "allowAds": True,
+        },
+        json_path = f'{new_radio_network_path}{sep}RadioNetwork.json',
+        overwrite=overwrite, dry_run=dry_run, verbose=verbose,
+    )
     
     for channel in old_radio_channels:
         channel_name = ''.join(' ' + char if char.isupper() else char.strip() for char in channel).strip()
         if verbose: print(f"For Channel {channel_name} ('{channel}'):")
 
+        # create radio channel
         new_radio_channel_path = os.path.normpath(f'{new_radio_network_path}{sep}{channel}')
         mkdir(new_radio_channel_path, dry_run=dry_run, verbose=verbose)
-
-        # write channel json file
-        json_path = f'{new_radio_channel_path}{sep}RadioChannel.json'
-        write_json = True
-        if os.path.exists(json_path):
-            if overwrite is None:
-                raise FileExistsError(f"File '{json_path}' already exists.")
-            elif not overwrite:
-                if verbose: print(f"*   Warning: Skipping existing file '{json_path}'.")
-                write_json = False
-        if write_json:
-            if verbose: print(f"Adding '{json_path}'.")
-            if not dry_run:
-                with open(json_path, 'w') as fp:
-                    data : dict[str, str]= {    # RadioChannel.json
-                        "name": channel_name,
-                        "description": channel_name,
-                        "icon": "coui://extendedradio/resources/DefaultIcon.svg",
-                    }
-                    json.dump(data, fp, indent=4)
+        write_json(
+            data = {
+                "name": channel_name,
+                "description": channel_name,
+                "icon": "coui://extendedradio/resources/DefaultIcon.svg",
+            },
+            json_path = f'{new_radio_channel_path}{sep}RadioChannel.json',
+            overwrite=overwrite, dry_run=dry_run, verbose=verbose,
+        )
         
         # create radio program
         new_radio_program_path = os.path.normpath(f'{new_radio_channel_path}{sep}{channel}')
         mkdir(new_radio_program_path, dry_run=dry_run, verbose=verbose)
+        write_json(
+            data = {
+                "name": channel_name,
+                "description": channel_name,
+                "icon": "coui://extendedradio/resources/DefaultIcon.svg",
+                "startTime": "00:00",
+                "endTime": "00:00",
+                "loopProgram": True,
+                "pairIntroOutro": False,
+            },
+            json_path = f'{new_radio_program_path}{sep}Program.json',
+            overwrite=overwrite, dry_run=dry_run, verbose=verbose,
+        )
 
         # segment: Playlist
         type_ = 'Music'
         if type_ in old_included_types:
+            # write segment json file
+            new_radio_seg_meta_path = os.path.normpath(f'{new_radio_program_path}{sep}Playlist{sep}')
+            mkdir(new_radio_seg_meta_path, dry_run=dry_run, verbose=verbose)
+            write_json(
+                data = {
+                    "type": "Playlist",
+                    "tags": [],
+                    "clipsCap": 2,
+                },
+                json_path = f'{new_radio_seg_meta_path}{sep}Segment.json',
+                overwrite=overwrite, dry_run=dry_run, verbose=verbose,
+            )
+            # copy audio files
             old_radio_segment_path = os.path.normpath(f'{old_radio_path}{sep}{type_}{sep}{channel}{sep}')
             new_radio_segment_path = os.path.normpath(f'{new_radio_program_path}{sep}Playlist{sep}{type_}{sep}')
             mkdir(new_radio_segment_path, dry_run=dry_run, verbose=verbose)
@@ -151,12 +206,24 @@ def convert_csl1_radio(
                     os.path.normpath(f'{old_radio_segment_path}{sep}{file}'),
                     os.path.normpath(f'{new_radio_segment_path}{sep}{file}'),
                     overwrite=overwrite, hardlink=hardlink, dry_run=dry_run, verbose=verbose)
+
                 
         # segment: Talkshow
         types: set = {'Blurb', 'Talk'}.intersection(old_included_types)
         if types:
-            new_radio_segment_path = os.path.normpath(f'{new_radio_program_path}{sep}Talkshow{sep}')
-            mkdir(new_radio_segment_path, dry_run=dry_run, verbose=verbose)
+            # write segment json file
+            new_radio_seg_meta_path = os.path.normpath(f'{new_radio_program_path}{sep}Talkshow{sep}')
+            mkdir(new_radio_seg_meta_path, dry_run=dry_run, verbose=verbose)
+            write_json(
+                data = {
+                    "type": "Talkshow",
+                    "tags": [],
+                    "clipsCap": 1,
+                },
+                json_path = f'{new_radio_seg_meta_path}{sep}Segment.json',
+                overwrite=overwrite, dry_run=dry_run, verbose=verbose,
+            )
+        # copy audio files
         for type_ in types:
             old_radio_segment_path = os.path.normpath(f'{old_radio_path}{sep}{type_}{sep}{channel}{sep}')
             new_radio_segment_path = os.path.normpath(f'{new_radio_program_path}{sep}Talkshow{sep}{type_}{sep}')
@@ -176,6 +243,7 @@ if __name__ == '__main__':
         # comment or modify below lines for English names etc.
         radio_network_path = 'CSL1RadioReto',
         radio_network_name = "Klasika Urbosilueto RadioReto",
+        radio_network_desc = "CSL1 RadioStacioj",
         overwrite= False,
         hardlink = True,
         dry_run  = False,
