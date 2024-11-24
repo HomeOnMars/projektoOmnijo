@@ -2,6 +2,8 @@ bkp/
 temp/
 test*
 *.ipynb
+*.png
+*.ogg
 
 
 # Byte-compiled / optimized / DLL files
