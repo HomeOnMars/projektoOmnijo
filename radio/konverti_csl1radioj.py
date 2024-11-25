@@ -4,9 +4,15 @@
 """
 Convert owned CSL1 radios as CSL2 Extended radios.
 
-Note: this script does not create music tracks out of the blue. You will need to buy and download those CSL1 radio stations first.
+Note: this script does not create music tracks out of the blue.
+You will need to buy and download those CSL1 radio stations first.
+You will also need to subscribe to the Extended Radio mod for CSL2 on Paradox Mods.
 
-Only tested on WSL (Windows Subsystem for Linux) with game installed on Windows system.
+I am not a lawyer, and I am not really sure about the copyright.
+Definitely do NOT share the ogg files online.
+Probably best NOT to use those musics when streaming.
+
+This python script has only been tested on WSL (Windows Subsystem for Linux) with game installed on Windows system.
 
 Author: HomeOnMars
 
@@ -114,7 +120,8 @@ def convert_csl1_radio(
     radio_network_path: str = 'CSL1RadioNetwork',
     radio_network_name: str = "Classic Skylines Network",
     radio_network_desc: str = "Cities: Skylines 1 radio stations",
-    overwrite: None|bool = None,
+    overwrite_ogg : None|bool = None,    # if None, will raise exception if file already exists
+    overwrite_json: None|bool = None,
     hardlink: bool = False,
     dry_run: bool = False,
     verbose: bool = True,
@@ -145,7 +152,7 @@ def convert_csl1_radio(
             "allowAds": True,
         },
         json_path = f'{new_radio_network_path}{sep}RadioNetwork.json',
-        overwrite=overwrite, dry_run=dry_run, verbose=verbose,
+        overwrite=overwrite_json, dry_run=dry_run, verbose=verbose,
     )
     
     for channel in old_radio_channels:
@@ -162,7 +169,7 @@ def convert_csl1_radio(
                 "icon": "coui://extendedradio/resources/DefaultIcon.svg",
             },
             json_path = f'{new_radio_channel_path}{sep}RadioChannel.json',
-            overwrite=overwrite, dry_run=dry_run, verbose=verbose,
+            overwrite=overwrite_json, dry_run=dry_run, verbose=verbose,
         )
         
         # create radio program
@@ -179,7 +186,7 @@ def convert_csl1_radio(
                 "pairIntroOutro": False,
             },
             json_path = f'{new_radio_program_path}{sep}Program.json',
-            overwrite=overwrite, dry_run=dry_run, verbose=verbose,
+            overwrite=overwrite_json, dry_run=dry_run, verbose=verbose,
         )
 
         # segment: Playlist
@@ -195,17 +202,56 @@ def convert_csl1_radio(
                     "clipsCap": 2,
                 },
                 json_path = f'{new_radio_seg_meta_path}{sep}Segment.json',
-                overwrite=overwrite, dry_run=dry_run, verbose=verbose,
+                overwrite=overwrite_json, dry_run=dry_run, verbose=verbose,
             )
             # copy audio files
             old_radio_segment_path = os.path.normpath(f'{old_radio_path}{sep}{type_}{sep}{channel}{sep}')
             new_radio_segment_path = os.path.normpath(f'{new_radio_program_path}{sep}Playlist{sep}{type_}{sep}')
             mkdir(new_radio_segment_path, dry_run=dry_run, verbose=verbose)
-            for file in [f for f in os.listdir(old_radio_segment_path)]:
+            for file_old in [f for f in os.listdir(old_radio_segment_path)]:
+                file = file_old.replace(' – ', ' - ')
+                file_noext = os.path.splitext(file)[0]
+                file_split = file_noext.split(" - ")
                 cp(
-                    os.path.normpath(f'{old_radio_segment_path}{sep}{file}'),
+                    os.path.normpath(f'{old_radio_segment_path}{sep}{file_old}'),
                     os.path.normpath(f'{new_radio_segment_path}{sep}{file}'),
-                    overwrite=overwrite, hardlink=hardlink, dry_run=dry_run, verbose=verbose)
+                    overwrite=overwrite_ogg, hardlink=hardlink, dry_run=dry_run, verbose=verbose)
+                title, artist = None, None
+                if len(file_split) >= 2:
+                    title_split = file_split[1].strip().split(' ')
+                    # remove leading numbers and extra spaces
+                    if title_split and '0' <= title_split[0][0] and title_split[0][0] <= '9': title_split.pop(0)
+                    title = ' '.join([t for t in title_split if t])
+                    artist = file_split[0].strip()
+                elif file_split:
+                    title_split = file_split[0].strip().removeprefix("Radio_OfficialMars_").split(' ')
+                    # remove leading numbers and extra spaces
+                    if title_split and '0' <= title_split[0][0] and title_split[0][0] <= '9': title_split.pop(0)
+                    title = ' '.join([t for t in title_split if t])
+                    if verbose: print(f"**  Warning: Unable to parse title and album from file name '{file}'")
+                else:
+                    if verbose: print(f"*** Error: Empty file name '{file}'")
+                write_json(
+                    data = {
+                        "Title": title,
+                        "Album": None,
+                        "Artist": artist,
+                        "Type": None,
+                        "Brand": None,
+                        "RadioStation": None,
+                        "RadioChannel": None,
+                        "PSAType": None,
+                        "AlertType": None,
+                        "NewsType": None,
+                        "WeatherType": None,
+                        "loopStart": -1,
+                        "loopEnd": -1,
+                        "alternativeStart": -1,
+                        "fadeoutTime": 1,
+                    },
+                    json_path = f'{new_radio_segment_path}{sep}{file_noext}.json',
+                    overwrite=overwrite_json, dry_run=dry_run, verbose=verbose,
+                )
 
                 
         # segment: Talkshow
@@ -221,7 +267,7 @@ def convert_csl1_radio(
                     "clipsCap": 1,
                 },
                 json_path = f'{new_radio_seg_meta_path}{sep}Segment.json',
-                overwrite=overwrite, dry_run=dry_run, verbose=verbose,
+                overwrite=overwrite_json, dry_run=dry_run, verbose=verbose,
             )
         # copy audio files
         for type_ in types:
@@ -229,11 +275,34 @@ def convert_csl1_radio(
             new_radio_segment_path = os.path.normpath(f'{new_radio_program_path}{sep}Talkshow{sep}{type_}{sep}')
             mkdir(new_radio_segment_path, dry_run=dry_run, verbose=verbose)
             if os.path.exists(old_radio_segment_path):
-                for file in [f for f in os.listdir(old_radio_segment_path)]:
+                for file_old in [f for f in os.listdir(old_radio_segment_path)]:
+                    file = file_old.replace(' –  ', ' - ')
+                    file_noext = os.path.splitext(file)[0]
                     cp(
-                        os.path.normpath(f'{old_radio_segment_path}{sep}{file}'),
+                        os.path.normpath(f'{old_radio_segment_path}{sep}{file_old}'),
                         os.path.normpath(f'{new_radio_segment_path}{sep}{file}'),
-                        overwrite=overwrite, hardlink=hardlink, dry_run=dry_run, verbose=verbose)
+                        overwrite=overwrite_ogg, hardlink=hardlink, dry_run=dry_run, verbose=verbose)
+                    write_json(
+                        data = {
+                            "Title": None,
+                            "Album": None,
+                            "Artist": None,
+                            "Type": None,
+                            "Brand": None,
+                            "RadioStation": None,
+                            "RadioChannel": None,
+                            "PSAType": None,
+                            "AlertType": None,
+                            "NewsType": None,
+                            "WeatherType": None,
+                            "loopStart": -1,
+                            "loopEnd": -1,
+                            "alternativeStart": -1,
+                            "fadeoutTime": 1,
+                        },
+                        json_path = f'{new_radio_segment_path}{sep}{file_noext}.json',
+                        overwrite=overwrite_json, dry_run=dry_run, verbose=verbose,
+                    )
 
 
 
@@ -244,7 +313,8 @@ if __name__ == '__main__':
         radio_network_path = 'CSL1RadioReto',
         radio_network_name = "Klasika Urbosilueto RadioReto",
         radio_network_desc = "CSL1 RadioStacioj",
-        overwrite= False,
+        overwrite_ogg = False,
+        overwrite_json= False,
         hardlink = True,
         dry_run  = False,
         verbose  = True,
