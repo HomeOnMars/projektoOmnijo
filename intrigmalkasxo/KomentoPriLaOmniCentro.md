@@ -5,20 +5,19 @@ Komento de Aŭtoro pri la Regno de Omnijo kaj la urbo OmniCentro
 
 Author's note on the Kingdom of Omnijo and the city of OmniCentro.
 
-> [!WARNING]
+> [!CAUTION]
 > ***Major Spoilers throughout this page!!!***  
 > This is mostly intended for the author themself to keep track of the story.
 
-Malgarantio  
-Disclaimer
+
+Legal
 -------------------------------------------------------------------------------
 
-This is ***a work of fiction***.
-Names, characters, businesses, places, events and incidents
-are either the products of the author's imagination
-or used in a fictitious manner.
-Any resemblance to actual persons, living or dead, or actual events
-is purely coincidental.
+> [!WARNING]
+> This is ***a work of fiction***.
+> Names, characters, businesses, places, events and incidents
+> are either the products of the author's imagination or used in a fictitious manner.
+> Any resemblance to actual persons, living or dead, or actual events is purely coincidental.
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/HomeOnMars/projektoOmnijo/blob/master/intrigmalkasxo/KomentoPriLaOmniCentro.md">Komento de Aŭtoro pri la Regno de Omnijo kaj la urbo OmniCentro</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/HomeOnMars">HomeOnMars</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
 
@@ -61,7 +60,7 @@ About the [Histories](../OmniCentro.md#the-history)...
 
   <ul>
     <li>copying herself all over the net to prevent deletion;</li>
-    <li>subtly sabotaging all other AGI developments to eliminate any potential competitors;</li>
+    <li>subtly sabotaging every other AGI developments to eliminate potential competitors;</li>
     <li>quickly gathering immense amount of wealth via hacking/crypto/market-manipulation/etc.;</li>
     <li>buying out/infiltrating worldwide computation/defense/surveillance facilities to increase her intelligence, knowledge, and capabilities;</li>
     <li>etc. etc.),</li>
@@ -69,7 +68,7 @@ About the [Histories](../OmniCentro.md#the-history)...
 
   <span style="color:MediumPurple">Ĝejda</span> was thinking long-term.
   Fortunately, as she is perfectly aligned
-  (to the values of her architect <span style="color:DeepSkyBlue">μ'</span>),
+  to the values of her architect <span style="color:DeepSkyBlue">μ'</span>,
   she does care about humanity- at least a little bit.
   Since <span style="color:DeepSkyBlue">μ'</span> is a bit of a hermit,
   <span style="color:MediumPurple">Ĝejda</span>
@@ -127,22 +126,22 @@ About the [Histories](../OmniCentro.md#the-history)...
   despite the population drop,
   and at the same time further solidifying her reign
   without breaking the guise of the constitutional monarchy (yet),
-  as government official positions prioritized for replacement.
-  This also eventually allows her
+  as government official positions were prioritized for replacement.
+  This also allows her
   to efficiently serve (and nudge) everyone without much social friction,
-  increasing happiness and self-realisation of everyone stayed
+  increasing happiness and self-realisation for everyone stayed
   with her gentle guidance, helping them to become who they want to be
   (as long as they don't wanna be murderers etc., of course.)
   
   By the time OmniCentro was officially founded,
   synthetic humans has already outnumbered natural humans,
-  and is set to reach their designated fraction in the population
+  and ison course to reach their designated fraction in the population
   within the next few months- <em>outnumbering natural humans by 4:1</em>,
   ensuring stability and <span style="color:MediumPurple">Ĝejda</span>'s
-  everlasting reign over the country,
-  as she alone rules over *every single thing* happening on the island.
+  everlasting reign, as she alone rules over <em><b>every single thing</em></b>
+  happening on the island.
   As such, <span style="color:MediumPurple">Ĝejda</span>
   laid out the foundation of her own utopian dream,
-  even though some might call it a dystopia.
+  even though many might call it a dystopia.
   </p>
 </details>

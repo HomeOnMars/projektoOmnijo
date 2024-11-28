@@ -7,16 +7,15 @@ System of Units
 Background stories and technical specifications
 for my upcoming fictional Cities: Skylines 2 city *OmniCentro*.
 
-Malgarantio  
-Disclaimer
+
+Legal
 -------------------------------------------------------------------------------
 
-This is ***a work of fiction***.
-Names, characters, businesses, places, events and incidents
-are either the products of the author's imagination
-or used in a fictitious manner.
-Any resemblance to actual persons, living or dead, or actual events
-is purely coincidental.
+> [!WARNING]
+> This is ***a work of fiction***.
+> Names, characters, businesses, places, events and incidents
+> are either the products of the author's imagination or used in a fictitious manner.
+> Any resemblance to actual persons, living or dead, or actual events is purely coincidental.
 
 This work © 2024 by HomeOnMars is licensed under CC BY-NC-SA 4.0.
 To view a copy of this license, visit <https://creativecommons.org/licenses/by-nc-sa/4.0/>

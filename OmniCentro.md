@@ -17,16 +17,14 @@ La Regno de Omnijo central authority
 See [below](#emblemo) for more information and image generation codes.
 
 
-Malgarantio  
-Disclaimer
+Legal
 -------------------------------------------------------------------------------
 
-This is ***a work of fiction***.
-Names, characters, businesses, places, events and incidents
-are either the products of the author's imagination
-or used in a fictitious manner.
-Any resemblance to actual persons, living or dead, or actual events
-is purely coincidental.
+> [!WARNING]
+> This is ***a work of fiction***.
+> Names, characters, businesses, places, events and incidents
+> are either the products of the author's imagination or used in a fictitious manner.
+> Any resemblance to actual persons, living or dead, or actual events is purely coincidental.
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/HomeOnMars/projektoOmnijo/blob/master/OmniCentro.md">OmniCentraj Specifoj</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/HomeOnMars">HomeOnMars</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
 
@@ -54,22 +52,24 @@ Detailed Information
 
 #### Background Summary
 
-**OmniCentro** is the new planned capital of the fictional island country **la Regno de Omnijo**,
-as commissioned by Omnijo's new young queen
+**OmniCentro** is the new planned capital
+of the fictional island country **la Regno de Omnijo**,
+as commissioned by Omnijo's young new queen
 <span style="color:Silver">Serena</span>,
-who has already earned herself a reputation of arrogance and recklessness since her coronation just about half a year ago.
+who has already earned herself a reputation of arrogance and recklessness
+since her coronation just about half a year ago.
 
-(*La Regno de Omnijo* (English: Kingdom of Omnijo) is a fictional monarchy
-located on an fictional island
-(with the size of approximately iceland,
-i.e. $\, \sim 100\, 000\, \mathrm{km}^2$)
-in the Southern Hemisphere,
-somewhere in between Chile and New Zealand.
+*La Regno de Omnijo* is a fictional monarchy
+located on the fictional island *La Omnija-Insulo*
+in the Southern Hemisphere somewhere in between Chile and New Zealand,
+near 56°15'S, 140°15'W (coordinates are fictional).
+The island has a size of approximately Iceland,
+i.e. $\sim 100 \, 000 \, \mathrm{km}^2$.
 
-For more details, see the history of Omnijo [here](#the-history).)
+For more details, see the history of Omnijo in the [history](#la-historio-the-history) section below.
 
 
-#### Background Bulletin
+#### Fona Bulteno <br>Background Bulletin
 
 | Settings                | Acronym | Name                    |
 | :---------------------- | :-----: | :---------------------: |
@@ -81,17 +81,62 @@ For more details, see the history of Omnijo [here](#the-history).)
 | (Fikciaj) Fonaj Informoj  <br>(Fictional) Background Information | Priskribo  <br>Description |
 | :---------------- | ---- |
 | Ŝtatestro  <br>Head of State   | <span style="color:Silver">Reĝino Serena de Omnijo</span> |
-| Registara Tipo  <br>Government Type   | Konstitucia Monarkio / Bonfara Diktaturo / Totalisma Reĝimo, depende de kiu vi demandas.  <br>Constitutional Monarchy / Benevolent Dictatorship / Totalitarian Regime, depending on who you ask.  |
+| Registara Tipo  <br>Government Type   | Konstitucia Monarkio / Bonfara Diktaturo / Totalisma Reĝimo, depende de kiu vi demandas[^Bulteno-RegistaraTipo]. |
 | Urbaj Projektistoj  <br>City Designers | <span style="color:DeepSkyBlue">Ĉuĉjo la Arkitekto</span>  kaj  <span style="color:MediumPurple">Ĝejnjo la Suvereno</span> de OCFI |
-| Oficiala Lingvo  <br>Official Language | *Esperanto++* (A.k.a. ***E++***, pronounced as "eppo")  <br>An artificial variant of esperanto specified by <span style="color:Silver">Reĝino Serena</span> herself, aiming to offer maximum regularity for easy learning, while conforming to the existing world as much as possible.  <br>E.g. Officially eliminated `ĥ` from the alphabet (mostly replaced with `k`);  <br>Decimal separator in E++ is `.` instead of `,`, and thousands separator is space(` `) instead of `.`;<!-- markdownlint-disable-line no-space-in-code -->  <br>Transitioning from English in the next 20 years. |
-| Oficiala Religio  <br>Official Religion | Pastafarianismo |
-| Oficialaj Koloroj  <br>Official Colors   | <span style="color:Silver">Arĝento/Silver #C0C0C0</span>, symbolizing the harsh unbending reality, where beauty and complexities hidden deep underneath.  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span>, symbolizing insights, understanding, and rationality; to see the world as it is.  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span>, as a mixture of pink and blue, symbolizing empathies combined with resolutions; to mould the world into what we desire.  |
-| Oficialaj Himno  <br>Official Anthem | *Oceans* (*Where Feet May Fail*), originally by Hillsong UNITED  <br>Modified acoustic version.  <br>Hand picked by <span style="color:Silver">Reĝino Serena</span> herself (Surprise, surprise), even though she claims to be an atheist.  <br>The official reason is that she "likes the sound of it";  <br>The unofficial reason may be that it serves as a reminder of the state's self-imposed role as the Saviour to its people, its promises and duty for their protection and guidance, and its call on people's trust and faith for the state.   |
+| Oficiala Lingvo  <br>Official Language | *Esperanto++*[^Bulteno-Lingvo] (A.k.a. ***E++***, pronounced as "Eppo".)  <br>(Transitioning from English in the next 16 years.) |
+| Oficiala Religio  <br>Official Religion | Pastafarianismo[^Bulteno-Religio] |
+| Oficialaj Koloroj  <br>Official Colors   | <span style="color:Silver">Arĝento/Silver #C0C0C0</span> [^Bulteno-Koloroj-Argxento]  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span> [^Bulteno-Koloroj-Bluo]  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span> [^Bulteno-Koloroj-Purpuro] |
+| Oficialaj Himno  <br>Official Anthem | *Oceans* (*Where Feet May Fail*), originally by Hillsong UNITED  <br>Modified acoustic E++ version [^Bulteno-Himno]. |
+
+
+
+[^Bulteno-RegistaraTipo]: English translation:
+  Constitutional Monarchy / Benevolent Dictatorship / Totalitarian Regime, depending on who you ask.
+
+[^Bulteno-Lingvo]: *Esperanto++* is
+  a fictional artificial variant of Esperanto specified by
+  <span style="color:Silver">Reĝino Serena</span> herself,
+  aiming to offer maximum regularity for easy learning,
+  while conforming to the existing world as much as possible.
+  Changes include:
+  Officially eliminated `ĥ` from the *E++* alphabet (mostly replaced with `k`);
+  Decimal separator in *E++* is `.` instead of `,`;
+  Thousands separator is space(` `) instead of `.`;<!-- markdownlint-disable-line no-space-in-code -->
+  etc. etc.
+
+[^Bulteno-Religio]: What can I say-
+  the <span style="color:Silver">Queen</span> has an taste for
+  idealistic causes, even if some might call them hopeless.
+  Regardless, Pastafarianism is more of a
+  "believe/leave whenever you want" kind of religion,
+  So conversion is optional.
+  <span style="color:Silver">Queen Serena</span> herself
+  idenfies as only a "part-time" Pastafarian, whatever that means.
+
+[^Bulteno-Koloroj-Argxento]: Silver, symbolizing
+  the harsh unbending reality,
+  where beauty and complexities hidden deep underneath.
+
+[^Bulteno-Koloroj-Bluo]: Blue, symbolizing
+  insights, understanding, and rationality; to see the world as it is.
+
+[^Bulteno-Koloroj-Purpuro]: Purple, as a mixture of pink and blue, symbolizing
+  empathies combined with resolutions; to mould the world into what we desire.
+
+[^Bulteno-Himno]: The new anthem is hand picked by -
+  you guessed it -
+  <span style="color:Silver">Reĝino Serena</span> herself (Surprise, surprise),
+  even though she claims to be an atheist.
+  The official reason is that she "likes the sound of it";
+  The unofficial reason may be that it serves as
+  a reminder of the state's self-imposed role as the Saviour to its people,
+  its promises and duty for their protection and guidance,
+  and its call on the people's trust and faith for the state.
 
 
 #### Government Structure (Part)
 
-| Departments                  |  Acronym | Name |
+| Departments and officies     |  Acronym | Nomo |
 | ---------------------------- | :------: | ---- |
 | Department of Defence        | OCFD | Omnija Centra Fako de Defendo |
 | Department of Education      | OCFE | Omnija Centra Fako de Edukado |
@@ -99,12 +144,10 @@ For more details, see the history of Omnijo [here](#the-history).)
 | Department of Infrastructure | OCFI | Omnija Centra Fako de Infrastrukturo |
 | Department of Police         | OCFP | Omnija Centra Fako de Polico  |
 | Department of Health         | OCFS | Omnija Centra Fako de Sano    |
-
-| Offices                      |  Acronym | Name |
-| ---------------------------- | :------: | ---- |
 | Office of Finance            | OCOF | Omnija Centra Oficejo de Fisko |
 | Office of Foreign Affairs    | OCOE | Omnija Centra Oficejo de Eksteraj Aferoj |
 | Office of Home    Affairs    | OCOI | Omnija Centra Oficejo de Internaj Aferoj |
+| Public Radio Network         | OCRR | OmniCentra RadioReto |
 
 
 
@@ -209,7 +252,7 @@ Teknikaj specifoj
 Technical Specifications
 -------------------------------------------------------------------------------
 
-> [!WARNING]
+> [!CAUTION]
 > Information here is gathered from the internet for gameplay purposes,
 > ***so not much effort has been spent on ensuring its accuracy***.
 > Some maybe incorrect or outdated.
@@ -605,7 +648,7 @@ Technical Specifications
 
 #### Design
 
-See [Background Bulletin](#background-bulletin) for more info.
+See [Background Bulletin](#fona-bulteno-background-bulletin) for more info.
 
 
 #### Emblem generation code
@@ -625,35 +668,38 @@ Fonaj Rakontoj
 Background Stories
 -------------------------------------------------------------------------------
 
-***Again, everything here is fictional.***
+> [!WARNING]
+> ***Again, everything here is fictional.***
 
 
 
 
-### The History
+### <a name="the-history"></a>La Historio <br>The History
 
 -------------------------------------------------------------------------------
 
 
 (Shorter summary [here](#background-summary).)
 
-**La Regno de Omnijo** (English: Kingdom of Omnijo) is a fictional monarchy
-located on an fictional island
-(with the size of approximately iceland,
-i.e. $\, \sim 100\, 000\, \mathrm{km}^2$)
-in the Southern Hemisphere,
-somewhere in between Chile and New Zealand.
+**La Regno de Omnijo**[^Historio-RdO-Nomo] is a fictional monarchy
+located on an fictional island *La Omnija-Insulo*
+in the Southern Hemisphere somewhere in between Chile and New Zealand,
+near 56°15'S, 140°15'W (coordinates are fictional).
+The island has a size of approximately Iceland,
+i.e. $\sim 100 \, 000 \, \mathrm{km}^2$.
+
+[^Historio-RdO-Nomo]: English translation: The Kingdom of Omnijo.
 
 
 #### Foundation of *la Regno de Omnijo*
 
 Although it has always been a monarchy since time immemorial
 even before the Colonial era,
-it used to have a different name **just half a year ago**.
+it used to have a different name **just about half a year ago**.
 In (fictional) fact, it used to have
 a different flag,
 a different national color,
-a dfferent anthem,
+a different anthem,
 a different official religion, and even
 a different official language.
 Despite the widespread corruption in the government,
@@ -664,46 +710,48 @@ However, so much has changed since that faithful day.
 Being your typical long-forgotten heir to the royal throne,
 <span style="color:Silver">Serena</span> was pushed to coronate
 only days after the (public) re-discovery of her royal blood
-after the sudden tragic accidental death of the old king,
+and the sudden death of the old king from a tragic accident,
 by the corrupted ministers and councilors
 who saw her as young and easy-to-manipulate for their own personal gain.
 But <span style="color:Silver">Serena</span> has proven to be
 much more impulsive, arrogant, and harder-to-control than they expected.
-The corrupted ministers and councilors then plotted
-to forcefully retire her with a regime change.
+The corrupted ministers and councilors then plotted a regime change
+to forcefully "retire" her.
 Which they would have succeeded
 (they are not stupid, you see, after all they control the military),
-if were not for a tragic accident where the building
+if were not for another tragic accident where the building
 (next to the one where they were plotting in)
-blew up due to a randomly gas leak and CO sensor malfunctions,
+blew up due to a random gas leak and CO sensor malfunctions,
 killing every single one of them.
 How very unfortunate.
 
 After this, <span style="color:Silver">Serena</span>
 replaced most of the governmental head with her friends
-(whom no one has ever heard of),
-then re-structured the whole thing,
-and then decided to tweak every aspect of country to her own liking.
+(whom no one has ever heard of) before the power vaccum grew out of hand.
+She then proceeded to re-structured the whole government,
+and then began tweaking every aspect of country to her own liking.
 One would certainly say that
 letting someone this young to rule over a country
-is starting to have its toll ("Yeah, who would have thought??"), and
+is starting to have its toll[^Historio-RdO-Serena-kmt1], and
 such naivety and blatant offence on the ideal of democracy and
 even the core identity of the country
 is surely going to result in total chaos and disarray.
+
+[^Historio-RdO-Serena-kmt1]: "Yeah, who would have thought??"
+
 
 Yet, not much has happened.
 
 Granted,
 the corruption was essentially gone with the reshuffling of the power,
-and the friends she put onto the positions
-are surprisingly upright and capable,
+the friends she put onto the positions are surprisingly upright and capable,
 and within weeks the public goods increased significantly
-as <span style="color:Silver">Serena</span> disbanded the armies
+as <span style="color:Silver">Serena</span> disbanded most of the armies
 and re-directed the military fundings there
 (for example,
 
 - More telecom towers were built and maintained,
-  ensuring good coverage in even the most remote area in the island;
+  ensuring good coverage in even the remotest area in the island;
 - Transportation were also improved and subsidized,
   with free public transit trial started in several major cities;
 - Hospitals received more funding
@@ -716,7 +764,8 @@ and re-directed the military fundings there
 but surely people, being people, would anger and rebel
 on the change of everything they know about their own country?
 
-... Or they could leave.
+...
+Or they could leave.
 Which is now easier-than-ever, by the way,
 as <span style="color:Silver">Reĝino Serena</span>
 passed several laws
@@ -724,13 +773,12 @@ allowing the renunciation of citizenship,
 recognizing dual citizenship, and
 providing heavy subsidies for transportations
 both coming to and leaving from the country,
-as well as a farewell gift package
+as well as a hefty farewell gift package
 for those who are leaving but either poor or veteran,
-allowing them to easily establish a new life elsewhere.
-(It almost felt like she wanted people to leave, or are testing them somehow.)
-Regardless, many people did take advantage of this,
+allowing them to easily establish a new life elsewhere[^Historio-RdO-Elmigrado-kmt1].
+As such, many people took advantage of this,
 and emigration rate skyrocketed for weeks,
-as the population quickly dropped.
+while the population started to drop quickly.
 As a counter measure, <span style="color:Silver">Serena</span>
 also passed laws to streamline immigration process
 as well as to encourage immigrants to move in,
@@ -738,18 +786,29 @@ and the immigration influx did increase.
 However, it wasn't nearly enough to stop the population drop-
 in the beginning.
 
+[^Historio-RdO-Elmigrado-kmt1]: It almost felt like
+  she wanted people to leave, or are testing them somehow.
+  <span style="color:Silver">Serena</span>'s official statement is that
+  "People have a right to leave if they don't like my stuff.
+  Hate me? Fine. Go away. Out of sight, out of mind, for me and for you.
+  Don't say I didn't give you options."
+
+
 Then this trend slowed down.
 
-As the next great global economic recession unfolds
-(triggered by the bursting of the AI bubble weeks after the coronation day),
+As the next great global economic recession unfolds[^Historio-RdO-Recesio],
 many countries are struggling and tighting their immigration rules.
-La Regno de Omnijo, however, did surprisingly (again) well,
+La Regno de Omnijo, however, did surprisingly well (again),
 attracting people to stay.
 Actually, from an outsider perspective, Omnijo's response was almost perfect.
 <span style="color:Silver">Serena</span> was even able to take the chance
-to re-nationalize many of the private companies in her country,
-from public transportation to infrastructures and manufacturing industries-
+to re-nationalize many of the private companies in her country -
+from public transportation to infrastructures and manufacturing industries -
 effectively buying out her own country.
+
+[^Historio-RdO-Recesio]: It soon became clear that
+  this time the recession was triggered by the bursting of the AI bubble
+  weeks after the coronation day.
 
 
 #### Foundation of *OmniCentro*
@@ -757,9 +816,7 @@ effectively buying out her own country.
 Soon after, the <span style="color:Silver">Queen</span>
 announced her new pet project of building a brand new capital,
 free from the burden of the history.
-She decided to call it **OmniCentro**.
-(The level of arrogance...
-just sound like <span style="color:Silver">Serena</span>'s handiwork.)
+She decided to call it **OmniCentro**[^Historio-OC-Nomo].
 The official reason for building a new capital is that
 the <span style="color:Silver">Queen</span> think it "would be FUN and COOL."
 On the other hand,
@@ -769,14 +826,15 @@ And double-check everything. And triple-check. And quadruple-check.
 Yeah, the <span style="color:Silver">Queen</span> is kinda perfectionist,
 and she now has the money and the power to live out her own fantasy.
 
+[^Historio-OC-Nomo]: The level of arrogance...
+  just sound like <span style="color:Silver">Serena</span>'s handiwork.
+
+
 The actual design of the city, though not many care,
 falls on <span style="color:Silver">Serena</span>'s two friends-
 <span style="color:DeepSkyBlue">Ĉuĉjo</span> the Architect and
-<span style="color:MediumPurple">Ĝejnjo</span> the Sovereign
+<span style="color:MediumPurple">Ĝejnjo</span> the Sovereign[^Historio-OC-Projektistoj]
 of the newly founded *Omnija Department of Infrastructure* (OCFI).
-(These are not their full name, by the way;
-it's <span style="color:Silver">Serena</span>'s nicknames for the couple.)
-
 It's decided that the new capital will be built
 in a valley where mountains meets the sea- a place called the
 [Seaside Valley](https://mods.paradoxplaza.com/mods/82544/Any),
@@ -805,7 +863,8 @@ Our (soon-to-be) legendary duo now begins the journey,
 of building the so-called impossible capital city,
 in the valley of *Ĉemarvalo*.
 
-
+[^Historio-OC-Projektistoj]: These are not their full name, by the way;
+  it's <span style="color:Silver">Serena</span>'s nicknames for the couple.
 
 
 (More coming soon.)
