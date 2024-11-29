@@ -648,17 +648,22 @@ Technical Specifications
 
 #### Design
 
-See [Background Bulletin](#fona-bulteno-background-bulletin) for more info.
+Here are the emblem designs for the acronyms listed in [Background Bulletin](#fona-bulteno-background-bulletin):
 
+> [!NOTE]
+> The emblems were generated using my python code.  
+> see `fig/` folder in the repository for the emblem generation code for
+> [OCG](fig/draw_OCG.py),
+> [RdO](fig/draw_RdO.py),
+> [OCR](fig/draw_OCG.py), and
+> [OCRR](fig/draw_OCRR.py).
 
-#### Emblem generation code
-
-The emblems were generated using my python code:
-
-- [OCG](fig/draw_OCG.py)
-- [RdO](fig/draw_RdO.py)
-- [OCR](fig/draw_OCR.py)
-- [OCRR](fig/draw_OCRR.py)
+| Emblemo               | Nomo |
+| :-------------------: | :--- |
+| ![OCG](fig/OCG.svg)   | OCG  |
+| ![RdO](fig/RdO.svg)   | RdO  |
+| ![OCR](fig/OCR.svg)   | OCR  |
+| ![OCRR](fig/OCRR.svg) | OCRR |
 
 
 
