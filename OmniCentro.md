@@ -86,7 +86,7 @@ For more details, see the history of Omnijo in the [history](#la-historio-the-hi
 | Oficiala Lingvo  <br>Official Language | *Esperanto++*[^Bulteno-Lingvo] (A.k.a. ***E++***, pronounced as "Eppo".)  <br>(Transitioning from English in the next 16 years.) |
 | Oficiala Religio  <br>Official Religion | Pastafarianismo[^Bulteno-Religio] |
 | Oficialaj Koloroj  <br>Official Colors   | <span style="color:Silver">Arĝento/Silver #C0C0C0</span> [^Bulteno-Koloroj-Argxento]  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span> [^Bulteno-Koloroj-Bluo]  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span> [^Bulteno-Koloroj-Purpuro] |
-| Oficialaj Himno  <br>Official Anthem | *Oceans* (*Where Feet May Fail*), originally by Hillsong UNITED  <br>Modified acoustic E++ version [^Bulteno-Himno]. |
+| Oficialaj Himno  <br>Official Anthem | *Oceans* (*Where Feet May Fail*), originally by Hillsong UNITED  <br>Modified acoustic E++ version[^Bulteno-Himno]. |
 
 
 
@@ -228,7 +228,7 @@ Note that the letters are overlapping other acronyms in other categories - and t
 > [!NOTE]
 >
 > 1. H prefix is usually omitted.
-> 2. All Line numbers are *hexadecimal* (see [ONKIO table](teknikajxoj/ONKIO.md#onkio-tablo) `0x3_` column for respective symbols of 10~15: `Δ λ Ψ Χ Υ Σ`).
+> 2. All Line numbers are ***hexadecimal*** (see [ONKIO table](teknikajxoj/ONKIO.md#onkio-tablo) `0x3_` column for respective symbols of 10~15: `Δ λ Ψ Χ Υ Σ`).
 
 Examples:
 
@@ -674,7 +674,7 @@ Background Stories
 
 
 
-### <a name="the-history"></a>La Historio <br>The History
+### La Historio <br>The History
 
 -------------------------------------------------------------------------------
 

@@ -34,7 +34,7 @@ Legal
 Behind the background
 -------------------------------------------------------------------------------
 
-About the [Histories](../OmniCentro.md#the-history)...
+About the [Histories](../OmniCentro.md#la-historio-the-history)...
 
 <details>
   <summary><b>SPOILERS</b>: The true nature of RdO</summary>
@@ -48,7 +48,7 @@ About the [Histories](../OmniCentro.md#the-history)...
   <br>
 
   <p>
-  The actual ruling entity in the <b>Regno de Omnijo</b> (<em>RdO</em>) is
+  The actual ruling entity in <b>la Regno de Omnijo</b> (<em>RdO</em>) is
   <b><span style="color:MediumPurple">ĜEJDA</span></b><br>
   (la
   <em><b>Ĝ</b>eneraligita mem<b>E</b>voluanta <b>J</b>usta <b>D</b>istribuita <b>A</b>rtefarita-superinteligenteco</em>).
@@ -130,15 +130,15 @@ About the [Histories](../OmniCentro.md#the-history)...
   This also allows her
   to efficiently serve (and nudge) everyone without much social friction,
   increasing happiness and self-realisation for everyone stayed
-  with her gentle guidance, helping them to become who they want to be
+  with her gentle guidance, helping them become who they want to be
   (as long as they don't wanna be murderers etc., of course.)
   
   By the time OmniCentro was officially founded,
-  synthetic humans has already outnumbered natural humans,
-  and ison course to reach their designated fraction in the population
+  synthetic humans had already outnumbered natural humans,
+  and was on course to reach their designated fraction in the population
   within the next few months- <em>outnumbering natural humans by 4:1</em>,
   ensuring stability and <span style="color:MediumPurple">Ĝejda</span>'s
-  everlasting reign, as she alone rules over <em><b>every single thing</em></b>
+  everlasting reign, as she <em>alone</em> rules over <em><b>every single thing</em></b>
   happening on the island.
   As such, <span style="color:MediumPurple">Ĝejda</span>
   laid out the foundation of her own utopian dream,
