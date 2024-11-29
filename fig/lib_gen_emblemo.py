@@ -21,9 +21,10 @@ import matplotlib as mpl
 # params
 colors_dict = {
     # see also: <https://xkcd.com/color/rgb/>
-    'O' : '#C0C0C0',  # Silver C0C0C0 / Green 5E9B8A
-    'C' : '#00BFFF',
-    'G' : '#9370DB',
+    'O' : '#C0C0C0',  # Silver
+    'C' : '#00BFFF',  # Blue
+    'G' : '#9370DB',  # Purple
+    'R' : '#5E9B8A',  # Green
     'x0': '#B7E1A1',  # ^ light grey green  B7E1A1 / beige  E6DAA6
     'x1': '#D6B4FC',  # < light violet  D6B4FC
     'x2': '#95D0FC',  # > light blue  95D0FC
@@ -31,8 +32,12 @@ colors_dict = {
 
 # funcs
 # theta units convert (hex -> deg)
-t  = lambda theta: theta*(360/16)
-ts = lambda theta1, theta2: (t(theta1), t(theta2))
+def t(theta: float) -> float:
+    """Convert angle from hex to deg."""
+    return theta*(360/16)
+def ts(theta1: float, theta2: float) -> tuple[float, float]:
+    """Convert angles from hex to deg."""
+    return (t(theta1), t(theta2))
 #------------------------------------------------------------------------------
 def draw_arc(
     ax : mpl.axes.Axes,
@@ -55,7 +60,7 @@ def draw_arc(
         ax.add_patch(
             mpl.patches.Arc(
                 center, width=width, height=height, angle=angle,
-                theta1=thetas[0], theta2=thetas[1],
+                theta1=min(thetas), theta2=max(thetas),
                 color=color, linewidth=linewidth,
                 **kwargs,
         ))

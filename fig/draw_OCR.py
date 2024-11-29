@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 """
-RdO Emblem Generation.
-RdO stands for La Regno de Omnijo (in Esperanto/E++).
+OCR Emblem Generation.
+OCR stands for Omnija Centra Registaro (in Esperanto/E++).
 
 Author: HomeOnMars
 
@@ -23,14 +23,14 @@ import matplotlib.pyplot as plt
 from lib_gen_emblemo import t, ts, draw_arc, draw_hat, colors_dict
 
 # main func
-def draw_RdO(
+def draw_OCR(
     # noext means no extension
-    output_path_noext: str = "./RdO",
+    output_path_noext: str = "./OCR",
     # size of the drawing pad
     scale: float = 1.0,
     verbose: bool = True,
 ):
-    """Draw the RdO emblem."""
+    """Draw the OCR emblem."""
     # plot
     fig, ax = plt.subplots(figsize=[4*scale, 4*scale])
     # debug
@@ -38,9 +38,13 @@ def draw_RdO(
     # --- arcs
     # draw O
     draw_arc(ax, radius=11/16, thetas=ts( 5.50, 19.50), color=colors_dict['O'])
+    # draw C
+    draw_arc(ax, radius= 9/16, thetas=ts( 2.25, 14.25), color=colors_dict['C'])
     # draw R
     # 2.49 = 4 - acos(cos((4-3.5)/8*pi)*11/13)/pi*8
-    draw_arc(ax, radius=13/16, thetas=ts( 2.49, -2.49), color=colors_dict['O'])
+    draw_arc(ax, radius=7/16, thetas=ts( 4.0, -5.0), color=colors_dict['R'])
+    # # 2.04 = 4 - acos(cos((4-3.5)/8*pi)*11/15)/pi*8
+    # draw_arc(ax, radius=15/16, thetas=ts( 2.04, -2.04), color=colors_dict['O'])
     
     # format and save
     ax.set_xlim(-scale, scale)
@@ -55,4 +59,4 @@ def draw_RdO(
     if verbose: print(f"Done.")
 
 if __name__ == '__main__':
-    draw_RdO()
+    draw_OCR()

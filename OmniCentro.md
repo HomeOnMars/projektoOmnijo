@@ -653,8 +653,12 @@ See [Background Bulletin](#fona-bulteno-background-bulletin) for more info.
 
 #### Emblem generation code
 
-The emblem of OCG was generated using my python code
-[here](fig/draw_OCG.py).
+The emblems were generated using my python code:
+
+- [OCG](fig/draw_OCG.py)
+- [RdO](fig/draw_RdO.py)
+- [OCR](fig/draw_OCR.py)
+- [OCRR](fig/draw_OCRR.py)
 
 
 
