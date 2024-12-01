@@ -280,7 +280,7 @@ Technical Specifications
 -------------------------------------------------------------------------------
 
 > [!NOTE]
-> Both trains' and trucks' engine power has been exaggerated by 40\% to 50\%
+> Both trains' and trucks' engine power has been exaggerated by 40\% to 110\%
 > compared to real life, since *RdO* enjoys technological superiority.  
 > See [below verification section](#networks-specification-details-and-verification)
 > for calculations.
@@ -346,22 +346,29 @@ Technical Specifications
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples (see Lithgow Zig Zag)
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
     - Note: Liberties have been taken for the hard limit of $s$ due to steep terrain in the map. Also steeper is more fun.
-  - Length limit
-    - train length: 25 cars (400m; 50u): 1 engine + 24 trailers.
-    - For track intersections: $\geq$ 448m (56u).
+  - Length / Power
+    - train length: 25 (16m/2u-long) cars (400m/50u): 1 engine + 24 trailers.
+    - For track intersections: $\geq$ 448m/56u.
 
 - High Speed Railways
   - Gradient $s$ and Curve radius $R$ limit:
 
     |             | max Gradient $s$ | min Curve radius $R$ | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
     | ----------- | :------: | :------------: | :--------: | --- | --- | --- | --- | ------------------- |
-    | -           |  3   \%  |  5000m (625u)  |  335 km/h  | $169\degree$ | $175\degree$ | $178\degree$ | $179\degree$ | |
-    | Recommended |  3.5 \%  |  4500m (562u)  |  320 km/h  | $168\degree$ | $174\degree$ | $177\degree$ | $179\degree$ | |
-    | -           |  4   \%  |  4000m (500u)  |  300 km/h  | $166\degree$ | $173\degree$ | $177\degree$ | $179\degree$ | |
-    | Hard Limit  |  5   \%  |  3200m (400u)  |  270 km/h  | $164\degree$ | $172\degree$ | $176\degree$ | $178\degree$ | |
+    | Recommended |  1.8 \%  |  5400m (675u)  |  350 km/h  | $170\degree$ | $175\degree$ | $178\degree$ | $179\degree$ | |
+    | -           |  2   \%  |  5000m (625u)  |  335 km/h  | -            | -            | -            | -            | |
+    | Soft Limit  |  2.4 \%  |  4000m (500u)  |  300 km/h  | $166\degree$ | $173\degree$ | $177\degree$ | $179\degree$ | |
+    | Hard Limit  |  3.2 \%  |  2800m (350u)  |  250 km/h  | $160\degree$ | $170\degree$ | $175\degree$ | $178\degree$ | |
+    | -           |  3.5 \%  |  2440m (305u)  |  235 km/h  | -            | -            | -            | -            | |
+    | -           |  4.2 \%  |  1800m (225u)  |  200 km/h  | -            | -            | -            | -            | |
 
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
     - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
+  - Length / Power
+    - Assumed EMU (Electric Multiple Unit).
+    - Train length: 10 (24m/3u-long) train cars (240m/30u).
+    - For track intersections: $\geq$ 288m/36u.
+    - Assumed power consumption: 1600hp/1.2MW per (24m/3u-long) train car - 12MW for a full length train.
 
 - Metro / Subway / Passenger Railways
   - Gradient $s$ and Curve radius $R$ limit:
@@ -371,13 +378,15 @@ Technical Specifications
     | Recommended |  5   \%  |  576m (72u)  |  135 km/h  | $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;  <br>($R$) Assuming tilting trains: see [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant). |
     | Hard Limit  |  7   \%  |  320m (40u)  |  100 km/h  | -                 | $103\degree$ | $137\degree$  | $158\degree$ | ($s$) Bernina Railway, Switzerland;  <br>($R$) Bay Area Rapid Transit, United States. |
 
-  - Note: curve radius restrictions may be relaxed when exiting / entering stations where speed is slow.
-  - Assuming train engine power 3200hp per car (citaion needed).
-  - Assuming tilting trains.
-  - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
-  - Source: (2024-08-17) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
-    - Note: $R$ can go as low as 64m as seen in Central line, London Underground, United Kingdom; but that's probably too tight.
-  - Source: (2024-08-27) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant): $R$ info.
+    - Note: curve radius restrictions may be relaxed when exiting / entering stations where speed is slow.
+    - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
+    - Source: (2024-08-17) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
+      - Note: $R$ can go as low as 64m as seen in Central line, London Underground, United Kingdom; but that's probably too tight.
+    - Source: (2024-08-27) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant): $R$ info.
+  - Length / Power
+    - Assumed EMU (Electric Multiple Unit).
+    - Assuming tilting trains.
+    - Assumed power consumption: 1200hp/0.9MW per (24m/3u-long) train car.
 
 - Trams
   - Gradient $s$ limit:
@@ -387,10 +396,13 @@ Technical Specifications
     | Recommended |  10   \%  |  288m (36u)  |  80 km/h  | Sheffield Supertram, Sheffield |
     | Hard Limit  |  13.5 \%  |  160m (20u)  |  60 km/h  | Lisbon Tramways, Portugal |
 
-  - Note: faster speed may be allowed with gentler gradient and larger curve radius (see above metro section.)
-  - Curve radius limit here can be ignored, as trams slow down near intersections.
-  - Assuming non-tilting trains.
-  - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
+    - Note: faster speed may be allowed with gentler gradient and larger curve radius (see above metro section.)
+    - Curve radius limit here can be ignored, as trams slow down near intersections.
+    - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
+  - Length / Power
+    - Assumed EMU (Electric Multiple Unit).
+    - Assuming non-tilting trains.
+    - Assumed power consumption: 800hp/0.6MW per (16m/2u-long) train car.
 
 - Monorails
   - Gradient $s$ and Curve radius $R$ limit:
@@ -446,7 +458,8 @@ Technical Specifications
       load_capa = 24*u.t,    # cargo weight alone (per FEU container)
       engine_p = 6760*hp,    # engine power  (ref: see <https://en.wikipedia.org/wiki/British_Rail_Class_92>)
       engine_m = 120*u.t,    # engine weight (ref: see <https://en.wikipedia.org/wiki/British_Rail_Class_92>)
-      C_rr = 0.0004,     # rolling resistence (see <https://en.wikipedia.org/wiki/Rolling_resistance#Rolling_resistance_coefficient_examples>)
+      car_len  = 16*u.m,     # length per train car
+      C_rr = 0.0003,     # rolling resistence (see <https://en.wikipedia.org/wiki/Rolling_resistance#Rolling_resistance_coefficient_examples>)
       #    for air resistence calc, see this article here <https://www.engineeringtoolbox.com/drag-coefficient-d_627.html>
       C_d  = 0.2, # drag coefficient- for high speed trian, see <https://iopscience.iop.org/article/10.1088/1757-899X/184/1/012015/pdf> table 1.
       rho_air = 1.225*u.kg/u.m**3,    # air density
@@ -466,7 +479,7 @@ Technical Specifications
       # how much cargo (in tons) can this train engine haul
       capa  = int(n_car)*load_capa
       # how long will this train (part) be
-      length= int(n_car+1)*16*u.m    # +1 to account train engine itself
+      length= int(n_car+1)*car_len    # +1 to account train engine itself
       return n_car, capa, length
 
   def print_info(**params):
@@ -480,6 +493,8 @@ Technical Specifications
       # Assuming more powerful electric trains: 9600hp (in contrast to 6760hp realistic estimate
       #    (from UK class 92 electric freight locomotive <https://en.wikipedia.org/wiki/British_Rail_Class_92> ))
       # remember we need to drag 24 cars, so n_car > 24 is minimum.
+      #
+      # For "per car" cases, we need to pull the car itself, so n_car must >= 1
       
       print("Rail")
       
@@ -487,23 +502,33 @@ Technical Specifications
       print_info(grad=3.5*u.percent, v= 65*u.km/u.h, engine_p=(9600*hp).to(hp))
       
       print("High Speed Rail (per car)")
+      # Using China Railway CRH3 (Velaro CN) info as reference / rough guideline
+      #    see <https://pedestrianobservations.com/2012/03/13/table-of-train-weights>
+      #    see also <https://en.wikipedia.org/wiki/China_Railway_CRH3>
+      #    Engine power exaggerated from 772hp (for a 24m car with a power ratio of 24kW/t) to 1600hp
+      #    Also assuming proper frontal design reducing effective area for air drag
+      #    And assuming lighter full load weight load_full=48t instead of more realistic 56t estimate
+      #    Because we are amazing
       
-      print_info(grad=3.0*u.percent, v=340*u.km/u.h, engine_p=(9600*hp).to(hp))
-      print_info(grad=3.5*u.percent, v=320*u.km/u.h, engine_p=(9600*hp).to(hp))
-      print_info(grad=4.0*u.percent, v=300*u.km/u.h, engine_p=(9600*hp).to(hp))
-      print_info(grad=5.0*u.percent, v=270*u.km/u.h, engine_p=(9600*hp).to(hp))
+      print_info(grad=1.8*u.percent, v=350*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
+      print_info(grad=2.0*u.percent, v=335*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
+      print_info(grad=2.4*u.percent, v=300*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
+      print_info(grad=3.2*u.percent, v=250*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
+      print_info(grad=3.5*u.percent, v=235*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
+      print_info(grad=4.2*u.percent, v=200*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
       
       
       print("Metro (per car)")
+      #    Engine power exaggerated from 772hp (for a 24m car with a power ratio of 24kW/t) to "only" 1200hp
       
-      print_info(grad=5.0*u.percent, v=135*u.km/u.h, engine_p=(3200*hp).to(hp), engine_m=80*u.t,)
-      print_info(grad=7.0*u.percent, v=100*u.km/u.h, engine_p=(3200*hp).to(hp), engine_m=80*u.t,)
+      print_info(grad=5.0*u.percent, v=135*u.km/u.h, engine_p=(1200*hp).to(hp), engine_m=0*u.t, load_full=45*u.t, car_len=24*u.m)
+      print_info(grad=7.0*u.percent, v=100*u.km/u.h, engine_p=(1200*hp).to(hp), engine_m=0*u.t, load_full=45*u.t, car_len=24*u.m)
       
 
       print("Tram (per car)")
 
-      print_info(grad=10.0*u.percent, v=80*u.km/u.h, engine_p=(2400*hp).to(hp), engine_m=40*u.t,)
-      print_info(grad=13.5*u.percent, v=60*u.km/u.h, engine_p=(2400*hp).to(hp), engine_m=40*u.t,)
+      print_info(grad=10.0*u.percent, v=80*u.km/u.h, engine_p=(800*hp).to(hp), engine_m=0*u.t, load_full=26*u.t, load_capa=16*u.t, car_len=16*u.m)
+      print_info(grad=13.5*u.percent, v=60*u.km/u.h, engine_p=(800*hp).to(hp), engine_m=0*u.t, load_full=26*u.t, load_capa=16*u.t, car_len=16*u.m)
       
 
       print("Road")
@@ -523,64 +548,6 @@ Technical Specifications
       print_info(grad=10  *u.percent, v= 60*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
       print_info(grad=13.5*u.percent, v= 50*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
       print_info(grad=30  *u.percent, v= 25*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
-  ```
-
-  Results:
-
-  ```python
-  Rail
-    params = {'grad': <Quantity 1.5 %>, 'v': <Quantity 135. km / h>, 'engine_p': <Quantity 9600. 746 W>}
-    n_car = 24.01	capa = 576 t	length = 400 m
-
-    params = {'grad': <Quantity 3.5 %>, 'v': <Quantity 65. km / h>, 'engine_p': <Quantity 9600. 746 W>}
-    n_car = 25.11	capa = 600 t	length = 416 m
-
-  High Speed Rail (per car)
-    params = {'grad': <Quantity 3. %>, 'v': <Quantity 340. km / h>, 'engine_p': <Quantity 9600. 746 W>}
-    n_car =  1.11	capa =  24 t	length =  32 m
-
-    params = {'grad': <Quantity 3.5 %>, 'v': <Quantity 320. km / h>, 'engine_p': <Quantity 9600. 746 W>}
-    n_car =  1.09	capa =  24 t	length =  32 m
-
-    params = {'grad': <Quantity 4. %>, 'v': <Quantity 300. km / h>, 'engine_p': <Quantity 9600. 746 W>}
-    n_car =  1.11	capa =  24 t	length =  32 m
-
-    params = {'grad': <Quantity 5. %>, 'v': <Quantity 270. km / h>, 'engine_p': <Quantity 9600. 746 W>}
-    n_car =  1.00	capa =  24 t	length =  32 m
-
-  Metro (per car)
-    params = {'grad': <Quantity 5. %>, 'v': <Quantity 135. km / h>, 'engine_p': <Quantity 3200. 746 W>, 'engine_m': <Quantity 80. t>}
-    n_car =  1.07	capa =  24 t	length =  32 m
-
-    params = {'grad': <Quantity 7. %>, 'v': <Quantity 100. km / h>, 'engine_p': <Quantity 3200. 746 W>, 'engine_m': <Quantity 80. t>}
-    n_car =  1.06	capa =  24 t	length =  32 m
-
-  Tram (per car)
-    params = {'grad': <Quantity 10. %>, 'v': <Quantity 80. km / h>, 'engine_p': <Quantity 2400. 746 W>, 'engine_m': <Quantity 40. t>}
-    n_car =  1.04	capa =  24 t	length =  32 m
-
-    params = {'grad': <Quantity 13.5 %>, 'v': <Quantity 60. km / h>, 'engine_p': <Quantity 2400. 746 W>, 'engine_m': <Quantity 40. t>}
-    n_car =  1.03	capa =  24 t	length =  32 m
-
-  Road
-    params = {'grad': <Quantity 4. %>, 'v': <Quantity 125. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
-    n_car =  1.04	capa =  24 t	length =  32 m
-
-    params = {'grad': <Quantity 6. %>, 'v': <Quantity 100. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
-    n_car =  1.01	capa =  24 t	length =  32 m
-
-    params = {'grad': <Quantity 8. %>, 'v': <Quantity 80. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
-    n_car =  1.02	capa =  24 t	length =  32 m
-
-  Local Road
-    params = {'grad': <Quantity 10. %>, 'v': <Quantity 60. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
-    n_car =  1.17	capa =  24 t	length =  32 m
-
-    params = {'grad': <Quantity 13.5 %>, 'v': <Quantity 50. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
-    n_car =  1.05	capa =  24 t	length =  32 m
-
-    params = {'grad': <Quantity 30. %>, 'v': <Quantity 25. km / h>, 'engine_p': <Quantity 860. 746 W>, 'engine_m': <Quantity 6. t>, 'load_full': <Quantity 26. t>, 'C_rr': 0.006, 'C_d': 0.8, 'A_d': <Quantity 4.8 m2>}
-    n_car =  1.00	capa =  24 t	length =  32 m
   ```
 
 
