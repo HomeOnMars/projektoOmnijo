@@ -42,12 +42,12 @@ def draw_OCRR(
     draw_arc(ax, radius= 9/16, thetas=ts( 2.25, 14.25), color=colors_dict['Radio'])
     # draw R
     # 2.24 = 4 - acos(cos((4-3.5)/8*pi)*11/14)/pi*8
-    draw_arc(ax, radius=14/16, thetas=ts( 2.25, -2.25), color=colors_dict['x2'], linewidth_fac=19/16)
+    draw_arc(ax, radius=13.75/16, thetas=ts( 2.25, -2.25), color=colors_dict['x2'], linewidth_fac=15/16)
     # 1.69 = 4 - acos(cos((4-3.5)/8*pi)*11/17.5)/pi*8
-    draw_arc(ax, radius=17.5/16, thetas=ts( 1.8, -1.8), color=colors_dict['x1'], linewidth_fac=19/16)
+    draw_arc(ax, radius=16.75/16, thetas=ts( 1.8, -1.8), color=colors_dict['x1'], linewidth_fac=16/16)
     
     # format and save
-    ax.set_xlim(-scale+3.5/16, scale+3.5/16)
+    ax.set_xlim(-scale+3/16, scale+3/16)
     ax.set_ylim(-scale, scale)
     ax.set_axis_off()
     ax.set_position([0, 0, 1, 1])

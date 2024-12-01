@@ -41,7 +41,7 @@ def draw_OCR(
     # draw C
     draw_arc(ax, radius= 9/16, thetas=ts( 2.25, 14.25), color=colors_dict['C'])
     # draw R
-    draw_arc(ax, radius=6.5/16,thetas=ts(  4.0, -5.0 ), color=colors_dict['R'], linewidth_fac=19/16)
+    draw_arc(ax, radius=6.75/16,thetas=ts(  4.0, -5.0 ), color=colors_dict['R'], linewidth_fac=15/16)
     
     # format and save
     ax.set_xlim(-scale, scale)

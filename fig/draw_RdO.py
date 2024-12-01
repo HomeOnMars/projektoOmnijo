@@ -39,11 +39,11 @@ def draw_RdO(
     # draw O
     draw_arc(ax, radius=11/16, thetas=ts( 5.50, 19.50), color=colors_dict['O'])
     # draw R
-    # 2.24 = 4 - acos(cos((4-3.5)/8*pi)*11/14)/pi*8
-    draw_arc(ax, radius=14/16, thetas=ts( 2.24, -2.24), color=colors_dict['O'], linewidth_fac=19/16)
+    # 2.36 = 4 - acos(cos((4-3.5)/8*pi)*11/13.5)/pi*8
+    draw_arc(ax, radius=13.5/16, thetas=ts( 2.36, -2.36), color=colors_dict['O'], linewidth_fac=15/16)
     
     # format and save
-    ax.set_xlim(-scale, scale)
+    ax.set_xlim(-scale+1.5/16, scale+1.5/16)
     ax.set_ylim(-scale, scale)
     ax.set_axis_off()
     ax.set_position([0, 0, 1, 1])
