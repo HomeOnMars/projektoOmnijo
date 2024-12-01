@@ -625,12 +625,12 @@ Here are the emblem designs for the acronyms listed in [Background Bulletin](#fo
 > [OCR](fig/draw_OCG.py), and
 > [OCRR](fig/draw_OCRR.py).
 
-| Emblemo               | Nomo |
-| :-------------------: | :--- |
-| ![OCG](fig/OCG.svg)   | OCG  |
-| ![RdO](fig/RdO.svg)   | RdO  |
-| ![OCR](fig/OCR.svg)   | OCR  |
-| ![OCRR](fig/OCRR.svg) | OCRR |
+| Nomo | Emblemo               |
+| :--: | :-------------------: |
+| RdO  | ![RdO](fig/RdO.svg)   |
+| OCG  | ![OCG](fig/OCG.svg)   |
+| OCR  | ![OCR](fig/OCR.svg)   |
+| OCRR | ![OCRR](fig/OCRR.svg) |
 
 
 

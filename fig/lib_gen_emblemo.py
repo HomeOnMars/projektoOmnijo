@@ -28,6 +28,7 @@ colors_dict = {
     'x0': '#B7E1A1',  # ^ light grey green  B7E1A1 / beige  E6DAA6
     'x1': '#D6B4FC',  # < light violet  D6B4FC
     'x2': '#95D0FC',  # > light blue  95D0FC
+    'Radio': '#E6DAA6', # Beige
 }
 
 # funcs
@@ -46,7 +47,8 @@ def draw_arc(
     center : tuple[float, float] = (0., 0.),
     angle  : float = 0.,
     color  : None = None,
-    linewidth: float = 18 * (11/16),    # 18 will leave no gap
+    linewidth_fac: float = 11/16,
+    linewidth_unit: float = 18,    # 18 will leave no gap
     **kwargs,
 ) -> list[mpl.patches.Arc]:
     """Draw an arc in ax."""
@@ -56,6 +58,7 @@ def draw_arc(
     else: radius_is_tuple = True
     width  = radius[0]*2 if radius_is_tuple else radius*2
     height = radius[1]*2 if radius_is_tuple else radius*2
+    linewidth = linewidth_fac * linewidth_unit
     return [    # draw
         ax.add_patch(
             mpl.patches.Arc(
@@ -74,7 +77,8 @@ def draw_hat(
     angle  : float = 0.,      # the rotation of the whole system
     theta  : float = 120.,    # the 'openness' of the hat
     color  : None = None,
-    linewidth: float = 18 * (11/16),    # 18 will leave no gap
+    linewidth_fac: float = 11/16,
+    linewidth_unit: float = 18,    # 18 will leave no gap
     **kwargs,
 ) -> list[mpl.lines.Line2D]:
     """Draw the hat symbol in ax."""
@@ -82,6 +86,7 @@ def draw_hat(
     mid_pt = (
         center[0] + cos(angle_rad)*radius,
         center[1] + sin(angle_rad)*radius)
+    linewidth = linewidth_fac * linewidth_unit
     return [    # draw
         ax.add_line(
             mpl.lines.Line2D(

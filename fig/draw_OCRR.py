@@ -37,17 +37,17 @@ def draw_OCRR(
     if verbose: print("Drawing...")
     # --- arcs
     # draw O
-    draw_arc(ax, radius=11/16, thetas=ts( 5.50, 19.50), color=colors_dict['O'])
+    draw_arc(ax, radius=11/16, thetas=ts( 5.50, 19.50), color=colors_dict['x0'])
     # draw C
-    draw_arc(ax, radius= 9/16, thetas=ts( 2.25, 14.25), color=colors_dict['R'])
+    draw_arc(ax, radius= 9/16, thetas=ts( 2.25, 14.25), color=colors_dict['Radio'])
     # draw R
-    # 2.49 = 4 - acos(cos((4-3.5)/8*pi)*11/13)/pi*8
-    draw_arc(ax, radius=13/16, thetas=ts( 2.49, -2.49), color=colors_dict['x2'])
-    # 2.04 = 4 - acos(cos((4-3.5)/8*pi)*11/15)/pi*8
-    draw_arc(ax, radius=15/16, thetas=ts( 2.04, -2.04), color=colors_dict['x1'])
+    # 2.24 = 4 - acos(cos((4-3.5)/8*pi)*11/14)/pi*8
+    draw_arc(ax, radius=14/16, thetas=ts( 2.25, -2.25), color=colors_dict['x2'], linewidth_fac=19/16)
+    # 1.69 = 4 - acos(cos((4-3.5)/8*pi)*11/17.5)/pi*8
+    draw_arc(ax, radius=17.5/16, thetas=ts( 1.8, -1.8), color=colors_dict['x1'], linewidth_fac=19/16)
     
     # format and save
-    ax.set_xlim(-scale, scale)
+    ax.set_xlim(-scale+3.5/16, scale+3.5/16)
     ax.set_ylim(-scale, scale)
     ax.set_axis_off()
     ax.set_position([0, 0, 1, 1])
