@@ -6,13 +6,16 @@ Convert owned CSL1 radios as CSL2 Extended radios.
 
 Note: this script does not create music tracks out of the blue.
 You will need to buy and download those CSL1 radio stations first.
+(Check if this script actually work before you make any big decision. I do NOT promise anything.)
 You will also need to subscribe to the Extended Radio mod for CSL2 on Paradox Mods.
 
-I am not a lawyer, and I am not really sure about the copyright.
+I am not a lawyer, and I do not really know enough about copyrights.
 Definitely do NOT share the ogg files online.
 Probably best NOT to use those musics when streaming.
 
 This python script has only been tested on WSL (Windows Subsystem for Linux) with game installed on Windows system.
+
+Check and modify the "parameters" section near the beginning and the "if __name__ == '__main__':" section near the end before you proceed.
 
 Author: HomeOnMars
 
@@ -37,11 +40,11 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” 
 -------------------------------------------------------------------------------
 """
 
+# built-in libs
 import os
 from os import sep
 import shutil
 import json
-
 
 # parameters - modify below lines to suit your own system
 
@@ -52,6 +55,55 @@ CSL2_RADIO_PATH: str = "./"    # will need to copy the output from this folder t
 # CSL2_RADIO_PATH Example:
 # /mnt/c/Users/{Your-User-Name}/AppData/LocalLow/Colossal Order/Cities Skylines II/ModsData/ExtendedRadio/CustomRadios/
 
+
+# json format database
+# see <https://github.com/AlphaGaming7780/ExtendedRadio/wiki/Custom-Radio>.
+RADIO_JSON_NETWORK : dict = {
+    "name": "",           #  <--  Update this
+    "description": "",    #  <--  Update this
+    "icon": "coui://extendedradio/resources/DefaultIcon.svg",
+    "allowAds": True,
+}
+
+RADIO_JSON_CHANNEL : dict = {
+    "name": "",           #  <--  Update this
+    "description": "",    #  <--  Update this
+    "icon": "coui://extendedradio/resources/DefaultIcon.svg",
+}
+
+RADIO_JSON_PROGRAM : dict = {
+    "name": "",           #  <--  Update this
+    "description": "",    #  <--  Update this
+    "icon": "coui://extendedradio/resources/DefaultIcon.svg",
+    "startTime": "00:00",
+    "endTime": "00:00",
+    "loopProgram": True,
+    "pairIntroOutro": False,
+}
+
+RADIO_JSON_SEGMENT : dict = {
+    "type": "Playlist",    #  <--  Update this
+    "tags": [],
+    "clipsCap": 2,
+}
+
+RADIO_JSON_AUDIOFLIE: dict = {
+    "Title" : None,    #  <--  Update this
+    "Album" : None,    #  <--  Update this
+    "Artist": None,    #  <--  Update this
+    "Type"  : None,
+    "Brand" : None,
+    "RadioStation"  : None,
+    "RadioChannel"  : None,
+    "PSAType"   : None,
+    "AlertType" : None,
+    "NewsType"  : None,
+    "WeatherType": None,
+    "loopStart" : -1,
+    "loopEnd"   : -1,
+    "alternativeStart": -1,
+    "fadeoutTime": 1,
+}
 
 # helper functions
 
@@ -144,14 +196,11 @@ def convert_csl1_radio(
     # create radio network
     new_radio_network_path = os.path.normpath(f'{new_radio_path}{sep}{radio_network_path}')
     mkdir(new_radio_network_path, dry_run=dry_run, verbose=verbose)
+    data = RADIO_JSON_NETWORK.copy()
+    data["name"] = radio_network_name
+    data["description"] = radio_network_desc
     write_json(
-        data = {
-            "name": radio_network_name,
-            "description": radio_network_desc,
-            "icon": "coui://extendedradio/resources/DefaultIcon.svg",
-            "allowAds": True,
-        },
-        json_path = f'{new_radio_network_path}{sep}RadioNetwork.json',
+        data=data, json_path=f'{new_radio_network_path}{sep}RadioNetwork.json',
         overwrite=overwrite_json, dry_run=dry_run, verbose=verbose,
     )
     
@@ -162,30 +211,22 @@ def convert_csl1_radio(
         # create radio channel
         new_radio_channel_path = os.path.normpath(f'{new_radio_network_path}{sep}{channel}')
         mkdir(new_radio_channel_path, dry_run=dry_run, verbose=verbose)
+        data = RADIO_JSON_CHANNEL.copy()
+        data["name"] = channel_name
+        data["description"] = channel_name
         write_json(
-            data = {
-                "name": channel_name,
-                "description": channel_name,
-                "icon": "coui://extendedradio/resources/DefaultIcon.svg",
-            },
-            json_path = f'{new_radio_channel_path}{sep}RadioChannel.json',
+            data=data, json_path=f'{new_radio_channel_path}{sep}RadioChannel.json',
             overwrite=overwrite_json, dry_run=dry_run, verbose=verbose,
         )
         
         # create radio program
         new_radio_program_path = os.path.normpath(f'{new_radio_channel_path}{sep}{channel}')
         mkdir(new_radio_program_path, dry_run=dry_run, verbose=verbose)
+        data = RADIO_JSON_PROGRAM.copy()
+        data["name"] = channel_name
+        data["description"] = channel_name
         write_json(
-            data = {
-                "name": channel_name,
-                "description": channel_name,
-                "icon": "coui://extendedradio/resources/DefaultIcon.svg",
-                "startTime": "00:00",
-                "endTime": "00:00",
-                "loopProgram": True,
-                "pairIntroOutro": False,
-            },
-            json_path = f'{new_radio_program_path}{sep}Program.json',
+            data=data, json_path=f'{new_radio_program_path}{sep}Program.json',
             overwrite=overwrite_json, dry_run=dry_run, verbose=verbose,
         )
 
@@ -195,13 +236,11 @@ def convert_csl1_radio(
             # write segment json file
             new_radio_seg_meta_path = os.path.normpath(f'{new_radio_program_path}{sep}Playlist{sep}')
             mkdir(new_radio_seg_meta_path, dry_run=dry_run, verbose=verbose)
+            data = RADIO_JSON_SEGMENT.copy()
+            data["type"] = "Playlist"
+            data["clipsCap"] = 2
             write_json(
-                data = {
-                    "type": "Playlist",
-                    "tags": [],
-                    "clipsCap": 2,
-                },
-                json_path = f'{new_radio_seg_meta_path}{sep}Segment.json',
+                data=data, json_path=f'{new_radio_seg_meta_path}{sep}Segment.json',
                 overwrite=overwrite_json, dry_run=dry_run, verbose=verbose,
             )
             # copy audio files
@@ -231,25 +270,12 @@ def convert_csl1_radio(
                     if verbose: print(f"**  Warning: Unable to parse title and album from file name '{file}'")
                 else:
                     if verbose: print(f"*** Error: Empty file name '{file}'")
+
+                data = RADIO_JSON_AUDIOFLIE.copy()
+                data["Title"] = title
+                data["Artist"]= artist
                 write_json(
-                    data = {
-                        "Title": title,
-                        "Album": None,
-                        "Artist": artist,
-                        "Type": None,
-                        "Brand": None,
-                        "RadioStation": None,
-                        "RadioChannel": None,
-                        "PSAType": None,
-                        "AlertType": None,
-                        "NewsType": None,
-                        "WeatherType": None,
-                        "loopStart": -1,
-                        "loopEnd": -1,
-                        "alternativeStart": -1,
-                        "fadeoutTime": 1,
-                    },
-                    json_path = f'{new_radio_segment_path}{sep}{file_noext}.json',
+                    data=data, json_path=f'{new_radio_segment_path}{sep}{file_noext}.json',
                     overwrite=overwrite_json, dry_run=dry_run, verbose=verbose,
                 )
 
@@ -260,13 +286,11 @@ def convert_csl1_radio(
             # write segment json file
             new_radio_seg_meta_path = os.path.normpath(f'{new_radio_program_path}{sep}Talkshow{sep}')
             mkdir(new_radio_seg_meta_path, dry_run=dry_run, verbose=verbose)
+            data = RADIO_JSON_SEGMENT.copy()
+            data["type"] = "Talkshow"
+            data["clipsCap"] = 1
             write_json(
-                data = {
-                    "type": "Talkshow",
-                    "tags": [],
-                    "clipsCap": 1,
-                },
-                json_path = f'{new_radio_seg_meta_path}{sep}Segment.json',
+                data=data, json_path=f'{new_radio_seg_meta_path}{sep}Segment.json',
                 overwrite=overwrite_json, dry_run=dry_run, verbose=verbose,
             )
         # copy audio files
@@ -282,25 +306,9 @@ def convert_csl1_radio(
                         os.path.normpath(f'{old_radio_segment_path}{sep}{file_old}'),
                         os.path.normpath(f'{new_radio_segment_path}{sep}{file}'),
                         overwrite=overwrite_ogg, hardlink=hardlink, dry_run=dry_run, verbose=verbose)
+                    data = RADIO_JSON_AUDIOFLIE.copy()
                     write_json(
-                        data = {
-                            "Title": None,
-                            "Album": None,
-                            "Artist": None,
-                            "Type": None,
-                            "Brand": None,
-                            "RadioStation": None,
-                            "RadioChannel": None,
-                            "PSAType": None,
-                            "AlertType": None,
-                            "NewsType": None,
-                            "WeatherType": None,
-                            "loopStart": -1,
-                            "loopEnd": -1,
-                            "alternativeStart": -1,
-                            "fadeoutTime": 1,
-                        },
-                        json_path = f'{new_radio_segment_path}{sep}{file_noext}.json',
+                        data=data, json_path=f'{new_radio_segment_path}{sep}{file_noext}.json',
                         overwrite=overwrite_json, dry_run=dry_run, verbose=verbose,
                     )
 
