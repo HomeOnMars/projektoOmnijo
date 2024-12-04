@@ -134,12 +134,12 @@ def name_func_default(no: int, old_filename: str) -> str:
     # new_fn = f"{no:03}_{'_'.join(old_filename.split('_')[1:])}".translate(None, ' \'\\/:*?"<>|')
     new_fn = old_filename
     fns: list = new_fn.split('_')
-    if fns[0] and fns[0][-1] in set('0123456789'):    # first word: my no of the file
+    if fns[0] and set('0123456789').intersection(set(fns[0])):    # first word: my no of the file
         fns = fns[1:]
     new_fn = '_'.join(fns)
 
     fns: list = new_fn.split(' ')
-    if fns[0] and fns[0][-1] in set('0123456789'):    # first word: album no of the file
+    if fns[0] and fns[0].isnumeric():    # first word: album no of the file
         fns = fns[1:]
     # titlize and remove labels
     fns = [
