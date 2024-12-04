@@ -68,8 +68,21 @@ RADIO_JSON_AUDIOFLIE: dict = {
 }
 
 
+# tinytag image type to file extension
+TINYTAG_TYPE_2_EXT: dict[str] = {
+    'image/jpeg': '.jpg',
+    'image/png' : '.png',
+}
+
+
 
 # helper functions
+
+def upper_first_only(txt: str) -> str:
+    for i, c in enumerate(txt):
+        if c.isalpha():
+            return txt[:i+1].upper() + txt[i+1:]
+    return txt
 
 def mv(
     src: str, dst: str,
@@ -78,6 +91,8 @@ def mv(
     dry_run: bool = False,
     verbose: bool = True,
 ):
+    if os.path.normpath(src) == os.path.normpath(dst):
+        return
     if not overwrite and os.path.exists(dst):
         if overwrite is None:
             if not dry_run: raise FileExistsError(f"File '{dst}' already exists.")
@@ -128,7 +143,9 @@ def name_func_default(no: int, old_filename: str) -> str:
         fns = fns[1:]
     # titlize and remove labels
     fns = [
-        fn.title() for fn in fns
+        # throw away \' too
+        upper_first_only(fn.translate({ord(c): None for c in '\''}))
+        for fn in fns
         if fn.title() not in {
             '(Acoustic)',
             '[Acoustic]',
@@ -147,7 +164,7 @@ def name_func_default(no: int, old_filename: str) -> str:
     new_fn = ''.join(new_fns)    # throw away spaces
     
     # normalize - throw away any char unsupported by windows file explorer
-    new_fn = f"{no:03}_{new_fn}".translate({c: None for c in ' \'\\/:*?"<>|'})
+    new_fn = f"{no:03}_{new_fn}".translate({ord(c): None for c in '\\/:*?"<>|'})
     return new_fn
 
 
@@ -160,9 +177,11 @@ def normalize_csl2_music_files(
     overwrite_move: None|bool = None,    # if None, will raise exception if file already exists
     overwrite_ogg : None|bool = None,    # if None, will raise exception if file already exists
     overwrite_json: None|bool = None,
+    overwrite_image: bool = True,
     do_sort_fname : bool = True,
     do_convert_ogg: bool = True,
     do_add_json   : bool = True,    # only works if do_convert_ogg is also True - for now
+    do_save_cover : bool = False,   # save cover art image
     dry_run: bool = False,
     verbose: bool = True,
 ):
@@ -205,49 +224,70 @@ def normalize_csl2_music_files(
 
     
 
-    # convert to ogg and add json files
-    if do_convert_ogg:
-        for fn, exts in filenames_dict.items():
-            tbc_ext_list = list(tbc_ext_set.intersection(exts))
-            if tbc_ext_list and (overwrite_ogg or '.ogg' not in exts):
-                tbc_ext = tbc_ext_list[0]
-                # convert to ogg
-                cmds: list[str] = [
-                    'ffmpeg',
-                    '-i',
-                    f'{fn}{tbc_ext}',
-                    '-acodec', 'libvorbis',
-                    '-ar', '48000',
-                    '-vn',
-                    f'{fn}.ogg',
-                ]
-                if verbose: print(f"\t$ {' '.join(cmds)}")
-                if not dry_run:
-                    subprocess.run(cmds)
-                    exts.add('.ogg')
+    # convert to ogg, add json files, and save cover art.
+    for fn, exts in filenames_dict.items():
+        # make sure convertible file actually exist
+        try: tbc_ext = list(tbc_ext_set.intersection(exts))[0]
+        except IndexError: continue
 
-                # add json
-                if do_add_json:
-                    if overwrite_json or '.json' not in exts:
-                        tag: TinyTag = TinyTag.get(f'{fn}{tbc_ext}')
-                        data = RADIO_JSON_AUDIOFLIE.copy()
-                        data["Title"] = tag.title
-                        data["Album"] = tag.album
-                        data["Artist"]= tag.artist
-                        write_json(
-                            data=data, json_path=f'{fn}.json',
-                            overwrite=overwrite_json, dry_run=dry_run, verbose=verbose,
-                        )
-                    exts.add('.json')
+        if do_convert_ogg and (overwrite_ogg or '.ogg' not in exts):
+            # convert to ogg
+            cmds: list[str] = [
+                'ffmpeg',
+                '-i',
+                f'{fn}{tbc_ext}',
+                '-acodec', 'libvorbis',
+                '-ar', '48000',
+                '-vn',
+                f'{fn}.ogg',
+            ]
+            if verbose: print(f"\t$ {' '.join(cmds)}")
+            if not dry_run:
+                subprocess.run(cmds)
+                exts.add('.ogg')
+
+        if do_add_json or do_save_cover:
+            tag: TinyTag = TinyTag.get(f'{fn}{tbc_ext}', image=do_save_cover)
+
+            if do_add_json:
+                if overwrite_json or '.json' not in exts:
+                    data = RADIO_JSON_AUDIOFLIE.copy()
+                    data["Title"] = tag.title
+                    data["Album"] = tag.album
+                    data["Artist"]= tag.artist
+                    write_json(
+                        data=data, json_path=f'{fn}.json',
+                        overwrite=overwrite_json, dry_run=dry_run, verbose=verbose,
+                    )
+                exts.add('.json')
+
+            if do_save_cover:
+                image = tag.images.any
+                if image is not None:
+                    try:
+                        image_ext = TINYTAG_TYPE_2_EXT[image.mime_type]
+                    except KeyError:
+                        if verbose: print(f"**  Warning: Unknown image type in file '{fn}{tbc_ext}'.")
+                    else:
+                        try:
+                            if verbose: print(f"\t$ save '{fn}{image_ext}'")
+                            if not dry_run:
+                                with open(f'{fn}{image_ext}', 'wb' if overwrite_image else 'xb') as f:
+                                    f.write(image.data)
+                        except FileExistsError:
+                            if verbose: print(f"*   Note: file '{fn}{image_ext}' already exists. Skipping this.")
+
 
     return filenames_dict
 
 if __name__ == '__main__':
     normalize_csl2_music_files(
         name_func = lambda no, old_filename: f"M{name_func_default(no, old_filename)}",
+        overwrite_move= None,
         overwrite_ogg = False,
         overwrite_json= False,
+        overwrite_image=True,
+        do_save_cover = True,
         dry_run  = False,
         verbose  = True,
     )
-"".translate()
