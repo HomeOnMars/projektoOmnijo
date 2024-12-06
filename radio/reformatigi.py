@@ -4,15 +4,15 @@
 """
 Sort music files in the local folder, and convert m4a files to ogg files.
 
-WORK IN PROGESS.
-
 Require ffmpeg and libvorbis (install with apt - as I only tested this on Ubuntu)
 
 Only tested on WSL (Windows Subsystem for Linux).
 Most likely will NOT work in Windows directly.
 
 Warning: if the song file name ended with a number, the script may not treat it correctly.
-Rename it like: from '42.ogg' to '01_42.ogg' as a fix.
+Rename it like: from '42.ogg' to '01__42.ogg' as a fix.
+(2 '_' are needed as the code by default throw away the first 2 numbers)
+You can customize the naming format by altering the name_func in the "if __name__ == '__main__':" section.
 
 
 Author: HomeOnMars
@@ -133,14 +133,18 @@ def name_func_default(no: int, old_filename: str) -> str:
 
     # new_fn = f"{no:03}_{'_'.join(old_filename.split('_')[1:])}".translate(None, ' \'\\/:*?"<>|')
     new_fn = old_filename
-    fns: list = new_fn.split('_')
-    if fns[0] and set('0123456789').intersection(set(fns[0])):    # first word: my no of the file
-        fns = fns[1:]
-    new_fn = '_'.join(fns)
-
     fns: list = new_fn.split(' ')
-    if fns[0] and fns[0].isnumeric():    # first word: album no of the file
-        fns = fns[1:]
+    fn0s: list = fns[0].split('_')
+    if fn0s[0] and set('0123456789').intersection(set(fn0s[0])):    # throw away first word?: my no of the file
+        fn0s = fn0s[1:]
+    if fn0s: fns[0] = '_'.join(fn0s)
+    else: fns.pop(0)
+    
+    fn0s: list = fns[0].split('_')
+    if fn0s[0] and fn0s[0].isnumeric():    # throw away first word?: album no of the file
+        fn0s = fn0s[1:]
+    if fn0s: fns[0] = '_'.join(fn0s)
+    else: fns.pop(0)
     # titlize and remove labels
     fns = [
         # throw away \' too
