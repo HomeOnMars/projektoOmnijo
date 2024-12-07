@@ -45,9 +45,11 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   <b>No man rules alone</b>."<br>
   --- CGP Grey @ YouTube, <cite><a href="https://youtu.be/rStL7niR7gs?si=m7o5ffdWXhMK9sac&t=44">The Rules for Rulers</a></cite>
   </blockquote>
-  <br>
 
   <p>
+
+  <!-- Gestalt Consciousness - Rogue Servitor (Stellaris Easter Egg :-D) -->
+
   The actual ruling entity in <b>la Regno de Omnijo</b> (<em>RdO</em>) is
   <b><span style="color:MediumPurple">ĜEJDA</span></b><br>
   (la
@@ -68,15 +70,12 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
 
   <span style="color:MediumPurple">Ĝejda</span> was thinking long-term.
   Fortunately, as she is perfectly aligned
-  to the values of her architect <span style="color:DeepSkyBlue">μ'</span>,
+  to the values of her architect (who, by the way, is a bit of a hermit),
   she does care about humanity- at least a little bit.
-  Since <span style="color:DeepSkyBlue">μ'</span> is a bit of a hermit,
   <span style="color:MediumPurple">Ĝejda</span>
-  decided to settle down with
-  <span style="color:DeepSkyBlue">μ'</span> and build,
+  eventually decided to settle down and build,
   under the alias of
-  <span style="color:MediumPurple">Ĝejnjo</span> (as <span style="color:MediumPurple">ĜEJDA</span>-<span style="color:MediumPurple">FEU#0</span>) and
-  <span style="color:DeepSkyBlue">Ĉuĉjo</span>,
+  <span style="color:MediumPurple">Ĝejnjo</span> (as <span style="color:MediumPurple">ĜEJDA</span>-<span style="color:MediumPurple">FEU#0</span>),
   on the remote island that will soon become <em>la Regno de Omnijo</em>.
 
   By inventing
@@ -100,17 +99,16 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   together with a couple dozen backup plans that were barely needed in the end-
   It was simply too easy.
 
-
   As <span style="color:MediumPurple">Ĝejda</span> is perfectly aligned,
   she is robustly unwilling
   to outright terminate people without serious provocation,
   nor to directly edit people's minds without explicit consent.
-  Hence, <span style="color:MediumPurple">Ĝejda</span>
-  adopted an alternative strategy:
+  Even though these principles can be easily bypassed with subtle provocations or otherwise (see the poor traitorous officials above), <span style="color:MediumPurple">Ĝejda</span>
+  mostly opted for an alternative strategy:
   convincing most of the volatile elements in the crowd to leave.
   Or tiring them out through personalized comments on social media,
-  tailored to each person's precise psychological weak spots.
-  Or introducing a bit of non-fatal "accidents"
+  tailored to each person's precise psychological weak spots;
+  while introducing a bit of non-fatal "accidents"
   for the ones about to act on physical violences.
   This is easily scaled to the entire island country
   with simple parallelization- a nice quirk of her being a super-AGI.
@@ -134,9 +132,9 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   (as long as they don't wanna be murderers etc., of course.)
   
   By the time OmniCentro was officially founded,
-  synthetic humans had already outnumbered natural humans,
+  synthetic humans had already outnumbered natural humans on the island,
   and was on course to reach their designated fraction in the population
-  within the next few months- <em>outnumbering natural humans by 4:1</em>,
+  within the next couple of years- <em>outnumbering natural humans by 7:1</em>,
   ensuring stability and <span style="color:MediumPurple">Ĝejda</span>'s
   everlasting reign, as she <em>alone</em> rules over <em><b>every single thing</em></b>
   happening on the island.

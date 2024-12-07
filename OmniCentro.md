@@ -90,18 +90,49 @@ For more details, see the history of Omnijo in the [history](#la-historio-the-hi
 
 
 
-[^Bulteno-RegistaraTipo]: English translation:
-  Constitutional Monarchy / Benevolent Dictatorship / Totalitarian Regime, depending on who you ask.
+[^Bulteno-RegistaraTipo]: Interviewer: "So, tell us what do you think
+  the kind of government our new RdO governemnt is?"
+  <br>...<br>
+  <span style="color:MediumPurple">Ĝejnjo la Suvereno</span>:
+  "As stated in the constitution, we are still a *Constitutional Monarchy*, which has never changed.
+  We will still be voting next year for the new prime minister, aren't we?"
+  <br>...<br>
+  <span style="color:DeepSkyBlue">Ĉuĉjo la Arkitekto</span>:
+  "I understand your concern that the
+  <span style="color:Silver">Queen</span>
+  has basically replaced the whole cabinet with us
+  as acting officials of the government,
+  and that the current prime minister functions more like a figure head.
+  But I am fairly confident that
+  <span style="color:Silver">Serena</span>'s heart is in the good place.
+  Just look at how much improvements to every citizen's lives
+  have been achieved in the past 6 months!
+  I would say we are a *Benevolent Dictatorship*."
+  <br>...<br>
+  <span style="color:Silver">Reĝino Serena de Omnijo</span>:
+  "I know many people outside our beloved island considered us
+  fallen into a *Totalitarian Regime*, and I totally agree with them!
+  Like, just yesterday I was starting to implement this new
+  universal basic income thing for everyone on the island-
+  Sorry for drop the news here, but now ya know,
+  it's gonna happen starting next week-
+  And did I need to do any research on this policy's effect on the economy?
+  Did I need to justify my reasons or answer to anyone or anything?
+  Nope! I just go and do that, and no one is there to stop me,
+  since everyone in the cabinet is my friend.
+  And this absolute power feels SOOO GOOD! Muahahahaha!"
+  <br>...<br>
+  The public's reactions to the interview are mixed.
 
 [^Bulteno-Lingvo]: *Esperanto++* is
   a fictional artificial variant of Esperanto specified by
   <span style="color:Silver">Reĝino Serena</span> herself,
   aiming to offer maximum regularity for easy learning,
-  while conforming to the existing world as much as possible.
-  Changes include:
-  Officially eliminated `ĥ` from the *E++* alphabet (mostly replaced with `k`);
-  Decimal separator in *E++* is `.` instead of `,`;
-  Thousands separator is space(` `) instead of `.`;<!-- markdownlint-disable-line no-space-in-code -->
+  while conforming to the existing world as much as possible. <br>
+  Changes include:<br>
+  Officially eliminated `ĥ` from the *E++* alphabet (mostly replaced with `k`);<br>
+  Decimal separator in *E++* is `.` instead of `,`;<br>
+  Thousands separator is space(` `) instead of `.`;<br><!-- markdownlint-disable-line no-space-in-code -->
   etc. etc.
 
 [^Bulteno-Religio]: What can I say-
@@ -126,8 +157,8 @@ For more details, see the history of Omnijo in the [history](#la-historio-the-hi
 [^Bulteno-Himno]: The new anthem is hand picked by -
   you guessed it -
   <span style="color:Silver">Reĝino Serena</span> herself (Surprise, surprise),
-  even though she claims to be an atheist.
-  The official reason is that she "likes the sound of it";
+  even though she claims to be an atheist.<br>
+  The official reason is that she "likes the sound of it";<br>
   The unofficial reason may be that it serves as
   a reminder of the state's self-imposed role as the Saviour to its people,
   its promises and duty for their protection and guidance,
@@ -675,6 +706,7 @@ it used to have a different name **just about half a year ago**.
 In (fictional) fact, it used to have
 a different flag,
 a different national color,
+a different name for the island,
 a different anthem,
 a different official religion, and even
 a different official language.
@@ -692,7 +724,7 @@ who saw her as young and easy-to-manipulate for their own personal gain.
 But <span style="color:Silver">Serena</span> has proven to be
 much more impulsive, arrogant, and harder-to-control than they expected.
 The corrupted ministers and councilors then plotted a regime change
-to forcefully "retire" her.
+to forcefully "retire"[^Historio-RdO-Serena-kmt2] her.
 Which they would have succeeded
 (they are not stupid, you see, after all they control the military),
 if were not for another tragic accident where the building
@@ -700,6 +732,8 @@ if were not for another tragic accident where the building
 blew up due to a random gas leak and CO sensor malfunctions,
 killing every single one of them.
 How very unfortunate.
+
+[^Historio-RdO-Serena-kmt2]: Much like they "retired" the old king before <span style="color:Silver">Serena</span>.
 
 After this, <span style="color:Silver">Serena</span>
 replaced most of the governmental head with her friends
@@ -723,7 +757,7 @@ the corruption was essentially gone with the reshuffling of the power,
 the friends she put onto the positions are surprisingly upright and capable,
 and within weeks the public goods increased significantly
 as <span style="color:Silver">Serena</span> disbanded most of the armies
-and re-directed the military fundings there
+and re-directed the military fundings and personnel there
 (for example,
 
 - More telecom towers were built and maintained,
@@ -763,17 +797,17 @@ However, it wasn't nearly enough to stop the population drop-
 in the beginning.
 
 [^Historio-RdO-Elmigrado-kmt1]: It almost felt like
-  she wanted people to leave, or are testing them somehow.
+  she wanted people to leave, or are testing them somehow.<br>
   <span style="color:Silver">Serena</span>'s official statement is that
-  "People have a right to leave if they don't like my stuff.
-  Hate me? Fine. Go away. Out of sight, out of mind, for me and for you.
+  "People have a fundamental right to leave if they don't like my style.
+  Hate me? Fine. Leave. Go away. Out of sight, out of mind, for me and for you.
   Don't say I didn't give you options."
 
 
 Then this trend slowed down.
 
 As the next great global economic recession unfolds[^Historio-RdO-Recesio],
-many countries are struggling and tighting their immigration rules.
+many countries are struggling and tightening their immigration rules.
 La Regno de Omnijo, however, did surprisingly well (again),
 attracting people to stay.
 Actually, from an outsider perspective, Omnijo's response was almost perfect.
@@ -782,10 +816,17 @@ to re-nationalize many of the private companies in her country -
 from public transportation to infrastructures and manufacturing industries -
 effectively buying out her own country.
 
-[^Historio-RdO-Recesio]: It soon became clear that
-  this time the recession was triggered by the bursting of the AI bubble
-  weeks after the coronation day.
-
+[^Historio-RdO-Recesio]: This time the recession was triggered by
+  the bursting of the AI bubble weeks after the coronation day.<br>
+  <span style="color:Silver">Serena</span>:
+  "I guess this is what happens
+  when you temper with things you don't understand LOL-
+  If you don't know how it works, you don't know why it stops working
+  Muahahahahahaha(beep)"
+  before her new PR officer rushed in
+  to stop further recordings of her "evil laugh".<br>
+  This interview recording pieces
+  was never publicly published until a hexcade later.
 
 #### Foundation of *OmniCentro*
 
