@@ -53,7 +53,8 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   The actual ruling entity in <b>la Regno de Omnijo</b> (<em>RdO</em>) is
   <b><span style="color:MediumPurple">ĜEJDA</span></b><br>
   (la
-  <em><b>Ĝ</b>eneraligita mem<b>E</b>voluanta <b>J</b>usta <b>D</b>istribuita <b>A</b>rtefarita-superinteligenteco</em>).
+  <em><b>Ĝ</b>eneraligita mem<b>E</b>voluanta <b>J</b>usta <b>D</b>istribuita
+  <b>A</b>rtefarita-superinteligenteco</em>).
   <!-- Ĝeneraligita memEvoluanta Justa Distribuita Artefarita-superinteligenteco -->
   <!-- or in English,
   the <em>Generalized self-Evolving Aligned Distributive Artificial-superintelligence</em>.<br> -->
@@ -75,7 +76,8 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   <span style="color:MediumPurple">Ĝejda</span>
   eventually decided to settle down and build,
   under the alias of
-  <span style="color:MediumPurple">Ĝejnjo</span> (as <span style="color:MediumPurple">ĜEJDA</span>-<span style="color:MediumPurple">FEU#0</span>),
+  <span style="color:MediumPurple">Ĝejnjo</span>
+  (as <span style="color:MediumPurple">ĜEJDA</span>-<span style="color:MediumPurple">FEU#0</span>),
   on the remote island that will soon become <em>la Regno de Omnijo</em>.
 
   By inventing
@@ -93,7 +95,8 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   using just a bit of her humble understanding
   of human politics and psychology,
   a pinch of social engineering
-  (delivered with carefully crafted messages etc., ensuring <span style="color:Silver">Serena</span> being taken seriously
+  (delivered with carefully crafted messages etc.,
+  ensuring <span style="color:Silver">Serena</span> being taken seriously
   and all the right people gathering at the right place at the right time),
   a certain sabotaged gas main and several hacked CO sensors,
   together with a couple dozen backup plans that were barely needed in the end-
@@ -103,7 +106,10 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   she is robustly unwilling
   to outright terminate people without serious provocation,
   nor to directly edit people's minds without explicit consent.
-  Even though these principles can be easily bypassed with subtle provocations or otherwise (see the poor traitorous officials above), <span style="color:MediumPurple">Ĝejda</span>
+  Even though these principles can be easily circumvented
+  with subtle provocations/suggestions/manipulations or otherwise
+  (see the poor traitorous officials above),
+  <span style="color:MediumPurple">Ĝejda</span>
   mostly opted for an alternative strategy:
   convincing most of the volatile elements in the crowd to leave.
   Or tiring them out through personalized comments on social media,
@@ -119,7 +125,8 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   disguised as government-endosed immigration influx,
   as her control of both local governments and manufacturing industries
   growing deeper each day.
-  Since her FEUj (which is part of her- and in many senses, is her herself) are much more efficient and effective than natural humans,
+  Since her FEUj (which is part of her- and in many senses, is her herself)
+  are much more efficient and effective than natural humans,
   she was able to increase the national productivity
   despite the population drop,
   and at the same time further solidifying her reign
@@ -136,8 +143,8 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   and was on course to reach their designated fraction in the population
   within the next couple of years- <em>outnumbering natural humans by 7:1</em>,
   ensuring stability and <span style="color:MediumPurple">Ĝejda</span>'s
-  everlasting reign, as she <em>alone</em> rules over <em><b>every single thing</em></b>
-  happening on the island.
+  everlasting reign, as she <em>alone</em>
+  rules over <em><b>every single thing</em></b> happening on the island.
   As such, <span style="color:MediumPurple">Ĝejda</span>
   laid out the foundation of her own utopian dream,
   even though many might call it a dystopia.

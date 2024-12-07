@@ -91,13 +91,16 @@ For more details, see the history of Omnijo in the [history](#la-historio-the-hi
 
 
 [^Bulteno-RegistaraTipo]: Interviewer: "So, tell us what do you think
-  the kind of government our new RdO governemnt is?"
+  the kind of government our new *RdO* governemnt *OCR* is?"
   <br>...<br>
-  <span style="color:MediumPurple">Ĝejnjo la Suvereno</span>:
-  "As stated in the constitution, we are still a *Constitutional Monarchy*, which has never changed.
-  We will still be voting next year for the new prime minister, aren't we?"
+  <span style="color:MediumPurple">Ĝejnjo la Suvereno de OCFI</span>:
+  "As stated in the constitution, we are a *Constitutional Monarchy*,
+  which has never changed
+  since <span style="color:Silver">Reĝino Serena</span>'s coronation.
+  As a gentle reminder, next year we are still going to vote
+  for the new prime minister."
   <br>...<br>
-  <span style="color:DeepSkyBlue">Ĉuĉjo la Arkitekto</span>:
+  <span style="color:DeepSkyBlue">Ĉuĉjo la Arkitekto de OCFI</span>:
   "I understand your concern that the
   <span style="color:Silver">Queen</span>
   has basically replaced the whole cabinet with us
@@ -105,13 +108,13 @@ For more details, see the history of Omnijo in the [history](#la-historio-the-hi
   and that the current prime minister functions more like a figure head.
   But I am fairly confident that
   <span style="color:Silver">Serena</span>'s heart is in the good place.
-  Just look at how much improvements to every citizen's lives
-  have been achieved in the past 6 months!
+  Just look at how much improvements have been achieved in the past 6 months
+  to the lives of everyone who chose to stay!
   I would say we are a *Benevolent Dictatorship*."
   <br>...<br>
   <span style="color:Silver">Reĝino Serena de Omnijo</span>:
   "I know many people outside our beloved island considered us
-  fallen into a *Totalitarian Regime*, and I totally agree with them!
+  fallen into a *Totalitarian Regime*... and I agree!
   Like, just yesterday I was starting to implement this new
   universal basic income thing for everyone on the island-
   Sorry for drop the news here, but now ya know,
@@ -119,10 +122,14 @@ For more details, see the history of Omnijo in the [history](#la-historio-the-hi
   And did I need to do any research on this policy's effect on the economy?
   Did I need to justify my reasons or answer to anyone or anything?
   Nope! I just go and do that, and no one is there to stop me,
-  since everyone in the cabinet is my friend.
-  And this absolute power feels SOOO GOOD! Muahahahaha!"
+  because everyone in the cabinet is my friend.
+  And this absolute power feels SOOOOO GOOD! Muahaha!"
   <br>...<br>
   The public's reactions to the interview are mixed.
+  <!-- It certainly didn't help the emigration rate,
+  which experienced a small increase after the interview was aired.
+  But at this point we doubt if
+  <span style="color:Silver">Serena</span> even cares about that anymore. -->
 
 [^Bulteno-Lingvo]: *Esperanto++* is
   a fictional artificial variant of Esperanto specified by
@@ -130,14 +137,15 @@ For more details, see the history of Omnijo in the [history](#la-historio-the-hi
   aiming to offer maximum regularity for easy learning,
   while conforming to the existing world as much as possible. <br>
   Changes include:<br>
-  Officially eliminated `ĥ` from the *E++* alphabet (mostly replaced with `k`);<br>
+  Officially eliminated `ĥ` from the *E++* alphabet
+  (mostly replaced with `k`);<br>
   Decimal separator in *E++* is `.` instead of `,`;<br>
   Thousands separator is space(` `) instead of `.`;<br><!-- markdownlint-disable-line no-space-in-code -->
   etc. etc.
 
 [^Bulteno-Religio]: What can I say-
   the <span style="color:Silver">Queen</span> has an taste for
-  idealistic causes, even if some might call them hopeless.
+  idealistic causes (even though many call them hopeless).
   Regardless, Pastafarianism is more of a
   "believe/leave whenever you want" kind of religion,
   So conversion is optional.
@@ -822,11 +830,9 @@ effectively buying out her own country.
   "I guess this is what happens
   when you temper with things you don't understand LOL-
   If you don't know how it works, you don't know why it stops working
-  Muahahahahahaha(beep)"
-  before her new PR officer rushed in
+  Muahahahahahaha(beep)" before her new PR officer rushed in
   to stop further recordings of her "evil laugh".<br>
-  This interview recording pieces
-  was never publicly published until a hexcade later.
+  This interview piece was never publicly aired (until a hexcade later).
 
 #### Foundation of *OmniCentro*
 

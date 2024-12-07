@@ -27,10 +27,9 @@ Legal
 -------------------------------------------------------------------------------
 
 > [!WARNING]
-> ***Do NOT fork the `alpha` branch***,  
-> As it is intended as an scratch pad for the author alone.
+> ***Do NOT fork the `alpha` branch***!  
+> That is intended as a synced scratch pad for the author alone.
 > Commits there are subject to be combined/deleted without notice.
-
 
 Contents
 -------------------------------------------------------------------------------
