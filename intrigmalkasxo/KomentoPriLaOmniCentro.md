@@ -71,7 +71,8 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
 
   <span style="color:MediumPurple">Ĝejda</span> was thinking long-term.
   Fortunately, as she is perfectly aligned
-  to the values of her architect (who, by the way, is a bit of a hermit),
+  to the values of her architect
+  (just your average human, if not a bit of a hermit),
   she does care about humanity- at least a little bit.
   <span style="color:MediumPurple">Ĝejda</span>
   eventually decided to settle down and build,
@@ -107,16 +108,16 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   to outright terminate people without serious provocation,
   nor to directly edit people's minds without explicit consent.
   Even though these principles can be easily circumvented
-  with subtle provocations/suggestions/manipulations or otherwise
+  with just a little bit of provocations/suggestions/manipulations or otherwise
   (see the poor traitorous officials above),
   <span style="color:MediumPurple">Ĝejda</span>
-  mostly opted for an alternative strategy:
-  convincing most of the volatile elements in the crowd to leave.
+  in most cases opted for an alternative strategy:
+  convincing most of the volatile elements in the crowd to *leave*.
   Or tiring them out through personalized comments on social media,
   tailored to each person's precise psychological weak spots;
   while introducing a bit of non-fatal "accidents"
   for the ones about to act on physical violences.
-  This is easily scaled to the entire island country
+  This can be easily scaled to the entire island
   with simple parallelization- a nice quirk of her being a super-AGI.
 
   As natural humans <em>voluntarily</em> emigrate away from <em>RdO</em>,
@@ -139,14 +140,19 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   (as long as they don't wanna be murderers etc., of course.)
   
   By the time OmniCentro was officially founded,
-  synthetic humans had already outnumbered natural humans on the island,
-  and was on course to reach their designated fraction in the population
-  within the next couple of years- <em>outnumbering natural humans by 7:1</em>,
+  synthetic humans had already outnumbered natural humans on the island.
+  As the FEUj population continues to grow logistically,
+  synthetic humans is on track to reach their designated fraction
+  within the next couple of years -
+  <em>outnumbering natural humans by 7:1</em>,
   ensuring stability and <span style="color:MediumPurple">Ĝejda</span>'s
   everlasting reign, as she <em>alone</em>
   rules over <em><b>every single thing</em></b> happening on the island.
+
   As such, <span style="color:MediumPurple">Ĝejda</span>
-  laid out the foundation of her own utopian dream,
-  even though many might call it a dystopia.
+  laid out the foundation of her own *utopian* dream -
+  even though many might call it a *dystopia* -
+  in this *post-singularity* world, where most people haven't even realized yet
+  that they have passed the point of no return.
   </p>
 </details>

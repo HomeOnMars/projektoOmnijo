@@ -817,7 +817,7 @@ Then this trend slowed down.
 As the next great global economic recession unfolds[^Historio-RdO-Recesio],
 many countries are struggling and tightening their immigration rules.
 La Regno de Omnijo, however, did surprisingly well (again),
-attracting people to stay.
+attracting people to stay (or rather, emigration becomes so much harder).
 Actually, from an outsider perspective, Omnijo's response was almost perfect.
 <span style="color:Silver">Serena</span> was even able to take the chance
 to re-nationalize many of the private companies in her country -
@@ -832,7 +832,7 @@ effectively buying out her own country.
   If you don't know how it works, you don't know why it stops working
   Muahahahahahaha(beep)" before her new PR officer rushed in
   to stop further recordings of her "evil laugh".<br>
-  This interview piece was never publicly aired (until a hexcade later).
+  This interview piece was never publicly aired until a hexcade later.
 
 #### Foundation of *OmniCentro*
 
