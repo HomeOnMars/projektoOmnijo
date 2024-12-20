@@ -68,8 +68,8 @@ ONKIO_2_ASCII_DICT[chr(0x7f)] = chr(0x16d)    # DEL -> ŭ    # Ctrl-Shift-\ + u
 #    Hexadecimal characters
 ONKIO_2_ASCII_DICT[chr(0x3a)] = chr(0x394)    # : -> Δ
 ONKIO_2_ASCII_DICT[chr(0x3b)] = chr(0x3bb)    # ; -> λ
-ONKIO_2_ASCII_DICT[chr(0x3c)] = chr(0x3a8)    # < -> Ψ
-ONKIO_2_ASCII_DICT[chr(0x3d)] = chr(0x3a7)    # = -> Χ
+ONKIO_2_ASCII_DICT[chr(0x3c)] = chr(0x3a0)    # < -> Π
+ONKIO_2_ASCII_DICT[chr(0x3d)] = chr(0x3a8)    # = -> Ψ
 ONKIO_2_ASCII_DICT[chr(0x3e)] = chr(0x3a5)    # > -> Υ
 ONKIO_2_ASCII_DICT[chr(0x3f)] = chr(0x3a3)    # ? -> Σ
 #     Punctuation & Symbols

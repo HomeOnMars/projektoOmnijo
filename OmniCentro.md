@@ -267,14 +267,14 @@ Note that the letters are overlapping other acronyms in other categories - and t
 > [!NOTE]
 >
 > 1. H prefix is usually omitted.
-> 2. All Line numbers are ***hexadecimal*** (see [ONKIO table](teknikajxoj/ONKIO.md#onkio-tablo) `0x3_` column for respective symbols of 10~15: `Δ λ Ψ Χ Υ Σ`).
+> 2. All Line numbers are ***hexadecimal*** (see [ONKIO table](teknikajxoj/ONKIO.md#onkio-tablo) `0x3_` column for respective symbols of 10~15: `Δ λ Π Ψ Υ Σ`).
 
 Examples:
 
 - Bus route 431 (i.e. 0x1af): B1ΔΣ (short for HB1ΔΣ)
 - High-speed Train line 3: V3 (short for HV3)
-- Motorway 13 N->S: ŬΧ-M (or UxD-M for ASCII encoding; M for Negative; Becareful `Χ` is the upper-case version of greek letter `χ`, not English X.)
-- Cargo train line 12: KVΨ
+- Motorway 13 N->S: ŬΨ-M (or UxD-M for ASCII encoding; M for Negative.)
+- Cargo train line 12: KVΠ
 - Cargo barge route 4: KP4
 - Cargo container ship route 14: KŜΥ (or KSxE for ASCII encoding; Becareful `Υ` is the upper-case version of greek letter `γ`, not English Y.)
 - Cargo Airline 5: KA5
