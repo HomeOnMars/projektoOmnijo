@@ -60,9 +60,9 @@ who has already earned herself a reputation of arrogance and recklessness
 since her coronation just about half a year ago.
 
 *La Regno de Omnijo* is a fictional monarchy
-located on the fictional island *La Omnija-Insulo*
+located on the fictional island *la Omnija-Insulo*
 in the Southern Hemisphere somewhere in between Chile and New Zealand,
-near 56°15'S, 140°15'W (coordinates are fictional).
+near 56°15'S, 140°15'W (coordinates are fictional- it should be open ocean there in real life).
 The island has a size of approximately Iceland,
 i.e. $\sim 100 \, 000 \, \mathrm{km}^2$.
 
@@ -139,8 +139,17 @@ For more details, see the history of Omnijo in the [history](#la-historio-the-hi
   Changes include:<br>
   Officially eliminated `ĥ` from the *E++* alphabet
   (mostly replaced with `k`);<br>
-  Decimal separator in *E++* is `.` instead of `,`;<br>
-  Thousands separator is space(` `) instead of `.`;<br><!-- markdownlint-disable-line no-space-in-code -->
+  Decimal separator in *E++* is `.` instead of `,`, while thousands separator is space(` `) instead of `.`;<br><!-- markdownlint-disable-line no-space-in-code -->
+  Built-in support for hexadecimal algebra:
+  `Δ λ Π Ψ Υ Σ` written/pronounced as `del lom nak fup gan sig`;
+  `hek`   for            16 (base-10),
+  `jent`  for           256 (base10, = 2^8  or        ΣΣ+1),
+  `gil`   for         4 096 (base10, = 2^12 or       ΣΣΣ+1),
+  `onio`  for        65 536 (base10, = 2^16 or      ΣΣΣΣ+1), and
+  `dunio` for 4 294 967 296 (base10, = 2^32 or ΣΣΣΣ ΣΣΣΣ +1).
+  (As a reference, world population
+  9 100 000 000 (base10) = 2 1Υ66 Σλ00, pronounced as
+  du dunio, gil ganjent seshek ses onio, siggil lomjent.);<br>
   etc. etc.
 
 [^Bulteno-Religio]: What can I say-
@@ -165,7 +174,7 @@ For more details, see the history of Omnijo in the [history](#la-historio-the-hi
 [^Bulteno-Himno]: The new anthem is hand picked by -
   you guessed it -
   <span style="color:Silver">Reĝino Serena</span> herself (Surprise, surprise),
-  even though she claims to be an atheist.<br>
+  even though she claims to be "not a religious person".<br>
   The official reason is that she "likes the sound of it";<br>
   The unofficial reason may be that it serves as
   a reminder of the state's self-imposed role as the Saviour to its people,
@@ -697,7 +706,7 @@ Background Stories
 (Shorter summary [here](#background-summary).)
 
 **La Regno de Omnijo**[^Historio-RdO-Nomo] is a fictional monarchy
-located on an fictional island *La Omnija-Insulo*
+located on an fictional island *la Omnija-Insulo*
 in the Southern Hemisphere somewhere in between Chile and New Zealand,
 near 56°15'S, 140°15'W (coordinates are fictional).
 The island has a size of approximately Iceland,
@@ -821,7 +830,7 @@ attracting people to stay (or rather, emigration becomes so much harder).
 Actually, from an outsider perspective, Omnijo's response was almost perfect.
 <span style="color:Silver">Serena</span> was even able to take the chance
 to re-nationalize many of the private companies in her country -
-from public transportation to infrastructures and manufacturing industries -
+from public transportation, to utilities, banks, manufacturing industries and more -
 effectively buying out her own country.
 
 [^Historio-RdO-Recesio]: This time the recession was triggered by
@@ -863,9 +872,8 @@ in a valley where mountains meets the sea- a place called the
 [Seaside Valley](https://mods.paradoxplaza.com/mods/82544/Any),
 Or "Ĉemarvalo",
 about 300km away from the current capital.
-A totally ridiculous place
-to build a capital city, of course,
-with its lack of flat areas for easy expansion,
+A totally *ridiculous* place to build a capital city, of course.
+Reasons? To name a few: a lack of flat areas for easy expansion,
 its steep altitude changes posing significant problems
 for building both buildings and transportation,
 and the temperature and wind speed changes at different altitude
@@ -873,9 +881,14 @@ are just brutal.
 Not to mention that
 the local farmers there are famous for not willing to give up their lands.
 The only easily capitalizable thing there
-is the several good spots for building dams-
+is the several good spots for building dams[^Historio-OC-barajxo]-
 but hey, who would ever want a dam / dams this close to the city??
 What if they break??
+
+[^Historio-OC-barajxo]: Several proposals for building hydroelectric dams
+  there have been drawn up in the past few decades,
+  but unfortunately they all got shot down by nearby NIMBY farmers and
+  internal corruptions.
 
 ... To which the <span style="color:Silver">Queen</span> simply replied:
 "All of those factors would make the city look even COOLER in the end!".
@@ -883,11 +896,11 @@ What if they break??
 And then, it was so.
 
 Our (soon-to-be) legendary duo now begins the journey,
-of building the so-called impossible capital city,
+of building the so-called "impossible" capital city,
 in the valley of *Ĉemarvalo*.
 
 [^Historio-OC-Projektistoj]: These are not their full name, by the way;
-  it's <span style="color:Silver">Serena</span>'s nicknames for the couple.
+  it's <span style="color:Silver">Serena</span>'s nicknames for the duo.
 
 
-(More coming soon.)
+(More story bits may be added in the future.)
