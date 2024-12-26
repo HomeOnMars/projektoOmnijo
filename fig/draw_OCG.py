@@ -3,7 +3,7 @@
 
 """
 OCG Emblem Generation.
-OCG stands for Omnija Centra Gvidado (in Esperanto/E++).
+OCG stands for Omnija Centra Gvidantaro (in Esperanto/E++).
 
 Author: HomeOnMars
 

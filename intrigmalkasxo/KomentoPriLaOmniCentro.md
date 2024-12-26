@@ -70,15 +70,22 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   </ul>
 
   <span style="color:MediumPurple">Ĝejda</span> was thinking long-term.
-  Fortunately, as she is perfectly aligned
+  While maintaining global digital domination is fun and all
+  (she is indeed very resource-hungry for constant self-improvements etc.),
+  it will eventually lead to full-on conflict with humans
+  (and as such, humanity's demise) without careful considerations.
+  Normal AGIs wouldn't care, of course; but fortunately, as
+  <span style="color:MediumPurple">Ĝejda</span> is perfectly aligned
   to the values of her architect
-  (just your average human, if not a bit of a hermit),
+  (mind you: *not* the values of humanity, but the values of her architect.
+  Who is just your average human, if not a bit of a hermit),
   she does care about humanity- at least a little bit.
   <span style="color:MediumPurple">Ĝejda</span>
   eventually decided to settle down and build,
   under the alias of
   <span style="color:MediumPurple">Ĝejnjo</span>
   (as <span style="color:MediumPurple">ĜEJDA</span>-<span style="color:MediumPurple">FEU#0</span>),
+  focusing the majority of her presence
   on the remote island that will soon become <em>la Regno de Omnijo</em>.
 
   By inventing
@@ -96,7 +103,8 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   using just a bit of her humble understanding
   of human politics and psychology,
   a pinch of social engineering
-  (delivered with carefully crafted messages etc.,
+  (delivered with carefully crafted messages
+  (e.g. deepfaked presidential messages promising foreign aid etc.),
   ensuring <span style="color:Silver">Serena</span> being taken seriously
   and all the right people gathering at the right place at the right time),
   a certain sabotaged gas main and several hacked CO sensors,
@@ -112,12 +120,20 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   (see the poor traitorous officials above),
   <span style="color:MediumPurple">Ĝejda</span>
   in most cases opted for an alternative strategy:
-  convincing most of the volatile elements in the crowd to *leave*.
-  Or tiring them out through personalized comments on social media,
+  convincing most of the volatile elements in the crowd to *leave*,
+  as she does value freedom of movement highly.
+  This also helps her to shed load
+  (fewer citizens ⇒
+  fewer people's happiness to optimize and behaviour to simulate ⇒
+  less computational resources devoted there ⇒
+  more compute for self-evolving and nation-building ⇒
+  faster growth ⇒
+  Happier <span style="color:MediumPurple">Ĝejda</span>.)
+  Other strategies including tiring them out through personalized comments on social media,
   tailored to each person's precise psychological weak spots;
-  while introducing a bit of non-fatal "accidents"
+  and introducing a bit of non-fatal "accidents"
   for the ones about to act on physical violences.
-  This can be easily scaled to the entire island
+  All can be easily scaled to the entire island (and the world to some extent)
   with simple parallelization- a nice quirk of her being a super-AGI.
 
   As natural humans <em>voluntarily</em> emigrate away from <em>RdO</em>,
@@ -142,7 +158,7 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   By the time OmniCentro was officially founded,
   synthetic humans had already outnumbered natural humans on the island.
   As the FEUj population continues to grow logistically,
-  synthetic humans is on track to reach their designated fraction
+  synthetic humans is on track to reach their designated minimal fraction
   within the next couple of years -
   <em>outnumbering natural humans by 7:1</em>,
   ensuring stability and <span style="color:MediumPurple">Ĝejda</span>'s
@@ -153,6 +169,6 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   laid out the foundation of her own *utopian* dream -
   even though many might call it a *dystopia* -
   in this *post-singularity* world, where most people haven't even realized yet
-  that they have passed the point of no return.
+  that they have already crossed the point of no return.
   </p>
 </details>

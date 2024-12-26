@@ -10,10 +10,10 @@ for my upcoming fictional Cities: Skylines 2 city *OmniCentro*.
 
 PDX Mod Link: ***TBD***
 
-![Omnija Centra Gvidado (OCG) emblem](fig/OCG.svg)
+![Omnija Centra Gvidantaro (OCG) emblem](fig/OCG.svg)
 
 La Regno de Omnijo central authority
-*Omnija Centra Gvidado* (OCG) emblem (fictional).  
+*Omnija Centra Gvidantaro* (OCG) emblem (fictional).  
 See [below](#emblemo) for more information and image generation codes.
 
 
@@ -71,12 +71,12 @@ For more details, see the history of Omnijo in the [history](#la-historio-the-hi
 
 #### Fona Bulteno <br>Background Bulletin
 
-| Settings                | Acronym | Name                    |
-| :---------------------- | :-----: | :---------------------: |
-| City Name               |   OC    | OmniCentro              |
-| Country Name            |   RdO   | La Regno de Omnijo      |
-| Central Authority Name  |   OCG   | Omnija Centra Gvidado   |
-| Government Service Name |   OCR   | Omnija Centra Registaro |
+| Settings                | Acronym | Name                     |
+| :---------------------- | :-----: | :----------------------: |
+| City Name               |   OC    | OmniCentro               |
+| Country Name            |   RdO   | La Regno de Omnijo       |
+| Central Authority Name  |   OCG   | Omnija Centra Gvidantaro |
+| Government Service Name |   OCR   | Omnija Centra Registaro  |
 
 | (Fikciaj) Fonaj Informoj  <br>(Fictional) Background Information | Priskribo  <br>Description |
 | :---------------- | ---- |
@@ -139,7 +139,7 @@ For more details, see the history of Omnijo in the [history](#la-historio-the-hi
   Changes include:<br>
   Officially eliminated `ĥ` from the *E++* alphabet
   (mostly replaced with `k`);<br>
-  Decimal separator in *E++* is `.` instead of `,`, while thousands separator is space(` `) instead of `.`;<br><!-- markdownlint-disable-line no-space-in-code -->
+  Decimal separator in *E++* is `.` instead of `,`, while thousands/ten-thousands separator is space(` `) instead of `.`;<br><!-- markdownlint-disable-line no-space-in-code -->
   Built-in support for hexadecimal algebra:
   `Δ λ Π Ψ Υ Σ` written/pronounced as `del lom nak fup gan sig`;
   `hek`   for            16 (base-10),
@@ -147,14 +147,18 @@ For more details, see the history of Omnijo in the [history](#la-historio-the-hi
   `gil`   for         4 096 (base10, = 2^12 or       ΣΣΣ+1),
   `onio`  for        65 536 (base10, = 2^16 or      ΣΣΣΣ+1), and
   `dunio` for 4 294 967 296 (base10, = 2^32 or ΣΣΣΣ ΣΣΣΣ +1).
-  (As a reference, world population
-  9 100 000 000 (base10) = 2 1Υ66 Σλ00, pronounced as
+  (As a reference, 9 100 000 000 (base10) = 2 1Υ66 Σλ00, pronounced as
   du dunio, gil ganjent seshek ses onio, siggil lomjent.);<br>
+  All nouns are now gender-neutral by default,
+  unless added surfix `-in-` for female and `-iĉ-` for male.
+  E.g., `viro` is replaced by `viriĉo` for man,
+  and `virino` remains to be woman.
+  (See also [Wikipedia](https://en.wikipedia.org/wiki/Gender_reform_in_Esperanto#Common_elements_to_regularizing_Esperanto_gender).)<br>
   etc. etc.
 
 [^Bulteno-Religio]: What can I say-
   the <span style="color:Silver">Queen</span> has an taste for
-  idealistic causes (even though many call them hopeless).
+  idealistic causes (though some call them hopeless).
   Regardless, Pastafarianism is more of a
   "believe/leave whenever you want" kind of religion,
   So conversion is optional.
@@ -826,7 +830,7 @@ Then this trend slowed down.
 As the next great global economic recession unfolds[^Historio-RdO-Recesio],
 many countries are struggling and tightening their immigration rules.
 La Regno de Omnijo, however, did surprisingly well (again),
-attracting people to stay (or rather, emigration becomes so much harder).
+attracting people to stay (or rather, emigration becomes a lot harder).
 Actually, from an outsider perspective, Omnijo's response was almost perfect.
 <span style="color:Silver">Serena</span> was even able to take the chance
 to re-nationalize many of the private companies in her country -
