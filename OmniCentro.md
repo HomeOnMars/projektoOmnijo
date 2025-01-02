@@ -80,9 +80,9 @@ For more details, see the history of Omnijo in the [history](#la-historio-the-hi
 
 | (Fikciaj) Fonaj Informoj  <br>(Fictional) Background Information | Priskribo  <br>Description |
 | :---------------- | ---- |
-| Ŝtatestro  <br>Head of State   | <span style="color:Silver">Reĝino Serena de Omnijo</span> |
+| Ŝtatestro  <br>Head of State   | <span style="color:Silver">La Reĝino Serena de Omnijo</span> |
 | Registara Tipo  <br>Government Type   | Konstitucia Monarkio / Bonfara Diktaturo / Totalisma Reĝimo, depende de kiu vi demandas[^Bulteno-RegistaraTipo]. |
-| Urbaj Projektistoj  <br>City Designers | <span style="color:DeepSkyBlue">Ĉuĉjo la Arkitekto</span>  kaj  <span style="color:MediumPurple">Ĝejnjo la Suvereno</span> de OCFI |
+| Urbaj Projektistoj  <br>City Designers | <span style="color:DeepSkyBlue">Ĉuĉjo la Arkitekto</span> <!-- Fullname [DATA CORRUPTED/REDACTED] (N/A) -->  kaj  <span style="color:MediumPurple">Ĝejnjo la Suvereno</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo --> de OCFI |
 | Oficiala Lingvo  <br>Official Language | *Esperanto++*[^Bulteno-Lingvo] (A.k.a. ***E++***, pronounced as "Eppo".)  <br>(Transitioning from English in the next 16 years.) |
 | Oficiala Religio  <br>Official Religion | Pastafarianismo[^Bulteno-Religio] |
 | Oficialaj Koloroj  <br>Official Colors   | <span style="color:Silver">Arĝento/Silver #C0C0C0</span> [^Bulteno-Koloroj-Argxento]  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span> [^Bulteno-Koloroj-Bluo]  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span> [^Bulteno-Koloroj-Purpuro] |
@@ -284,13 +284,68 @@ Note that the letters are overlapping other acronyms in other categories - and t
 
 Examples:
 
-- Bus route 431 (i.e. 0x1af): B1ΔΣ (short for HB1ΔΣ)
-- High-speed Train line 3: V3 (short for HV3)
-- Motorway 13 N->S: ŬΨ-M (or UxD-M for ASCII encoding; M for Negative.)
-- Cargo train line 12: KVΠ
-- Cargo barge route 4: KP4
-- Cargo container ship route 14: KŜΥ (or KSxE for ASCII encoding; Becareful `Υ` is the upper-case version of greek letter `γ`, not English Y.)
-- Cargo Airline 5: KA5
+- Bus route 431 (i.e. 0x1af): `B1ΔΣ` (short for HB1ΔΣ)
+- High-speed Train line 3: `V3` (short for HV3)
+- Motorway 13 N->S: `ŬΨm` (or `UxDm` for ASCII encoding; m for Negative.)
+- Cargo train line 12: `KVΠ`
+- Cargo barge route 4: `KP4`
+- Cargo container ship route 14: `KŜΥ` (or KSxE for ASCII encoding; Becareful `Υ` is the upper-case version of greek letter `γ`, not English Y.)
+- Cargo Airline 5: `KA5`
+
+
+#### Lokoj
+
+Acronym for places types
+
+| Siglo  <br>Acronym | En esperanto  <br>In Esperanto | En la angla  <br>In English | Stilo  <br>Style |
+| :-----: | ------------------ | ---------------- | :------: |
+|    Ab   | **A**kvo**b**araĵo | Dam              | Prefikso |
+|    Mt   | **M**on**t**o      | Mountain         | Prefikso |
+|    Dt   | **D**is**t**rikto  | District         | Prefikso |
+|    St   | **S**tra**t**o     | Street           | Sufikso  |
+|    Vj   | **V**o**j**o       | Road             | Sufikso  |
+|    Ŭj   | a**Ŭ**tovo**j**o   | Motorway         | Prefikso |
+|    Ej   | f**E**rvo**j**o    | Railway          | Prefikso |
+
+Naming rules examples:
+
+- `Ab#O1` as a short version of `Akvobaraĵo-Olivkronaĵo #1`,
+  or `Ab-Olivkronaĵo #1`;
+- `Mt#O` as a short version of `Monto-Olivkronaĵo`, or `Mt-Olivkronaĵo`;
+- `Ŭj#Ψm` for Motorway 13 N->S `ŬΨm`, or `AŬtovojo #Ψm`;
+- `123 Olivkronaĵo St` as a short version of `123 Olivkronaĵo Strato`;
+
+
+#### Distrikto Numerada Sistemo
+
+District Numbering System
+
+Using the leading digit for identifying districts and areas:
+
+- `0`: (Generic) Inter-district travels within the city (no outside connections);
+- `1`: (SK) Pioniro-Vilaĝo;
+- `2`: (SR) Mt-Olivkronaĵo;
+- ...
+- `Σ`: (Generic) Outside connections.
+
+
+#### Konstruaj Nomoj
+
+Building names (translation lookup table)
+
+| En esperanto  <br>In Esperanto | En la angla  <br>In English |
+| ------------------------ | ------------------------ |
+| Stacidomo                | Train Station            |
+| Policejo                 | Police Station           |
+| Fajrobrigado             | Fire Station/Brigade/Department |
+| Kliniko                  | Clinic                   |
+| Hospitalo                | Hospital                 |
+| Tombejo                  | Cemetery                 |
+| Genetika Reciklada Fabrikejo  <br>Kremaciejo | Genetic Recycling Plant  <br>Crematorium |
+| Rubodeponejo             | Landfill                 |
+| Reciklada Fabrikejo      | Recycling Plant          |
+| Transformilejo           | Transformer station      |
+| Akvobaraĵo               | Dam                      |
 
 
 
