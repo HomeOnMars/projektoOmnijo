@@ -1,6 +1,7 @@
 bkp/
 temp/
 test*
+*.test.py
 *.ipynb
 *.png
 *.ogg

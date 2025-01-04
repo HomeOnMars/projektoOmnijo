@@ -104,6 +104,26 @@ def mv(
         if not dry_run: shutil.move(src, dst)
     return
 
+def cp(
+    src: str, dst: str,
+    # if None: will raise exceptions if dst already exists
+    overwrite: None|bool = None,
+    dry_run: bool = False,
+    verbose: bool = True,
+):
+    if os.path.normpath(src) == os.path.normpath(dst):
+        return
+    if not overwrite and os.path.exists(dst):
+        if overwrite is None:
+            if not dry_run: raise FileExistsError(f"File '{dst}' already exists.")
+            elif verbose: print(f"*** Error: File '{dst}' already exists.")
+        else:
+            if verbose: print(f"*   Warning: Skipping moving '{src}' to existing file '{dst}'.")
+    else:
+        if verbose: print(f"\t$ copy: '{src}' '{dst}'")
+        if not dry_run: shutil.copy2(src, dst)
+    return
+
 def do_write_file(file_path: str, overwrite: None|bool = None, verbose: bool = True) -> bool:
     if os.path.exists(file_path):
         if overwrite is None:
@@ -177,7 +197,9 @@ def name_func_default(no: int, old_filename: str) -> str:
 
 def normalize_csl2_music_files(
     name_func = lambda no, old_filename: f"{old_filename}", #f"",
-    tbc_ext_set: set[str] = {'.m4a'},    # tbc = to be converted; ext = file name extension
+    # tbc = to be converted; ext = file name extension
+    # Note: '._ogg' is a special case, where the file will be simply renamed as '.ogg'
+    tbc_ext_set: set[str] = {'._ogg', '.m4a', '.flac'},
     overwrite_move: None|bool = None,    # if None, will raise exception if file already exists
     overwrite_ogg : None|bool = None,    # if None, will raise exception if file already exists
     overwrite_json: None|bool = None,
@@ -232,23 +254,35 @@ def normalize_csl2_music_files(
     for fn, exts in filenames_dict.items():
         # make sure convertible file actually exist
         try: tbc_ext = list(tbc_ext_set.intersection(exts))[0]
-        except IndexError: continue
+        except IndexError:
+            if '.ogg' not in exts:
+                continue
+            else:
+                cp(
+                    f'{fn}.ogg', f'{new_fn}._ogg',
+                    overwrite=overwrite_ogg, dry_run=dry_run, verbose=verbose)
+                tbc_ext = '.ogg'
 
         if do_convert_ogg and (overwrite_ogg or '.ogg' not in exts):
-            # convert to ogg
-            cmds: list[str] = [
-                'ffmpeg',
-                '-i',
-                f'{fn}{tbc_ext}',
-                '-acodec', 'libvorbis',
-                '-ar', '48000',
-                '-vn',
-                f'{fn}.ogg',
-            ]
-            if verbose: print(f"\t$ {' '.join(cmds)}")
-            if not dry_run:
-                subprocess.run(cmds)
-                exts.add('.ogg')
+            if tbc_ext == '._ogg':
+                cp(
+                    f'{fn}._ogg', f'{new_fn}.ogg',
+                    overwrite=overwrite_ogg, dry_run=dry_run, verbose=verbose)
+                tbc_ext = '.ogg'
+            elif tbc_ext != '.ogg':
+                # convert to ogg
+                cmds: list[str] = [
+                    'ffmpeg',
+                    '-i', f'{fn}{tbc_ext}',    # input
+                    '-acodec', 'libvorbis',    # format: ogg (audio only)
+                    '-ar', '48000',
+                    '-vn',
+                    f'{fn}.ogg',
+                ]
+                if verbose: print(f"\t$ {' '.join(cmds)}")
+                if not dry_run:
+                    subprocess.run(cmds)
+                    exts.add('.ogg')
 
         if do_add_json or do_save_cover:
             tag: TinyTag = TinyTag.get(f'{fn}{tbc_ext}', image=do_save_cover)
@@ -287,11 +321,14 @@ def normalize_csl2_music_files(
 if __name__ == '__main__':
     normalize_csl2_music_files(
         name_func = lambda no, old_filename: f"M{name_func_default(no, old_filename)}",
-        overwrite_move= None,
-        overwrite_ogg = False,
-        overwrite_json= False,
-        overwrite_image=True,
-        do_save_cover = True,
+        overwrite_move  = None,
+        overwrite_ogg   = False,
+        overwrite_json  = False,
+        overwrite_image = False,
+        do_sort_fname  = True,
+        do_convert_ogg = True,
+        do_add_json    = True,
+        do_save_cover  = True,
         dry_run  = False,
         verbose  = True,
     )
