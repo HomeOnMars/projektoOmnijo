@@ -1,0 +1,167 @@
+<!-- -*- coding: utf-8 -*- -->
+
+OmniCentraj Specifoj - Sigloj
+===============================================================================
+
+OmniCentro Specifications.
+
+Background stories and technical specifications
+for my upcoming fictional Cities: Skylines 2 city *OmniCentro*.
+
+Legal
+-------------------------------------------------------------------------------
+
+> [!WARNING]
+> This is ***a work of fiction***.
+> Names, characters, businesses, places, events and incidents
+> are either the products of the author's imagination or used in a fictitious manner.
+> Any resemblance to actual persons, living or dead, or actual events is purely coincidental.
+
+This work © 2025 by HomeOnMars is licensed under CC BY-NC-SA 4.0.
+To view a copy of this license, visit <https://creativecommons.org/licenses/by-nc-sa/4.0/>
+
+Sigloj
+-------------------------------------------------------------------------------
+
+> Acronyms
+> <br>
+> [Back to OmniCentro Content](../OmniCentro.md#detalaj-informoj)
+
+### Direktoj
+
+> Directions
+
+| Siglo  <br>Acronym | En esperanto  <br>In Esperanto | En la angla  <br>In English |
+| :-----: | ------------- | -------- |
+|    N    | **N**orda     | Northern |
+|    S    | **S**uda      | Southern |
+|    R    | o**R**ienta   | Eastern  |
+|    K    | o**K**cidenta | Western  |
+|    L    | **L**iva      | Left     |
+|    C    | **C**entra    | Center   |
+|    D    | **D**ekstra   | Right    |
+|    P    | **P**lus  / Pozitiva /  <br>Maldekstruma /  <br>S->N / K->R | Plus  / Positive /  <br>Counterclockwise /  <br>S->N / W->E |
+|    M    | **M**inus / Negativa /  <br>Dekstruma    /  <br>N->S / R->K | Minus / Negative /  <br>       Clockwise /  <br>N->S / E->W |
+
+Note: P/M follows positive and negative directions in mathematics (thus P for counterclockwise directions).
+
+### Vojoj kaj Stratetoj
+
+> Roads and Lanes
+
+| Siglo  <br>Acronym | Strateta Tipo  <br>(en esperanto) | Lane Type  <br>(in English) | Strateta Larĝeco  <br>Lane Width |
+| :-----: | ------------------- | ------------------- | :---------: |
+|    H    | **H**omo/Piediranto | Human/Pedestrian    | $\geq$ 3.5m |
+|    B    | **B**iciklo         | Bike                |        ?    |
+|    J    | parke**J**o         | Parking Space       | $\geq$ 2m   |
+|    A    | **A**ŭtomobilo      | Car                 |        3m   |
+|    T    | **T**ransporto  <br>(Buso, Tramo)   | Transit  <br>(Bus, Tram)         |        3m   |
+|    E    | f**E**rvojo/m**E**troo | Railway/Metro    |        4m   |
+|    V    | **V**agonaro/Trajno | Train               |        4m   |
+|    G    | Neŭtrala **G**rundo  <br>Meza Strio | Neutral Ground  <br>Median Strip | $\geq$ 1m   |
+|    O    | l**O**kokupilo      | Placeholder         | -           |
+|    i    | **i**nverse         | vice versa          | -           |
+
+De-capitalize for lanes with inverted directions.
+
+Road name format examples:
+
+- HBA2gi
+  - pedestrain path (H) - bike (B) - 2 car lanes (A2) - central median (g) - same for the other half of the road (i)
+  - Median road with bike
+- Ha2Tgi
+  - pedestrain path (H) - 2 inverted car lanes (A2) - transit lane (T) - central median (g) - same for the other half (i)
+  - Median road for diverging diamond interchanges
+- HA3a2h
+  - pedestrain path (H) - 3 car lanes (A3) - 2 inverted car lanes (A2) - inverted pedestrain path (h)
+  - Asymmetrical median road
+
+See also:
+
+- (2024-09-12) [Road Builder mod](https://mods.paradoxplaza.com/mods/87190/Windows) by TDW
+
+### Publika Transportaj Linioj
+
+> Public Transit Lines
+
+Note that the letters are overlapping other acronyms in other categories - and they are not necessarily the same.
+
+| Siglo  <br>Acronym | Nomo  <br>(en esperanto) | Name  <br>(in English) | Rimarkoj  <br>Remarks |
+| :-----: | ------------------- | ------------------- | ----------- |
+|    A    | **A**viadilo        | Airplane            | |
+|  Ŭ / Ux | a**Ŭ**tovojo        | Motorway            | |
+|    B    | **B**uso            | Bus                 | |
+|    T    | **T**ramo           | Tram                | Regiona  <br>Regional |
+|    E    | f**E**rvojo/m**E**troo | Railway/Metro  <br>Monorail  <br>Train | Regiona  <br>Regional |
+|    V    | **V**agonaro/Trajno | Train               | Grandrapida Interurba  <br>High-speed Intercity |
+|    P    | **P**ramo           | Ferry               | Regiona  <br>Regional |
+|  Ŝ / Sx | **Ŝ**ipo            | Ship                | Interurba  <br>Intercity |
+|    H-   | **H**omo-/Pasaĝero- | Human-/Passenger-   | |
+|    K-   | **K**argo-          | Cargo-              | |
+
+> [!NOTE]
+>
+> 1. H prefix is usually omitted.
+> 2. All Line numbers are ***hexadecimal*** (see [ONKIO table](../teknikajxoj/ONKIO.md#onkio-tablo) `0x3_` column for respective symbols of 10~15: `Δ λ Π Ψ Υ Σ`).
+
+Examples:
+
+- Bus route 431 (i.e. 0x1af): `B1ΔΣ` (short for HB1ΔΣ)
+- High-speed Train line 3: `V3` (short for HV3)
+- Motorway 13 N->S: `ŬΨm` (or `UxDm` for ASCII encoding; m for Negative.)
+- Cargo train line 12: `KVΠ`
+- Cargo barge route 4: `KP4`
+- Cargo container ship route 14: `KŜΥ` (or KSxE for ASCII encoding; Becareful `Υ` is the upper-case version of greek letter `γ`, not English Y.)
+- Cargo Airline 5: `KA5`
+
+### Lokoj
+
+> Acronym for places types
+
+| Siglo  <br>Acronym | En esperanto  <br>In Esperanto | En la angla  <br>In English | Stilo  <br>Style |
+| :-----: | ------------------ | ---------------- | :------: |
+|    Ab   | **A**kvo**b**araĵo | Dam              | Prefikso |
+|    Mt   | **M**on**t**o      | Mountain         | Prefikso |
+|    Dt   | **D**is**t**rikto  | District         | Prefikso |
+|    St   | **S**tra**t**o     | Street           | Sufikso  |
+|    Vj   | **V**o**j**o       | Road             | Sufikso  |
+|    Ŭj   | a**Ŭ**tovo**j**o   | Motorway         | Prefikso |
+|    Ej   | f**E**rvo**j**o    | Railway          | Prefikso |
+
+Naming rules examples:
+
+- `Ab#O1` as a short version of `Akvobaraĵo-Olivkronaĵo #1`,
+  or `Ab-Olivkronaĵo #1`;
+- `Mt#O` as a short version of `Monto-Olivkronaĵo`, or `Mt-Olivkronaĵo`;
+- `Ŭj#Ψm` for Motorway 13 N->S `ŬΨm`, or `AŬtovojo #Ψm`;
+- `123 Olivkronaĵo St` as a short version of `123 Olivkronaĵo Strato`;
+
+### Distrikto Numerada Sistemo
+
+> District Numbering System
+
+Using the leading digit for identifying districts and areas:
+
+- `0`: (Generic) Inter-district travels within the city (no outside connections);
+- `1`: (SK) Pioniro-Vilaĝo;
+- `2`: (SR) Mt-Olivkronaĵo;
+- ...
+- `Σ`: (Generic) Outside connections.
+
+### Konstruaj Nomoj
+
+> Building names (translation lookup table)
+
+| En esperanto  <br>In Esperanto | En la angla  <br>In English |
+| ------------------------ | ------------------------ |
+| Stacidomo                | Train Station            |
+| Policejo                 | Police Station           |
+| Fajrobrigado             | Fire Station/Brigade/Department |
+| Kliniko                  | Clinic                   |
+| Hospitalo                | Hospital                 |
+| Tombejo                  | Cemetery                 |
+| Genetika Reciklada Fabrikejo  <br>Kremaciejo | Genetic Recycling Plant  <br>Crematorium |
+| Rubodeponejo             | Landfill                 |
+| Reciklada Fabrikejo      | Recycling Plant          |
+| Transformilejo           | Transformer station      |
+| Akvobaraĵo               | Dam                      |

@@ -13,7 +13,6 @@
                 "img",
                 "details", "summary", "blockquote", "cite",
             ]
-        },
-        "no-multiple-blanks": false,
+        }
     }
 }
