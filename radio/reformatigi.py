@@ -189,6 +189,8 @@ def name_func_default(no: int, old_filename: str) -> str:
     
     # normalize - throw away any char unsupported by windows file explorer
     new_fn = f"{no:03}_{new_fn}".translate({ord(c): None for c in '\\/:*?"<>|'})
+    # remove '+' in filename that is causing problems ('InvalidOperationException: HTTP/1.1 404 Not Found') with the game
+    new_fn = new_fn.translate({ord('+'): '-'})
     return new_fn
 
 
@@ -259,23 +261,40 @@ def normalize_csl2_music_files(
                 continue
             else:
                 cp(
-                    f'{fn}.ogg', f'{new_fn}._ogg',
+                    f'{fn}.ogg', f'{fn}._ogg',
                     overwrite=overwrite_ogg, dry_run=dry_run, verbose=verbose)
-                tbc_ext = '.ogg'
+                tbc_ext = '._ogg'
 
         if do_convert_ogg and (overwrite_ogg or '.ogg' not in exts):
             if tbc_ext == '._ogg':
-                cp(
-                    f'{fn}._ogg', f'{new_fn}.ogg',
-                    overwrite=overwrite_ogg, dry_run=dry_run, verbose=verbose)
-                tbc_ext = '.ogg'
+                # Force re-format as ogg
+                #     to overwrite anything funny in the metadata
+                cmds: list[str] = [
+                    'ffmpeg',
+                    '-y',                      # overwrite
+                    '-i', f'{fn}{tbc_ext}',    # input
+                    # '-acodec', 'copy',
+                    '-acodec', 'libvorbis',    # format: ogg (audio only)
+                    '-ar', '48000',            # audio sampling frequency
+                    '-fflags', '+igndts',      # regen DTS to fix the warnings
+                        # (see <https://stackoverflow.com/questions/55914754/how-to-fix-non-monotonous-dts-in-output-stream-01-when-using-ffmpeg>)
+                        # doesn't seem to work actually
+                    '-loglevel', 'error',       # tell ffmpeg to stop bothering with the warnings about above
+                    '-vn',
+                    f'{fn}.ogg',
+                ]
+                if verbose: print(f"\t$ {' '.join(cmds)}")
+                if not dry_run:
+                    subprocess.run(cmds)
+                    exts.add('.ogg')
             elif tbc_ext != '.ogg':
                 # convert to ogg
                 cmds: list[str] = [
                     'ffmpeg',
+                    '-y',                      # overwrite
                     '-i', f'{fn}{tbc_ext}',    # input
                     '-acodec', 'libvorbis',    # format: ogg (audio only)
-                    '-ar', '48000',
+                    '-ar', '48000',            # audio sampling frequency
                     '-vn',
                     f'{fn}.ogg',
                 ]
@@ -285,9 +304,16 @@ def normalize_csl2_music_files(
                     exts.add('.ogg')
 
         if do_add_json or do_save_cover:
-            tag: TinyTag = TinyTag.get(f'{fn}{tbc_ext}', image=do_save_cover)
+            tag: None|TinyTag = None
+            try:
+                tag = TinyTag.get(f'{fn}{tbc_ext}', image=do_save_cover)
+            except Exception:
+                try:
+                    tag = TinyTag.get(f'{fn}{tbc_ext}', image=False)
+                except Exception as e:
+                    if verbose: print(f"*** Error: {fn}:\n\t{e}")
 
-            if do_add_json:
+            if do_add_json and tag is not None:
                 if overwrite_json or '.json' not in exts:
                     data = RADIO_JSON_AUDIOFLIE.copy()
                     data["Title"] = tag.title
@@ -299,7 +325,7 @@ def normalize_csl2_music_files(
                     )
                 exts.add('.json')
 
-            if do_save_cover:
+            if do_save_cover and tag is not None:
                 image = tag.images.any
                 if image is not None:
                     try:
