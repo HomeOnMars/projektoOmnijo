@@ -43,7 +43,7 @@ import shutil
 import subprocess
 import json
 
-# 3rd party libs
+# 3rd-party libs
 from tinytag import TinyTag
 
 
