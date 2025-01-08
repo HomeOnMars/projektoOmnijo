@@ -34,7 +34,8 @@ Contents
 
 - Cities documentations
   - [***OmniCentro***](OmniCentro.md)
-- Some Scripts (will require some effort to make them work for you)
+- Some python scripts I wrote
+  (may not work, or may require considerable effort to make them work. No promises.)
   - For CSL2 Extended Radio mod
-    - [konverti_csl1radioj.py](radio/konverti_csl1radioj.py): convert your owned CSL1 radio contents into CSL2 Extended Radio mod readable files.
-    - [reformatigi.py](radio/reformatigi.py) Renaming muscs files, convert them to ogg files, and CSL2 Extended Radio generate json file automatically.
+    - [konverti_csl1radioj.py](radio/konverti_csl1radioj.py): for converting owned CSL1 radio contents into CSL2 Extended Radio mod readable files.
+    - [reformatigi.py](radio/reformatigi.py) for renaming muscs files, converting them to ogg files, and generating CSL2 Extended Radio `.json` files automatically.

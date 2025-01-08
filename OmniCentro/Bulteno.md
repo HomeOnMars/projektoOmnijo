@@ -16,8 +16,7 @@ Legal
 > are either the products of the author's imagination or used in a fictitious manner.
 > Any resemblance to actual persons, living or dead, or actual events is purely coincidental.
 
-This work © 2024 by HomeOnMars is licensed under CC BY-NC-SA 4.0.
-To view a copy of this license, visit <https://creativecommons.org/licenses/by-nc-sa/4.0/>
+<p xmlns:cc="http://creativecommons.org/ns#" >This work by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/HomeOnMars">HomeOnMars</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
 
 Bulteno
 -------------------------------------------------------------------------------
@@ -46,7 +45,7 @@ near 56°15'S, 140°15'W (coordinates are fictional- it should be open ocean the
 The island has a size of approximately Iceland,
 i.e. $\sim 100 \, 000 \, \mathrm{km}^2$.
 
-For more details, see the history of Omnijo in the [history](#la-historio-the-history) section below.
+For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 
 ### Fonrakonta Bulteno
 
