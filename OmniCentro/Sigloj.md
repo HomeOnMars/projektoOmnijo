@@ -3,10 +3,9 @@
 OmniCentraj Specifoj - Sigloj
 ===============================================================================
 
-OmniCentro Specifications.
+> OmniCentro Specifications - Acronyms
 
-Background stories and technical specifications
-for my upcoming fictional Cities: Skylines 2 city *OmniCentro*.
+Specifications for my fictional Cities: Skylines 2 city *OmniCentro*.
 
 Legal
 -------------------------------------------------------------------------------
@@ -17,7 +16,7 @@ Legal
 > are either the products of the author's imagination or used in a fictitious manner.
 > Any resemblance to actual persons, living or dead, or actual events is purely coincidental.
 
-This work © 2025 by HomeOnMars is licensed under CC BY-NC-SA 4.0.
+This work © 2024 by HomeOnMars is licensed under CC BY-NC-SA 4.0.
 To view a copy of this license, visit <https://creativecommons.org/licenses/by-nc-sa/4.0/>
 
 Sigloj
@@ -54,7 +53,7 @@ Note: P/M follows positive and negative directions in mathematics (thus P for co
 |    H    | **H**omo/Piediranto | Human/Pedestrian    | $\geq$ 3.5m |
 |    B    | **B**iciklo         | Bike                |        ?    |
 |    J    | parke**J**o         | Parking Space       | $\geq$ 2m   |
-|    A    | **A**ŭtomobilo      | Car                 |        3m   |
+|  Ŭ / U  | a**Ŭ**tomobilo      | Car                 |        3m   |
 |    T    | **T**ransporto  <br>(Buso, Tramo)   | Transit  <br>(Bus, Tram)         |        3m   |
 |    E    | f**E**rvojo/m**E**troo | Railway/Metro    |        4m   |
 |    V    | **V**agonaro/Trajno | Train               |        4m   |
@@ -89,11 +88,12 @@ Note that the letters are overlapping other acronyms in other categories - and t
 | Siglo  <br>Acronym | Nomo  <br>(en esperanto) | Name  <br>(in English) | Rimarkoj  <br>Remarks |
 | :-----: | ------------------- | ------------------- | ----------- |
 |    A    | **A**viadilo        | Airplane            | |
+|    B    | **B**iciklo         | Bike                | |
 |  Ŭ / Ux | a**Ŭ**tovojo        | Motorway            | |
-|    B    | **B**uso            | Bus                 | |
+|    U    | b**U**so            | Bus                 | |
 |    T    | **T**ramo           | Tram                | Regiona  <br>Regional |
 |    E    | f**E**rvojo/m**E**troo | Railway/Metro  <br>Monorail  <br>Train | Regiona  <br>Regional |
-|    V    | **V**agonaro/Trajno | Train               | Grandrapida Interurba  <br>High-speed Intercity |
+|    V    | **V**agonaro/Trajno | Train               | Altrapidaj Interurba  <br>High-speed Intercity |
 |    P    | **P**ramo           | Ferry               | Regiona  <br>Regional |
 |  Ŝ / Sx | **Ŝ**ipo            | Ship                | Interurba  <br>Intercity |
 |    H-   | **H**omo-/Pasaĝero- | Human-/Passenger-   | |
@@ -106,7 +106,7 @@ Note that the letters are overlapping other acronyms in other categories - and t
 
 Examples:
 
-- Bus route 431 (i.e. 0x1af): `B1ΔΣ` (short for HB1ΔΣ)
+- Bus route 431 (i.e. 0x1af): `U1ΔΣ` (short for HB1ΔΣ)
 - High-speed Train line 3: `V3` (short for HV3)
 - Motorway 13 N->S: `ŬΨm` (or `UxDm` for ASCII encoding; m for Negative.)
 - Cargo train line 12: `KVΠ`

@@ -1,0 +1,216 @@
+<!-- -*- coding: utf-8 -*- -->
+
+Retaj normoj por vojoj kaj reloj
+===============================================================================
+
+> Networks standards for roads and rails
+
+Technical specifications for my fictional Cities: Skylines 2 city *OmniCentro*.
+
+Legal
+-------------------------------------------------------------------------------
+
+> [!WARNING]
+> This is ***a work of fiction***.
+> Names, characters, businesses, places, events and incidents
+> are either the products of the author's imagination or used in a fictitious manner.
+> Any resemblance to actual persons, living or dead, or actual events is purely coincidental.
+
+<p xmlns:cc="http://creativecommons.org/ns#" >This work by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/HomeOnMars">HomeOnMars</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
+
+Retoj
+-------------------------------------------------------------------------------
+
+> Networks
+> <br>
+> [Back to OmniCentro Content](../OmniCentro.md#teknikaj-specifoj)
+
+-------------------------------------------------------------------------------
+
+> [!NOTE]
+> Both trains' and trucks' engine power has been exaggerated by 40\% to 110\%
+> compared to real life, since *RdO* enjoys technological superiority.  
+> See [below verification section](#networks-specification-details-and-verification)
+> for calculations.
+
+### Vojoj
+
+> Roads
+
+#### Aŭtovojoj
+
+> Motorways
+
+- Gradient $s$ and Curve radius $R$ limit:
+
+  |             |  max Gradient $s$ |  min Curve radius $R$        | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Notes |
+  | ----------- | :-------: | :----------: | :--------: | --- | --- | --- | --- | ----- |
+  | -           |  4   \%   |  552m (69u)  |  125 km/h  |  $95\degree$ | $131\degree$ | $154\degree$ | $167\degree$ | |
+  | Recommended |  6   \%   |  352m (44u)  |  100 km/h  | -            | $108\degree$ | $141\degree$ | $160\degree$ | |
+  | Soft Limit  |  8   \%   |  224m (28u)  |   80 km/h  | -            | -            | $121\degree$ | $149\degree$ | For ramps / In mountains |
+  | -           | 10   \%   |  128m (16u)  |   60 km/h  | -            | -            |  $90\degree$ | $127\degree$ | Mountains Only |
+  | Hard Limit  | 10   \%   |   32m  (4u)  |   30 km/h  | -            | -            | -            |  $90\degree$ | Mountains Only |
+
+  - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
+    i.e., $\theta_\mathrm{512m}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 512m.
+  - Source: (2024-08-17) [Wikipedia](https://en.wikipedia.org/wiki/Grade_(slope)#Roads): US
+  - Source: (2024-08-17) [Wikipedia](https://en.wikipedia.org/wiki/International_E-road_network#Road_design_standards): EU
+    - According to the source,
+      $R \geq 1000 \mathrm{m}$ for $v_\mathrm{max} \simeq 140 \mathrm{km/h}$; and
+      $R \geq  120 \mathrm{m}$ for $v_\mathrm{max} \simeq  60 \mathrm{km/h}$.
+    - ~~Assuming the Curve radius limit $R \propto v_\mathrm{max}^2$,
+      i.e. $R \approx v_\mathrm{max}^2 / (30 \mathrm{mh/km})$ for lower  limit,
+      and  $R \approx v_\mathrm{max}^2 / (20 \mathrm{mh/km})$ for higher limit~~.
+  - Source: (2024-08-23) [Xin et al. (2021)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256301): for $R$
+    - [figure 8](https://doi.org/10.1371/journal.pone.0256301.g008): Predictions of speed thresholds of the truck in a sharp turn
+- Arterial / Collector / Local Roads
+- Gradient  limit:
+  (Arbitrarily set to:)
+
+  |             | max Gradient $s$ | Speed limit $v_\mathrm{max}$ | Notes |
+  | ----------- | :-------: | :-------: | ----------- |
+  | Recommended |  10  \%   |  60 km/h  | Arterial    |
+  | Soft Limit  |  13.5\%   |  50 km/h  | Collector   |
+  | -           |  17.5\%   |  40 km/h  | Local roads |
+  | -           |  24.5\%\* |  30 km/h  | Local roads |
+  | Hard Limit  |  30  \%\* |  25 km/h  | Local roads |
+
+  \* Note that vanilla game by default only allow up to $20 \%$ gradient.
+
+#### Biciklovojoj
+
+> Bike paths
+
+- TBD
+
+#### Piedvojoj
+
+> Pedestrian paths
+
+- TBD
+
+### Reloj
+
+> Rails
+
+#### Kargaj kaj malnovaj personaj fervojoj
+
+> Cargo and old passenger railways
+
+- Gradient $s$ and Curve radius $R$ limit:
+
+  |             | max Gradient $s$ | min Curve radius $R$ | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
+  | ----------- | :--------------: | :------------------: | :--------------------------: | --- | --- | --- | --- | ------------------- |
+  | Recommended |  1.5 \%  |  800m (100u)  |  135 km/h  | $115\degree$ | $145\degree$ | $162\degree$ | $171\degree$ | |
+  | Hard Limit  |  3.5 \%  |  160m  (20u)  |   60 km/h  | -            | -            | $103\degree$ | $137\degree$ | Lithgow Zig Zag |
+
+  - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
+    i.e., $\theta_\mathrm{512m}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 512m.
+  - Curve radius is obtained by $R \propto v_\mathrm{max}^2$ (See [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant).)
+  - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant): $R$ info
+  - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples (see Lithgow Zig Zag)
+  - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
+  - Note: Liberties have been taken for the hard limit of $s$ due to steep terrain in the map. Also steeper is more fun.
+- Length / Power
+  - train length: 25 (16m/2u-long) cars (**400m/50u**): 1 engine + 24 trailers.
+  - For track intersections: $\geq$ 448m/56u.
+
+#### Altrapidaj fervojoj
+
+> High-speed railways
+
+- Gradient $s$ and Curve radius $R$ limit:
+
+  |             | max Gradient $s$ | min Curve radius $R$ | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
+  | ----------- | :------: | :------------: | :--------: | --- | --- | --- | --- | ------------------- |
+  | Recommended |  1.8 \%  |  5400m (675u)  |  350 km/h  | $170\degree$ | $175\degree$ | $178\degree$ | $179\degree$ | |
+  | -           |  2   \%  |  5000m (625u)  |  335 km/h  | -            | -            | -            | -            | |
+  | Soft Limit  |  2.4 \%  |  4000m (500u)  |  300 km/h  | $166\degree$ | $173\degree$ | $177\degree$ | $179\degree$ | |
+  | Hard Limit  |  3.2 \%  |  2800m (350u)  |  250 km/h  | $160\degree$ | $170\degree$ | $175\degree$ | $178\degree$ | |
+  | -           |  3.5 \%  |  2440m (305u)  |  235 km/h  | -            | -            | -            | -            | |
+  | -           |  4.2 \%  |  1800m (225u)  |  200 km/h  | -            | -            | -            | -            | |
+
+  - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
+  - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
+- Length / Power
+  - Assumed EMU (Electric Multiple Unit).
+  - Train length: 10 (24m/3u-long) train cars (**240m/30u**).
+  - For track intersections: $\geq$ 288m/36u.
+  - Assumed power consumption: 1600hp/1.2MW per (24m/3u-long) train car - 12MW for a full length train.
+
+#### Metrooj / personaj fervojoj
+
+> Metro / subway / passenger railways
+
+- Gradient $s$ and Curve radius $R$ limit:
+
+  |             | max Gradient $s$ | min Curve radius $R$  | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
+  | ----------- | :--------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
+  | Recommended |  5   \%  |  576m (72u)  |  135 km/h  | $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;  <br>($R$) Assuming tilting trains: see [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant). |
+  | Hard Limit  |  7   \%  |  320m (40u)  |  100 km/h  | -                 | $103\degree$ | $137\degree$  | $158\degree$ | ($s$) Bernina Railway, Switzerland;  <br>($R$) Bay Area Rapid Transit, United States. |
+
+  - Note: curve radius restrictions may be relaxed when exiting / entering stations where speed is slow.
+  - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
+  - Source: (2024-08-17) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
+    - Note: $R$ can go as low as 64m as seen in Central line, London Underground, United Kingdom; but that's probably too tight.
+  - Source: (2024-08-27) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant): $R$ info.
+- Length / Power
+  - Assumed EMU (Electric Multiple Unit).
+  - Assuming tilting trains.
+  - Assumed power consumption: 1200hp/0.9MW per (24m/3u-long) train car.
+
+#### Tramoj
+
+> Trams
+
+- Gradient $s$ limit:
+
+  |             | max Gradient $s$ | min Curve radius $R$ (without slowing)  | Speed limit $v_\mathrm{max}$ | Real world examples |
+  | ----------- | :--------------: | :--------------: | :--------------------------: | ------------------- |
+  | Recommended |  10   \%  |  288m (36u)  |  80 km/h  | Sheffield Supertram, Sheffield |
+  | Hard Limit  |  13.5 \%  |  160m (20u)  |  60 km/h  | Lisbon Tramways, Portugal |
+
+  - Note: faster speed may be allowed with gentler gradient and larger curve radius (see above metro section.)
+  - Curve radius limit here can be ignored, as trams slow down near intersections.
+  - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
+- Length / Power
+  - Assumed EMU (Electric Multiple Unit).
+  - Assuming non-tilting trains.
+  - Assumed power consumption: 800hp/0.6MW per (16m/2u-long) train car.
+
+#### Monoreloj
+
+> Monorails
+
+- Gradient $s$ and Curve radius $R$ limit:
+
+|             | max Gradient $s$ | min Curve radius $R$  | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
+| ----------- | :--------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
+| Recommended |  10  \%  |  TBD                     |  80 km/h  | -                 | -                 | -                 | -                 | TBD               |
+| Hard Limit  |  12  \%  |  TBD                     |  70 km/h  | -                 | -                 | -                 | -                 | TBD               |
+
+- Source: (2024-09-28) [Miller et al. (2014)](https://www.researchgate.net/publication/301302321_Monorails_for_sustainable_transportation_-_a_review)
+  - Table 4.1 $s$ info (Multiplied by 2 since its estimated values seems too conservative in general- see above; same as the speed limit $v_\mathrm{max}$. Also it's a game and steeper/faster is more fun.)
+
+### Networks specification details and verification
+
+> For nerds (like me) only.
+
+#### Angle $\theta_{d}$ equation
+
+$\theta_{d} = 2 \tan^{-1}{\frac{R}{d}}$
+
+```python
+    # python code
+    import numpy as np
+    # Remember to translate radian into degree
+    theta_deg = lambda R, d: np.ceil(2*np.atan(R/d)/np.pi*180)
+    get_R = lambda theta_deg, d: np.tan(theta_deg/2/180*np.pi)*d
+    # Example
+    print([(d, theta_deg(R=720, d=d)) for d in (512, 256, 128, 64)])
+    print(theta_deg(R=4000, d=512), get_R(theta_deg=166, d=512))
+```
+
+#### Analysis of train/truck engine's ability to haul cars:
+
+See my python code [here](Retoj.py).

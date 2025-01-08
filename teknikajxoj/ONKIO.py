@@ -170,8 +170,8 @@ def chr_2_txt_onkio(c: int, highlight: bool = False) -> str:
 
 
 def get_md_table(
-    chr_2_txt: type(abs) = chr_2_txt_ascii,
-    highlight_func: None|type(abs) = None,
+    chr_2_txt = chr_2_txt_ascii,    # type: function
+    highlight_func = None,    # type: None|function
     title: str = '',
     nrow: int = 16,
     ncol: int = 8,

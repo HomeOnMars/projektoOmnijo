@@ -3,10 +3,9 @@
 OmniCentraj Specifoj - Lingvo
 ===============================================================================
 
-OmniCentro Specifications.
+> OmniCentro Specifications - Language
 
-Background stories and technical specifications
-for my upcoming fictional Cities: Skylines 2 city *OmniCentro*.
+Background stories for my fictional Cities: Skylines 2 city *OmniCentro*.
 
 Legal
 -------------------------------------------------------------------------------
@@ -17,7 +16,7 @@ Legal
 > are either the products of the author's imagination or used in a fictitious manner.
 > Any resemblance to actual persons, living or dead, or actual events is purely coincidental.
 
-This work © 2025 by HomeOnMars is licensed under CC BY-NC-SA 4.0.
+This work © 2024 by HomeOnMars is licensed under CC BY-NC-SA 4.0.
 To view a copy of this license, visit <https://creativecommons.org/licenses/by-nc-sa/4.0/>
 
 Lingvo
@@ -27,13 +26,22 @@ Lingvo
 > <br>
 > [Back to OmniCentro Content](../OmniCentro.md#detalaj-informoj)
 
-
 The official language in [RdO](Bulteno.md#fonrakonta-bulteno) is
-***Esperanto++*** (often written as `E++`, pronounced as `Eppo`),
+***Esperanto++*** (often written as `E++`, pronounced as `Epopo`),
 a fictional artificial variant of Esperanto
-as specified by <span style="color:Silver">Reĝino Serena</span> herself,
+specified by <span style="color:Silver">Reĝino Serena</span> herself,
 aiming to offer maximum regularity for easy learning,
 while conforming to the existing world as much as possible.
+<span style="color:Silver">Queen Serena</span> declared `Epopo`
+as the new official language of RdO about three months in her reign,
+set to gradually replace English in the next 16 years
+in all RdO official documentations and communications.
+
+One would think that this random order
+is surely gonna cause massive civil unrest,
+but by that time the people are already getting used to the <span style="color:Silver">Queen</span>'s ridiculous style;
+plus, they also have the chaotic implementation of
+her new UBI (universal basic income) policy to worry about.
 
 ### Specifoj
 

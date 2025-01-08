@@ -3,15 +3,13 @@
 Projekto Omnijo  <br>  Project Omnijo
 ===============================================================================
 
-
-Documents for my upcoming Cities: Skylines 2 cities,
-in the fictional country *la Regno de Omnijo* (the Kingdom of Omnijo)
+Documents for my Cities: Skylines 2 cities
+set in the fictional country *la Regno de Omnijo* (the Kingdom of Omnijo)
 created by my imagination.
 
 ![RdO emblem](fig/RdO.svg)
 
 *La Regno de Omnijo* (RdO) [emblem](OmniCentro.md#emblemo) (fictional).
-
 
 Legal
 -------------------------------------------------------------------------------
@@ -34,4 +32,9 @@ Legal
 Contents
 -------------------------------------------------------------------------------
 
-- [OmniCentro](OmniCentro.md)
+- Cities documentations
+  - [***OmniCentro***](OmniCentro.md)
+- Some Scripts (will require some effort to make them work for you)
+  - For CSL2 Extended Radio mod
+    - [konverti_csl1radioj.py](radio/konverti_csl1radioj.py): convert your owned CSL1 radio contents into CSL2 Extended Radio mod readable files.
+    - [reformatigi.py](radio/reformatigi.py) Renaming muscs files, convert them to ogg files, and CSL2 Extended Radio generate json file automatically.

@@ -6,6 +6,7 @@
         "MD010": {
             "code_blocks": false,
         },
+        "MD028": false,
         "MD033": {
             "allowed_elements": [
                 "br", "span", "p", "a", "b", "em",

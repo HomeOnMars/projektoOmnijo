@@ -3,10 +3,9 @@
 OmniCentraj Specifoj - Bulteno
 ===============================================================================
 
-OmniCentro Specifications.
+> OmniCentro Specifications - Bulletin
 
-Background stories and technical specifications
-for my upcoming fictional Cities: Skylines 2 city *OmniCentro*.
+Background stories for my fictional Cities: Skylines 2 city *OmniCentro*.
 
 Legal
 -------------------------------------------------------------------------------
@@ -17,7 +16,7 @@ Legal
 > are either the products of the author's imagination or used in a fictitious manner.
 > Any resemblance to actual persons, living or dead, or actual events is purely coincidental.
 
-This work © 2025 by HomeOnMars is licensed under CC BY-NC-SA 4.0.
+This work © 2024 by HomeOnMars is licensed under CC BY-NC-SA 4.0.
 To view a copy of this license, visit <https://creativecommons.org/licenses/by-nc-sa/4.0/>
 
 Bulteno
@@ -64,8 +63,8 @@ For more details, see the history of Omnijo in the [history](#la-historio-the-hi
 | :---------------- | ---- |
 | Ŝtatestro  <br>Head of State   | <span style="color:Silver">La Reĝino Serena de Omnijo</span> |
 | Registara Tipo  <br>Government Type   | Konstitucia Monarkio / Bonfara Diktaturo / Totalisma Reĝimo, depende de kiu vi demandas[^Bulteno-RegistaraTipo]. |
-| Urbaj Projektistoj  <br>City Designers | <span style="color:DeepSkyBlue">Ĉuĉjo la Arkitekto</span> <!-- Fullname [DATA CORRUPTED/REDACTED] (N/A) -->  kaj  <span style="color:MediumPurple">Ĝejnjo la Suvereno</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo --> de OCFI |
-| Oficiala Lingvo  <br>Official Language | [*Esperanto++*](Lingvo.md#lingvo), a.k.a. ***E++***, pronounced as `Eppo`. (See link for more info.)  <br>(Transitioning from English in the next 16 years.) |
+| Urbaj Projektistoj  <br>City Designers | <span style="color:DeepSkyBlue">Ĉuĉjo la Arkitekto</span> <!-- Fullname [DATA CORRUPTED/REDACTED] (N/A) -->  kaj  <span style="color:MediumPurple">Ĝejnjo la Suvereno</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo de Omnijo --> de OCFI |
+| Oficiala Lingvo  <br>Official Language | [*Esperanto++*](Lingvo.md#lingvo), a.k.a. ***E++***, pronounced as `Epopo`. (See link for more info.)  <br>(Transitioning from English in the next 16 years.) |
 | Oficiala Religio  <br>Official Religion | Pastafarianismo[^Bulteno-Religio] |
 | Oficialaj Koloroj  <br>Official Colors   | <span style="color:Silver">Arĝento/Silver #C0C0C0</span> [^Bulteno-Koloroj-Argxento]  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span> [^Bulteno-Koloroj-Bluo]  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span> [^Bulteno-Koloroj-Purpuro] |
 | Oficialaj Himno  <br>Official Anthem | *Oceans* (*Where Feet May Fail*), originally by Hillsong UNITED  <br>Modified acoustic E++ version[^Bulteno-Himno]. |

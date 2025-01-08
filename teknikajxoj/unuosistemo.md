@@ -1,12 +1,11 @@
 <!-- -*- coding: utf-8 -*- -->
 
-Sistemo de Unuoj  
-System of Units
+Sistemo de Unuoj
 ===============================================================================
 
-Background stories and technical specifications
-for my upcoming fictional Cities: Skylines 2 city *OmniCentro*.
+> System of Units
 
+Technical specifications for my fictional Cities: Skylines 2 city *OmniCentro*.
 
 Legal
 -------------------------------------------------------------------------------
@@ -17,21 +16,15 @@ Legal
 > are either the products of the author's imagination or used in a fictitious manner.
 > Any resemblance to actual persons, living or dead, or actual events is purely coincidental.
 
-This work © 2024 by HomeOnMars is licensed under CC BY-NC-SA 4.0.
-To view a copy of this license, visit <https://creativecommons.org/licenses/by-nc-sa/4.0/>
+<p xmlns:cc="http://creativecommons.org/ns#" >This work by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/HomeOnMars">HomeOnMars</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
 
+Informoj
 -------------------------------------------------------------------------------
 
+> Information (regarding the unit system)
+> <br>
+> [Back to OmniCentro Content](../OmniCentro.md#teknikaj-specifoj)
 
-
-
-
-
-
-
-
-Informoj  
-Information
 -------------------------------------------------------------------------------
 
 Based on [Planck natural units](https://en.wikipedia.org/wiki/Natural_units#Planck_units).
@@ -42,26 +35,14 @@ which is compatible with the standard gauge ($1.4351 \mathrm{m}$)
 with a difference of only $2 \mathrm{mm}$.
 (Hopefully that's small enough...)
 
--------------------------------------------------------------------------------
-
-Note:
-$l_P \equiv \sqrt{\frac{\hbar G}{c^3}}$
-is the [Planck length](https://simple.wikipedia.org/wiki/Planck_length#):
-$c$
-is the speed of light,
-$\hbar$ is the reduced Planck constant, and
-$G$
-is the gravitational constant.
-
--------------------------------------------------------------------------------
-
-
-
+> [!NOTE]
+> $l_P \equiv \sqrt{\frac{\hbar G}{c^3}}$
+> is the [Planck length](https://simple.wikipedia.org/wiki/Planck_length#),
+> with $c$ as the speed of light,
+> $\hbar$ as the reduced Planck constant, and
+> $G$ as the gravitational constant.
 
 ### Code illustrations
-
--------------------------------------------------------------------------------
-
 
 ```python
     # natural units

@@ -3,7 +3,10 @@
 ONKIO
 ===============================================================================
 
-ONKIO: Omnija Norma Kodo por Informo-Interŝanĝo (fictional).
+> ONKIO: **O**mnija **N**orma **K**odo por **I**nformo-Interŝanĝ**o**
+<!-- > ONKIO: Omnija Norma Kodo por Informo-Interŝanĝo -->
+
+Technical specifications for my fictional Cities: Skylines 2 city *OmniCentro*.
 
 Legal
 -------------------------------------------------------------------------------
@@ -16,16 +19,16 @@ Legal
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/HomeOnMars/projektoOmnijo/blob/master/teknikajxoj/ONKIO.md">ONKIO</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/HomeOnMars">HomeOnMars</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
 
-
 ONKIO Tablo
 -------------------------------------------------------------------------------
 
 > ONKIO Table
 > <br>
-> [Back to OmniCentro Content](../OmniCentro.md#normoj)
+> [Back to OmniCentro Content](../OmniCentro.md#teknikaj-specifoj)
 
-Table generation code see [here](ONKIO.py).
+-------------------------------------------------------------------------------
 
+Table generation code [here](ONKIO.py);
 Differences from the ASCII table are highlighted with **bold** text.
 
 |    ONKIO    |    0x0\_    |    0x1\_    |    0x2\_    |    0x3\_    |    0x4\_    |    0x5\_    |    0x6\_    |    0x7\_    |
@@ -59,14 +62,6 @@ Differences from the ASCII table are highlighted with **bold** text.
 >     - The center of mass of the numbers `ΔλΠΨΥΣ` are the about the same as `0-9`, unlike most lower case greek letters.
 > - Only 16 control characters (all in the column `0x0_`) instead of 33 in ASCII table, as most of those extra control characters are obsolete in modern days.
 > - Removed `CR \r` and moved `DEL` from `0x7f` to `0x0f` to maximize regularity.
-
-
-
-
-
-
-
-
 
 ASCII Table
 -------------------------------------------------------------------------------
