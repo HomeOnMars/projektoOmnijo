@@ -20,7 +20,7 @@ from math import pi, sin, cos, acos
 import matplotlib as mpl; mpl.use('svg')
 import matplotlib.pyplot as plt
 # imports (my libs)
-from lib_gen_emblemo import t, ts, draw_arc, draw_hat, colors_dict
+from lib_gen_emblemo import t, ts, draw_arc, colors_dict, PHI_INV
 
 # main func
 def draw_RdO(
@@ -40,7 +40,7 @@ def draw_RdO(
     draw_arc(ax, radius=11/16, thetas=ts( 5.50, 19.50), color=colors_dict['O'])
     # draw R
     # 2.36 = 4 - acos(cos((4-3.5)/8*pi)*11/13.5)/pi*8
-    draw_arc(ax, radius=13.5/16, thetas=ts( 2.36, -2.36), color=colors_dict['O'], linewidth_fac=15/16)
+    draw_arc(ax, radius=13.5/16, thetas=ts( 2.36, -2.36), color=colors_dict['O'], linewidth_fac=PHI_INV*1.25)
     
     # format and save
     ax.set_xlim(-scale+1.5/16, scale+1.5/16)

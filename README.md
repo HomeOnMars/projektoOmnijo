@@ -7,9 +7,9 @@ Documents for my Cities: Skylines 2 cities
 set in the fictional country *la Regno de Omnijo* (the Kingdom of Omnijo)
 created by my imagination.
 
-![RdO emblem](fig/RdO.svg)
+![RdO emblem](fig/RdOFlago.svg)
 
-*La Regno de Omnijo* (RdO) [emblem](OmniCentro.md#emblemo) (fictional).
+*La Regno de Omnijo* (RdO) [flag](OmniCentro.md#emblemo) (fictional).
 
 Legal
 -------------------------------------------------------------------------------

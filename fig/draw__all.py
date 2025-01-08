@@ -15,12 +15,14 @@ To view a copy of this license, visit <https://creativecommons.org/licenses/by-n
 
 # imports (my libs)
 from draw_OCG  import draw_OCG
-from draw_RdO  import draw_RdO
 from draw_OCR  import draw_OCR
 from draw_OCRR import draw_OCRR
+from draw_RdO  import draw_RdO
+from draw_RdOFlago import draw_RdOFlago
 
 if __name__ == '__main__':
     draw_OCG()
     draw_RdO()
     draw_OCR()
     draw_OCRR()
+    draw_RdOFlago()

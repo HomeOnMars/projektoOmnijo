@@ -37,9 +37,9 @@ def draw_OCRR(
     if verbose: print("Drawing...")
     # --- arcs
     # draw O
-    draw_arc(ax, radius=11/16, thetas=ts( 5.50, 19.50), color=colors_dict['x0'])
+    draw_arc(ax, radius=11/16, thetas=ts( 5.50, 19.50), color=colors_dict['x0'], linewidth_fac=14/16)
     # draw C
-    draw_arc(ax, radius= 9/16, thetas=ts( 2.25, 14.25), color=colors_dict['Radio'])
+    draw_arc(ax, radius= 8/16, thetas=ts( 2.25, 14.25), color=colors_dict['Radio'], linewidth_fac=16/16)
     # draw R
     # 2.24 = 4 - acos(cos((4-3.5)/8*pi)*11/14)/pi*8
     draw_arc(ax, radius=13.75/16, thetas=ts( 2.25, -2.25), color=colors_dict['x2'], linewidth_fac=15/16)

@@ -83,19 +83,19 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   <span style="color:MediumPurple">Ĝejda</span>
   eventually decided to settle down and build,
   under the alias of
-  <span style="color:MediumPurple">Ĝejnjo</span>
+  <span style="color:MediumPurple">Ĝejnjo Fenulo</span>
   (as <span style="color:MediumPurple">ĜEJDA</span>-<span style="color:MediumPurple">FEU#0</span>),
   focusing the majority of her presence
   on the remote island that will soon become <em>la Regno de Omnijo</em>.
 
   By inventing
-  <span style="color:Silver">Serena</span>
-  (a.k.a. <span style="color:MediumPurple">ĜEJDA</span>-<span style="color:Silver">FEU#1</span>,
+  <span style="color:Beige">Serena de Omnijo</span>
+  (a.k.a. <span style="color:MediumPurple">ĜEJDA</span>-<span style="color:Beige">FEU#1</span>,
   with FEU = Fizika Etendo-Unuo, i.e., Physical Extension Unit,
   a.k.a. synthetic humans, as direct extensions of her consciousness)
   and introducing her to the unstable elements
   in the local ruling elite of the island on her 18-th birth<em>day</em>
-  (like, 18-th <em>day</em> after
+  (i.e. 18-th <em>day</em> after
   <span style="color:MediumPurple">Ĝejda</span>'s awakening),
   <span style="color:MediumPurple">Ĝejda</span>
   was able to assume total control of the island
@@ -105,7 +105,7 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   a pinch of social engineering
   (delivered with carefully crafted messages
   (e.g. deepfaked presidential messages promising foreign aid etc.),
-  ensuring <span style="color:Silver">Serena</span> being taken seriously
+  ensuring <span style="color:Beige">Serena</span> being taken seriously
   and all the right people gathering at the right place at the right time),
   a certain sabotaged gas main and several hacked CO sensors,
   together with a couple dozen backup plans that were barely needed in the end-
@@ -153,7 +153,7 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   to efficiently serve (and nudge) everyone without much social friction,
   increasing happiness and self-realisation for everyone stayed
   with her gentle guidance, helping them become who they want to be
-  (as long as they don't wanna be murderers etc., of course.)
+  (within restrictions and under guidances so people don't deteriorate into serial killers etc, of course.)
   
   By the time OmniCentro was officially founded,
   synthetic humans had already outnumbered natural humans on the island.
@@ -169,6 +169,6 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   laid out the foundation of her own *utopian* dream -
   even though many might call it a *dystopia* -
   in this *post-singularity* world, where most people haven't even realized yet
-  that they have already crossed the point of no return.
+  that they have long crossed the point of no return.
   </p>
 </details>

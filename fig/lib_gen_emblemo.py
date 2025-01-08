@@ -14,22 +14,25 @@ To view a copy of this license, visit <https://creativecommons.org/licenses/by-n
 
 
 # imports (built-in)
-from math import pi, sin, cos
+from math import pi, sin, cos, sqrt
 # imports (3rd party)
 import matplotlib as mpl
 
 # params
-colors_dict = {
+PHI : float = (sqrt(5)+1)/2    # golden ratio
+PHI_INV : float = PHI - 1
+KOLOROJ : dict[str, str] = {
     # see also: <https://xkcd.com/color/rgb/>
-    'O' : '#C0C0C0',  # Silver
+    'O' : '#E6DAA6',  # Beige  E6DAA6 / Gold  FFD700 / Silver  C0C0C0
     'C' : '#00BFFF',  # Blue
     'G' : '#9370DB',  # Purple
     'R' : '#5E9B8A',  # Green
     'x0': '#B7E1A1',  # ^ light grey green  B7E1A1 / beige  E6DAA6
     'x1': '#D6B4FC',  # < light violet  D6B4FC
     'x2': '#95D0FC',  # > light blue  95D0FC
-    'Radio': '#E6DAA6', # Beige
+    'Radio': '#FFD700', # Gold
 }
+colors_dict = KOLOROJ.copy()
 
 # funcs
 # theta units convert (hex -> deg)
@@ -47,7 +50,7 @@ def draw_arc(
     center : tuple[float, float] = (0., 0.),
     angle  : float = 0.,
     color  : None = None,
-    linewidth_fac: float = 11/16,
+    linewidth_fac: float = PHI_INV, #11/16,
     linewidth_unit: float = 18,    # 18 will leave no gap
     **kwargs,
 ) -> list[mpl.patches.Arc]:
@@ -77,7 +80,7 @@ def draw_hat(
     angle  : float = 0.,      # the rotation of the whole system
     theta  : float = 120.,    # the 'openness' of the hat
     color  : None = None,
-    linewidth_fac: float = 11/16,
+    linewidth_fac: float = PHI_INV, #11/16,
     linewidth_unit: float = 18,    # 18 will leave no gap
     **kwargs,
 ) -> list[mpl.lines.Line2D]:

@@ -34,7 +34,7 @@ Bulteno
 **OmniCentro** is the new planned capital
 of the fictional island country **la Regno de Omnijo**,
 as commissioned by Omnijo's young new queen
-<span style="color:Silver">Serena</span>,
+<span style="color:Beige">Serena</span>,
 who has already earned herself a reputation of arrogance and recklessness
 since her coronation just about half a year ago.
 
@@ -60,12 +60,12 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 
 | (Fikciaj) Fonaj Informoj  <br>(Fictional) Background Information | Priskribo  <br>Description |
 | :---------------- | ---- |
-| Ŝtatestro  <br>Head of State   | <span style="color:Silver">La Reĝino Serena de Omnijo</span> |
+| Ŝtatestro  <br>Head of State   | <span style="color:Beige">La Reĝino Serena de Omnijo</span> |
 | Registara Tipo  <br>Government Type   | Konstitucia Monarkio / Bonfara Diktaturo / Totalisma Reĝimo, depende de kiu vi demandas[^Bulteno-RegistaraTipo]. |
 | Urbaj Projektistoj  <br>City Designers | <span style="color:DeepSkyBlue">Ĉuĉjo la Arkitekto</span> <!-- Fullname [DATA CORRUPTED/REDACTED] (N/A) -->  kaj  <span style="color:MediumPurple">Ĝejnjo la Suvereno</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo de Omnijo --> de OCFI |
 | Oficiala Lingvo  <br>Official Language | [*Esperanto++*](Lingvo.md#lingvo), a.k.a. ***E++***, pronounced as `Epopo`. (See link for more info.)  <br>(Transitioning from English in the next 16 years.) |
 | Oficiala Religio  <br>Official Religion | Pastafarianismo[^Bulteno-Religio] |
-| Oficialaj Koloroj  <br>Official Colors   | <span style="color:Silver">Arĝento/Silver #C0C0C0</span> [^Bulteno-Koloroj-Argxento]  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span> [^Bulteno-Koloroj-Bluo]  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span> [^Bulteno-Koloroj-Purpuro] |
+| Oficialaj Koloroj  <br>Official Colors   | <span style="color:Beige">Flavgriza/Beige #E6DAA6</span> [^Bulteno-Koloroj-Flavgriza]  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span> [^Bulteno-Koloroj-Bluo]  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span> [^Bulteno-Koloroj-Purpuro] |
 | Oficialaj Himno  <br>Official Anthem | *Oceans* (*Where Feet May Fail*), originally by Hillsong UNITED  <br>Modified acoustic E++ version[^Bulteno-Himno]. |
 
 [^Bulteno-RegistaraTipo]: Interviewer: "So, tell us what do you think
@@ -74,23 +74,23 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
   <span style="color:MediumPurple">Ĝejnjo la Suvereno de OCFI</span>:
   "As stated in the constitution, we are a *Constitutional Monarchy*,
   which has never changed
-  since <span style="color:Silver">Reĝino Serena</span>'s coronation.
+  since <span style="color:Beige">Reĝino Serena</span>'s coronation.
   As a gentle reminder, next year we are still going to vote
   for the new prime minister."
-  <br>...<br>
+  <br>...<br> <!-- Say Constitutional Monarchy, Think Totalitarian Regime -->
   <span style="color:DeepSkyBlue">Ĉuĉjo la Arkitekto de OCFI</span>:
   "I understand your concern that the
-  <span style="color:Silver">Queen</span>
+  <span style="color:Beige">Queen</span>
   has basically replaced the whole cabinet with us
   as acting officials of the government,
   and that the current prime minister functions more like a figure head.
   But I am fairly confident that
-  <span style="color:Silver">Serena</span>'s heart is in the good place.
+  <span style="color:Beige">Serena</span>'s heart is in the good place.
   Just look at how much improvements have been achieved in the past 6 months
   to the lives of everyone who chose to stay!
   I would say we are a *Benevolent Dictatorship*."
-  <br>...<br>
-  <span style="color:Silver">Reĝino Serena de Omnijo</span>:
+  <br>...<br> <!-- Say Benevolent Dictatorship, Act as if Constitutional Monarchy -->
+  <span style="color:Beige">Reĝino Serena de Omnijo</span>:
   "I know many people outside our beloved island considered us
   fallen into a *Totalitarian Regime*... and I agree!
   Like, just yesterday I was starting to implement this new
@@ -102,25 +102,28 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
   Nope! I just go and do that, and no one is there to stop me,
   because everyone in the cabinet is my friend.
   And this absolute power feels SOOOOO GOOD! Muahaha!"
-  <br>...<br>
+  <br>...<br> <!-- Say Totalitarian Regime, Try Benevolent Dictatorship -->
   The public's reactions to the interview are mixed.
   <!-- It certainly didn't help the emigration rate,
   which experienced a small increase after the interview was aired.
   But at this point we doubt if
-  <span style="color:Silver">Serena</span> even cares about that anymore. -->
+  <span style="color:Beige">Serena</span> even cares about that anymore. -->
 
 [^Bulteno-Religio]: What can I say-
-  the <span style="color:Silver">Queen</span> has an taste for
+  the <span style="color:Beige">Queen</span> has an taste for
   idealistic causes (though some call them hopeless).
   Regardless, Pastafarianism is more of a
   "believe/leave whenever you want" kind of religion,
   So conversion is optional.
-  <span style="color:Silver">Queen Serena</span> herself
+  <span style="color:Beige">Queen Serena</span> herself
   idenfies as only a "part-time" Pastafarian, whatever that means.
 
-[^Bulteno-Koloroj-Argxento]: Silver, symbolizing
-  the harsh unbending reality,
+[^Bulteno-Koloroj-Flavgriza]: Beige, symbolizing the harsh unbending reality,
   where beauty and complexities hidden deep underneath.
+  <span style="color:Beige">Serena</span>'s first choice was
+  Arĝento/Silver (#C0C0C0),
+  but she later changed her mind and switched to beige
+  because "it looks prettier".
 
 [^Bulteno-Koloroj-Bluo]: Blue, symbolizing
   insights, understanding, and rationality; to see the world as it is.
@@ -130,7 +133,7 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 
 [^Bulteno-Himno]: The new anthem is hand picked by -
   you guessed it -
-  <span style="color:Silver">Reĝino Serena</span> herself (Surprise, surprise),
+  <span style="color:Beige">Reĝino Serena</span> herself (Surprise, surprise),
   even though she claims to be "not a religious person".<br>
   The official reason is that she "likes the sound of it";<br>
   The unofficial reason may be that it serves as

@@ -28,17 +28,17 @@ Lingvo
 The official language in [RdO](Bulteno.md#fonrakonta-bulteno) is
 ***Esperanto++*** (often written as `E++`, pronounced as `Epopo`),
 a fictional artificial variant of Esperanto
-specified by <span style="color:Silver">Reĝino Serena</span> herself,
+specified by <span style="color:Beige">Reĝino Serena</span> herself,
 aiming to offer maximum regularity for easy learning,
 while conforming to the existing world as much as possible.
-<span style="color:Silver">Queen Serena</span> declared `Epopo`
+<span style="color:Beige">Queen Serena</span> declared `Epopo`
 as the new official language of RdO about three months in her reign,
 set to gradually replace English in the next 16 years
 in all RdO official documentations and communications.
 
 One would think that this random order
 is surely gonna cause massive civil unrest,
-but by that time the people are already getting used to the <span style="color:Silver">Queen</span>'s ridiculous style;
+but by that time the people are already getting used to the <span style="color:Beige">Queen</span>'s ridiculous style;
 plus, they also have the chaotic implementation of
 her new UBI (universal basic income) policy to worry about.
 

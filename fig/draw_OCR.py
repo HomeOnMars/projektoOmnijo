@@ -20,7 +20,7 @@ from math import pi, sin, cos, acos
 import matplotlib as mpl; mpl.use('svg')
 import matplotlib.pyplot as plt
 # imports (my libs)
-from lib_gen_emblemo import t, ts, draw_arc, draw_hat, colors_dict
+from lib_gen_emblemo import t, ts, draw_arc, draw_hat, colors_dict, PHI_INV
 
 # main func
 def draw_OCR(
@@ -41,7 +41,7 @@ def draw_OCR(
     # draw C
     draw_arc(ax, radius= 9/16, thetas=ts( 2.25, 14.25), color=colors_dict['C'])
     # draw R
-    draw_arc(ax, radius=6.75/16,thetas=ts(  4.0, -5.0 ), color=colors_dict['R'], linewidth_fac=15/16)
+    draw_arc(ax, radius=6.75/16,thetas=ts(  4.0, -5.0 ), color=colors_dict['R'], linewidth_fac=(PHI_INV*1.5))
     
     # format and save
     ax.set_xlim(-scale, scale)
