@@ -52,8 +52,9 @@ Note: P/M follows positive and negative directions in mathematics (thus P for co
 |    H    | **H**omo/Piediranto | Human/Pedestrian    | $\geq$ 3.5m |
 |    B    | **B**iciklo         | Bike                |        ?    |
 |    J    | parke**J**o         | Parking Space       | $\geq$ 2m   |
-|  Ŭ / U  | a**Ŭ**tomobilo      | Car                 |        3m   |
-|    T    | **T**ransporto  <br>(Buso, Tramo)   | Transit  <br>(Bus, Tram)         |        3m   |
+|  Ŭ / Ux | a**Ŭ**tomobilo      | Car                 |        3m   |
+|    U    | b**U**so            | Bus                 |        3m   |
+|    T    | **T**ramo           | Tram                |        3m   |
 |    E    | f**E**rvojo/m**E**troo | Railway/Metro    |        4m   |
 |    V    | **V**agonaro/Trajno | Train               |        4m   |
 |    G    | Neŭtrala **G**rundo  <br>Meza Strio | Neutral Ground  <br>Median Strip | $\geq$ 1m   |
@@ -117,23 +118,35 @@ Examples:
 
 > Acronym for places types
 
-| Siglo  <br>Acronym | En esperanto  <br>In Esperanto | En la angla  <br>In English | Stilo  <br>Style |
-| :-----: | ------------------ | ---------------- | :------: |
-|    Ab   | **A**kvo**b**araĵo | Dam              | Prefikso |
-|    Mt   | **M**on**t**o      | Mountain         | Prefikso |
-|    Dt   | **D**is**t**rikto  | District         | Prefikso |
-|    St   | **S**tra**t**o     | Street           | Sufikso  |
-|    Vj   | **V**o**j**o       | Road             | Sufikso  |
-|    Ŭj   | a**Ŭ**tovo**j**o   | Motorway         | Prefikso |
-|    Ej   | f**E**rvo**j**o    | Railway          | Prefikso |
+| Siglo  <br>Acronym | En esperanto  <br>In Esperanto | En la angla  <br>In English |
+| :-----: | -------------------- | ---------------- |
+|    Ab   | **A**kvo**b**araĵo   | Dam              |
+|    Mt   | **M**on**t**o        | Mountain         |
+|    Am   | **A**ntaŭ**m**onto   | Foothill         |
+|    Me   | **M**ont**e**to      | Hill             |
+|    Dt   | **D**is**t**rikto    | District         |
+|    Ia   | **I**ndustri**a**reo | Industrial Area  |
+|    Hv   | **H**a**v**eno       | Port             |
+|    St   | **S**tra**t**o       | Street           |
+|    Vj   | **V**o**j**o         | Road             |
+|    Ŭj   | a**Ŭ**tovo**j**o     | Motorway         |
+|    Ej   | f**E**rvo**j**o      | Railway          |
 
 Naming rules examples:
 
-- `Ab#O1` as a short version of `Akvobaraĵo-Olivkronaĵo #1`,
-  or `Ab-Olivkronaĵo #1`;
-- `Mt#O` as a short version of `Monto-Olivkronaĵo`, or `Mt-Olivkronaĵo`;
-- `Ŭj#Ψm` for Motorway 13 N->S `ŬΨm`, or `AŬtovojo #Ψm`;
-- `123 Olivkronaĵo St` as a short version of `123 Olivkronaĵo Strato`;
+- `Ab-O#1` (Good) as a short version  
+  of `Ab-Olivkronaĵo #1` (Good),  
+  or `Akvobaraĵo-Olivkronaĵo #1` (Deprecated),  
+  or `Olivkronaĵa Akvobaraĵo #1` (Good);
+- `Mt-O` (Good) as a short version  
+  of `Mt-Olivkronaĵo` (Good),  
+  or `Monto-Olivkronaĵo` (Deprecated),  
+  or `Olivkronaĵa Monto` (Meh);
+- `Ŭj#Ψm` for Motorway 13 N->S `ŬΨm`,  
+  or `Aŭtovojo #Ψm`;
+- `St-Olivkronaĵo #123` as a short version  
+  of `Olivkronaĵa Strato #123`,  
+  or `123 Olivkronaĵo St`;
 
 ### Distrikto Numerada Sistemo
 
@@ -141,11 +154,13 @@ Naming rules examples:
 
 Using the leading digit for identifying districts and areas:
 
-- `0`: (Generic) Inter-district travels within the city (no outside connections);
-- `1`: (SK) Pioniro-Vilaĝo;
-- `2`: (SR) Mt-Olivkronaĵo;
-- ...
-- `Σ`: (Generic) Outside connections.
+| Areo Numero | Proksimuma Loko | Siglo | Plena Nomo |
+| --- | ---- | ----- | -------------- |
+| `0` |      |       | Interdistriktaj vojaĝoj ene de la urbo (sen eksteraj konektoj)  <br>Interdistrict travels within the city (no outside connections) |
+| `1` |  SK  | Dt-PV | Pioniro-Vilaĝo |
+| `2` |  SR  | Mt-O  | Mt-Olivkronaĵo |
+| ... |      |       |                |
+| `Σ` |      |       | Eksteraj Konektoj  <br>Outside connections |
 
 ### Konstruaj Nomoj
 
@@ -153,13 +168,15 @@ Using the leading digit for identifying districts and areas:
 
 | En esperanto  <br>In Esperanto | En la angla  <br>In English |
 | ------------------------ | ------------------------ |
+| Fervojo-Korto            | Rail Yard                |
+| Metroo-Korto             | Subway Yard              |
 | Stacidomo                | Train Station            |
 | Policejo                 | Police Station           |
 | Fajrobrigado             | Fire Station/Brigade/Department |
 | Kliniko                  | Clinic                   |
 | Hospitalo                | Hospital                 |
 | Tombejo                  | Cemetery                 |
-| Genetika Reciklada Fabrikejo  <br>Kremaciejo | Genetic Recycling Plant  <br>Crematorium |
+| Bio-Reciklada Fabrikejo  <br>Kremaciejo | Bio-Recycling Plant  <br>Crematorium |
 | Rubodeponejo             | Landfill                 |
 | Reciklada Fabrikejo      | Recycling Plant          |
 | Transformilejo           | Transformer station      |

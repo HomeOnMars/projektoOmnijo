@@ -42,10 +42,11 @@ Teknikaj specifoj
 > Technical Specifications
 
 > [!CAUTION]
-> Information here is gathered from the internet for gameplay purposes,
-> ***so not much effort has been spent on ensuring its accuracy***.
+> Information collected/generated here is intended for gameplay purposes,
+> *so not much effort has been spent on ensuring its accuracy*.  
 > Some maybe incorrect or outdated.
 > Some are just chosen arbitrarily.  
+> Standards here may also be updated without notices.  
 > ***Use at your own risk.***
 
 - ***Normoj*** | Standards

@@ -150,7 +150,7 @@ As the next great global economic recession unfolds[^Historio-RdO-Recesio],
 many countries are struggling and tightening their immigration rules.
 La Regno de Omnijo, however, did surprisingly well (again),
 attracting people to stay (or rather, emigration becomes a lot harder).
-Actually, from an outsider perspective, Omnijo's response was almost perfect.
+Actually, from an outsider perspective, Omnijo's response was almost perfect[^Historio-RdO-Recesio-bankoj].
 <span style="color:Beige">Serena</span> was even able to take the chance
 to re-nationalize many of the private companies in her country -
 from public transportation, to utilities, banks, manufacturing industries and more -
@@ -165,6 +165,23 @@ effectively buying out her own country.
   Muahahahahahaha(beep)" before her new PR officer rushed in
   to stop further recordings of her "evil laugh".<br>
   This interview piece was never publicly aired until a hexcade later.
+
+[^Historio-RdO-Recesio-bankoj]: When the local banks
+  (and foreign bank branches) failed,
+  instead of bailing them out, Serena opted for directly taking them over-
+  Consolidated them into her own newly opened bank "Banko de Omnijo" one by one.
+  A move that many considered crazy-
+  but ended up working better than expected, actually,
+  with much more competent new management
+  saving the day and integrating everything. <br>
+  With this as an example, Serena found it much easier for her government
+  to take over all kinds of businesses whenever they go bankrupt-
+  especially when most of them turned out to be easily savable afterall.
+  As for the old management-
+  many of them are already cashing out and enjoying the holiday elsewhere
+  as Serena's new law allows them to do so and leave,
+  possibly explaining their over-tendency
+  to declare bankruptcy so early and easily.
 
 ### La fondo de *OmniCentro*
 

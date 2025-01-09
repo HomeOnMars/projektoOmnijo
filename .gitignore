@@ -1,3 +1,4 @@
+# - My list -
 bkp/
 temp/
 test*
@@ -5,6 +6,7 @@ test*
 *.ipynb
 *.png
 *.ogg
+OmniCentro/Data
 
 
 # Byte-compiled / optimized / DLL files

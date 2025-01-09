@@ -143,15 +143,16 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 
 ### Government Structure (Part)
 
-| Departments and officies     |  Acronym | Nomo |
-| ---------------------------- | :------: | ---- |
-| Department of Defence        | OCFD | Omnija Centra Fako de Defendo |
-| Department of Education      | OCFE | Omnija Centra Fako de Edukado |
-| Department of Fire and Rescue| OCFF | Omnija Centra Fako de Fajro kaj Savo |
-| Department of Infrastructure | OCFI | Omnija Centra Fako de Infrastrukturo |
-| Department of Police         | OCFP | Omnija Centra Fako de Polico  |
-| Department of Health         | OCFS | Omnija Centra Fako de Sano    |
-| Office of Finance            | OCOF | Omnija Centra Oficejo de Fisko |
-| Office of Foreign Affairs    | OCOE | Omnija Centra Oficejo de Eksteraj Aferoj |
-| Office of Home    Affairs    | OCOI | Omnija Centra Oficejo de Internaj Aferoj |
-| Public Radio Network         | OCRR | OmniCentra RadioReto |
+| Departments and officies            |  Acronym | Nomo |
+| ----------------------------------- | :------: | ---- |
+| Department of Defence               | OCFD | Omnija Centra Fako de Defendo             |
+| Department of Education and Science | OCFE | Omnija Centra Fako de Edukado kaj Scienco |
+| Department of Fire and Rescue       | OCFF | Omnija Centra Fako de Fajro kaj Savo      |
+| Department of Infrastructure        | OCFI | Omnija Centra Fako de Infrastrukturo      |
+| Department of Police                | OCFP | Omnija Centra Fako de Polico              |
+| Department of Health                | OCFS | Omnija Centra Fako de Sano                |
+| Office of Finance                   | OCOF | Omnija Centra Oficejo de Fisko            |
+| Office of Foreign Affairs           | OCOE | Omnija Centra Oficejo de Eksteraj Aferoj  |
+| Office of Home    Affairs           | OCOI | Omnija Centra Oficejo de Internaj Aferoj  |
+| Public Radio Network                | OCRR | OmniCentra RadioReto |
+| Nationalized Bank                   | BdO  | Banko de Omnijo |
