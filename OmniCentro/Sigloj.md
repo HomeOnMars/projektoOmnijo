@@ -159,8 +159,17 @@ Using the leading digit for identifying districts and areas:
 | `0` |      |       | Interdistriktaj vojaĝoj ene de la urbo (sen eksteraj konektoj)  <br>Interdistrict travels within the city (no outside connections) |
 | `1` |  SK  | Dt-PV | Pioniro-Vilaĝo |
 | `2` |  SR  | Mt-O  | Mt-Olivkronaĵo |
+| `3` |  SC  | Am-H  | Am-Hejmecaĵo   |
 | ... |      |       |                |
 | `Σ` |      |       | Eksteraj Konektoj  <br>Outside connections |
+| ... |      |       |                |
+| TBD |  SK  | Mt-S  | Mt-Scivolemaĵo |
+| TBD |  CC  | Me-H  | Me-Hejmecaĵo   |
+| TBD |  CR  | Mt-E  | Mt-Esperecaĵo  |
+| TBD |  NR  | Mt-R  | Mt-Raciecaĵo   |
+| TBD |  NC  | Mt-U  | Mt-Unukornaĵo  |
+| TBD |  NK  | Mt-F  | Mt-Fortikecaĵo |
+| N/A |  NC  | Mt-A  | Mt-Asteriaĵo   |
 
 ### Konstruaj Nomoj
 
