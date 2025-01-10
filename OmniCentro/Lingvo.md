@@ -36,9 +36,9 @@ as the new official language of RdO about three months in her reign,
 set to gradually replace English in the next 16 years
 in all RdO official documentations and communications.
 
-One would think that this random order
-is surely gonna cause massive civil unrest,
-but by that time the people are already getting used to the <span style="color:Beige">Queen</span>'s ridiculous style;
+One would think that such random order
+is surely going to cause massive civil unrest,
+but by that time the people have already gotten used to the <span style="color:Beige">Queen</span>'s ridiculous style;
 plus, they also have the chaotic implementation of
 her new UBI (universal basic income) policy to worry about.
 

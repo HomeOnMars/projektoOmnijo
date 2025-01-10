@@ -92,10 +92,10 @@ Note that the letters are overlapping other acronyms in other categories - and t
 |  Ŭ / Ux | a**Ŭ**tovojo        | Motorway            | |
 |    U    | b**U**so            | Bus                 | |
 |    T    | **T**ramo           | Tram                | Regiona  <br>Regional |
-|    E    | f**E**rvojo/m**E**troo | Railway/Metro  <br>Monorail  <br>Train | Regiona  <br>Regional |
-|    V    | **V**agonaro/Trajno | Train               | Altrapidaj Interurba  <br>High-speed Intercity |
+|    E    | f**E**rvojo/m**E**troo | Railway/Metro  <br>Monorail  <br>Train | Malaltrapida \(\< 200 km/h\)  <br>Low-speed |
+|    V    | **V**agonaro/Trajno | Train               | Altrapida \($\geq$ 200 km/h\)  <br>High-speed |
 |    P    | **P**ramo           | Ferry               | Regiona  <br>Regional |
-|  Ŝ / Sx | **Ŝ**ipo            | Ship                | Interurba  <br>Intercity |
+|  Ŝ / Sx | **Ŝ**ipo            | Ship                | |
 |    H-   | **H**omo-/Pasaĝero- | Human-/Passenger-   | |
 |    K-   | **K**argo-          | Cargo-              | |
 
@@ -163,8 +163,8 @@ Using the leading digit for identifying districts and areas:
 | ... |      |       |                |
 | `Σ` |      |       | Eksteraj Konektoj  <br>Outside connections |
 | ... |      |       |                |
-| TBD |  SK  | Mt-S  | Mt-Scivolemaĵo |
-| TBD |  CC  | Me-H  | Me-Hejmecaĵo   |
+| TBD |  SK  | Mt-K  | Mt-Kuraĝecaĵo  |
+| TBD |  CC  | Mt-H  | Mt-Hejmecaĵo   |
 | TBD |  CR  | Mt-E  | Mt-Esperecaĵo  |
 | TBD |  NR  | Mt-R  | Mt-Raciecaĵo   |
 | TBD |  NC  | Mt-U  | Mt-Unukornaĵo  |
@@ -180,6 +180,12 @@ Using the leading digit for identifying districts and areas:
 | Fervojo-Korto            | Rail Yard                |
 | Metroo-Korto             | Subway Yard              |
 | Stacidomo                | Train Station            |
+|||
+| Bazlernejo               | Elementary School        |
+| Mezlernejo               | High School / Middle School |
+| Altlernejo               | College / Higher Education  |
+| Universitato             | University               |
+|||
 | Policejo                 | Police Station           |
 | Fajrobrigado             | Fire Station/Brigade/Department |
 | Kliniko                  | Clinic                   |
@@ -188,5 +194,10 @@ Using the leading digit for identifying districts and areas:
 | Bio-Reciklada Fabrikejo  <br>Kremaciejo | Bio-Recycling Plant  <br>Crematorium |
 | Rubodeponejo             | Landfill                 |
 | Reciklada Fabrikejo      | Recycling Plant          |
+|||
 | Transformilejo           | Transformer station      |
 | Akvobaraĵo               | Dam                      |
+
+References:
+
+- School system: <https://esperanto.stackexchange.com/questions/6199/middle-school-vs-high-school>

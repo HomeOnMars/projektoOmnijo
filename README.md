@@ -9,7 +9,7 @@ created by my imagination.
 
 ![RdO emblem](fig/RdOFlago.svg)
 
-*La Regno de Omnijo* (RdO) [flag](OmniCentro.md#emblemo) (fictional).
+*La Regno de Omnijo* (RdO) [flag](OmniCentro/Emblemoj.md) (fictional).
 
 Legal
 -------------------------------------------------------------------------------

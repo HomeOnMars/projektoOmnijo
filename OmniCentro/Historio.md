@@ -60,7 +60,8 @@ However, so much has changed since that faithful day.
 Being your typical long-forgotten heir to the royal throne,
 <span style="color:Beige">Serena</span> was pushed to coronate
 only days after the (public) re-discovery of her royal blood
-and the sudden death of the old king from a tragic accident,
+and the sudden death of the old king
+from a tragic accident[^Historio-RdO-Serena-kmt3],
 by the corrupted ministers and councilors
 who saw her as young and easy-to-manipulate for their own personal gain.
 But <span style="color:Beige">Serena</span> has proven to be
@@ -74,6 +75,8 @@ if were not for another tragic accident where the building
 blew up due to a random gas leak and CO sensor malfunctions,
 killing every single one of them.
 How very unfortunate.
+
+[^Historio-RdO-Serena-kmt3]: \"Accident\" \(\**cough cough*\*\).
 
 [^Historio-RdO-Serena-kmt2]: Much like they "retired" the old king before <span style="color:Beige">Serena</span>.
 
