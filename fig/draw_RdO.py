@@ -27,7 +27,7 @@ def draw_RdO(
     # noext means no extension
     output_path_noext: str = "./RdO",
     # size of the drawing pad
-    scale: float = 1.0,
+    scale: float = 27/40,    # 1.0 => 400px x 400px
     verbose: bool = True,
 ):
     """Draw the RdO emblem."""
@@ -37,14 +37,14 @@ def draw_RdO(
     if verbose: print("Drawing...")
     # --- arcs
     # draw O
-    draw_arc(ax, radius=11/16, thetas=ts( 5.50, 19.50), color=colors_dict['O'])
+    draw_arc(ax, scale, radius=11/16, thetas=ts( 5.50, 19.50), color=colors_dict['O'])
     # draw R
     # 2.36 = 4 - acos(cos((4-3.5)/8*pi)*11/13.5)/pi*8
-    draw_arc(ax, radius=13.5/16, thetas=ts( 2.36, -2.36), color=colors_dict['O'], linewidth_fac=PHI_INV*1.25)
+    draw_arc(ax, scale, radius=13.5/16, thetas=ts( 2.36, -2.36), color=colors_dict['O'], linewidth_fac=PHI_INV*1.25)
     
     # format and save
-    ax.set_xlim(-scale+1.5/16, scale+1.5/16)
-    ax.set_ylim(-scale, scale)
+    ax.set_xlim(-1+1.5/16, 1+1.5/16)
+    ax.set_ylim(-1, 1)
     ax.set_axis_off()
     ax.set_position([0, 0, 1, 1])
     for ext in ['.svg', '.png']:
@@ -53,6 +53,8 @@ def draw_RdO(
         fig.savefig(output_path, transparent=True)
         if verbose: print(f"Done.")
     if verbose: print(f"Done.")
+    
+    return fig, ax
 
 if __name__ == '__main__':
     draw_RdO()

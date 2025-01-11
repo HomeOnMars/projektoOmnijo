@@ -45,6 +45,7 @@ def ts(theta1: float, theta2: float) -> tuple[float, float]:
 #------------------------------------------------------------------------------
 def draw_arc(
     ax : mpl.axes.Axes,
+    scale  : float,
     radius : float|tuple[float, float],
     thetas : tuple[float, float],
     center : tuple[float, float] = (0., 0.),
@@ -67,13 +68,14 @@ def draw_arc(
             mpl.patches.Arc(
                 center, width=width, height=height, angle=angle,
                 theta1=min(thetas), theta2=max(thetas),
-                color=color, linewidth=linewidth,
+                color=color, linewidth=linewidth*scale,
                 **kwargs,
         ))
     ]
 
 def draw_hat(
     ax : mpl.axes.Axes,
+    scale  : float,
     radius : float,
     length : float = 1.,
     center : tuple[float, float] = (0., 0.),
@@ -103,7 +105,7 @@ def draw_hat(
                     mid_pt[1],
                     mid_pt[1] + sin(angle_rad+pi+theta_2_rad)*length,
                 ],
-                color=color, linewidth=linewidth,
+                color=color, linewidth=linewidth*scale,
                 **kwargs,
         ))
     ]

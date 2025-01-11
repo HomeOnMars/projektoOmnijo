@@ -27,7 +27,7 @@ def draw_OCR(
     # noext means no extension
     output_path_noext: str = "./OCR",
     # size of the drawing pad
-    scale: float = 1.0,
+    scale: float = 27/40,    # 1.0 => 400px x 400px
     verbose: bool = True,
 ):
     """Draw the OCR emblem."""
@@ -37,15 +37,15 @@ def draw_OCR(
     if verbose: print("Drawing...")
     # --- arcs
     # draw O
-    draw_arc(ax, radius=11/16, thetas=ts( 5.50, 19.50), color=colors_dict['O'])
+    draw_arc(ax, scale, radius=11/16, thetas=ts( 5.50, 19.50), color=colors_dict['O'])
     # draw C
-    draw_arc(ax, radius= 9/16, thetas=ts( 2.25, 14.25), color=colors_dict['C'])
+    draw_arc(ax, scale, radius= 9/16, thetas=ts( 2.25, 14.25), color=colors_dict['C'])
     # draw R
-    draw_arc(ax, radius=6.75/16,thetas=ts(  4.0, -5.0 ), color=colors_dict['R'], linewidth_fac=(PHI_INV*1.5))
+    draw_arc(ax, scale, radius=6.75/16,thetas=ts(  4.0, -5.0 ), color=colors_dict['R'], linewidth_fac=(PHI_INV*1.5))
     
     # format and save
-    ax.set_xlim(-scale, scale)
-    ax.set_ylim(-scale, scale)
+    ax.set_xlim(-1, 1)
+    ax.set_ylim(-1, 1)
     ax.set_axis_off()
     ax.set_position([0, 0, 1, 1])
     for ext in ['.svg', '.png']:
@@ -54,6 +54,8 @@ def draw_OCR(
         fig.savefig(output_path, transparent=True)
         if verbose: print(f"Done.")
     if verbose: print(f"Done.")
+    
+    return fig, ax
 
 if __name__ == '__main__':
     draw_OCR()

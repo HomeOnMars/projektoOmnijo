@@ -27,7 +27,7 @@ def draw_RdOFlago(
     # noext means no extension
     output_path_noext: str = "./RdOFlago",
     # size of the drawing pad
-    scale: float = 1.0,
+    scale: float = 27/40,    # 1.0 => 400px x 400px
     ratio_xy: float = PHI,
     verbose: bool = True,
 ):    # plot
@@ -35,14 +35,14 @@ def draw_RdOFlago(
     ---------------------------------------------------------------------------
     """
     fig, ax = plt.subplots(figsize=[4*scale*ratio_xy, 4*scale])
-    offset_x = 1.5/16 * scale
-    xlims = [-scale*ratio_xy+offset_x, scale*ratio_xy+offset_x]
-    ylims = [-scale, scale]
+    offset_x = 1.5/16
+    xlims = [-ratio_xy+offset_x, ratio_xy+offset_x]
+    ylims = [-1., 1.]
     # debug
     if verbose: print("Drawing...")
 
     # --- background
-    dx = scale * tan((t(5.5)-90)/180*pi)
+    dx = tan((t(5.5)-90)/180*pi)
     dx0 = 0.004
     ax.add_patch(
         mpl.patches.Polygon([
@@ -66,10 +66,10 @@ def draw_RdOFlago(
 
     # --- arcs
     # draw O
-    draw_arc(ax, radius=11/16, thetas=ts( 5.5, 19.50), color=colors_dict['O'], linewidth_fac=16/16)
+    draw_arc(ax, scale, radius=11/16, thetas=ts( 5.5, 19.50), color=colors_dict['O'], linewidth_fac=16/16)
     # draw R
     # 2.36 = 4 - acos(cos((4-3.5)/8*pi)*11/13.5)/pi*8
-    draw_arc(ax, radius=14/16, thetas=ts( 2.5, -2.5), color=colors_dict['O'], linewidth_fac=16/16)
+    draw_arc(ax, scale, radius=14/16, thetas=ts( 2.5, -2.5), color=colors_dict['O'], linewidth_fac=16/16)
 
 
     # format and save
@@ -83,6 +83,8 @@ def draw_RdOFlago(
         fig.savefig(output_path, transparent=True)
         if verbose: print(f"Done.")
     if verbose: print(f"Done.")
+
+    return fig, ax
 
 if __name__ == '__main__':
     draw_RdOFlago()
