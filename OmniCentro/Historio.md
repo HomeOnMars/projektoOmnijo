@@ -116,7 +116,51 @@ and re-directed the military fundings and personnel there
   combating the worrying trend of internet burnout epidemic.),
 
 but surely people, being people, would anger and rebel
-on the change of everything they know about their own country?
+on the change of everything they know
+about their own country?[^Historio-RdO-Serena-kmt4]
+
+[^Historio-RdO-Serena-kmt4]: On the other hand, there has been
+  a few dozens protest attempts registered in the police system within
+  the first six months after <span style="color:Beige">Serena</span>'s
+  coronation; most of them failed to actualize, however,
+  often due to internal coordination difficulties,
+  such as the never-ending arguments about when and where to gather people;
+  and by the time they finally made a decision,
+  people have already moved on to other things
+  the <span style="color:Beige">Queen</span> just announced/implemented.<br>
+  Another example of the failed protests
+  showed all major highways suffering several car accidents
+  hours before the sceduled protest, resulting in most of the protesters failed to reach the site.
+  This happened right before <span style="color:Beige">Serena</span>
+  declared her Free public transit policies, vowing to "fix the traffic", so
+  people can always go wherever they want regardless of their social class.<br>
+  One of the few exceptions where the protest did occur in full force
+  was the strike from the doctors and nurses
+  a few weeks before the foundation of *OmniCentro*,
+  despite them having higher salary than ever before;
+  This eventually resulted in a local celebrity
+  entered a near-permanent coma, as no hospital was available
+  when she accidentally hit her head that day.
+  Together with a few dozens more similar avoidable tragedies,
+  a public outcry happened.<br>
+  <span style="color:Beige">Serena</span> vowed to "fix the healathcare",
+  fired ALL of those doctors and nurses- at least the ones working in
+  public hospitals (with generous compensations for everyone, of course),
+  and re-hired all of the new staff OVERNIGHT.
+  One would be crazy to think <span style="color:Beige">Serena</span>
+  can pull this off this time, even though she has obviously been planning
+  this mass replacement move since a long time ago...<br>
+  But she did.<br>
+  The (somehow) much more competent replacement doctors and nurses
+  (who are almost entirely made out of the immigrants from
+  <span style="color:Beige">Serena</span>'s immigration program)
+  successfully made the death rate in hosptial drop to near zero,
+  curing became faster, doctors are more empathetic,
+  and the overall health level in the entire island began to increase.
+  Even that local celebrity was miraculously
+  re-awaken from her coma and recovered in record speed.
+  The people, however, did not buy that (not at first),
+  as the emmigration rate reached another high point after this shenanigan.
 
 ...
 Or they could leave.
@@ -171,20 +215,51 @@ effectively buying out her own country.
 
 [^Historio-RdO-Recesio-bankoj]: When the local banks
   (and foreign bank branches) failed,
-  instead of bailing them out, Serena opted for directly taking them over-
+  instead of bailing them out,
+  <span style="color:Beige">Serena</span> opted for directly taking them over-
   Consolidated them into her own newly opened bank "Banko de Omnijo" one by one.
   A move that many considered crazy-
+  no one even know where she found enough money in the royal coffer
+  to start her own bank (though some guessed that it might
+  have something to do with the <span style="color:Beige">Queen</span>'s
+  recent involvement in the new cyptocurrency)-
   but ended up working better than expected, actually,
   with much more competent new management
   saving the day and integrating everything. <br>
-  With this as an example, Serena found it much easier for her government
+  With this as an example, <span style="color:Beige">Serena</span>
+  found it much easier for her governmental Office of Finance `OCOF`
   to take over all kinds of businesses whenever they go bankrupt-
   especially when most of them turned out to be easily savable afterall.
   As for the old management-
   many of them are already cashing out and enjoying the holiday elsewhere
-  as Serena's new law allows them to do so and leave,
+  as Serena's new law allows them to do so and leave
+  (like all old employees that got fired-
+  who each got very, very generous compensation),
   possibly explaining their over-tendency
-  to declare bankruptcy so early and easily.
+  to declare bankruptcy so early and eagerly.<br>
+  Another reason for the mass bankruptcy declarations
+  may be the never-ending lawsuits
+  following <span style="color:Beige">Serena</span>'s
+  constant changes to her countries' laws.
+  An example: she declared the super-long ALL CAPS SENTENCES
+  in so many terms and conditions unreadable
+  and should be automatically voided. <!-- Her original words were actually
+  "the terms and conditions should be treated as being
+  what the average users think they have accepted,
+  instead of what all those empty unreadible words say.",
+  This was actually not published and pushed into the law...
+  until a while later, bundled with her copy-right law reforms,
+  triggering another wave of chaos...  -->
+  Which became the law within hours after its boardcasting.
+  Before many companies had the chance to finish re-formating their T&C,
+  a local lawsuit has already catched the eye of the public,
+  with the recently-appointed immigrant judge ruled in lightning speed that
+  the company was in the fault, as one of the NO LIABILITIES cause deemed
+  unreadable and voided.
+  The subsequent massive increase in lawsuits following that example
+  drove many local companies into bankruptcy...
+  meaning they eventually got taken over by the `OCOF`
+  in relatively good conditions.
 
 ### La fondo de *OmniCentro*
 
