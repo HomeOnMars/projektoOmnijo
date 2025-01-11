@@ -35,7 +35,7 @@ def draw_RdOFlago(
     ---------------------------------------------------------------------------
     """
     fig, ax = plt.subplots(figsize=[4*scale*ratio_xy, 4*scale])
-    offset_x = 1.5/16
+    offset_x = 1.375/16
     xlims = [-ratio_xy+offset_x, ratio_xy+offset_x]
     ylims = [-1., 1.]
     # debug
