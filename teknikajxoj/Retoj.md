@@ -45,16 +45,16 @@ Retoj
 
 - Gradient $s$ and Curve radius $R$ limit:
 
-  |             |  max Gradient $s$ |  min Curve radius $R$        | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Notes |
+  |             |  max Gradient $s$ |  min Curve radius $R$        | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Notes |
   | ----------- | :-------: | :----------: | :--------: | --- | --- | --- | --- | ----- |
   | -           |  4   \%   |  552m (69u)  |  125 km/h  |  $95\degree$ | $131\degree$ | $154\degree$ | $167\degree$ | |
   | Recommended |  6   \%   |  352m (44u)  |  100 km/h  | -            | $108\degree$ | $141\degree$ | $160\degree$ | |
   | Soft Limit  |  8   \%   |  224m (28u)  |   80 km/h  | -            | -            | $121\degree$ | $149\degree$ | For ramps / In mountains |
-  | -           | 10   \%   |  128m (16u)  |   60 km/h  | -            | -            |  $90\degree$ | $127\degree$ | Mountains Only |
+  | -           | 10   \%   |  144m (18u)  |   65 km/h  | -            | -            |  $97\degree$ | $133\degree$ | Mountains Only |
   | Hard Limit  | 10   \%   |   32m  (4u)  |   30 km/h  | -            | -            | -            |  $90\degree$ | Mountains Only |
 
   - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
-    i.e., $\theta_\mathrm{512m}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 512m.
+    i.e., $\theta_\mathrm{64u}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 64u (512m).
   - Source: (2024-08-17) [Wikipedia](https://en.wikipedia.org/wiki/Grade_(slope)#Roads): US
   - Source: (2024-08-17) [Wikipedia](https://en.wikipedia.org/wiki/International_E-road_network#Road_design_standards): EU
     - According to the source,
@@ -101,13 +101,13 @@ Retoj
 
 - Gradient $s$ and Curve radius $R$ limit:
 
-  |             | max Gradient $s$ | min Curve radius $R$ | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
+  |             | max Gradient $s$ | min Curve radius $R$ | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
   | ----------- | :--------------: | :------------------: | :--------------------------: | --- | --- | --- | --- | ------------------- |
   | Recommended |  1.5 \%  |  800m (100u)  |  135 km/h  | $115\degree$ | $145\degree$ | $162\degree$ | $171\degree$ | |
-  | Hard Limit  |  3.5 \%  |  160m  (20u)  |   60 km/h  | -            | -            | $103\degree$ | $137\degree$ | Lithgow Zig Zag |
+  | Hard Limit  |  3.5 \%  |  184m  (23u)  |   65 km/h  | -            | -            | $111\degree$ | $142\degree$ | Lithgow Zig Zag |
 
   - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
-    i.e., $\theta_\mathrm{512m}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 512m.
+    i.e., $\theta_\mathrm{64u}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 64u.
   - Curve radius is obtained by $R \propto v_\mathrm{max}^2$ (See [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant).)
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant): $R$ info
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples (see Lithgow Zig Zag)
@@ -123,7 +123,7 @@ Retoj
 
 - Gradient $s$ and Curve radius $R$ limit:
 
-  |             | max Gradient $s$ | min Curve radius $R$ | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
+  |             | max Gradient $s$ | min Curve radius $R$ | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
   | ----------- | :------: | :------------: | :--------: | --- | --- | --- | --- | ------------------- |
   | Recommended |  1.8 \%  |  5400m (675u)  |  350 km/h  | $170\degree$ | $175\degree$ | $178\degree$ | $179\degree$ | |
   | -           |  2   \%  |  5000m (625u)  |  335 km/h  | -            | -            | -            | -            | |
@@ -146,7 +146,7 @@ Retoj
 
 - Gradient $s$ and Curve radius $R$ limit:
 
-  |             | max Gradient $s$ | min Curve radius $R$  | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
+  |             | max Gradient $s$ | min Curve radius $R$  | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
   | ----------- | :--------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
   | Recommended |  5   \%  |  576m (72u)  |  135 km/h  | $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;  <br>($R$) Assuming tilting trains: see [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant). |
   | Hard Limit  |  7   \%  |  320m (40u)  |  100 km/h  | -                 | $103\degree$ | $137\degree$  | $158\degree$ | ($s$) Bernina Railway, Switzerland;  <br>($R$) Bay Area Rapid Transit, United States. |
@@ -154,7 +154,7 @@ Retoj
   - Note: curve radius restrictions may be relaxed when exiting / entering stations where speed is slow.
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
   - Source: (2024-08-17) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
-    - Note: $R$ can go as low as 64m as seen in Central line, London Underground, United Kingdom; but that's probably too tight.
+    - Note: $R$ can go as low as 64m (8u) as seen in Central line, London Underground, United Kingdom; but that's probably too tight.
   - Source: (2024-08-27) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant): $R$ info.
 - Length / Power
   - Assumed EMU (Electric Multiple Unit).
@@ -186,7 +186,7 @@ Retoj
 
 - Gradient $s$ and Curve radius $R$ limit:
 
-|             | max Gradient $s$ | min Curve radius $R$  | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{512m}$ | $\theta_\mathrm{256m}$ | $\theta_\mathrm{128m}$ | $\theta_\mathrm{64m}$ | Real world examples |
+|             | max Gradient $s$ | min Curve radius $R$  | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
 | ----------- | :--------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
 | Recommended |  10  \%  |  TBD                     |  80 km/h  | -                 | -                 | -                 | -                 | TBD               |
 | Hard Limit  |  12  \%  |  TBD                     |  70 km/h  | -                 | -                 | -                 | -                 | TBD               |

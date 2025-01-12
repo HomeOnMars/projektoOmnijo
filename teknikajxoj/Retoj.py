@@ -139,7 +139,7 @@ if __name__ == '__main__':
 
     print("\nLocal Road\n")
     
-    print_info(grad=10  *u.percent, v= 60*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
+    print_info(grad=10  *u.percent, v= 65*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
     print_info(grad=13.5*u.percent, v= 50*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
     print_info(grad=17.5*u.percent, v= 40*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
     print_info(grad=24.5*u.percent, v= 30*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
