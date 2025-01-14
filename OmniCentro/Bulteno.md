@@ -62,7 +62,7 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | :---------------- | ---- |
 | Ŝtatestro  <br>Head of State   | <span style="color:Beige">La Reĝino Serena de Omnijo</span> |
 | Registara Tipo  <br>Government Type   | Konstitucia Monarkio / Bonfara Diktaturo / Totalisma Reĝimo, depende de kiu vi demandas[^Bulteno-RegistaraTipo]. |
-| Urbaj Projektistoj  <br>City Designers | <span style="color:DeepSkyBlue">Ĉuĉjo la Arkitekto</span> <!-- Fullname [DATA CORRUPTED/REDACTED] (N/A) -->  kaj  <span style="color:MediumPurple">Ĝejnjo la Suvereno</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo de Omnijo --> de OCFI |
+| Urbaj Projektistoj  <br>City Designers | <span style="color:DeepSkyBlue">Ĉuĉjo la Arkitekto</span>  kaj  <span style="color:MediumPurple">Ĝejnjo la Suvereno</span> de OCFI |
 | Oficiala Lingvo  <br>Official Language | [*Esperanto++*](Lingvo.md#lingvo), a.k.a. ***E++***, pronounced as `Epopo`. (See link for more info.)  <br>(Transitioning from English in the next 16 years.) |
 | Oficiala Religio  <br>Official Religion | Pastafarianismo[^Bulteno-Religio] |
 | Oficialaj Koloroj  <br>Official Colors   | <span style="color:Beige">Flavgriza/Beige #E6DAA6</span> [^Bulteno-Koloroj-Flavgriza]  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span> [^Bulteno-Koloroj-Bluo]  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span> [^Bulteno-Koloroj-Purpuro] |
@@ -89,7 +89,7 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
   Just look at how much improvements have been achieved in the past 6 months
   to the lives of everyone who chose to stay!
   I would say we are a *Benevolent Dictatorship*."
-  <br>...<br> <!-- Say Benevolent Dictatorship, Act as if Constitutional Monarchy -->
+  <br>...<br> <!-- Say Benevolent Dictatorship, Believe Constitutional Monarchy -->
   <span style="color:Beige">Reĝino Serena de Omnijo</span>:
   "I know many people outside our beloved island considered us
   fallen into a *Totalitarian Regime*... and I agree!
@@ -141,18 +141,37 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
   its promises and duty for their protection and guidance,
   and its call on the people's trust and faith for the state.
 
-### Government Structure (Part)
+### Government Structure
 
-| Departments and officies            |  Acronym | Nomo |
-| ----------------------------------- | :------: | ---- |
-| Department of Defence               | OCFD | Omnija Centra Fako de Defendo             |
-| Department of Education and Science | OCFE | Omnija Centra Fako de Edukado kaj Scienco |
-| Department of Fire and Rescue       | OCFF | Omnija Centra Fako de Fajro kaj Savo      |
-| Department of Infrastructure        | OCFI | Omnija Centra Fako de Infrastrukturo      |
-| Department of Police                | OCFP | Omnija Centra Fako de Polico              |
-| Department of Health                | OCFS | Omnija Centra Fako de Sano                |
-| Office of Finance                   | OCOF | Omnija Centra Oficejo de Fisko            |
-| Office of Foreign Affairs           | OCOE | Omnija Centra Oficejo de Eksteraj Aferoj  |
-| Office of Home    Affairs           | OCOI | Omnija Centra Oficejo de Internaj Aferoj  |
-| Public Radio Network                | OCRR | OmniCentra RadioReto |
-| Nationalized Bank                   | BdO  | Banko de Omnijo |
+| Departments and officies            |  Acronym | Nomo | Komento |
+| ----------------------------------- | :------: | ---- | ------- |
+| Department of Defence               | OCFD | Omnija Centra Fako de Defendo             | Budget not disclosed. |
+| Department of Education and Science | OCFE | Omnija Centra Fako de Edukado kaj Scienco | Science! (also oversees all kinds of information distribution.) |
+| Department of Fire and Rescue       | OCFF | Omnija Centra Fako de Fajro kaj Savo      | Responsible for emergency preparedness too. |
+| Department of Infrastructure        | OCFI | Omnija Centra Fako de Infrastrukturo      | Engineering! (also oversees cities development, energy generation, and environmental protection.) |
+| Department of Police                | OCFP | Omnija Centra Fako de Polico              | Internal investigation agency. |
+| Department of Health                | OCFS | Omnija Centra Fako de Sano                | Healthcare and deathcare (cryonics and bio-scanning options now available as well!) |
+| Office of Foreign Affairs           | OCOE | Omnija Centra Oficejo de Eksteraj Aferoj  | RdO needs PR too. |
+| Office of Finance                   | OCOF | Omnija Centra Oficejo de Fisko            | Collects taxes and oversees all nationalized industries and companies. Almost megacorp equivalent. |
+| Office of Home    Affairs           | OCOI | Omnija Centra Oficejo de Internaj Aferoj  | Welfare for all! No one shall be left behind. Also oversees the distribution of the UBI (universal basic income). |
+| Public Radio Network                | OCRR | OmniCentra RadioReto | La voĉo de Omnijo. |
+| Nationalized Bank                   | BdO  | Banko de Omnijo | All your finance managed in one place. Security guaranteed by the central gov. No need to worry about filing taxes- here they are automatically filed for you! |
+
+### Listo de Rolujoj
+
+> List of characters
+
+| Org  | Nomo |
+| ---- | ---- |
+| RdO  | <span style="color:Beige">█ La Reĝino Serena de Omnijo</span> |
+| OCFD | <span style="color:Silver">█ Laŭra de Omnijo la Suvereno</span> |
+| OCFE | <span style="color:Gainsboro">█ Daianna de Omnijo la Suvereno</span> |
+| OCFF ||
+| OCFI | <span style="color:DeepSkyBlue">█ Ĉuĉjo de Omnijo la Arkitekto</span> |
+| OCFI | <span style="color:MediumPurple">█ Ĝejnjo de Omnijo la Suvereno</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo de Omnijo --> |
+| OCFP | <span style="color:Chocolate">█ Tejlero de Omnijo la Suvereno</span> |
+| OCFS ||
+| OCOE | <span style="color:cyan">█ Alekso de Omnijo la Suvereno</span> |
+| OCOF ||
+| OCOI | <span style="color:Tan">█ Vennesa de Omnijo la Suvereno</span> |
+| BdO  | <span style="color:RoyalBlue">█ Beno de Omnijo la Prezidanto</span> |

@@ -124,9 +124,13 @@ Examples:
 |    Mt   | **M**on**t**o        | Mountain         |
 |    Am   | **A**ntaŭ**m**onto   | Foothill         |
 |    Me   | **M**ont**e**to      | Hill             |
+||||
 |    Dt   | **D**is**t**rikto    | District         |
 |    Ia   | **I**ndustri**a**reo | Industrial Area  |
 |    Hv   | **H**a**v**eno       | Port             |
+|    Vd   | **V**i**d**o         | Vista            |
+|    Vĝ   | **V**ila**ĝ**o       | Village          |
+||||
 |    St   | **S**tra**t**o       | Street           |
 |    Vj   | **V**o**j**o         | Road             |
 |    Ŭj   | a**Ŭ**tovo**j**o     | Motorway         |
@@ -136,17 +140,18 @@ Naming rules examples:
 
 - `Ab-O#1` (Good) as a short version  
   of `Ab-Olivkronaĵo #1` (Good),  
-  or `Akvobaraĵo-Olivkronaĵo #1` (Deprecated),  
+  or `Akvobaraĵo-Olivkronaĵo #1` (Meh),  
   or `Olivkronaĵa Akvobaraĵo #1` (Good);
 - `Mt-O` (Good) as a short version  
   of `Mt-Olivkronaĵo` (Good),  
-  or `Monto-Olivkronaĵo` (Deprecated),  
+  or `Monto-Olivkronaĵo` (Good),  
   or `Olivkronaĵa Monto` (Meh);
 - `Ŭj#Ψm` for Motorway 13 N->S `ŬΨm`,  
   or `Aŭtovojo #Ψm`;
 - `St-Olivkronaĵo #123` as a short version  
   of `Olivkronaĵa Strato #123`,  
   or `123 Olivkronaĵo St`;
+- `Stacidomo #E` and `Stacidomo #U` for train and bus station respectively;
 
 ### Distrikto Numerada Sistemo
 
