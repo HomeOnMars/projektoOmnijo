@@ -65,7 +65,8 @@ from a tragic accident[^Historio-RdO-Serena-kmt3],
 by the corrupted ministers and councilors
 who saw her as young and easy-to-manipulate for their own personal gain.
 But <span style="color:Beige">Serena</span> has proven to be
-much more impulsive, arrogant, and harder-to-control than they expected.
+much more impulsive, arrogant, and harder-to-control than they expected,
+and her popularity among the people was increasing dangerously fast.
 The corrupted ministers and councilors then plotted a regime change
 to forcefully "retire"[^Historio-RdO-Serena-kmt2] her.
 Which they would have succeeded
@@ -107,7 +108,7 @@ and re-directed the military fundings and personnel there
 - More telecom towers were built and maintained,
   ensuring good coverage in even the remotest area in the island;
 - Transportation were also improved and subsidized,
-  with free public transit trial started in several major cities;
+  with free public transit trial started on the whole island;
 - Hospitals received more funding
   to keep them well staffed and maintained,
   allowing them to handle the surge of patients
@@ -143,7 +144,7 @@ about their own country?[^Historio-RdO-Serena-kmt4]
   when she accidentally hit her head that day.
   Together with a few dozens more similar avoidable tragedies,
   a public outcry happened.<br>
-  <span style="color:Beige">Serena</span> vowed to "fix the healathcare",
+  <span style="color:Beige">Serena</span> vowed to "fix the healthcare",
   fired ALL of those doctors and nurses- at least the ones working in
   public hospitals (with generous compensations for everyone, of course),
   and re-hired all of the new staff OVERNIGHT.

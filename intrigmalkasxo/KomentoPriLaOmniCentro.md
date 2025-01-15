@@ -3,12 +3,11 @@
 Komento de Aŭtoro pri la Regno de Omnijo kaj la urbo OmniCentro
 ===============================================================================
 
-Author's note on the Kingdom of Omnijo and the city of OmniCentro.
+> Author's note on the Kingdom of Omnijo and the city of OmniCentro.
 
 > [!CAUTION]
 > ***Major Spoilers throughout this page!!!***  
 > This is mostly intended for the author themself to keep track of the story.
-
 
 Legal
 -------------------------------------------------------------------------------
@@ -19,22 +18,12 @@ Legal
 > are either the products of the author's imagination or used in a fictitious manner.
 > Any resemblance to actual persons, living or dead, or actual events is purely coincidental.
 
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/HomeOnMars/projektoOmnijo/blob/master/intrigmalkasxo/KomentoPriLaOmniCentro.md">Komento de Aŭtoro pri la Regno de Omnijo kaj la urbo OmniCentro</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/HomeOnMars">HomeOnMars</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
-
--------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
+<p xmlns:cc="http://creativecommons.org/ns#" >This work by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/HomeOnMars">HomeOnMars</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
 
 Behind the background
 -------------------------------------------------------------------------------
 
-About the [Histories](../OmniCentro.md#la-historio-the-history)...
+About the [Histories](../OmniCentro/Historio.md#la-historio)...
 
 <details>
   <summary><b>SPOILERS</b>: The true nature of RdO</summary>
@@ -83,7 +72,7 @@ About the [Histories](../OmniCentro.md#la-historio-the-history)...
   <span style="color:MediumPurple">Ĝejda</span>
   eventually decided to settle down and build,
   under the alias of
-  <span style="color:MediumPurple">Ĝejnjo Fenulo</span>
+  <span style="color:MediumPurple">Ĝejda Fenulo</span>
   (as <span style="color:MediumPurple">ĜEJDA</span>-<span style="color:MediumPurple">FEU#0</span>),
   focusing the majority of her presence
   on the remote island that will soon become <em>la Regno de Omnijo</em>.
