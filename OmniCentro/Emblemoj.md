@@ -47,6 +47,6 @@ Here are the emblem designs for the acronyms listed in [Background Bulletin](../
 | OCG  | ![OCG](../fig/OCG.svg)   |
 | OCR  | ![OCR](../fig/OCR.svg)   |
 | OCRR | ![OCRR](../fig/OCRR.svg) |
-
-RdO flag:
-![RdOFlago](../fig/RdOFlago.svg)
+|||
+| RdO flag | ![RdOFlago](../fig/RdOFlago.svg) |
+|||

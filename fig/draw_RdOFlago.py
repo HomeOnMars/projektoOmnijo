@@ -27,15 +27,15 @@ def draw_RdOFlago(
     # noext means no extension
     output_path_noext: str = "./RdOFlago",
     # size of the drawing pad
-    scale: float = 27/40,    # 1.0 => 400px x 400px
-    ratio_xy: float = PHI,
+    scale: float = 256/400,    # 1.0 => 400px x 400px
+    ratio_xy: float = 25/16, #PHI,
     verbose: bool = True,
 ):    # plot
     """
     ---------------------------------------------------------------------------
     """
     fig, ax = plt.subplots(figsize=[4*scale*ratio_xy, 4*scale])
-    offset_x = 1.375/16
+    offset_x = 22/256
     xlims = [-ratio_xy+offset_x, ratio_xy+offset_x]
     ylims = [-1., 1.]
     # debug
@@ -43,7 +43,7 @@ def draw_RdOFlago(
 
     # --- background
     dx = tan((t(5.5)-90)/180*pi)
-    dx0 = 0.004
+    dx0 = 27/4096
     ax.add_patch(
         mpl.patches.Polygon([
             [xlims[0], ylims[1]],

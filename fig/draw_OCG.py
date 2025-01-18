@@ -27,7 +27,7 @@ def draw_OCG(
     # noext means no extension
     output_path_noext: str = "./OCG",
     # size of the drawing pad
-    scale: float = 27/40,    # 1.0 => 400px x 400px
+    scale: float = 256/400,    # 1.0 => 400px x 400px
     verbose: bool = True,
 ):
     """Draw the OCG emblem."""
