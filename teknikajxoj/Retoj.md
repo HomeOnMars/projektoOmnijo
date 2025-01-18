@@ -51,7 +51,7 @@ Retoj
   | Recommended |  6   \%   |  352m (44u)  |  100 km/h  | -            | $108\degree$ | $141\degree$ | $160\degree$ | |
   | Soft Limit  |  8   \%   |  224m (28u)  |   80 km/h  | -            | -            | $121\degree$ | $149\degree$ | For ramps / In mountains |
   | -           | 10   \%   |  144m (18u)  |   65 km/h  | -            | -            |  $97\degree$ | $133\degree$ | Mountains Only |
-  | Hard Limit  | 10   \%   |   32m  (4u)  |   30 km/h  | -            | -            | -            |  $90\degree$ | Mountains Only |
+  | Hard Limit  | 10   \%   |   32m  (4u)  |   30 km/h  | -            | -            | -            |  -           | Mountains Only |
 
   - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
     i.e., $\theta_\mathrm{64u}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 64u (512m).
@@ -169,11 +169,14 @@ Retoj
 
   |             | max Gradient $s$ | min Curve radius $R$ (without slowing)  | Speed limit $v_\mathrm{max}$ | Real world examples |
   | ----------- | :--------------: | :--------------: | :--------------------------: | ------------------- |
+  | Deprecated  |   8   \%  |  448m (56u)  | 100 km/h  | |
   | Recommended |  10   \%  |  288m (36u)  |  80 km/h  | Sheffield Supertram, Sheffield |
   | Hard Limit  |  13.5 \%  |  160m (20u)  |  60 km/h  | Lisbon Tramways, Portugal |
 
-  - Note: faster speed may be allowed with gentler gradient and larger curve radius (see above metro section.)
+  - Note: Faster than 65 km/h speed can only be achieved on separated tracks.
   - Curve radius limit here can be ignored, as trams slow down near intersections.
+    It is larger than metro when speed is fast,
+    because tram tracks are assumed to be non-tilting.
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
 - Length / Power
   - Assumed EMU (Electric Multiple Unit).
@@ -213,6 +216,6 @@ $\theta_{d} = 2 \tan^{-1}{\frac{R}{d}}$
     print(theta_deg(R=4000, d=512), get_R(theta_deg=166, d=512))
 ```
 
-#### Analysis of train/truck engine's ability to haul cars:
+#### Analysis of train/truck engine's ability to haul cars
 
 See my python code [here](Retoj.py).

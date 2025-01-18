@@ -135,6 +135,9 @@ Examples:
 |    Vj   | **V**o**j**o         | Road             |
 |    Ŭj   | a**Ŭ**tovo**j**o     | Motorway         |
 |    Ej   | f**E**rvo**j**o      | Railway          |
+|    Tj   | **T**ramvo**j**o     | Tramway          |
+||||
+|    Pt   | **P**ar**t**o        | Part, Segment    |
 
 Naming rules examples:
 
@@ -159,22 +162,22 @@ Naming rules examples:
 
 Using the leading digit for identifying districts and areas:
 
-| Areo Numero | Proksimuma Loko | Siglo | Plena Nomo |
-| --- | ---- | ----- | -------------- |
-| `0` |      |       | Interdistriktaj vojaĝoj ene de la urbo (sen eksteraj konektoj)  <br>Interdistrict travels within the city (no outside connections) |
-| `1` |  SK  | Dt-PV | Pioniro-Vilaĝo |
-| `2` |  SR  | Mt-O  | Mt-Olivkronaĵo |
-| `3` |  SC  | Am-H  | Am-Hejmecaĵo   |
-| ... |      |       |                |
-| `Σ` |      |       | Eksteraj Konektoj  <br>Outside connections |
-| ... |      |       |                |
-| TBD |  SK  | Mt-K  | Mt-Kuraĝecaĵo  |
-| TBD |  CC  | Mt-H  | Mt-Hejmecaĵo   |
-| TBD |  CR  | Mt-E  | Mt-Esperecaĵo  |
-| TBD |  NR  | Mt-R  | Mt-Raciecaĵo   |
-| TBD |  NC  | Mt-U  | Mt-Unukornaĵo  |
-| TBD |  NK  | Mt-F  | Mt-Fortikecaĵo |
-| N/A |  NC  | Mt-A  | Mt-Asteriaĵo   |
+| Areo Numero | Proksimuma Loko | Siglo | Plena Nomo | Koloro |
+| --- | ---- | ----- | ----- | -------------- |
+| `0` |      |       | Interdistrikto (sen eksteraj konektoj)  <br>Interdistrict (no outside connections) | <span style="color:Tan">█ #D2B48C</span> |
+| `1` |  SK  | Dt-PV | Pioniro-Vilaĝo | |
+| `2` |  SR  | Mt-O  | Mt-Olivkronaĵo | <span style="color:DarkSeaGreen">█ #8FBC8F</span> |
+| `3` |  SC  | Am-H  | Am-Hejmecaĵo   | |
+| ... |      |       |                | |
+| `Σ` |      |       | Eksteraj Konektoj  <br>Outside connections | |
+| ... |      |       |                | |
+| TBD |  SK  | Mt-K  | Mt-Kuraĝecaĵo  | <span style="color:Silver">█ #C0C0C0</span> |
+| TBD |  CC  | Mt-H  | Mt-Hejmecaĵo   | |
+| TBD |  CR  | Mt-E  | Mt-Esperecaĵo  | <span style="color:Beige">█ #F5F5DC</span> |
+| TBD |  NR  | Mt-R  | Mt-Raciecaĵo   | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
+| TBD |  NK  | Mt-F  | Mt-Fortikecaĵo | <span style="color:MediumPurple">█ #9370DB</span> |
+| TBD |  NC  | Mt-U  | Mt-Unukornaĵo  | <span style="color:Pink">█ #FFC0CB</span> |
+| N/A |  NC  | Mt-A  | Mt-Asteriaĵo   | |
 
 ### Konstruaj Nomoj
 

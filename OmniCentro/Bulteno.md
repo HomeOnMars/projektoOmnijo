@@ -161,17 +161,17 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 
 > List of characters
 
-| Org  | Nomo |
-| ---- | ---- |
-| RdO  | <span style="color:Beige">█ La Reĝino Serena de Omnijo</span> |
-| OCFD | <span style="color:Silver">█ Laŭra de Omnijo la Suvereno</span> |
-| OCFE | <span style="color:Gainsboro">█ Daianna de Omnijo la Suvereno</span> |
-| OCFF ||
-| OCFI | <span style="color:DeepSkyBlue">█ Ĉuĉjo de Omnijo la Arkitekto</span> |
-| OCFI | <span style="color:MediumPurple">█ Ĝejnjo de Omnijo la Suvereno</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo de Omnijo --> |
-| OCFP | <span style="color:Chocolate">█ Tejlero de Omnijo la Suvereno</span> |
-| OCFS ||
-| OCOE | <span style="color:cyan">█ Alekso de Omnijo la Suvereno</span> |
-| OCOF ||
-| OCOI | <span style="color:Tan">█ Vennesa de Omnijo la Suvereno</span> |
-| BdO  | <span style="color:RoyalBlue">█ Beno de Omnijo la Prezidanto</span> |
+| Org  | Koloro | Nomo |
+| ---- | ------ | ---- |
+| RdO  | #F5F5DC | <span style="color:Beige">█ La Reĝino Serena de Omnijo</span> |
+| OCFD | #C0C0C0 | <span style="color:Silver">█ Laŭra de Omnijo la Suvereno</span> |
+| OCFE | #00FFFF | <span style="color:Cyan">█ Daianna de Omnijo la Suvereno</span> |
+| OCFF | #FF0000 | <span style="color:Red">█ </span> |
+| OCFI | #00BFFF | <span style="color:DeepSkyBlue">█ Ĉuĉjo de Omnijo la Arkitekto</span> |
+| OCFI | #9370DB | <span style="color:MediumPurple">█ Ĝejnjo de Omnijo la Suvereno</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo de Omnijo --> |
+| OCFP | #D2691E | <span style="color:Chocolate">█ Tejlero de Omnijo la Suvereno</span> |
+| OCFS | #FFC0CB | <span style="color:Pink">█ </span> |
+| OCOE | #FFD700 | <span style="color:Gold">█ Alekso de Omnijo la Suvereno</span> |
+| OCOF | #8FBC8F | <span style="color:DarkSeaGreen">█ </span> |
+| OCOI | #D2B48C | <span style="color:Tan">█ Vennesa de Omnijo la Suvereno</span> |
+| BdO  | #4169E1 | <span style="color:RoyalBlue">█ Beno de Omnijo la Prezidanto</span> |

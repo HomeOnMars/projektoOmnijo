@@ -42,9 +42,10 @@ hp = 746 * u.W
 #    assuming 24t per FEU, this means truck / train / ships should carry 24t / 288t / 5400t goods.
 # Planned adjustments:
 #    adjust trains to carry 24 FEUs (with 24 trailers and 1 engine;
-#        as 2u/16m per trailer, this means a 400m long train; reserve 28u/448m for rail junctions)
+#        as 2u/16m per trailer, this means a 400m long train; reserve 56u/448m for rail junctions)
 #        576t goods per train
 #    adjust cargo airplanes to carry 5 FEU-equivalent weight (i.e. 120t goods per plane)
+#    adjust container ships to carry 224 FEUs (i.e. 5376t goods per ship, or 9.33 trains per ship);
 
 def n_car_f(
     v, grad,
@@ -85,24 +86,31 @@ def print_info(**params):
 
 if __name__ == '__main__':
     # Assuming more powerful electric trains: 9600hp (in contrast to 6760hp realistic estimate
-    #    (from UK class 92 electric freight locomotive <https://en.wikipedia.org/wiki/British_Rail_Class_92> ))
+    #   (from UK class 92 electric freight locomotive <https://en.wikipedia.org/wiki/British_Rail_Class_92> ))
     # remember we need to drag 24 cars, so n_car > 24 is minimum.
     #
     # For "per car" cases, we need to pull the car itself, so n_car must >= 1
     
     print("\nRail\n")
-    
+    # As the steel-on-steel static friction coeff is only 0.15~0.6 (<https://hypertextbook.com/facts/2005/steel.shtml>),
+    #   max grad should be <= 15% (on the safe side) to prevent wheelslip
+    #   for all kinds of adhesive rails
+    #       (It's mostly 0.4 (which means max 40% grad),
+    #       but just in case someone put oil on it
+    #       reducing it to 0.15 (<https://www.engineeringtoolbox.com/friction-coefficients-d_778.html>),
+    #       let's go with 15%)
+
     print_info(grad=1.5*u.percent, v=135*u.km/u.h, engine_p=(9600*hp).to(hp))
     print_info(grad=3.5*u.percent, v= 65*u.km/u.h, engine_p=(9600*hp).to(hp))
     
     print("\nHigh Speed Rail (per car)\n")
     # Using China Railway CRH3 (Velaro CN) info as reference / rough guideline
-    #    see <https://pedestrianobservations.com/2012/03/13/table-of-train-weights>
-    #    see also <https://en.wikipedia.org/wiki/China_Railway_CRH3>
-    #    Engine power exaggerated from 772hp (for a 24m car with a power ratio of 24kW/t) to 1600hp
-    #    Also assuming proper frontal design reducing effective area for air drag
-    #    And assuming lighter full load weight load_full=48t instead of more realistic 56t estimate
-    #    Because we are amazing
+    #   see <https://pedestrianobservations.com/2012/03/13/table-of-train-weights>
+    #   see also <https://en.wikipedia.org/wiki/China_Railway_CRH3>
+    #   Engine power exaggerated from 772hp (for a 24m car with a power ratio of 24kW/t) to 1600hp
+    #   Also assuming proper frontal design reducing effective area for air drag
+    #   And assuming lighter full load weight load_full=48t instead of more realistic 56t estimate
+    #   Because we are amazing
     
     print_info(grad=1.8*u.percent, v=350*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
     print_info(grad=2.0*u.percent, v=335*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
@@ -113,7 +121,7 @@ if __name__ == '__main__':
     
     
     print("\nMetro (per car)\n")
-    #    Engine power exaggerated from 772hp (for a 24m car with a power ratio of 24kW/t) to "only" 1200hp
+    #   Engine power exaggerated from 772hp (for a 24m car with a power ratio of 24kW/t) to "only" 1200hp
     
     print_info(grad=5.0*u.percent, v=135*u.km/u.h, engine_p=(1200*hp).to(hp), engine_m=0*u.t, load_full=45*u.t, car_len=24*u.m)
     print_info(grad=7.0*u.percent, v=100*u.km/u.h, engine_p=(1200*hp).to(hp), engine_m=0*u.t, load_full=45*u.t, car_len=24*u.m)
@@ -121,16 +129,19 @@ if __name__ == '__main__':
 
     print("\nTram (per car)\n")
 
+    print_info(grad=8.0*u.percent, v=100*u.km/u.h, engine_p=(800*hp).to(hp), engine_m=0*u.t, load_full=26*u.t, load_capa=16*u.t, car_len=16*u.m)
     print_info(grad=10.0*u.percent, v=80*u.km/u.h, engine_p=(800*hp).to(hp), engine_m=0*u.t, load_full=26*u.t, load_capa=16*u.t, car_len=16*u.m)
     print_info(grad=13.5*u.percent, v=60*u.km/u.h, engine_p=(800*hp).to(hp), engine_m=0*u.t, load_full=26*u.t, load_capa=16*u.t, car_len=16*u.m)
     
 
     print("\nRoad\n")
+    # As the rubber-on-asphalt(wet) static friction coeff is ~0.5 (<https://en.wikibooks.org/wiki/Physics_Study_Guide/Frictional_coefficients>)
+    #   max grad should be <= 50 % to prevent wheelslip
     
     # Assuming more powerful trucks: 860hp (instead of 600hp realistic estimate
-    #    (See Iveco Eurocargo specifications <https://www.iveco.com/Eurocargo>
-    #    <https://static.iveco.com.au/download/media%2F5524d082-2a03-40c0-96de-9d6ab73f3681.pdf/Eurocargo%20Specifications.pdf>
-    #    For Engine Maximum Output, GVM (Gross Vehicle Mass) and GCM (Gross Combination Mass) info))
+    #   (See Iveco Eurocargo specifications <https://www.iveco.com/Eurocargo>
+    #   <https://static.iveco.com.au/download/media%2F5524d082-2a03-40c0-96de-9d6ab73f3681.pdf/Eurocargo%20Specifications.pdf>
+    #   For Engine Maximum Output, GVM (Gross Vehicle Mass) and GCM (Gross Combination Mass) info))
     
     print_info(grad=4*u.percent, v=125*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
     print_info(grad=6*u.percent, v=100*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
