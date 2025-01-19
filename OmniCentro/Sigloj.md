@@ -166,8 +166,8 @@ Using the leading digit for identifying districts and areas:
 | --- | ---- | ----- | ----- | -------------- |
 | `0` |      |       | Interdistrikto (sen eksteraj konektoj)  <br>Interdistrict (no outside connections) | <span style="color:Tan">█ #D2B48C</span> |
 | `1` |  SK  | Dt-PV | Pioniro-Vilaĝo | |
-| `2` |  SR  | Mt-O  | Mt-Olivkronaĵo | <span style="color:DarkSeaGreen">█ #8FBC8F</span> |
-| `3` |  SC  | Am-H  | Am-Hejmecaĵo   | |
+| `2` |  SC  | Am-H  | Am-Hejmecaĵo   | |
+| `3` |  SR  | Mt-O  | Mt-Olivkronaĵo | <span style="color:DarkSeaGreen">█ #8FBC8F</span> |
 | ... |      |       |                | |
 | `Σ` |      |       | Eksteraj Konektoj  <br>Outside connections | |
 | ... |      |       |                | |
@@ -196,6 +196,7 @@ Using the leading digit for identifying districts and areas:
 |||
 | Policejo                 | Police Station           |
 | Fajrobrigado             | Fire Station/Brigade/Department |
+| Bunkro                   | Shelter                  |
 | Kliniko                  | Clinic                   |
 | Hospitalo                | Hospital                 |
 | Tombejo                  | Cemetery                 |

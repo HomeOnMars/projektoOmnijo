@@ -146,15 +146,16 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | Departments and officies            |  Acronym | Nomo | Komento |
 | ----------------------------------- | :------: | ---- | ------- |
 | Department of Defence               | OCFD | Omnija Centra Fako de Defendo             | Budget not disclosed. |
-| Department of Education and Science | OCFE | Omnija Centra Fako de Edukado kaj Scienco | Science! (also oversees all kinds of information distribution.) |
-| Department of Fire and Rescue       | OCFF | Omnija Centra Fako de Fajro kaj Savo      | Responsible for emergency preparedness too. |
-| Department of Infrastructure        | OCFI | Omnija Centra Fako de Infrastrukturo      | Engineering! (also oversees cities development, energy generation, and environmental protection.) |
+| Department of Education and Science | OCFE | Omnija Centra Fako de Edukado kaj Scienco | Science! (also oversees all kinds of information distribution, such as laws / policies / knowledge / public-domain-works / propaganda / `Epopo`-Education.) |
+| Department of Fire and Rescue       | OCFF | Omnija Centra Fako de Fajro kaj Savo      | Responsible for emergency preparedness and disaster relief too. |
+| Department of Infrastructure        | OCFI | Omnija Centra Fako de Infrastrukturo      | Engineering! (also oversees cities development, energy generation and distribution, and environmental protection.) |
 | Department of Police                | OCFP | Omnija Centra Fako de Polico              | Internal investigation agency. |
 | Department of Health                | OCFS | Omnija Centra Fako de Sano                | Healthcare and deathcare (cryonics and bio-scanning options now available as well!) |
 | Office of Foreign Affairs           | OCOE | Omnija Centra Oficejo de Eksteraj Aferoj  | RdO needs PR too. |
-| Office of Finance                   | OCOF | Omnija Centra Oficejo de Fisko            | Collects taxes and oversees all nationalized industries and companies. Almost megacorp equivalent. |
+| Office of Finance                   | OCOF | Omnija Centra Oficejo de Fisko            | Collects taxes and oversees all nationalized industries and companies, including BdO. Almost a megacorp. |
 | Office of Home    Affairs           | OCOI | Omnija Centra Oficejo de Internaj Aferoj  | Welfare for all! No one shall be left behind. Also oversees the distribution of the UBI (universal basic income). |
 | Public Radio Network                | OCRR | OmniCentra RadioReto | La voĉo de Omnijo. |
+| Central Bank                        | OCB  | Omnija Centra Banko | The Central Bank of RdO, serving all banks on the island (though mostly just BdO, as other banks keep being nationalized and absorbed into it). <span style="color:Beige">Serena</span>'s economic reforms put it under the direct control of OCOF, ending its not-so-long history of indepdendency from government control. |
 | Nationalized Bank                   | BdO  | Banko de Omnijo | All your finance managed in one place. Security guaranteed by the central gov. No need to worry about filing taxes- here they are automatically filed for you! |
 
 ### Listo de Rolujoj
@@ -163,15 +164,16 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 
 | Org  | Koloro | Nomo |
 | ---- | ------ | ---- |
-| RdO  | #F5F5DC | <span style="color:Beige">█ La Reĝino Serena de Omnijo</span> |
-| OCFD | #C0C0C0 | <span style="color:Silver">█ Laŭra de Omnijo la Suvereno</span> |
-| OCFE | #00FFFF | <span style="color:Cyan">█ Daianna de Omnijo la Suvereno</span> |
+| RdO  | #F5F5DC | <span style="color:Beige">█ La Reĝino **Serena** de Omnijo</span> |
+| OCFD | #C0C0C0 | <span style="color:Silver">█ La Suvereno **Laŭra** de Omnijo</span> |
+| OCFE | #6495ED | <span style="color:CornflowerBlue">█ La Suvereno **Daianna** de Omnijo</span> |
 | OCFF | #FF0000 | <span style="color:Red">█ </span> |
-| OCFI | #00BFFF | <span style="color:DeepSkyBlue">█ Ĉuĉjo de Omnijo la Arkitekto</span> |
-| OCFI | #9370DB | <span style="color:MediumPurple">█ Ĝejnjo de Omnijo la Suvereno</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo de Omnijo --> |
-| OCFP | #D2691E | <span style="color:Chocolate">█ Tejlero de Omnijo la Suvereno</span> |
+| OCFI | #00BFFF | <span style="color:DeepSkyBlue">█ La Arkitekto **Ĉuĉjo** de Omnijo</span> |
+| OCFI | #9370DB | <span style="color:MediumPurple">█ La Suvereno **Ĝejnjo** de Omnijo</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo de Omnijo --> |
+| OCFP | #D2691E | <span style="color:Chocolate">█ La Suvereno **Tejlero** de Omnijo</span> |
 | OCFS | #FFC0CB | <span style="color:Pink">█ </span> |
-| OCOE | #FFD700 | <span style="color:Gold">█ Alekso de Omnijo la Suvereno</span> |
+| OCOE | #FFD700 | <span style="color:Gold">█ La Suvereno **Alekso** de Omnijo</span> |
 | OCOF | #8FBC8F | <span style="color:DarkSeaGreen">█ </span> |
-| OCOI | #D2B48C | <span style="color:Tan">█ Vennesa de Omnijo la Suvereno</span> |
-| BdO  | #4169E1 | <span style="color:RoyalBlue">█ Beno de Omnijo la Prezidanto</span> |
+| OCOI | #D2B48C | <span style="color:Tan">█ La Suvereno **Vennesa** de Omnijo</span> |
+| OCRR | #D8BFD8 | <span style="color:Thistle">█ La Gastiganto **Kara** de Omnijo</span> |
+| BdO  | #4169E1 | <span style="color:RoyalBlue">█ La Prezidanto **Beno** de Omnijo</span> |
