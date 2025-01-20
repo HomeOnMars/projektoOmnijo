@@ -34,6 +34,7 @@ Contents
 
 - Cities documentations
   - [***OmniCentro***](OmniCentro.md)
+- [List of inspirations for backstories](intrigmalkasxo/Inspirajxo.md)
 - Some python scripts I wrote
   (may not work, or may require considerable effort to make them work. No promises.)
   - For CSL2 Extended Radio mod

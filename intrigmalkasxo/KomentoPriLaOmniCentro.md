@@ -37,7 +37,7 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
 
   <p>
 
-  <!-- Gestalt Consciousness - Rogue Servitor (Stellaris Easter Egg :-D) -->
+  <!-- Gestalt Consciousness - Rogue Servitor (For your Stellaris fans out there, an Easter Egg :-D) -->
 
   The actual ruling entity in <b>la Regno de Omnijo</b> (<em>RdO</em>) is
   <b><span style="color:MediumPurple">ĜEJDA</span></b><br>
