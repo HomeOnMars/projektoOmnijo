@@ -185,6 +185,7 @@ Using the leading digit for identifying districts and areas:
 
 | En esperanto  <br>In Esperanto | En la angla  <br>In English |
 | ------------------------ | ------------------------ |
+| Buso-Korto               | Bus Depot                |
 | Fervojo-Korto            | Rail Yard                |
 | Metroo-Korto             | Subway Yard              |
 | Stacidomo                | Train Station            |
@@ -203,6 +204,11 @@ Using the leading digit for identifying districts and areas:
 | Bio-Reciklada Fabrikejo  <br>Kremaciejo | Bio-Recycling Plant  <br>Crematorium |
 | Rubodeponejo             | Landfill                 |
 | Reciklada Fabrikejo      | Recycling Plant          |
+|||
+| Minejo                   | Mine                     |
+| \- Ŝtono                 | \- Stone                 |
+| \- Karbo                 | \- Coal                  |
+| \- Erco                  | \- Ore                   |
 |||
 | Transformilejo           | Transformer station      |
 | Akvobaraĵo               | Dam                      |

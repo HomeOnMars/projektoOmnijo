@@ -18,7 +18,7 @@ Listo de Inspiraĵoj
 > My stories are original.
 > Even though some of my ideas have been inspired by the works listed below,
 > NONE of my stories are directly set in the universes of those works,
-> NOR are any of my characters.
+> NOR are any of my characters directly from any of the below works.
 
 Note: The list may be incomplete.
 

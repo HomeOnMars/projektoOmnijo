@@ -166,14 +166,14 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | ---- | ------ | ---- |
 | RdO  | #F5F5DC | <span style="color:Beige">█ La Reĝino **Serena** de Omnijo</span> |
 | OCFD | #C0C0C0 | <span style="color:Silver">█ La Suvereno **Laŭra** de Omnijo</span> |
-| OCFE | #6495ED | <span style="color:CornflowerBlue">█ La Suvereno **Daianna** de Omnijo</span> |
+| OCFE | #6495ED | <span style="color:CornflowerBlue">█ La Suvereno **Dajanna** de Omnijo</span> |
 | OCFF | #FF0000 | <span style="color:Red">█ </span> |
 | OCFI | #00BFFF | <span style="color:DeepSkyBlue">█ La Arkitekto **Ĉuĉjo** de Omnijo</span> |
 | OCFI | #9370DB | <span style="color:MediumPurple">█ La Suvereno **Ĝejnjo** de Omnijo</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo de Omnijo --> |
 | OCFP | #D2691E | <span style="color:Chocolate">█ La Suvereno **Tejlero** de Omnijo</span> |
 | OCFS | #FFC0CB | <span style="color:Pink">█ </span> |
-| OCOE | #FFD700 | <span style="color:Gold">█ La Suvereno **Alekso** de Omnijo</span> |
-| OCOF | #8FBC8F | <span style="color:DarkSeaGreen">█ </span> |
-| OCOI | #D2B48C | <span style="color:Tan">█ La Suvereno **Vennesa** de Omnijo</span> |
-| OCRR | #D8BFD8 | <span style="color:Thistle">█ La Gastiganto **Kara** de Omnijo</span> |
+| OCOE | #FFD700 | <span style="color:Gold">█ La Suvereno **Natalia** de Omnijo</span> |
+| OCOF | #8FBC8F | <span style="color:DarkSeaGreen">█ La Suvereno **Alekso** de Omnijo</span> |
+| OCOI | #D2B48C | <span style="color:Tan">█ La Suvereno **Venesa** de Omnijo</span> |
+| OCRR | #D8BFD8 | <span style="color:Thistle">█ La Gastiganto **Karla** de Omnijo</span> |
 | BdO  | #4169E1 | <span style="color:RoyalBlue">█ La Prezidanto **Beno** de Omnijo</span> |
