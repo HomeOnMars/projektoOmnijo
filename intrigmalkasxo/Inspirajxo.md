@@ -22,34 +22,40 @@ Listo de Inspiraĵoj
 
 Note: The list may be incomplete.
 
-### Rakontoj kaj Libroj (mallonga)
+### Blogoj kaj Mallongaj Rakontoj
 
-> Stories and Books (short)
+> Blogs and Short Stories
 
-- [Failed Utopia #4-2](https://www.lesswrong.com/posts/ctpkTaqTKbmm6uRgC/failed-utopia-4-2) (2009) by Eliezer Yudkowsky
-- […And I Show You How Deep The Rabbit Hole Goes](https://slatestarcodex.com/2015/06/02/and-i-show-you-how-deep-the-rabbit-hole-goes/) (2015) by Scott Alexander  
+- [Failed Utopia #4-2](https://www.lesswrong.com/posts/ctpkTaqTKbmm6uRgC/failed-utopia-4-2) *(2009)* by Eliezer Yudkowsky
+- […And I Show You How Deep The Rabbit Hole Goes](https://slatestarcodex.com/2015/06/02/and-i-show-you-how-deep-the-rabbit-hole-goes/) *(2015)* by Scott Alexander  
   (Orange.)
-- [It Looks Like You're Trying To Take Over The World](https://gwern.net/fiction/clippy) (2022) by gwern
+- [It Looks Like You're Trying To Take Over The World](https://gwern.net/fiction/clippy) *(2022)* by gwern
+
+### Jutubo
+
+> YouTube
+
+- [The Artificial Intelligence That Deleted A Century](https://www.youtube.com/watch?v=-JlxuQ7tPgQ) *(2018)* by [Tom Scott](https://www.youtube.com/@TomScottGo)
 
 ### Televidserioj
 
 > TV Series
 
-- [Westworld](https://www.imdb.com/title/tt0475784) (2016-2022)  
+- [Westworld](https://www.imdb.com/title/tt0475784) *(2016-2022)*  
   Especially Season 3 and 4
 
 ### Filmoj
 
 > Movies
 
-- [Transcendence](https://www.imdb.com/title/tt2209764) (2014)
-- [I Am Mother](https://www.imdb.com/title/tt6292852) (2019)
-- [M3GAN](https://www.imdb.com/title/tt8760708) (2022)
+- [Transcendence](https://www.imdb.com/title/tt2209764) *(2014)*
+- [I Am Mother](https://www.imdb.com/title/tt6292852) *(2019)*
+- [M3GAN](https://www.imdb.com/title/tt8760708) *(2022)*
 
 ### Videoludoj
 
 > Video Games
 
-- [Cities: Skylines](https://store.steampowered.com/app/255710/Cities_Skylines/) (2015-2023)
-- [Cities: Skylines II](https://store.steampowered.com/app/949230/Cities_Skylines_II/) (2023-) (Duh.)
-- [Stellaris](https://store.steampowered.com/app/281990/Stellaris/) (2016-)
+- [Cities: Skylines](https://store.steampowered.com/app/255710/Cities_Skylines/) *(2015-2023)*
+- [Cities: Skylines II](https://store.steampowered.com/app/949230/Cities_Skylines_II/) *(2023-)* (Duh.)
+- [Stellaris](https://store.steampowered.com/app/281990/Stellaris/) *(2016-)*

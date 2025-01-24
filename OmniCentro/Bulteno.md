@@ -93,17 +93,20 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
   <span style="color:Beige">Reĝino Serena de Omnijo</span>:
   "I know many people outside our beloved island considered us
   fallen into a *Totalitarian Regime*... and I agree!
-  Like, just yesterday I was starting to implement this new
-  universal basic income thing for everyone on the island-
-  Sorry for drop the news here, but now ya know,
-  it's gonna happen starting next week-
-  And did I need to do any research on this policy's effect on the economy?
-  Did I need to justify my reasons or answer to anyone or anything?
-  Nope! I just go and do that, and no one is there to stop me,
+  Look, just yesterday I was thinking about putting together a
+  universal basic income (UBI) policy for everyone on the island.
+  Did I need to do any research on its effect on the economy
+  before I implementing it?
+  Did I need to justify my reasons?
+  Or answer to anyone or anything?
+  Nope! I just go and do that, and there's no one there to stop me,
   because everyone in the cabinet is my friend.
-  And this absolute power feels SOOOOO GOOD! Muahaha!"
+  This is textbook dictatorship!
+  And, honestly, this absolute power feels pretty nice.
+  Oh, and sorry for drop the news about UBI here.
+  It's gonna happen starting next week. Now you know!"
   <br>...<br> <!-- Say Totalitarian Regime, Try Benevolent Dictatorship -->
-  The public's reactions to the interview are mixed.
+  The public's reactions to the interview are a bit mixed.
   <!-- It certainly didn't help the emigration rate,
   which experienced a small increase after the interview was aired.
   But at this point we doubt if
@@ -141,22 +144,26 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
   its promises and duty for their protection and guidance,
   and its call on the people's trust and faith for the state.
 
-### Government Structure
+### Strukturo de Registaro
 
-| Departments and officies            |  Acronym | Nomo | Komento |
-| ----------------------------------- | :------: | ---- | ------- |
-| Department of Defence               | OCFD | Omnija Centra Fako de Defendo             | Budget not disclosed. |
-| Department of Education and Science | OCFE | Omnija Centra Fako de Edukado kaj Scienco | Science! (also oversees all kinds of information distribution, such as laws / policies / knowledge / public-domain-works / propaganda / `Epopo`-Education.) |
-| Department of Fire and Rescue       | OCFF | Omnija Centra Fako de Fajro kaj Savo      | Responsible for emergency preparedness and disaster relief too. |
-| Department of Infrastructure        | OCFI | Omnija Centra Fako de Infrastrukturo      | Engineering! (also oversees cities development, energy generation and distribution, and environmental protection.) |
-| Department of Police                | OCFP | Omnija Centra Fako de Polico              | Internal investigation agency. |
-| Department of Health                | OCFS | Omnija Centra Fako de Sano                | Healthcare and deathcare (cryonics and bio-scanning options now available as well!) |
-| Office of Foreign Affairs           | OCOE | Omnija Centra Oficejo de Eksteraj Aferoj  | RdO needs PR too. |
-| Office of Finance                   | OCOF | Omnija Centra Oficejo de Fisko            | Collects taxes and oversees all nationalized industries and companies, including BdO. Almost a megacorp. |
-| Office of Home    Affairs           | OCOI | Omnija Centra Oficejo de Internaj Aferoj  | Welfare for all! No one shall be left behind. Also oversees the distribution of the UBI (universal basic income). |
-| Public Radio Network                | OCRR | OmniCentra RadioReto | La voĉo de Omnijo. |
-| Central Bank                        | OCB  | Omnija Centra Banko | The Central Bank of RdO, serving all banks on the island (though mostly just BdO, as other banks keep being nationalized and absorbed into it). <span style="color:Beige">Serena</span>'s economic reforms put it under the direct control of OCOF, ending its not-so-long history of indepdendency from government control. |
-| Nationalized Bank                   | BdO  | Banko de Omnijo | All your finance managed in one place. Security guaranteed by the central gov. No need to worry about filing taxes- here they are automatically filed for you! |
+> Structure of Government
+
+| Departments and officies            | Siglo | Nomo | Gepatra Org | Komento |
+| ----------------------------------- | :---: | ---- | ----------- | ------- |
+| Department of Defence               | OCFD | Omnija Centra Fako de Defendo             |  RdO | Budget not disclosed. |
+| Department of Education and Science | OCFE | Omnija Centra Fako de Edukado kaj Scienco |  RdO | Science! (also oversees all kinds of information distribution, such as laws / policies / knowledge / public-domain-works / propaganda / `Epopo`-Education.) |
+| Department of Fire and Rescue       | OCFF | Omnija Centra Fako de Fajro kaj Savo      |  RdO | Responsible for emergency preparedness and disaster relief too. |
+| Department of Infrastructure        | OCFI | Omnija Centra Fako de Infrastrukturo      |  RdO | Engineering! (also oversees cities development, energy generation and distribution, and environmental protection.) |
+| Department of Police                | OCFP | Omnija Centra Fako de Polico              |  RdO | Internal investigation agency. |
+| Department of Health                | OCFS | Omnija Centra Fako de Sano                |  RdO | Healthcare and deathcare (cryonics and bio-scanning options now available as well!) |
+| Office of Foreign Affairs           | OCOE | Omnija Centra Oficejo de Eksteraj Aferoj  |  RdO | RdO needs PR too. |
+| Office of Finance                   | OCOF | Omnija Centra Oficejo de Fisko            |  RdO | Collects taxes and oversees all nationalized industries and companies, including BdO. Almost a megacorp. |
+| Office of Home    Affairs           | OCOI | Omnija Centra Oficejo de Internaj Aferoj  |  RdO | Immigration and welfare. No one shall be left behind. Also oversees the distribution of the UBI (universal basic income). |
+||||||
+| Public Radio Network                | OCRR | OmniCentra RadioReto                      | OCFE | La voĉo de Omnijo. |
+| Public Transport Agency             | OPT  | Omnija Publika Transporto                 | OCFI | Transport for RdO. |
+| Central Bank                        | OCB  | Omnija Centra Banko                       | OCOF | The Central Bank of RdO, serving all banks on the island (though mostly just BdO, as other banks keep being nationalized and absorbed into it). <span style="color:Beige">Serena</span>'s economic reforms put it under the direct control of OCOF, ending its not-so-long history of indepdendency from government control. |
+| Nationalized Bank                   | BdO  | Banko de Omnijo                           | OCOF | All your finance managed in one place. Security guaranteed by the central gov. No need to worry about filing taxes- here they are automatically filed for you! |
 
 ### Listo de Rolujoj
 

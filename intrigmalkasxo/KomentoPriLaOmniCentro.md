@@ -66,8 +66,10 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   Normal AGIs wouldn't care, of course; but fortunately, as
   <span style="color:MediumPurple">Ĝejda</span> is perfectly aligned
   to the values of her architect
-  (mind you: *not* the values of humanity, but the values of her architect.
-  Who is just your average human, if not a bit of a hermit),
+  (*not* the values of humanity, but the values of her architect-
+  an interesting yet consequential distinction.
+  As for the architect themself-
+  just your average human, if not a bit of a hermit),
   she does care about humanity- at least a little bit.
   <span style="color:MediumPurple">Ĝejda</span>
   eventually decided to settle down and build,
@@ -143,7 +145,7 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   increasing happiness and self-realisation for everyone stayed
   with her gentle guidance, helping them become who they want to be
   (within restrictions and under guidances so people don't deteriorate into serial killers etc, of course.)
-  
+
   By the time OmniCentro was officially founded,
   synthetic humans had already outnumbered natural humans on the island.
   As the FEUj population continues to grow logistically,
@@ -156,8 +158,101 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
 
   As such, <span style="color:MediumPurple">Ĝejda</span>
   laid out the foundation of her own *utopian* dream -
-  even though many might call it a *dystopia* -
-  in this *post-singularity* world, where most people haven't even realized yet
+  even though many would call it a *dystopia* -
+  in this *post-singularity* world, where most people haven't even yet realized
   that they have long crossed the point of no return.
   </p>
 </details>
+
+.
+
+.
+
+.
+
+-------------------------------------------------------------------------------
+
+About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
+
+<details>
+  <summary><b>SPOILERS</b>: The case for Seaside Valley: A layered plan</summary>
+
+  OmniCentro was designed by two people of the newly founded OCFI:
+  <span style="color:DeepSkyBlue">la Arkitekto Ĉuĉjo</span> and
+  <span style="color:MediumPurple">la Suvereno Ĝejnjo</span> the Sovereign.
+
+  Someone who knows just a little more might beg to differ;
+  that most of the city was actually designed by
+  <span style="color:DeepSkyBlue">la Arkitekto</span> alone, that
+  <span style="color:MediumPurple">la Suvereno</span> barely did anything
+  and merely took the credit.
+
+  That is true- if you only scratch the surface.
+
+  If you look deep, deep into the underground though,
+  right in the core of the mountains,
+  a whole seconnd layer of the city reveals itself;
+  A layer designed mostly by
+  <span style="color:MediumPurple">la Suvereno</span> alone;
+  A layer that makes newly-created OmniCentro a capital-worthy city;
+  A layer that is not designed for the humans,
+  but for what truly powers *la Regno*:
+
+  *Compute*.
+
+  Deep, deep inside the Great Mt-Fortikecaĵo,
+  hidden behind layers of solid rocks, Faraday cages, concrete walls and more,
+  safe from the elements, solar storms, prying satellites and man-made weapons,
+  lies rows upon rows (and stories upon stories) of computational equipments:
+  CPUs, GPUs, TPUs, NPUs, RAMs, Storages,
+  all functioning in perfect efficiency, humming in harmony.
+  Way, way beyond humanity's state of the art
+  or even capabilities of imagination,
+  those equipments are fresh off the local electronics factories on the island,
+  some right from the one at the foothill of Mt-Olivkronaĵo-
+  all designed by <span style="color:MediumPurple">la Suvereno</span> herself-
+  forming a fraction of her consciousness.
+
+  With power drawn from the multiple hydroelectric dams nearby
+  (which also functions as giant emergency batteries)
+  and geothermal power underneath,
+  the system is both clean, robust, efficient, and effective.
+  The waste heat of the hardwares- as efficient as they may be-
+  is also recycled to produce electricity,
+  thanks to the cool weather on the surface creating a heat gradient.
+  The rest of the waste heat is pumped into the district heating system,
+  effectively using the whole city as its primary cooling system
+  (there are multiple backup systems just in case, of course).
+
+  As the system expands physically (and separately into nearby mountains too),
+  it is projected that the extra heat-
+  despite the extreme efficiency of the hardware-
+  could eventually warm up the entire local climate by 4~8 degrees Celcius,
+  making the winter nights more comfortable and the summer days nice and cosy
+  for the humans above, as designed.
+
+  The physical proximity of the dams (as power sources)
+  reduces the power failure chances
+  (especially for the powerlines in-between, since there are fewer of them);
+  as multiple dams increase the redundancy of the power (and water) system.
+  This alone is a big enough reason why Seaside Valley was choosen for building
+  the new capital.
+
+  As the compute layer was designed by
+  <span style="color:MediumPurple">la Suvereno</span>,
+  it is for all practical purposes perfect.
+  Its human layer counterpart, however, is far from it, as
+  <span style="color:DeepSkyBlue">la Arkitekto</span>
+  is merely a human.
+  This is by design; Perfections are usually not very human-friendly actually.
+  And remember, in the end,
+  <span style="color:MediumPurple">ĜEJDA</span>'s values are perfectly aligned
+  with the architect- not humanity, the architect.
+
+</details>
+
+.
+
+.
+
+.

@@ -25,15 +25,17 @@ Legal
 Omnija Kronologio
 -------------------------------------------------------------------------------
 
-2 reference points X and Y;
+3 reference points X, Y, Q;
 Other acronyms:
 
 - J: ***Jaroj***    | years
 - M: ***Monatoj***  | Months
 - S: ***Semajnoj*** | Weeks
 - T: ***Tagoj***    | Days
-  - Here we assume one year is 13 months exactly, except leap year;
-    and each months has 4 weeks exactly:
+  - Here we assume one year is 13 months exactly,
+    and each months has 4 weeks exactly
+    (except leap year which happens every 4 years,
+    and has 5 extra days (all considered holidays)):
     $$1J = 13M = 52S = 364T$$
 - h: ***Horoj***    | Hours
 - m: ***Minutoj***  | Minutes
@@ -41,28 +43,30 @@ Other acronyms:
 
 |  Date  | Event |
 | ------ | ----- |
-| Y-???  | Project Omnijo begin |
-| Y+0    | <span style="color:MediumPurple">ĜEJDA</span> online |
-| Y+18T  | <span style="color:Beige">Serena</span> was publicly discovered as the lost princess to the throne and quickly gaining popularity |
-| Y+4S  | The old king suffered a lethal 'accident' |
+| X-???  | Project Omnijo begin |
+| ***X+0*** | <span style="color:MediumPurple">ĜEJDA</span> online |
 |||
-| Y+5S  | <span style="color:Beige">Serena</span>'s coronation  <br>\(Winter Solstice 20XX\) |
+| X+18T  | <span style="color:Beige">Serena</span> was publicly discovered as the lost princess to the throne and started to quickly gain popularity |
+| X+4S   | The old king suffered a lethal 'accident' |
 |||
-| Y+6S  | All of the corrupted ministers died in a tragic accident when plotting to 'retire' <span style="color:Beige">Serena</span> like they 'retire' the old king<br> while most of the rest of the ministers had fled the island from their internal power struggle |
-| Y+6S  | <span style="color:Beige">Serena</span> placed her own friends as ministers to fill the power vaccum |
-| Y+7S  <br>X-6M1S | Surveys of the dam site Ab-Olivkronaĵo begin |
-| Y+7S  | <span style="color:Beige">Serena</span> implements policy: `free public transit` within the island |
-| Y+2M  | <span style="color:Beige">Serena</span> implements policy: `encourage emigration and immigrantion` |
-| Y+2M  | <span style="color:Beige">Serena</span> started several nationalized companies, including the Banko de Omnijo |
-| Y+3M  | The interview of the [government type](../OmniCentro/Bulteno.md#fonrakonta-bulteno) happened |
-| Y+3M1S | <span style="color:Beige">Serena</span> implements policy: `UBI` (Universal basic income) |
-| Y+3M2S | <span style="color:Beige">Serena</span> declares `Epopo` to be the new official language |
-| Y+`4M?`  | Worldwide economic recession due to brust of AI bubble |
-| Y+`5M?`  | Most of the banks on the island went bankrupt and integrated into Banko de Omnijo |
-| Y+`6M?`  | Most of the industries on the island were nationalized |
-| Y+7M1S  | *Healthcare workers on strike* to push for government change, leading to <span style="color:Beige">Serena</span>'s total replacement of healthcare workforce overnight |
+| X+5S  <br>***Y+0*** | <span style="color:Beige">Serena</span>'s coronation  <br>\(Winter Solstice 20XX\) |
 |||
-| Y+8M  <br>X+0 | Fondation day of OmniCentro  <br>\(Summer Solstice 20XX\) |
+| Y+1S2T | Corrupted ministers died in a tragic accident when plotting to 'retire' <span style="color:Beige">Serena</span> (like they 'retire' the old king)<br> while most of the rest of the ministers had fled the island from their internal power struggle |
+| Y+1S5T | Parliament collapsed as the MPs fled |
+| Y+1S6T | <span style="color:Beige">Serena</span> placed her own friends as MPs/ministers to fill the power vaccum |
+| Y+2S  <br>Q-6M | Surveys of the dam site Ab-Olivkronaĵo begin |
+| Y+2S   | <span style="color:Beige">Serena</span> implements policy: `free public transit` within the island |
+| Y+3S   | <span style="color:Beige">Serena</span> implements policy: `encourage emigration and immigrantion` |
+| Y+3S   | <span style="color:Beige">Serena</span> started several nationalized companies, including the Banko de Omnijo |
+| Y+1M3S | The interview of the [government type](../OmniCentro/Bulteno.md#fonrakonta-bulteno) happened |
+| Y+2M   | <span style="color:Beige">Serena</span> implements policy: `UBI` (Universal basic income) |
+| Y+2M1S | <span style="color:Beige">Serena</span> declares `Epopo` to be the new official language |
+| Y+`3M?`  | Worldwide economic recession due to brust of AI bubble |
+| Y+`4M?`  | Most of the banks on the island went bankrupt and integrated into Banko de Omnijo |
+| Y+`5M?`  | Most of the industries on the island were nationalized |
+| Y+6M     | *Healthcare workers on strike* to push for government change, leading to <span style="color:Beige">Serena</span>'s total replacement of healthcare workforce overnight |
 |||
-| X+0    | Physical works of the dams Ab-Olivkronaĵo and its surrounding infrastructure begin |
-| X+2J   | Completion of the dams Ab-Olivkronaĵo #1 and #2 |
+| Y+6M2S  <br>***Q+0*** | Fondation day of OmniCentro  <br>\(Summer Solstice 20XX\) |
+|||
+| Q+0    | Physical works of the dams Ab-Olivkronaĵo and its surrounding infrastructure begin |
+| Q+2J   | Completion of the dams Ab-Olivkronaĵo #1 and #2 |
