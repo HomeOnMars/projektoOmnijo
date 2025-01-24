@@ -62,7 +62,7 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | :---------------- | ---- |
 | Ŝtatestro  <br>Head of State   | <span style="color:Beige">La Reĝino Serena de Omnijo</span> |
 | Registara Tipo  <br>Government Type   | Konstitucia Monarkio / Bonfara Diktaturo / Totalisma Reĝimo, depende de kiu vi demandas[^Bulteno-RegistaraTipo]. |
-| Urbaj Projektistoj  <br>City Designers | <span style="color:DeepSkyBlue">Ĉuĉjo la Arkitekto</span>  kaj  <span style="color:MediumPurple">Ĝejnjo la Suvereno</span> de OCFI |
+| Urbaj Projektistoj  <br>City Designers | <span style="color:#95D0FC">Ĉuĉjo la Arkitekto</span>  kaj  <span style="color:#D6B4FC">Ĝejnjo la Suvereno</span> de OCFI |
 | Oficiala Lingvo  <br>Official Language | [*Esperanto++*](Lingvo.md#lingvo), a.k.a. ***E++***, pronounced as `Epopo`. (See link for more info.)  <br>(Transitioning from English in the next 16 years.) |
 | Oficiala Religio  <br>Official Religion | Pastafarianismo[^Bulteno-Religio] |
 | Oficialaj Koloroj  <br>Official Colors   | <span style="color:Beige">Flavgriza/Beige #E6DAA6</span> [^Bulteno-Koloroj-Flavgriza]  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span> [^Bulteno-Koloroj-Bluo]  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span> [^Bulteno-Koloroj-Purpuro] |
@@ -71,14 +71,14 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 [^Bulteno-RegistaraTipo]: Interviewer: "So, tell us what do you think
   the kind of government our new *RdO* governemnt *OCR* is?"
   <br>...<br>
-  <span style="color:MediumPurple">Ĝejnjo la Suvereno de OCFI</span>:
+  <span style="color:#D6B4FC">Ĝejnjo la Suvereno de OCFI</span>:
   "As stated in the constitution, we are a *Constitutional Monarchy*,
   which has never changed
   since <span style="color:Beige">Reĝino Serena</span>'s coronation.
   As a gentle reminder, next year we are still going to vote
   for the new prime minister."
   <br>...<br> <!-- Say Constitutional Monarchy, Think Totalitarian Regime -->
-  <span style="color:DeepSkyBlue">Ĉuĉjo la Arkitekto de OCFI</span>:
+  <span style="color:#95D0FC">Ĉuĉjo la Arkitekto de OCFI</span>:
   "I understand your concern that the
   <span style="color:Beige">Queen</span>
   has basically replaced the whole cabinet with us
@@ -173,10 +173,11 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | ---- | ------ | ---- |
 | RdO  | #F5F5DC | <span style="color:Beige">█ La Reĝino **Serena** de Omnijo</span> |
 | OCFD | #C0C0C0 | <span style="color:Silver">█ La Suvereno **Laŭra** de Omnijo</span> |
-| OCFE | #6495ED | <span style="color:CornflowerBlue">█ La Suvereno **Dajanna** de Omnijo</span> |
+| OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ La Suvereno **Dajanna** de Omnijo</span> |
 | OCFF | #FF0000 | <span style="color:Red">█ </span> |
-| OCFI | #00BFFF | <span style="color:DeepSkyBlue">█ La Arkitekto **Ĉuĉjo** de Omnijo</span> |
-| OCFI | #9370DB | <span style="color:MediumPurple">█ La Suvereno **Ĝejnjo** de Omnijo</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo de Omnijo --> |
+| OCFI | #95D0FC | <span style="color:#95D0FC">█ La Arkitekto **Ĉuĉjo** de Omnijo</span> |
+| OCFI | #D6B4FC | <span style="color:#D6B4FC">█ La Suvereno **Ĝejnjo** de Omnijo</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo de Omnijo --> |
+| OCFI | #9370DB | <span style="color:MediumPurple">█ ... (Department Color) ...</span> |
 | OCFP | #D2691E | <span style="color:Chocolate">█ La Suvereno **Tejlero** de Omnijo</span> |
 | OCFS | #FFC0CB | <span style="color:Pink">█ </span> |
 | OCOE | #FFD700 | <span style="color:Gold">█ La Suvereno **Natalia** de Omnijo</span> |

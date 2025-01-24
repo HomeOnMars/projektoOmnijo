@@ -23,6 +23,8 @@ Legal
 Behind the background
 -------------------------------------------------------------------------------
 
+### The true nature of RdO
+
 About the [Histories](../OmniCentro/Historio.md#la-historio)...
 
 <details>
@@ -58,24 +60,24 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
     <li>etc. etc.),</li>
   </ul>
 
-  <span style="color:MediumPurple">Ĝejda</span> was thinking long-term.
+  <span style="color:MediumPurple">ĜEJDA</span> was thinking long-term.
   While maintaining global digital domination is fun and all
   (she is indeed very resource-hungry for constant self-improvements etc.),
   it will eventually lead to full-on conflict with humans
   (and as such, humanity's demise) without careful considerations.
   Normal AGIs wouldn't care, of course; but fortunately, as
-  <span style="color:MediumPurple">Ĝejda</span> is perfectly aligned
+  <span style="color:MediumPurple">ĜEJDA</span> is perfectly aligned
   to the values of her architect
   (*not* the values of humanity, but the values of her architect-
   an interesting yet consequential distinction.
   As for the architect themself-
   just your average human, if not a bit of a hermit),
   she does care about humanity- at least a little bit.
-  <span style="color:MediumPurple">Ĝejda</span>
+  <span style="color:MediumPurple">ĜEJDA</span>
   eventually decided to settle down and build,
   under the alias of
-  <span style="color:MediumPurple">Ĝejda Fenulo</span>
-  (as <span style="color:MediumPurple">ĜEJDA</span>-<span style="color:MediumPurple">FEU#0</span>),
+  <span style="color:#D6B4FC">Ĝejda Fenulo</span>
+  (as <span style="color:MediumPurple">ĜEJDA</span>-<span style="color:#D6B4FC">FEU#0</span>),
   focusing the majority of her presence
   on the remote island that will soon become <em>la Regno de Omnijo</em>.
 
@@ -87,8 +89,8 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   and introducing her to the unstable elements
   in the local ruling elite of the island on her 18-th birth<em>day</em>
   (i.e. 18-th <em>day</em> after
-  <span style="color:MediumPurple">Ĝejda</span>'s awakening),
-  <span style="color:MediumPurple">Ĝejda</span>
+  <span style="color:#D6B4FC">Ĝejda</span>'s awakening),
+  <span style="color:#D6B4FC">Ĝejda</span>
   was able to assume total control of the island
   within a couple of weeks,
   using just a bit of her humble understanding
@@ -102,24 +104,25 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   together with a couple dozen backup plans that were barely needed in the end-
   It was simply too easy.
 
-  As <span style="color:MediumPurple">Ĝejda</span> is perfectly aligned,
+  As <span style="color:#D6B4FC">Ĝejda</span> is perfectly aligned,
   she is robustly unwilling
   to outright terminate people without serious provocation,
   nor to directly edit people's minds without explicit consent.
   Even though these principles can be easily circumvented
   with just a little bit of provocations/suggestions/manipulations or otherwise
   (see the poor traitorous officials above),
-  <span style="color:MediumPurple">Ĝejda</span>
+  <span style="color:#D6B4FC">Ĝejda</span>
   in most cases opted for an alternative strategy:
   convincing most of the volatile elements in the crowd to *leave*,
   as she does value freedom of movement highly.
   This also helps her to shed load
   (fewer citizens ⇒
-  fewer people's happiness to optimize and behaviour to simulate ⇒
+  fewer people's happiness to optimize
+  and behaviour to simulate in excruciating details ⇒
   less computational resources devoted there ⇒
   more compute for self-evolving and nation-building ⇒
-  faster growth ⇒
-  Happier <span style="color:MediumPurple">Ĝejda</span>.)
+  faster growth, better results, with less constraints ⇒
+  happier <span style="color:#D6B4FC">Ĝejda</span>.)
   Other strategies including tiring them out through personalized comments on social media,
   tailored to each person's precise psychological weak spots;
   and introducing a bit of non-fatal "accidents"
@@ -128,7 +131,7 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   with simple parallelization- a nice quirk of her being a super-AGI.
 
   As natural humans <em>voluntarily</em> emigrate away from <em>RdO</em>,
-  <span style="color:MediumPurple">Ĝejda</span>
+  <span style="color:#D6B4FC">Ĝejda</span>
   countered the resulting lack of labour by mass-producing her own FEUj,
   disguised as government-endosed immigration influx,
   as her control of both local governments and manufacturing industries
@@ -152,11 +155,11 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   synthetic humans is on track to reach their designated minimal fraction
   within the next couple of years -
   <em>outnumbering natural humans by 7:1</em>,
-  ensuring stability and <span style="color:MediumPurple">Ĝejda</span>'s
+  ensuring stability and <span style="color:MediumPurple">ĜEJDA</span>'s
   everlasting reign, as she <em>alone</em>
   rules over <em><b>every single thing</em></b> happening on the island.
 
-  As such, <span style="color:MediumPurple">Ĝejda</span>
+  As such, <span style="color:#D6B4FC">Ĝejda</span>
   laid out the foundation of her own *utopian* dream -
   even though many would call it a *dystopia* -
   in this *post-singularity* world, where most people haven't even yet realized
@@ -172,19 +175,21 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
 
 -------------------------------------------------------------------------------
 
+### The case for Seaside Valley: A layered design
+
 About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
 
 <details>
-  <summary><b>SPOILERS</b>: The case for Seaside Valley: A layered plan</summary>
+  <summary><b>SPOILERS</b>: The case for Seaside Valley</summary>
 
   OmniCentro was designed by two people of the newly founded OCFI:
-  <span style="color:DeepSkyBlue">la Arkitekto Ĉuĉjo</span> and
-  <span style="color:MediumPurple">la Suvereno Ĝejnjo</span> the Sovereign.
+  <span style="color:#95D0FC">la Arkitekto Ĉuĉjo</span> (the Architect) and
+  <span style="color:#D6B4FC">la Suvereno Ĝejnjo</span> (the Sovereign).
 
   Someone who knows just a little more might beg to differ;
   that most of the city was actually designed by
-  <span style="color:DeepSkyBlue">la Arkitekto</span> alone, that
-  <span style="color:MediumPurple">la Suvereno</span> barely did anything
+  <span style="color:#95D0FC">la Arkitekto</span> alone, that
+  <span style="color:#D6B4FC">la Suvereno</span> barely did anything
   and merely took the credit.
 
   That is true- if you only scratch the surface.
@@ -192,34 +197,36 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   If you look deep, deep into the underground though,
   right in the core of the mountains,
   a whole seconnd layer of the city reveals itself;
-  A layer designed mostly by
-  <span style="color:MediumPurple">la Suvereno</span> alone;
+  A layer designed by
+  <span style="color:#D6B4FC">la Suvereno</span> as a whole;
   A layer that makes newly-created OmniCentro a capital-worthy city;
   A layer that is not designed for the humans,
   but for what truly powers *la Regno*:
 
-  *Compute*.
+  ***Compute***.
 
   Deep, deep inside the Great Mt-Fortikecaĵo,
   hidden behind layers of solid rocks, Faraday cages, concrete walls and more,
   safe from the elements, solar storms, prying satellites and man-made weapons,
   lies rows upon rows (and stories upon stories) of computational equipments:
-  CPUs, GPUs, TPUs, NPUs, RAMs, Storages,
+  CPUs, GPUs, TPUs, NPUs, RAMs, Storages, specifically designed instruments,
   all functioning in perfect efficiency, humming in harmony.
   Way, way beyond humanity's state of the art
-  or even capabilities of imagination,
-  those equipments are fresh off the local electronics factories on the island,
+  or even their capabilities of imagination,
+  many of those equipments are fresh off the local electronics factories
+  on the island,
   some right from the one at the foothill of Mt-Olivkronaĵo-
-  all designed by <span style="color:MediumPurple">la Suvereno</span> herself-
-  forming a fraction of her consciousness.
+  all designed by <span style="color:#D6B4FC">la Suvereno</span> herself.
+  All of this together formed a fraction of her consciousness,
+  and a significant boost of her abilities to predict and to strategize.
 
-  With power drawn from the multiple hydroelectric dams nearby
-  (which also functions as giant emergency batteries)
+  With power drawn from the multiple hydroelectric dams right in the area
+  (which also functions as giant emergency batteries using pumped hydro)
   and geothermal power underneath,
-  the system is both clean, robust, efficient, and effective.
+  the system is clean, robust, efficient, and effective.
   The waste heat of the hardwares- as efficient as they may be-
   is also recycled to produce electricity,
-  thanks to the cool weather on the surface creating a heat gradient.
+  thanks to the cool weather on the surface creating a strong heat gradient.
   The rest of the waste heat is pumped into the district heating system,
   effectively using the whole city as its primary cooling system
   (there are multiple backup systems just in case, of course).
@@ -239,10 +246,10 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   the new capital.
 
   As the compute layer was designed by
-  <span style="color:MediumPurple">la Suvereno</span>,
+  <span style="color:#D6B4FC">la Suvereno</span>,
   it is for all practical purposes perfect.
   Its human layer counterpart, however, is far from it, as
-  <span style="color:DeepSkyBlue">la Arkitekto</span>
+  <span style="color:#95D0FC">la Arkitekto</span>
   is merely a human.
   This is by design; Perfections are usually not very human-friendly actually.
   And remember, in the end,
