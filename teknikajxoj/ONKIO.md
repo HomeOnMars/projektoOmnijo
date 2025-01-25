@@ -44,20 +44,23 @@ Differences from the ASCII table are highlighted with **bold** text.
 |  **0x\_a**  |  *LF \\n*   |    **:**    |     \*      |    **Δ**    |      J      |      Z      |      j      |      z      |
 |  **0x\_b**  |  *VT \\v*   |    **;**    |     \+      |    **λ**    |      K      |    **Ĉ**    |      k      |    **ĉ**    |
 |  **0x\_c**  |  *FF \\f*   |   **\<**    |      ,      |    **Π**    |      L      |    **Ĝ**    |      l      |    **ĝ**    |
-|  **0x\_d**  |  ***SUB***  |    **=**    |     \-      |    **Ψ**    |      M      |    **Ĵ**    |      m      |    **ĵ**    |
+|  **0x\_d**  |  ***SUB***  |    **=**    |     \-      |    **Σ**    |      M      |    **Ĵ**    |      m      |    **ĵ**    |
 |  **0x\_e**  |  ***ESC***  |   **\>**    |     \.      |    **Υ**    |      N      |    **Ŝ**    |      n      |    **ŝ**    |
-|  **0x\_f**  |  ***DEL***  |    **?**    |      /      |    **Σ**    |      O      |    **Ŭ**    |      o      |    **ŭ**    |
+|  **0x\_f**  |  ***DEL***  |    **?**    |      /      |    **Ψ**    |      O      |    **Ŭ**    |      o      |    **ŭ**    |
 
 > [!NOTE]
 >
 > - Built-in support for *hexadecimal* characters :-D
->   - 10~15 are represented as greek letters `Δ λ Π Ψ Υ Σ`, as shown in the column `0x3_` in the above table.
+>   - 10~15 are represented as greek letters `Δ λ Π Σ Υ Ψ`, as shown in the column `0x3_` in the above table.
 >   - Note that `Υ` is the greek letter `γ` (but capitalized), not English letter `Y`.
 >   - Designs:
->     - `Δ λ Π` as 10-12 (looks like D L N), and `Ψ Υ Σ` as 13-15 (looks like W Y Z, for easy memorization.)
+>     - `Δ λ Π` as 10-12 (looks like D L N), and
+        `Σ Υ Ψ` as 13-15 (looks like Z Y W;
+        Σ before Ψ because it is so in greek letters,
+        it's easier for computers to sort.)
 >     - `β` was avoided deliberately due to it looks like 8 under certain fonts. So are `δ~6`, `θ/Θ/Ω~0`, `ξ~3`, `Γ~7`, `ζ~2/5`, `Ξ~111`, `Χ~×` (math multiplication symbol).
 >     - Conventional English characters `A B C D E F` were also avoided, to allow differentiation between numbers and texts.
->     - The center of mass of the numbers `ΔλΠΨΥΣ` are the about the same as `0-9`, unlike most lower case greek letters.
+>     - The center of mass of the numbers `ΔλΠΣΥΨ` are the about the same as `0-9`, unlike most lower case greek letters.
 > - Only 16 control characters (all in the column `0x0_`) instead of 33 in ASCII table, as most of those extra control characters are obsolete in modern days.
 > - Removed `CR \r` and moved `DEL` from `0x7f` to `0x0f` to maximize regularity.
 

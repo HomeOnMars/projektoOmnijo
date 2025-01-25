@@ -54,15 +54,15 @@ Changes of Esperanto++ from Esperanto include:
   Thousands separator (decimal) / ten-thousands separator (hexadecimal) is
   space(` `) instead of `.`;<!-- markdownlint-disable-line no-space-in-code -->
 - Built-in support for *hexadecimal* algebra:
-  - `Δ λ Π Ψ Υ Σ` written/pronounced as `del lom nak fup gan sig`;
+  - `Δ λ Π Σ Υ Ψ` written/pronounced as `del lom nak sig gan fup`;
   - `hek`   for            16 (base-10),
-  - `jent`  for           256 (base10, = 2^8  or        ΣΣ+1),
-  - `gil`   for         4 096 (base10, = 2^12 or       ΣΣΣ+1),
-  - `onio`  for        65 536 (base10, = 2^16 or      ΣΣΣΣ+1), and
-  - `dunio` for 4 294 967 296 (base10, = 2^32 or ΣΣΣΣ ΣΣΣΣ +1).
+  - `jent`  for           256 (base10, = 2^8  or        ΨΨ+1),
+  - `gil`   for         4 096 (base10, = 2^12 or       ΨΨΨ+1),
+  - `onio`  for        65 536 (base10, = 2^16 or      ΨΨΨΨ+1), and
+  - `dunio` for 4 294 967 296 (base10, = 2^32 or ΨΨΨΨ ΨΨΨΨ +1).
 
-  (As a reference, 9 100 000 000 (base10) = 2 1Υ66 Σλ00, pronounced as
-  du dunio, gil ganjent seshek ses onio, siggil lomjent.);
+  (As a reference, 9 100 000 000 (base10) = 2 1Υ66 Ψλ00, pronounced as
+  du dunio, gil ganjent seshek ses onio, fupgil lomjent.);
 - All nouns are now gender-neutral by default,
   unless added surfix `-in-` for female and `-iĉ-` for male.
   - E.g., `viro` is replaced by `viriĉo` for man,

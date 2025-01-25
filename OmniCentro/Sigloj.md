@@ -102,13 +102,13 @@ Note that the letters are overlapping other acronyms in other categories - and t
 > [!NOTE]
 >
 > 1. H prefix is usually omitted.
-> 2. All Line numbers are ***hexadecimal*** (see [ONKIO table](../teknikajxoj/ONKIO.md#onkio-tablo) `0x3_` column for respective symbols of 10~15: `Δ λ Π Ψ Υ Σ`).
+> 2. All Line numbers are ***hexadecimal*** (see [ONKIO table](../teknikajxoj/ONKIO.md#onkio-tablo) `0x3_` column for respective symbols of 10~15: `Δ λ Π Σ Υ Ψ`).
 
 Examples:
 
-- Bus route 431 (i.e. 0x1af): `U1ΔΣ` (short for HB1ΔΣ)
+- Bus route 431 (i.e. 0x1af): `U1ΔΨ` (short for HB1ΔΨ)
 - High-speed Train line 3: `V3` (short for HV3)
-- Motorway 13 N->S: `ŬΨm` (or `UxDm` for ASCII encoding; m for Negative.)
+- Motorway 13 N->S: `ŬΣm` (or `UxDm` for ASCII encoding; m for Negative.)
 - Cargo train line 12: `KVΠ`
 - Cargo barge route 4: `KP4`
 - Cargo container ship route 14: `KŜΥ` (or KSxE for ASCII encoding; Becareful `Υ` is the upper-case version of greek letter `γ`, not English Y.)
@@ -137,6 +137,7 @@ Examples:
 |    Ej   | f**E**rvo**j**o      | Railway          |
 |    Tj   | **T**ramvo**j**o     | Tramway          |
 ||||
+|    Ĉf   | **Ĉ**e**f**o         | Main             |
 |    Pt   | **P**ar**t**o        | Part, Segment    |
 
 Naming rules examples:
@@ -149,8 +150,8 @@ Naming rules examples:
   of `Mt-Olivkronaĵo` (Good),  
   or `Monto-Olivkronaĵo` (Good),  
   or `Olivkronaĵa Monto` (Meh);
-- `Ŭj#Ψm` for Motorway 13 N->S `ŬΨm`,  
-  or `Aŭtovojo #Ψm`;
+- `Ŭj#Σm` for Motorway 13 N->S `ŬΣm`,  
+  or `Aŭtovojo #Σm`;
 - `St-Olivkronaĵo #123` as a short version  
   of `Olivkronaĵa Strato #123`,  
   or `123 Olivkronaĵo St`;
@@ -169,7 +170,7 @@ Using the leading digit for identifying districts and areas:
 | `2` |  SC  | Am-H  | Am-Hejmecaĵo   | |
 | `3` |  SR  | Mt-O  | Mt-Olivkronaĵo | <span style="color:DarkSeaGreen">█ #8FBC8F</span> |
 | ... |      |       |                | |
-| `Σ` |      |       | Eksteraj Konektoj  <br>Outside connections | |
+| `Ψ` |      |       | Eksteraj Konektoj  <br>Outside connections | |
 | ... |      |       |                | |
 | TBD |  SK  | Mt-K  | Mt-Kuraĝecaĵo  | <span style="color:Silver">█ #C0C0C0</span> |
 | TBD |  CC  | Mt-H  | Mt-Hejmecaĵo   | |
