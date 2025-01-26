@@ -26,14 +26,16 @@ Lingvo
 > [Back to OmniCentro Content](../OmniCentro.md#detalaj-informoj)
 
 The official language in [RdO](Bulteno.md#fonrakonta-bulteno) is
-***Esperanto++*** (often written as `E++`, pronounced as `Epopo`),
-a fictional artificial variant of Esperanto
-specified by <span style="color:Beige">Reĝino Serena</span> herself,
-aiming to offer maximum regularity for easy learning,
+***Esperanto++*** (often written as `E++` or `Epopo`),
+a fictional variant of L. L. Zamenhof's artificial language
+[*Esperanto*](https://lernu.net/esperanto) (1887),
+with multiple changes specified by
+<span style="color:Beige">Reĝino Serena</span> herself,
+aiming to offer even more regularity for easier learning
 while conforming to the existing world as much as possible.
 <span style="color:Beige">Queen Serena</span> declared `Epopo`
 as the new official language of RdO about three months in her reign,
-set to gradually replace English in the next 16 years
+set to gradually replace English in the next jarheko (hexcade, i.e. 16 years)
 in all RdO official documentations and communications.
 
 One would think that such random order

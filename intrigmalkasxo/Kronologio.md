@@ -58,9 +58,9 @@ Other acronyms:
 | Y+2S   | <span style="color:Beige">Serena</span> implements policy: `free public transit` within the island |
 | Y+3S   | <span style="color:Beige">Serena</span> implements policy: `encourage emigration and immigrantion` |
 | Y+3S   | <span style="color:Beige">Serena</span> started several nationalized companies, including the Banko de Omnijo |
-| Y+1M3S | The interview of the [government type](../OmniCentro/Bulteno.md#fonrakonta-bulteno) happened |
-| Y+2M   | <span style="color:Beige">Serena</span> implements policy: `UBI` (Universal basic income) |
-| Y+2M1S | <span style="color:Beige">Serena</span> declares `Epopo` to be the new official language |
+| Y+2M3S | The interview of the [government type](../OmniCentro/Bulteno.md#fonrakonta-bulteno) happened |
+| Y+3M   | <span style="color:Beige">Serena</span> implements policy: `UBI` (Universal basic income) |
+| Y+3M1S | <span style="color:Beige">Serena</span> declares `Epopo` to be the new official language  <br>\(Northward Equinox 20XX\) |
 | Y+`3M?`  | Worldwide economic recession due to brust of AI bubble |
 | Y+`4M?`  | Most of the banks on the island went bankrupt and integrated into Banko de Omnijo |
 | Y+`5M?`  | Most of the industries on the island were nationalized |

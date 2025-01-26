@@ -65,19 +65,36 @@ Retoj
       and  $R \approx v_\mathrm{max}^2 / (20 \mathrm{mh/km})$ for higher limit~~.
   - Source: (2024-08-23) [Xin et al. (2021)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256301): for $R$
     - [figure 8](https://doi.org/10.1371/journal.pone.0256301.g008): Predictions of speed thresholds of the truck in a sharp turn
-- Arterial / Collector / Local Roads
+
+#### Stratoj
+
+> Streets
+
+Stratoj here generally refers to roads with pedestrian access (i.e. sidewalks),
+regardless of it being a road or a street.
+
+Arterial / Collector / Local Roads:
+
 - Gradient  limit:
   (Arbitrarily set to:)
 
   |             | max Gradient $s$ | Speed limit $v_\mathrm{max}$ | Notes |
   | ----------- | :-------: | :-------: | ----------- |
-  | Recommended |  10  \%   |  60 km/h  | Arterial    |
-  | Soft Limit  |  13.5\%   |  50 km/h  | Collector   |
-  | -           |  17.5\%   |  40 km/h  | Local roads |
-  | -           |  24.5\%\* |  30 km/h  | Local roads |
+  | Recommended |  10  \%   |  60 km/h  | Arterial (5u+ Monstrosity)   |
+  |||||
+  | Recommended |  13.5\%   |  50 km/h  | Collector (3u+ width with 2+ Ŭ lanes)  |
+  |||||
+  | Recommended |  17.5\%   |  40 km/h  | Local roads (Main or Low Ped Activity) |
+  | Recommended |  24.5\%\* |  30 km/h  | Local roads (High Ped Activity) |
   | Hard Limit  |  30  \%\* |  25 km/h  | Local roads |
+  |||||
+  | Recommended |  30  \%\* |  20 km/h  | Pedestrian Roads |
 
   \* Note that vanilla game by default only allow up to $20 \%$ gradient.
+
+- Regarding Speed limits,
+  See also:
+  - (2025-01-26) [Hussain et al. (2019)](https://doi.org/10.1016/j.aap.2019.05.033) Meta-analysis on pedestrian fatality vs vehicle speed.
 
 #### Biciklovojoj
 

@@ -114,31 +114,51 @@ Examples:
 - Cargo container ship route 14: `KŜΥ` (or KSxE for ASCII encoding; Becareful `Υ` is the upper-case version of greek letter `γ`, not English Y.)
 - Cargo Airline 5: `KA5`
 
-### Lokoj
+### Mallongigoj
 
-> Acronym for places types
+> Abbreviations
 
-| Siglo  <br>Acronym | En esperanto  <br>In Esperanto | En la angla  <br>In English |
+| Mallongigo  <br>Abbreviation | En Epopo  <br>In Epopo | En la angla  <br>In English |
 | :-----: | -------------------- | ---------------- |
+||| <!-- Major Geological/Engineering Features -->  |
 |    Ab   | **A**kvo**b**araĵo   | Dam              |
 |    Mt   | **M**on**t**o        | Mountain         |
 |    Am   | **A**ntaŭ**m**onto   | Foothill         |
 |    Me   | **M**ont**e**to      | Hill             |
-||||
+||| <!-- District types --> |
 |    Dt   | **D**is**t**rikto    | District         |
 |    Ia   | **I**ndustri**a**reo | Industrial Area  |
 |    Hv   | **H**a**v**eno       | Port             |
 |    Vd   | **V**i**d**o         | Vista            |
 |    Vĝ   | **V**ila**ĝ**o       | Village          |
-||||
-|    St   | **S**tra**t**o       | Street           |
-|    Vj   | **V**o**j**o         | Road             |
-|    Ŭj   | a**Ŭ**tovo**j**o     | Motorway         |
-|    Ej   | f**E**rvo**j**o      | Railway          |
-|    Tj   | **T**ramvo**j**o     | Tramway          |
-||||
+||| <!-- Road types --> |
+|  ~~Vj~~ | ~~**V**o**j**o~~     | [Road](../teknikajxoj/Retoj.md#vojoj)  <br>(Deprecated[^Deprecated-Vj]) |
+|    Ŭj   | a**Ŭ**tovo**j**o     | [Motorway](../teknikajxoj/Retoj.md#aŭtovojoj) |
+|    Ej   | f**E**rvo**j**o      | [Railway](../teknikajxoj/Retoj.md#metrooj--personaj-fervojoj) |
+|  Ej-AR  | Ej-**A**lt**R**apido | [High-speed railway](../teknikajxoj/Retoj.md#altrapidaj-fervojoj) |
+|  Ej-SL  | Ej-**S**upraj**L**inioj | Subway railway (powered by overhead lines) |
+|  Ej-TR  | Ej-**T**ria**R**elo  | Subway railway (powered by third rail) |
+|  Ej-K   | Ej-**K**argo         | [Cargo railway](../teknikajxoj/Retoj.md#kargaj-kaj-malnovaj-personaj-fervojoj) |
+|    Tj   | **T**ramvo**j**o     | [Tramway](../teknikajxoj/Retoj.md#tramoj)          |
+|    St   | **S**tra**t**o       | [Street](../teknikajxoj/Retoj.md#stratoj) |
+|  St-Ar  | St-**Ar**teria       | Arterial  Roads  |
+|  St-Kl  | St-**K**o**l**ekto   | Collector Roads  |
+|  St-Ĉf  | St-**Ĉ**e**f**o      | Main  Roads      |
+|  St-Lk  | St-**L**o**k**o      | Local Roads      |
+|  St-H   | St-**H**omo          | Pedestrian Roads |
+||| <!-- Misc types --> |
 |    Ĉf   | **Ĉ**e**f**o         | Main             |
 |    Pt   | **P**ar**t**o        | Part, Segment    |
+||| <!-- Edu types --> |
+|    Bl   | **B**az**l**ernejo   | Elementary School |
+|    Ml   | **M**ez**l**ernejo   | High School      |
+|    Al   | **A**lt**l**ernejo   | College          |
+|   Uni   | **Uni**versitato     | University       |
+
+[^Deprecated-Vj]: Deprecated.
+  Vojo as a concept is too broad,
+  as it could mean anything from motorways and rails to alleys and paths.
+  Do not use.
 
 Naming rules examples:
 
@@ -191,10 +211,10 @@ Using the leading digit for identifying districts and areas:
 | Metroo-Korto             | Subway Yard              |
 | Stacidomo                | Train Station            |
 |||
-| Bazlernejo               | Elementary School        |
-| Mezlernejo               | High School / Middle School |
-| Altlernejo               | College / Higher Education  |
-| Universitato             | University               |
+| Bazlernejo / ***Bl***    | Elementary School        |
+| Mezlernejo / ***Ml***    | High School / Middle School |
+| Altlernejo / ***Al***    | College / Higher Education  |
+| Universitato / ***Uni*** | University               |
 |||
 | Policejo                 | Police Station           |
 | Fajrobrigado             | Fire Station/Brigade/Department |

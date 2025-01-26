@@ -9,10 +9,12 @@ Background stories and technical specifications
 for my fictional Cities: Skylines 2 city *OmniCentro*
 ([Paradox Mod ID 97163](https://mods.paradoxplaza.com/mods/97163/Any)).
 
-![Omnija Centra Gvidantaro (OCG) emblem](fig/OCG.svg)
-
-La Regno de Omnijo central authority
-*Omnija Centra Gvidantaro* (OCG) [emblem](OmniCentro/Emblemoj.md#emblemoj) (fictional).
+![RdO emblem](fig/RdOFlago.svg) 
+$~~~~~~~~~~~~~~~~$
+![Omnija Centra Gvidantaro (OCG) emblem](fig/OCG.svg)  
+*La Regno de Omnijo* (RdO) flag and central authority
+*Omnija Centra Gvidantaro* (OCG) [emblem](OmniCentro/Emblemoj.md#emblemoj)
+(fictional)
 
 Legal
 -------------------------------------------------------------------------------
