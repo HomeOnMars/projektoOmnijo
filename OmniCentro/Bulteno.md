@@ -161,9 +161,10 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | Office of Home    Affairs           | OCOI | Omnija Centra Oficejo de Internaj Aferoj  |  RdO | Immigration and welfare. No one shall be left behind. Also oversees the distribution of the UBI (universal basic income). |
 ||||||
 | Public Radio Network                | OCRR | OmniCentra RadioReto                      | OCFE | La voĉo de Omnijo. |
+| Omnija Space Program                | OKP  | Omnija Kosma Programo                     | OCFI | People thought the <span style="color:Beige">Queen</span> was joking when she said about founding a space agency... When in fact she was only half-joking. |
 | Public Transport Agency             | OPT  | Omnija Publika Transporto                 | OCFI | Transport for RdO. |
 | Central Bank                        | OCB  | Omnija Centra Banko                       | OCOF | The Central Bank of RdO, serving all banks on the island (though mostly just BdO, as other banks keep being nationalized and absorbed into it). <span style="color:Beige">Serena</span>'s economic reforms put it under the direct control of OCOF, ending its not-so-long history of indepdendency from government control. |
-| Nationalized Bank                   | BdO  | Banko de Omnijo                           | OCOF | All your finance managed in one place. Security guaranteed by the central gov. No need to worry about filing taxes- here they are automatically filed for you! |
+| Nationalized Bank                   | BdO  | Banko de Omnijo                           | OCOF | All your finance managed in one place. Security guaranteed by the central gov. Accounts are free and surcharges are included in taxes. Which you don't need to worry about filing- here taxes are automatically filed for you!  <br>*Warning: ALL info handled by BdO are automatically given to the central gov under a perpetual irrevocable license.* |
 
 ### Listo de Rolujoj
 
@@ -174,12 +175,12 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | RdO  | #F5F5DC | <span style="color:Beige">█ La Reĝino **Serena** de Omnijo</span> |
 | OCFD | #C0C0C0 | <span style="color:Silver">█ La Suvereno **Laŭra** de Omnijo</span> |
 | OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ La Suvereno **Dajanna** de Omnijo</span> |
-| OCFF | #FF0000 | <span style="color:Red">█ </span> |
+| OCFF | #FF0000 | <span style="color:Red">█ La Suvereno **Petrovo** de Omnijo </span> |
 | OCFI | #95D0FC | <span style="color:#95D0FC">█ La Arkitekto **Ĉuĉjo** de Omnijo</span> |
 | OCFI | #D6B4FC | <span style="color:#D6B4FC">█ La Suvereno **Ĝejnjo** de Omnijo</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo de Omnijo --> |
 | OCFI | #9370DB | <span style="color:MediumPurple">█ ... (Department Color) ...</span> |
 | OCFP | #D2691E | <span style="color:Chocolate">█ La Suvereno **Tejlero** de Omnijo</span> |
-| OCFS | #FFC0CB | <span style="color:Pink">█ </span> |
+| OCFS | #FFC0CB | <span style="color:Pink">█ La Suvereno **Eriko** de Omnijo</span> |
 | OCOE | #FFD700 | <span style="color:Gold">█ La Suvereno **Natalia** de Omnijo</span> |
 | OCOF | #8FBC8F | <span style="color:DarkSeaGreen">█ La Suvereno **Alekso** de Omnijo</span> |
 | OCOI | #D2B48C | <span style="color:Tan">█ La Suvereno **Venesa** de Omnijo</span> |

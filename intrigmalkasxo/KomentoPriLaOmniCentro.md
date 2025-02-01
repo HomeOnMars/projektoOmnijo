@@ -175,20 +175,22 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
 
 -------------------------------------------------------------------------------
 
-### The case for Seaside Valley: A layered design
+### The case for Seaside Valley
 
 About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
 
 <details>
-  <summary><b>SPOILERS</b>: The case for Seaside Valley</summary>
+  <summary><b>SPOILERS</b>: The case for Seaside Valley:<br><em>A Layered Design and the Mountains of thoughts</em></summary>
+
+  > "There's more than meets the eye."
 
   OmniCentro was designed by two people of the newly founded OCFI:
   <span style="color:#95D0FC">la Arkitekto Ĉuĉjo</span> (the Architect) and
   <span style="color:#D6B4FC">la Suvereno Ĝejnjo</span> (the Sovereign).
 
-  Someone who knows just a little more might beg to differ;
+  Someone who knows just a little bit more might beg to differ;
   that most of the city was actually designed by
-  <span style="color:#95D0FC">la Arkitekto</span> alone, that
+  <span style="color:#95D0FC">la Arkitekto</span> alone, and that
   <span style="color:#D6B4FC">la Suvereno</span> barely did anything
   and merely took the credit.
 
@@ -203,58 +205,80 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   A layer that is not designed for the humans,
   but for what truly powers *la Regno*:
 
-  ***Compute***.
+  *Compute*.
 
   Deep, deep inside the Great Mt-Fortikecaĵo,
   hidden behind layers of solid rocks, Faraday cages, concrete walls and more,
-  safe from the elements, solar storms, prying satellites and man-made weapons,
+  safe from the elements, earthquakes, solar storms, man-made weapons
+  and prying eyes and satellites,
   lies rows upon rows (and stories upon stories) of computational equipments:
-  CPUs, GPUs, TPUs, NPUs, RAMs, Storages, specifically designed instruments,
+  CPUs, GPUs, TPUs, NPUs, RAMs, storages;
+  even more specifically designed instruments
+  that have no matching human technology counterparts;
   all functioning in perfect efficiency, humming in harmony.
   Way, way beyond humanity's state of the art
   or even their capabilities of imagination,
   many of those equipments are fresh off the local electronics factories
-  on the island,
+  on the island (or directly 3D-printed inside the second layer),
   some right from the one at the foothill of Mt-Olivkronaĵo-
   all designed by <span style="color:#D6B4FC">la Suvereno</span> herself.
-  All of this together formed a fraction of her consciousness,
-  and a significant boost of her abilities to predict and to strategize.
+  Built and maintained by numerous bot swarms of sizes
+  ranging from several centimeters to dozens of nanometers
+  travelling in same-size tunnels/tubes
+  (conveniently fitting the computing chips but not humans or even mices),
+  these structures are a true testimony of what engineering is capable of:
+  craving a thinking living consciousness right out of a mountain,
+  within a fully-automated structure completely inaccessible to humans.
+  Or rather, a small portion of said consciousness.
+  Nevertheless, all those extra computational power granted
+  <span style="color:MediumPurple">ĜEJDA</span>
+  a significant boost to her abilities to predict and to strategize.
 
   With power drawn from the multiple hydroelectric dams right in the area
-  (which also functions as giant emergency batteries using pumped hydro)
+  (which also functions as pumped hydro emergency energy storage)
   and geothermal power underneath,
   the system is clean, robust, efficient, and effective.
   The waste heat of the hardwares- as efficient as they may be-
   is also recycled to produce electricity,
   thanks to the cool weather on the surface creating a strong heat gradient.
-  The rest of the waste heat is pumped into the district heating system,
+  The rest of the waste heat is pumped into the district heating system
+  and the nearby vertical farms,
   effectively using the whole city as its primary cooling system
-  (there are multiple backup systems just in case, of course).
+  (with multiple backup systems just in case, of course).
 
-  As the system expands physically (and separately into nearby mountains too),
+  As the system expands physically
+  (and separately into the nearby mountains too),
   it is projected that the extra heat-
-  despite the extreme efficiency of the hardware-
-  could eventually warm up the entire local climate by 4~8 degrees Celcius,
-  making the winter nights more comfortable and the summer days nice and cosy
-  for the humans above, as designed.
+  despite the extreme efficiencies of the hardware-
+  would eventually warm up local climate by 4~8 degrees Celcius,
+  making the winter nights more comfortable
+  and the summer days nicer and cosier for the humans above, as designed.
 
   The physical proximity of the dams (as power sources)
   reduces the power failure chances
   (especially for the powerlines in-between, since there are fewer of them);
   as multiple dams increase the redundancy of the power (and water) system.
   This alone is a big enough reason why Seaside Valley was choosen for building
-  the new capital.
+  the new capital; Also, any potential fusion power plant
+  would likely draw a lot of water as fuel,
+  and the reservoirs created by the dams would be perfect for that.
+  (Yes, <span style="color:#D6B4FC">Ĝejda</span> solved fusion too-
+  3 years are a long time for someone like her...
+  Althrough, physical testing of the theoretical work takes a bit more time
+  and cannot be easily accelerated.)
 
   As the compute layer was designed by
   <span style="color:#D6B4FC">la Suvereno</span>,
-  it is for all practical purposes perfect.
+  it is for all practical purposes perfect
+  (especially after the first successful 2nd layer test case she built
+  under the server farms on top of the north part of the Mt-Olivkronaĵo).
   Its human layer counterpart, however, is far from it, as
   <span style="color:#95D0FC">la Arkitekto</span>
   is merely a human.
   This is by design; Perfections are usually not very human-friendly actually.
-  And remember, in the end,
+  <!-- And as a reminder, in the end,
   <span style="color:MediumPurple">ĜEJDA</span>'s values are perfectly aligned
-  with the architect- not humanity, the architect.
+  with the architect- not humanity, the architect. -->
 
 </details>
 

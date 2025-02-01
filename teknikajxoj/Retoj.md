@@ -80,9 +80,9 @@ Arterial / Collector / Local Roads:
 
   |             | max Gradient $s$ | Speed limit $v_\mathrm{max}$ | Notes |
   | ----------- | :-------: | :-------: | ----------- |
-  | Recommended |  10  \%   |  60 km/h  | Arterial (5u+ Monstrosity)   |
+  | Recommended |  10  \%   |  60 km/h  | Arterial (5u+ Monstrosity, No parking)   |
   |||||
-  | Recommended |  13.5\%   |  50 km/h  | Collector (3u+ width with 2+ Ŭ lanes)  |
+  | Recommended |  13.5\%   |  50 km/h  | Collector (3u+ width with 2+ Ŭ lanes, Parking allowed)  |
   |||||
   | Recommended |  17.5\%   |  40 km/h  | Local roads (Main or Low Ped Activity) |
   | Recommended |  24.5\%\* |  30 km/h  | Local roads (High Ped Activity) |

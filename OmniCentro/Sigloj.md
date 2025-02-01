@@ -125,10 +125,13 @@ Examples:
 |    Mt   | **M**on**t**o        | Mountain         |
 |    Am   | **A**ntaŭ**m**onto   | Foothill         |
 |    Me   | **M**ont**e**to      | Hill             |
+|    Lg   | **L**a**g**o         | Lake             |
+|    Rv   | **R**i**v**ero       | River            |
+|  ~~Mr~~ | **M**a**r**o         | Sea  <br>(Deprecated - Use full form instead) |
 ||| <!-- District types --> |
 |    Dt   | **D**is**t**rikto    | District         |
 |    Ia   | **I**ndustri**a**reo | Industrial Area  |
-|    Hv   | **H**a**v**eno       | Port             |
+|    Hv   | **H**a**v**eno       | Port (Both Sea and Air) |
 |    Vd   | **V**i**d**o         | Vista            |
 |    Vĝ   | **V**ila**ĝ**o       | Village          |
 ||| <!-- Road types --> |
@@ -136,12 +139,12 @@ Examples:
 |    Ŭj   | a**Ŭ**tovo**j**o     | [Motorway](../teknikajxoj/Retoj.md#aŭtovojoj) |
 |    Ej   | f**E**rvo**j**o      | [Railway](../teknikajxoj/Retoj.md#metrooj--personaj-fervojoj) |
 |  Ej-AR  | Ej-**A**lt**R**apido | [High-speed railway](../teknikajxoj/Retoj.md#altrapidaj-fervojoj) |
-|  Ej-SL  | Ej-**S**upraj**L**inioj | Subway railway (powered by overhead lines) |
+|  Ej-SL  | Ej-**S**upraj**L**inioj | Regular railway (powered by overhead lines) |
 |  Ej-TR  | Ej-**T**ria**R**elo  | Subway railway (powered by third rail) |
 |  Ej-K   | Ej-**K**argo         | [Cargo railway](../teknikajxoj/Retoj.md#kargaj-kaj-malnovaj-personaj-fervojoj) |
 |    Tj   | **T**ramvo**j**o     | [Tramway](../teknikajxoj/Retoj.md#tramoj)          |
 |    St   | **S**tra**t**o       | [Street](../teknikajxoj/Retoj.md#stratoj) |
-|  St-Ar  | St-**Ar**teria       | Arterial  Roads  |
+|  St-Ar  | St-**Ar**terio       | Arterial  Roads  |
 |  St-Kl  | St-**K**o**l**ekto   | Collector Roads  |
 |  St-Ĉf  | St-**Ĉ**e**f**o      | Main  Roads      |
 |  St-Lk  | St-**L**o**k**o      | Local Roads      |
@@ -186,18 +189,18 @@ Using the leading digit for identifying districts and areas:
 | Areo Numero | Proksimuma Loko | Siglo | Plena Nomo | Koloro |
 | --- | ---- | ----- | ----- | -------------- |
 | `0` |      |       | Interdistrikto (sen eksteraj konektoj)  <br>Interdistrict (no outside connections) | <span style="color:Tan">█ #D2B48C</span> |
-| `1` |  SK  | Dt-PV | Pioniro-Vilaĝo | |
+| `1` |  SK  | Vĝ-P  | Vilaĝo-Pioniro | |
 | `2` |  SC  | Am-H  | Am-Hejmecaĵo   | |
 | `3` |  SR  | Mt-O  | Mt-Olivkronaĵo | <span style="color:DarkSeaGreen">█ #8FBC8F</span> |
 | ... |      |       |                | |
 | `Ψ` |      |       | Eksteraj Konektoj  <br>Outside connections | |
 | ... |      |       |                | |
-| TBD |  SK  | Mt-K  | Mt-Kuraĝecaĵo  | <span style="color:Silver">█ #C0C0C0</span> |
+| TBD |  SK  | Mt-K  | Mt-Kuraĝecaĵo  | <span style="color:Red">█ #FF0000</span> |
 | TBD |  CC  | Mt-H  | Mt-Hejmecaĵo   | |
 | TBD |  CR  | Mt-E  | Mt-Esperecaĵo  | <span style="color:Beige">█ #F5F5DC</span> |
 | TBD |  NR  | Mt-R  | Mt-Raciecaĵo   | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 | TBD |  NK  | Mt-F  | Mt-Fortikecaĵo | <span style="color:MediumPurple">█ #9370DB</span> |
-| TBD |  NC  | Mt-U  | Mt-Unukornaĵo  | <span style="color:Pink">█ #FFC0CB</span> |
+| TBD |  NC  | Mt-U  | Mt-Unukornaĵo  | <span style="color:Thistle">█ #D8BFD8</span> |
 | N/A |  NC  | Mt-A  | Mt-Asteriaĵo   | |
 
 ### Konstruaj Nomoj
@@ -209,6 +212,7 @@ Using the leading digit for identifying districts and areas:
 | Buso-Korto               | Bus Depot                |
 | Fervojo-Korto            | Rail Yard                |
 | Metroo-Korto             | Subway Yard              |
+| Tramo-Korto              | Tram Depot               |
 | Stacidomo                | Train Station            |
 |||
 | Bazlernejo / ***Bl***    | Elementary School        |
@@ -232,6 +236,7 @@ Using the leading digit for identifying districts and areas:
 | \- Erco                  | \- Ore                   |
 |||
 | Transformilejo           | Transformer station      |
+| Akumulatorejo            | (Emergency) Battery Station |
 | Akvobaraĵo               | Dam                      |
 
 References:

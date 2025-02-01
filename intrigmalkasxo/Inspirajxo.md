@@ -20,7 +20,7 @@ Listo de Inspiraĵoj
 > NONE of my stories are directly set in the universes of those works,
 > NOR are any of my characters directly from any of the below works.
 
-Note: The list may be incomplete.
+Note: This list may be incomplete.
 
 ### Blogoj kaj Mallongaj Rakontoj
 
@@ -30,6 +30,7 @@ Note: The list may be incomplete.
 - […And I Show You How Deep The Rabbit Hole Goes](https://slatestarcodex.com/2015/06/02/and-i-show-you-how-deep-the-rabbit-hole-goes/) *(2015)* by Scott Alexander  
   (Orange.)
 - [It Looks Like You're Trying To Take Over The World](https://gwern.net/fiction/clippy) *(2022)* by gwern
+- [The Gentle Romance](https://www.lesswrong.com/posts/Rz4ijbeKgPAaedg3n/the-gentle-romance) *(2025)* by Richard_Ngo
 
 ### Jutubo
 
@@ -50,6 +51,7 @@ Note: The list may be incomplete.
 
 - [Transcendence](https://www.imdb.com/title/tt2209764) *(2014)*
 - [I Am Mother](https://www.imdb.com/title/tt6292852) *(2019)*
+- [The Artifice Girl](https://www.imdb.com/title/tt20859464) *(2022)*
 - [M3GAN](https://www.imdb.com/title/tt8760708) *(2022)*
 
 ### Videoludoj
