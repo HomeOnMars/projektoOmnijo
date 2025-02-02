@@ -28,7 +28,7 @@ Behind the background
 About the [Histories](../OmniCentro/Historio.md#la-historio)...
 
 <details>
-  <summary><b>SPOILERS</b>: The true nature of RdO</summary>
+  <summary><b>SPOILERS</b>: The true nature of RdO:<br><em>[Redacted]</em></summary>
 
   <br>
   <blockquote>
@@ -192,13 +192,13 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   that most of the city was actually designed by
   <span style="color:#95D0FC">la Arkitekto</span> alone, and that
   <span style="color:#D6B4FC">la Suvereno</span> barely did anything
-  and merely took the credit.
+  and simply took the credit.
 
   That is true- if you only scratch the surface.
 
   If you look deep, deep into the underground though,
   right in the core of the mountains,
-  a whole seconnd layer of the city reveals itself;
+  a whole second layer of the city reveals itself;
   A layer designed by
   <span style="color:#D6B4FC">la Suvereno</span> as a whole;
   A layer that makes newly-created OmniCentro a capital-worthy city;
@@ -216,8 +216,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   even more specifically designed instruments
   that have no matching human technology counterparts;
   all functioning in perfect efficiency, humming in harmony.
-  Way, way beyond humanity's state of the art
-  or even their capabilities of imagination,
+  Way, way beyond humanity's state of the art,
   many of those equipments are fresh off the local electronics factories
   on the island (or directly 3D-printed inside the second layer),
   some right from the one at the foothill of Mt-Olivkronaĵo-
@@ -227,12 +226,26 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   travelling in same-size tunnels/tubes
   (conveniently fitting the computing chips but not humans or even mices),
   these structures are a true testimony of what engineering is capable of:
-  craving a thinking living consciousness right out of a mountain,
+  craving parts of a thinking living consciousness right out of a mountain,
   within a fully-automated structure completely inaccessible to humans.
+
+  A.k.a., *the Mountains of thoughts*.
+
   Or rather, a small portion of said consciousness.
   Nevertheless, all those extra computational power granted
   <span style="color:MediumPurple">ĜEJDA</span>
-  a significant boost to her abilities to predict and to strategize.
+  a significant boost to her abilities to predict, to strategize,
+  and to self-improve.
+  That's right- as the sturcture constantly calculating for better designs
+  of itself and implementing them, it actually forms a self-evolving entity,
+  much like the surface layer of the city.
+  The long-term plan was to allow humans thriving on the surface layer,
+  while the second layer graduately converting the entire underground-
+  from several km below the surface to the mantle
+  and eventually the Earth's core-
+  into a gigantic reinforced
+  [computronium](https://en.wikipedia.org/wiki/Computronium),
+  maximizing *compute* for the benefit of everyone above- roughly speaking.
 
   With power drawn from the multiple hydroelectric dams right in the area
   (which also functions as pumped hydro emergency energy storage)
@@ -247,7 +260,8 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   (with multiple backup systems just in case, of course).
 
   As the system expands physically
-  (and separately into the nearby mountains too),
+  both horizontally into the nearby mountains
+  and vertically into the deep deep underground,
   it is projected that the extra heat-
   despite the extreme efficiencies of the hardware-
   would eventually warm up local climate by 4~8 degrees Celcius,
@@ -266,6 +280,12 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   3 years are a long time for someone like her...
   Althrough, physical testing of the theoretical work takes a bit more time
   and cannot be easily accelerated.)
+
+  As for the long-term, the crazy amount of power required in the future
+  will likely have to come from off-planet (most notably the sun),
+  So a massive power-receiver station on the surface will have to be reserved;
+  Though such station will have to be distanced away from the city
+  to improve margin of error.
 
   As the compute layer was designed by
   <span style="color:#D6B4FC">la Suvereno</span>,
