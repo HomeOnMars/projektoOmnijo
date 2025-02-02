@@ -131,7 +131,10 @@ Examples:
 ||| <!-- District types --> |
 |    Dt   | **D**is**t**rikto    | District         |
 |    Ia   | **I**ndustri**a**reo | Industrial Area  |
-|    Hv   | **H**a**v**eno       | Port (Both Sea and Air) |
+|  ~~Hv~~ | ~~**H**a**v**eno~~   | Port  <br>(Deprecated) |
+|   Mhv   | **M**ar**h**aveno    | Seaport          |
+|   Fhv   | **F**lug**h**aveno   | Airport          |
+|   Khv   | **K**osma**h**aveno  | Space Port       |
 |    Vd   | **V**i**d**o         | Vista            |
 |    Vĝ   | **V**ila**ĝ**o       | Village          |
 ||| <!-- Road types --> |
