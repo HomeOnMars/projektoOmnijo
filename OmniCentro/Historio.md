@@ -228,7 +228,7 @@ effectively buying out her own country.
   with much more competent new management
   saving the day and integrating everything. <br>
   With this as an example, <span style="color:Beige">Serena</span>
-  found it much easier for her governmental Office of Finance `OCOF`
+  found it much easier for her governmental Office of Finance `OCMF`
   to take over all kinds of businesses whenever they go bankrupt-
   especially when most of them turned out to be easily savable afterall.
   As for the old management-
@@ -259,7 +259,7 @@ effectively buying out her own country.
   unreadable and voided.
   The subsequent massive increase in lawsuits following that example
   drove many local companies into bankruptcy...
-  meaning they eventually got taken over by the `OCOF`
+  meaning they eventually got taken over by the `OCMF`
   in relatively good conditions.
 
 ### La fondo de *OmniCentro*
