@@ -57,6 +57,7 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | Country Name            |   RdO   | La Regno de Omnijo       |
 | Central Authority Name  |   OCG   | Omnija Centra Gvidantaro |
 | Government Service Name |   OCR   | Omnija Centra Registaro  |
+| Official Currency       |   OS    | Omnija Sejoj (O$)        |
 
 | (Fikciaj) Fonaj Informoj  <br>(Fictional) Background Information | Priskribo  <br>Description |
 | :---------------- | ---- |
@@ -70,15 +71,15 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 
 [^Bulteno-RegistaraTipo]: Interviewer: "So, tell us what do you think
   the kind of government our new *RdO* governemnt *OCR* is?"
-  <br>...<br>
-  <span style="color:#D6B4FC">Ĝejnjo la Suvereno de OCFI</span>:
+  <br>...<br> <!-- Say Constitutional Monarchy, Think Totalitarian Regime -->
+  <span style="color:#D6B4FC">La Suvereno Ĝejnjo de OCFI</span>:
   "As stated in the constitution, we are a *Constitutional Monarchy*,
   which has never changed
   since <span style="color:Beige">Reĝino Serena</span>'s coronation.
   As a gentle reminder, next year we are still going to vote
   for the new prime minister."
-  <br>...<br> <!-- Say Constitutional Monarchy, Think Totalitarian Regime -->
-  <span style="color:#95D0FC">Ĉuĉjo la Arkitekto de OCFI</span>:
+  <br>...<br> <!-- Say Benevolent Dictatorship, Believe Constitutional Monarchy -->
+  <span style="color:#95D0FC">La Arkitekto Ĉuĉjo de OCFI</span>:
   "I understand your concern that the
   <span style="color:Beige">Queen</span>
   has basically replaced the whole cabinet with us
@@ -89,8 +90,8 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
   Just look at how much improvements have been achieved in the past 6 months
   to the lives of everyone who chose to stay!
   I would say we are a *Benevolent Dictatorship*."
-  <br>...<br> <!-- Say Benevolent Dictatorship, Believe Constitutional Monarchy -->
-  <span style="color:Beige">Reĝino Serena de Omnijo</span>:
+  <br>...<br> <!-- Say Totalitarian Regime, Try Benevolent Dictatorship -->
+  <span style="color:Beige">La Reĝino Serena de Omnijo</span>:
   "I know many people outside our beloved island considered us
   fallen into a *Totalitarian Regime*... and I agree!
   Look, just yesterday I was thinking about putting together a
@@ -105,7 +106,7 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
   And, honestly, this absolute power feels pretty nice.
   Oh, and sorry for drop the news about UBI here.
   It's gonna happen starting next week. Now you know!"
-  <br>...<br> <!-- Say Totalitarian Regime, Try Benevolent Dictatorship -->
+  <br>...<br>
   The public's reactions to the interview are a bit mixed.
   <!-- It certainly didn't help the emigration rate,
   which experienced a small increase after the interview was aired.
@@ -157,10 +158,10 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | Ministry of Foreign Affairs         | OCME | Omnija Centra Ministerio de Eksteraj Aferoj |  RdO | RdO needs PR too. |
 | Ministry of Finance                 | OCMF | Omnija Centra Oficejo de Fisko            |  RdO | Collects taxes and oversees all nationalized industries and companies, including BdO. Almost a megacorp. |
 | Ministry of Home    Affairs         | OCMI | Omnija Centra Ministerio de Internaj Aferoj |  RdO | Immigration and welfare. No one shall be left behind. Also oversees the distribution of the UBI (universal basic income). |
-||||||
-| Office of Fire and Rescue           | OCOF | Omnija Centra Oficejo de Fajro kaj Savo   | OCFI | Responsible for emergency preparedness and disaster relief too. |
-| Office of Police                    | OCOP | Omnija Centra Oficejo de Polico           | OCFJ | The police department. |
-| Office of Healthcare                | OCOS | Omnija Centra Oficejo de Sanservo         | OCMI | Healthcare and deathcare (cryonics and bio-scanning options now available as well!) |
+||||| <!-- Offices / Oficejoj --> |
+| Department of Fire and Rescue       | OCFF | Omnija Centra Fako de Fajro kaj Savo      | OCFI | Responsible for emergency preparedness and disaster relief too. |
+| Department of Police                | OCFP | Omnija Centra Fako de Polico              | OCFJ | The police department. |
+| Department of Healthcare            | OCFS | Omnija Centra Fako de Sanservo            | OCMI | Healthcare and deathcare (cryonics and bio-scanning options now available as well!) |
 ||||||
 | Public Radio Network                | OCRR | OmniCentra RadioReto                      | OCFE | La voĉo de Omnijo. |
 | Omnija Space Program                | OKP  | Omnija Kosma Programo                     | OCFI | People thought the <span style="color:Beige">Queen</span> was joking when she said about founding a space agency... When in fact she was only half-joking. |
@@ -174,20 +175,20 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 
 | Org  | Koloro | Nomo |
 | ---- | ------ | ---- |
-| RdO  | #F5F5DC | <span style="color:Beige">█ La Reĝino **Serena** de Omnijo</span> |
-| RdO  | #32CD32 | <span style="color:LimeGreen">█ La Ĉefministro **Eriko** de Omnijo</span> |
-| OCFD | #C0C0C0 | <span style="color:Silver">█ La Suvereno **Laŭra** de Omnijo</span> |
-| OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ La Suvereno **Dajanna** de Omnijo</span> |
+| RdO  | #F5F5DC | <span style="color:Beige">█ La Reĝino **Serena** de Omnijo</span>  <!-- OCG -->  |
+| RdO  | #32CD32 | <span style="color:LimeGreen">█ La Ĉefministro **Eriko** de Omnijo</span>  <!-- OCG -->  |
+| OCFD | #C0C0C0 | <span style="color:Silver">█ La Generalo **Laŭra** de Omnijo</span>  <!-- OCG -->  |
+| OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ La Kunordigestro **Dajanna** de Omnijo</span>  <!-- OCG -->  |
 | OCFI | #95D0FC | <span style="color:#95D0FC">█ La Arkitekto **Ĉuĉjo** de Omnijo</span> |
-| OCFI | #D6B4FC | <span style="color:#D6B4FC">█ La Suvereno **Ĝejnjo** de Omnijo</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo de Omnijo --> |
+| OCFI | #D6B4FC | <span style="color:#D6B4FC">█ La Suvereno **Ĝejnjo** de Omnijo</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo de Omnijo -->  <!-- OCG -->  |
 | OCFI | #9370DB | <span style="color:MediumPurple">█ ... (Department Color) ...</span> |
-| OCFJ | #D2691E | <span style="color:Chocolate">█ La Ĉefprokuroro **Beno** de Omnijo</span> |
-| OCME | #FFD700 | <span style="color:Gold">█ La Ministro **Jonaso** de Omnijo</span> |
+| OCFJ | #D2691E | <span style="color:Chocolate">█ La Prokuroro **Beno** de Omnijo</span>  <!-- OCG -->  |
+| OCME | #FFD700 | <span style="color:Gold">█ La Ministro **Jonaso** de Omnijo</span>  <!-- OCG -->  |
 | OCME | #FFD700 | <span style="color:Gold">█ La Parolanto **Natalia** de Omnijo</span> |
-| OCMF | #8FBC8F | <span style="color:DarkSeaGreen">█ La Ministro **Alekso** de Omnijo</span> |
-| OCMI | #D2B48C | <span style="color:Tan">█ La Ministro **Venesa** de Omnijo</span> |
+| OCMF | #8FBC8F | <span style="color:DarkSeaGreen">█ La Trezorestro **Alekso** de Omnijo</span>  <!-- OCG -->  |
+| OCMI | #D2B48C | <span style="color:Tan">█ La Ministro **Venesa** de Omnijo</span>  <!-- OCG -->  |
 ||||
-| OCOF | #FF0000 | <span style="color:Red">█ La Direktoro **Petrovo** de Omnijo </span> |
-| OCOP | #4169E1 | <span style="color:RoyalBlue">█ La Policestro **Tejlero** de Omnijo</span> |
-| OCOS | #FFC0CB | <span style="color:Pink">█ La Oficestro **Fiona** de Omnijo</span> |
+| OCFF | #FF0000 | <span style="color:Red">█ La Direktoro **Petrovo** de Omnijo </span> |
+| OCFP | #4169E1 | <span style="color:RoyalBlue">█ La Policestro **Tejlero** de Omnijo</span> |
+| OCFS | #FFC0CB | <span style="color:Pink">█ La Fakestro **Fiona** de Omnijo</span> |
 | OCRR | #D8BFD8 | <span style="color:Thistle">█ La Gastiganto **Karla** de Omnijo</span> |

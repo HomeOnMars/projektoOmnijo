@@ -95,6 +95,22 @@ Arterial / Collector / Local Roads:
 - Regarding Speed limits,
   See also:
   - (2025-01-26) [Hussain et al. (2019)](https://doi.org/10.1016/j.aap.2019.05.033) Meta-analysis on pedestrian fatality vs vehicle speed.
+- Parking:
+  - Default **Price**:
+    - Cars: `O$32` per day/month per spot.
+    - Motorcycles: `O$16` per day/month per spot.
+    - Bicycles: Free.
+  - Price can be higher
+    near high density transit centers
+    or wherever deemed necessary.
+    No limit has been set on the maximum price.
+  - Default **Restrictions** near residential areas:
+    - *Maximum* 1 spot per 1u2 (1 grid cell) ground footprint,
+      *regardless of builing height or density*.
+    - In medium/high density zones, most parking space should be *accessible*,
+      since they are expected to be used mostly by the disabled,
+      who enjoys subsidies for the parking space costs-
+      even though few of them live on the island.
 
 #### Biciklovojoj
 
@@ -142,20 +158,26 @@ Arterial / Collector / Local Roads:
 
   |             | max Gradient $s$ | min Curve radius $R$ | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
   | ----------- | :------: | :------------: | :--------: | --- | --- | --- | --- | ------------------- |
-  | Recommended |  1.8 \%  |  5400m (675u)  |  350 km/h  | $170\degree$ | $175\degree$ | $178\degree$ | $179\degree$ | |
-  | -           |  2   \%  |  5000m (625u)  |  335 km/h  | -            | -            | -            | -            | |
-  | Soft Limit  |  2.4 \%  |  4000m (500u)  |  300 km/h  | $166\degree$ | $173\degree$ | $177\degree$ | $179\degree$ | |
-  | Hard Limit  |  3.2 \%  |  2800m (350u)  |  250 km/h  | $160\degree$ | $170\degree$ | $175\degree$ | $178\degree$ | |
-  | -           |  3.5 \%  |  2440m (305u)  |  235 km/h  | -            | -            | -            | -            | |
-  | -           |  4.2 \%  |  1800m (225u)  |  200 km/h  | -            | -            | -            | -            | |
+  | -           |  1.2 \%  |  7000m (875u)  |  400 km/h  | $172\degree$ | $176\degree$ | $178\degree$ | $179\degree$ | |
+  | Recommended |  1.7 \%  |  5700m (712u)  |  360 km/h  | $170\degree$ | $175\degree$ | $178\degree$ | $179\degree$ | |
+  | Soft Limit  |  2.2 \%  |  4480m (560u)  |  320 km/h  | $167\degree$ | $174\degree$ | $177\degree$ | $179\degree$ | |
+  | -           |  2.7 \%  |  3440m (430u)  |  280 km/h  | -            | -            | -            | -            | |
+  | Hard Limit  |  3.4 \%  |  2520m (315u)  |  240 km/h  | $158\degree$ | $169\degree$ | $175\degree$ | $178\degree$ | |
+  | -           |  4.2 \%  |  1760m (220u)  |  200 km/h  | -            | -            | -            | -            | |
 
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
 - Length / Power
   - Assumed EMU (Electric Multiple Unit).
-  - Train length: 10 (24m/3u-long) train cars (**240m/30u**).
-  - For track intersections: $\geq$ 288m/36u.
-  - Assumed power consumption: 1600hp/1.2MW per (24m/3u-long) train car - 12MW for a full length train.
+  - Train length
+    <!-- - 12 (20m/2.5u-long) train cars (**240m/30u**). -->
+    - 16 (24m/3.0u-long) train cars (**384m/48u**)
+    - 20 (20m/2.5u-long) train cars (**400m/50u**)
+    - 25 (16m/2.0u-long) train cars (**400m/50u**)
+    - Half length permitted
+  - For track intersections: $\geq$ 448m/56u.
+  - Assumed power consumption:
+  1600hp/1.2MW per (24m/3u-long) train car - 19.2MW for a full length train.
 
 #### Metrooj / personaj fervojoj
 
@@ -176,7 +198,27 @@ Arterial / Collector / Local Roads:
 - Length / Power
   - Assumed EMU (Electric Multiple Unit).
   - Assuming tilting trains.
-  - Assumed power consumption: 1200hp/0.9MW per (24m/3u-long) train car.
+  - Train length
+    <!-- - 12 (20m/2.5u-long) train cars (**240m/30u**). -->
+    - 8  (24m/3.0u-long) train cars (**192m/24u**)
+    - 10 (20m/2.5u-long) train cars (**200m/25u**)
+    - 12 (16m/2.0u-long) train cars (**192m/24u**)
+    - Half length permitted
+  - For track intersections: $\geq$ 240m/30u.
+  - Assumed power consumption:
+    1200hp/0.9MW per (24m/3u-long) train car - 7.2MW for a full length train.
+- Additional Notes
+  - Due to proper designs,
+    metros in OmniCentro are capable of (and generally are) running 24/7:
+    The wide separation of the tracks
+    (track center separation $\geq$ 6m for overhead-wire-powered systems;
+    $\geq$ 7m for third-rail-powered systems)
+    allows maintenance to be done for one side of the dual tracks at night,
+    while the night metro running on the other at a reduced frequency.
+    Sides alternate each night.
+    This is much akin to the real life
+    [Copenhagen Metro](https://en.wikipedia.org/wiki/Copenhagen_Metro)
+    (2025-02-04).
 
 #### Tramoj
 

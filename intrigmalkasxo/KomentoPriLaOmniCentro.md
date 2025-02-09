@@ -180,7 +180,7 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
 About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
 
 <details>
-  <summary><b>SPOILERS</b>: The case for Seaside Valley:<br><em>A Layered Design and the Mountains of thoughts</em></summary>
+  <summary><b>SPOILERS</b>: The case for Seaside Valley:<br><em>A Layered Design and the Mountains of Reason</em></summary>
 
   > "There's more than meets the eye."
 
@@ -229,7 +229,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   craving parts of a thinking living consciousness right out of a mountain,
   within a fully-automated structure completely inaccessible to humans.
 
-  A.k.a., *the Mountains of thoughts*.
+  (A.k.a., *the Mountains of Reason*.)
 
   Or rather, a small portion of said consciousness.
   Nevertheless, all those extra computational power granted
@@ -294,7 +294,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   under the server farms on top of the north part of the Mt-Olivkronaĵo).
   Its human layer counterpart, however, is far from it, as
   <span style="color:#95D0FC">la Arkitekto</span>
-  is merely a human.
+  is merely a human. <!-- For now. :-p -->
   This is by design; Perfections are usually not very human-friendly actually.
   <!-- And as a reminder, in the end,
   <span style="color:MediumPurple">ĜEJDA</span>'s values are perfectly aligned

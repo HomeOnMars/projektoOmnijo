@@ -79,7 +79,7 @@ def n_car_f(
 
 def print_info(**params):
     n_car, capa, length = n_car_f(**params)
-    txt = f"\t{params = }\n\t{n_car =:6.2f}\t{capa =:4.0f}\t{length =:4.0f}\n"
+    txt = f"\t{params = }\n\t{n_car =:6.3f}\t{capa =:4.0f}\t{length =:4.0f}\n"
     print(txt)
     return txt
 
@@ -112,11 +112,14 @@ if __name__ == '__main__':
     #   And assuming lighter full load weight load_full=48t instead of more realistic 56t estimate
     #   Because we are amazing
     
-    print_info(grad=1.8*u.percent, v=350*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
-    print_info(grad=2.0*u.percent, v=335*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
-    print_info(grad=2.4*u.percent, v=300*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
-    print_info(grad=3.2*u.percent, v=250*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
-    print_info(grad=3.5*u.percent, v=235*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
+    print_info(grad=1.2*u.percent, v=400*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
+    print_info(grad=1.7*u.percent, v=360*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
+    # print_info(grad=1.8*u.percent, v=350*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
+    # print_info(grad=2.0*u.percent, v=335*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
+    print_info(grad=2.2*u.percent, v=320*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
+    # print_info(grad=2.4*u.percent, v=300*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
+    print_info(grad=2.7*u.percent, v=280*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
+    print_info(grad=3.4*u.percent, v=240*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
     print_info(grad=4.2*u.percent, v=200*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
     
     
