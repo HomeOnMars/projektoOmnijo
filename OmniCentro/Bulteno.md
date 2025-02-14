@@ -156,7 +156,7 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | Department of Infrastructure        | OCFI | Omnija Centra Fako de Infrastrukturo      |  RdO | Engineering! (also oversees cities development, energy generation and distribution, and environmental protection.) |
 | Department of Justice               | OCFJ | Omnija Centra Fako de Justeco             |  RdO | Internal investigation & supreme court. |
 | Ministry of Foreign Affairs         | OCME | Omnija Centra Ministerio de Eksteraj Aferoj |  RdO | RdO needs PR too. |
-| Ministry of Finance                 | OCMF | Omnija Centra Oficejo de Fisko            |  RdO | Collects taxes and oversees all nationalized industries and companies, including BdO. Almost a megacorp. |
+| Ministry of Finance                 | OCMF | Omnija Centra Ministerio de Fisko         |  RdO | Collects taxes and oversees all nationalized industries and companies, including BdO. Almost a megacorp. |
 | Ministry of Home    Affairs         | OCMI | Omnija Centra Ministerio de Internaj Aferoj |  RdO | Immigration and welfare. No one shall be left behind. Also oversees the distribution of the UBI (universal basic income). |
 ||||| <!-- Offices / Oficejoj --> |
 | Department of Fire and Rescue       | OCFF | Omnija Centra Fako de Fajro kaj Savo      | OCFI | Responsible for emergency preparedness and disaster relief too. |
@@ -182,7 +182,7 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | OCFI | #95D0FC | <span style="color:#95D0FC">█ La Arkitekto **Ĉuĉjo** de Omnijo</span> |
 | OCFI | #D6B4FC | <span style="color:#D6B4FC">█ La Suvereno **Ĝejnjo** de Omnijo</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo de Omnijo -->  <!-- OCG -->  |
 | OCFI | #9370DB | <span style="color:MediumPurple">█ ... (Department Color) ...</span> |
-| OCFJ | #D2691E | <span style="color:Chocolate">█ La Prokuroro **Beno** de Omnijo</span>  <!-- OCG -->  |
+| OCFJ | #D2691E | <span style="color:Chocolate">█ La Prokuroro **Bejlio** de Omnijo</span>  <!-- OCG -->  |
 | OCME | #FFD700 | <span style="color:Gold">█ La Ministro **Jonaso** de Omnijo</span>  <!-- OCG -->  |
 | OCME | #FFD700 | <span style="color:Gold">█ La Parolanto **Natalia** de Omnijo</span> |
 | OCMF | #8FBC8F | <span style="color:DarkSeaGreen">█ La Trezorestro **Alekso** de Omnijo</span>  <!-- OCG -->  |

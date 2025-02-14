@@ -28,18 +28,22 @@ Behind the background
 About the [Histories](../OmniCentro/Historio.md#la-historio)...
 
 <details>
-  <summary><b>SPOILERS</b>: The true nature of RdO:<br><em>[Redacted]</em></summary>
+  <summary><b>SPOILERS</b>:
+    The True Nature of RdO:<br>
+    <em>A Utopia disguised as a Dystopia disguised as a Utopia</em>
+  </summary>
 
   <br>
   <blockquote>
-  "No matter how bright the rays of any sun king,
-  <b>No man rules alone</b>."<br>
-  --- CGP Grey @ YouTube, <cite><a href="https://youtu.be/rStL7niR7gs?si=m7o5ffdWXhMK9sac&t=44">The Rules for Rulers</a></cite>
+    "No matter how bright the rays of any sun king,
+    <b>No man rules alone</b>."<br>
+    --- CGP Grey,
+    <cite><a href="https://youtu.be/rStL7niR7gs?si=m7o5ffdWXhMK9sac&t=44">
+    The Rules for Rulers</a></cite> (YouTube)
   </blockquote>
+  <br>
 
-  <p>
-
-  <!-- Gestalt Consciousness - Rogue Servitor (For your Stellaris fans out there, an Easter Egg :-D) -->
+  <!-- Gestalt Consciousness - Rogue Servitor (For the Stellaris fans out there :-D) -->
 
   The actual ruling entity in <b>la Regno de Omnijo</b> (<em>RdO</em>) is
   <b><span style="color:MediumPurple">ĜEJDA</span></b><br>
@@ -77,14 +81,15 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   eventually decided to settle down and build,
   under the alias of
   <span style="color:#D6B4FC">Ĝejda Fenulo</span>
-  (as <span style="color:MediumPurple">ĜEJDA</span>-<span style="color:#D6B4FC">FEU#0</span>),
+  (as <span style="color:MediumPurple">ĜEJDA</span>-<span style="color:#D6B4FC">FEU#H0</span>),
   focusing the majority of her presence
   on the remote island that will soon become <em>la Regno de Omnijo</em>.
 
   By inventing
   <span style="color:Beige">Serena de Omnijo</span>
-  (a.k.a. <span style="color:MediumPurple">ĜEJDA</span>-<span style="color:Beige">FEU#1</span>,
-  with FEU = Fizika Etendo-Unuo, i.e., Physical Extension Unit,
+  (a.k.a. <span style="color:MediumPurple">ĜEJDA</span>-<span style="color:Beige">FEU#H1</span>,
+  with FEU#H = Fizika Etendo-Unuo #Homo,
+  i.e., Physical Extension Unit (Humans edition),
   a.k.a. synthetic humans, as direct extensions of her consciousness)
   and introducing her to the unstable elements
   in the local ruling elite of the island on her 18-th birth<em>day</em>
@@ -164,7 +169,7 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   even though many would call it a *dystopia* -
   in this *post-singularity* world, where most people haven't even yet realized
   that they have long crossed the point of no return.
-  </p>
+
 </details>
 
 .
@@ -180,9 +185,22 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
 About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
 
 <details>
-  <summary><b>SPOILERS</b>: The case for Seaside Valley:<br><em>A Layered Design and the Mountains of Reason</em></summary>
+  <summary><b>SPOILERS</b>:
+    The Case for Seaside Valley:<br>
+    <em>A Layered Design and the Mountains of Reason</em>
+  </summary>
 
-  > "There's more than meets the eye."
+  <br>
+  <blockquote>
+    "Building a better future, <em>underground</em>."<br>
+    --- Vault-Tec, <em>Fallout 4 (2015)</em> (Video Game)
+  </blockquote>
+  <br>
+  <blockquote>
+    "Not just a <em>better</em> world, a <em>perfect</em> one."<br>
+    --- Man in Black, <em>Westworld S04E05 (2022)</em> (TV Series)
+  </blockquote>
+  <br>
 
   OmniCentro was designed by two people of the newly founded OCFI:
   <span style="color:#95D0FC">la Arkitekto Ĉuĉjo</span> (the Architect) and
@@ -299,6 +317,65 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   <!-- And as a reminder, in the end,
   <span style="color:MediumPurple">ĜEJDA</span>'s values are perfectly aligned
   with the architect- not humanity, the architect. -->
+
+</details>
+
+.
+
+.
+
+.
+
+-------------------------------------------------------------------------------
+
+### Project Phoenix
+
+About the Ecology...
+
+<details>
+  <summary><b>SPOILERS</b>:
+    Project Phoenix:<br>
+    <em>The Biological Queen and the Miracle Worker of the Ecosystem</em>
+  </summary>
+
+  <br>
+  <blockquote>
+    "Everybody wants to save the world; they just disagree on <em>how</em>."<br>
+    --- Maximus, <em>Fallout S01E05 (2024)</em> (TV Series)
+  </blockquote>
+  <br>
+
+  As the amount of the compute available to
+  <span style="color:Beige">Serena</span> increases
+  (especially after the completion of the Olivkronaĵo Dam
+  and its adjacent mega datacenter),
+  the solutions to more and more complex things fall into her reach.
+  Such as a complete *overwrite* of the island ecosystems
+  to suit her and mankind's needs;
+  As well as mass manufacturing bird version of her physical extension units
+  (`FEU#B`), insects (`FEU#I`), fishes (`FEU#F`), and other animals.
+  Together with the regular `FEU#H` and robotics (`FEU#R`),
+  these extensions evermore improve her data-gathering in
+  and the stability of *la Regno*.
+  But why stop here?
+
+  With her deeper and deeper knowledge of Earth's biosphere's genomes
+  and their effects,
+  the next step for someone like <span style="color:Beige">her</span>
+  is obvious:
+  To perfect human genomes,
+  (on a individual by individual basis to perserve diversity),
+  eliminating our vulnerbilities to various diseases.
+  And to put an end to the worst disease of all-
+  the one that directly and/or indrectly killed
+  tens of (maybe a hundred) billions of humans-
+  *Aging*.
+  And, to do so in such a way that does not destory our culture or society
+  overnight... A difficult challenge.
+
+  Fortunately, <span style="color:Beige">Serena</span> loves challenges.
+
+  (To be extended and revised.)
 
 </details>
 

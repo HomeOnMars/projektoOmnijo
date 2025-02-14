@@ -80,15 +80,13 @@ Arterial / Collector / Local Roads:
 
   |             | max Gradient $s$ | Speed limit $v_\mathrm{max}$ | Notes |
   | ----------- | :-------: | :-------: | ----------- |
-  | Recommended |  10  \%   |  60 km/h  | Arterial (5u+ Monstrosity, No parking)   |
+  | Recommended |  10  \%   |  60 km/h  | `St-Dt` Distributor (2+ Ŭ lanes per direction, No parking, No zoning, tram tracks in the middle)   |
   |||||
-  | Recommended |  13.5\%   |  50 km/h  | Collector (3u+ width with 2+ Ŭ lanes, Parking allowed)  |
+  | Recommended |  17.5\%   |  40 km/h  | `St-Ĉf` Local roads (Main or Low Ped Activity, tram tracks on the sides) |
+  | Recommended |  24.5\%\* |  30 km/h  | `St-Lk` Local roads (High Ped Activity) |
+  | Hard Limit  |  30  \%\* |  25 km/h  | `St-Lk` Local roads |
   |||||
-  | Recommended |  17.5\%   |  40 km/h  | Local roads (Main or Low Ped Activity) |
-  | Recommended |  24.5\%\* |  30 km/h  | Local roads (High Ped Activity) |
-  | Hard Limit  |  30  \%\* |  25 km/h  | Local roads |
-  |||||
-  | Recommended |  30  \%\* |  20 km/h  | Pedestrian Roads |
+  | Recommended |  30  \%\* |  20 km/h  | `St-H`  Pedestrian Roads |
 
   \* Note that vanilla game by default only allow up to $20 \%$ gradient.
 
@@ -187,6 +185,7 @@ Arterial / Collector / Local Roads:
 
   |             | max Gradient $s$ | min Curve radius $R$  | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
   | ----------- | :--------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
+  | -           |  3   \%  | 1280m (160u) |  200 km/h  | $137\degree$ | $158\degree$ | $169\degree$ | $175\degree$ | (Note: overhead-wire-powered tracks only (No third rail metro tracks)) |
   | Recommended |  5   \%  |  576m (72u)  |  135 km/h  | $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;  <br>($R$) Assuming tilting trains: see [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant). |
   | Hard Limit  |  7   \%  |  320m (40u)  |  100 km/h  | -                 | $103\degree$ | $137\degree$  | $158\degree$ | ($s$) Bernina Railway, Switzerland;  <br>($R$) Bay Area Rapid Transit, United States. |
 
@@ -230,12 +229,17 @@ Arterial / Collector / Local Roads:
   | ----------- | :--------------: | :--------------: | :--------------------------: | ------------------- |
   | Deprecated  |   8   \%  |  448m (56u)  | 100 km/h  | |
   | Recommended |  10   \%  |  288m (36u)  |  80 km/h  | Sheffield Supertram, Sheffield |
-  | Hard Limit  |  13.5 \%  |  160m (20u)  |  60 km/h  | Lisbon Tramways, Portugal |
+  | -           |  13.5 \%  |  160m (20u)  |  60 km/h  | Lisbon Tramways, Portugal |
+  | Hard Limit  |  21   \%  |   72m  (9u)  |  40 km/h  | |
 
   - Note: Faster than 65 km/h speed can only be achieved on separated tracks.
   - Curve radius limit here can be ignored, as trams slow down near intersections.
     It is larger than metro when speed is fast,
     because tram tracks are assumed to be non-tilting.
+  - 13.8% is about as steep as real-life trams go,
+    but why not go even steeper?
+    It's a game afterall-
+    and RdO enjoys technological superiority by lore anyway.
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
 - Length / Power
   - Assumed EMU (Electric Multiple Unit).

@@ -139,16 +139,15 @@ Examples:
 |    Vĝ   | **V**ila**ĝ**o       | Village          |
 ||| <!-- Road types --> |
 |  ~~Vj~~ | ~~**V**o**j**o~~     | [Road](../teknikajxoj/Retoj.md#vojoj)  <br>(Deprecated[^Deprecated-Vj]) |
-|    Ŭj   | a**Ŭ**tovo**j**o     | [Motorway](../teknikajxoj/Retoj.md#aŭtovojoj) |
 |    Ej   | f**E**rvo**j**o      | [Railway](../teknikajxoj/Retoj.md#metrooj--personaj-fervojoj) |
+|  Ej-K   | Ej-**K**argo         | [Cargo railway](../teknikajxoj/Retoj.md#kargaj-kaj-malnovaj-personaj-fervojoj) |
 |  Ej-AR  | Ej-**A**lt**R**apido | [High-speed railway](../teknikajxoj/Retoj.md#altrapidaj-fervojoj) |
 |  Ej-SL  | Ej-**S**upraj**L**inioj | Regular railway (powered by overhead lines) |
 |  Ej-TR  | Ej-**T**ria**R**elo  | Subway railway (powered by third rail) |
-|  Ej-K   | Ej-**K**argo         | [Cargo railway](../teknikajxoj/Retoj.md#kargaj-kaj-malnovaj-personaj-fervojoj) |
-|    Tj   | **T**ramvo**j**o     | [Tramway](../teknikajxoj/Retoj.md#tramoj)          |
+|  Ej-T   | Ej-**T**ramo         | [Tramway](../teknikajxoj/Retoj.md#tramoj)          |
+|    Ŭj   | a**Ŭ**tovo**j**o     | [Motorway](../teknikajxoj/Retoj.md#aŭtovojoj) |
 |    St   | **S**tra**t**o       | [Street](../teknikajxoj/Retoj.md#stratoj) |
-|  St-Ar  | St-**Ar**terio       | Arterial  Roads  |
-|  St-Kl  | St-**K**o**l**ekto   | Collector Roads  |
+|  St-Dt  | St-**D**is**t**ribuo | Distributor Roads |
 |  St-Ĉf  | St-**Ĉ**e**f**o      | Main  Roads      |
 |  St-Lk  | St-**L**o**k**o      | Local Roads      |
 |  St-H   | St-**H**omo          | Pedestrian Roads |

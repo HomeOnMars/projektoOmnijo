@@ -125,7 +125,9 @@ if __name__ == '__main__':
     
     print("\nMetro (per car)\n")
     #   Engine power exaggerated from 772hp (for a 24m car with a power ratio of 24kW/t) to "only" 1200hp
-    
+    #       Note: third rail cannot support high speed (>160kph),
+    #       so 200kph is only for train tracks with overhead wires (not for in-game metro tracks)
+    print_info(grad=3.0*u.percent, v=200*u.km/u.h, engine_p=(1200*hp).to(hp), engine_m=0*u.t, load_full=45*u.t, car_len=24*u.m)
     print_info(grad=5.0*u.percent, v=135*u.km/u.h, engine_p=(1200*hp).to(hp), engine_m=0*u.t, load_full=45*u.t, car_len=24*u.m)
     print_info(grad=7.0*u.percent, v=100*u.km/u.h, engine_p=(1200*hp).to(hp), engine_m=0*u.t, load_full=45*u.t, car_len=24*u.m)
     
@@ -135,6 +137,7 @@ if __name__ == '__main__':
     print_info(grad=8.0*u.percent, v=100*u.km/u.h, engine_p=(800*hp).to(hp), engine_m=0*u.t, load_full=26*u.t, load_capa=16*u.t, car_len=16*u.m)
     print_info(grad=10.0*u.percent, v=80*u.km/u.h, engine_p=(800*hp).to(hp), engine_m=0*u.t, load_full=26*u.t, load_capa=16*u.t, car_len=16*u.m)
     print_info(grad=13.5*u.percent, v=60*u.km/u.h, engine_p=(800*hp).to(hp), engine_m=0*u.t, load_full=26*u.t, load_capa=16*u.t, car_len=16*u.m)
+    print_info(grad=21.0*u.percent, v=40*u.km/u.h, engine_p=(800*hp).to(hp), engine_m=0*u.t, load_full=26*u.t, load_capa=16*u.t, car_len=16*u.m)
     
 
     print("\nRoad\n")

@@ -52,38 +52,43 @@ Other acronyms:
 
 [^Tagoj-Solstico] a.k.a. Northern Solstice, since *la Omnija-Insulo* is located in the Southern Hemisphere.
 
-|  Date  | Event |
-| ------ | ----- |
-| X-???  | Project Omnijo begin |
-| ***X+0*** | <span style="color:MediumPurple">ĜEJDA</span> online |
-|||
-| X+18T  | <span style="color:Beige">Serena</span> was publicly discovered as the lost princess to the throne and started to quickly gain popularity |
-| X+3S   | Most wars around the world starts to cool off, entering peace negotiations, and ends slowly and gradually in the next several months |
-| X+4S   | The old king suffered a lethal 'accident' |
-|||
-| X+5S  <br>***Y+0*** | <span style="color:Beige">Serena</span>'s coronation  <br>\(Winter Solstice 20XX\) |
-|||
-| Y+0    | <span style="color:Beige">Serena</span> declared `Solstices and Equinoxes to be national holidays` |
-| Y+1S2T | Corrupted ministers died in a tragic accident when plotting to 'retire' <span style="color:Beige">Serena</span> (like they 'retire' the old king) after <span style="color:Beige">Serena</span> refused to bend to their way<br> while most of the rest of the ministers had fled the island from their internal power struggle |
-| Y+1S5T | Party-system and the Parliament collapsed as the MPs fled |
-| Y+1S6T | <span style="color:Beige">Serena</span> placed her own friends as MPs/ministers to fill the power vaccum |
-| Y+2S  <br>Q-6M | Surveys of the dam site Ab-Olivkronaĵo begin |
-| Y+2S   | <span style="color:Beige">Serena</span> reorganized the gov structure |
-| Y+2S   | <span style="color:Beige">Serena</span> implemented policy: `free public transit` within the island |
-| Y+3S   | <span style="color:Beige">Serena</span> implemented policy: `encourage emigration and immigrantion` |
-| Y+3S   | <span style="color:Beige">Serena</span> started several nationalized companies, including the Banko de Omnijo (BdO) |
-| Y+1M   | <span style="color:Beige">Serena</span> started to `disband most of the armies` |
-| Y+2M3S | The interview of the [government type](../OmniCentro/Bulteno.md#fonrakonta-bulteno) happened |
-| Y+3M   | <span style="color:Beige">Serena</span> implemented policy: `UBI` (Universal basic income) |
-| Y+3M1S | <span style="color:Beige">Serena</span> declares `Epopo` to be the new official language  <br>\(Northward Equinox\) |
-| Y+`3M?`  | Worldwide economic recession due to the brust of AI bubble |
-| Y+`4M?`  | Most of the banks on the island went bankrupt and integrated into Banko de Omnijo |
-| Y+`5M?`  | Most of the industries on the island were nationalized |
-| Y+6M     | *Healthcare workers on strike* to push for government change, leading to <span style="color:Beige">Serena</span>'s total replacement of healthcare workforce overnight |
-|||
-| Y+6M2S  <br>***Q+0***  | Fondation day of OmniCentro  <br>\(Summer Solstice 20XX\) |
-|||
-| Y+6M2S    <br>Q+0      | Physical works of the dams Ab-Olivkronaĵo and its surrounding infrastructure began |
-| Y+9M3S    <br>Q+3M1S   | Ab-Olivkronaĵo Server Farms (a.k.a. second layer entry point) construction stage 1 completed; Ab-Olivkronaĵo second layer testing site construction began  <br>\(Southward Equinox\) |
-| Y+`1J6M?`              | Foundation of OKP- the Omnija Space Program |
-| Y+2J      <br>Q+1J6M2S | Completion of the dams Ab-Olivkronaĵo #1 and #2 |
+|  Date  |  Type  | Event |
+| ------ | ------ | ----- |
+| X-???  |  Kerno | Project Omnijo begin |
+| ***X+0*** |  Kerno | <span style="color:MediumPurple">ĜEJDA</span> online |
+||||
+| X+18T  |   OCG  | <span style="color:Beige">Serena</span> was publicly discovered as the lost princess to the throne and started to quickly gain popularity |
+| X+3S   |  mondo | Most wars around the world starts to cool off, entering peace negotiations, and ends slowly and gradually in the next several months |
+| X+4S   |   OCG  | The old king suffered a lethal 'accident' |
+||||
+| X+5S  <br>***Y+0*** |   OCG  | <span style="color:Beige">Serena</span>'s coronation  <br>\(Winter Solstice 20XX\) |
+||||
+| Y+0    | poliso | <span style="color:Beige">Serena</span> declared `Solstices and Equinoxes to be national holidays` |
+| Y+1S2T |   OCG  | Corrupted ministers died in a tragic accident when plotting to 'retire' <span style="color:Beige">Serena</span> (like they 'retire' the old king) after <span style="color:Beige">Serena</span> refused to bend to their way<br> while most of the rest of the ministers had fled the island from their internal power struggle |
+| Y+1S5T |   OCG  | Party-system and the Parliament collapsed as the MPs fled |
+| Y+1S6T |   OCG  | <span style="color:Beige">Serena</span> placed her own friends as MPs/ministers to fill the power vaccum |
+| Y+2S  <br>Q-6M |   OC   | Surveys of the dam site Ab-Olivkronaĵo begin |
+| Y+2S   |   OCG  | <span style="color:Beige">Serena</span> reorganized the gov structure |
+| Y+2S   | poliso | <span style="color:Beige">Serena</span> implemented policy: `free public transit` within the island |
+| Y+3S   | poliso | <span style="color:Beige">Serena</span> implemented policy: `encourage emigration and immigrantion` |
+| Y+3S   |  OCMF  | <span style="color:Beige">Serena</span> started several nationalized companies, including the Banko de Omnijo (BdO) |
+| Y+1M   | poliso | <span style="color:Beige">Serena</span> started to `disband most of the armies` |
+| Y+2M3S |   OCG  | The interview of the [government type](../OmniCentro/Bulteno.md#fonrakonta-bulteno) happened |
+| Y+3M   | poliso | <span style="color:Beige">Serena</span> implemented policy: `UBI` (Universal basic income) |
+| Y+3M1S | poliso | <span style="color:Beige">Serena</span> declares `Epopo` to be the new official language  <br>\(Northward Equinox\) |
+| Y+`3M?`  |  mondo | Worldwide economic recession due to the brust of AI bubble |
+| Y+`4M?`  |  OCMF  | Most of the banks on the island went bankrupt and integrated into Banko de Omnijo |
+| Y+`5M?`  |  OCMF  | Most of the industries on the island were nationalized |
+| Y+6M     |   OCG  | *Healthcare workers on strike* to push for government change, leading to <span style="color:Beige">Serena</span>'s total replacement of healthcare workforce overnight |
+||||
+| Y+6M2S  <br>***Q+0***  |   OC   | Fondation day of OmniCentro  <br>\(Summer Solstice 20XX\) |
+||||
+| Y+6M2S    <br>Q+0      |   OC   | Physical works of the dams Ab-Olivkronaĵo and its surrounding infrastructure began |
+| Y+9M3S    <br>Q+3M1S   |   OC   | Ab-Olivkronaĵo Server Farms (a.k.a. second layer entry point) construction stage 1 completed; Ab-Olivkronaĵo second layer testing site construction began  <br>\(Southward Equinox\) |
+| Y+`1J6M?`              |  OKP   | Foundation of OKP- the Omnija Space Program |
+| Y+2J      <br>Q+1J6M2S |   OC   | Completion of the dams Ab-Olivkronaĵo #1 and #2 |
+| Q+`2J?`  |   bio  | Projekto Fenikso`?` begin (privately) |
+| Q+`2J1S?`|   bio  | <span style="color:Beige">Serena</span> declared the newly discovered Magpies on the island "protected animals" |
+| Q+`2J2S?`|   bio  | Numerous new species found on the island |
+| Q+`2J2M?`|   bio  | Extinction of Rats, Snakes, Cockroaches, Mosquitoes, etc on the island |
+| Q+`2J3M?`|   bio  | Magpie population exploded and can be seen everywhere on the island |
