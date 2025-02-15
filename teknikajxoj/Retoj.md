@@ -134,12 +134,14 @@ Arterial / Collector / Local Roads:
 
   |             | max Gradient $s$ | min Curve radius $R$ | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
   | ----------- | :--------------: | :------------------: | :--------------------------: | --- | --- | --- | --- | ------------------- |
-  | Recommended |  1.5 \%  |  800m (100u)  |  135 km/h  | $115\degree$ | $145\degree$ | $162\degree$ | $171\degree$ | |
-  | Hard Limit  |  3.5 \%  |  184m  (23u)  |   65 km/h  | -            | -            | $111\degree$ | $142\degree$ | Lithgow Zig Zag |
+  | Recommended |  1.5 \%  | 1280m (160u)  |  200 km/h  | $137\degree$ | $158\degree$ | $169\degree$ | $175\degree$ | (Note: 200km/h for passenger trains; 135km/h for cargo trains) |
+  | -           |  1.5 \%  |  576m (72u)   |  135 km/h  |  $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | |
+  | Hard Limit  |  3.5 \%  |  144m  (18u)  |   65 km/h  | -            | -            |  $97\degree$ | $133\degree$ | Lithgow Zig Zag |
 
   - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
     i.e., $\theta_\mathrm{64u}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 64u.
   - Curve radius is obtained by $R \propto v_\mathrm{max}^2$ (See [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant).)
+  - Assuming tilting trains.
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant): $R$ info
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples (see Lithgow Zig Zag)
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
@@ -186,9 +188,10 @@ Arterial / Collector / Local Roads:
   |             | max Gradient $s$ | min Curve radius $R$  | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
   | ----------- | :--------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
   | -           |  3   \%  | 1280m (160u) |  200 km/h  | $137\degree$ | $158\degree$ | $169\degree$ | $175\degree$ | (Note: overhead-wire-powered tracks only (No third rail metro tracks)) |
-  | Recommended |  5   \%  |  576m (72u)  |  135 km/h  | $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;  <br>($R$) Assuming tilting trains: see [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant). |
+  | Recommended |  5   \%  |  576m (72u)  |  135 km/h  | $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;  <br>($R$) Assuming tilting trains. |
   | Hard Limit  |  7   \%  |  320m (40u)  |  100 km/h  | -                 | $103\degree$ | $137\degree$  | $158\degree$ | ($s$) Bernina Railway, Switzerland;  <br>($R$) Bay Area Rapid Transit, United States. |
 
+  - Assuming tilting trains: see [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant).
   - Note: curve radius restrictions may be relaxed when exiting / entering stations where speed is slow.
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
   - Source: (2024-08-17) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
@@ -196,7 +199,6 @@ Arterial / Collector / Local Roads:
   - Source: (2024-08-27) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant): $R$ info.
 - Length / Power
   - Assumed EMU (Electric Multiple Unit).
-  - Assuming tilting trains.
   - Train length
     <!-- - 12 (20m/2.5u-long) train cars (**240m/30u**). -->
     - 8  (24m/3.0u-long) train cars (**192m/24u**)

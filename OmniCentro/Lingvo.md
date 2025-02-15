@@ -16,7 +16,7 @@ Legal
 > are either the products of the author's imagination or used in a fictitious manner.
 > Any resemblance to actual persons, living or dead, or actual events is purely coincidental.
 
-<p xmlns:cc="http://creativecommons.org/ns#" >This work by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/HomeOnMars">HomeOnMars</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+ <p xmlns:cc="http://creativecommons.org/ns#" >This work by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/HomeOnMars">HomeOnMars</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
 
 Lingvo
 -------------------------------------------------------------------------------
@@ -35,7 +35,7 @@ aiming to offer even more regularity for easier learning
 while conforming to the existing world as much as possible.
 <span style="color:Beige">Queen Serena</span> declared `Epopo`
 as the new official language of RdO about three months in her reign,
-set to gradually replace English in the next jarheko (hexcade, i.e. 16 years)
+set to gradually replace English in the next *jarheko* (hexcade, i.e. 16 years)
 in all RdO official documentations and communications.
 
 One would think that such random order
@@ -48,26 +48,48 @@ her new UBI (universal basic income) policy to worry about.
 
 > Specifications
 
+> ![XKCD comic: 'standards'](https://imgs.xkcd.com/comics/standards.png)  
+> Credit: [XKCD](https://xkcd.com/927/) (No changes were made.)
+
 Changes of Esperanto++ from Esperanto include:
+
+#### Alphabet
 
 - Officially eliminated `ĥ` from the *E++* alphabet
   (mostly replaced with `k`);
+
+#### Algebra
+
 - Decimal separator in *E++* is `.` instead of `,`;<br>
   Thousands separator (decimal) / ten-thousands separator (hexadecimal) is
   space(` `) instead of `.`;<!-- markdownlint-disable-line no-space-in-code -->
 - Built-in support for *hexadecimal* algebra:
   - `Δ λ Π Σ Υ Ψ` written/pronounced as `del lom nak sig gan fup`;
-  - `hek`   for            16 (base-10),
-  - `jent`  for           256 (base10, = 2^8  or        ΨΨ+1),
-  - `gil`   for         4 096 (base10, = 2^12 or       ΨΨΨ+1),
-  - `onio`  for        65 536 (base10, = 2^16 or      ΨΨΨΨ+1), and
-  - `dunio` for 4 294 967 296 (base10, = 2^32 or ΨΨΨΨ ΨΨΨΨ +1).
+  - `hek`   for (base-10)            16;
+  - `jent`  for (base-10)           256 (= 2^8  or        ΨΨ+1);
+  - `gil`   for (base-10)         4 096 (= 2^12 or       ΨΨΨ+1);
+  - `munio` for (base-10)        65 536 (= 2^16 or      ΨΨΨΨ+1);
+  - `dunio` for (base-10) 4 294 967 296 (= 2^32 or ΨΨΨΨ ΨΨΨΨ+1);
+  - `trinio`for (base-10) 2^48;
+  - etc.
 
   (As a reference, 9 100 000 000 (base10) = 2 1Υ66 Ψλ00, pronounced as
-  du dunio, gil ganjent seshek ses onio, fupgil lomjent.);
+  du dunio, gil ganjent seshek ses munio, fupgil lomjent.);
+
+#### Gender
+
+- Pronouns
+  - `li` is now gender-neutral
+    (its old meaning of 'he' has been removed,
+    leaving only 'them (singular)' alone);
+  - `hi` now means 'he' (third person who is male);
+  - `ŝi` remains meaning 'she' (third person who is female).
 - All nouns are now gender-neutral by default,
   unless added surfix `-in-` for female and `-iĉ-` for male.
   - E.g., `viro` is replaced by `viriĉo` for man,
     and `virino` remains to be woman.
-  - See also [Wikipedia](https://en.wikipedia.org/wiki/Gender_reform_in_Esperanto#Common_elements_to_regularizing_Esperanto_gender).
+- See also [Wikipedia](https://en.wikipedia.org/wiki/Gender_reform_in_Esperanto#Common_elements_to_regularizing_Esperanto_gender).
+
+#### Others
+
 - etc. etc.

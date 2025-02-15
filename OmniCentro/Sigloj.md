@@ -92,8 +92,8 @@ Note that the letters are overlapping other acronyms in other categories - and t
 |  Ŭ / Ux | a**Ŭ**tovojo        | Motorway            | |
 |    U    | b**U**so            | Bus                 | |
 |    T    | **T**ramo           | Tram                | Regiona  <br>Regional |
-|    E    | f**E**rvojo/m**E**troo | Railway/Metro  <br>Monorail  <br>Train | Malaltrapida \(\< 200 km/h\)  <br>Low-speed |
-|    V    | **V**agonaro/Trajno | Train               | Altrapida \($\geq$ 200 km/h\)  <br>High-speed |
+|    E    | f**E**rvojo/m**E**troo | Railway/Metro  <br>Monorail  <br>Train | Malaltrapida \($\leq$  200 km/h\)  <br>Low-speed |
+|    V    | **V**agonaro/Trajno | Train               | Altrapida \(\> 200 km/h\)  <br>High-speed |
 |    P    | **P**ramo           | Ferry               | Regiona  <br>Regional |
 |  Ŝ / Sx | **Ŝ**ipo            | Ship                | |
 |    H-   | **H**omo-/Pasaĝero- | Human-/Passenger-   | |
