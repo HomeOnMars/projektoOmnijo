@@ -1,4 +1,4 @@
-Ŝanĝprotokolo - Publika Versio
+Ŝanĝonoto - Publika Versio
 ===============================================================================
 
 > Changelog - Public Version

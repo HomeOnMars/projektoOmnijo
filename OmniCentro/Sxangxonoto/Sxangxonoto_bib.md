@@ -1,4 +1,4 @@
-Ŝanĝprotokolo - Informaĵa Biblioteko
+Ŝanĝonoto - Informaĵa Biblioteko
 ===============================================================================
 
 > Changelog: Information Library
@@ -25,7 +25,7 @@ Tags
 - `Note`
 - `Reversion`
 - `District::({DistrictName})`
-- `Expansion::(Zoning, Parks, Industry, Utility, Rail, Road)`
+- `Expansion::(Zoning, Parks, Industry, Services, Rail, Road)`
 - `Redevelop::(Rail, Road)`
 - `Detailing::(Trees, Props, Surfaces, Water)`
 - `Naming`
