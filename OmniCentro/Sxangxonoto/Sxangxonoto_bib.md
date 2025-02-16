@@ -22,16 +22,16 @@ Tags
 ### Tags list
 
 - `Meta::(GameVer, Mods::{ModName}, PDXMods, CityName)`
-- `Note`
 - `Reversion`
 - `District::({DistrictName})`
-- `Expansion::(Zoning, Parks, Industry, Services, Rail, Road)`
+- `Expansion::(Zoning, Parks, Industry, Services, Road, Rail)`
 - `Redevelop::(Rail, Road)`
 - `Detailing::(Trees, Props, Surfaces, Water)`
 - `Naming`
 - `Transit`
 - `Taxes`
 - `Fixes`
+- `Note`
 - `_`
 
 -------------------------------------------------------------------------------
