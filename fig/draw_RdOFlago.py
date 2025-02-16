@@ -22,13 +22,16 @@ import matplotlib.pyplot as plt
 # imports (my libs)
 from lib_gen_emblemo import t, ts, draw_arc, colors_dict, PHI
 
+RATIO_XY : float = 25/16  #PHI
+
 # main func
 def draw_RdOFlago(
     # noext means no extension
     output_path_noext: str = "./RdOFlago",
+    output_exts: list = ['.svg', '.png'],
     # size of the drawing pad
     scale: float = 256/400,    # 1.0 => 400px x 400px
-    ratio_xy: float = 25/16, #PHI,
+    ratio_xy: float = RATIO_XY,
     verbose: bool = True,
 ):    # plot
     """
@@ -77,7 +80,7 @@ def draw_RdOFlago(
     ax.set_ylim(ylims)
     ax.set_axis_off()
     ax.set_position([0, 0, 1, 1])
-    for ext in ['.svg', '.png']:
+    for ext in output_exts:
         output_path = f"{output_path_noext}{ext}"
         if verbose: print(f"Saving to '{output_path}'...", end=' ')
         fig.savefig(output_path, transparent=True)
@@ -86,5 +89,14 @@ def draw_RdOFlago(
 
     return fig, ax
 
+def draw_RdOFlago_emb():
+    return draw_RdOFlago(
+        output_path_noext="./RdOFlago.emb",
+        output_exts=['.png'],
+        scale=1080/400,
+        ratio_xy=1.0,
+    )
+
 if __name__ == '__main__':
     draw_RdOFlago()
+    draw_RdOFlago_emb()

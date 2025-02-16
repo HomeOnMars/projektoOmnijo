@@ -33,8 +33,8 @@ La Historio
 located on an fictional island *la Omnija-Insulo*
 in the Southern Hemisphere somewhere in between Chile and New Zealand,
 near 56°15'S, 140°15'W (coordinates are fictional).
-The island has a size of approximately Iceland,
-i.e. $\sim 100 \, 000 \, \mathrm{km}^2$.
+The island has a size of approximately Iceland or Java island,
+i.e. $\sim 2^{17} \mathrm{km}^2 \approx 130 000 \mathrm{km}^2$.
 
 [^Historio-RdO-Nomo]: English translation: The Kingdom of Omnijo.
 

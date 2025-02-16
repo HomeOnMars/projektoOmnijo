@@ -26,6 +26,7 @@ from lib_gen_emblemo import t, ts, draw_arc, draw_hat, colors_dict, PHI_INV
 def draw_OCR(
     # noext means no extension
     output_path_noext: str = "./OCR",
+    output_exts: list = ['.svg', '.png'],
     # size of the drawing pad
     scale: float = 256/400,    # 1.0 => 400px x 400px
     verbose: bool = True,
@@ -48,7 +49,7 @@ def draw_OCR(
     ax.set_ylim(-1, 1)
     ax.set_axis_off()
     ax.set_position([0, 0, 1, 1])
-    for ext in ['.svg', '.png']:
+    for ext in output_exts:
         output_path = f"{output_path_noext}{ext}"
         if verbose: print(f"Saving to '{output_path}'...", end=' ')
         fig.savefig(output_path, transparent=True)
