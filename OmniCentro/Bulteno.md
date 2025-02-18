@@ -57,7 +57,7 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | Country Name            |   RdO   | La Regno de Omnijo       |
 | Central Authority Name  |   OCG   | Omnija Centra Gvidantaro |
 | Government Service Name |   OCR   | Omnija Centra Registaro  |
-| Official Currency       |   OS    | Omnija Sejoj (O$)        |
+| Official Currency       |   OS    | Omnija Sejroj (O$)       |
 
 | (Fikciaj) Fonaj Informoj  <br>(Fictional) Background Information | Priskribo  <br>Description |
 | :---------------- | ---- |
@@ -182,12 +182,13 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | OCFI | #95D0FC | <span style="color:#95D0FC">█ La Arkitekto **Ĉuĉjo** de Omnijo</span> |
 | OCFI | #D6B4FC | <span style="color:#D6B4FC">█ La Suvereno **Ĝejnjo** de Omnijo</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo de Omnijo -->  <!-- OCG -->  |
 | OCFI | #9370DB | <span style="color:MediumPurple">█ ... (Department Color) ...</span> |
-| OCFJ | #D2691E | <span style="color:Chocolate">█ La Prokuroro **Bejlio** de Omnijo</span>  <!-- OCG -->  |
+| OCFJ | #D2691E | <span style="color:Chocolate">█ La Prokuroro **Bejko** de Omnijo</span>  <!-- OCG -->  |
 | OCME | #FFD700 | <span style="color:Gold">█ La Ministro **Jonaso** de Omnijo</span>  <!-- OCG -->  |
 | OCME | #FFD700 | <span style="color:Gold">█ La Parolanto **Natalia** de Omnijo</span> |
 | OCMF | #8FBC8F | <span style="color:DarkSeaGreen">█ La Trezorestro **Alekso** de Omnijo</span>  <!-- OCG -->  |
 | OCMI | #D2B48C | <span style="color:Tan">█ La Ministro **Venesa** de Omnijo</span>  <!-- OCG -->  |
-||||
+||| <!-- Semi-local --> |
+|  OC  | # | <span style="color:?">█ La Urbestro ????</span> |
 | OCFF | #FF0000 | <span style="color:Red">█ La Direktoro **Petrovo** de Omnijo </span> |
 | OCFP | #4169E1 | <span style="color:RoyalBlue">█ La Policestro **Tejlero** de Omnijo</span> |
 | OCFS | #FFC0CB | <span style="color:Pink">█ La Fakestro **Fiona** de Omnijo</span> |

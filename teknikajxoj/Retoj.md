@@ -134,7 +134,7 @@ Arterial / Collector / Local Roads:
 
   |             | max Gradient $s$ | min Curve radius $R$ | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
   | ----------- | :--------------: | :------------------: | :--------------------------: | --- | --- | --- | --- | ------------------- |
-  | Recommended |  1.5 \%  | 1280m (160u)  |  200 km/h  | $137\degree$ | $158\degree$ | $169\degree$ | $175\degree$ | (Note: 200km/h for passenger trains; 135km/h for cargo trains) |
+  | Recommended |  1.5 \%  | 1024m (128u) |  180 km/h  | $127\degree$ | $152\degree$ | $166\degree$ | $173\degree$ | (Note: 200km/h for passenger trains; 135km/h for cargo trains) |
   | -           |  1.5 \%  |  576m (72u)   |  135 km/h  |  $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | |
   | Hard Limit  |  3.5 \%  |  144m  (18u)  |   65 km/h  | -            | -            |  $97\degree$ | $133\degree$ | Lithgow Zig Zag |
 
@@ -187,7 +187,7 @@ Arterial / Collector / Local Roads:
 
   |             | max Gradient $s$ | min Curve radius $R$  | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
   | ----------- | :--------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
-  | -           |  3   \%  | 1280m (160u) |  200 km/h  | $137\degree$ | $158\degree$ | $169\degree$ | $175\degree$ | (Note: overhead-wire-powered tracks only (No third rail metro tracks)) |
+  | -           |  3.5 \%  | 1024m (128u) |  180 km/h  | $127\degree$ | $152\degree$ | $166\degree$ | $173\degree$ | (Note: overhead-wire-powered tracks only (No third rail metro tracks)) |
   | Recommended |  5   \%  |  576m (72u)  |  135 km/h  | $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;  <br>($R$) Assuming tilting trains. |
   | Hard Limit  |  7   \%  |  320m (40u)  |  100 km/h  | -                 | $103\degree$ | $137\degree$  | $158\degree$ | ($s$) Bernina Railway, Switzerland;  <br>($R$) Bay Area Rapid Transit, United States. |
 

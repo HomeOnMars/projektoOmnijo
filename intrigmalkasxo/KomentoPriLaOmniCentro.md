@@ -30,7 +30,8 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
 <details>
   <summary><b>SPOILERS</b>:
     The True Nature of RdO:<br>
-    <em>A Utopia disguised as a Dystopia disguised as a Utopia</em>
+    <em>"To mould the world into what we desire."</em>
+    <!-- <em>A Utopia disguised as a Dystopia disguised as a Utopia</em> -->
   </summary>
 
   <br>
@@ -335,7 +336,7 @@ About the Ecology...
 <details>
   <summary><b>SPOILERS</b>:
     Project Phoenix:<br>
-    <em>The Biological Queen and the Miracle Worker of the Ecosystem</em>
+    <em>The Biological Queen and the Miracle Worker</em>
   </summary>
 
   <br>
