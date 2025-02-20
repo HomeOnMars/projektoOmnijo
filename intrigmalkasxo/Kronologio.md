@@ -25,41 +25,72 @@ Legal
 Omnija Kronologio
 -------------------------------------------------------------------------------
 
-3 reference points X, Y, Q;
+### Priskribo
+
+2 reference points of time X, Y;
 Other acronyms:
 
-- J: ***Jaroj***    | years
-- M: ***Monatoj***  | Months
-- S: ***Semajnoj*** | Weeks
-- T: ***Tagoj***    | Days
+- `J`: ***Jaroj***    | years
+- `M`: ***Monatoj***  | Months
+- `S`: ***Semajnoj*** | Weeks
+- `T`: ***Tagoj***    | Days
   - Here we assume one year is 13 months exactly,
     and each months has 4 weeks exactly
     (except leap year which happens every 4 years,
     and has 5 extra days (all considered holidays)):
-    $$1J = 13M = 52S = 364T$$
+    $$1J = 13_D M = 52_D S = 364_D T$$
+    ($D$ for decimal, $H$ for Hexadecimal)
   - Winter Solstice[^Tagoj-Solstico] always happens
-    in the first week of the year for the Y calendars.
-    The leap year adds extra days at the end of the year,
+    in the first week of the year for the Y+\* calendars.
+    The leap year (Y+\* years ends with $3_H, 7_H, λ_H, Ψ_H$) adds extra days at the end of the year,
     and the year immediately after the leap year have the solstice
     happening at the (evening of the) first day of the year.
     The first week of the year
     (together with the days added by leap years if any)
     are holidays.
   - Solstices and Equinoxes are national holidays.
-- h: ***Horoj***    | Hours
+<!-- - h: ***Horoj***    | Hours
 - m: ***Minutoj***  | Minutes
-- s: ***Sekundoj*** | Seconds
+- s: ***Sekundoj*** | Seconds -->
+- `ĝ`: ***Ĝoroj***    | Omnija Hours
+  - 1 Ĝoro is    $24_D/16_D = 1.5_D$ SI Hours.
+  - Implications on speed units:
+    - 1 `jpĝ` (jentmetro por ĝoro) ~ 0.17 kph (1/5.86 kph)
+      (`jpgx = 0.256/1.5`)
+    - 1 `gpĝ` (gilmetro  por ĝoro) ~ 2.73 kph
+      (`gpgx = 4.096/1.5`)
+      - Hx 80 gpĝ ~ Dx 350 kph
+      - Hx 40 gpĝ ~ Dx 175 kph
+      - Hx 24 gpĝ ~ Dx  98 kph
+      - Hx 18 gpĝ ~ Dx  65 kph
+      - Hx 16 gpĝ ~ Dx  60 kph
+      - Hx  Ψ gpĝ ~ Dx  41 kph
+      - Hx  λ gpĝ ~ Dx  30 kph
+      - Hx  7 gpĝ ~ Dx  19 kph
+      - Hx  4 gpĝ ~ Dx  11 kph
+- `ĉ`: ***Ĉimutoj***  | Omnija Minutes
+  - 1 Ĉimuto is  $1440_D/1024_D = 1.40625_D$ SI Minutes.
+- `ŝ`: ***Ŝekuntoj*** | Omnija Seconds
+  - Conversion rate:
+    $$1T = 16_D ĝ = 1024_D ĉ = 65536_D ŝ$$
+    i.e.,
+    $1T = 10_H ĝ = 400_H ĉ = 10000_H ŝ $;
+    $1ĝ = 40_H ĉ$,
+    $1ĉ = 40_H ŝ$;
+  - 1 Ŝekunto is $86400_D/65536_D = 1.318359375_D$ SI Seconds.
 
 [^Tagoj-Solstico] a.k.a. Northern Solstice, since *la Omnija-Insulo* is located in the Southern Hemisphere.
+
+#### Kronologio
 
 |  Date  |  Type  | Event |
 | ------ | ------ | ----- |
 | X-???  |  Kerno | Project Omnijo begin |
-| ***X+0*** |  Kerno | <span style="color:MediumPurple">ĜEJDA</span> online |
+| ***X+0***  <br>Y-5S |  Kerno | <span style="color:MediumPurple">ĜEJDA</span> online |
 ||||
-| X+18T  |   OCG  | <span style="color:Beige">Serena</span> was publicly discovered as the lost princess to the throne and started to quickly gain popularity |
-| X+3S   |  mondo | Most wars around the world starts to cool off, entering peace negotiations, and ends slowly and gradually in the next several months |
-| X+4S   |   OCG  | The old king suffered a lethal 'accident' |
+| X+2S4T  <br>Y-2S3T  |   OCG  | <span style="color:Beige">Serena</span> was publicly discovered as the lost princess to the throne and started to quickly gain popularity |
+| X+3S    <br>Y-2S    |  mondo | Most wars around the world starts to cool off, entering peace negotiations, and ends slowly and gradually in the next several months |
+| X+4S    <br>Y-1S    |   OCG  | The old king suffered a lethal 'accident' |
 ||||
 | X+5S  <br>***Y+0*** |   OCG  | <span style="color:Beige">Serena</span>'s coronation  <br>\(Winter Solstice 20XX\) |
 ||||
@@ -67,7 +98,7 @@ Other acronyms:
 | Y+1S2T |   OCG  | Corrupted ministers died in a tragic accident when plotting to 'retire' <span style="color:Beige">Serena</span> (like they 'retire' the old king) after <span style="color:Beige">Serena</span> refused to bend to their way<br> while most of the rest of the ministers had fled the island from their internal power struggle |
 | Y+1S5T |   OCG  | Party-system and the Parliament collapsed as the MPs fled |
 | Y+1S6T |   OCG  | <span style="color:Beige">Serena</span> placed her own friends as MPs/ministers to fill the power vaccum |
-| Y+2S  <br>Q-6M |   OC   | Surveys of the dam site Ab-Olivkronaĵo begin |
+| Y+2S   |   OC   | Surveys of the dam site Ab-Olivkronaĵo begin |
 | Y+2S   |   OCG  | <span style="color:Beige">Serena</span> reorganized the gov structure |
 | Y+2S   | poliso | <span style="color:Beige">Serena</span> implemented policy: `free public transit` within the island |
 | Y+3S   | poliso | <span style="color:Beige">Serena</span> implemented policy: `encourage emigration and immigrantion` |
@@ -81,14 +112,14 @@ Other acronyms:
 | Y+`5M?`  |  OCMF  | Most of the industries on the island were nationalized |
 | Y+6M     |   OCG  | *Healthcare workers on strike* to push for government change, leading to <span style="color:Beige">Serena</span>'s total replacement of healthcare workforce overnight |
 ||||
-| Y+6M2S  <br>***Q+0***  |   OC   | Fondation day of OmniCentro  <br>\(Summer Solstice 20XX\) |
+| Y+6M2S   |   OC   | Fondation day of OmniCentro  <br>\(Summer Solstice 20XX\) |
 ||||
-| Y+6M2S    <br>Q+0      |   OC   | Physical works of the dams Ab-Olivkronaĵo and its surrounding infrastructure began |
-| Y+9M3S    <br>Q+3M1S   |   OC   | Ab-Olivkronaĵo Server Farms (a.k.a. second layer entry point) construction stage 1 completed; Ab-Olivkronaĵo second layer testing site construction began  <br>\(Southward Equinox\) |
-| Y+`1J6M?`              |  OKP   | Foundation of OKP- the Omnija Space Program |
-| Y+2J      <br>Q+1J6M2S |   OC   | Completion of the dams Ab-Olivkronaĵo #1 and #2 |
-| Q+`2J?`  |   bio  | Projekto Fenikso`?` begin (privately) |
-| Q+`2J1S?`|   bio  | <span style="color:Beige">Serena</span> declared the newly discovered Magpies on the island "protected animals" |
-| Q+`2J2S?`|   bio  | Numerous new species found on the island |
-| Q+`2J2M?`|   bio  | Extinction of Rats, Snakes, Cockroaches, Mosquitoes, etc on the island |
-| Q+`2J3M?`|   bio  | Magpie population exploded and can be seen everywhere on the island |
+| Y+6M2S   |   OC   | Physical works of the dams Ab-Olivkronaĵo and its surrounding infrastructure began |
+| Y+9M3S   |   OC   | Ab-Olivkronaĵo Server Farms (a.k.a. second layer entry point) construction stage 1 completed; Ab-Olivkronaĵo second layer testing site construction began  <br>\(Southward Equinox\) |
+| Y+`1J6M?`|  OKP   | Foundation of OKP- the Omnija Space Program |
+| Y+2J     |   OC   | Completion of the dams Ab-Olivkronaĵo #1 and #2 |
+| Y+`2J6M2S?` |   bio  | Projekto Fenikso`?` begin (privately) |
+| Y+`2J6M3S?` |   bio  | <span style="color:Beige">Serena</span> declared the newly discovered Magpies on the island "protected animals" |
+| Y+`2J7M?`   |   bio  | Numerous new species found on the island |
+| Y+`2J8M2S?` |   bio  | Extinction of Rats, Snakes, Cockroaches, Mosquitoes, etc on the island |
+| Y+`2J9M2S?` |   bio  | Magpie population exploded and can be seen everywhere on the island |

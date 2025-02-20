@@ -65,16 +65,19 @@ Changes of Esperanto++ from Esperanto include:
   space(` `) instead of `.`;<!-- markdownlint-disable-line no-space-in-code -->
 - Built-in support for *hexadecimal* algebra:
   - `Δ λ Π Σ Υ Ψ` written/pronounced as `del lom nak sig gan fup`;
-  - `hek`   for (base-10)            16;
-  - `jent`  for (base-10)           256 (= 2^8  or        ΨΨ+1);
-  - `gil`   for (base-10)         4 096 (= 2^12 or       ΨΨΨ+1);
-  - `munio` for (base-10)        65 536 (= 2^16 or      ΨΨΨΨ+1);
-  - `dunio` for (base-10) 4 294 967 296 (= 2^32 or ΨΨΨΨ ΨΨΨΨ+1);
-  - `trinio`for (base-10) 2^48;
+  - `hek`   for Dx            16;
+  - `jent`  for Dx           256 (= 2^8,  or Hx        ΨΨ+1);
+  - `gil`   for Dx         4 096 (= 2^12, or Hx       ΨΨΨ+1);
+  - `munio` for Dx        65 536 (= 2^16, or Hx      ΨΨΨΨ+1);
+  - `dunio` for Dx 4 294 967 296 (= 2^32, or Hx ΨΨΨΨ ΨΨΨΨ+1);
+  - `trinio`for Dx 2^48;
   - etc.
 
   (As a reference, 9 100 000 000 (base10) = 2 1Υ66 Ψλ00, pronounced as
   du dunio, gil ganjent seshek ses munio, fupgil lomjent.);
+- Marking numbers as decimal ('Dekuma') or hexadecimal ('Hekuma'):
+  - Dekuma: prefixing `Dx`, or add a subscript $?_D$;
+  - Hekuma: prefixing `Hx`, or add a subscript $?_H$;
 
 #### Gender
 
@@ -89,6 +92,17 @@ Changes of Esperanto++ from Esperanto include:
   - E.g., `viro` is replaced by `viriĉo` for man,
     and `virino` remains to be woman.
 - See also [Wikipedia](https://en.wikipedia.org/wiki/Gender_reform_in_Esperanto#Common_elements_to_regularizing_Esperanto_gender).
+
+#### Time
+
+See also
+[(***Spoilers***) Timeline](../intrigmalkasxo/Kronologio.md#kronologio) page.
+
+| Siglo | Formo   | Nomo           |
+| --- | --------- | -------------- |
+| `ĝ` | `Ĝoro`    | Omnija horo    |
+| `ĉ` | `Ĉimuto`  | Omnija minuto  |
+| `ŝ` | `Ŝekunto` | Omnija sekundo |
 
 #### Others
 
