@@ -52,7 +52,7 @@ Teknikaj specifoj
 > ***Use at your own risk.***
 
 - ***Normoj*** | Standards
-  - [***Sistemo de Unuoj*** | System of Units](teknikajxoj/unuosistemo.md#Informoj) Planck-units-based unit system that approximate SI units<!-- Code Cleanup TBD -->
+  - [***Sistemo de Unuoj*** | System of Units](teknikajxoj/Unuoj.md#Informoj) Planck-units-based unit system that approximate SI units<!-- Code Cleanup TBD -->
   - [***ONKIO tablo*** | ONKIO table](teknikajxoj/ONKIO.md#onkio-tablo): ASCII table equivalent
 - [***Retoj*** | Networks](teknikajxoj/Retoj.md#retoj)
 - [***Arboj*** | Trees](teknikajxoj/Arboj.md#arboj)

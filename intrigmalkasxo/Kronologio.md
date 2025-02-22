@@ -27,59 +27,8 @@ Omnija Kronologio
 
 ### Priskribo
 
-2 reference points of time X, Y;
-Other acronyms:
-
-- `J`: ***Jaroj***    | years
-- `M`: ***Monatoj***  | Months
-- `S`: ***Semajnoj*** | Weeks
-- `T`: ***Tagoj***    | Days
-  - Here we assume one year is 13 months exactly,
-    and each months has 4 weeks exactly
-    (except leap year which happens every 4 years,
-    and has 5 extra days (all considered holidays)):
-    $$1J = 13_D M = 52_D S = 364_D T$$
-    ($D$ for decimal, $H$ for Hexadecimal)
-  - Winter Solstice[^Tagoj-Solstico] always happens
-    in the first week of the year for the Y+\* calendars.
-    The leap year (Y+\* years ends with $3_H, 7_H, λ_H, Ψ_H$) adds extra days at the end of the year,
-    and the year immediately after the leap year have the solstice
-    happening at the (evening of the) first day of the year.
-    The first week of the year
-    (together with the days added by leap years if any)
-    are holidays.
-  - Solstices and Equinoxes are national holidays.
-<!-- - h: ***Horoj***    | Hours
-- m: ***Minutoj***  | Minutes
-- s: ***Sekundoj*** | Seconds -->
-- `ĝ`: ***Ĝoroj***    | Omnija Hours
-  - 1 Ĝoro is    $24_D/16_D = 1.5_D$ SI Hours.
-  - Implications on speed units:
-    - 1 `jpĝ` (jentmetro por ĝoro) ~ 0.17 kph (1/5.86 kph)
-      (`jpgx = 0.256/1.5`)
-    - 1 `gpĝ` (gilmetro  por ĝoro) ~ 2.73 kph
-      (`gpgx = 4.096/1.5`)
-      - Hx 80 gpĝ ~ Dx 350 kph
-      - Hx 40 gpĝ ~ Dx 175 kph
-      - Hx 24 gpĝ ~ Dx  98 kph
-      - Hx 18 gpĝ ~ Dx  65 kph
-      - Hx 16 gpĝ ~ Dx  60 kph
-      - Hx  Ψ gpĝ ~ Dx  41 kph
-      - Hx  λ gpĝ ~ Dx  30 kph
-      - Hx  7 gpĝ ~ Dx  19 kph
-      - Hx  4 gpĝ ~ Dx  11 kph
-- `ĉ`: ***Ĉimutoj***  | Omnija Minutes
-  - 1 Ĉimuto is  $1440_D/1024_D = 1.40625_D$ SI Minutes.
-- `ŝ`: ***Ŝekuntoj*** | Omnija Seconds
-  - Conversion rate:
-    $$1T = 16_D ĝ = 1024_D ĉ = 65536_D ŝ$$
-    i.e.,
-    $1T = 10_H ĝ = 400_H ĉ = 10000_H ŝ $;
-    $1ĝ = 40_H ĉ$,
-    $1ĉ = 40_H ŝ$;
-  - 1 Ŝekunto is $86400_D/65536_D = 1.318359375_D$ SI Seconds.
-
-[^Tagoj-Solstico] a.k.a. Northern Solstice, since *la Omnija-Insulo* is located in the Southern Hemisphere.
+2 reference points of time X, Y.
+Acronyms `JMSTĝĉŝ` see [Units](../teknikajxoj/Unuoj.md#tempo) page.
 
 #### Kronologio
 

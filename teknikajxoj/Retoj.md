@@ -80,13 +80,13 @@ Arterial / Collector / Local Roads:
 
   |             | max Gradient $s$ | Speed limit $v_\mathrm{max}$ | Notes |
   | ----------- | :-------: | :-------: | ----------- |
-  | Recommended |  10  \%   |  60 km/h  | `St-Dt` Distributor (2+ Ŭ lanes per direction, No parking, No zoning, tram tracks in the middle)   |
+  | Recommended |  11  \%   |  60 km/h  | `St-Dt` Distributor (2+ Ŭ lanes per direction, No parking, No zoning, tram tracks in the middle)   |
   |||||
-  | Recommended |  17.5\%   |  40 km/h  | `St-Ĉf` Local roads (Main or Low Ped Activity, tram tracks on the sides) |
-  | Recommended |  24.5\%\* |  30 km/h  | `St-Lk` Local roads (High Ped Activity) |
+  | Recommended |  15  \%   |  45 km/h  | `St-Ĉf` Local roads (Main or Low Ped Activity, tram tracks on the sides) |
+  | Recommended |  20  \%\* |  35 km/h  | `St-Lk` Local roads (High Ped Activity) |
   | Hard Limit  |  30  \%\* |  25 km/h  | `St-Lk` Local roads |
   |||||
-  | Recommended |  30  \%\* |  20 km/h  | `St-H`  Pedestrian Roads |
+  | Recommended |  30  \%\* |  12 km/h  | `St-H`  Pedestrian Roads |
 
   \* Note that vanilla game by default only allow up to $20 \%$ gradient.
 

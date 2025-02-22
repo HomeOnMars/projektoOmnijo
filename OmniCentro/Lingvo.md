@@ -53,12 +53,16 @@ her new UBI (universal basic income) policy to worry about.
 
 Changes of Esperanto++ from Esperanto include:
 
-#### Alphabet
+#### Alfabeto
+
+> Alphabet
 
 - Officially eliminated `ĥ` from the *E++* alphabet
   (mostly replaced with `k`);
 
-#### Algebra
+#### Algebro
+
+> Algebra
 
 - Decimal separator in *E++* is `.` instead of `,`;<br>
   Thousands separator (decimal) / ten-thousands separator (hexadecimal) is
@@ -79,7 +83,9 @@ Changes of Esperanto++ from Esperanto include:
   - Dekuma: prefixing `Dx`, or add a subscript $?_D$;
   - Hekuma: prefixing `Hx`, or add a subscript $?_H$;
 
-#### Gender
+#### Sekso
+
+> Gender
 
 - Pronouns
   - `li` is now gender-neutral
