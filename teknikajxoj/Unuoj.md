@@ -38,7 +38,8 @@ See [Wikipedia](https://en.wikipedia.org/wiki/Natural_units#Planck_units).
 > $e$ is the natural constant.
 
 See also [Lingvo](../OmniCentro/Lingvo.md#algebro) page for prefix acronyms
-$h~j~g~m~n_2$ for Hx10, Hx100, Hx1000, Hx 1 0000, Hx 1000 0000, etc,
+$h\~j\~g\~m\~n_2$ for
+Hx10, Hx100, Hx1000, Hx 1 0000, Hx 1000 0000, etc,
 and for Hexadecimal pre/surfix *H* vs Decimal pre/surfix *D*.
 
 ### Longeco
@@ -47,23 +48,36 @@ and for Hexadecimal pre/surfix *H* vs Decimal pre/surfix *D*.
 
 > [!IMPORTANT]
 > Default length unit: ***Utro*** `u` (Omnija meters)
-> $$u \equiv \pi 2^{117_D}~l_P \approx 8.437_D~m$$
+
+$$
+  u
+  \equiv \pi 2^{117_D}\~l_P
+  \approx 8.437_D\~m
+$$
 
 1u is 1 cell width in-game.
 
-$$ju \equiv 256_D~u \approx 2.160~km$$
+$$
+  ju
+  \equiv 256_D\~u
+  \approx 2.160\~km
+$$
 
 #### Trakmezurilo
 
 > Track gauge
 
 Track gauge in *RdO* for trains, metros, and trams are the same:
-$$d_\mathrm{gauge}
-    \equiv \frac{e}{16}~u
-    = \pi e~2^{113_D}~l_P
-    \approx 1.4333_D~m$$
-which is compatible with the standard gauge ($1.4351~m$)
-with a difference of only $2~mm$.
+
+$$
+  d_\mathrm{gauge}
+  \equiv \frac{e}{16}\~u
+  = \pi e\~2^{113_D}\~l_P
+  \approx 1.4333_D\~m
+$$
+
+which is compatible with the standard gauge ($1.4351\~m$)
+with a difference of only $2\~mm$.
 (Hopefully that's small enough...)
 
 ### Maso
@@ -72,12 +86,21 @@ with a difference of only $2~mm$.
 
 > [!IMPORTANT]
 > Default mass unit: ***?*** `?` (Omnija kilogram- Name TBD)
-> $$??
-    \equiv 2^{24_D}~m_P
-    \approx 0.365_D~kg$$
+
+$$
+  ??
+  \equiv 2^{24_D}\~m_P
+  \approx 0.365_D\~kg
+$$
 
 A munio of said unit mass is a Omnija ton:
-$$m? \equiv 2^{16_D}~? \approx 23.930_D~t$$
+
+$$
+  m?
+  \equiv 2^{16_D}\~?
+  \approx 23.930_D\~t
+$$
+
 which happens to be about 1 FEU container equivalent of goods.
 
 ### Tempo
@@ -86,10 +109,15 @@ which happens to be about 1 FEU container equivalent of goods.
 
 > [!IMPORTANT]
 > Default time unit: ***Ŝekuntoj*** `ŝ` (Omnija seconds)
-> $$1~ŝ \equiv 71863_D~2^{128_D}~t_P \approx 1.318_D~s$$
-<!-- 1~ŝ = 1.518_H~s -->
 
-The Ŝekuntoj is calilbrated such that each Earth day is about $16_D^4~ŝ$.
+$$
+  1\~ŝ
+  \equiv 71863_D\~2^{128_D}\~t_P
+  \approx 1.318_D\~s
+$$
+<!-- 1\~ŝ = 1.518_H\~s -->
+
+The Ŝekuntoj is calilbrated such that each Earth day is about $16_D^4\~ŝ$.
 
 - `J`: ***Jaroj***    | years
 - `M`: ***Monatoj***  | Months
@@ -119,7 +147,7 @@ The Ŝekuntoj is calilbrated such that each Earth day is about $16_D^4~ŝ$.
   - 1 Ĉimuto is  $1440_D/1024_D = 1.40625_D$ SI Minutes.
 - `ŝ`: ***Ŝekuntoj*** | Omnija Seconds
   - Conversion rate:
-    $$1T = 16_D ĝ = 1024_D ĉ = 65536_D ŝ$$
+    $$1T = 16_D ĝ = 1024_D ĉ = 65536_D ŝ=$$
     i.e.,
     $1T = 10_H ĝ = 400_H ĉ = 10000_H ŝ $;
     $1ĝ = 40_H ĉ$,
@@ -133,25 +161,36 @@ The Ŝekuntoj is calilbrated such that each Earth day is about $16_D^4~ŝ$.
 > Speed
 
 Standard: utro por ŝekuntoj, or u/ŝ / upŝ for short:
-$$upŝ \equiv u/ŝ \approx 6.40_D~m/s$$
+
+$$
+  upŝ
+  \equiv u/ŝ
+  \approx 6.40_D\~m/s
+$$
 
 ju por ĝoro (or ju/ĝ / jpĝ for short)
-$$jpĝ \equiv ju/ĝ = 1/16_D~upŝ \approx 1.44~kph$$
+
+$$
+  jpĝ
+  \equiv ju/ĝ
+  = 1/16_D\~upŝ
+  \approx 1.44\~kph
+$$
 
 - Speed limits examples:
-    - Hx 100 jpĝ ~ Dx 369 kph  <!-- Dx 370 kph -->
-    - Hx  80 jpĝ ~ Dx 184 kph  <!-- Dx 185 kph -->
-    - Hx  58 jpĝ ~ Dx 126 kph    <!-- Dx 125 kph -->
-    - Hx  50 jpĝ ~ Dx 115 kph  <!-- Dx 115 kph -->
-    - Hx  48 jpĝ ~ Dx 104 kph    <!-- Dx 105 kph -->
-    - Hx  40 jpĝ ~ Dx  92 kph  <!-- Dx  90 kph -->
-    - Hx  38 jpĝ ~ Dx  81 kph    <!-- Dx  80 kph -->
-    - Hx  30 jpĝ ~ Dx  69 kph  <!-- Dx  70 kph -->
-    - Hx  28 jpĝ ~ Dx  58 kph    <!-- Dx  60 kph -->
-    - Hx  20 gpĝ ~ Dx  45 kph  <!-- Dx  45 kph -->
-    - Hx  18 jpĝ ~ Dx  35 kph    <!-- Dx  35 kph -->
-    - Hx  10 gpĝ ~ Dx  23 kph  <!-- Dx  25 kph -->
-    - Hx   8 gpĝ ~ Dx  12 kph    <!-- Dx  10 kph -->
+  - Hx 100 jpĝ \~ Dx 369 kph  <!-- Dx 370 kph -->
+  - Hx  80 jpĝ \~ Dx 184 kph  <!-- Dx 185 kph -->
+  - Hx  58 jpĝ \~ Dx 126 kph    <!-- Dx 125 kph -->
+  - Hx  50 jpĝ \~ Dx 115 kph  <!-- Dx 115 kph -->
+  - Hx  48 jpĝ \~ Dx 104 kph    <!-- Dx 105 kph -->
+  - Hx  40 jpĝ \~ Dx  92 kph  <!-- Dx  90 kph -->
+  - Hx  38 jpĝ \~ Dx  81 kph    <!-- Dx  80 kph -->
+  - Hx  30 jpĝ \~ Dx  69 kph  <!-- Dx  70 kph -->
+  - Hx  28 jpĝ \~ Dx  58 kph    <!-- Dx  60 kph -->
+  - Hx  20 gpĝ \~ Dx  45 kph  <!-- Dx  45 kph -->
+  - Hx  18 jpĝ \~ Dx  35 kph    <!-- Dx  35 kph -->
+  - Hx  10 gpĝ \~ Dx  23 kph  <!-- Dx  25 kph -->
+  - Hx   8 gpĝ \~ Dx  12 kph    <!-- Dx  10 kph -->
 
 ### Code illustrations
 
