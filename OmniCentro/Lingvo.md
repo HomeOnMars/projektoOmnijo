@@ -69,19 +69,23 @@ Changes of Esperanto++ from Esperanto include:
   space(` `) instead of `.`;<!-- markdownlint-disable-line no-space-in-code -->
 - Built-in support for *hexadecimal* algebra:
   - `Δ λ Π Σ Υ Ψ` written/pronounced as `del lom nak sig gan fup`;
-  - `hek`   for Dx            16;
-  - `jent`  for Dx           256 (= 2^8,  or Hx        ΨΨ+1);
-  - `gil`   for Dx         4 096 (= 2^12, or Hx       ΨΨΨ+1);
-  - `munio` for Dx        65 536 (= 2^16, or Hx      ΨΨΨΨ+1);
-  - `dunio` for Dx 4 294 967 296 (= 2^32, or Hx ΨΨΨΨ ΨΨΨΨ+1);
+  - `hek`   for Dx            16 (= 2^Dx4,  or Hx          10);
+  - `jent`  for Dx           256 (= 2^Dx8,  or Hx         100);
+  - `gil`   for Dx         4 096 (= 2^Dx12, or Hx        1000);
+  - `munio` for Dx        65 536 (= 2^Dx16, or Hx      1 0000);
+  - `dunio` for Dx 4 294 967 296 (= 2^Dx32, or Hx 1 0000 0000);
   - `trinio`for Dx 2^48;
   - etc.
-
   (As a reference, 9 100 000 000 (base10) = 2 1Υ66 Ψλ00, pronounced as
   du dunio, gil ganjent seshek ses munio, fupgil lomjent.);
 - Marking numbers as decimal ('Dekuma') or hexadecimal ('Hekuma'):
   - Dekuma: prefixing `Dx`, or add a subscript $?_D$;
   - Hekuma: prefixing `Hx`, or add a subscript $?_H$;
+- `h`-notation: Similar to the `e`-notation of the decimal system,
+  - `Hx 8 9ΔλΠ 0000` can be shortened
+    as `8.9ΔλΠH+8`, `8.9ΔλΠh+8`, or `8.9ΔλΠh8`
+    (case doesn't matter;
+    though `h` are recommended over `H` for easier reading)
 
 #### Sekso
 
@@ -93,6 +97,13 @@ Changes of Esperanto++ from Esperanto include:
     leaving only 'them (singular)' alone);
   - `hi` now means 'he' (third person who is male);
   - `ŝi` remains meaning 'she' (third person who is female).
+  - It is encouraged to use `li` in scenarios
+    where sex is unknown/unspecified/explicitly-required-to-be-irrelevant,
+    such as workplaces.
+    Consider using `hi`/`ŝi` in most other situations,
+    especially in causal conversations or romance novels
+    to perserve information.
+    This is more of a guideline than a rule.
 - All nouns are now gender-neutral by default,
   unless added surfix `-in-` for female and `-iĉ-` for male.
   - E.g., `viro` is replaced by `viriĉo` for man,
@@ -101,7 +112,7 @@ Changes of Esperanto++ from Esperanto include:
 
 #### Time
 
-See also
+See also the [Units](../teknikajxoj/Unuoj.md#tempo) page and the
 [(***Spoilers***) Timeline](../intrigmalkasxo/Kronologio.md#kronologio) page.
 
 | Siglo | Formo   | Nomo           |

@@ -38,9 +38,9 @@ See [Wikipedia](https://en.wikipedia.org/wiki/Natural_units#Planck_units).
 > $e$ is the natural constant.
 
 See also [Lingvo](../OmniCentro/Lingvo.md#algebro) page for prefix acronyms
-$h\~j\~g\~m\~n_2$ for
-Hx10, Hx100, Hx1000, Hx 1 0000, Hx 1000 0000, etc,
-and for Hexadecimal pre/surfix *H* vs Decimal pre/surfix *D*.
+$h \; j \; g \; M \; N_2 \; N_3 \; N_4$ for
+Hx10, Hx100, Hx1000, Hx 1 0000, Hx 1 0000 0000 = 1h8, 1hΠ, 1h10, etc;
+also for Hexadecimal pre/surfix *H* vs Decimal pre/surfix *D*.
 
 ### Longeco
 
@@ -51,16 +51,16 @@ and for Hexadecimal pre/surfix *H* vs Decimal pre/surfix *D*.
 
 $$
   u
-  \equiv \pi 2^{117_D}\~l_P
-  \approx 8.437_D\~m
+  \equiv 3_D \times 2^{117_D} \; l_P
+  \approx 8.056_D \; m
 $$
 
 1u is 1 cell width in-game.
 
 $$
   ju
-  \equiv 256_D\~u
-  \approx 2.160\~km
+  \equiv 256_D \; u
+  \approx 2.062 \; km
 $$
 
 #### Trakmezurilo
@@ -71,13 +71,13 @@ Track gauge in *RdO* for trains, metros, and trams are the same:
 
 $$
   d_\mathrm{gauge}
-  \equiv \frac{e}{16}\~u
-  = \pi e\~2^{113_D}\~l_P
-  \approx 1.4333_D\~m
+  \equiv \frac{\pi e}{48_D} \; u
+  = \pi e \; 2^{113_D} \; l_P
+  \approx 1.4333_D \; m
 $$
 
-which is compatible with the standard gauge ($1.4351\~m$)
-with a difference of only $2\~mm$.
+which is compatible with the standard gauge ($1.4351_D \; m$)
+with a difference of only $2 \; mm$.
 (Hopefully that's small enough...)
 
 ### Maso
@@ -85,20 +85,20 @@ with a difference of only $2\~mm$.
 > Mass
 
 > [!IMPORTANT]
-> Default mass unit: ***?*** `?` (Omnija kilogram- Name TBD)
+> Default mass unit: ***Pakmo*** `p` (Omnija kilogram)
 
 $$
-  ??
-  \equiv 2^{24_D}\~m_P
-  \approx 0.365_D\~kg
+  p
+  \equiv 2^{24_D} \; m_P
+  \approx 0.365_D \; kg
 $$
 
 A munio of said unit mass is a Omnija ton:
 
 $$
-  m?
-  \equiv 2^{16_D}\~?
-  \approx 23.930_D\~t
+  Mp
+  \equiv 2^{16_D} \; p
+  \approx 23.930_D \; t
 $$
 
 which happens to be about 1 FEU container equivalent of goods.
@@ -111,13 +111,13 @@ which happens to be about 1 FEU container equivalent of goods.
 > Default time unit: ***Ŝekuntoj*** `ŝ` (Omnija seconds)
 
 $$
-  1\~ŝ
-  \equiv 71863_D\~2^{128_D}\~t_P
-  \approx 1.318_D\~s
+  1 \; ŝ
+  \equiv 71863_D \times 2^{128_D} \; t_P
+  \approx 1.318_D \; s
 $$
-<!-- 1\~ŝ = 1.518_H\~s -->
+<!-- 1 \; ŝ = 1.518_H \; s -->
 
-The Ŝekuntoj is calilbrated such that each Earth day is about $16_D^4\~ŝ$.
+The Ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \; ŝ$.
 
 - `J`: ***Jaroj***    | years
 - `M`: ***Monatoj***  | Months
@@ -152,6 +152,7 @@ The Ŝekuntoj is calilbrated such that each Earth day is about $16_D^4\~ŝ$.
     $1T = 10_H ĝ = 400_H ĉ = 10000_H ŝ $;
     $1ĝ = 40_H ĉ$,
     $1ĉ = 40_H ŝ$;
+  - i.e. $1T = 1 Mŝ$;
   - 1 Ŝekunto is $86400_D/65536_D = 1.318359375_D$ SI Seconds.
 
 [^Tagoj-Solstico] a.k.a. Northern Solstice, since *la Omnija-Insulo* is located in the Southern Hemisphere.
@@ -160,37 +161,41 @@ The Ŝekuntoj is calilbrated such that each Earth day is about $16_D^4\~ŝ$.
 
 > Speed
 
-Standard: utro por ŝekuntoj, or u/ŝ / upŝ for short:
+Standard: utro por ŝekuntoj, or u/ŝ:
 
 $$
-  upŝ
+  u/ŝ
   \equiv u/ŝ
-  \approx 6.40_D\~m/s
+  \approx 6.40_D \; m/s
 $$
 
-ju por ĝoro (or ju/ĝ / jpĝ for short)
+ju por ĝoro (or ju/ĝ / joĝ for short)
 
 $$
-  jpĝ
+  joĝ
   \equiv ju/ĝ
-  = 1/16_D\~upŝ
-  \approx 1.44\~kph
+  = 1/16_D \; u/ŝ
+  \approx 1.375_D \; kph
 $$
 
 - Speed limits examples:
-  - Hx 100 jpĝ \~ Dx 369 kph  <!-- Dx 370 kph -->
-  - Hx  80 jpĝ \~ Dx 184 kph  <!-- Dx 185 kph -->
-  - Hx  58 jpĝ \~ Dx 126 kph    <!-- Dx 125 kph -->
-  - Hx  50 jpĝ \~ Dx 115 kph  <!-- Dx 115 kph -->
-  - Hx  48 jpĝ \~ Dx 104 kph    <!-- Dx 105 kph -->
-  - Hx  40 jpĝ \~ Dx  92 kph  <!-- Dx  90 kph -->
-  - Hx  38 jpĝ \~ Dx  81 kph    <!-- Dx  80 kph -->
-  - Hx  30 jpĝ \~ Dx  69 kph  <!-- Dx  70 kph -->
-  - Hx  28 jpĝ \~ Dx  58 kph    <!-- Dx  60 kph -->
-  - Hx  20 gpĝ \~ Dx  45 kph  <!-- Dx  45 kph -->
-  - Hx  18 jpĝ \~ Dx  35 kph    <!-- Dx  35 kph -->
-  - Hx  10 gpĝ \~ Dx  23 kph  <!-- Dx  25 kph -->
-  - Hx   8 gpĝ \~ Dx  12 kph    <!-- Dx  10 kph -->
+
+  | joĝ | kph (proksimumo) | kph (limo) |
+  | :--------- | :----: | ---------: |
+  | **Hx 100** | Dx 352 | **Dx 350** |
+  | **Hx  80** | Dx 176 | **Dx 175** |
+  | **Hx  60** | Dx 132 | **Dx 130** |
+  | **Hx  58** | Dx 121 | **Dx 120** |
+  |   Hx  50   | Dx 110 |   Dx 110   |
+  | **Hx  48** | Dx  99 | **Dx 100** |
+  |   Hx  40   | Dx  88 |   Dx  90   |
+  | **Hx  38** | Dx  77 | **Dx  75** |
+  | **Hx  30** | Dx  66 | **Dx  65** |
+  |   Hx  28   | Dx  55 |   Dx  55   |
+  | **Hx  20** | Dx  44 | **Dx  45** |
+  | **Hx  18** | Dx  33 | **Dx  35** |
+  | **Hx  10** | Dx  22 | **Dx  20** |
+  | **Hx   8** | Dx  11 | **Dx  10** |
 
 ### Code illustrations
 
@@ -212,7 +217,7 @@ $$
 
     # u_rdo: RdO standard units
     u_rdo = {k: u_nat[k].copy() for k in u_nat.keys()}
-    u_rdo['dist'] *= pi * 2**117
+    u_rdo['dist'] *= 3 * 2**117
     u_rdo['mass'] *= 2**24
     u_rdo['time'] *= 71863 * 2**128
     # u_rdo['temp'] = ((const.hbar * const.c**5 / const.G)**0.5 / const.k_B).si
@@ -228,7 +233,7 @@ $$
     # Extra
     gx = (64*64*u_rdo['time']).to(units.h)
     ju = (u_rdo['dist']*256).to(units.km)
-    jpgx = ju/gx
+    jogx = ju/gx
 
     # track gauges
     track_standard_gauge = (4*units.imperial.foot + 8.5 * units.imperial.inch).si

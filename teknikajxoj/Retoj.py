@@ -134,10 +134,10 @@ if __name__ == '__main__':
 
     print("\nTram (per car)\n")
 
-    print_info(grad=8.0*u.percent, v=100*u.km/u.h, engine_p=(800*hp).to(hp), engine_m=0*u.t, load_full=26*u.t, load_capa=16*u.t, car_len=16*u.m)
+    print_info(grad= 8.0*u.percent, v=100*u.km/u.h, engine_p=(800*hp).to(hp), engine_m=0*u.t, load_full=26*u.t, load_capa=16*u.t, car_len=16*u.m)
     print_info(grad=10.0*u.percent, v=80*u.km/u.h, engine_p=(800*hp).to(hp), engine_m=0*u.t, load_full=26*u.t, load_capa=16*u.t, car_len=16*u.m)
-    print_info(grad=13.5*u.percent, v=60*u.km/u.h, engine_p=(800*hp).to(hp), engine_m=0*u.t, load_full=26*u.t, load_capa=16*u.t, car_len=16*u.m)
-    print_info(grad=21.0*u.percent, v=40*u.km/u.h, engine_p=(800*hp).to(hp), engine_m=0*u.t, load_full=26*u.t, load_capa=16*u.t, car_len=16*u.m)
+    print_info(grad=12.5*u.percent, v=65*u.km/u.h, engine_p=(800*hp).to(hp), engine_m=0*u.t, load_full=26*u.t, load_capa=16*u.t, car_len=16*u.m)
+    print_info(grad=18.0*u.percent, v=45*u.km/u.h, engine_p=(800*hp).to(hp), engine_m=0*u.t, load_full=26*u.t, load_capa=16*u.t, car_len=16*u.m)
     
 
     print("\nRoad\n")
@@ -156,10 +156,9 @@ if __name__ == '__main__':
 
     print("\nLocal Road\n")
     
-    print_info(grad=10*u.percent, v= 65*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
-    print_info(grad=11*u.percent, v= 60*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
+    print_info(grad=10*u.percent, v= 66*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
     print_info(grad=15*u.percent, v= 45*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
     print_info(grad=20*u.percent, v= 35*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
-    print_info(grad=30*u.percent, v= 25*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
+    print_info(grad=30*u.percent, v= 22*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
 
 #------------------------------------------------------------------------------

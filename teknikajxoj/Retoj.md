@@ -80,18 +80,19 @@ Arterial / Collector / Local Roads:
 
   |             | max Gradient $s$ | Speed limit $v_\mathrm{max}$ | Notes |
   | ----------- | :-------: | :-------: | ----------- |
-  | Recommended |  11  \%   |  60 km/h  | `St-Dt` Distributor (2+ Ŭ lanes per direction, No parking, No zoning, tram tracks in the middle)   |
+  | Recommended |  10  \%   |  65 km/h  | `St-Dt` Distributor (2+ Ŭ lanes per direction, No parking, No zoning, tram tracks in the middle)   |
   |||||
   | Recommended |  15  \%   |  45 km/h  | `St-Ĉf` Local roads (Main or Low Ped Activity, tram tracks on the sides) |
   | Recommended |  20  \%\* |  35 km/h  | `St-Lk` Local roads (High Ped Activity) |
-  | Hard Limit  |  30  \%\* |  25 km/h  | `St-Lk` Local roads |
+  | Hard Limit  |  30  \%\* |  20 km/h  | `St-Lk` Local roads |
   |||||
-  | Recommended |  30  \%\* |  12 km/h  | `St-H`  Pedestrian Roads |
+  | Recommended |  30  \%\* |  10 km/h  | `St-H`  Pedestrian Roads |
 
   \* Note that vanilla game by default only allow up to $20 \%$ gradient.
 
 - Regarding Speed limits,
   See also:
+  - [Units](Unuoj.md#rapido) page;
   - (2025-01-26) [Hussain et al. (2019)](https://doi.org/10.1016/j.aap.2019.05.033) Meta-analysis on pedestrian fatality vs vehicle speed.
 - Parking:
   - Default **Price**:
@@ -229,10 +230,10 @@ Arterial / Collector / Local Roads:
 
   |             | max Gradient $s$ | min Curve radius $R$ (without slowing)  | Speed limit $v_\mathrm{max}$ | Real world examples |
   | ----------- | :--------------: | :--------------: | :--------------------------: | ------------------- |
-  | Deprecated  |   8   \%  |  448m (56u)  | 100 km/h  | |
+  | -           |   8   \%  |  448m (56u)  | 100 km/h  | |
   | Recommended |  10   \%  |  288m (36u)  |  80 km/h  | Sheffield Supertram, Sheffield |
-  | -           |  13.5 \%  |  160m (20u)  |  60 km/h  | Lisbon Tramways, Portugal |
-  | Hard Limit  |  21   \%  |   72m  (9u)  |  40 km/h  | |
+  | -           |  12.5 \%  |  192m (24u)  |  65 km/h  | Lisbon Tramways, Portugal |
+  | Hard Limit  |  18   \%  |   96m (12u)  |  45 km/h  | |
 
   - Note: Faster than 65 km/h speed can only be achieved on separated tracks.
   - Curve radius limit here can be ignored, as trams slow down near intersections.
