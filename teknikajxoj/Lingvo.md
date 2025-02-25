@@ -48,9 +48,6 @@ her new UBI (universal basic income) policy to worry about.
 
 > Specifications
 
-> ![XKCD comic: 'standards'](https://imgs.xkcd.com/comics/standards.png)  
-> Credit: [XKCD](https://xkcd.com/927/) (No changes were made.)
-
 Changes of Esperanto++ from Esperanto include:
 
 #### Alfabeto
@@ -68,7 +65,7 @@ Changes of Esperanto++ from Esperanto include:
   Thousands separator (decimal) / ten-thousands separator (hexadecimal) is
   space(` `) instead of `.`;<!-- markdownlint-disable-line no-space-in-code -->
 - Built-in support for *hexadecimal* algebra:
-  - `Δ λ Π Σ Υ Ψ` written/pronounced as `del lom nak sig gan fup`;
+  - `Δ λ Π Σ Υ Ψ` written/pronounced as `del lom nak sig gan fus`;
   - `hek`   for Dx            16 (= 2^Dx4,  or Hx          10);
   - `jent`  for Dx           256 (= 2^Dx8,  or Hx         100);
   - `gil`   for Dx         4 096 (= 2^Dx12, or Hx        1000);
@@ -77,15 +74,18 @@ Changes of Esperanto++ from Esperanto include:
   - `trinio`for Dx 2^48;
   - etc.
   (As a reference, 9 100 000 000 (base10) = 2 1Υ66 Ψλ00, pronounced as
-  du dunio, gil ganjent seshek ses munio, fupgil lomjent.);
+  du dunio, gil ganjent seshek ses munio, fusgil lomjent.);
 - Marking numbers as decimal ('Dekuma') or hexadecimal ('Hekuma'):
   - Dekuma: prefixing `Dx`, or add a subscript $?_D$;
   - Hekuma: prefixing `Hx`, or add a subscript $?_H$;
-- `h`-notation: Similar to the `e`-notation of the decimal system,
-  - `Hx 8 9ΔλΠ 0000` can be shortened
-    as `8.9ΔλΠH+8`, `8.9ΔλΠh+8`, or `8.9ΔλΠh8`
-    (case doesn't matter;
-    though `h` are recommended over `H` for easier reading)
+- `p`-notation:
+  - Similar to the `e`-notation of the decimal system,
+    except both side of `p` are hexadecimal.
+  - `p` must be lower case for better visibility,
+    i.e. easier to tell from the numbers.
+    `p` is chosen over `h` or other letters for exactly this reason.
+  - E.g., `Hx 7 89Δλ ΠΣΥΨ 0000` can be shortened
+    as `7.89ΔλΠΣΥΨp+Π` or `7.89ΔλΠΣΥΨpΠ`;
 
 #### Sekso
 

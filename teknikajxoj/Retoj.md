@@ -45,13 +45,13 @@ Retoj
 
 - Gradient $s$ and Curve radius $R$ limit:
 
-  |             |  max Gradient $s$ |  min Curve radius $R$        | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Notes |
-  | ----------- | :-------: | :----------: | :--------: | --- | --- | --- | --- | ----- |
-  | -           |  4   \%   |  552m (69u)  |  125 km/h  |  $95\degree$ | $131\degree$ | $154\degree$ | $167\degree$ | |
-  | Recommended |  6   \%   |  352m (44u)  |  100 km/h  | -            | $108\degree$ | $141\degree$ | $160\degree$ | |
-  | Soft Limit  |  8   \%   |  224m (28u)  |   80 km/h  | -            | -            | $121\degree$ | $149\degree$ | For ramps / In mountains |
-  | -           | 10   \%   |  144m (18u)  |   65 km/h  | -            | -            |  $97\degree$ | $133\degree$ | Mountains Only |
-  | Hard Limit  | 10   \%   |   32m  (4u)  |   30 km/h  | -            | -            | -            |  -           | Mountains Only |
+  |             |  max Gradient $s$ (Dx) |  min Curve radius $R$ (Dx) | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Notes |
+  | ----------- | :-------: | :----------: | :--------: | :--------: | --- | --- | --- | --- | ----- |
+  | -           |  3.5 \%   |  640m (80u)  |  135 km/h  |  60 joĝ | $103\degree$ | $137\degree$ | $158\degree$ | $169\degree$ | |
+  | -           |  5   \%   |  424m (53u)  |  110 km/h  |  50 joĝ | -            | $118\degree$ | $147\degree$ | $163\degree$ | |
+  | Recommended |  7   \%   |  288m (36u)  |   90 km/h  |  40 joĝ | -            |  $97\degree$ | $133\degree$ | $155\degree$ | |
+  | Soft Limit  | 10   \%   |  144m (18u)  |   65 km/h  |  30 joĝ | -            | -            |  $97\degree$ | $133\degree$ | Mountains Only |
+  | Hard Limit  | 20   \%   |   40m  (5u)  |   35 km/h  |  18 joĝ | -            | -            | -            |  -           | Mountains Only |
 
   - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
     i.e., $\theta_\mathrm{64u}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 64u (512m).
@@ -65,6 +65,7 @@ Retoj
       and  $R \approx v_\mathrm{max}^2 / (20 \mathrm{mh/km})$ for higher limit~~.
   - Source: (2024-08-23) [Xin et al. (2021)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256301): for $R$
     - [figure 8](https://doi.org/10.1371/journal.pone.0256301.g008): Predictions of speed thresholds of the truck in a sharp turn
+  - Speed unit 'joĝ' see [Units](Unuoj.md#rapido) page.
 
 #### Stratoj
 
@@ -78,15 +79,15 @@ Arterial / Collector / Local Roads:
 - Gradient  limit:
   (Arbitrarily set to:)
 
-  |             | max Gradient $s$ | Speed limit $v_\mathrm{max}$ | Notes |
-  | ----------- | :-------: | :-------: | ----------- |
-  | Recommended |  10  \%   |  65 km/h  | `St-Dt` Distributor (2+ Ŭ lanes per direction, No parking, No zoning, tram tracks in the middle)   |
-  |||||
-  | Recommended |  15  \%   |  45 km/h  | `St-Ĉf` Local roads (Main or Low Ped Activity, tram tracks on the sides) |
-  | Recommended |  20  \%\* |  35 km/h  | `St-Lk` Local roads (High Ped Activity) |
-  | Hard Limit  |  30  \%\* |  20 km/h  | `St-Lk` Local roads |
-  |||||
-  | Recommended |  30  \%\* |  10 km/h  | `St-H`  Pedestrian Roads |
+  |             | max Gradient $s$ (Dx) | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | Notes |
+  | ----------- | :-------: | :-------: | :-------: | ----------- |
+  | Recommended |  10  \%   |  65 km/h  |  30 joĝ | `St-Dt` Distributor (2+ Ŭ lanes per direction, No parking, No zoning, tram tracks in the middle)   |
+  ||||||
+  | Recommended |  15  \%   |  45 km/h  |  20 joĝ | `St-Ĉf` Local roads (Main or Low Ped Activity, tram tracks on the sides) |
+  | Recommended |  20  \%   |  35 km/h  |  18 joĝ | `St-Lk` Local roads (High Ped Activity) |
+  | Hard Limit  |  30  \%\* |  20 km/h  |  10 joĝ | `St-Lk` Local roads |
+  ||||||
+  | Recommended |  30  \%\* |  10 km/h  |   8 joĝ | `St-H`  Pedestrian Roads |
 
   \* Note that vanilla game by default only allow up to $20 \%$ gradient.
 
@@ -133,11 +134,11 @@ Arterial / Collector / Local Roads:
 
 - Gradient $s$ and Curve radius $R$ limit:
 
-  |             | max Gradient $s$ | min Curve radius $R$ | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
-  | ----------- | :--------------: | :------------------: | :--------------------------: | --- | --- | --- | --- | ------------------- |
-  | Recommended |  1.5 \%  | 1024m (128u) |  180 km/h  | $127\degree$ | $152\degree$ | $166\degree$ | $173\degree$ | (Note: 200km/h for passenger trains; 135km/h for cargo trains) |
-  | -           |  1.5 \%  |  576m (72u)   |  135 km/h  |  $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | |
-  | Hard Limit  |  3.5 \%  |  144m  (18u)  |   65 km/h  | -            | -            |  $97\degree$ | $133\degree$ | Lithgow Zig Zag |
+  |             | max Gradient $s$ (Dx) | min Curve radius $R$ (Dx) | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
+  | ----------- | :--------------: | :------------------: | :--------------------------: | :-----: | --- | --- | --- | --- | ------------------- |
+  | Recommended |  1.5 \%  | 1024m (128u) |  180 km/h  |  80 joĝ | $127\degree$ | $152\degree$ | $166\degree$ | $173\degree$ | (Note: 200km/h for passenger trains; 135km/h for cargo trains) |
+  | -           |  1.5 \%  |  576m (72u)   |  135 km/h  |  60 joĝ |  $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | |
+  | Hard Limit  |  3.5 \%  |  144m  (18u)  |   65 km/h  |  30 joĝ | -            | -            |  $97\degree$ | $133\degree$ | Lithgow Zig Zag |
 
   - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
     i.e., $\theta_\mathrm{64u}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 64u.
@@ -147,6 +148,7 @@ Arterial / Collector / Local Roads:
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples (see Lithgow Zig Zag)
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
   - Note: Liberties have been taken for the hard limit of $s$ due to steep terrain in the map. Also steeper is more fun.
+  - Speed unit 'joĝ' see [Units](Unuoj.md#rapido) page.
 - Length / Power
   - train length: 25 (16m/2u-long) cars (**400m/50u**): 1 engine + 24 trailers.
   - For track intersections: $\geq$ 448m/56u.

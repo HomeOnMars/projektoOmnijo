@@ -35,8 +35,6 @@ Detalaj Informoj
 - [***Bulteno*** | Bulletin](OmniCentro/Bulteno.md#bulteno)
   - [***Fonrakontaj Resumoj*** | Backstories Summaries](OmniCentro/Bulteno.md#fonrakontaj-resumoj): Brief summary here!
 - [***Sigloj***  | Acronyms](OmniCentro/Sigloj.md#sigloj)
-- [***Lingvo***  | Language](OmniCentro/Lingvo.md#lingvo):
-  *Epopo* - The new official language of RdO.
 
 Teknikaj specifoj
 -------------------------------------------------------------------------------
@@ -51,6 +49,11 @@ Teknikaj specifoj
 > Standards here may also be updated without notices.  
 > ***Use at your own risk.***
 
+> ![XKCD comic: 'standards'](https://imgs.xkcd.com/comics/standards.png)  
+> Credit: [XKCD](https://xkcd.com/927/) (No changes were made.)
+
+- [***Lingvo***  | Language](teknikajxoj/Lingvo.md#lingvo):
+  *Epopo* - The new official language of RdO.
 - ***Normoj*** | Standards
   - [***Sistemo de Unuoj*** | System of Units](teknikajxoj/Unuoj.md#Informoj) Planck-units-based unit system that approximate SI units<!-- Code Cleanup TBD -->
   - [***ONKIO tablo*** | ONKIO table](teknikajxoj/ONKIO.md#onkio-tablo): ASCII table equivalent

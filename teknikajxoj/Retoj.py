@@ -149,8 +149,11 @@ if __name__ == '__main__':
     #   <https://static.iveco.com.au/download/media%2F5524d082-2a03-40c0-96de-9d6ab73f3681.pdf/Eurocargo%20Specifications.pdf>
     #   For Engine Maximum Output, GVM (Gross Vehicle Mass) and GCM (Gross Combination Mass) info))
     
+    print_info(grad=3.5*u.percent, v=135*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
     print_info(grad=4*u.percent, v=125*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
+    print_info(grad=5*u.percent, v=110*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
     print_info(grad=6*u.percent, v=100*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
+    print_info(grad=7*u.percent, v= 90*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
     print_info(grad=8*u.percent, v= 80*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
 
 

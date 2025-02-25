@@ -64,7 +64,7 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | Ŝtatestro  <br>Head of State   | <span style="color:Beige">La Reĝino Serena de Omnijo</span> |
 | Registara Tipo  <br>Government Type   | Konstitucia Monarkio / Bonfara Diktaturo / Totalisma Reĝimo, depende de kiu vi demandas[^Bulteno-RegistaraTipo]. |
 | Urbaj Projektistoj  <br>City Designers | <span style="color:#95D0FC">Ĉuĉjo la Arkitekto</span>  kaj  <span style="color:#D6B4FC">Ĝejnjo la Suvereno</span> de OCFI |
-| Oficiala Lingvo  <br>Official Language | [*Esperanto++*](Lingvo.md#lingvo), a.k.a. ***E++***, pronounced as `Epopo`. (See link for more info.)  <br>(Transitioning from English in the next 16 years.) |
+| Oficiala Lingvo  <br>Official Language | [*Esperanto++*](../teknikajxoj/Lingvo.md#lingvo), a.k.a. ***E++***, pronounced as `Epopo`. (See link for more info.)  <br>(Transitioning from English in the next 16 years.) |
 | Oficiala Religio  <br>Official Religion | Pastafarianismo[^Bulteno-Religio] |
 | Oficialaj Koloroj  <br>Official Colors   | <span style="color:Beige">Flavgriza/Beige #E6DAA6</span> [^Bulteno-Koloroj-Flavgriza]  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span> [^Bulteno-Koloroj-Bluo]  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span> [^Bulteno-Koloroj-Purpuro] |
 | Oficialaj Himno  <br>Official Anthem | *Oceans* (*Where Feet May Fail*), originally by Hillsong UNITED  <br>Modified acoustic E++ version[^Bulteno-Himno]. |
@@ -167,7 +167,7 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | Omnija Space Program                | OKP  | Omnija Kosma Programo                     | OCFI | People thought the <span style="color:Beige">Queen</span> was joking when she said about founding a space agency... When in fact she was only half-joking. |
 | Public Transport Agency             | OPT  | Omnija Publika Transporto                 | OCFI | Transport for RdO. |
 | Central Bank                        | OCB  | Omnija Centra Banko                       | OCMF | The Central Bank of RdO, serving all banks on the island (though mostly just BdO, as other banks keep being nationalized and absorbed into it). <span style="color:Beige">Serena</span>'s economic reforms put it under the direct control of OCMF, ending its not-so-long history of indepdendency from government control. |
-| Nationalized Bank                   | BdO  | Banko de Omnijo                           | OCMF | All your finance managed in one place. Security guaranteed by the central gov. Accounts are free and surcharges are included in taxes. Which you don't need to worry about filing- here taxes are automatically filed for you!  <br>*Warning: ALL informations/instructions submitted to BdO are automatically sent to the central gov. This action cannot be undone.* |
+| Nationalized Bank                   | BdO  | Banko de Omnijo                           | OCMF | All your finance managed in one place, funded by taxes. Security guaranteed by the central gov. Accounts are free and automatically created for adult citizens, which are used for dispensing the UBI. Also it files taxes for you!  <br>*Warning: ALL informations handled by BdO are immediately forwarded to the central gov. This action cannot be undone.* |
 
 ### Listo de Rolujoj
 
