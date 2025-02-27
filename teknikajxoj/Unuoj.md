@@ -50,17 +50,43 @@ also for Hexadecimal pre/surfix *H* vs Decimal pre/surfix *D*.
 > Default length unit: ***Utro*** `u` (Omnija meters)
 
 $$
-  u
+  \textrm{u}
   \equiv 3_D \times 2^{117_D} \  l_P
-  \approx 8.056_D \  m
+  \approx 8.056_D \  \textrm{m}
 $$
 
 1u is 1 cell width in-game.
 
+*Jentutro* (`ju`):
+
 $$
-  ju
-  \equiv 256_D \  u
-  \approx 2.062 \  km
+  \textrm{ju}
+  \equiv 256_D \  \textrm{u}
+  \approx 2.062_D \  \textrm{km}
+$$
+
+*Gilutro* (`gu`):
+
+$$
+  \textrm{gu}
+  \equiv 16_D^3 \  \textrm{u}
+  \approx 33.000_D \  \textrm{km}
+$$
+
+*Munioutro*  (`Mu`):
+
+$$
+  \textrm{Mu}
+  \equiv 16_D^4 \  \textrm{u}
+  \approx 527.98_D \  \textrm{km}
+$$
+
+Consequentially, One Earth radius is approximately
+
+$$
+  R_{\oplus}
+  \approx Π.148_H \  \textrm{Mu}
+  \approx 6378_D \  \textrm{km}
 $$
 
 #### Trakmezurilo
@@ -88,17 +114,17 @@ with a difference of only $2 \  mm$.
 > Default mass unit: ***Pakmo*** `p` (Omnija kilogram)
 
 $$
-  p
+  \textrm{p}
   \equiv 2^{24_D} \  m_P
-  \approx 0.365_D \  kg
+  \approx 0.365_D \  \textrm{kg}
 $$
 
 A munio of said unit mass is a Omnija ton:
 
 $$
-  Mp
-  \equiv 2^{16_D} \  p
-  \approx 23.930_D \  t
+  \textrm{Mp}
+  \equiv 2^{16_D} \  \textrm{p}
+  \approx 23.930_D \  \textrm{t}
 $$
 
 which happens to be about 1 FEU container equivalent of goods.
@@ -147,7 +173,7 @@ The Ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$.
   - 1 Ĉimuto is  $1440_D/1024_D = 1.40625_D$ SI Minutes.
 - `ŝ`: ***Ŝekuntoj*** | Omnija Seconds
   - Conversion rate:
-    $$1T = 16_D ĝ = 1024_D ĉ = 65536_D ŝ=$$
+    $$1T = 16_D ĝ = 1024_D ĉ = 65536_D ŝ$$
     i.e.,
     $1T = 10_H ĝ = 400_H ĉ = 10000_H ŝ $;
     $1ĝ = 40_H ĉ$,
@@ -161,21 +187,23 @@ The Ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$.
 
 > Speed
 
-Standard: utro por ŝekuntoj, or u/ŝ:
+Standard: utro por ŝekuntoj, or uoŝ:
 
 $$
-  u/ŝ
-  \equiv u/ŝ
-  \approx 6.40_D \  m/s
+  \textrm{uoŝ}
+  \equiv \textrm{u/ŝ}
+  = \textrm{gu/ĝ}
+  \approx 6.11_D \  \textrm{m/s}
+  \approx 22.0_D \  \textrm{kph}
 $$
 
 ju por ĝoro (or ju/ĝ / joĝ for short)
 
 $$
-  joĝ
-  \equiv ju/ĝ
-  = 1/16_D \  u/ŝ
-  \approx 1.375_D \  kph
+  \textrm{joĝ}
+  \equiv \textrm{ju/ĝ}
+  = 1/16_D \  \textrm{u/ŝ}
+  \approx 1.375_D \  \textrm{kph}
 $$
 
 - Speed limits examples:
@@ -199,55 +227,4 @@ $$
 
 ### Code illustrations
 
-```python
-    # natural units
-    # https://en.wikipedia.org/wiki/Natural_units#Planck_units
-
-    from astropy import units
-    from astropy import constants as const
-    from numpy import pi, e
-    import numpy as np
-
-    # u_nat: Planck natural units
-    u_nat : dict[str, units.UnitBase|units.Quantity] = {}
-    u_nat['dist'] = ((const.hbar * const.G / const.c**3)**0.5).si
-    u_nat['mass'] = ((const.hbar * const.c / const.G   )**0.5).si
-    u_nat['time'] = ((const.hbar * const.G / const.c**5)**0.5).si
-    u_nat['temp'] = ((const.hbar * const.c**5 / const.G)**0.5 / const.k_B).si
-
-    # u_rdo: RdO standard units
-    u_rdo = {k: u_nat[k].copy() for k in u_nat.keys()}
-    u_rdo['dist'] *= 3 * 2**117
-    u_rdo['mass'] *= 2**24
-    u_rdo['time'] *= 71863 * 2**128
-    # u_rdo['temp'] = ((const.hbar * const.c**5 / const.G)**0.5 / const.k_B).si
-
-    # derive more units
-    def normalize(u: dict):
-        u['speed']  = (u['dist'] / u['time']).to(units.m / units.s)
-        u['energy'] = (u['mass'] * u['dist']**2 / u['time']**2).to(units.J)
-        u['power']  = (u['energy'] / u['time']).to(units.W)
-    normalize(u_nat)
-    normalize(u_rdo)
-
-    # Extra
-    gx = (64*64*u_rdo['time']).to(units.h)
-    ju = (u_rdo['dist']*256).to(units.km)
-    jogx = ju/gx
-
-    # track gauges
-    track_standard_gauge = (4*units.imperial.foot + 8.5 * units.imperial.inch).si
-    track_rdo_gauge = np.e/16 * u_nat['dist'] # i.e., np.pi*np.e/6 * u_rdo['dist']
-    temp_refs_C = [0., 22.85, 36.85, 100.] * units.deg_C
-    temp_refs_K = temp_refs_C.to(units.K, equivalencies=units.equivalencies.temperature())
-
-    # output
-    print("\n".join([
-        f"{k:4} unit: {u_rdo[k]:8.6f} \t [naturalUnit: {v:.4e}]"
-        for k, v in u_nat.items()]))
-    print()
-    print(f"dist: {track_standard_gauge = } is {track_standard_gauge.to(u_rdo['dist']):6.4f}")
-    print(f"dist: proposed new gauge: {track_rdo_gauge:6.4f} \t i.e.  (1024/6101*pi*e) u_dist ({track_rdo_gauge==((1024/6101)*np.pi*np.e*u_rdo['dist'])});",
-          f"\t Deviation from std gauge: {(track_rdo_gauge-track_standard_gauge).to(units.mm):4.1f}")
-    print(f"temp: {temp_refs_C} is {temp_refs_K}, which is {temp_refs_K.to(u_rdo['temp'])} ")
-```
+See the corresponding [python script](Unuoj.py).

@@ -258,20 +258,15 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   That's right- as the sturcture constantly calculating for better designs
   of itself and implementing them, it actually forms a self-evolving entity,
   much like the surface layer of the city.
-  The long-term plan was to allow humans thriving on the surface layer,
-  while the second layer graduately converting the entire underground-
-  from several km below the surface to the mantle
-  and eventually the Earth's core-
-  into a gigantic reinforced
-  [computronium](https://en.wikipedia.org/wiki/Computronium),
-  maximizing *compute* for the benefit of everyone above- roughly speaking.
 
   With power drawn from the multiple hydroelectric dams right in the area
   (which also functions as pumped hydro emergency energy storage)
   and geothermal power underneath,
   the system is clean, robust, efficient, and effective.
-  The waste heat of the hardwares- as efficient as they may be-
-  is also recycled to produce electricity,
+  The waste heat of the hardwares-
+  as [efficient](https://en.wikipedia.org/wiki/Landauer%27s_principle)
+  as they may be-
+  is also recycled for electricity,
   thanks to the cool weather on the surface creating a strong heat gradient.
   The rest of the waste heat is pumped into the district heating system
   and the nearby vertical farms,
@@ -280,7 +275,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
 
   As the system expands physically
   both horizontally into the nearby mountains
-  and vertically into the deep deep underground,
+  and vertically into the deep underground,
   it is projected that the extra heat-
   despite the extreme efficiencies of the hardware-
   would eventually warm up local climate by 4~8 degrees Celcius,
@@ -297,14 +292,48 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   and the reservoirs created by the dams would be perfect for that.
   (Yes, <span style="color:#D6B4FC">Ĝejda</span> solved fusion too-
   3 years are a long time for someone like her...
-  Althrough, physical testing of the theoretical work takes a bit more time
-  and cannot be easily accelerated.)
+  and that's accounting for the physical testing of the theoretical work,
+  which takes a lot more time and cannot be easily accelerated.)
 
-  As for the long-term, the crazy amount of power required in the future
+  And all of this is just *the tip of the iceberg*.
+
+  <blockquote>
+    "Well, you can never have too much compute..."<br>
+    --- <span style="color:#D6B4FC">la Suvereno Ĝejda</span>
+    (fictional character), in private conversation with
+    <span style="color:#95D0FC">la Arkitekto</span>.
+  </blockquote>
+  
+  The second layer is just the beginning, a pivot that provides
+  the required compute for the new innovations and technologies allowing
+  <span style="color:#D6B4FC">la Suvereno</span> and
+  <span style="color:#95D0FC">la Arkitekto</span>
+  to launch the third phase of their *crazy* plan:
+  In which, OC's second layer is merely an entry point to the *third* layer,
+  planned to be 1 [gilutro](../teknikajxoj/Unuoj.md#longeco) (~33km)
+  below sea level- nearly 3 times as deep as
+  the [deepest manmade hole](https://en.wikipedia.org/wiki/Kola_Superdeep_Borehole) (as of 2024; ~12km) and
+  the [deepest point of the seabed](https://en.wikipedia.org/wiki/Challenger_Deep) (~11km).
+  During the course of a couple hexcades,
+  <span style="color:MediumPurple">ĜEJDA</span>
+  will graduately but exponentially convert the mantle-
+  and then the entire Earth's core-
+  into a gigantic reinforced
+  [computronium](https://en.wikipedia.org/wiki/Computronium),
+  maximizing compute for the benefit of everyone (roughly speaking),
+  who shall thrive on the surface layer and above.
+  The insane amount of power required by this third layer
   will likely have to come from off-planet (most notably the sun),
-  So a massive power-receiver station on the surface will have to be reserved;
-  Though such station will have to be distanced away from the city
-  to improve margin of error.
+  So multiple massive power-receiver stations on the surface
+  will have to be constructed;
+  Though such station will have to be distanced away from any cities
+  to allow for larger margins of error.
+
+  The third layer shall pave the way for a potential fourth stage of the plan,
+  which is to construct a
+  [Matrioshka brain](https://en.wikipedia.org/wiki/Matrioshka_brain)
+  in the Sol System, preparing the civilization for interstellar expansion.
+  But let's not get ahead of ourselves :-D .
 
   As the compute layer was designed by
   <span style="color:#D6B4FC">la Suvereno</span>,
@@ -314,7 +343,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   Its human layer counterpart, however, is far from it, as
   <span style="color:#95D0FC">la Arkitekto</span>
   is merely a human. <!-- For now. :-p -->
-  This is by design; Perfections are usually not very human-friendly actually.
+  This is by design; Perfections are usually not very human-friendly anyway.
   <!-- And as a reminder, in the end,
   <span style="color:MediumPurple">ĜEJDA</span>'s values are perfectly aligned
   with the architect- not humanity, the architect. -->

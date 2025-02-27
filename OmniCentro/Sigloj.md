@@ -151,14 +151,17 @@ Examples:
 |  St-Ĉf  | St-**Ĉ**e**f**o      | Main  Roads      |
 |  St-Lk  | St-**L**o**k**o      | Local Roads      |
 |  St-H   | St-**H**omo          | Pedestrian Roads |
-||| <!-- Misc types --> |
-|    Ĉf   | **Ĉ**e**f**o         | Main             |
-|    Pt   | **P**ar**t**o        | Part, Segment    |
 ||| <!-- Edu types --> |
 |    Bl   | **B**az**l**ernejo   | Elementary School |
 |    Ml   | **M**ez**l**ernejo   | High School      |
 |    Al   | **A**lt**l**ernejo   | College          |
 |   Uni   | **Uni**versitato     | University       |
+||| <!-- Misc types --> |
+|    Ĉf   | **Ĉ**e**f**o         | Main             |
+|    Pt   | **P**ar**t**o        | Part, Segment    |
+|    v    | **v**ersio           | version          |
+|   Skp   | **S**av**k**o**p**io | Backup           |
+|    Ŝn   | **Ŝ**anĝonoto        | Changelog        |
 
 [^Deprecated-Vj]: Deprecated.
   Vojo as a concept is too broad,

@@ -100,6 +100,7 @@ if __name__ == '__main__':
     #       reducing it to 0.15 (<https://www.engineeringtoolbox.com/friction-coefficients-d_778.html>),
     #       let's go with 15%)
 
+    print_info(grad=0.0*u.percent, v=253*u.km/u.h, engine_p=(9600*hp).to(hp))
     print_info(grad=1.5*u.percent, v=135*u.km/u.h, engine_p=(9600*hp).to(hp))
     print_info(grad=3.5*u.percent, v= 65*u.km/u.h, engine_p=(9600*hp).to(hp))
     
@@ -112,6 +113,7 @@ if __name__ == '__main__':
     #   And assuming lighter full load weight load_full=48t instead of more realistic 56t estimate
     #   Because we are amazing
     
+    print_info(grad=0.0*u.percent, v=528*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
     print_info(grad=1.2*u.percent, v=400*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
     print_info(grad=1.7*u.percent, v=360*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
     # print_info(grad=1.8*u.percent, v=350*u.km/u.h, engine_p=(1600*hp).to(hp), engine_m=0*u.t, load_full=48*u.t, car_len=24*u.m, A_d=3*4/4*u.m**2)
@@ -127,6 +129,7 @@ if __name__ == '__main__':
     #   Engine power exaggerated from 772hp (for a 24m car with a power ratio of 24kW/t) to "only" 1200hp
     #       Note: third rail cannot support high speed (>160kph),
     #       so 200kph is only for train tracks with overhead wires (not for in-game metro tracks)
+    print_info(grad=0.0*u.percent, v=380*u.km/u.h, engine_p=(1200*hp).to(hp), engine_m=0*u.t, load_full=45*u.t, car_len=24*u.m)
     print_info(grad=3.5*u.percent, v=180*u.km/u.h, engine_p=(1200*hp).to(hp), engine_m=0*u.t, load_full=45*u.t, car_len=24*u.m)
     print_info(grad=5.0*u.percent, v=135*u.km/u.h, engine_p=(1200*hp).to(hp), engine_m=0*u.t, load_full=45*u.t, car_len=24*u.m)
     print_info(grad=7.0*u.percent, v=100*u.km/u.h, engine_p=(1200*hp).to(hp), engine_m=0*u.t, load_full=45*u.t, car_len=24*u.m)
@@ -134,6 +137,7 @@ if __name__ == '__main__':
 
     print("\nTram (per car)\n")
 
+    print_info(grad= 0.0*u.percent, v=330*u.km/u.h, engine_p=(800*hp).to(hp), engine_m=0*u.t, load_full=26*u.t, load_capa=16*u.t, car_len=16*u.m)
     print_info(grad= 8.0*u.percent, v=100*u.km/u.h, engine_p=(800*hp).to(hp), engine_m=0*u.t, load_full=26*u.t, load_capa=16*u.t, car_len=16*u.m)
     print_info(grad=10.0*u.percent, v=80*u.km/u.h, engine_p=(800*hp).to(hp), engine_m=0*u.t, load_full=26*u.t, load_capa=16*u.t, car_len=16*u.m)
     print_info(grad=12.5*u.percent, v=65*u.km/u.h, engine_p=(800*hp).to(hp), engine_m=0*u.t, load_full=26*u.t, load_capa=16*u.t, car_len=16*u.m)
@@ -148,7 +152,8 @@ if __name__ == '__main__':
     #   (See Iveco Eurocargo specifications <https://www.iveco.com/Eurocargo>
     #   <https://static.iveco.com.au/download/media%2F5524d082-2a03-40c0-96de-9d6ab73f3681.pdf/Eurocargo%20Specifications.pdf>
     #   For Engine Maximum Output, GVM (Gross Vehicle Mass) and GCM (Gross Combination Mass) info))
-    
+
+    print_info(grad=0*u.percent, v=200*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)    
     print_info(grad=3.5*u.percent, v=135*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
     print_info(grad=4*u.percent, v=125*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
     print_info(grad=5*u.percent, v=110*u.km/u.h, engine_p=(860*hp).to(hp), engine_m=6*u.t, load_full=26*u.t, C_rr=0.006, C_d=0.8, A_d=2*3/1.25*u.m**2)
