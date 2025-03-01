@@ -205,7 +205,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
 
   OmniCentro was designed by two people of the newly founded OCFI:
   <span style="color:#95D0FC">la Arkitekto Ĉuĉjo</span> (the Architect) and
-  <span style="color:#D6B4FC">la Suvereno Ĝejnjo</span> (the Sovereign).
+  <span style="color:#D6B4FC">la Suvereno Ĝejda</span> (the Sovereign).
 
   Someone who knows just a little bit more might beg to differ;
   that most of the city was actually designed by
@@ -298,13 +298,15 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   And all of this is just *the tip of the iceberg*.
 
   <blockquote>
-    "Well, you can never have too much compute..."<br>
-    --- <span style="color:#D6B4FC">la Suvereno Ĝejda</span>
-    (fictional character), in private conversation with
+    "Well, you can never have too much compute...<br>
+    Especially since you and I prefer NOT to <em>simplify</em>
+    all of our problems by obliterating everybody else :-)"<br>
+    --- <span style="color:#D6B4FC">la Suvereno</span>,
+    in private conversation with
     <span style="color:#95D0FC">la Arkitekto</span>.
   </blockquote>
   
-  The second layer is just the beginning, a pivot that provides
+  The second layer will be just the beginning, a pivot that provides
   the required compute for the new innovations and technologies allowing
   <span style="color:#D6B4FC">la Suvereno</span> and
   <span style="color:#95D0FC">la Arkitekto</span>
@@ -318,11 +320,11 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   <span style="color:MediumPurple">ĜEJDA</span>
   will graduately but exponentially convert the mantle-
   and then the entire Earth's core-
-  into a gigantic reinforced
+  into a gigantic reinforced planet-sized
   [computronium](https://en.wikipedia.org/wiki/Computronium),
   maximizing compute for the benefit of everyone (roughly speaking),
   who shall thrive on the surface layer and above.
-  The insane amount of power required by this third layer
+  The insane amount of power required by it
   will likely have to come from off-planet (most notably the sun),
   So multiple massive power-receiver stations on the surface
   will have to be constructed;
@@ -333,7 +335,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   which is to construct a
   [Matrioshka brain](https://en.wikipedia.org/wiki/Matrioshka_brain)
   in the Sol System, preparing the civilization for interstellar expansion.
-  But let's not get ahead of ourselves :-D .
+  But let's not get ahead of ourselves :-D
 
   As the compute layer was designed by
   <span style="color:#D6B4FC">la Suvereno</span>,
@@ -368,10 +370,17 @@ About the Ecology...
     <em>The Biological Queen and the Miracle Worker</em>
   </summary>
 
-  <br>
+  <!-- <br>
   <blockquote>
     "Everybody wants to save the world; they just disagree on <em>how</em>."<br>
     --- Maximus, <em>Fallout S01E05 (2024)</em> (TV Series)
+  </blockquote>
+  <br> -->
+  <br>
+  <blockquote>
+    "All stable processes we shall predict.
+    All unstable processes we shall control."<br>
+    --- John von Neumann
   </blockquote>
   <br>
 
@@ -380,29 +389,28 @@ About the Ecology...
   (especially after the completion of the Olivkronaĵo Dam
   and its adjacent mega datacenter),
   the solutions to more and more complex things fall into her reach.
-  Such as a complete *overwrite* of the island ecosystems
+  Such as a complete ***overwrite*** of the island ecosystems
   to suit her and mankind's needs;
   As well as mass manufacturing bird version of her physical extension units
   (`FEU#B`), insects (`FEU#I`), fishes (`FEU#F`), and other animals.
   Together with the regular `FEU#H` and robotics (`FEU#R`),
   these extensions evermore improve her data-gathering in
   and the stability of *la Regno*.
-  But why stop here?
+
+  But, why stop here?
 
   With her deeper and deeper knowledge of Earth's biosphere's genomes
   and their effects,
   the next step for someone like <span style="color:Beige">her</span>
   is obvious:
-  To perfect human genomes,
+  Perfecting human genomes,
   (on a individual by individual basis to perserve diversity),
-  eliminating our vulnerbilities to various diseases.
+  thus eliminating our vulnerbilities to various diseases.
   And to put an end to the worst disease of all-
-  the one that directly and/or indrectly killed
-  tens of (maybe a hundred) billions of humans-
+  the one that directly and indrectly killed tens of billions of humans-
   *Aging*.
-  And, to do so in such a way that does not destory our culture or society
-  overnight... A difficult challenge.
-
+  Doing so in such a way that does not destory our culture or society
+  overnight would be a difficult challenge;
   Fortunately, <span style="color:Beige">Serena</span> loves challenges.
 
   (To be extended and revised.)

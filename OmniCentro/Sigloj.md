@@ -161,7 +161,7 @@ Examples:
 |    Pt   | **P**ar**t**o        | Part, Segment    |
 |    v    | **v**ersio           | version          |
 |   Skp   | **S**av**k**o**p**io | Backup           |
-|    Ŝn   | **Ŝ**anĝonoto        | Changelog        |
+|    Ŝn   | **Ŝ**anĝo**n**oto    | Changelog        |
 
 [^Deprecated-Vj]: Deprecated.
   Vojo as a concept is too broad,

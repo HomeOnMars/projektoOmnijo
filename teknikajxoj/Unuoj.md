@@ -138,22 +138,29 @@ which happens to be about 1 FEU container equivalent of goods.
 
 $$
   1 \  ŝ
-  \equiv 71863_D \times 2^{128_D} \  t_P
+  \equiv 9198461_D \times 2^{121_D} \  t_P
   \approx 1.318_D \  s
 $$
 <!-- 1 \  ŝ = 1.518_H \  s -->
 
 The Ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$.
 
-- `J`: ***Jaroj***    | years
-- `M`: ***Monatoj***  | Months
-- `S`: ***Semajnoj*** | Weeks
-- `T`: ***Tagoj***    | Days
+- `J`: ***Jaroj***    | Omnija Calendar years
+  - Calendar year - Length varies depending on which year it is.
+    - Dx364 tagoj (not leap year)
+    - Dx369 tagoj (leap year)
+- `Ĵ`: ***Ĵaroj***    | Omnija (Unit) years
+  - Unit year - Length is precisely Dx365.25 Omnija Days.
+- `M`: ***Monatoj***  | Omnija Months
+- `S`: ***Semajnoj*** | Omnija Weeks
+- `T`: ***Tagoj***    | Omnija Days
   - Here we assume one year is 13 months exactly,
     and each months has 4 weeks exactly
     (except leap year which happens every 4 years,
     and has 5 extra days (all considered holidays)):
-    $$1J = 13_D M = 52_D S = 364_D T$$
+    $$1J_\textrm{komun} = Σ_H M = 34_H S = 16Π_H T$$
+    except leap year:
+    $$1J_\textrm{super} = Σ M + 5T$$
     ($D$ for decimal, $H$ for Hexadecimal)
   - Winter Solstice[^Tagoj-Solstico] always happens
     in the first week of the year for the Y+\* calendars.

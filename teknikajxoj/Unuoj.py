@@ -168,18 +168,18 @@ def presi_Hx(
 # natural units
 # https://en.wikipedia.org/wiki/Natural_units#Planck_units
 
-# u_nat: Planck natural units
-u_nat : dict[str, units.UnitBase|units.Quantity] = {}
-u_nat['dist'] = ((const.hbar * const.G / const.c**3)**0.5).si
-u_nat['mass'] = ((const.hbar * const.c / const.G   )**0.5).si
-u_nat['time'] = ((const.hbar * const.G / const.c**5)**0.5).si
-u_nat['temp'] = ((const.hbar * const.c**5 / const.G)**0.5 / const.k_B).si
+# u_nat_dict: Planck natural units
+u_nat_dict : dict[str, units.UnitBase|units.Quantity] = {}
+u_nat_dict['dist'] = ((const.hbar * const.G / const.c**3)**0.5).si
+u_nat_dict['mass'] = ((const.hbar * const.c / const.G   )**0.5).si
+u_nat_dict['time'] = ((const.hbar * const.G / const.c**5)**0.5).si
+u_nat_dict['temp'] = ((const.hbar * const.c**5 / const.G)**0.5 / const.k_B).si
 
 # u_rdo: RdO standard units
-u_rdo = {k: u_nat[k].copy() for k in u_nat.keys()}
-u_rdo['dist'] *= 3 * 2**117
-u_rdo['mass'] *= 2**24
-u_rdo['time'] *= 71863 * 2**128
+u_rdo_dict = {k: u_nat_dict[k].copy() for k in u_nat_dict.keys()}
+u_rdo_dict['dist'] *= 3 * 2**117
+u_rdo_dict['mass'] *= 2**24
+u_rdo_dict['time'] *= 9198461 * 2**121 #71863 * 2**128
 # u_rdo['temp'] = ((const.hbar * const.c**5 / const.G)**0.5 / const.k_B).si
 
 # derive more units
@@ -187,13 +187,13 @@ def normalize(u: dict):
     u['speed']  = (u['dist'] / u['time']).to(units.m / units.s)
     u['energy'] = (u['mass'] * u['dist']**2 / u['time']**2).to(units.J)
     u['power']  = (u['energy'] / u['time']).to(units.W)
-normalize(u_nat)
-normalize(u_rdo)
+normalize(u_nat_dict)
+normalize(u_rdo_dict)
 
 # Extra
 class Units_RdO:
     """RdO Units System."""
-    def __init__(self, units_dict:dict=u_rdo.copy()):
+    def __init__(self, units_dict:dict=u_rdo_dict.copy()):
         self.units: dict = units_dict.copy()
 
         # dist
@@ -214,18 +214,21 @@ class Units_RdO:
         self.T  = (0x10     * self.gx).to(units.day)
         self.S  = (0x7      * self.T).to(units.week)
         self.M  = (0x4      * self.S).to(units.week)
-        self.J  = (0xD      * self.M).to(units.year)
+        self.Jx = (0xD*self.M + 5./4.*self.T).to(units.year)
 
         # speed
         self.uosx = self.u /self.sx
         self.jogx = self.ju/self.gx
         self.gogx = self.gu/self.gx    # note: gogx == uosx
 
-units_RdO = Units_RdO()
+units_RdO = Units_RdO(u_rdo_dict)
+units_nat = Units_RdO(u_nat_dict)
+u_rdo = units_RdO
+u_nat = units_nat
 
 # track gauges
 track_standard_gauge = (4*units.imperial.foot + 8.5 * units.imperial.inch).si
-track_rdo_gauge = np.e/16 * u_nat['dist'] # i.e., np.pi*np.e/6 * u_rdo['dist']
+track_rdo_gauge = np.e/16 * u_nat_dict['dist'] # i.e., np.pi*np.e/6 * u_rdo['dist']
 
 if __name__ == '__main__':
     # temperature reference points
@@ -234,10 +237,17 @@ if __name__ == '__main__':
 
     # output
     print("\n".join([
-        f"{k:4} unit: {u_rdo[k]:8.6f} \t [naturalUnit: {v:.4e}]"
-        for k, v in u_nat.items()]))
+        f"{k:4} unit: {u_rdo_dict[k]:8.6f} \t [naturalUnit: {v:.4e}]"
+        for k, v in u_nat_dict.items()]))
     print()
-    print(f"dist: {track_standard_gauge = } is {track_standard_gauge.to(u_rdo['dist']):6.4f}")
-    print(f"dist: proposed new gauge: {track_rdo_gauge:6.4f} \t i.e.  (1024/6101*pi*e) u_dist ({track_rdo_gauge==((1024/6101)*np.pi*np.e*u_rdo['dist'])});",
+    print(f"dist: {track_standard_gauge = } is {track_standard_gauge.to(u_rdo_dict['dist']):6.4f}")
+    print(f"dist: proposed new gauge: {track_rdo_gauge:6.4f} \t i.e.  (1024/6101*pi*e) u_dist ({track_rdo_gauge==((1024/6101)*np.pi*np.e*u_rdo_dict['dist'])});",
           f"\t Deviation from std gauge: {(track_rdo_gauge-track_standard_gauge).to(units.mm):4.1f}")
-    print(f"temp: {temp_refs_C} is {temp_refs_K}, which is {temp_refs_K.to(u_rdo['temp'])} ")
+    print(f"temp: {temp_refs_C} is {temp_refs_K}, which is {temp_refs_K.to(u_rdo_dict['temp'])} ")
+
+    # sidereal year <https://en.wikipedia.org/wiki/Sidereal_year> (2025-02-28)
+    u_yr = units.d * 365.256363004
+    u_yr_b = u_rdo.T / (u_yr - u_rdo.Jx) * units.yr
+    print(f"\n# of years before needing to add an extra day: {u_yr_b:.1f}")
+    print(f"Added seconds per day: {(u_rdo.T - 1*units.day).to(units.s):.3f}")
+    print(f"Added minutes per year: {(u_rdo.Jx - 1*units.year).to(units.min):.3f}")

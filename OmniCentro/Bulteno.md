@@ -57,13 +57,13 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | Country Name            |   RdO   | La Regno de Omnijo       |
 | Central Authority Name  |   OCG   | Omnija Centra Gvidantaro |
 | Government Service Name |   OCR   | Omnija Centra Registaro  |
-| Official Currency       |   OS    | Omnija Sejroj (O$)       |
+| Official Currency       |   O\$   | Omnija Sejroj            |
 
 | (Fikciaj) Fonaj Informoj  <br>(Fictional) Background Information | Priskribo  <br>Description |
 | :---------------- | ---- |
 | Ŝtatestro  <br>Head of State   | <span style="color:Beige">La Reĝino Serena de Omnijo</span> |
 | Registara Tipo  <br>Government Type   | Konstitucia Monarkio / Bonfara Diktaturo / Totalisma Reĝimo, depende de kiu vi demandas[^Bulteno-RegistaraTipo]. |
-| Urbaj Projektistoj  <br>City Designers | <span style="color:#95D0FC">Ĉuĉjo la Arkitekto</span>  kaj  <span style="color:#D6B4FC">Ĝejnjo la Suvereno</span> de OCFI |
+| Urbaj Projektistoj  <br>City Designers | <span style="color:#95D0FC">la Arkitekto</span>  kaj  <span style="color:#D6B4FC">la Suvereno</span> de OCFI |
 | Oficiala Lingvo  <br>Official Language | [*Esperanto++*](../teknikajxoj/Lingvo.md#lingvo), a.k.a. ***E++***, pronounced as `Epopo`. (See link for more info.)  <br>(Transitioning from English in the next 16 years.) |
 | Oficiala Religio  <br>Official Religion | Pastafarianismo[^Bulteno-Religio] |
 | Oficialaj Koloroj  <br>Official Colors   | <span style="color:Beige">Flavgriza/Beige #E6DAA6</span> [^Bulteno-Koloroj-Flavgriza]  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span> [^Bulteno-Koloroj-Bluo]  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span> [^Bulteno-Koloroj-Purpuro] |
@@ -72,14 +72,14 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 [^Bulteno-RegistaraTipo]: Interviewer: "So, tell us what do you think
   the kind of government our new *RdO* governemnt *OCR* is?"
   <br>...<br> <!-- Say Constitutional Monarchy, Think Totalitarian Regime -->
-  <span style="color:#D6B4FC">La Suvereno Ĝejnjo de OCFI</span>:
+  <span style="color:#D6B4FC">La Suvereno Ĝejda de OCFI</span>:
   "As stated in the constitution, we are a *Constitutional Monarchy*,
   which has never changed
   since <span style="color:Beige">Reĝino Serena</span>'s coronation.
   As a gentle reminder, next year we are still going to vote
   for the new prime minister."
   <br>...<br> <!-- Say Benevolent Dictatorship, Believe Constitutional Monarchy -->
-  <span style="color:#95D0FC">La Arkitekto Ĉuĉjo de OCFI</span>:
+  <span style="color:#95D0FC">La Arkitekto de OCFI</span>:
   "I understand your concern that the
   <span style="color:Beige">Queen</span>
   has basically replaced the whole cabinet with us
@@ -122,18 +122,19 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
   <span style="color:Beige">Queen Serena</span> herself
   idenfies as only a "part-time" Pastafarian, whatever that means.
 
-[^Bulteno-Koloroj-Flavgriza]: Beige, symbolizing the harsh unbending reality,
+[^Bulteno-Koloroj-Flavgriza]: Beige, symbolizing the harsh Unbending Reality,
   where beauty and complexities hidden deep underneath.
   <span style="color:Beige">Serena</span>'s first choice was
   Arĝento/Silver (#C0C0C0),
   but she later changed her mind and switched to beige
   because "it looks prettier".
 
-[^Bulteno-Koloroj-Bluo]: Blue, symbolizing
-  insights, understanding, and rationality; to see the world as it is.
+[^Bulteno-Koloroj-Bluo]: Blue, symbolizing Science and Rationality;
+  to see the world as it is.
 
 [^Bulteno-Koloroj-Purpuro]: Purple, as a mixture of pink and blue, symbolizing
-  empathies combined with resolutions; to mould the world into what we desire.
+  Engineering and Compassions, aka empathies combined with resolutions;
+  to mould the world into what we desire.
 
 [^Bulteno-Himno]: The new anthem is hand picked by -
   you guessed it -
@@ -167,7 +168,7 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | Omnija Space Program                | OKP  | Omnija Kosma Programo                     | OCFI | People thought the <span style="color:Beige">Queen</span> was joking when she said about founding a space agency... When in fact she was only half-joking. |
 | Public Transport Agency             | OPT  | Omnija Publika Transporto                 | OCFI | Transport for RdO. |
 | Central Bank                        | OCB  | Omnija Centra Banko                       | OCMF | The Central Bank of RdO, serving all banks on the island (though mostly just BdO, as other banks keep being nationalized and absorbed into it). <span style="color:Beige">Serena</span>'s economic reforms put it under the direct control of OCMF, ending its not-so-long history of indepdendency from government control. |
-| Nationalized Bank                   | BdO  | Banko de Omnijo                           | OCMF | All your finance managed in one place, funded by taxes. Security guaranteed by the central gov. Accounts are free and automatically created for adult citizens, which are used for dispensing the UBI. Also it files taxes for you!  <br>*Warning: ALL informations handled by BdO are immediately forwarded to the central gov. This action cannot be undone.* |
+| Nationalized Bank                   | BdO  | Banko de Omnijo                           | OCMF | All your finance managed in one place, funded by taxes. Security guaranteed by the central gov. Accounts are free and automatically created for all adult citizens, which are used for dispensing the UBI. Official citizen ID cards also double as BdO debit cards. Also it files taxes for you!  <br>*Warning: ALL informations handled by BdO will immediately be forwarded to the central gov. This action cannot be undone.* |
 
 ### Listo de Rolujoj
 
@@ -179,8 +180,8 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | RdO  | #32CD32 | <span style="color:LimeGreen">█ La Ĉefministro **Eriko** de Omnijo</span>  <!-- OCG -->  |
 | OCFD | #C0C0C0 | <span style="color:Silver">█ La Generalo **Laŭra** de Omnijo</span>  <!-- OCG -->  |
 | OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ La Kunordigestro **Dajanna** de Omnijo</span>  <!-- OCG -->  |
-| OCFI | #95D0FC | <span style="color:#95D0FC">█ La Arkitekto **Ĉuĉjo** de Omnijo</span> |
-| OCFI | #D6B4FC | <span style="color:#D6B4FC">█ La Suvereno **Ĝejnjo** de Omnijo</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo de Omnijo -->  <!-- OCG -->  |
+| OCFI | #95D0FC | <span style="color:#95D0FC">█ La Arkitekto **Ĉuĉjo** de OCFI</span> |
+| OCFI | #D6B4FC | <span style="color:#D6B4FC">█ La Suvereno **Ĝejda** de Omnijo</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo de Omnijo -->  <!-- OCG -->  |
 | OCFI | #9370DB | <span style="color:MediumPurple">█ ... (Department Color) ...</span> |
 | OCFJ | #D2691E | <span style="color:Chocolate">█ La Prokuroro **Bejko** de Omnijo</span>  <!-- OCG -->  |
 | OCME | #FFD700 | <span style="color:Gold">█ La Ministro **Jonaso** de Omnijo</span>  <!-- OCG -->  |

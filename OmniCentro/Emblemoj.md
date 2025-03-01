@@ -41,12 +41,11 @@ Here are the emblem designs for the acronyms listed in [Background Bulletin](../
 > [OCR](../fig/draw_OCG.py), and
 > [OCRR](../fig/draw_OCRR.py).
 
-| Nomo | Emblemo               |
-| :--: | :-------------------: |
-| RdO  | ![RdO](../fig/RdO.svg)   |
-| OCG  | ![OCG](../fig/OCG.svg)   |
-| OCR  | ![OCR](../fig/OCR.svg)   |
-| OCRR | ![OCRR](../fig/OCRR.svg) |
-|||
-| RdO flag | ![RdOFlago](../fig/RdOFlago.svg) |
-|||
+| Nomo | Emblemo               | Klarigo |
+| :--: | :-------------------: | ------- |
+| RdO flag | ![RdOFlago](../fig/RdOFlago.svg) | With [official colors](Bulteno.md#fonrakonta-bulteno) of RdO, the background of blue and purple symbolizes the underlying quality that powers the country: Science - Engineering - Rationality - Compassion, where science lays the foundation of engineering, and rationality empowers compassion. |
+||||
+| RdO  | ![RdO](../fig/RdO.svg)   | This beige Symbol is not only an abstraction of the letter `R` (Regno) encompassing `O` (Omnijo), but also a symbolization of life (the curve) thriving on the surface of Earth (the circular core), where the core supports and the people entrusts. |
+| OCG  | ![OCG](../fig/OCG.svg)   | Did <span style="color:#95D0FC">La Arkitekto</span> and <span style="color:#D6B4FC">La Suvereno</span> slipped their initials in here? Or was it supposed to be a clock with [minutes ĉ and hours ĝ](../teknikajxoj/Unuoj.md#tempo) symbols inside? Either way, <span style="color:Beige">La Reĝino Serena</span> is quite happy about it. Go team! |
+| OCR  | ![OCR](../fig/OCR.svg)   | A maze-like symbol for the maze-like bureaucratic apparatus, with easy access enabled by smart technologies. |
+| OCRR | ![OCRR](../fig/OCRR.svg) | Tune in to the radio with this symbol in classic dials style! |

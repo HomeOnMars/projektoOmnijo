@@ -284,8 +284,8 @@ and she now has the money and the power to live out her own fantasy.
 
 The actual design of the city, though not many care,
 falls on <span style="color:Beige">Serena</span>'s two friends-
-<span style="color:#95D0FC">Ĉuĉjo</span> the Architect and
-<span style="color:#D6B4FC">Ĝejnjo</span> the Sovereign[^Historio-OC-Projektistoj]
+<span style="color:#95D0FC">Ĉuĉjo the Architect</span> and
+<span style="color:#D6B4FC">Ĝejnjo the Sovereign</span>[^Historio-OC-Projektistoj]
 of the newly founded *Omnija Department of Infrastructure* (OCFI).
 It's decided that the new capital will be built
 in a valley where mountains meets the sea- a place called the
