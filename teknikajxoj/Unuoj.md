@@ -47,37 +47,41 @@ also for Hexadecimal pre/surfix *H* vs Decimal pre/surfix *D*.
 > Length
 
 > [!IMPORTANT]
-> Default length unit: ***Utro*** `u` (Omnija meters)
+> Default length unit: ***Utroj*** `U` (Omnija meters)
 
 $$
-  \textrm{u}
+  \textrm{U}
   \equiv 3_D \times 2^{117_D} \  l_P
   \approx 8.056_D \  \textrm{m}
 $$
 
-1u is 1 cell width in-game.
+The Utroj is calilbrated such that 1U is approximately 8 meters.
+Note: using `U` instead of `u` to avoid name clash
+with SI unit of the 'unified atomic mass unit'.
 
-*Jentutro* (`ju`):
+1 cell width in-game is 1U.
+
+*jentUtro* (`jU`):
 
 $$
-  \textrm{ju}
-  \equiv 256_D \  \textrm{u}
+  \textrm{jU}
+  \equiv 256_D \  \textrm{U}
   \approx 2.062_D \  \textrm{km}
 $$
 
-*Gilutro* (`gu`):
+*gilUtro* (`gU`):
 
 $$
-  \textrm{gu}
-  \equiv 16_D^3 \  \textrm{u}
+  \textrm{gU}
+  \equiv 16_D^3 \  \textrm{U}
   \approx 33.000_D \  \textrm{km}
 $$
 
-*Munioutro*  (`Mu`):
+*MunioUtro*  (`MU`):
 
 $$
-  \textrm{Mu}
-  \equiv 16_D^4 \  \textrm{u}
+  \textrm{MU}
+  \equiv 16_D^4 \  \textrm{U}
   \approx 527.98_D \  \textrm{km}
 $$
 
@@ -85,7 +89,7 @@ Consequentially, One Earth radius is approximately
 
 $$
   R_{\oplus}
-  \approx Π.148_H \  \textrm{Mu}
+  \approx Π.148_H \  \textrm{MU}
   \approx 6378_D \  \textrm{km}
 $$
 
@@ -97,7 +101,7 @@ Track gauge in *RdO* for trains, metros, and trams are the same:
 
 $$
   d_\mathrm{gauge}
-  \equiv \frac{\pi e}{48_D} \  u
+  \equiv \frac{\pi e}{48_D} \  \textrm{U}
   = \pi e \  2^{113_D} \  l_P
   \approx 1.4333_D \  m
 $$
@@ -111,7 +115,7 @@ with a difference of only $2 \  mm$.
 > Mass
 
 > [!IMPORTANT]
-> Default mass unit: ***Pakmo*** `p` (Omnija kilogram)
+> Default mass unit: ***pakmoj*** `p` (Omnija kilogram)
 
 $$
   \textrm{p}
@@ -134,7 +138,7 @@ which happens to be about 1 FEU container equivalent of goods.
 > Time
 
 > [!IMPORTANT]
-> Default time unit: ***Ŝekuntoj*** `ŝ` (Omnija seconds)
+> Default time unit: ***ŝekuntoj*** `ŝ` (Omnija seconds)
 
 $$
   1 \  ŝ
@@ -143,25 +147,40 @@ $$
 $$
 <!-- 1 \  ŝ = 1.518_H \  s -->
 
-The Ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$.
+The ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$.
 
+- `ŝ`: ***ŝekuntoj*** | Omnija Seconds
+- `ĉ`: ***Ĉimutoj***  | Omnija Minutes
+  - 1 Ĉimuto is  $1440_D/1024_D = 1.40625_D$ SI Minutes.
+- `ĝ`: ***Ĝoroj***    | Omnija Hours
+  - 1 Ĝoro is    $24_D/16_D = 1.5_D$ SI Hours.
+- `Mŝ`: *Munioŝekuntoj* / ***Tagoj***    | Omnija Days
+  - Conversion rate:
+    $$1\textrm{Mŝ} = 16_D ĝ = 1024_D ĉ = 65536_D ŝ$$
+    i.e.,
+    $1\textrm{Mŝ} = 10_H ĝ = 400_H ĉ = 10000_H ŝ $;
+    $1ĝ = 40_H ĉ$,
+    $1ĉ = 40_H ŝ$;
+  - i.e. $1 \  \textrm{tago} = 1 \textrm{Mŝ}$;
+  - 1 Ŝekunto is therefore
+    approximately $86400_D/65536_D = 1.318359375_D$ SI Seconds.
+  - ($D$ for decimal, $H$ for Hexadecimal)
+- `Ŝ`: ***Ŝemajnoj*** | Omnija Weeks
+- `O`: ***Monatoj***  | Omnija Months
+- `Ĵ`: ***Ĵaroj***    | Omnija Unit years
+  - Unit year - Length is precisely Dx365.25 Omnija Days.
 - `J`: ***Jaroj***    | Omnija Calendar years
   - Calendar year - Length varies depending on which year it is.
-    - Dx364 tagoj (not leap year)
-    - Dx369 tagoj (leap year)
-- `Ĵ`: ***Ĵaroj***    | Omnija (Unit) years
-  - Unit year - Length is precisely Dx365.25 Omnija Days.
-- `M`: ***Monatoj***  | Omnija Months
-- `S`: ***Semajnoj*** | Omnija Weeks
-- `T`: ***Tagoj***    | Omnija Days
-  - Here we assume one year is 13 months exactly,
+  - Here we assume one non-leap year (*komunjaro*) is 13 months exactly,
     and each months has 4 weeks exactly
-    (except leap year which happens every 4 years,
-    and has 5 extra days (all considered holidays)):
-    $$1J_\textrm{komun} = Σ_H M = 34_H S = 16Π_H T$$
-    except leap year:
-    $$1J_\textrm{super} = Σ M + 5T$$
-    ($D$ for decimal, $H$ for Hexadecimal)
+
+    $$1J_\textrm{komun} = Σ_H O = 34_H Ŝ = 16Π_H \textrm{Mŝ} = 364_D \textrm{Mŝ}$$
+
+    except leap year (*superjaro*), which happens every 4 years,
+    and has 5 extra days (all considered holidays):
+
+    $$1J_\textrm{super} = Σ O + 5 \textrm{Mŝ} = 171_H \textrm{Mŝ} = 369_D \textrm{Mŝ}$$
+
   - Winter Solstice[^Tagoj-Solstico] always happens
     in the first week of the year for the Y+\* calendars.
     The leap year (Y+\* years ends with $3_H, 7_H, λ_H, Ψ_H$) adds extra days at the end of the year,
@@ -171,45 +190,69 @@ The Ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$.
     (together with the days added by leap years if any)
     are holidays.
   - Solstices and Equinoxes are national holidays.
-<!-- - h: ***Horoj***    | Hours
-- m: ***Minutoj***  | Minutes
-- s: ***Sekundoj*** | Seconds -->
-- `ĝ`: ***Ĝoroj***    | Omnija Hours
-  - 1 Ĝoro is    $24_D/16_D = 1.5_D$ SI Hours.
-- `ĉ`: ***Ĉimutoj***  | Omnija Minutes
-  - 1 Ĉimuto is  $1440_D/1024_D = 1.40625_D$ SI Minutes.
-- `ŝ`: ***Ŝekuntoj*** | Omnija Seconds
-  - Conversion rate:
-    $$1T = 16_D ĝ = 1024_D ĉ = 65536_D ŝ$$
-    i.e.,
-    $1T = 10_H ĝ = 400_H ĉ = 10000_H ŝ $;
-    $1ĝ = 40_H ĉ$,
-    $1ĉ = 40_H ŝ$;
-  - i.e. $1T = 1 Mŝ$;
-  - 1 Ŝekunto is $86400_D/65536_D = 1.318359375_D$ SI Seconds.
 
 [^Tagoj-Solstico]: a.k.a. Northern Solstice, since *la Insulo-Omnijo* is located in the Southern Hemisphere.
+
+### Temperaturo
+
+> Temperature
+
+> [!IMPORTANT]
+> Default temperature unit: ***Zoroj*** `Z` (degree Zoro) (prrovisional name)
+
+$$
+  \textrm{Z}
+  \equiv 10011_D \times 2^{-120_D} \  T_P
+  \approx 1.067_D \  \textrm{K}
+$$
+
+The Zoroj is calilbrated such that
+Hx100 Z is approximately the [triple point of water](https://en.wikipedia.org/wiki/Triple_point#Triple_point_of_water):
+
+$$
+  \textrm{jZ}
+  \equiv 100_H Z
+  \approx 273.16_D \  \textrm{K}
+  \approx 0.013_D \  \degree \textrm{C}
+$$
+
+The boiling point of water is approximately
+
+$$
+  100_D \degree \textrm{C}
+  \approx 15Σ.λ_H \textrm{Z}
+$$
+
+$\textrm{Z} = 0$ is exactly the absolute zero temperature.
+
+Normal body temperature ranges approximately
+from $122_H \textrm{Z} \approx 36.3_D \degree \textrm{C}$
+to   $123_H \textrm{Z} \approx 37.4_D \degree \textrm{C}$.
+
+Ideal room temperature ranges approximately
+from $111_H \textrm{Z} \approx 18.2_D \degree \textrm{C}$
+to   $114_H \textrm{Z} \approx 21.4_D \degree \textrm{C}$.
 
 ### Rapido
 
 > Speed
 
-Standard: utro por ŝekuntoj, or uoŝ:
+Standard: Utro por ŝekuntoj, or Uoŝ:
 
 $$
-  \textrm{uoŝ}
-  \equiv \textrm{u/ŝ}
-  = \textrm{gu/ĝ}
+  \textrm{Uoŝ}
+  \equiv \textrm{U/ŝ}
+  = \textrm{gU/ĝ}
   \approx 6.11_D \  \textrm{m/s}
   \approx 22.0_D \  \textrm{kph}
 $$
 
-ju por ĝoro (or ju/ĝ / joĝ for short)
+jU por ĝoro (or jU/ĝ / joĝ for short)
 
 $$
   \textrm{joĝ}
-  \equiv \textrm{ju/ĝ}
-  = 1/16_D \  \textrm{u/ŝ}
+  \equiv \textrm{jU/ĝ}
+  = 1/16_D \  \textrm{U/ŝ}
   \approx 1.375_D \  \textrm{kph}
 $$
 
