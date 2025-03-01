@@ -30,7 +30,7 @@ La Historio
 (Shorter summary see [backstories summaries](../OmniCentro/Bulteno.md#fonrakontaj-resumoj).)
 
 **La Regno de Omnijo**[^Historio-RdO-Nomo] is a fictional monarchy
-located on an fictional island *la Omnija-Insulo*
+located on an fictional island *la Insulo-Omnijo*
 in the Southern Hemisphere somewhere in between Chile and New Zealand,
 near 56°15'S, 140°15'W (coordinates are fictional).
 The island has a size of approximately Iceland or Java island,

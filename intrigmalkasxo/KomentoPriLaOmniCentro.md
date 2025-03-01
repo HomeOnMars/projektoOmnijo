@@ -389,41 +389,101 @@ About the Ecology...
   (especially after the completion of the Olivkronaĵo Dam
   and its adjacent mega datacenter),
   the solutions to more and more complex things fall into her reach.
-  Such as a complete ***overwrite*** of the island ecosystems
-  to suit her and mankind's needs;
-  As well as mass manufacturing bird version of her physical extension units
-  (`FEU#B`), insects (`FEU#I`), fishes (`FEU#F`), and other animals.
-  Together with the regular `FEU#H` and robotics (`FEU#R`),
-  these extensions evermore improve her data-gathering in
-  and the stability of *la Regno*.
+  As such, a range of bio projects was launched:
 
-  But, why stop here?
+  1. **Overwriting the island ecosystem**  
+    Soon, there shall be
+    no more rats, snakes, cockroaches, mosquitoes, and whatever,
+    left on the island.
+    <br>
+    While humans are right to be skeptical of removing them
+    in fear of causing ecological disasters,
+    this is more of a statement of humanity's inherent incompetence
+    of perceiving and manipulating complex systems such as the ecosystem.
+    <br>
+    But not <span style="color:Beige">Serena</span>.
+    <br>
+    With the boost of compute and manufacturing,
+    She can now genetically engineer and mass manufacture new species at once,
+    together with her capabilities of perfect coordination,
+    she is able to push the equilibrium of the island ecosystem
+    to a new point overnight-
+    but this time, it's on her own term.
+    <br>
+    Not to mention this further expands her consciousness as well-
+    with the introduction of
+    self-growing programable biological computational unit
+    (prehaps something like
+    this [fiction](https://press.asimov.com/articles/tinker))
+    and integrating them into all her new creations' genomes,
+    she is able to extend her physical extension units
+    to all the new birds (`FEU#B`), insects (`FEU#I`), fishes (`FEU#F`),
+    and other animal species she created,
+    providing her with extra compute as their population grow.
+    Together with the regular `FEU#H` and robotics (`FEU#R`),
+    these extensions evermore improve her data-gathering in
+    and the stability of *la Regno*.
 
-  With her deeper and deeper knowledge of Earth's biosphere's genomes
-  and their effects,
-  the next step for someone like <span style="color:Beige">her</span>
-  is obvious:
-  Perfecting human genomes,
-  (on a individual by individual basis to perserve diversity),
-  thus eliminating our vulnerbilities to various diseases.
-  And to put an end to the worst disease of all-
-  the one that directly and indrectly killed tens of billions of humans-
-  *Aging*.
-  Doing so in such a way that does not destory our culture or society
-  overnight would be a difficult challenge;
-  Fortunately, <span style="color:Beige">Serena</span> loves challenges.
+  2. **Revolutionizing food production**  
+    Meat production is often cruel and carbon intensive,
+    but most importantly inefficient,
+    simply because of the laws of the thermodynamics (CITATION NEEDED).
+    Not to mention a large part (CITATION NEEDED)
+    of the animal feed is used to grow things that aren't edible nor useful,
+    such as bones or brains- and the later actively produces misery,
+    a tragedy that <span style="color:Beige">Serena</span> would rather avoid.
+    <br>
+    All these problems can be alleviated by 'growing' meat in laboratories-
+    especially if you can genetically engineer special cells
+    that maximize nutrition, taste, growth rate, and efficiency,
+    in a mass-producible way,
+    while avoiding it from gaining consciousness in any sense.
+    <br>
+    Which is precisely what <span style="color:Beige">Serena</span> have done.
+    <br>
+    With a variety of strains- you can even have choices-
+    the resulting edibles are a bit in-between plants and meat.
+    Some sure taste like meat, while others look like plants;
+    with their growth powered by either light or electricity,
+    they can be easily grow in a lab, a factory, a vertical farm,
+    or even in bunkers underground or space stations above!
+    (Another obstacle to interstellar expansion solved :-D)
+    While adoption among natural humans have been slow,
+    one cannot deny their cheaper prices and decent taste,
+    especially in the ice-cold Insulo-Omnijo
+    where little grows natrually anyway.
+    <br>(NOTE: NEED TO THINK OF A NAME FOR THE FOOD)
 
-  No matter what the solution might be,
-  a helpful first step would be to *take over the healthcare system*.
-  It's long overdue anyway-
-  continue to allow the inefficient human doctors losing their patients
-  through their own imcompetence
-  (relative to <span style="color:MediumPurple">ĜEJDA</span>)
-  is just absurd, if you actually do care about human lives.
-  Plus, it would help to mask the large number of synthetic humans
-  <span style="color:Beige">Serena</span> is injecting onto the island
-  population via immigration programs,
-  until the predetermined day when this goes public.
+  3. **Ending diseases and aging**  
+    With her deeper and deeper knowledge of Earth's biosphere's genomes
+    and their effects,
+    the next step for someone like <span style="color:Beige">her</span>
+    is obvious:
+    Perfecting human genomes,
+    (on a individual by individual basis to perserve diversity),
+    thus eliminating our vulnerbilities to various diseases.
+    And to put an end to the worst disease of all-
+    the one that directly and indrectly killed tens of billions of humans-
+    *Aging*.
+    Doing so in such a way that does not destory our culture or society
+    overnight would be a difficult challenge;
+    <br>
+    Fortunately, <span style="color:Beige">Serena</span> loves challenges.
+    <br>(MORE DISCUSSIONS)
+
+  4. **Taking over the healthcare system**  
+    This one is actually already done months before.
+    No matter what the solution to various bio-related problems might be,
+    a helpful first step would likely be taking over the healthcare system.
+    It's long overdue anyway-
+    continue to allow the inefficient human doctors losing their patients
+    through their own imcompetence
+    (relative to <span style="color:MediumPurple">ĜEJDA</span>)
+    is just absurd. (that is, assuming that you do care about human lives.)
+    Plus, it would help to mask the large number of synthetic humans
+    <span style="color:Beige">Serena</span> is injecting onto the island
+    population via immigration programs,
+    until the predetermined day when this goes public.
 
   (To be extended and revised.)
 

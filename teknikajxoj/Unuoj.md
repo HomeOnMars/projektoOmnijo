@@ -188,7 +188,7 @@ The Ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$.
   - i.e. $1T = 1 Mŝ$;
   - 1 Ŝekunto is $86400_D/65536_D = 1.318359375_D$ SI Seconds.
 
-[^Tagoj-Solstico]: a.k.a. Northern Solstice, since *la Omnija-Insulo* is located in the Southern Hemisphere.
+[^Tagoj-Solstico]: a.k.a. Northern Solstice, since *la Insulo-Omnijo* is located in the Southern Hemisphere.
 
 ### Rapido
 

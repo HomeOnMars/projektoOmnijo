@@ -128,6 +128,7 @@ Examples:
 |    Lg   | **L**a**g**o         | Lake             |
 |    Rv   | **R**i**v**ero       | River            |
 |  ~~Mr~~ | **M**a**r**o         | Sea  <br>(Deprecated - Use full form instead) |
+|    Is   | **I**n**s**ulo       | Island           |
 ||| <!-- District types --> |
 |    Dt   | **D**is**t**rikto    | District         |
 |    Ia   | **I**ndustri**a**reo | Industrial Area  |
