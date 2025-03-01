@@ -413,6 +413,18 @@ About the Ecology...
   overnight would be a difficult challenge;
   Fortunately, <span style="color:Beige">Serena</span> loves challenges.
 
+  No matter what the solution might be,
+  a helpful first step would be to *take over the healthcare system*.
+  It's long overdue anyway-
+  continue to allow the inefficient human doctors losing their patients
+  through their own imcompetence
+  (relative to <span style="color:MediumPurple">ĜEJDA</span>)
+  is just absurd, if you actually do care about human lives.
+  Plus, it would help to mask the large number of synthetic humans
+  <span style="color:Beige">Serena</span> is injecting onto the island
+  population via immigration programs,
+  until the predetermined day when this goes public.
+
   (To be extended and revised.)
 
 </details>
