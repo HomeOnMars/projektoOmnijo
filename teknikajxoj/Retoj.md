@@ -47,10 +47,10 @@ Retoj
 
   |             |  max Gradient $s$ (Dx) |  min Curve radius $R$ (Dx) | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Notes |
   | ----------- | :-------: | :----------: | :--------: | :--------: | --- | --- | --- | --- | ----- |
-  | -           |  3.5 \%   |  640m (80u)  |  135 km/h  |  60 joĝ | $103\degree$ | $137\degree$ | $158\degree$ | $169\degree$ | |
-  | -           |  5   \%   |  424m (53u)  |  110 km/h  |  50 joĝ | -            | $118\degree$ | $147\degree$ | $163\degree$ | |
-  | Recommended |  7   \%   |  288m (36u)  |   90 km/h  |  40 joĝ | -            |  $97\degree$ | $133\degree$ | $155\degree$ | |
-  | Soft Limit  | 10   \%   |  144m (18u)  |   65 km/h  |  30 joĝ | -            | -            |  $97\degree$ | $133\degree$ | Mountains Only |
+  | -           |  3.7 \%   |  616m (77u)  |  130 km/h  |  60 joĝ | $101\degree$ | $135\degree$ | $157\degree$ | $169\degree$ | |
+  | -           |  5.1 \%   |  424m (53U)  |  110 km/h  |  50 joĝ | -            | $118\degree$ | $147\degree$ | $163\degree$ | |
+  | Recommended |  7   \%   |  272m (34u)  |   90 km/h  |  40 joĝ | -            |  $94\degree$ | $128\degree$ | $154\degree$ | |
+  | Soft Limit  | 10   \%   |  160m (20u)  |   65 km/h  |  30 joĝ | -            | -            | $103\degree$ | $137\degree$ | Mountains Only |
   | Hard Limit  | 20   \%   |   40m  (5u)  |   35 km/h  |  18 joĝ | -            | -            | -            |  -           | Mountains Only |
 
   - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
@@ -84,10 +84,10 @@ Arterial / Collector / Local Roads:
   | Recommended |  10  \%   |  65 km/h  |  30 joĝ | `St-Dt` Distributor (2+ Ŭ lanes per direction, No parking, No zoning, tram tracks in the middle)   |
   ||||||
   | Recommended |  15  \%   |  45 km/h  |  20 joĝ | `St-Ĉf` Local roads (Main or Low Ped Activity, tram tracks on the sides) |
-  | Recommended |  20  \%   |  35 km/h  |  18 joĝ | `St-Lk` Local roads (High Ped Activity) |
-  | Hard Limit  |  30  \%\* |  20 km/h  |  10 joĝ | `St-Lk` Local roads |
+  | Recommended |  21  \%\* |  35 km/h  |  18 joĝ | `St-Lk` Local roads (High Ped Activity) |
+  | Hard Limit  |  33  \%\* |  20 km/h  |  10 joĝ | `St-Lk` Local roads / Pedestrian Roads |
   ||||||
-  | Recommended |  30  \%\* |  10 km/h  |   8 joĝ | `St-H`  Pedestrian Roads |
+  | Recommended |  33  \%\* |  10 km/h  |   8 joĝ | `St-H`  Pedestrian Roads |
 
   \* Note that vanilla game by default only allow up to $20 \%$ gradient.
 
@@ -136,9 +136,9 @@ Arterial / Collector / Local Roads:
 
   |             | max Gradient $s$ (Dx) | min Curve radius $R$ (Dx) | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
   | ----------- | :--------------: | :------------------: | :--------------------------: | :-----: | --- | --- | --- | --- | ------------------- |
-  | Recommended |  1.5 \%  | 1024m (128u) |  180 km/h  |  80 joĝ | $127\degree$ | $152\degree$ | $166\degree$ | $173\degree$ | (Note: 200km/h for passenger trains; 135km/h for cargo trains) |
-  | -           |  1.5 \%  |  576m (72u)   |  135 km/h  |  60 joĝ |  $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | |
-  | Hard Limit  |  3.5 \%  |  144m  (18u)  |   65 km/h  |  30 joĝ | -            | -            |  $97\degree$ | $133\degree$ | Lithgow Zig Zag |
+  | -           |  1.6 \%  | 1144m (143u) |  185 km/h  |  88 joĝ | $132\degree$ | $155\degree$ | $168\degree$ | $174\degree$ | (Note: 185km/h for passenger trains; 130km/h for cargo trains) |
+  | -           |  1.6 \%  |  576m (72u)   |  130 km/h  |  60 joĝ |  $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | |
+  | Hard Limit  |  3.7 \%  |  144m  (18u)  |   65 km/h  |  30 joĝ | -            | -            |  $97\degree$ | $133\degree$ | Lithgow Zig Zag |
 
   - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
     i.e., $\theta_\mathrm{64u}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 64u.
@@ -159,14 +159,14 @@ Arterial / Collector / Local Roads:
 
 - Gradient $s$ and Curve radius $R$ limit:
 
-  |             | max Gradient $s$ | min Curve radius $R$ | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
-  | ----------- | :------: | :------------: | :--------: | --- | --- | --- | --- | ------------------- |
-  | -           |  1.2 \%  |  7000m (875u)  |  400 km/h  | $172\degree$ | $176\degree$ | $178\degree$ | $179\degree$ | |
-  | Recommended |  1.7 \%  |  5700m (712u)  |  360 km/h  | $170\degree$ | $175\degree$ | $178\degree$ | $179\degree$ | |
-  | Soft Limit  |  2.2 \%  |  4480m (560u)  |  320 km/h  | $167\degree$ | $174\degree$ | $177\degree$ | $179\degree$ | |
-  | -           |  2.7 \%  |  3440m (430u)  |  280 km/h  | -            | -            | -            | -            | |
-  | Hard Limit  |  3.4 \%  |  2520m (315u)  |  240 km/h  | $158\degree$ | $169\degree$ | $175\degree$ | $178\degree$ | |
-  | -           |  4.2 \%  |  1760m (220u)  |  200 km/h  | -            | -            | -            | -            | |
+  |             | max Gradient $s$ | min Curve radius $R$ | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
+  | ----------- | :------: | :------------: | :--------: | :--------: | --- | --- | --- | --- | ------------------- |
+  | -           |  1.4 \%  |  6808m (851u)  |  395 km/h  | 120 joĝ | $172\degree$ | $176\degree$ | $178\degree$ | $179\degree$ | |
+  | Recommended |  1.9 \%  |  5376m (672u)  |  350 km/h  | 100 joĝ | $170\degree$ | $175\degree$ | $178\degree$ | $179\degree$ | |
+  | Soft Limit  |  2.4 \%  |  4120m (515u)  |  305 km/h  |  Υ0 joĝ | $166\degree$ | $173\degree$ | $177\degree$ | $179\degree$ | |
+  | -           |  3.1 \%  |  3024m (378u)  |  260 km/h  |  Π0 joĝ | -            | -            | -            | -            | |
+  | Hard Limit  |  3.9 \%  |  2104m (263u)  |  220 km/h  |  Δ0 joĝ | $153\degree$ | $167\degree$ | $174\degree$ | $177\degree$ | |
+  | -           |  5.1 \%  |  1344m (168u)  |  175 km/h  |  80 joĝ | -            | -            | -            | -            | |
 
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
@@ -188,11 +188,11 @@ Arterial / Collector / Local Roads:
 
 - Gradient $s$ and Curve radius $R$ limit:
 
-  |             | max Gradient $s$ | min Curve radius $R$  | Speed limit $v_\mathrm{max}$ | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
-  | ----------- | :--------------: | :------------------------: | :----------------------------: | --- | --- | --- | --- | ------------------- |
-  | -           |  3.5 \%  | 1024m (128u) |  180 km/h  | $127\degree$ | $152\degree$ | $166\degree$ | $173\degree$ | (Note: overhead-wire-powered tracks only (No third rail metro tracks)) |
-  | Recommended |  5   \%  |  576m (72u)  |  135 km/h  | $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;  <br>($R$) Assuming tilting trains. |
-  | Hard Limit  |  7   \%  |  320m (40u)  |  100 km/h  | -                 | $103\degree$ | $137\degree$  | $158\degree$ | ($s$) Bernina Railway, Switzerland;  <br>($R$) Bay Area Rapid Transit, United States. |
+  |             | max Gradient $s$ | min Curve radius $R$  | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
+  | ----------- | :--------------: | :------------------------: | :----------------------------: | :--------: | --- | --- | --- | --- | ------------------- |
+  | -           |  3.5 \%  | 1144m (143u) |  185 km/h  |  88 joĝ | $132\degree$ | $155\degree$ | $168\degree$ | $174\degree$ | (Note: overhead-wire-powered tracks only (No third rail metro tracks)) |
+  | Recommended |  5.4 \%  |  576m (72u)  |  130 km/h  |  60 joĝ | $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;  <br>($R$) Assuming tilting trains. |
+  | Hard Limit  |  7.4 \%  |  320m (40u)  |  100 km/h  |  48 joĝ | -                 | $103\degree$ | $137\degree$  | $158\degree$ | ($s$) Bernina Railway, Switzerland;  <br>($R$) Bay Area Rapid Transit, United States. |
 
   - Assuming tilting trains: see [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant).
   - Note: curve radius restrictions may be relaxed when exiting / entering stations where speed is slow.
@@ -230,12 +230,11 @@ Arterial / Collector / Local Roads:
 
 - Gradient $s$ limit:
 
-  |             | max Gradient $s$ | min Curve radius $R$ (without slowing)  | Speed limit $v_\mathrm{max}$ | Real world examples |
-  | ----------- | :--------------: | :--------------: | :--------------------------: | ------------------- |
-  | -           |   8   \%  |  448m (56u)  | 100 km/h  | |
-  | Recommended |  10   \%  |  288m (36u)  |  80 km/h  | Sheffield Supertram, Sheffield |
-  | -           |  12.5 \%  |  192m (24u)  |  65 km/h  | Lisbon Tramways, Portugal |
-  | Hard Limit  |  18   \%  |   96m (12u)  |  45 km/h  | |
+  |             | max Gradient $s$ | min Curve radius $R$ (without slowing)  | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | Real world examples |
+  | ----------- | :--------------: | :--------------: | :--------------------------: | :--------: | ------------------- |
+  | Recommended |   9.6 \%  |  384m (48u)  |  90 km/h  |  40 joĝ | Sheffield Supertram, Sheffield |
+  | Recommended |  13   \%  |  216m (27u)  |  65 km/h  |  30 joĝ | Lisbon Tramways, Portugal |
+  | Hard Limit  |  20   \%  |   96m (12u)  |  45 km/h  |  20 joĝ | |
 
   - Note: Faster than 65 km/h speed can only be achieved on separated tracks.
   - Curve radius limit here can be ignored, as trams slow down near intersections.

@@ -155,7 +155,7 @@ def presi_Hx(
         v = int(np.floor(n / unit))
         n -= v * unit
         ans += symbols_inv[v]
-        if stop_when_precise and not n:
+        if stop_when_precise and not n and (e_sep or i >= grandordo):
             break
         if (e_sep and i == 0) or (not e_sep and i == grandordo):
             ans += d_sep
@@ -177,7 +177,7 @@ def presi_Hx(
 u_si_defs : dict[str, units.UnitBase] = {
     v: getattr(units, v)
     for v in [
-        'm', 'cm', 'km', 'au', 'lyr', 'pc',
+        'm', 'cm', 'km', 'Rearth', 'au', 'lyr', 'pc',
         'kg', 'g', 
         's', 'd', 'yr',
         'K',
@@ -190,18 +190,18 @@ units.def_unit('mph', units.imperial.mi / units.h, namespace=u_si_defs)
 # https://en.wikipedia.org/wiki/Natural_units#Planck_units
 
 # u_nat_dict: Planck natural units
-u_nat_dict : dict[str, units.UnitBase] = {}
+u_nat_base : dict[str, units.UnitBase] = {}
 u_nat_defs : dict[str, units.UnitBase] = {}
-u_nat_dict['dist'] = units.def_unit(
+u_nat_base['dist'] = units.def_unit(
     'l_P', (const.hbar * const.G / const.c**3)**0.5,
     namespace=u_nat_defs, format={'latex': r' l_P '})
-u_nat_dict['mass'] =  units.def_unit(
+u_nat_base['mass'] =  units.def_unit(
     'm_P', (const.hbar * const.c / const.G   )**0.5,
     namespace=u_nat_defs, format={'latex': r' m_P '})
-u_nat_dict['time'] =  units.def_unit(
+u_nat_base['time'] =  units.def_unit(
     't_P', (const.hbar * const.G / const.c**5)**0.5,
     namespace=u_nat_defs, format={'latex': r' t_P '})
-u_nat_dict['temp'] =  units.def_unit(
+u_nat_base['temp'] =  units.def_unit(
     'T_P', (const.hbar * const.c**5 / const.G)**0.5 / const.k_B,
     namespace=u_nat_defs, format={'latex': r' T_P '})
 
@@ -212,26 +212,34 @@ u_rdo_prefixes = [
     ('g', ['gil'],   0x1000),
     ('M', ['Munio'], 0x10000),
 ]
-u_rdo_dict : dict[str, units.UnitBase] = u_nat_dict.copy()
+u_rdo_base : dict[str, units.UnitBase] = u_nat_base.copy()
 u_rdo_defs : dict[str, units.UnitBase] = {}
 #    defs
-u_rdo_dict['dist'] = units.def_unit(
-    ['U', 'Utro'], 3 * 2**117 * u_nat_dict['dist'],
+u_rdo_base['dist'] = units.def_unit(
+    # note: 1149807 / 3.0 = 383269
+    ['U', 'Utro'], 383269 * 2**100 * u_nat_base['dist'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
-u_rdo_dict['mass'] = units.def_unit(
-    ['p', 'pakmo'], 2**24 * u_nat_dict['mass'],
+u_rdo_base['mass'] = units.def_unit(
+    ['p', 'pakmo'], 2**24 * u_nat_base['mass'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
-u_rdo_dict['time'] = units.def_unit(
-    ['ŝ', 'ŝekunto'], 9198461 * 2**121 * u_nat_dict['time'],    #71863 * 2**128
+u_rdo_base['time'] = units.def_unit(
+    ['ŝ', 'ŝekunto'], 1149807 * 2**124 * u_nat_base['time'],    #71863 * 2**128
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
-u_rdo_dict['temp'] = units.def_unit(
-    ['Z', 'Zoro'], 10011 * 2**(-120) * u_nat_dict['temp'],
+u_rdo_base['temp'] = units.def_unit(
+    ['Z', 'Zoro'], 10011 * 2**(-120) * u_nat_base['temp'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
+#    extra defs: prefixes
+for prefix_sn, prefix_tab, scale in u_rdo_prefixes:
+    if prefix_sn not in {'h', 'g'}:    # avoid name collisions with SI units
+        units.def_unit(
+            [prefix_sn, *prefix_tab],
+            scale*units.dimensionless_unscaled,
+            namespace=u_rdo_defs)
 #    extra defs: time
 units.def_unit(
-    ['ĉ', 'ĉimuto'],   0x40 * u_rdo_dict['time'], namespace=u_rdo_defs)
+    ['ĉ', 'ĉimuto'],   0x40 * u_rdo_base['time'], namespace=u_rdo_defs)
 units.def_unit(
-    ['ĝ', 'ĝoro'],   0x1000 * u_rdo_dict['time'], namespace=u_rdo_defs)
+    ['ĝ', 'ĝoro'],   0x1000 * u_rdo_base['time'], namespace=u_rdo_defs)
 units.def_unit(
     ['tago'], u_rdo_defs['Mŝ'], namespace=u_rdo_defs)
 units.def_unit(
@@ -242,7 +250,7 @@ units.def_unit(
     ['Ĵ', 'Ĵaro'], 365.25 * u_rdo_defs['Mŝ'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 #    extra defs: speed
-units.def_unit('uoŝ', u_rdo_defs[ 'U']/u_rdo_defs['ŝ'], namespace=u_rdo_defs)
+units.def_unit('Uoŝ', u_rdo_defs[ 'U']/u_rdo_defs['ŝ'], namespace=u_rdo_defs)
 units.def_unit('joĝ', u_rdo_defs['jU']/u_rdo_defs['ĝ'], namespace=u_rdo_defs)
 
 
@@ -251,6 +259,7 @@ units.def_unit('joĝ', u_rdo_defs['jU']/u_rdo_defs['ĝ'], namespace=u_rdo_defs)
 def normalize(u: dict[str, units.UnitBase]) -> dict[str, units.UnitBase]:
     # derived units
     u['speed']  = u['dist'] / u['time']
+    u['accel']  = u['dist'] / u['time']**2
     u['energy'] = u['mass'] * u['dist']**2 / u['time']**2
     u['power']  = u['energy'] / u['time']
     # constants
@@ -260,8 +269,8 @@ def normalize(u: dict[str, units.UnitBase]) -> dict[str, units.UnitBase]:
     u['k_B'] = u['dist']**2 * u['mass'] / (u['time']**2 * u['temp'])
     return u
 
-normalize(u_nat_dict)
-normalize(u_rdo_dict)
+normalize(u_nat_base)
+normalize(u_rdo_base)
 
 
 # Extra
@@ -269,22 +278,28 @@ class Unuoj:
     """Units System."""
     def __init__(
         self,
-        units_dict: dict[str, units.UnitBase] = {},
+        units_base: dict[str, units.UnitBase] = {},
         units_defs: dict[str, units.UnitBase] = {},
     ):
-        self.units: dict = normalize(units_dict)
+        self._base: dict[str, units.UnitBase] = normalize(units_base)
+        self._defs: dict[str, units.UnitBase] = units_defs
         for k, v in units_defs.items():
             setattr(self, k.translate(ASCIIIFY), v)
 
-unitsRdO = Unuoj(u_rdo_dict, u_rdo_defs)
-unitsNat = Unuoj(u_nat_dict, u_nat_defs)    # testing
+    def enable(self):
+        return units.add_enabled_units(self._defs)
+
+unitsRdO = Unuoj(u_rdo_base, u_rdo_defs)
+unitsNat = Unuoj(u_nat_base, u_nat_defs)    # testing
 u_rdo = unitsRdO
 u_nat = unitsNat
-u = Unuoj(u_rdo_dict, u_rdo_defs | u_nat_defs | u_si_defs)
+u = Unuoj(u_rdo_base, u_rdo_defs | u_nat_defs | u_si_defs)
 
 # track gauges
 track_standard_gauge = (4*units.imperial.foot + 8.5 * units.imperial.inch).si
-track_rdo_gauge = np.e/16 * u_nat_dict['dist'] # i.e., np.pi*np.e/6 * u_rdo['dist']
+track_rdo_gauge = np.e/16 * u_nat_base['dist'] # i.e., np.pi*np.e/6 * u_rdo['dist']
+
+
 
 if __name__ == '__main__':
     # temperature reference points
@@ -293,15 +308,22 @@ if __name__ == '__main__':
 
     # output
     print("\n".join([
-        f"{k:4} unit: {(1*u_rdo_dict[k]).si:8.6f} \t [naturalUnit: {(1*v).si:.4e}]"
-        for k, v in u_nat_dict.items()]))
+        f"{k:4} unit: {(1*u_rdo_base[k]).si:8.6f} \t [naturalUnit: {(1*v).si:.4e}]"
+        for k, v in u_nat_base.items()]))
     print()
-    print(f"dist: {track_standard_gauge = } is {track_standard_gauge.to(u_rdo_dict['dist']):6.4f}")
-    print(f"temp: {temp_refs_C} is {temp_refs_K}, which is {temp_refs_K.to(u_rdo_dict['temp'])} ")
+    print(f"dist: {track_standard_gauge = } is {track_standard_gauge.to(u_rdo_base['dist']):6.4f}")
+    print(f"temp: {temp_refs_C} is {temp_refs_K}, which is {temp_refs_K.to(u_rdo_base['temp'])} ")
 
     # sidereal year <https://en.wikipedia.org/wiki/Sidereal_year> (2025-02-28)
-    u_yr = units.d * 365.256363004
-    u_yr_b = u_rdo.Msx / (1*u_yr - 1*u_rdo.Jx) * units.yr
-    print(f"\n# of years before needing to add an extra day: {u_yr_b:.1f}")
+    #u_yr = units.d * 365.256363004
+    u_yr = units.yr
+    u_yr_b = (u_rdo.Msx / (1*u_yr - 1*u_rdo.Jx)).si * units.yr
+    print(f"\n# of years before needing to subtract a day: {u_yr_b:.1f}")
     print(f"Added seconds per day: {(1*u_rdo.Msx - 1*units.day).to(units.s):.3f}")
     print(f"Added minutes per year: {(1*u_rdo.Jx - 1*units.year).to(units.min):.3f}")
+
+    print("\nTesting name collision with SI units... ", end='')
+    # units.add_enabled_units(u_rdo_defs)
+    u_nat.enable()
+    u_rdo.enable()
+    print("Done.")

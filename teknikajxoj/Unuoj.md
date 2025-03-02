@@ -32,10 +32,11 @@ See [Wikipedia](https://en.wikipedia.org/wiki/Natural_units#Planck_units).
 > is the [Planck length](https://simple.wikipedia.org/wiki/Planck_length#);  
 > Planck mass $m_P \equiv \sqrt{\frac{\hbar c}{G}}$;  
 > Planck time $t_P \equiv \sqrt{\frac{\hbar G}{c^5}}$;  
-> $c$ is the speed of light;  
-> $\hbar$ is the reduced Planck constant;  
-> $G$ is the gravitational constant;  
-> $e$ is the natural constant.
+> Planck temperature $T_P \equiv \sqrt{\frac{\hbar c^5}{G k_B^2}}$;  
+> $c$ is the [speed of light](https://en.wikipedia.org/wiki/Speed_of_light) in vaccum;  
+> $\hbar$ is the [reduced Planck constant](https://en.wikipedia.org/wiki/Planck_constant#Reduced_Planck_constant) (\~ photon energy per frequency);  
+> $G$ is the [gravitational constant](https://en.wikipedia.org/wiki/Gravitational_constant) (\~ strength of gravity per mass);  
+> $k_B$ is the [Boltzmann constant](https://en.wikipedia.org/wiki/Boltzmann_constant) (molecular energy scale per temperature).
 
 See also [Lingvo](../teknikajxoj/Lingvo.md#algebro) page for prefix acronyms
 $h \  j \  g \  M \  N_2 \  N_3 \  N_4$ for
@@ -51,22 +52,29 @@ also for Hexadecimal pre/surfix *H* vs Decimal pre/surfix *D*.
 
 $$
   \textrm{U}
-  \equiv 3_D \times 2^{117_D} \  l_P
-  \approx 8.056_D \  \textrm{m}
+  \equiv 383269_D \times 2^{100_D} \  l_P
+  = 5Σ925_H 2^{64_H} \  l_P
+  \approx 7.8526_D \  \textrm{m}
 $$
 
-The Utroj is calilbrated such that 1U is approximately 8 meters.
-Note: using `U` instead of `u` to avoid name clash
-with SI unit of the 'unified atomic mass unit'.
+The Utroj is calilbrated such that 1U is approximately 8 meters,
+while the speed of light $c = 300 \ 0000_H \textrm{U/ŝ}$ precisely
+under the [time definition ŝ](#tempo).
 
-1 cell width in-game is 1U.
+Notes:
+
+- $383269_D = 1149807_D / 3$.
+- 1 cell width in-game (Cities Skylines 2) is set as 1U exactly.
+  This is an assumption imposed by me for RdO-related cities only.
+- Using `U` instead of `u` to avoid name clash
+with SI unit of the 'unified atomic mass unit'.
 
 *jentUtro* (`jU`):
 
 $$
   \textrm{jU}
   \equiv 256_D \  \textrm{U}
-  \approx 2.062_D \  \textrm{km}
+  \approx 2.0103_D \  \textrm{km}
 $$
 
 *gilUtro* (`gU`):
@@ -74,7 +82,7 @@ $$
 $$
   \textrm{gU}
   \equiv 16_D^3 \  \textrm{U}
-  \approx 33.000_D \  \textrm{km}
+  \approx 32.164_D \  \textrm{km}
 $$
 
 *MunioUtro*  (`MU`):
@@ -82,15 +90,15 @@ $$
 $$
   \textrm{MU}
   \equiv 16_D^4 \  \textrm{U}
-  \approx 527.98_D \  \textrm{km}
+  \approx 514.63_D \  \textrm{km}
 $$
 
 Consequentially, One Earth radius is approximately
 
 $$
   R_{\oplus}
-  \approx Π.148_H \  \textrm{MU}
-  \approx 6378_D \  \textrm{km}
+  \approx Π.64Π4_H \  \textrm{MU}
+  \approx 6378.1_D \  \textrm{km}
 $$
 
 #### Trakmezurilo
@@ -101,14 +109,18 @@ Track gauge in *RdO* for trains, metros, and trams are the same:
 
 $$
   d_\mathrm{gauge}
-  \equiv \frac{\pi e}{48_D} \  \textrm{U}
-  = \pi e \  2^{113_D} \  l_P
-  \approx 1.4333_D \  m
+  \equiv \frac{3}{16_D} \  \textrm{U}
+  = 1149807 \times  2^{96_D} \  l_P
+  \approx 1.4724_D \  m
 $$
 
-which is compatible with the standard gauge ($1.4351_D \  m$)
-with a difference of only $2 \  mm$.
-(Hopefully that's small enough...)
+Yes this is incompatible with the standard gauge (Dx 1.4351 m)
+with a difference of 3.7 cm.
+This is part of Omnijo's intentional effort to isolate itself
+from the rest of the world technologically,
+without directly imposing on people's freedom...
+Basically the main point of
+coming up with its own unit system in the first place.
 
 ### Maso
 
@@ -142,8 +154,8 @@ which happens to be about 1 FEU container equivalent of goods.
 
 $$
   1 \  ŝ
-  \equiv 9198461_D \times 2^{121_D} \  t_P
-  \approx 1.318_D \  s
+  \equiv 1149807_D \times 2^{124_D} \  t_P
+  \approx 1.3184_D \  s
 $$
 <!-- 1 \  ŝ = 1.518_H \  s -->
 
@@ -198,7 +210,7 @@ The ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$.
 > Temperature
 
 > [!IMPORTANT]
-> Default temperature unit: ***Zoroj*** `Z` (degree Zoro) (prrovisional name)
+> Default temperature unit: ***Zoroj*** `Z` (degree Zoro) (provisional name)
 
 $$
   \textrm{Z}
@@ -243,8 +255,8 @@ $$
   \textrm{Uoŝ}
   \equiv \textrm{U/ŝ}
   = \textrm{gU/ĝ}
-  \approx 6.11_D \  \textrm{m/s}
-  \approx 22.0_D \  \textrm{kph}
+  \approx 5.9563_D \  \textrm{m/s}
+  \approx 21.443_D \  \textrm{kph}
 $$
 
 jU por ĝoro (or jU/ĝ / joĝ for short)
@@ -253,27 +265,69 @@ $$
   \textrm{joĝ}
   \equiv \textrm{jU/ĝ}
   = 1/16_D \  \textrm{U/ŝ}
-  \approx 1.375_D \  \textrm{kph}
+  \approx 1.3402_D \  \textrm{kph}
 $$
 
+The speed of light is exactly
+
+$$
+  c
+  =  300 \ 0000_H \textrm{U/ŝ}
+  = 3000 \ 0000_H \textrm{joĝ}
+  =         300_H \textrm{MU/ŝ}
+$$
+
+So when speed exceeds 1 MU/ŝ (or Hx 10 0000 joĝ, or \~0.13\%c),
+relativistic effects should be considered.
+
 - Speed limits examples:
+  (kph limit is corrected with a multiplication factor of `8m/U`)
 
   | joĝ | kph (proksimumo) | kph (limo) |
   | :--------- | :----: | ---------: |
-  |   Hx 100   | Dx 352 |   Dx 360   |
-  |   Hx  80   | Dx 176 |   Dx 180   |
-  |   Hx  60   | Dx 132 |   Dx 135   |
-  |   Hx  58   | Dx 121 |   Dx 125   |
-  |   Hx  50   | Dx 110 |   Dx 110   |
-  |   Hx  48   | Dx  99 |   Dx 100   |
-  |   Hx  40   | Dx  88 |   Dx  90   |
-  |   Hx  38   | Dx  77 |   Dx  80   |
-  |   Hx  30   | Dx  66 |   Dx  65   |
-  |   Hx  28   | Dx  55 |   Dx  55   |
-  |   Hx  20   | Dx  44 |   Dx  45   |
-  |   Hx  18   | Dx  33 |   Dx  35   |
-  |   Hx  10   | Dx  22 |   Dx  20   |
+  |   Hx 100   | Dx 343 |   Dx 350   |
+  |   Hx  80   | Dx 172 |   Dx 175   |
+  |   Hx  60   | Dx 129 |   Dx 130   |
+  |   Hx  58   | Dx 118 |   Dx 120   |
+  |   Hx  50   | Dx 107 |   Dx 110   |
+  |   Hx  48   | Dx  96 |   Dx 100   |
+  |   Hx  40   | Dx  86 |   Dx  90   |
+  |   Hx  38   | Dx  75 |   Dx  75   |
+  |   Hx  30   | Dx  64 |   Dx  65   |
+  |   Hx  28   | Dx  54 |   Dx  55   |
+  |   Hx  20   | Dx  43 |   Dx  45   |
+  |   Hx  18   | Dx  32 |   Dx  35   |
+  |   Hx  10   | Dx  21 |   Dx  20   |
   |   Hx   8   | Dx  11 |   Dx  10   |
+
+### Konstantoj
+
+> Constants
+
+Some helpful constants and factors:
+
+- As mentioned before for [Utro](#longeco),
+  the speed of light is exactly
+
+  $$c = l_P / t_P = 300_H \textrm{MU/ŝ}$$
+
+- Earth surface gravity is approximately
+
+  $$
+    g0
+    \approx 2.2Π_H \textrm{U}/\textrm{ŝ}^2
+    = 9.81 \textrm{m}/\textrm{s}^2
+  $$
+
+- Boltzmann constant is exactly
+
+  $$
+    k_B
+    = c^2 m_P / T_P
+    = 1.5ΨΨ3 \times 10_H^{{-14}_H} \textrm{U}^2\textrm{p}/(\textrm{ŝ}^2\textrm{Z})
+  $$
+
+  (Note: $15ΨΨ3_H = 3^2 \times 10011_D$)
 
 ### Code illustrations
 

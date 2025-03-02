@@ -312,7 +312,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   <span style="color:#95D0FC">la Arkitekto</span>
   to launch the third phase of their *crazy* plan:
   In which, OC's second layer is merely an entry point to the *third* layer,
-  planned to be 1 [gilUtro](../teknikajxoj/Unuoj.md#longeco) (~33km)
+  planned to be 1 [gilUtro](../teknikajxoj/Unuoj.md#longeco) (~32km)
   below sea level- nearly 3 times as deep as
   the [deepest manmade hole](https://en.wikipedia.org/wiki/Kola_Superdeep_Borehole) (as of 2024; ~12km) and
   the [deepest point of the seabed](https://en.wikipedia.org/wiki/Challenger_Deep) (~11km).
