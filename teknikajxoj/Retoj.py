@@ -39,6 +39,7 @@ from Unuoj import u, presi_Hx
 # getting how many containers/trailers can a train engine haul
 g = const.g0
 hp = 746 * units.W
+jw = 0x100 * u._base['power']    # power unit name provisional
 U = u.U
 kph  = u.kph
 jogx = u.jogx
@@ -64,7 +65,7 @@ def n_car_f(
     v, grad,
     load_full = 40*ton,    # cargo+trailer weight
     load_capa = 24*ton,    # cargo weight alone (per FEU container)
-    engine_p = 6760*hp,    # engine power  (ref: see <https://en.wikipedia.org/wiki/British_Rail_Class_92>)
+    engine_p = 0x7D0*jw,   #6760*hp,    # engine power  (ref: see <https://en.wikipedia.org/wiki/British_Rail_Class_92>)
     engine_m = 120*ton,    # engine weight (ref: see <https://en.wikipedia.org/wiki/British_Rail_Class_92>)
     car_len  = 2*U,     # length per train car
     C_rr = 0.0003,     # rolling resistence (see <https://en.wikipedia.org/wiki/Rolling_resistance#Rolling_resistance_coefficient_examples>)
@@ -100,7 +101,7 @@ def print_info(**params):
 
 
 if __name__ == '__main__':
-    # Assuming more powerful electric trains: 9600hp (in contrast to 6760hp realistic estimate
+    # Assuming more powerful electric trains: 9500hp (in contrast to 6760hp realistic estimate
     #   (from UK class 92 electric freight locomotive <https://en.wikipedia.org/wiki/British_Rail_Class_92> ))
     # remember we need to drag 24 cars, so n_car > 24 is minimum.
     #
@@ -115,34 +116,34 @@ if __name__ == '__main__':
     #       reducing it to 0.15 (<https://www.engineeringtoolbox.com/friction-coefficients-d_778.html>),
     #       let's go with 15%)
     KE_pars = {
-        'engine_p': (9600*hp).to(hp),
+        'engine_p': 0xB00*jw, #(9500*hp).to(hp),
     }
-    print_info(grad=0.0*percent, v=0xBF*jogx, **KE_pars)
+    print_info(grad=0.0*percent, v=0xBE*jogx, **KE_pars)
     print_info(grad=1.6*percent, v=0x60*jogx, **KE_pars)
-    print_info(grad=3.7*percent, v=0x30*jogx, **KE_pars)
+    print_info(grad=3.6*percent, v=0x30*jogx, **KE_pars)
     
     print("\nHigh Speed Rail (per car)\n")
     # Using China Railway CRH3 (Velaro CN) info as reference / rough guideline
     #   see <https://pedestrianobservations.com/2012/03/13/table-of-train-weights>
     #   see also <https://en.wikipedia.org/wiki/China_Railway_CRH3>
-    #   Engine power exaggerated from 772hp (for a 24m car with a power ratio of 24kW/t) to 1600hp
+    #   Engine power exaggerated from 772hp (for a 24m car with a power ratio of 24kW/t) to 1700hp
     #   Also assuming proper frontal design reducing effective area for air drag
     #   And assuming lighter full load weight load_full=48t instead of more realistic 56t estimate
     #   Because we are amazing
     V_pars = {
-        'engine_p' : (1600*hp).to(hp),
+        'engine_p' : 0x200*jw, #(1726*hp).to(hp),
         'engine_m' : 0*ton,
         'load_full': 48*ton,
         'car_len'  : 3 * U,
-        'A_d': (3*4/4*(U/8)**2).to(u.m**2),
+        'A_d': (3*4/3.5*(U/8)**2).to(u.m**2),
     }
-    print_info(grad=0.0*percent, v=0x190*jogx, **V_pars)
-    print_info(grad=1.4*percent, v=0x120*jogx, **V_pars)
-    print_info(grad=1.9*percent, v=0x100*jogx, **V_pars)
-    print_info(grad=2.4*percent, v=0xE0*jogx, **V_pars)
-    print_info(grad=3.1*percent, v=0xC0*jogx, **V_pars)
-    print_info(grad=3.9*percent, v=0xA0*jogx, **V_pars)
-    print_info(grad=5.1*percent, v=0x80*jogx, **V_pars)
+    print_info(grad=0.0*percent, v=0x188*jogx, **V_pars)
+    print_info(grad=1.5*percent, v=0x120*jogx, **V_pars)
+    print_info(grad=2.0*percent, v=0x100*jogx, **V_pars)
+    print_info(grad=2.6*percent, v=0xE0*jogx, **V_pars)
+    print_info(grad=3.3*percent, v=0xC0*jogx, **V_pars)
+    print_info(grad=4.2*percent, v=0xA0*jogx, **V_pars)
+    print_info(grad=5.5*percent, v=0x80*jogx, **V_pars)
     
     
     print("\nMetro (per car)\n")
@@ -150,20 +151,20 @@ if __name__ == '__main__':
     #       Note: third rail cannot support high speed (>160kph),
     #       so 200kph is only for train tracks with overhead wires (not for in-game metro tracks)
     E_pars = {
-        'engine_p' : (1200*hp).to(hp),
+        'engine_p' : 0x160*jw, #(1200*hp).to(hp),
         'engine_m' : 0*ton,
         'load_full': 45*ton,
         'car_len'  : 3 * U,
     }
-    print_info(grad=0.0*percent, v=0x120*jogx, **E_pars)
+    print_info(grad=0.0*percent, v=0x11F*jogx, **E_pars)
     print_info(grad=3.5*percent, v=0x88*jogx, **E_pars)
     print_info(grad=5.4*percent, v=0x60*jogx, **E_pars)
-    print_info(grad=7.4*percent, v=0x48*jogx, **E_pars)
+    print_info(grad=7.3*percent, v=0x48*jogx, **E_pars)
     
 
     print("\nTram (per car)\n")
     T_pars = {
-        'engine_p' : (800*hp).to(hp),
+        'engine_p' : 0xF0*jw, #(800*hp).to(hp),
         'engine_m' : 0*ton,
         'load_full': 26*ton,
         'load_capa': 16*ton,
@@ -179,12 +180,12 @@ if __name__ == '__main__':
     # As the rubber-on-asphalt(wet) static friction coeff is ~0.5 (<https://en.wikibooks.org/wiki/Physics_Study_Guide/Frictional_coefficients>)
     #   max grad should be <= 50 % to prevent wheelslip
     
-    # Assuming more powerful trucks: 860hp (instead of 600hp realistic estimate
+    # Assuming more powerful trucks: 863hp (instead of 600hp realistic estimate
     #   (See Iveco Eurocargo specifications <https://www.iveco.com/Eurocargo>
     #   <https://static.iveco.com.au/download/media%2F5524d082-2a03-40c0-96de-9d6ab73f3681.pdf/Eurocargo%20Specifications.pdf>
     #   For Engine Maximum Output, GVM (Gross Vehicle Mass) and GCM (Gross Combination Mass) info))
     Ux_pars = {
-        'engine_p' : (860*hp).to(hp),
+        'engine_p' : 0x100*jw, #(863*hp).to(hp),
         'engine_m' : 5*ton,
         'load_full': 29*ton,
         'C_rr': 0.006,

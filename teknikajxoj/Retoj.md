@@ -138,7 +138,7 @@ Arterial / Collector / Local Roads:
   | ----------- | :--------------: | :------------------: | :--------------------------: | :-----: | --- | --- | --- | --- | ------------------- |
   | -           |  1.6 \%  | 1144m (143u) |  185 km/h  |  88 joĝ | $132\degree$ | $155\degree$ | $168\degree$ | $174\degree$ | (Note: 185km/h for passenger trains; 130km/h for cargo trains) |
   | -           |  1.6 \%  |  576m (72u)   |  130 km/h  |  60 joĝ |  $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | |
-  | Hard Limit  |  3.7 \%  |  144m  (18u)  |   65 km/h  |  30 joĝ | -            | -            |  $97\degree$ | $133\degree$ | Lithgow Zig Zag |
+  | Hard Limit  |  3.6 \%  |  144m  (18u)  |   65 km/h  |  30 joĝ | -            | -            |  $97\degree$ | $133\degree$ | Lithgow Zig Zag |
 
   - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
     i.e., $\theta_\mathrm{64u}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 64u.
@@ -152,6 +152,8 @@ Arterial / Collector / Local Roads:
 - Length / Power
   - train length: 25 (16m/2u-long) cars (**400m/50u**): 1 engine + 24 trailers.
   - For track intersections: $\geq$ 448m/56u.
+  - Assumed power consumption:
+  9496hp/7.1MW per engine.
 
 #### Altrapidaj fervojoj
 
@@ -161,12 +163,12 @@ Arterial / Collector / Local Roads:
 
   |             | max Gradient $s$ | min Curve radius $R$ | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
   | ----------- | :------: | :------------: | :--------: | :--------: | --- | --- | --- | --- | ------------------- |
-  | -           |  1.4 \%  |  6808m (851u)  |  395 km/h  | 120 joĝ | $172\degree$ | $176\degree$ | $178\degree$ | $179\degree$ | |
-  | Recommended |  1.9 \%  |  5376m (672u)  |  350 km/h  | 100 joĝ | $170\degree$ | $175\degree$ | $178\degree$ | $179\degree$ | |
-  | Soft Limit  |  2.4 \%  |  4120m (515u)  |  305 km/h  |  Υ0 joĝ | $166\degree$ | $173\degree$ | $177\degree$ | $179\degree$ | |
-  | -           |  3.1 \%  |  3024m (378u)  |  260 km/h  |  Π0 joĝ | -            | -            | -            | -            | |
-  | Hard Limit  |  3.9 \%  |  2104m (263u)  |  220 km/h  |  Δ0 joĝ | $153\degree$ | $167\degree$ | $174\degree$ | $177\degree$ | |
-  | -           |  5.1 \%  |  1344m (168u)  |  175 km/h  |  80 joĝ | -            | -            | -            | -            | |
+  | -           |  1.5 \%  |  6808m (851u)  |  395 km/h  | 120 joĝ | $172\degree$ | $176\degree$ | $178\degree$ | $179\degree$ | |
+  | Recommended |  2   \%  |  5376m (672u)  |  350 km/h  | 100 joĝ | $170\degree$ | $175\degree$ | $178\degree$ | $179\degree$ | |
+  | Soft Limit  |  2.6 \%  |  4120m (515u)  |  305 km/h  |  Υ0 joĝ | $166\degree$ | $173\degree$ | $177\degree$ | $179\degree$ | |
+  | -           |  3.3 \%  |  3024m (378u)  |  260 km/h  |  Π0 joĝ | -            | -            | -            | -            | |
+  | Hard Limit  |  4.2 \%  |  2104m (263u)  |  220 km/h  |  Δ0 joĝ | $153\degree$ | $167\degree$ | $174\degree$ | $177\degree$ | |
+  | -           |  5.5 \%  |  1344m (168u)  |  175 km/h  |  80 joĝ | -            | -            | -            | -            | |
 
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
@@ -180,7 +182,7 @@ Arterial / Collector / Local Roads:
     - Half length permitted
   - For track intersections: $\geq$ 448m/56u.
   - Assumed power consumption:
-  1600hp/1.2MW per (24m/3u-long) train car - 19.2MW for a full length train.
+  1726hp/1.3MW per (24m/3u-long) train car - 20.6MW for a full length train.
 
 #### Metrooj / personaj fervojoj
 
@@ -192,7 +194,7 @@ Arterial / Collector / Local Roads:
   | ----------- | :--------------: | :------------------------: | :----------------------------: | :--------: | --- | --- | --- | --- | ------------------- |
   | -           |  3.5 \%  | 1144m (143u) |  185 km/h  |  88 joĝ | $132\degree$ | $155\degree$ | $168\degree$ | $174\degree$ | (Note: overhead-wire-powered tracks only (No third rail metro tracks)) |
   | Recommended |  5.4 \%  |  576m (72u)  |  130 km/h  |  60 joĝ | $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;  <br>($R$) Assuming tilting trains. |
-  | Hard Limit  |  7.4 \%  |  320m (40u)  |  100 km/h  |  48 joĝ | -                 | $103\degree$ | $137\degree$  | $158\degree$ | ($s$) Bernina Railway, Switzerland;  <br>($R$) Bay Area Rapid Transit, United States. |
+  | Hard Limit  |  7.3 \%  |  320m (40u)  |  100 km/h  |  48 joĝ | -                 | $103\degree$ | $137\degree$  | $158\degree$ | ($s$) Bernina Railway, Switzerland;  <br>($R$) Bay Area Rapid Transit, United States. |
 
   - Assuming tilting trains: see [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant).
   - Note: curve radius restrictions may be relaxed when exiting / entering stations where speed is slow.
@@ -210,7 +212,7 @@ Arterial / Collector / Local Roads:
     - Half length permitted
   - For track intersections: $\geq$ 240m/30u.
   - Assumed power consumption:
-    1200hp/0.9MW per (24m/3u-long) train car - 7.2MW for a full length train.
+    1187hp/0.9MW per (24m/3u-long) train car - 7.1MW for a full length train.
 - Additional Notes
   - Due to proper designs,
     metros in OmniCentro are capable of (and generally are) running 24/7:
@@ -248,7 +250,7 @@ Arterial / Collector / Local Roads:
 - Length / Power
   - Assumed EMU (Electric Multiple Unit).
   - Assuming non-tilting trains.
-  - Assumed power consumption: 800hp/0.6MW per (16m/2u-long) train car.
+  - Assumed power consumption: 809hp/0.6MW per (16m/2u-long) train car.
 
 #### Monoreloj
 
