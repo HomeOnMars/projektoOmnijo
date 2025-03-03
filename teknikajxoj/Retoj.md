@@ -161,14 +161,14 @@ Arterial / Collector / Local Roads:
 
 - Gradient $s$ and Curve radius $R$ limit:
 
-  |             | max Gradient $s$ | min Curve radius $R$ | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
+  |             | max Gradient $s$ (Dx) | min Curve radius $R$ (Dx) | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
   | ----------- | :------: | :------------: | :--------: | :--------: | --- | --- | --- | --- | ------------------- |
-  | -           |  1.5 \%  |  6808m (851u)  |  395 km/h  | 120 joĝ | $172\degree$ | $176\degree$ | $178\degree$ | $179\degree$ | |
-  | Recommended |  2   \%  |  5376m (672u)  |  350 km/h  | 100 joĝ | $170\degree$ | $175\degree$ | $178\degree$ | $179\degree$ | |
-  | Soft Limit  |  2.6 \%  |  4120m (515u)  |  305 km/h  |  Υ0 joĝ | $166\degree$ | $173\degree$ | $177\degree$ | $179\degree$ | |
-  | -           |  3.3 \%  |  3024m (378u)  |  260 km/h  |  Π0 joĝ | -            | -            | -            | -            | |
-  | Hard Limit  |  4.2 \%  |  2104m (263u)  |  220 km/h  |  Δ0 joĝ | $153\degree$ | $167\degree$ | $174\degree$ | $177\degree$ | |
-  | -           |  5.5 \%  |  1344m (168u)  |  175 km/h  |  80 joĝ | -            | -            | -            | -            | |
+  | -           |  1.5 \%  |  6808m (851U)  |  395 km/h  | 120 joĝ | $172\degree$ | $176\degree$ | $178\degree$ | $179\degree$ | |
+  | Recommended |  2   \%  |  5376m (672U)  |  350 km/h  | 100 joĝ | $170\degree$ | $175\degree$ | $178\degree$ | $179\degree$ | (2025-03-02) [Beijing-Shanghai High-Speed Railway](https://en.wikipedia.org/wiki/Beijing%E2%80%93Shanghai_high-speed_railway) |
+  | Soft Limit  |  2.6 \%  |  4120m (515U)  |  305 km/h  |  Υ0 joĝ | $166\degree$ | $173\degree$ | $177\degree$ | $179\degree$ | |
+  | -           |  3.3 \%  |  3024m (378U)  |  260 km/h  |  Π0 joĝ | -            | -            | -            | -            | |
+  | Hard Limit  |  4.2 \%  |  2104m (263U)  |  220 km/h  |  Δ0 joĝ | $153\degree$ | $167\degree$ | $174\degree$ | $177\degree$ | |
+  | -           |  5.5 \%  |  1344m (168U)  |  175 km/h  |  80 joĝ | -            | -            | -            | -            | |
 
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples

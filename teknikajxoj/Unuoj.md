@@ -166,19 +166,18 @@ The ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$.
   - 1 Ĉimuto is  $1440_D/1024_D = 1.40625_D$ SI Minutes.
 - `ĝ`: ***Ĝoroj***    | Omnija Hours
   - 1 Ĝoro is    $24_D/16_D = 1.5_D$ SI Hours.
-- `Mŝ`: *Munioŝekuntoj* / ***Tagoj***    | Omnija Days
+- `⚻` or `Mŝ`: ***Tagoj*** / *Munioŝekuntoj* | Omnija Days
   - Conversion rate:
-    $$1\textrm{Mŝ} = 16_D ĝ = 1024_D ĉ = 65536_D ŝ$$
+    $$1⚻ = 1\textrm{Mŝ} = 16_D ĝ = 1024_D ĉ = 65536_D ŝ$$
     i.e.,
-    $1\textrm{Mŝ} = 10_H ĝ = 400_H ĉ = 10000_H ŝ $;
-    $1ĝ = 40_H ĉ$,
+    $1\textrm{Mŝ} = 10_H ĝ = 400_H ĉ = 10000_H ŝ $;  
+    $1ĝ = 40_H ĉ$,  
     $1ĉ = 40_H ŝ$;
-  - i.e. $1 \  \textrm{tago} = 1 \textrm{Mŝ}$;
   - 1 Ŝekunto is therefore
     approximately $86400_D/65536_D = 1.318359375_D$ SI Seconds.
   - ($D$ for decimal, $H$ for Hexadecimal)
-- `Ŝ`: ***Ŝemajnoj*** | Omnija Weeks
-- `O`: ***Monatoj***  | Omnija Months
+- `⚝`: ***Semajnoj*** | Omnija Weeks
+- `☾`: ***Monatoj***  | Omnija Months
 - `Ĵ`: ***Ĵaroj***    | Omnija Unit years
   - Unit year - Length is precisely Dx365.25 Omnija Days.
 - `J`: ***Jaroj***    | Omnija Calendar years
@@ -259,7 +258,8 @@ $$
   \approx 21.443_D \  \textrm{kph}
 $$
 
-jU por ĝoro (or jU/ĝ / joĝ for short)
+> [!NOTE]
+> Useful speed unit: ***jU/ĝ*** `joĝ` (jU por ĝoro, similar to km/h)
 
 $$
   \textrm{joĝ}
@@ -299,6 +299,21 @@ relativistic effects should be considered.
   |   Hx  18   | Dx  32 |   Dx  35   |
   |   Hx  10   | Dx  21 |   Dx  20   |
   |   Hx   8   | Dx  11 |   Dx  10   |
+
+### Potenco
+
+> Power
+
+> [!NOTE]
+> Useful Power unit: ***?????*** `⚡` (0x26A1) (Omnija MWs) (NAME TBD)
+
+$$
+  ⚡
+  \equiv 10000_H \textrm{U}^2 \textrm{p} / \textrm{ŝ}^3
+  \approx 0.64398_D \  \textrm{MW}
+$$
+
+OC's target power poduction is about Hx8000⚡(Dx21GW)to Hx10000⚡(Dx42GW) (2025-03-03).
 
 ### Konstantoj
 

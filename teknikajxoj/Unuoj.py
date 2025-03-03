@@ -53,6 +53,10 @@ ASCIIIFY_CHR = {
     'Ĵ': 'Jx','ĵ': 'jx',
     'Ŝ': 'Sx','ŝ': 'sx',
     'Ŭ': 'Ux','ŭ': 'ux',
+    '⚻': 'tago',
+    '⚝': 'Sx',
+    '☾': 'Monato',
+    '⚡': 'potenco',
 }
 ASCIIIFY = {ord(k): v for k, v in ASCIIIFY_CHR.items()}
 
@@ -235,23 +239,6 @@ for prefix_sn, prefix_tab, scale in u_rdo_prefixes:
             [prefix_sn, *prefix_tab],
             scale*units.dimensionless_unscaled,
             namespace=u_rdo_defs)
-#    extra defs: time
-units.def_unit(
-    ['ĉ', 'ĉimuto'],   0x40 * u_rdo_base['time'], namespace=u_rdo_defs)
-units.def_unit(
-    ['ĝ', 'ĝoro'],   0x1000 * u_rdo_base['time'], namespace=u_rdo_defs)
-units.def_unit(
-    ['tago'], u_rdo_defs['Mŝ'], namespace=u_rdo_defs)
-units.def_unit(
-    ['Ŝ', 'Ŝemajno'], 7 * u_rdo_defs['Mŝ'], namespace=u_rdo_defs)
-units.def_unit(
-    ['O', 'Monato'],  4 * u_rdo_defs['Ŝ'], namespace=u_rdo_defs)
-units.def_unit(
-    ['Ĵ', 'Ĵaro'], 365.25 * u_rdo_defs['Mŝ'],
-    prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
-#    extra defs: speed
-units.def_unit('Uoŝ', u_rdo_defs[ 'U']/u_rdo_defs['ŝ'], namespace=u_rdo_defs)
-units.def_unit('joĝ', u_rdo_defs['jU']/u_rdo_defs['ĝ'], namespace=u_rdo_defs)
 
 
 
@@ -271,6 +258,31 @@ def normalize(u: dict[str, units.UnitBase]) -> dict[str, units.UnitBase]:
 
 normalize(u_nat_base)
 normalize(u_rdo_base)
+
+
+
+# rdo unit extra defs
+#    time
+units.def_unit(
+    ['ĉ', 'ĉimuto'],   0x40 * u_rdo_base['time'], namespace=u_rdo_defs)
+units.def_unit(
+    ['ĝ', 'ĝoro'],   0x1000 * u_rdo_base['time'], namespace=u_rdo_defs)
+units.def_unit(
+    ['⚻', 'tago'], u_rdo_defs['Mŝ'], namespace=u_rdo_defs)
+units.def_unit(
+    ['⚝', 'Semajno'], 7 * u_rdo_defs['Mŝ'], namespace=u_rdo_defs)
+units.def_unit(
+    ['☾', 'Monato'],  4 * u_rdo_defs['Ŝ'], namespace=u_rdo_defs)
+units.def_unit(
+    ['Ĵ', 'Ĵaro'], 365.25 * u_rdo_defs['Mŝ'],
+    prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
+#    speed
+units.def_unit('Uoŝ', u_rdo_defs[ 'U']/u_rdo_defs['ŝ'], namespace=u_rdo_defs)
+units.def_unit('joĝ', u_rdo_defs['jU']/u_rdo_defs['ĝ'], namespace=u_rdo_defs)
+#    power
+units.def_unit(
+    ['⚡', 'M?'], 0x10000 *u_rdo_base['power'], namespace=u_rdo_defs)
+
 
 
 # Extra

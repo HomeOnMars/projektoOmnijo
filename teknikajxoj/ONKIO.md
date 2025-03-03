@@ -64,6 +64,15 @@ Differences from the ASCII table are highlighted with **bold** text.
 > - Only 16 control characters (all in the column `0x0_`) instead of 33 in ASCII table, as most of those extra control characters are obsolete in modern days.
 > - Removed `CR \r` and moved `DEL` from `0x7f` to `0x0f` to maximize regularity.
 
+To-do
+-------------------------------------------------------------------------------
+
+1. Add degree symbol `°` (0xB0) for Celsius and angles?
+2. Add month symbol `☾` (0x263E), the week symbol `⚝`(0x269D), and day symbol `⚻` (0x26BB)?
+  (No - No space. Let's leave 0x0? to control characters only.)
+  (See [Unuoj](Unuoj.md#tempo))
+  (See also [Wikipedia - Unicode Misc symbols](https://en.wikipedia.org/wiki/List_of_Unicode_characters#Miscellaneous_Symbols).)
+
 ASCII Table
 -------------------------------------------------------------------------------
 
