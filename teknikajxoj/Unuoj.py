@@ -270,9 +270,9 @@ units.def_unit(
 units.def_unit(
     ['⚻', 'tago'], u_rdo_defs['Mŝ'], namespace=u_rdo_defs)
 units.def_unit(
-    ['⚝', 'Semajno'], 7 * u_rdo_defs['Mŝ'], namespace=u_rdo_defs)
+    ['⚝', 'Semajno'], 7 * u_rdo_defs['tago'], namespace=u_rdo_defs)
 units.def_unit(
-    ['☾', 'Monato'],  4 * u_rdo_defs['Ŝ'], namespace=u_rdo_defs)
+    ['☾', 'Monato'],  4 * u_rdo_defs['Semajno'], namespace=u_rdo_defs)
 units.def_unit(
     ['Ĵ', 'Ĵaro'], 365.25 * u_rdo_defs['Mŝ'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
