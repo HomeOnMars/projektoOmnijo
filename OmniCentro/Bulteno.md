@@ -180,7 +180,7 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | RdO  | #32CD32 | <span style="color:LimeGreen">█ La Ĉefministro **Eriko** de Omnijo</span>  <!-- OCG -->  |
 | OCFD | #C0C0C0 | <span style="color:Silver">█ La Generalo **Laŭra** de Omnijo</span>  <!-- OCG -->  |
 | OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ La Kunordigestro **Dajanna** de Omnijo</span>  <!-- OCG -->  |
-| OCFI | #95D0FC | <span style="color:#95D0FC">█ La Arkitekto **Ĉuĉjo** de OCFI</span> |
+| OCFI | #95D0FC | <span style="color:#95D0FC">█ La Arkitekto de OCFI</span> |
 | OCFI | #D6B4FC | <span style="color:#D6B4FC">█ La Suvereno **Ĝejda** de Omnijo</span> <!-- Fullname [CONFIDENTIAL] Ĝejda Fenulo de Omnijo -->  <!-- OCG -->  |
 | OCFI | #9370DB | <span style="color:MediumPurple">█ ... (Department Color) ...</span> |
 | OCFJ | #D2691E | <span style="color:Chocolate">█ La Prokuroro **Bejko** de Omnijo</span>  <!-- OCG -->  |

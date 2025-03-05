@@ -198,6 +198,7 @@ Using the leading digit for identifying districts and areas:
 | `1` |  SK  | Vĝ-P  | Vilaĝo-Pioniro | |
 | `2` |  SC  | Am-H  | Am-Hejmecaĵo   | |
 | `3` |  SR  | Mt-O  | Mt-Olivkronaĵo | <span style="color:DarkSeaGreen">█ #8FBC8F</span> |
+| `Δ` |  NK  | Mt-F  | Mt-Fortikecaĵo | <span style="color:MediumPurple">█ #9370DB</span> |
 | ... |      |       |                | |
 | `Ψ` |      |       | Eksteraj Konektoj  <br>Outside connections | |
 | ... |      |       |                | |
@@ -205,7 +206,6 @@ Using the leading digit for identifying districts and areas:
 | TBD |  CC  | Mt-H  | Mt-Hejmecaĵo   | |
 | TBD |  CR  | Mt-E  | Mt-Esperecaĵo  | <span style="color:Beige">█ #F5F5DC</span> |
 | TBD |  NR  | Mt-R  | Mt-Raciecaĵo   | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
-| TBD |  NK  | Mt-F  | Mt-Fortikecaĵo | <span style="color:MediumPurple">█ #9370DB</span> |
 | TBD |  NC  | Mt-U  | Mt-Unukornaĵo  | <span style="color:Thistle">█ #D8BFD8</span> |
 | N/A |  NC  | Mt-A  | Mt-Asteriaĵo   | |
 

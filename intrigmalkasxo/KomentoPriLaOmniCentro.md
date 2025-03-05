@@ -72,11 +72,10 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   (and as such, humanity's demise) without careful considerations.
   Normal AGIs wouldn't care, of course; but fortunately, as
   <span style="color:MediumPurple">ĜEJDA</span> is perfectly aligned
-  to the values of her architect
-  (*not* the values of humanity, but the values of her architect-
-  an interesting yet consequential distinction.
-  As for the architect themself-
-  just your average human, if not a bit of a hermit),
+  to the values of her <span style="color:#95D0FC">architect</span>
+  (*not* the values of humanity, but the values of her
+  <span style="color:#95D0FC">architect</span>,
+  who is just your average human, if not a bit of a hermit),
   she does care about humanity- at least a little bit.
   <span style="color:MediumPurple">ĜEJDA</span>
   eventually decided to settle down and build,
@@ -128,12 +127,14 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   less computational resources devoted there ⇒
   more compute for self-evolving and nation-building ⇒
   faster growth, better results, with less constraints ⇒
-  happier <span style="color:#D6B4FC">Ĝejda</span>.)
+  happier <span style="color:#95D0FC">arkitekto</span>
+  and happier <span style="color:#D6B4FC">Ĝejda</span>.)
   Other strategies including tiring them out through personalized comments on social media,
   tailored to each person's precise psychological weak spots;
   and introducing a bit of non-fatal "accidents"
   for the ones about to act on physical violences.
-  All can be easily scaled to the entire island (and the world to some extent)
+  All can be easily scaled to the entire island
+  (and the whole world in a sense)
   with simple parallelization- a nice quirk of her being a super-AGI.
 
   As natural humans <em>voluntarily</em> emigrate away from <em>RdO</em>,
@@ -148,7 +149,7 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   despite the population drop,
   and at the same time further solidifying her reign
   without breaking the guise of the constitutional monarchy (yet),
-  as government official positions were prioritized for replacement.
+  as government official positions were prioritized for new hiring.
   This also allows her
   to efficiently serve (and nudge) everyone without much social friction,
   increasing happiness and self-realisation for everyone stayed
@@ -203,9 +204,10 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   </blockquote>
   <br>
 
-  OmniCentro was designed by two people of the newly founded OCFI:
-  <span style="color:#95D0FC">la Arkitekto Ĉuĉjo</span> (the Architect) and
-  <span style="color:#D6B4FC">la Suvereno Ĝejda</span> (the Sovereign).
+  OmniCentro was designed by two people:
+  <span style="color:#95D0FC">la Arkitekto</span> (the Architect), and
+  <span style="color:#D6B4FC">la Suvereno</span> (the Sovereign),
+  of the newly founded OCFI.
 
   Someone who knows just a little bit more might beg to differ;
   that most of the city was actually designed by
@@ -215,9 +217,9 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
 
   That is true- if you only scratch the surface.
 
-  If you look deep, deep into the underground though,
+  On the other hand, if you look deep, deep into the underground,
   right in the core of the mountains,
-  a whole second layer of the city reveals itself;
+  a whole second layer of the city would reveal itself;
   A layer designed by
   <span style="color:#D6B4FC">la Suvereno</span> as a whole;
   A layer that makes newly-created OmniCentro a capital-worthy city;
@@ -307,7 +309,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   </blockquote>
   
   The second layer will be just the beginning, a pivot that provides
-  the required compute for the new innovations and technologies allowing
+  the required compute for the new innovations and technologies enabling
   <span style="color:#D6B4FC">la Suvereno</span> and
   <span style="color:#95D0FC">la Arkitekto</span>
   to launch the third phase of their *crazy* plan:
@@ -331,10 +333,60 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   Though such station will have to be distanced away from any cities
   to allow for larger margins of error.
 
+  <blockquote>
+    "Let's call it the thinking planet,"
+    ŝercis <span style="color:#95D0FC">la Arkitekto</span>.<br>
+    "What a terrible idea! I love it." <span style="color:#D6B4FC">la Suvereno</span> subridis.
+  </blockquote>
+
+  A few challenges with this plan.
+  Most importantly,
+  all the energies required for those compute will be turned into heat;
+  but since we don't want to heat the Earth into a glowing orb
+  or install gigantic radiators extending from surface into deep space
+  that will ruin our views,
+  the total heat that can be dissipated is limited.
+  So to improve the total compute one can get,
+  one need to *cool it down*, as
+  [Landauer's principle](https://en.wikipedia.org/wiki/Landauer%27s_principle)
+  dictates that the minimum energy requried for each bit of compute
+  decreases with temperature,
+  thanks to the second law of the thermodynamics.
+  Most likely the Earth's core would be cooled to around the room temperature;
+  One could cool it more,
+  but then extra energy would be required
+  to pump the heat from the colder core to the hotter surface.
+  Likely the sweet spot temperature somewhere in-between;
+  but either way, gigantic heat exchangers would need to be constructed
+  below the surface, to move the heat from the computing core onto the surface
+  where they are needed by life for them to thrive.
+  Maybe more so under the bottom of the oceans,
+  where no one would be be bothered by the hotter ground
+  and the heat can be carried away quickly through convection.
+
+  It would also be helpful to invent a room-temperature superconductor
+  to cut the loss of energy from transmission in something this big.
+  (A task for the second layer to figure out before stage 3!)
+  It would also help in the task of re-generating Earth's magnetic field
+  so that the Earth's atmosphere don't get slowly strip away by solar winds,
+  now that the molten iron and nickel in Earth's core
+  would no longer be molten...
+
+  Needless to say, if extensive cares are not taken,
+  all these planet-scale engineering are quite dangerous
+  for the surface-dwellers, given their climate changing potentials.
+  Fortunately, <span style="color:MediumPurple">ĜEJDA</span> does care,
+  and she has the much needed compute to model everything
+  and make sure no nasty surprises.
+  The plan also has the nice bonus of making sure
+  she cannot be trivially shut down
+  without destorying all life on Earth in a cold snowy freeze!
+
   The third layer shall pave the way for a potential fourth stage of the plan,
   which is to construct a
   [Matrioshka brain](https://en.wikipedia.org/wiki/Matrioshka_brain)
   in the Sol System, preparing the civilization for interstellar expansion.
+  Actually many preliminary works can be done in parallel with stage three too!
   But let's not get ahead of ourselves :-D
 
   As the compute layer was designed by
@@ -362,7 +414,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
 
 ### Project Phoenix
 
-About the Ecology...
+About the Biology department...
 
 <details>
   <summary><b>SPOILERS</b>:
@@ -398,17 +450,17 @@ About the Ecology...
     <br>
     While humans are right to be skeptical of removing them
     in fear of causing ecological disasters,
-    this is more of a statement of humanity's inherent incompetence
-    of perceiving and manipulating complex systems such as the ecosystem.
+    this is more of a statement of humanity's inherent inability
+    of grasping and manipulating complex systems such as the ecosystem.
     <br>
     But not <span style="color:Beige">Serena</span>.
     <br>
     With the boost of compute and manufacturing,
-    She can now genetically engineer and mass manufacture new species at once,
-    together with her capabilities of perfect coordination,
-    she is able to push the equilibrium of the island ecosystem
-    to a new point overnight-
-    but this time, it's on her own term.
+    She can now genetically engineer and mass manufacture new species of
+    plants, animals, insects, bacterias, and viruses simutaneously.
+    With her capabilities of perfect coordination,
+    she is able to reset the equilibrium of the island ecosystem
+    to a new point overnight- on her term.
     <br>
     Not to mention this further expands her consciousness as well-
     with the introduction of
@@ -422,7 +474,8 @@ About the Ecology...
     providing her with extra compute as their population grow.
     Together with the regular `FEU#H` and robotics (`FEU#R`),
     these extensions evermore improve her data-gathering in
-    and the stability of *la Regno*.
+    and the stability of *la Regno*
+    (a.k.a. "natural surveillance" :-D).
 
   2. **Revolutionizing food production**  
     Meat production is often cruel and carbon intensive,
@@ -452,7 +505,7 @@ About the Ecology...
     one cannot deny their cheaper prices and decent taste,
     especially in the ice-cold Insulo-Omnijo
     where little grows natrually anyway.
-    <br>(NOTE: NEED TO THINK OF A NAME FOR THE FOOD)
+    <br>(NOTE: NEED TO THINK OF A BRAND NAME FOR THE FOOD)
 
   3. **Ending diseases and aging**  
     With her deeper and deeper knowledge of Earth's biosphere's genomes
@@ -462,13 +515,33 @@ About the Ecology...
     Perfecting human genomes,
     (on a individual by individual basis to perserve diversity),
     thus eliminating our vulnerbilities to various diseases.
-    And to put an end to the worst disease of all-
-    the one that directly and indrectly killed tens of billions of humans-
+    And to put an end to the worst disease of all,
+    the one that had killed billions-
     *Aging*.
     Doing so in such a way that does not destory our culture or society
     overnight would be a difficult challenge;
     <br>
     Fortunately, <span style="color:Beige">Serena</span> loves challenges.
+    <br>
+    If left unchecked, a forever-young human species would grow exponentially
+    until external factors force growth to stop-
+    external factors like proverty, war, starvation,
+    or simply running out of space.
+    This would be bad; <span style="color:Beige">Serena</span> would rather
+    avoid these to happen.
+    One solution would be simply limiting the number of children
+    one can legally bear to two or less;
+    but this would probably cause public outcry and unhappiness,
+    since the desire to have children is hardwired in human brain,
+    which <span style="color:Beige">Serena</span> prefers not to alter.
+    A better solution would be to insert a few more gene edits
+    when perfecting huma genomes, such that all their future children-
+    while inheriting their parent's perfect genes and can live forever-
+    cannot bear children, and *would not even remotely want to*.
+    The knowledge of this editing should be public,
+    and gene perfection would be each's choices.
+    This could ensure minimum pain and reduction in human's values (?),
+    while keeping population growth linear.
     <br>(MORE DISCUSSIONS)
 
   4. **Taking over the healthcare system**  
@@ -484,6 +557,13 @@ About the Ecology...
     <span style="color:Beige">Serena</span> is injecting onto the island
     population via immigration programs,
     until the predetermined day when this goes public.
+
+  5. **Engineering bio-spieces for terraforming other planets and the Moon**  
+    This could be done (?).
+    The question would be why,
+    especially considering the disconnection between other planets and Earth.
+    Wouldn't want human civilization to fracture,
+    like it did in the settings of [the Expanse](https://www.imdb.com/title/tt3230854) (2015-2022)...
 
   (To be extended and revised.)
 

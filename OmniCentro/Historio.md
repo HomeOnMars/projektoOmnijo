@@ -284,8 +284,8 @@ and she now has the money and the power to live out her own fantasy.
 
 The actual design of the city, though not many care,
 falls on <span style="color:Beige">Serena</span>'s two friends-
-<span style="color:#95D0FC">Ĉuĉjo the Architect</span> and
-<span style="color:#D6B4FC">Ĝejnjo the Sovereign</span>[^Historio-OC-Projektistoj]
+<span style="color:#D6B4FC">the Sovereign</span> and
+<span style="color:#95D0FC">the Architect</span>
 of the newly founded *Omnija Department of Infrastructure* (OCFI).
 It's decided that the new capital will be built
 in a valley where mountains meets the sea- a place called the
@@ -318,6 +318,3 @@ And then, it was so.
 Our (soon-to-be) legendary duo now begins the journey,
 of building the so-called "impossible" capital city,
 in the valley of *Ĉemarvalo*.
-
-[^Historio-OC-Projektistoj]: These are not their full name, by the way;
-  it's <span style="color:Beige">Serena</span>'s nicknames for the duo.
