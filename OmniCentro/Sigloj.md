@@ -158,14 +158,14 @@ Examples:
 |    Al   | **A**lt**l**ernejo   | College          |
 |   Uni   | **Uni**versitato     | University       |
 ||| <!-- Misc types --> |
+|    La   | **La**               | The              |
 |    Ĉf   | **Ĉ**e**f**o         | Main             |
 |    Pt   | **P**ar**t**o        | Part, Segment    |
 |    v    | **v**ersio           | version          |
 |   Skp   | **S**av**k**o**p**io | Backup           |
 |    Ŝn   | **Ŝ**anĝo**n**oto    | Changelog        |
 
-[^Deprecated-Vj]: Deprecated.
-  Vojo as a concept is too broad,
+[^Deprecated-Vj]: Deprecated: Vojo as a concept is too broad,
   as it could mean anything from motorways and rails to alleys and paths.
   Do not use.
 
@@ -198,15 +198,18 @@ Using the leading digit for identifying districts and areas:
 | `1` |  SK  | Vĝ-P  | Vilaĝo-Pioniro | |
 | `2` |  SC  | Am-H  | Am-Hejmecaĵo   | |
 | `3` |  SR  | Mt-O  | Mt-Olivkronaĵo | <span style="color:DarkSeaGreen">█ #8FBC8F</span> |
+| ... |      |       |                | |
 | `Δ` |  NK  | Mt-F  | Mt-Fortikecaĵo | <span style="color:MediumPurple">█ #9370DB</span> |
+| `λ` |  NC  | Am-U  | Am-Unukornaĵo  | <span style="color:Thistle">█ #D8BFD8</span> |
+| `Π` |  NK  | Am-R  | Am-Raciecaĵo   | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 | ... |      |       |                | |
 | `Ψ` |      |       | Eksteraj Konektoj  <br>Outside connections | |
 | ... |      |       |                | |
 | TBD |  SK  | Mt-K  | Mt-Kuraĝecaĵo  | <span style="color:Red">█ #FF0000</span> |
 | TBD |  CC  | Mt-H  | Mt-Hejmecaĵo   | |
 | TBD |  CR  | Mt-E  | Mt-Esperecaĵo  | <span style="color:Beige">█ #F5F5DC</span> |
-| TBD |  NR  | Mt-R  | Mt-Raciecaĵo   | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
-| TBD |  NC  | Mt-U  | Mt-Unukornaĵo  | <span style="color:Thistle">█ #D8BFD8</span> |
+| N/A |  NC  | Mt-U  | Mt-Unukornaĵo  | <span style="color:Thistle">█ #D8BFD8</span> |
+| N/A |  NR  | Mt-R  | Mt-Raciecaĵo   | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 | N/A |  NC  | Mt-A  | Mt-Asteriaĵo   | |
 
 ### Konstruaj Nomoj

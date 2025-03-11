@@ -162,6 +162,15 @@ about their own country?[^Historio-RdO-Serena-kmt4]
   re-awaken from her coma and recovered in record speed.
   The people, however, did not buy that (not at first),
   as the emmigration rate reached another high point after this shenanigan.
+  <br>[PENDING REVISION]<br>(***Spoilers***)<br>
+  Note to self:
+  Given <span style="color:Beige">Serena</span>'s capabilities and values,
+  instead of brute force silencing all the protesters,
+  someone like <span style="color:Beige">her</span>
+  would probably try to talk to each individual protester and persuade them one by one,
+  or to organize events where residents can speak to her persuasive gov representatives who can explain all their concerns
+  in as much details as they like.
+  Need to consider this and rewrite this bit.
 
 ...
 Or they could leave.

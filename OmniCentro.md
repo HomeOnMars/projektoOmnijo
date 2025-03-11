@@ -55,7 +55,7 @@ Teknikaj specifoj
 - [***Lingvo***  | Language](teknikajxoj/Lingvo.md#lingvo):
   *Epopo* - The new official language of RdO.
 - ***Normoj*** | Standards
-  - [***Sistemo de Unuoj*** | System of Units](teknikajxoj/Unuoj.md#Informoj) Planck-units-based unit system that approximate SI units<!-- Code Cleanup TBD -->
+  - [***Sistemo de Unuoj*** | System of Units](teknikajxoj/Unuoj.md#Informoj) Planck-units-based unit system
   - [***ONKIO tablo*** | ONKIO table](teknikajxoj/ONKIO.md#onkio-tablo): ASCII table equivalent
 - [***Retoj*** | Networks](teknikajxoj/Retoj.md#retoj)
 - [***Arboj*** | Trees](teknikajxoj/Arboj.md#arboj)

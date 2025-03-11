@@ -37,7 +37,7 @@ Contents
 - List of inspirations for my backstories
   - [(SPOILERS) List of inspirations](intrigmalkasxo/Inspirajxo.md)
 - Some python scripts I wrote
-  (may not work, or may require considerable effort to make them work. No promises.)
+  (may not work for *you*, or may require considerable effort to make them work. **No promises**.)
   - For CSL2 Extended Radio mod
     - [konverti_csl1radioj.py](radio/konverti_csl1radioj.py): for converting owned CSL1 radio contents into CSL2 Extended Radio mod readable files.
-    - [reformatigi.py](radio/reformatigi.py) for renaming muscs files, converting them to ogg files, and generating CSL2 Extended Radio `.json` files automatically.
+    - [reformatigi.py](radio/reformatigi.py) for renaming musics files, converting them to ogg files, and generating CSL2 Extended Radio `.json` files automatically.

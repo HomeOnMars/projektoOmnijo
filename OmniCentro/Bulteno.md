@@ -43,9 +43,14 @@ located on the fictional island *la Insulo-Omnijo*
 in the Southern Hemisphere somewhere in between Chile and New Zealand,
 near 56°15'S, 140°15'W (coordinates are fictional- it should be open ocean there in real life).
 The island has a size of approximately Iceland or Java island,
-i.e. $\sim 2^{17} \mathrm{km}^2 \approx 130 000 \mathrm{km}^2$.
+i.e.
+$\sim 8000_H \  \textrm{jU}^2$
+$\approx 2^{17_D} \  \textrm{km}^2$
+$\approx 132 \  000_D \  \textrm{km}^2$
+(Length unit $\textrm{jU}$ see [units](../teknikajxoj/Unuoj.md#longeco) page).
 
-For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
+For more details,
+see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 
 ### Fonrakonta Bulteno
 
@@ -68,6 +73,7 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | Oficiala Religio  <br>Official Religion | Pastafarianismo[^Bulteno-Religio] |
 | Oficialaj Koloroj  <br>Official Colors   | <span style="color:Beige">Flavgriza/Beige #E6DAA6</span> [^Bulteno-Koloroj-Flavgriza]  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span> [^Bulteno-Koloroj-Bluo]  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span> [^Bulteno-Koloroj-Purpuro] |
 | Oficialaj Himno  <br>Official Anthem | *Oceans* (*Where Feet May Fail*), originally by Hillsong UNITED  <br>Modified acoustic E++ version[^Bulteno-Himno]. |
+| Oficialaj Flago  <br>Official Flag | ![RdOFlago](../fig/RdOFlago.svg)  <br>See [emblem](Emblemoj.md#desegnoj) page for design explanation. |
 
 [^Bulteno-RegistaraTipo]: Interviewer: "So, tell us what do you think
   the kind of government our new *RdO* governemnt *OCR* is?"
@@ -155,20 +161,20 @@ For more details, see [the history of Omnijo](../OmniCentro/Historio.md#la-histo
 | Department of Defence               | OCFD | Omnija Centra Fako de Defendo             |  RdO | Budget not disclosed. |
 | Department of Education and Science | OCFE | Omnija Centra Fako de Edukado kaj Scienco |  RdO | Science! (also oversees all kinds of information distribution, such as laws / policies / knowledge / public-domain-works / propaganda / `Epopo`-Education.) |
 | Department of Infrastructure        | OCFI | Omnija Centra Fako de Infrastrukturo      |  RdO | Engineering! (also oversees cities development, energy generation and distribution, and environmental protection.) |
-| Department of Justice               | OCFJ | Omnija Centra Fako de Justeco             |  RdO | Internal investigation & supreme court. |
+| Department of Justice               | OCFJ | Omnija Centra Fako de Justeco             |  RdO | Internal investigation & supreme court. Some say it's better translated as the Department of 'Alignment' rather than 'Justice'... but that's probably just jealousy talking. |
 | Ministry of Foreign Affairs         | OCME | Omnija Centra Ministerio de Eksteraj Aferoj |  RdO | RdO needs PR too. |
 | Ministry of Finance                 | OCMF | Omnija Centra Ministerio de Fisko         |  RdO | Collects taxes and oversees all nationalized industries and companies, including BdO. Almost a megacorp. |
-| Ministry of Home    Affairs         | OCMI | Omnija Centra Ministerio de Internaj Aferoj |  RdO | Immigration and welfare. No one shall be left behind. Also oversees the distribution of the UBI (universal basic income). |
+| Ministry of Home    Affairs         | OCMI | Omnija Centra Ministerio de Internaj Aferoj |  RdO | Immigration and welfare. No citizens shall be left behind! Also oversees the distribution of the UBI (universal basic income). |
 ||||| <!-- Offices / Oficejoj --> |
 | Department of Fire and Rescue       | OCFF | Omnija Centra Fako de Fajro kaj Savo      | OCFI | Responsible for emergency preparedness and disaster relief too. |
 | Department of Police                | OCFP | Omnija Centra Fako de Polico              | OCFJ | The police department. |
 | Department of Healthcare            | OCFS | Omnija Centra Fako de Sanservo            | OCMI | Healthcare and deathcare (cryonics and bio-scanning options now available as well!) |
 ||||||
 | Public Radio Network                | OCRR | OmniCentra RadioReto                      | OCFE | La voĉo de Omnijo. |
-| Omnija Space Program                | OKP  | Omnija Kosma Programo                     | OCFI | People thought the <span style="color:Beige">Queen</span> was joking when she said about founding a space agency... When in fact she was only half-joking. |
+| Omnija Space Program                | OKP  | Omnija Kosma Programo                     | OCFI | People thought the <span style="color:Beige">Queen</span> was joking when she said about founding a space agency... Turns out she was only half-joking. |
 | Public Transport Agency             | OPT  | Omnija Publika Transporto                 | OCFI | Transport for RdO. |
 | Central Bank                        | OCB  | Omnija Centra Banko                       | OCMF | The Central Bank of RdO, serving all banks on the island (though mostly just BdO, as other banks keep being nationalized and absorbed into it). <span style="color:Beige">Serena</span>'s economic reforms put it under the direct control of OCMF, ending its not-so-long history of indepdendency from government control. |
-| Nationalized Bank                   | BdO  | Banko de Omnijo                           | OCMF | All your finance managed in one place, funded by taxes. Security guaranteed by the central gov. Accounts are free and automatically created for all adult citizens, which are used for dispensing the UBI. Official citizen ID cards also double as BdO debit cards. Also it files taxes for you!  <br>*Warning: ALL informations handled by BdO will immediately be forwarded to the central gov. This action cannot be undone.* |
+| Nationalized Bank                   | BdO  | Banko de Omnijo                           | OCMF | All your finance managed in one place, funded by taxes. Security guaranteed by the central gov. Accounts are free and automatically created for all adult citizens, which are used for dispensing the UBI. Official citizen ID cards also double as BdO debit cards. Also it files taxes for you!  <br>*Warning: ALL information handled by BdO will immediately be forwarded to the central gov. This action cannot be undone.* |
 
 ### Listo de Rolujoj
 

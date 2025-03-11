@@ -48,7 +48,7 @@ also for Hexadecimal pre/surfix *H* vs Decimal pre/surfix *D*.
 > Length
 
 > [!IMPORTANT]
-> Default length unit: ***Utroj*** `U` (Omnija meters)
+> Base length unit: ***Utroj*** `U` (Omnija meters)
 
 $$
   \textrm{U}
@@ -110,24 +110,26 @@ Track gauge in *RdO* for trains, metros, and trams are the same:
 $$
   d_\mathrm{gauge}
   \equiv \frac{3}{16_D} \  \textrm{U}
-  = 1149807 \times  2^{96_D} \  l_P
+  = 1149807_D \times  2^{96_D} \  l_P
   \approx 1.4724_D \  m
 $$
 
 Yes this is incompatible with the standard gauge (Dx 1.4351 m)
 with a difference of 3.7 cm.
-This is part of Omnijo's intentional effort to isolate itself
-from the rest of the world technologically,
+This is part of Omnijo's intentional effort
+to technologically isolate itself from the rest of the world,
 without directly imposing on people's freedom...
-Basically the main point of
+Basically one of the main points of
 coming up with its own unit system in the first place.
+(The other being satisfying
+the <span style="color:Beige">Queen</span>'s OCD tendencies.)
 
 ### Maso
 
 > Mass
 
 > [!IMPORTANT]
-> Default mass unit: ***pakmoj*** `p` (Omnija kilogram)
+> Base mass unit: ***pakmoj*** `p` (Omnija kilogram)
 
 $$
   \textrm{p}
@@ -150,7 +152,7 @@ which happens to be about 1 FEU container equivalent of goods.
 > Time
 
 > [!IMPORTANT]
-> Default time unit: ***ŝekuntoj*** `ŝ` (Omnija seconds)
+> Base time unit: ***ŝekuntoj*** `ŝ` (Omnija seconds)
 
 $$
   1 \  ŝ
@@ -159,9 +161,10 @@ $$
 $$
 <!-- 1 \  ŝ = 1.518_H \  s -->
 
-The ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$.
+The ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$
+(with an approximate difference of only Dx 0.043 SI seconds per day).
 
-- `ŝ`: ***ŝekuntoj*** | Omnija Seconds
+- `ŝ`: ***Ŝekuntoj*** | Omnija Seconds
 - `ĉ`: ***Ĉimutoj***  | Omnija Minutes
   - 1 Ĉimuto is  $1440_D/1024_D = 1.40625_D$ SI Minutes.
 - `ĝ`: ***Ĝoroj***    | Omnija Hours
@@ -178,19 +181,19 @@ The ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$.
   - ($D$ for decimal, $H$ for Hexadecimal)
 - `⚝`: ***Semajnoj*** | Omnija Weeks
 - `☾`: ***Monatoj***  | Omnija Months
-- `Ĵ`: ***Ĵaroj***    | Omnija Unit years
-  - Unit year - Length is precisely Dx365.25 Omnija Days.
-- `J`: ***Jaroj***    | Omnija Calendar years
+- `Ĵ`: ***Ĵaroj***    | Omnija Unit Years
+  - Unit year - Length is precisely Dx365.25 (Hx16Σ.4) Omnija Days.
+- `J`: ***Jaroj***    | Omnija Calendar Years (Earth-specific)
   - Calendar year - Length varies depending on which year it is.
   - Here we assume one non-leap year (*komunjaro*) is 13 months exactly,
     and each months has 4 weeks exactly
 
-    $$1J_\textrm{komun} = Σ_H O = 34_H Ŝ = 16Π_H \textrm{Mŝ} = 364_D \textrm{Mŝ}$$
+    $$1J_\textrm{komun} = Σ_H ☾ = 34_H ⚝ = 16Π_H ⚻ = 364_D ⚻$$
 
     except leap year (*superjaro*), which happens every 4 years,
     and has 5 extra days (all considered holidays):
 
-    $$1J_\textrm{super} = Σ O + 5 \textrm{Mŝ} = 171_H \textrm{Mŝ} = 369_D \textrm{Mŝ}$$
+    $$1J_\textrm{super} \simeq Σ ☾ + 5 ⚻ = 171_H ⚻ = 369_D ⚻$$
 
   - Winter Solstice[^Tagoj-Solstico] always happens
     in the first week of the year for the Y+\* calendars.
@@ -201,6 +204,11 @@ The ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$.
     (together with the days added by leap years if any)
     are holidays.
   - Solstices and Equinoxes are national holidays.
+  - Any changes to the calendar years system
+    (such as adding leap seconds to sync with Earth's orbit,
+    or more drastic changes in the event of
+    Earth's rotation period or orbit changes significantly)
+    should in principle only be applied at the end of the leap years.
 
 [^Tagoj-Solstico]: a.k.a. Northern Solstice, since *la Insulo-Omnijo* is located in the Southern Hemisphere.
 
@@ -209,7 +217,7 @@ The ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$.
 > Temperature
 
 > [!IMPORTANT]
-> Default temperature unit: ***Zoroj*** `Z` (degree Zoro) (provisional name)
+> Base temperature unit: ***Zoroj*** `Z` (degree Zoro) (provisional name)
 
 $$
   \textrm{Z}
@@ -321,28 +329,32 @@ OC's target power poduction is about Hx8000⚡(Dx21GW)to Hx10000⚡(Dx42GW) (202
 
 Some helpful constants and factors:
 
-- As mentioned before for [Utro](#longeco),
+As mentioned before for [Utro](#longeco),
   the speed of light is exactly
 
-  $$c = l_P / t_P = 300_H \textrm{MU/ŝ}$$
+$$
+  c
+  = l_P / t_P
+  = 300_H \  \textrm{MU/ŝ}
+$$
 
-- Earth surface gravity is approximately
+Earth surface gravity is approximately
 
-  $$
-    g0
-    \approx 2.2Π_H \textrm{U}/\textrm{ŝ}^2
-    = 9.81 \textrm{m}/\textrm{s}^2
-  $$
+$$
+  g_0
+  \approx 2.2Π_H \  \textrm{U}/\textrm{ŝ}^2
+  = 9.81 \  \textrm{m}/\textrm{s}^2
+$$
 
-- Boltzmann constant is exactly
+Boltzmann constant is exactly
 
-  $$
-    k_B
-    = c^2 m_P / T_P
-    = 1.5ΨΨ3 \times 10_H^{{-14}_H} \textrm{U}^2\textrm{p}/(\textrm{ŝ}^2\textrm{Z})
-  $$
+$$
+  k_B
+  = c^2 m_P / T_P
+  = 1.5ΨΨ3 \times 10_H^{{-14}_H} \  \textrm{U}^2\textrm{p}/(\textrm{ŝ}^2\textrm{Z})
+$$
 
-  (Note: $15ΨΨ3_H = 3^2 \times 10011_D$)
+(Note: $15ΨΨ3_H = 3^2 \times 10011_D$.)
 
 ### Code illustrations
 
