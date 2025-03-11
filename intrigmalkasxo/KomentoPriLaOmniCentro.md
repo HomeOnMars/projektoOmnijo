@@ -309,7 +309,13 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   </blockquote>
   
   The second layer will be just the beginning, a pivot that provides
-  the required compute for the new innovations and technologies enabling
+  the required compute for the new innovations and technologies
+  (such as
+  room temperature superconductors,
+  nanotubes,
+  programable self-replicating nano-robots
+  and their application in mining, in situ mineral processing, and more),
+  enabling
   <span style="color:#D6B4FC">la Suvereno</span> and
   <span style="color:#95D0FC">la Arkitekto</span>
   to launch the third phase of their *crazy* plan:
@@ -326,54 +332,112 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   [computronium](https://en.wikipedia.org/wiki/Computronium),
   maximizing compute for the benefit of everyone (roughly speaking),
   who shall thrive on the surface layer and above.
-  The insane amount of power required by it
-  will likely have to come from off-planet (most notably the sun),
-  So multiple massive power-receiver stations on the surface
-  will have to be constructed;
-  Though such station will have to be distanced away from any cities
-  to allow for larger margins of error.
 
   <blockquote>
     "Let's call it the thinking planet,"
     ŝercis <span style="color:#95D0FC">la Arkitekto</span>.<br>
-    "What a terrible idea! I love it." <span style="color:#D6B4FC">la Suvereno</span> subridis.
+    "What a terrible idea hahaha! I love it." <span style="color:#D6B4FC">la Suvereno</span> subridis.
   </blockquote>
 
-  A few challenges with this plan.
-  Most importantly,
-  all the energies required for those compute will be turned into heat;
-  but since we don't want to heat the Earth into a glowing orb
-  or install gigantic radiators extending from surface into deep space
-  that will ruin our views,
-  the total heat that can be dissipated is limited.
-  So to improve the total compute one can get,
-  one need to *cool it down*, as
+  One may naively think that the insane amount of power required by it
+  have to come from off-planet (most notably the sun),
+  with multiple massive power-receiver stations on the surface
+  to be constructed, distanced far away from any cities
+  to allow for larger margins of error.
+  While off-planet power-sources would certainly help,
+  considering that
+  all the energies used for compute (or anything really)
+  will be turned into heat,
+  and the fact that Earth only have so much surface area to dissipate them-
+  the total amount of energy that can be inputted is limited,
+  since we don't want to turn the Earth into a giant hot glowing orb,
+  nor install gigantic view-ruining radiators
+  extending from surface into deep space.
+
+  There are still some ways to work around this somewhat.
+  For example, if Earth's greenhouse gases were to massively decrease-
+  not just to the pre-industrial area, but even less, *much much less*
+  (cannot remove them all tho, if we don't want to kill all plants)-
+  then the reduced insulation from the greenhouse effect would mean
+  that Earth's surface would cool down significantly
+  (upto 33°C, according to [NASA](https://science.nasa.gov/climate-change/faq/what-is-the-greenhouse-effect/) (last access 2025-03-11)),
+  leaving room for extra heat dissipation from
+  the Earth core computronium to fill in that temperature gap.
+  The amount of energy this temperature change corresponding to is still small
+  compared to the total amount of energy from sunlight hitting the earth,
+  as the [Stefan–Boltzmann law](https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law)
+  dictates that $E \propto T^4$, so a ~10% drop in absolute temperature
+  means only an equivalent of 1/3 of Sun's Earth-hitting energy
+  may be ferried off-planet, tops.
+  This plan would mean that RdO probably needs
+  to develop efficient direct carbon capture technologies
+  and implement them at scale,
+  and/or conduct extensive extra geoengineering projects
+  (which can add more risks).
+
+  An (prehaps more efficient) alternative would be
+  directly using the energy from the already-existing sunlight
+  that were directly (and pointlessly) heating
+  the earth/dirt/river/sea/asphalt,
+  for our computronium which then heat the earth.
+  Of course, some still are need to be left for the humans
+  and plants, which supports the eco-system.
+
+  Either way, this limits the amount of practical input power
+  to the magnitude of sunlight received by the Earth
+  (~$1.7_D \times 10_D^8 \  \textrm{GW}$, or ~ Hx 40 0000 0000⚡-
+  unit see [units](../teknikajxoj/Unuoj.md#potenco) page.).
+  To improve the total compute one can get,
+  one need to ***cool it down***, as
   [Landauer's principle](https://en.wikipedia.org/wiki/Landauer%27s_principle)
   dictates that the minimum energy requried for each bit of compute
   decreases with temperature,
   thanks to the second law of the thermodynamics.
-  Most likely the Earth's core would be cooled to around the room temperature;
+  Most likely the Earth's core have to be cooled
+  to around the room temperature;
   One could cool it more,
   but then extra energy would be required
   to pump the heat from the colder core to the hotter surface.
   Likely the sweet spot temperature somewhere in-between;
-  but either way, gigantic heat exchangers would need to be constructed
-  below the surface, to move the heat from the computing core onto the surface
+  but either way, gigantic (nano-scale?) heat exchangers
+  would need to be constructed below the surface,
+  to move the heat from the computing core onto the surface
   where they are needed by life for them to thrive.
   Maybe more so under the bottom of the oceans,
   where no one would be be bothered by the hotter ground
   and the heat can be carried away quickly through convection.
 
-  It would also be helpful to invent a room-temperature superconductor
-  to cut the loss of energy from transmission in something this big.
-  (A task for the second layer to figure out before stage 3!)
+  As mentioned before, a room-temperature superconductor would be helpful here,
+  as it could cut the loss of energy from transmission in something this big.
   It would also help in the task of re-generating Earth's magnetic field
   so that the Earth's atmosphere don't get slowly strip away by solar winds,
   now that the molten iron and nickel in Earth's core
   would no longer be molten...
 
+  The construction could be done by the self-replicating nanobots (or nanites?)
+  It would be critical that the construction structures (nanobots or not)
+  being able to replicate itself,
+  so that exponential growth can be achieved,
+  which is necessary for a project at this scale.
+  The nanobots could also help ***extract valuable minerals***
+  in Earth's mantle and core-
+  most could be used for building the computronium,
+  but some leftover (which will still be a large amount)
+  could be ferried to the surface,
+  ending Omnijo's reliance on imported raw materials
+  (would come in handy if the <span style="color:Beige">Queen</span>
+  do something reckless again as part of her plan,
+  and finally causing Omnijo international sanctions in the future...
+  *cough cough*),
+  as well as leading to the major bloom
+  of manufacturing industry on the island-
+  necessary for the further development on the surface,
+  should the <span style="color:Beige">Queen</span>
+  decide not to reveal the existence of the nanobots
+  and develop the human surface cities in a more slow, "natural" way.
+
   Needless to say, if extensive cares are not taken,
-  all these planet-scale engineering are quite dangerous
+  all these planet-scale engineering are really dangerous
   for the surface-dwellers, given their climate changing potentials.
   Fortunately, <span style="color:MediumPurple">ĜEJDA</span> does care,
   and she has the much needed compute to model everything
@@ -381,12 +445,16 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   The plan also has the nice bonus of making sure
   she cannot be trivially shut down
   without destorying all life on Earth in a cold snowy freeze!
+  (And, even if a full scale nuclear war happens on the surface,
+  or a planet-killer asteriod hit Earth, the core will still live,
+  and with it, humanity will be revived and live on.)
 
   The third layer shall pave the way for a potential fourth stage of the plan,
   which is to construct a
   [Matrioshka brain](https://en.wikipedia.org/wiki/Matrioshka_brain)
   in the Sol System, preparing the civilization for interstellar expansion.
-  Actually many preliminary works can be done in parallel with stage three too!
+  (Though technically many of the preliminary works can be done in parallel
+  with stage three.)
   But let's not get ahead of ourselves :-D
 
   As the compute layer was designed by
@@ -505,6 +573,9 @@ About the Biology department...
     one cannot deny their cheaper prices and decent taste,
     especially in the ice-cold Insulo-Omnijo
     where little grows natrually anyway.
+    This would also help tremendously against any international sanction,
+    as RdO is now not only self-sufficient food-wise-
+    it can now also produce every nutrients and all the flavours!
     <br>(NOTE: NEED TO THINK OF A BRAND NAME FOR THE FOOD)
 
   3. **Ending diseases and aging**  
