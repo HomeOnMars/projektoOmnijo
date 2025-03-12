@@ -14,13 +14,17 @@ Listo de Inspiraĵoj
 -------------------------------------------------------------------------------
 
 > [!NOTE]
-> Disclaimer:
 > My stories are original.
 > Even though some of my ideas have been inspired by the works listed below,
 > NONE of my stories are directly set in the universes of those works,
 > NOR are any of my characters directly from any of the below works.
 
-Note: This list may be incomplete.
+> [!NOTE]
+> The opinions expressed in these works are not necessarily mine.
+> My opinion does not necessarily align with the authors of these works either.
+
+> [!NOTE]
+> This list may be incomplete.
 
 ### Blogoj kaj Mallongaj Rakontoj
 

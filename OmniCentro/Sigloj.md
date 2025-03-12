@@ -231,6 +231,8 @@ Using the leading digit for identifying districts and areas:
 |||
 | Policejo                 | Police Station           |
 | Fajrobrigado             | Fire Station/Brigade/Department |
+| Gardoturo                | Watch Tower              |
+| Fajrogardista Turo       | Firewatch Tower          |
 | Bunkro                   | Shelter                  |
 | Kliniko                  | Clinic                   |
 | Hospitalo                | Hospital                 |

@@ -47,5 +47,5 @@ Here are the emblem designs for the acronyms listed in [Background Bulletin](../
 ||||
 | RdO  | ![RdO](../fig/RdO.svg)   | This beige Symbol is not only an abstraction of the letter `R` (Regno) encompassing `O` (Omnijo), but also a symbolization of life (the curve) thriving on the surface of Earth (the circular core), where the core supports and the people entrusts. |
 | OCG  | ![OCG](../fig/OCG.svg)   | Was it supposed to be a clock with [minutes ĉ and hours ĝ](../teknikajxoj/Unuoj.md#tempo) symbols inside? Or was there something else? Either way, <span style="color:Beige">La Reĝino Serena</span> is quite happy about it. Rock on! |
-| OCR  | ![OCR](../fig/OCR.svg)   | A maze-like symbol for the maze-like bureaucratic apparatus, with easy access enabled by smart technologies. |
+| OCR  | ![OCR](../fig/OCR.svg)   | A maze-like symbol for the maze-like bureaucratic apparatus, with easy access enabled by smart technologies, where all government services are personalized for each citizen, handled in the official app with the same logo |
 | OCRR | ![OCRR](../fig/OCRR.svg) | Tune in to the radio with this symbol in classic dials style! |

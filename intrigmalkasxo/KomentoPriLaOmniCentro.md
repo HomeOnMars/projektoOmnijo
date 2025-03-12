@@ -425,10 +425,13 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   but some leftover (which will still be a large amount)
   could be ferried to the surface,
   ending Omnijo's reliance on imported raw materials
-  (would come in handy if the <span style="color:Beige">Queen</span>
-  do something reckless again as part of her plan,
+  (would come in handy when the
+  <span style="color:Beige">Queen</span>
+  finally doing something "reckless" enough (as planned, as always)
+  to upset the global community,
   and finally causing Omnijo international sanctions in the future...
-  *cough cough*),
+  before which <span style="color:Beige">Serena</span> will wait patiently
+  until RdO is ready. *cough cough*),
   as well as leading to the major bloom
   of manufacturing industry on the island-
   necessary for the further development on the surface,
@@ -445,7 +448,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   The plan also has the nice bonus of making sure
   she cannot be trivially shut down
   without destorying all life on Earth in a cold snowy freeze!
-  (And, even if a full scale nuclear war happens on the surface,
+  (And, should a full scale nuclear war happens on the surface,
   or a planet-killer asteriod hit Earth, the core will still live,
   and with it, humanity will be revived and live on.)
 

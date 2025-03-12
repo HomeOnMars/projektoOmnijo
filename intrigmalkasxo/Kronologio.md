@@ -53,8 +53,7 @@ Acronyms `J☾⚝⚻ĝĉŝ` see [Units](../teknikajxoj/Unuoj.md#tempo) page.
 | Y+3⚝   | poliso | <span style="color:Beige">Serena</span> implemented policy: `encourage emigration and immigrantion` |
 | Y+3⚝   |  OCMF  | <span style="color:Beige">Serena</span> started several nationalized companies, including the Banko de Omnijo (BdO) |
 | Y+1☾   | poliso | <span style="color:Beige">Serena</span> started to `disband most of the armies` |
-| Y+2☾3⚝ |   OCG  | The interview of the [government type](../OmniCentro/Bulteno.md#fonrakonta-bulteno) happened |
-| Y+3☾   | poliso | <span style="color:Beige">Serena</span> implemented policy: `UBI` (Universal basic income) |
+| Y+1☾   |   OCR  | <span style="color:Beige">Serena</span> launches the official personalized government service app |
 | Y+3☾1⚝ | poliso | <span style="color:Beige">Serena</span> declares `Epopo` to be the new official language  <br>\(Northward Equinox\) |
 | Y+`3☾?`  |  mondo | Worldwide economic recession due to the brust of AI bubble |
 | Y+`4☾?`  |  OCMF  | Most of the banks on the island went bankrupt and integrated into Banko de Omnijo |
@@ -64,6 +63,8 @@ Acronyms `J☾⚝⚻ĝĉŝ` see [Units](../teknikajxoj/Unuoj.md#tempo) page.
 | Y+6☾2⚝   |   OC   | Fondation day of OmniCentro  <br>\(Summer Solstice 20XX\) |
 ||||
 | Y+6☾2⚝   |   OC   | Physical works of the dams Ab-Olivkronaĵo and its surrounding infrastructure began |
+| Y+6☾2⚝   |   OCG  | The interview of the [government type](../OmniCentro/Bulteno.md#fonrakonta-bulteno) happened |
+| Y+6☾3⚝   | poliso | <span style="color:Beige">Serena</span> implemented policy: `UBI` (Universal basic income) |
 | Y+9☾3⚝   |   OC   | Ab-Olivkronaĵo Server Farms (a.k.a. second layer entry point) construction stage 1 completed; Ab-Olivkronaĵo second layer testing site construction began  <br>\(Southward Equinox\) |
 | Y+`1J6☾?`|  OKP   | Foundation of OKP- the Omnija Space Program |
 | Y+2J     |   OC   | Completion of the dams Ab-Olivkronaĵo #1 and #2 |

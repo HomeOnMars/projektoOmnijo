@@ -109,12 +109,30 @@ and re-directed the military fundings and personnel there
   ensuring good coverage in even the remotest area in the island;
 - Transportation were also improved and subsidized,
   with free public transit trial started on the whole island;
+- A new smart government services app (`OCR`) were launched (backed by OCMI),
+  handling all sorts of internal affairs- from taxes to pensions-
+  with a personalized approach
+  where most forms were already filled out for the users
+  based on what the central gov knows about them.
+  (No, this personalization cannot be opted-out.)
+  It also offers one-to-one consultations with government officials
+  which explains the gov and <span style="color:Beige">Serena</span>'s
+  position and motivation to the citizens,
+  and listens to and answers their concerns.
+  Though the waitlist for the consultations is a bit long in the beginning,
+  it quickly improved in the next few months.[^Historio-RdO-Serena-kmt5]
 - Hospitals received more funding
   to keep them well staffed and maintained,
   allowing them to handle the surge of patients
   from the recent increases in accident rates;
 - Even mental healthcare was given the attention it deserves,
   combating the worrying trend of internet burnout epidemic.),
+
+[^Historio-RdO-Serena-kmt5]: It's also rumored that
+  the consultants from the app is AI-generated in real time,
+  which is almost certainly nonsense
+  given the global stagnation of AI development at the time.
+  Probably why those rumors come to be in the first place.
 
 but surely people, being people, would anger and rebel
 on the change of everything they know
