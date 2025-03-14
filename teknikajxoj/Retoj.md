@@ -97,8 +97,8 @@ Arterial / Collector / Local Roads:
   - (2025-01-26) [Hussain et al. (2019)](https://doi.org/10.1016/j.aap.2019.05.033) Meta-analysis on pedestrian fatality vs vehicle speed.
 - Parking:
   - Default **Price**:
-    - Cars: `O$32` per day/month per spot.
-    - Motorcycles: `O$16` per day/month per spot.
+    - Cars: `💲32` per day/month per spot.
+    - Motorcycles: `💲16` per day/month per spot.
     - Bicycles: Free.
   - Price can be higher
     near high density transit centers

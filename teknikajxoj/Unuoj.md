@@ -354,7 +354,8 @@ $$
   \approx 9.8263_D \  \textrm{W}
 $$
 
-OC's target power poduction is about Hx8000⚡(Dx21GW)to Hx10000⚡(Dx42GW) (2025-03-03).
+OC's target power poduction is
+about Hx8000⚡(Dx21GW) to Hx10000⚡(Dx42GW).
 
 The output of the sun is
 
@@ -407,6 +408,30 @@ $$
 $$
 
 (Note: $15ΨΨ3_H = 3^2 \times 10011_D$.)
+
+### Monero
+
+> Currency
+
+> [!NOTE]
+> Currency unit: ***Sejroj*** `💲` (0x1F4B2) (Omnija dollars)
+
+How much is 1 Sejro worth?
+Using energy price as calibration:
+In CSL2 game, each MW gives 💲Dx2500 per hour when exported,
+though in-game we assume 1 day is 1 month (or 1/12 of a year).
+This means approximately **💲Dx0.082 per kWh**.
+
+Considering the energy price in EU after tax in 2024 are
+around 0.1 €/kWh to 0.4 €/kWh
+(Reference see Figure 1 in [this eurostat webpage](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Electricity_price_statistics) (2025-03-15)),
+this means 1💲 is approximately somewhere in between 1 € and 4 €.
+
+Due to energies are mostly generated cheaply from hydropower,
+it's probably more responsible to say that
+the currency situation in RdO should be more akin to Iceland,
+i.e.,
+**💲1 ≈ €2**.
 
 ### Code illustrations
 

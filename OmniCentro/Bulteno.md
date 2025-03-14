@@ -62,7 +62,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 | Country Name            |   RdO   | La Regno de Omnijo       |
 | Central Authority Name  |   OCG   | Omnija Centra Gvidantaro |
 | Government Service Name |   OCR   | Omnija Centra Registaro  |
-| Official Currency       |   O\$   | Omnija Sejroj            |
+| Official Currency       | OSR (💲 / O$) | [Omnija Sejroj](../teknikajxoj/Unuoj.md#monero) |
 
 | (Fikciaj) Fonaj Informoj  <br>(Fictional) Background Information | Priskribo  <br>Description |
 | :---------------- | ---- |

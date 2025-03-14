@@ -58,6 +58,7 @@ ASCIIIFY_CHR = {
     '☾': 'Monato',
     '⚡': 'potenco',
     '°': 'deg',
+    '💲': 'OSR',
 }
 ASCIIIFY = {ord(k): v for k, v in ASCIIIFY_CHR.items()}
 
@@ -186,7 +187,7 @@ u_si_defs : dict[str, units.UnitBase] = {
         'kg', 'g', 
         's', 'd', 'yr',
         'K', 'deg_C',
-        'W', 'MW', 'GW',  'TW', 'Lsun',
+        'W', 'kW', 'MW', 'GW',  'TW', 'Lsun',
     ]
 }
 units.def_unit('kph', units.km / units.h, namespace=u_si_defs)
@@ -316,7 +317,10 @@ units.def_unit(
 units.def_unit(
     ['⚡', 'MLu', 'MunioLumro'], 0x10000 *u_rdo_defs['Lu'],
     namespace=u_rdo_defs)
-
+#    currency
+units.def_unit(
+    ['💲', 'Sejro'], format={'latex': r' 💲 '},
+    namespace=u_rdo_defs)
 
 
 # Extra
@@ -384,8 +388,14 @@ if __name__ == '__main__':
     print(f"Added seconds per day: {(1*u_rdo.Msx - 1*units.day).to(units.s):.3f}")
     print(f"Added minutes per year: {(1*u_rdo.Jx - 1*units.year).to(units.min):.3f}")
 
+    print("\nAbout currency:", end='')
+    print(
+        "Energy price in CSL2 game is",
+        f"{2500*u.Sejro / (u.MW*units.h*((units.yr/12)/units.day)).to(u.kW*units.h)}")
+
     print("\nTesting name collision with SI units... ", end='')
     # units.add_enabled_units(u_rdo_defs)
     u_nat.enable()
     u_rdo.enable()
+    u.enable()
     print("Done.")
