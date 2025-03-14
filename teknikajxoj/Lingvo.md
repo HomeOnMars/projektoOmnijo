@@ -69,12 +69,16 @@ Changes of Esperanto++ from Esperanto include:
   - `hek`   for Dx            16 (= 2^Dx4,  or Hx          10);
   - `jent`  for Dx           256 (= 2^Dx8,  or Hx         100);
   - `gil`   for Dx         4 096 (= 2^Dx12, or Hx        1000);
-  - `munio` for Dx        65 536 (= 2^Dx16, or Hx      1 0000);
-  - `dunio` for Dx 4 294 967 296 (= 2^Dx32, or Hx 1 0000 0000);
-  - `trinio`for Dx 2^48;
+  - `munio` for Dx        65 536 (= 2^Dx16 = Dx65536^1, or Hx      1 0000);
+  - `dunio` for Dx 4 294 967 296 (= 2^Dx32 = Dx65536^2, or Hx 1 0000 0000);
+  - `trinio`for Dx65536^3 (= Hx10000^3 = 1p12);
+  - `heknia munio` for Dx65536^Dx17 (= Hx10000^Hx11 = 1p44 ≈ 7.59e81 );
+  - `heknia dunio` for Dx65536^Dx18 (= Hx10000^Hx12 = 1p48 ≈ 4.97e86 );
   - etc.
-  (As a reference, 9 100 000 000 (base10) = 2 1Υ66 Ψλ00, pronounced as
-  du dunio, gil ganjent seshek ses munio, fusgil lomjent.);
+  - As a reference,
+    Dx 9 100 000 000 = Hx 2 1Υ66 Ψλ00,
+    pronounced as
+    'du dunio, gil ganjent seshek ses munio, fusgil lomjent'.
 - Marking numbers as decimal ('Dekuma') or hexadecimal ('Hekuma'):
   - Dekuma: prefixing `Dx`, or add a subscript $?_D$;
   - Hekuma: prefixing `Hx`, or add a subscript $?_H$;

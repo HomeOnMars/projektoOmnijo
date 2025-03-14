@@ -39,8 +39,8 @@ See [Wikipedia](https://en.wikipedia.org/wiki/Natural_units#Planck_units).
 > $k_B$ is the [Boltzmann constant](https://en.wikipedia.org/wiki/Boltzmann_constant) (molecular energy scale per temperature).
 
 See also [Lingvo](../teknikajxoj/Lingvo.md#algebro) page for prefix acronyms
-$h \  j \  g \  M \  N_2 \  N_3 \  N_4$ for
-Hx10, Hx100, Hx1000, Hx 1 0000, Hx 1 0000 0000 = 1p8, 1pΠ, 1p10, etc;
+$h \  j \  g \  M \  D \  T \  R \  I$ for
+Hx10, Hx100, Hx1000, Hx 1 0000, Hx 1 0000 0000 = 1p8, 1pΠ, 1p10, 1p14, etc;
 also for Hexadecimal pre/surfix *H* vs Decimal pre/surfix *D*.
 
 ### Longeco
@@ -93,12 +93,28 @@ $$
   \approx 514.63_D \  \textrm{km}
 $$
 
-Consequentially, One Earth radius is approximately
+Consequentially, one Earth radius is approximately
 
 $$
   R_{\oplus}
   \approx Π.64Π4_H \  \textrm{MU}
   \approx 6378.1_D \  \textrm{km}
+$$
+
+One astronomical unit is approximately
+
+$$
+  \textrm{au}
+  \approx 4 6Ψ83 8018.9_H \  \textrm{U}
+  \approx 4.6Ψ84_H \  \textrm{DU}
+$$
+
+One light-year is approximately
+
+$$
+  \textrm{lyr}
+  \approx 4.47Π0_H \times 10_H^Π \  \textrm{U}
+  \approx 4.47Π0_H \  \textrm{TU}
 $$
 
 #### Trakmezurilo
@@ -217,7 +233,7 @@ The ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$
 > Temperature
 
 > [!IMPORTANT]
-> Base temperature unit: ***Zoroj*** `Z` (degree Zoro) (provisional name)
+> Base temperature unit: ***Zoroj*** `Z` (Omnija Kelvin)
 
 $$
   \textrm{Z}
@@ -230,7 +246,7 @@ Hx100 Z is approximately the [triple point of water](https://en.wikipedia.org/wi
 
 $$
   \textrm{jZ}
-  \equiv 100_H Z
+  \equiv 100_H \textrm{Z}
   \approx 273.16_D \  \textrm{K}
   \approx 0.013_D \  \degree \textrm{C}
 $$
@@ -244,13 +260,21 @@ $$
 
 $\textrm{Z} = 0$ is exactly the absolute zero temperature.
 
+> [!NOTE]
+> Useful temperature unit: ***Zorumaj gradoj*** `°z` (Omnija degree Celsius)
+
+$$
+  X \degree \textrm{z}
+  = 100_H + X \textrm{Z}
+$$
+
 Normal body temperature ranges approximately
-from $122_H \textrm{Z} \approx 36.3_D \degree \textrm{C}$
-to   $123_H \textrm{Z} \approx 37.4_D \degree \textrm{C}$.
+from $122_H \textrm{Z} = 22_H \degree \textrm{z} \approx 36.3_D \degree \textrm{C}$
+to   $123_H \textrm{Z} = 23_H \degree \textrm{z} \approx 37.4_D \degree \textrm{C}$.
 
 Ideal room temperature ranges approximately
-from $111_H \textrm{Z} \approx 18.2_D \degree \textrm{C}$
-to   $114_H \textrm{Z} \approx 21.4_D \degree \textrm{C}$.
+from $111_H \textrm{Z} = 11_H \degree \textrm{z} \approx 18.2_D \degree \textrm{C}$
+to   $114_H \textrm{Z} = 14_H \degree \textrm{z} \approx 21.4_D \degree \textrm{C}$.
 
 ### Rapido
 
@@ -313,15 +337,43 @@ relativistic effects should be considered.
 > Power
 
 > [!NOTE]
-> Useful Power unit: ***?????*** `⚡` (0x26A1) (Omnija MWs) (NAME TBD)
+> Useful Power unit: ***MunioLumro*** `⚡` (0x26A1) (Omnija MWs)
 
 $$
   ⚡
-  \equiv 10000_H \textrm{U}^2 \textrm{p} / \textrm{ŝ}^3
+  \equiv 10000_H \textrm{Lu}
+  = 10000_H \textrm{U}^2 \textrm{p} / \textrm{ŝ}^3
   \approx 0.64398_D \  \textrm{MW}
 $$
 
+while the power unit ***Lumro*** is defined as
+
+$$
+  \textrm{Lu}
+  \equiv \textrm{U}^2 \textrm{p} / \textrm{ŝ}^3
+  \approx 9.8263_D \  \textrm{W}
+$$
+
 OC's target power poduction is about Hx8000⚡(Dx21GW)to Hx10000⚡(Dx42GW) (2025-03-03).
+
+The output of the sun is
+
+$$
+  L_\odot
+  \approx 20.396_H \textrm{ILu}
+  \approx 2.0396_H \times 10_H^{11_H} ⚡
+  \approx 20 3961 1201 8174 0000_H ⚡
+$$
+
+The solar energy received by Earth is approximately
+$$
+  \frac{\pi R_{\oplus}^2}{4 \pi (\textrm{au})^2} L_\odot
+  \approx 1.74_D \times 10_D^8 \textrm{GW}
+  \approx 3Υ.Υ_H \textrm{TLu}
+  \approx 3.ΥΥ_H \times 10_H^9 ⚡
+  % \approx 3Υ Υ501 0Π25_H ⚡
+  \approx 3Υ Υ000 0000_H ⚡
+$$
 
 ### Konstantoj
 

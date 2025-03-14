@@ -57,6 +57,7 @@ ASCIIIFY_CHR = {
     '⚝': 'Sx',
     '☾': 'Monato',
     '⚡': 'potenco',
+    '°': 'deg',
 }
 ASCIIIFY = {ord(k): v for k, v in ASCIIIFY_CHR.items()}
 
@@ -137,7 +138,7 @@ def presi_Hx(
     """
     if sc < 1: raise ValueError("Significant digits 'sc' must >= 1.")
 
-    n = np.float64(n)
+    # n = np.float64(n)
     sign = n >= 0
     n = abs(n)
     if n == 0:
@@ -184,7 +185,8 @@ u_si_defs : dict[str, units.UnitBase] = {
         'm', 'cm', 'km', 'Rearth', 'au', 'lyr', 'pc',
         'kg', 'g', 
         's', 'd', 'yr',
-        'K',
+        'K', 'deg_C',
+        'W', 'MW', 'GW',  'TW', 'Lsun',
     ]
 }
 units.def_unit('kph', units.km / units.h, namespace=u_si_defs)
@@ -211,10 +213,24 @@ u_nat_base['temp'] =  units.def_unit(
 
 # u_rdo: RdO standard units
 u_rdo_prefixes = [
-    ('h', ['hek'],   0x10),
-    ('j', ['jent'],  0x100),
-    ('g', ['gil'],   0x1000),
-    ('M', ['Munio'], 0x10000),
+    ('h', ['hek'    ], 0x10),         #
+    ('j', ['jent'   ], 0x100),
+    ('g', ['gil'    ], 0x1000),       #
+    ('M', ['Munio'  ], 0x10000),
+    ('D', ['Dunio'  ], 0x10000**0x2), #
+    ('T', ['Trinio' ], 0x10000**0x3), #
+    ('R', ['Kvarnio'], 0x10000**0x4), #
+    ('I', ['Kvinnio'], 0x10000**0x5),
+    ('S', ['Sesnio' ], 0x10000**0x6), #
+    ('P', ['Sepnio' ], 0x10000**0x7), #
+    ('O', ['Oknio'  ], 0x10000**0x8),
+    ('N', ['Nauxnio'], 0x10000**0x9), #
+    ('E', ['Delnio' ], 0x10000**0xA),
+    ('L', ['Lomnio' ], 0x10000**0xB), #
+    ('K', ['Naknio' ], 0x10000**0xC), #
+    ('G', ['Signio' ], 0x10000**0xD), #
+    ('A', ['Gannio' ], 0x10000**0xE), #
+    ('F', ['Fusnio' ], 0x10000**0xF), #
 ]
 u_rdo_base : dict[str, units.UnitBase] = u_nat_base.copy()
 u_rdo_defs : dict[str, units.UnitBase] = {}
@@ -232,9 +248,15 @@ u_rdo_base['time'] = units.def_unit(
 u_rdo_base['temp'] = units.def_unit(
     ['Z', 'Zoro'], 10011 * 2**(-120) * u_nat_base['temp'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
+# mask units with the same names as SI
+_UNITS_MASK_SET = {
+    'h', 'g', 'D', 'T', 'R', 'S', 'P', 'N', 'L', 'K', 'G', 'A', 'F',
+    'AU',
+    'kph', 'mph',
+}
 #    extra defs: prefixes
 for prefix_sn, prefix_tab, scale in u_rdo_prefixes:
-    if prefix_sn not in {'h', 'g'}:    # avoid name collisions with SI units
+    if prefix_sn not in _UNITS_MASK_SET:    # avoid name collisions with SI units
         units.def_unit(
             [prefix_sn, *prefix_tab],
             scale*units.dimensionless_unscaled,
@@ -276,12 +298,24 @@ units.def_unit(
 units.def_unit(
     ['Ĵ', 'Ĵaro'], 365.25 * u_rdo_defs['Mŝ'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
+#    temperature
+deg_z = units.def_unit(
+    ['°z', 'deg_z', 'zoruma_grado'], namespace=u_rdo_defs)
+zoro_equivalency = (
+    deg_z, u_rdo_defs['Z'],
+    lambda deg_z: deg_z + 0x100,
+    lambda Z: Z - 0x100,
+)
 #    speed
 units.def_unit('Uoŝ', u_rdo_defs[ 'U']/u_rdo_defs['ŝ'], namespace=u_rdo_defs)
 units.def_unit('joĝ', u_rdo_defs['jU']/u_rdo_defs['ĝ'], namespace=u_rdo_defs)
 #    power
 units.def_unit(
-    ['⚡', 'M?'], 0x10000 *u_rdo_base['power'], namespace=u_rdo_defs)
+    ['Lu', 'Lumro'], 0x1 * u_rdo_base['power'],
+    prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
+units.def_unit(
+    ['⚡', 'MLu', 'MunioLumro'], 0x10000 *u_rdo_defs['Lu'],
+    namespace=u_rdo_defs)
 
 
 
@@ -298,8 +332,24 @@ class Unuoj:
         for k, v in units_defs.items():
             setattr(self, k.translate(ASCIIIFY), v)
 
+        self._UNITS_MASK = {
+            self._defs[k]
+            for k in _UNITS_MASK_SET if k in self._defs
+        }
+        self._defs_masked = {
+            k: v for k, v in self._defs.items() if v not in self._UNITS_MASK}
+
+    def enable_equivalencies(self):
+        return units.set_enabled_equivalencies([
+            zoro_equivalency, *units.equivalencies.temperature()])
+    
+    def enable_units(self):
+        return units.add_enabled_units(self._defs_masked)
+    
     def enable(self):
-        return units.add_enabled_units(self._defs)
+        self.enable_equivalencies()
+        self.enable_units()
+        return
 
 unitsRdO = Unuoj(u_rdo_base, u_rdo_defs)
 unitsNat = Unuoj(u_nat_base, u_nat_defs)    # testing
