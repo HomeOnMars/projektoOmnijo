@@ -5,6 +5,9 @@ Listo de Inspiraĵoj pri la rakontoj de la Regno de Omnijo
 
 > List of inspirations for the stories of the Kingdom of Omnijo.
 
+For documentation purposes.
+But also serves as recommendations for further reading / watching.
+
 > [!CAUTION]
 > ***Major Spoilers throughout this page!!!***  
 > The genre of the materials WILL REVEAL
@@ -22,6 +25,10 @@ Listo de Inspiraĵoj
 > [!NOTE]
 > The opinions expressed in these works are not necessarily mine.
 > My opinion does not necessarily align with the authors of these works either.
+
+> [!NOTE]
+> For any of my contents added after 2025-03-11,
+> some inspirations may be taken from my discussions with ChatGPT.
 
 > [!NOTE]
 > This list may be incomplete.

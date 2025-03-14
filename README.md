@@ -3,9 +3,10 @@
 Projekto Omnijo  <br>  Project Omnijo
 ===============================================================================
 
-Documents for my Cities: Skylines 2 cities
-set in the fictional country *la Regno de Omnijo* (the Kingdom of Omnijo)
-created by my imagination.
+Documents, settings and stories of my imagined fictional country *la Regno de Omnijo* (the Kingdom of Omnijo).
+It began as a background story I wrote for my Cities: Skylines 2 city
+[*OmniCentro*](https://mods.paradoxplaza.com/mods/97163/Any),
+but ballooned into something more.
 
 ![RdO emblem](fig/RdOFlago.svg)
 
