@@ -35,7 +35,9 @@ Oftaj Demandoj
 > [!WARNING]
 > ***Again, everything here is fictional.***
 
-#### Is the Queen in favor of human development and liberty?
+#### Ĉu la Reĝino aprezas homan evoluon kaj liberecon?
+
+> Does the <span style="color:Beige">Queen</span> value human development and liberty?
 
 Human development generally yes;
 as for liberty… depends on your definition of liberty:
@@ -112,6 +114,87 @@ as for liberty… depends on your definition of liberty:
   which includes everyone.
   Generally speaking, *all citizens should assume that the central gov already knows everything about them*.
 
+#### Kio estas la plano de la Reĝino reformi kopirajton?
+
+> What is the <span style="color:Beige">Queen</span>'s plan to reform copyright?
+
+<span style="color:Beige">Serena</span> plans
+to announce and implement her *copyright reform* policy
+8 years after her coronation.
+The goal is *to cut down the fragmentation of human knowledge base*
+and *to ensure free and open access* of all kinds of information for all.
+
+After the reform finished, *the concept of intellectual properties
+will be replaced by* **intellectual works**.
+For all non-infohazard works
+(ranging from books, tv shows, movies, videos, video games,
+webpages, patents, designs, and more),
+the author(s) will have **1 year** of full access control for their content
+after it was published.
+After that, there will be a **Dx15-year** period of limited copyright,
+when while the author(s) can still profit from their intellecture work,
+the materials will be made available from the official government database
+to the general public at a government-determined 'market' price there.
+*After that* (i.e. a hexacade (Hx10 ĵaroj) after publication),
+*the content will enter* **public domain**.
+
+A few more clarifications:
+
+1. All citizens are free to download the content, **build upon** them, and
+  publish it after the 1-year period, or earilier if the author consents.
+  Part of the profits will go back to the original author(s)
+  until a full hexacade after the *original author's* publication date,
+  with proportions determined by the work added by each author.
+2. All downloads must come with **attribution** info, and
+  all publications require proper attribution.
+  *This cannot be opted out.*
+3. The central gov is commited to build and maintain
+  a secure and **full catalog of all humaity's work**, accessible to all.
+  It will come with an easily-accessible web-interface
+  **with no geographic restrictions**.
+  Everyone around the globe can easily download from it
+  as long as *their* government don't block it.
+  (Web service name TBD.)
+4. The central gov offeres authors the option
+  to let the gov handle publication for them **directly from gov database**-
+  if so, everything will be handled automatically
+  and all profits will either be added to author's BdO account automatically,
+  or retained as credits in the database system with a bonus,
+  which can be used to purchase other people's intellecture works.
+  The credit system is done to encourage more creative works.
+5. There will be a **transitional period**.
+  Everything published before `Y+10J` (Dx16th year (a hexacade) after
+  <span style="color:Beige">Serena</span>'s coronation)
+  will have it until `Y+11J` (Dx17th year)
+  before author's full control exppires.
+6. What counts as **"infohazard"** will be determined
+  at the discretion of the central gov.
+7. This policy applies to **ALL** intellectual works, past, present or future,
+  **regardless of their origin country**.
+  Should any individual or company around the globe
+  denounce the system and *explicitly* refuse to play by these rules,
+  the central gov will see them as voluntarily giving up their rights
+  and *put those works in public domain immediately*.
+  *This action cannot be undone.*
+8. The gov only protects the right of what has been logged inside the database.
+  **No entry, no protection.**
+  The extensive data collection practice of RdO basically ensures
+  all works are logged immediately after creation.
+9. While the gov does NOT share unpublished works with anyone else,
+  should they spies on it themselves before original author publish,
+  in principal they could scoop the publication and share the credit.
+  As long as they properly attribute the original author,
+  it would be legal in la Regno.
+  As **RdO does not recognize trade secrets**,
+  the gov sure did this lots of times themselves
+  by publishing companies' receipts/procedures/whatnot.
+
+<span style="color:Beige">Reĝino Serena</span> expects
+significant international pushback from her radical idea.
+Which is why she delayed the announcement to `Y+8J`
+when the kingdom is well-established and self-sufficient,
+ready for major powers' economic sanctions or wars.
+
 ### Pri la Aŭtoro
 
 > About the author
@@ -120,6 +203,6 @@ as for liberty… depends on your definition of liberty:
 
 Why, because it's fun!
 
-#### I don't like what you write
+#### I don't like what you wrote
 
-You are free to leave. Just let me have my fantasy please.
+Feel free to leave. Just let me have my fantasy please.

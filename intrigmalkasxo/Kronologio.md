@@ -73,3 +73,4 @@ Acronyms `J☾⚝⚻ĝĉŝ` see [Units](../teknikajxoj/Unuoj.md#tempo) page.
 | Y+`2J7☾?`   |   bio  | Numerous new species found on the island |
 | Y+`2J8☾2⚝?` |   bio  | Extinction of Rats, Snakes, Cockroaches, Mosquitoes, etc on the island |
 | Y+`2J9☾2⚝?` |   bio  | Magpie population exploded and can be seen everywhere on the island |
+| Y+8J     | poliso | <span style="color:Beige">Serena</span> implemented policy: `copyright reform` |
