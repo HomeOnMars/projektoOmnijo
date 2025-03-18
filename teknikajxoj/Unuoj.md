@@ -367,6 +367,7 @@ $$
 $$
 
 The solar energy received by Earth is approximately
+
 $$
   \frac{\pi R_{\oplus}^2}{4 \pi (\textrm{au})^2} L_\odot
   \approx 1.74_D \times 10_D^8 \textrm{GW}

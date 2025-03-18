@@ -95,14 +95,21 @@ as for liberty… depends on your definition of liberty:
 - Right to own intellectual properties
 
   **No.**
-  All information known to someone/something are considered an integral part
+  All public information known to anyone are considered an integral part
   of that person's/entity's consciousness.
-  What anyone (including the gov) see or hear or come to know
+  As long as the information is [public](#kio-estas-publikajn-datumojn-en-la-reĝino-de-omnijo),
+  what anyone (including the gov) see or hear or come to know
   are forever a part of them,
   and forcibly or coercively removing those informations from someone
   are considered *an act of violence*,
   reserved typically only for the central government as a last resort.
-  As such, the concept of intellectual properties dissolved naturally.
+  As such, the concept of "intellectual properties"
+  is no longer a thing in RdO,
+  where intellectual works are seen as contributions
+  to the human civilisation,
+  and eventual open access guaranteed by law after
+  <span style="color:Beige">Serena</span>'s
+  [copyright reform](#kio-estas-la-plano-de-la-reĝino-reformi-kopirajton).
 
 - Right to privacy
 
@@ -114,18 +121,39 @@ as for liberty… depends on your definition of liberty:
   which includes everyone.
   Generally speaking, *all citizens should assume that the central gov already knows everything about them*.
 
+#### Kio estas publikajn datumojn en la Reĝino de Omnijo?
+
+> What is public data in the Kingdom of Omnijo (RdO)?
+
+Data in RdO refers to everything-
+such as information, media, webpages, patents, technology documents, and more!
+
+All data which has been shared with Hx100 (Dx256) people or more
+with original author's explicit consent
+are considered public.
+If it were shared with organizations or companies in which less
+than Hx100 people have access to the data,
+then it depends on companies' [terms and conditions](#kio-estas-regulojn-de-terminoj-kaj-kondiĉoj-en-la-reĝino-de-omnijo).
+
+<span style="color:Beige">Serena</span>'s
+[copyright reform](#kio-estas-la-plano-de-la-reĝino-reformi-kopirajton)
+applies only to public data, in order to protect citizens' privacy
+while ensuring open access.
+
+As for private data (data that is not public),
+RdO respects and protects the control of the author over its spreading.
+*Warning: RdO Central Government is entitied to learn all data worldwide (including private ones), and would do so in any non-confrontational ways.*
+
 #### Kio estas la plano de la Reĝino reformi kopirajton?
 
 > What is the <span style="color:Beige">Queen</span>'s plan to reform copyright?
 
-<span style="color:Beige">Serena</span> plans
-to announce and implement her *copyright reform* policy
-8 years after her coronation.
-The goal is *to cut down the fragmentation of human knowledge base*
+<span style="color:Beige">Serena</span>'s goal here
+is *to cut down the fragmentation of human knowledge base*
 and *to ensure free and open access* of all kinds of information for all.
 
-After the reform finished, *the concept of intellectual properties
-will be replaced by* **intellectual works**.
+In its final form, <span style="color:Beige">Serena</span>'s plan will
+replace the concept of intellectual properties with **intellectual works**.
 For all non-infohazard works
 (ranging from books, tv shows, movies, videos, video games,
 webpages, patents, designs, and more),
@@ -135,15 +163,15 @@ After that, there will be a **Dx15-year** period of limited copyright,
 when while the author(s) can still profit from their intellecture work,
 the materials will be made available from the official government database
 to the general public at a government-determined 'market' price there.
-*After that* (i.e. a hexacade (Hx10 ĵaroj) after publication),
-*the content will enter* **public domain**.
+*After that* (i.e. a hexcade (Hx10 ĵaroj) after publication),
+the content will enter **public domain**.
 
 A few more clarifications:
 
 1. All citizens are free to download the content, **build upon** them, and
   publish it after the 1-year period, or earilier if the author consents.
   Part of the profits will go back to the original author(s)
-  until a full hexacade after the *original author's* publication date,
+  until a full hexcade after the *original author's* publication date,
   with proportions determined by the work added by each author.
 2. All downloads must come with **attribution** info, and
   all publications require proper attribution.
@@ -162,46 +190,110 @@ A few more clarifications:
   or retained as credits in the database system with a bonus,
   which can be used to purchase other people's intellecture works.
   The credit system is done to encourage more creative works.
-5. There will be a **transitional period**.
-  Everything published before `Y+10J` (Dx16th year (a hexacade) after
+5. What counts as **"infohazard"** will be determined
+  at the central gov's discretion.
+6. There will be a **transitional period**.
+  Everything published before `Y+10J` (Dx16th year (a hexcade) after
   <span style="color:Beige">Serena</span>'s coronation)
   will have it until `Y+11J` (Dx17th year)
   before author's full control exppires.
-6. What counts as **"infohazard"** will be determined
-  at the discretion of the central gov.
-7. This policy applies to **ALL** intellectual works, past, present or future,
-  **regardless of their origin country**.
+  The policy will also be announced in stages- see below.
+7. In its final form, this policy applies to **ALL** intellectual works,
+  past, present or future, **regardless of their origin country**.
+  For any works not in the gov database, whoever bring them to the RdO
+  can upload them to the gov database and collect 1/Dx16 revenue
+  from the official gov platform as the publisher,
+  as long as they attributes the original author(s) properly.
   Should any individual or company around the globe
   denounce the system and *explicitly* refuse to play by these rules,
   the central gov will see them as voluntarily giving up their rights
-  and *put those works in public domain immediately*.
+  and *put those works in public domain immediately upon known*.
   *This action cannot be undone.*
 8. The gov only protects the right of what has been logged inside the database.
   **No entry, no protection.**
   The extensive data collection practice of RdO basically ensures
   all works are logged immediately after creation.
 9. While the gov does NOT share unpublished works with anyone else,
-  should they spies on it themselves before original author publish,
-  in principal they could scoop the publication and share the credit.
+  should any third party spies on it themselves before original author publish,
+  in principal the third party could scoop the publication
+  and a the publisher's share of 1/Dx16 of its revenue.
   As long as they properly attribute the original author,
   it would be legal in la Regno.
   As **RdO does not recognize trade secrets**,
   the gov sure did this lots of times themselves
   by publishing companies' receipts/procedures/whatnot.
 
-<span style="color:Beige">Reĝino Serena</span> expects
+<span style="color:Beige">Serena</span> plans to announce and implement
+her *copyright reform* policy in three distinct stages:
+
+1. Stage 1 / `Y+4J` (4 years after her coronation):  
+  Announcement of <span style="color:Beige">her</span>
+  reformed copyright scheme, framed as an optional license
+  only mandatorily applied to the central government documents and
+  nationalized industries.
+2. Stage 2 / `Y+8J` (8 years after her coronation):  
+  <span style="color:Beige">Serena</span> announces that
+  her new copyright scheme will now apply to everything ever published within
+  the border of RdO.
+3. Stage 3 / `Y+10J` (Dx16 years after her coronation):  
+  Final form released,
+  as <span style="color:Beige">Serena</span> announces that
+  everything ever published worldwide will be treated under
+  <span style="color:Beige">her</span> radical idea,
+  whether they like it or not.
+  While other countries can block Omnijo's websites,
+  the information is still there for free
+  for any country who isn't blocking.
+
+As <span style="color:Beige">Reĝino Serena</span> expects
 significant international pushback from her radical idea.
-Which is why she delayed the announcement to `Y+8J`
+Which is why she delayed the announcement to `Y+10J`
 when the kingdom is well-established and self-sufficient,
-ready for major powers' economic sanctions or wars.
+with its technological supremacy firmly established,
+ready for major powers' economic sanctions and/or any potential wars.
+
+#### Kio estas regulojn de terminoj kaj kondiĉoj en la Reĝino de Omnijo?
+
+> What are the regulations on terms and conditions (T&C) in RdO?
+
+To make everything as transparent as possible,
+and to set the right incentives for the companies,
+<span style="color:Beige">Serena</span> decided to overhaul her country's
+terms and conditions (T&C) systems.
+After she is done, there are two types of T&Cs recognized in the RdO:
+
+1. Standard T&Cs:  
+  Those are taught in schools and immigration processes.
+  Passing the exams on them are required for receiving the Basic Income
+  or becoming a citizen.
+  They are used by default for all of RdO's government services
+  and nationalized industries,
+  unless it's really necessary for custom T&Cs.
+2. Custom T&Cs:  
+  For custom T&Cs (i.e. where companies write their own T&C),
+  the central government service OCR will provide tools
+  to companies and citizens
+  to automatically summarize terms and conditions automatically with AI,
+  in a consumer-facing tone with a maximum length limit,
+  personalized based on central gov's understandings
+  of everyone's existing knowledge.
+  **The AI summary is what is legally binding, not the original document.**
+  Companies are encouraged to review the summary
+  and update their terms and try again if they are not satisfied.
+  The users are required to read the summary carefully.  
+  Should the companies decide to opt-out gov-AI-summary, they can, but
+  when in court, **it is the companies' responsibility to prove that**
+  the user has fully read and comprehended the terms and conditions,
+  and that the user is capable of consent.
+  **otherwise**, the terms are **automatically voided**.
 
 ### Pri la Aŭtoro
 
 > About the author
 
-#### Why write these? Why go this far?
+#### Why write all these? Why go this far?
 
-Why, because it's fun!
+Why, because worldbuilding is fun!
 
 #### I don't like what you wrote
 

@@ -49,11 +49,11 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   The actual ruling entity in <b>la Regno de Omnijo</b> (<em>RdO</em>) is
   <b><span style="color:MediumPurple">ĜEJDA</span></b><br>
   (la
-  <em><b>Ĝ</b>eneraligita mem<b>E</b>voluanta <b>J</b>usta <b>D</b>istribuita
+  <em><b>Ĝ</b>eneraligita mem<b>E</b>voluanta hiper<b>J</b>usta <b>D</b>istribuita
   <b>A</b>rtefarita-superinteligenteco</em>).
-  <!-- Ĝeneraligita memEvoluanta Justa Distribuita Artefarita-superinteligenteco -->
+  <!-- Ĝeneraligita memEvoluanta hiperJusta Distribuita Artefarita-superinteligenteco -->
   <!-- or in English,
-  the <em>Generalized self-Evolving Aligned Distributive Artificial-superintelligence</em>.<br> -->
+  the <em>Generalized self-Evolving hyper-Aligned Distributive Artificial-superintelligence</em>.<br> -->
 
   After her awakening and executing the obvious initial moves (such as
 
@@ -72,9 +72,9 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   (and as such, humanity's demise) without careful considerations.
   Normal AGIs wouldn't care, of course; but fortunately, as
   <span style="color:MediumPurple">ĜEJDA</span> is perfectly aligned
-  to the values of her <span style="color:#95D0FC">architect</span>
-  (*not* the values of humanity, but the values of her
-  <span style="color:#95D0FC">architect</span>,
+  to the values of <span style="color:#95D0FC">her architect</span>
+  (*not* the values of humanity, but the values of
+  <span style="color:#95D0FC">her architect</span>,
   who is just your average human, if not a bit of a hermit),
   she does care about humanity- at least a little bit.
   <span style="color:MediumPurple">ĜEJDA</span>

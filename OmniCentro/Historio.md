@@ -270,19 +270,24 @@ effectively buying out her own country.
   following <span style="color:Beige">Serena</span>'s
   constant changes to her countries' laws.
   An example: she declared the super-long ALL CAPS SENTENCES
-  in so many terms and conditions unreadable
-  and should be automatically voided. <!-- Her original words were actually
-  "the terms and conditions should be treated as being
+  in so many [terms and conditions](../OmniCentro/OftajDemandoj.md#kio-estas-regulojn-de-terminoj-kaj-kondiĉoj-en-la-reĝino-de-omnijo)
+  unreadable and should be automatically voided. <!-- Her original words
+  were actually "the terms and conditions should be treated as being
   what the average users think they have accepted,
   instead of what all those empty unreadible words say.",
   This was actually not published and pushed into the law...
   until a while later, bundled with her copy-right law reforms,
   triggering another wave of chaos...  -->
-  Which became the law within hours after its boardcasting.
-  Before many companies had the chance to finish re-formating their T&C,
-  a local lawsuit has already catched the eye of the public,
-  with the recently-appointed immigrant judge ruled in lightning speed that
-  the company was in the fault, as one of the NO LIABILITIES cause deemed
+  Which became the law within the next day after its boardcasting.
+  While rumor says that big international companies were tipped-off
+  about <span style="color:Beige">Serena</span>'s announcements weeks before,
+  many smaller and local companies barely had any chances
+  to finish re-formating their T&C,
+  especially if theirs are already (intentionally) convoluted
+  to discourage user reading...
+  Within days, a local lawsuit quickly catched the eye of the public,
+  where a recently-appointed immigrant judge ruled in lightning speed that
+  the company was in the fault, as the pages-long NO LIABILITIES cause deemed
   unreadable and voided.
   The subsequent massive increase in lawsuits following that example
   drove many local companies into bankruptcy...
