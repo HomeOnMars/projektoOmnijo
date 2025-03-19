@@ -64,6 +64,9 @@ Changes of Esperanto++ from Esperanto include:
 - Decimal separator in *E++* is `.` instead of `,`;<br>
   Thousands separator (decimal) / ten-thousands separator (hexadecimal) is
   space(` `) instead of `.`;<!-- markdownlint-disable-line no-space-in-code -->
+- Marking numbers as decimal ('Dekuma') or hexadecimal ('Hekuma'):
+  - Dekuma: prefixing `Dx`, or add a subscript $?_D$;
+  - Hekuma: prefixing `Hx`, or add a subscript $?_H$;
 - Built-in support for *hexadecimal* algebra:
   - `Δ λ Π Σ Υ Ψ` written/pronounced as `del lom nak sig gan fus`;
   - `hek`   for Dx            16 (= 2^Dx4,  or Hx          10);
@@ -72,16 +75,18 @@ Changes of Esperanto++ from Esperanto include:
   - `munio` for Dx        65 536 (= 2^Dx16 = Dx65536^1, or Hx      1 0000);
   - `dunio` for Dx 4 294 967 296 (= 2^Dx32 = Dx65536^2, or Hx 1 0000 0000);
   - `trinio`for Dx65536^3 (= Hx10000^3 = 1p12);
-  - `heknia munio` for Dx65536^Dx17 (= Hx10000^Hx11 = 1p44 ≈ 7.59e81 );
-  - `heknia dunio` for Dx65536^Dx18 (= Hx10000^Hx12 = 1p48 ≈ 4.97e86 );
+  - ~~`heknia munio` for Dx65536^Dx17 (= Hx10000^Hx11 = 1p44 ≈ 7.59e81 );~~
+  - ~~`heknia dunio` for Dx65536^Dx18 (= Hx10000^Hx12 = 1p48 ≈ 4.97e86 );~~
+    - Warning:
+      ways to say extremely large numbers are currently pending revision,
+      as the crossed out method would be very wordy for larger numbers
+      such as `kvarnia gilnia trinia jentnia dunia heknia munio`
+      (Hx10000^Hx4321)
   - etc.
   - As a reference,
     Dx 9 100 000 000 = Hx 2 1Υ66 Ψλ00,
     pronounced as
     'du dunio, gil ganjent seshek ses munio, fusgil lomjent'.
-- Marking numbers as decimal ('Dekuma') or hexadecimal ('Hekuma'):
-  - Dekuma: prefixing `Dx`, or add a subscript $?_D$;
-  - Hekuma: prefixing `Hx`, or add a subscript $?_H$;
 - `p`-notation:
   - Similar to the `e`-notation of the decimal system,
     except both side of `p` are hexadecimal.

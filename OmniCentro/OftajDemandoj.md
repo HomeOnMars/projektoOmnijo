@@ -273,7 +273,7 @@ After she is done, there are two types of T&Cs recognized in the RdO:
   For custom T&Cs (i.e. where companies write their own T&C),
   the central government service OCR will provide tools
   to companies and citizens
-  to automatically summarize terms and conditions automatically with AI,
+  to automatically summarize terms and conditions with AI,
   in a consumer-facing tone with a maximum length limit,
   personalized based on central gov's understandings
   of everyone's existing knowledge.
