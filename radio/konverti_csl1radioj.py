@@ -6,11 +6,11 @@ Convert owned CSL1 radios as CSL2 Extended radios.
 
 Note: this script does not create music tracks out of the blue.
 You will need to buy and download those CSL1 radio stations first.
-(Check if this script actually work before you make any big decision. I do NOT promise anything.)
+(Obviously, check if this script actually work on your machine before making any big decisions!!! I do NOT promise anything.)
 You will also need to subscribe to the Extended Radio mod for CSL2 on Paradox Mods.
 
 I am not a lawyer, and I do not really know enough about copyrights.
-Definitely do NOT share the ogg files online.
+Definitely do NOT share the .ogg files online.
 Probably best NOT to use those musics when streaming.
 
 This python script has only been tested on WSL (Windows Subsystem for Linux) with game installed on Windows system.

@@ -57,7 +57,8 @@ as for liberty… depends on your definition of liberty:
   *Yes*,
   people are free to access all kinds of informations
   (not just in the central gov, but ALL information),
-  ~~especially after <span style="color:Beige">Serena</span>'s copyright reform~~ (TBD!),
+  especially after <span style="color:Beige">Serena</span>'s
+  [copyright reform](#kio-estas-la-plano-de-la-reĝino-reformi-kopirajton),
   as long as the information requested is not dangerous or harmful.
 
 - Freedom of expression
@@ -97,7 +98,7 @@ as for liberty… depends on your definition of liberty:
   **No.**
   All public information known to anyone are considered an integral part
   of that person's/entity's consciousness.
-  As long as the information is [public](#kio-estas-publikajn-datumojn-en-la-reĝino-de-omnijo),
+  As long as the information is [public](#kio-estas-publikajn-datumojn-en-la-regno-de-omnijo),
   what anyone (including the gov) see or hear or come to know
   are forever a part of them,
   and forcibly or coercively removing those informations from someone
@@ -121,7 +122,7 @@ as for liberty… depends on your definition of liberty:
   which includes everyone.
   Generally speaking, *all citizens should assume that the central gov already knows everything about them*.
 
-#### Kio estas publikajn datumojn en la Reĝino de Omnijo?
+#### Kio estas publikajn datumojn en la Regno de Omnijo?
 
 > What is public data in the Kingdom of Omnijo (RdO)?
 
@@ -133,7 +134,7 @@ with original author's explicit consent
 are considered public.
 If it were shared with organizations or companies in which less
 than Hx100 people have access to the data,
-then it depends on companies' [terms and conditions](#kio-estas-regulojn-de-terminoj-kaj-kondiĉoj-en-la-reĝino-de-omnijo).
+then it depends on companies' [terms and conditions](#kio-estas-regulojn-de-terminoj-kaj-kondiĉoj-en-la-regno-de-omnijo).
 
 <span style="color:Beige">Serena</span>'s
 [copyright reform](#kio-estas-la-plano-de-la-reĝino-reformi-kopirajton)
@@ -252,7 +253,7 @@ when the kingdom is well-established and self-sufficient,
 with its technological supremacy firmly established,
 ready for major powers' economic sanctions and/or any potential wars.
 
-#### Kio estas regulojn de terminoj kaj kondiĉoj en la Reĝino de Omnijo?
+#### Kio estas regulojn de terminoj kaj kondiĉoj en la Regno de Omnijo?
 
 > What are the regulations on terms and conditions (T&C) in RdO?
 

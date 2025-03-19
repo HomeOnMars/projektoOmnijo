@@ -373,9 +373,10 @@ $$
   \approx 1.74_D \times 10_D^8 \textrm{GW}
   \approx 3Υ.Υ_H \textrm{TLu}
   \approx 3.ΥΥ_H \times 10_H^9 ⚡
-  % \approx 3Υ Υ501 0Π25_H ⚡
   \approx 3Υ Υ000 0000_H ⚡
 $$
+
+<!-- \approx 3Υ Υ501 0Π25_H ⚡ -->
 
 ### Konstantoj
 

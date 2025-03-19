@@ -368,8 +368,8 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   as the [Stefan–Boltzmann law](https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_law)
   dictates that $E \propto T^4$, so a ~10% drop in absolute temperature
   means only an equivalent of 1/3 of Sun's Earth-hitting energy
-  may be ferried off-planet, tops.
-  This plan would mean that RdO probably needs
+  may be sourced from off-planet, tops.
+  This plan would mean that RdO probably also needs
   to develop efficient direct carbon capture technologies
   and implement them at scale,
   and/or conduct extensive extra geoengineering projects
@@ -385,7 +385,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
 
   Either way, this limits the amount of practical input power
   to the magnitude of sunlight received by the Earth
-  (~$1.7_D \times 10_D^8 \  \textrm{GW}$, or ~ Hx 40 0000 0000⚡-
+  (~ $1.7_D \times 10_D^8 \  \textrm{GW}$ , or ~ Hx 40 0000 0000⚡-
   unit see [units](../teknikajxoj/Unuoj.md#potenco) page.).
   To improve the total compute one can get,
   one need to ***cool it down***, as
