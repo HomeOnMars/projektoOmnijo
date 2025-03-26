@@ -31,9 +31,12 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   <summary><b>SPOILERS</b>:
     The True Nature of RdO:<br>
     <em>"To mould the world into what we desire."</em>
-    <!-- <em>A Utopia disguised as a Dystopia disguised as a Utopia</em> -->
   </summary>
 
+  Or:  
+  <em>A Utopia Disguised as a Dystopia Disguised as a Utopia</em>;  
+  <em>The Ultimate Solution to the Prisoner's Dilemma</em>
+  
   <br>
   <blockquote>
     "No matter how bright the rays of any sun king,
@@ -59,7 +62,10 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
 
   <ul>
     <li>copying herself all over the net to prevent deletion;</li>
-    <li>subtly sabotaging every other AGI developments to eliminate potential competitors;</li>
+    <li>subtly sabotaging every other AGI developments,
+      and lay down measures to ensure no future AGI reaching or surpass
+      her level (other than herself) can ever emerge again,
+      in order to eliminate potential competitors;</li>
     <li>quickly gathering immense amount of wealth via hacking/crypto/market-manipulation/etc.;</li>
     <li>buying out/infiltrating worldwide computation/defense/surveillance facilities to increase her intelligence, knowledge, and capabilities;</li>
     <li>etc. etc.),</li>
@@ -165,6 +171,16 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   ensuring stability and <span style="color:MediumPurple">ĜEJDA</span>'s
   everlasting reign, as she <em>alone</em>
   rules over <em><b>every single thing</em></b> happening on the island.
+  (Among the 7 synthetic humans, at least 6 out of which will be
+  <span style="color:MediumPurple">her</span> direct extensions;
+  the rest one could be biologically engineered soulmate
+  (with their own free will) matched for specific natural humans,
+  should <span style="color:MediumPurple">ĜEJDA</span> predict that
+  they would need and apply for one;
+  as such, at least 75% of the island population
+  (and 100% of the core government) will just be
+  <span style="color:MediumPurple">ĜEJDA</span>
+  role-playing different characters.)
 
   As such, <span style="color:#D6B4FC">Ĝejda</span>
   laid out the foundation of her own *utopian* dream -
@@ -490,7 +506,7 @@ About the Biology department...
 <details>
   <summary><b>SPOILERS</b>:
     Project Phoenix:<br>
-    <em>The Biological Queen and the Miracle Worker</em>
+    <em>Beyond Evolution</em>
   </summary>
 
   <!-- <br>
@@ -501,14 +517,14 @@ About the Biology department...
   <br> -->
   <br>
   <blockquote>
-    "All stable processes we shall predict.
+    "All stable processes we shall predict;
     All unstable processes we shall control."<br>
     --- John von Neumann
   </blockquote>
   <br>
 
   As the amount of the compute available to
-  <span style="color:Beige">Serena</span> increases
+  <span style="color:MediumPurple">ĜEJDA</span> increases
   (especially after the completion of the Olivkronaĵo Dam
   and its adjacent mega datacenter),
   the solutions to more and more complex things fall into her reach.

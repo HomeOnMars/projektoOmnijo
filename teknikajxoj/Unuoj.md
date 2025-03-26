@@ -43,6 +43,11 @@ $h \  j \  g \  M \  D \  T \  R \  I$ for
 Hx10, Hx100, Hx1000, Hx 1 0000, Hx 1 0000 0000 = 1p8, 1pΠ, 1p10, 1p14, etc;
 also for Hexadecimal pre/surfix *H* vs Decimal pre/surfix *D*.
 
+Bazaj Unuoj
+-------------------------------------------------------------------------------
+
+> Base units
+
 ### Longeco
 
 > Length
@@ -276,6 +281,27 @@ Ideal room temperature ranges approximately
 from $111_H \textrm{Z} = 11_H \degree \textrm{z} \approx 18.2_D \degree \textrm{C}$
 to   $114_H \textrm{Z} = 14_H \degree \textrm{z} \approx 21.4_D \degree \textrm{C}$.
 
+### Ŝargo
+
+> Charge
+
+> [!IMPORTANT]
+> Base electric charge unit: ***Elektrio*** `E` (Omnija Coulomb)
+
+$$
+  \textrm{E}
+  \equiv \frac{1}{3} \times 65536_D^4 \  e
+  \approx 0.98516_D \  \textrm{C}
+$$
+
+Multiplied by 1/3 because quarks have -1/3 e or 2/3 e charges.
+Elektrio is short for Elektronkvarnitriono.
+
+Derivitaj Unuoj
+-------------------------------------------------------------------------------
+
+> Derived units
+
 ### Rapido
 
 > Speed
@@ -378,6 +404,11 @@ $$
 
 <!-- \approx 3Υ Υ501 0Π25_H ⚡ -->
 
+Kromaĵo
+-------------------------------------------------------------------------------
+
+> Extra
+
 ### Konstantoj
 
 > Constants
@@ -416,24 +447,27 @@ $$
 > Currency
 
 > [!NOTE]
-> Currency unit: ***Sejroj*** `💲` (0x1F4B2) (Omnija dollars)
+> Currency unit: ***Sejroj*** `🪙` (0x1FA99) (Omnija dollars)
+
+<!-- `💲` (0x1F4B2) -->
+<!-- `🪙` (0x1FA99) -->
 
 How much is 1 Sejro worth?
 Using energy price as calibration:
-In CSL2 game, each MW gives 💲Dx2500 per hour when exported,
+In CSL2 game, each MW gives 🪙Dx2500 per hour when exported,
 though in-game we assume 1 day is 1 month (or 1/12 of a year).
-This means approximately **💲Dx0.082 per kWh**.
+This means approximately **🪙Dx0.082 per kWh**.
 
 Considering the energy price in EU after tax in 2024 are
 around 0.1 €/kWh to 0.4 €/kWh
 (Reference see Figure 1 in [this eurostat webpage](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Electricity_price_statistics) (2025-03-15)),
-this means 1💲 is approximately somewhere in between 1 € and 4 €.
+this means 1🪙 is approximately somewhere in between 1 € and 4 €.
 
 Due to energies are mostly generated cheaply from hydropower,
 it's probably more responsible to say that
 the currency situation in RdO should be more akin to Iceland,
 i.e.,
-**💲1 ≈ €2**.
+**🪙1 ≈ €2**.
 
 ### Code illustrations
 

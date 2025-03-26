@@ -58,7 +58,7 @@ ASCIIIFY_CHR = {
     '☾': 'Monato',
     '⚡': 'potenco',
     '°': 'deg',
-    '💲': 'OSR',
+    '🪙': 'OSR',
 }
 ASCIIIFY = {ord(k): v for k, v in ASCIIIFY_CHR.items()}
 
@@ -187,6 +187,7 @@ u_si_defs : dict[str, units.UnitBase] = {
         'kg', 'g', 
         's', 'd', 'yr',
         'K', 'deg_C',
+        'C',
         'W', 'kW', 'MW', 'GW',  'TW', 'Lsun',
     ]
 }
@@ -226,7 +227,7 @@ u_rdo_prefixes = [
     ('P', ['Sepnio' ], 0x10000**0x7), #
     ('O', ['Oknio'  ], 0x10000**0x8),
     ('N', ['Nauxnio'], 0x10000**0x9), #
-    ('E', ['Delnio' ], 0x10000**0xA),
+    ('E', ['Delnio' ], 0x10000**0xA), #
     ('L', ['Lomnio' ], 0x10000**0xB), #
     ('K', ['Naknio' ], 0x10000**0xC), #
     ('G', ['Signio' ], 0x10000**0xD), #
@@ -249,9 +250,12 @@ u_rdo_base['time'] = units.def_unit(
 u_rdo_base['temp'] = units.def_unit(
     ['Z', 'Zoro'], 10011 * 2**(-120) * u_nat_base['temp'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
+u_rdo_base['char'] = units.def_unit(
+    ['E', 'Elektrio'], 0x10**0x10/3 * const.e.si,
+    prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 # mask units with the same names as SI
 _UNITS_MASK_SET = {
-    'h', 'g', 'D', 'T', 'R', 'S', 'P', 'N', 'L', 'K', 'G', 'A', 'F',
+    'h', 'g', 'D', 'T', 'R', 'S', 'P', 'N', 'E', 'L', 'K', 'G', 'A', 'F',
     'AU',
     'kph', 'mph',
 }
@@ -319,7 +323,7 @@ units.def_unit(
     namespace=u_rdo_defs)
 #    currency
 units.def_unit(
-    ['💲', 'Sejro'], format={'latex': r' 💲 '},
+    ['🪙', 'Sejro'], format={'latex': r' 🪙 '},
     namespace=u_rdo_defs)
 
 
