@@ -9,6 +9,41 @@
 Content
 -------------------------------------------------------------------------------
 
+### v2.0 <-- v1.0 | `2025-03-27`
+
+> Northward Equinox update.  
+> (Delayed one week due to the anniversaery patch and real-life commitments.)
+>
+> One more dam! (or three)  
+> Infrastructure expansions in the Northwest corner of the map.
+
+- `Meta::GameVer`: v1.2.5f1;
+- `Meta::Mods`:
+  Required:
+  - 'Anarchy' (74604);
+  - 'Recolor' (84638);
+  - 'Road Builder' (87190);
+  - 'Plop the Growables' (75826);
+  - 'Traffic' (80095);
+  - 'Water Features' (75613);
+- `Meta::Mods::RoadBuilder`,`Naming`,`Fixes`:
+  - Update RoadBuilder roads and rails name and speed limit;
+- `Meta::Mods::CityController`,`Note`:
+  - Removed Money (O$22M) with 'City Controller',
+    total return O$112M,
+    Interest rate 1500%;
+- `District::(Ab-Fortikecajxo, Ab-Raciecajxo)`,`Expansion::Services`:
+  - Built 3 more dams;
+- `District::Am-Raciecajxo`,`Expansion::(Road, Rail, Services)`:
+  - New outside connections;
+  - Highway extension;
+  - Two new service interchanges (parclo);
+  - Built 'La Pordego' service complex;
+- `Detailing::Water`,`Fixes`:
+  - Increased Northwest border river water spawner height and size;
+
+-------------------------------------------------------------------------------
+
 ### v1.0 <-- v0.0 | `2025-02-16`
 
 > Built 2 dams, a cargo port, 3 mines, and a vista in the Southeast.

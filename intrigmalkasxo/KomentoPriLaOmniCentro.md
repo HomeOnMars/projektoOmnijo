@@ -35,7 +35,8 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
 
   Or:  
   <em>A Utopia Disguised as a Dystopia Disguised as a Utopia</em>;  
-  <em>The Ultimate Solution to the Prisoner's Dilemma</em>
+  <em>The Ultimate Solution to the Prisoner's Dilemma</em>;<!-- Cannot defect if it's not multi-agent in the first place! -->  
+  <em>"I am ~~the Senate~~ ~~the Government~~ ~~the Island~~ the Future :-p"</em>
   
   <br>
   <blockquote>
