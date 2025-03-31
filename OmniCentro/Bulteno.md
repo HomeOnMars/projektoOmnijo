@@ -69,7 +69,8 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 | Ŝtatestro  <br>Head of State   | <span style="color:Beige">La Reĝino Serena de Omnijo</span> |
 | Registara Tipo  <br>Government Type   | Konstitucia Monarkio / Bonfara Diktaturo / Totalisma Reĝimo, depende de kiu vi demandas[^Bulteno-RegistaraTipo]. |
 | Urbaj Projektistoj  <br>City Designers | <span style="color:#95D0FC">la Arkitekto</span>  kaj  <span style="color:#D6B4FC">la Suvereno</span> de OCFI |
-| Oficiala Lingvo  <br>Official Language | [*Esperanto++*](../teknikajxoj/Lingvo.md#lingvo), a.k.a. ***E++***, pronounced as `Epopo`. (See link for more info.)  <br>(Transitioning from English in the next 16 years.) |
+| Reĝa Palaco  <br>Royal Palace | La Spajro-Singulariso |
+| Oficiala Lingvo  <br>Official Language | [*Esperanto++*](../teknikajxoj/Lingvo.md#lingvo), a.k.a. ***E++***, pronounced as `Epopo`.  <br>(Transitioning from English in the next 16 years.) |
 | Oficiala Religio  <br>Official Religion | Pastafarianismo[^Bulteno-Religio] (oficiala)<br>Homismo (maloficiala) |
 | Oficialaj Koloroj  <br>Official Colors   | <span style="color:Beige">Flavgriza/Beige #E6DAA6</span> [^Bulteno-Koloroj-Flavgriza]  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span> [^Bulteno-Koloroj-Bluo]  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span> [^Bulteno-Koloroj-Purpuro] |
 | Oficialaj Himno  <br>Official Anthem | *Oceans* (*Where Feet May Fail*), originally by Hillsong UNITED  <br>Modified acoustic E++ version[^Bulteno-Himno]. |

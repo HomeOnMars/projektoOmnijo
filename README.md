@@ -1,9 +1,12 @@
 <!-- -*- coding: utf-8 -*- -->
 
-Projekto Omnijo  <br>  Project Omnijo
+Projekto Omnijo
 ===============================================================================
 
-Documents, settings and stories of my imagined fictional country *la Regno de Omnijo* (the Kingdom of Omnijo).
+> Project Omnijo
+
+Documents, settings and stories for my worldbuilding exercise
+set in the fictional country of *la Regno de Omnijo*.
 It began as a background story I wrote for my Cities: Skylines 2 city
 [*OmniCentro*](https://mods.paradoxplaza.com/mods/97163/Any),
 but ballooned into something more.
@@ -20,6 +23,12 @@ Legal
 > Names, characters, businesses, places, events and incidents
 > are either the products of the author's imagination or used in a fictitious manner.
 > Any resemblance to actual persons, living or dead, or actual events is purely coincidental.
+
+> [!NOTE]
+> Anything added after 2025-03-11
+> may have some inspirations taken from my discussions with ChatGPT.
+> Unless otherwise specified, this is limited to bouncing ideas only,
+> and I do not directly ask ChatGPT to write things here for me.
 
 This repository uses different licenses for different files.
 See individual file headers for details.

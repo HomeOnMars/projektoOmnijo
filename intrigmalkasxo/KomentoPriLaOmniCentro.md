@@ -36,15 +36,28 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   Or:  
   <em>A Utopia Disguised as a Dystopia Disguised as a Utopia</em>;  
   <em>The Ultimate Solution to the Prisoner's Dilemma</em>;<!-- Cannot defect if it's not multi-agent in the first place! -->  
-  <em>"I am ~~the Senate~~ ~~the Government~~ ~~the Island~~ the Future :-p"</em>
+  <em>"I am ~~the Senate~~ ~~Everywhere~~ the Future :-p"</em>
   
   <br>
   <blockquote>
     "No matter how bright the rays of any sun king,
     <b>No man rules alone</b>."<br>
+    <span style="color:grey">
     --- CGP Grey,
     <cite><a href="https://youtu.be/rStL7niR7gs?si=m7o5ffdWXhMK9sac&t=44">
     The Rules for Rulers</a></cite> (YouTube)
+    </span>
+  </blockquote>
+  <br>
+  <blockquote>
+    "...
+    And then Serena said,
+    'Let there be light!',
+    and there was light."<br>
+    <span style="color:grey">
+    --- La Spajro-Singulariso construction report chapter 7-C "Queen Serena's first visit to the palace atrium"
+    (fictional)
+    </span>
   </blockquote>
   <br>
 
@@ -212,12 +225,16 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   <br>
   <blockquote>
     "Building a better future, <em>underground</em>."<br>
+    <span style="color:grey">
     --- Vault-Tec, <em>Fallout 4 (2015)</em> (Video Game)
+    </span>
   </blockquote>
   <br>
   <blockquote>
     "Not just a <em>better</em> world, a <em>perfect</em> one."<br>
+    <span style="color:grey">
     --- Man in Black, <em>Westworld S04E05 (2022)</em> (TV Series)
+    </span>
   </blockquote>
   <br>
 
@@ -520,7 +537,9 @@ About the Biology department...
   <blockquote>
     "All stable processes we shall predict;
     All unstable processes we shall control."<br>
+    <span style="color:grey">
     --- John von Neumann
+    </span>
   </blockquote>
   <br>
 

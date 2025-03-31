@@ -27,8 +27,10 @@ Listo de Inspiraĵoj
 > My opinion does not necessarily align with the authors of these works either.
 
 > [!NOTE]
-> For any of my contents added after 2025-03-11,
-> some inspirations may be taken from my discussions with ChatGPT.
+> Anything added after 2025-03-11
+> may have some inspirations taken from my discussions with ChatGPT.
+> Unless otherwise specified, this is limited to bouncing ideas only,
+> and I do not directly ask ChatGPT to write things here for me.
 
 > [!NOTE]
 > This list may be incomplete.
