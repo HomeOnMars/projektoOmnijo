@@ -27,9 +27,10 @@ Legal
 
 <blockquote>
   "...<br>
-  And then Serena said, 'Let there be light!', and there was light.<br>
+  And then Serena snapped her fingers: '<b>Let there be light,</b>'
+  and there was light.<br>
   And Serena saw the light and said:
-  'You know what, let's make it brighter.'"<br>
+  'You know what, let's make it <b>brighter</b>.'"<br>
   <span style="color:grey">
   --- La Spajro-Singulariso construction report chapter 7-C
   <em>"Queen Serena's first visit to the palace atrium"</em>
