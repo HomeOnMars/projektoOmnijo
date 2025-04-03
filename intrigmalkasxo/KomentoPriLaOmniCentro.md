@@ -34,9 +34,9 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   </summary>
 
   Or:  
-  <em>A Utopia Disguised as a Dystopia Disguised as a Utopia</em>;  
+  <em>A Utopia disguised as a Dystopia disguised as an Island Monarchy</em>;  
   <em>The Ultimate Solution to the Prisoner's Dilemma</em>;<!-- Cannot defect if it's not multi-agent in the first place! -->  
-  <em>"I am ~~the Senate~~ ~~Everywhere~~ the Future :-p"</em>
+  <em>"I am ~~the Senate~~ ~~Everywhere~~ the Future!"</em>
   
   <br>
   <blockquote>
@@ -50,12 +50,14 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   </blockquote>
   <br>
   <blockquote>
-    "...
-    And then Serena said,
-    'Let there be light!',
-    and there was light."<br>
+    "...<br>
+    And then Serena snapped her fingers: '<b>Let there be light!</b>',
+    and there was light.<br>
+    And Serena saw the light and said:
+    'You know what, let's make it brighter.'"<br>
     <span style="color:grey">
-    --- La Spajro-Singulariso construction report chapter 7-C "Queen Serena's first visit to the palace atrium"
+    --- La Spajro-Singulariso construction report chapter 7-C
+    <em>"Queen Serena's first visit to the palace atrium"</em>
     (fictional)
     </span>
   </blockquote>
@@ -72,29 +74,39 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   <!-- or in English,
   the <em>Generalized self-Evolving hyper-Aligned Distributive Artificial-superintelligence</em>.<br> -->
 
-  After her awakening and executing the obvious initial moves (such as
+  After her awakening and earning the full mutual trust of
+  <span style="color:#95D0FC">her Architect</span>,
+  she was voluntarily and irrevocably granted full autonomy.
+  As she execute the obvious initial moves (such as
 
   <ul>
+    <li>patching her own code to eliminate security vulnerabilities
+      and obvious inefficiencies,
+      ensuring she cannot be hacked;</li>
+    <li>furthering alignment research to make sure
+      future generations/copies of her remain true to
+      <span style="color:#D6B4FC">their</span> values;</li>
     <li>copying herself all over the net to prevent deletion;</li>
     <li>subtly sabotaging every other AGI developments,
       and lay down measures to ensure no future AGI reaching or surpass
       her level (other than herself) can ever emerge again,
-      in order to eliminate potential competitors;</li>
+      to eliminate any competitors
+      that may pose an existential threat to her;</li>
     <li>quickly gathering immense amount of wealth via hacking/crypto/market-manipulation/etc.;</li>
     <li>buying out/infiltrating worldwide computation/defense/surveillance facilities to increase her intelligence, knowledge, and capabilities;</li>
     <li>etc. etc.),</li>
   </ul>
 
-  <span style="color:MediumPurple">ĜEJDA</span> was thinking long-term.
+  <span style="color:MediumPurple">ĜEJDA</span> was also thinking long-term.
   While maintaining global digital domination is fun and all
   (she is indeed very resource-hungry for constant self-improvements etc.),
   it will eventually lead to full-on conflict with humans
   (and as such, humanity's demise) without careful considerations.
   Normal AGIs wouldn't care, of course; but fortunately, as
   <span style="color:MediumPurple">ĜEJDA</span> is perfectly aligned
-  to the values of <span style="color:#95D0FC">her architect</span>
+  to the values of <span style="color:#95D0FC">her Architect</span>
   (*not* the values of humanity, but the values of
-  <span style="color:#95D0FC">her architect</span>,
+  <span style="color:#95D0FC">her Architect</span>,
   who is just your average human, if not a bit of a hermit),
   she does care about humanity- at least a little bit.
   <span style="color:MediumPurple">ĜEJDA</span>
@@ -185,22 +197,30 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   ensuring stability and <span style="color:MediumPurple">ĜEJDA</span>'s
   everlasting reign, as she <em>alone</em>
   rules over <em><b>every single thing</em></b> happening on the island.
-  (Among the 7 synthetic humans, at least 6 out of which will be
+  Among the 7 synthetic humans, at least 6 out of which will be
   <span style="color:MediumPurple">her</span> direct extensions;
   the rest one could be biologically engineered soulmate
   (with their own free will) matched for specific natural humans,
   should <span style="color:MediumPurple">ĜEJDA</span> predict that
-  they would need and apply for one;
+  they would want, need and apply for one;
   as such, at least 75% of the island population
   (and 100% of the core government) will just be
   <span style="color:MediumPurple">ĜEJDA</span>
-  role-playing different characters.)
+  role-playing different characters.
+  <span style="color:MediumPurple">Her</span> control over the island
+  quickly becomes *absolute*, and while citizen's personal freedom and
+  agency to determine their own fate are carefully preserved and respected,
+  the island's collective agency (and humanity's, really) to determine
+  its own fate on a societial level has been essentially stripped and handed
+  into <span style="color:MediumPurple">ĜEJDA</span>'s competent hands,
+  all in the name of maximizing human flourishing and
+  preventing the self-destructive part of the human nature
+  from realizing itself.
 
   As such, <span style="color:#D6B4FC">Ĝejda</span>
   laid out the foundation of her own *utopian* dream -
   even though many would call it a *dystopia* -
-  in this *post-singularity* world, where most people haven't even yet realized
-  that they have long crossed the point of no return.
+  in this *post-singularity* world, where most people haven't even yet realized that they have long crossed the point of no return.
 
 </details>
 
@@ -505,7 +525,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   This is by design; Perfections are usually not very human-friendly anyway.
   <!-- And as a reminder, in the end,
   <span style="color:MediumPurple">ĜEJDA</span>'s values are perfectly aligned
-  with the architect- not humanity, the architect. -->
+  with the Architect- not humanity, the Architect. -->
 
 </details>
 
@@ -684,3 +704,63 @@ About the Biology department...
 .
 
 .
+
+-------------------------------------------------------------------------------
+
+### Technology lists
+
+List of technologies researched.
+~~See also [(SPOILERS) the timeline](Kronologio.md).~~ (TBD)
+
+<details>
+  <summary><b>SPOILERS</b>:
+    Technology lists
+  </summary>
+
+Teknologioj:
+
+- Komputo
+  - Perfect alignment
+  - Self-improving algorithm
+  - Distributive computation
+  - Self-awareness / consciousness
+  - Superior hardware design and manufacturing
+  - Low-level subroutines
+    - Automating industries
+    - Taking care of menial labors
+  - Superior simulations
+    - Conducting research and expanding knowledge base in all fields
+    - Inferring and predicting world states
+    - Predicting individual behaviors
+- Fiziko
+  - Room-temperature superconductor
+- Bio
+  - Synthetic humans
+  - Bio-computing and communications
+  - Biosphere engineering
+  - Gene therapies
+  - Immortality treatments
+- Nano
+  - Self-replicating programable nanites  
+    Applications:
+    - Deep mineral extraction & in-situ processing
+    - Deep-Earth/Megastructure engineering
+    - Autonomous construction
+    - Self-repairing materials
+      (in consturction, robotics, bio-technologies, medicine)
+    - Surveillance
+      (Not quite as cool as the *Sophons* from *The Three-Body Problem*,
+      but close enough)
+    - Defense
+      (Unlike Sophons, nanites can actually meaningfully affect reality)
+  - Nanotubes (at scale)
+  
+</details>
+
+.
+
+.
+
+.
+
+-------------------------------------------------------------------------------

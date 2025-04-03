@@ -55,9 +55,9 @@ Acronyms `J☾⚝⚻ĝĉŝ` see [Units](../teknikajxoj/Unuoj.md#tempo) page.
 | Y+1☾   | poliso | <span style="color:Beige">Serena</span> started to `disband most of the armies` |
 | Y+1☾   |   OCR  | <span style="color:Beige">Serena</span> launches the official personalized government service app |
 | Y+3☾1⚝ | poliso | <span style="color:Beige">Serena</span> declares `Epopo` to be the new official language  <br>\(Northward Equinox\) |
-| Y+`3☾?`  |  mondo | Worldwide economic recession due to the brust of AI bubble |
-| Y+`4☾?`  |  OCMF  | Most of the banks on the island went bankrupt and integrated into Banko de Omnijo |
-| Y+`5☾?`  |  OCMF  | Most of the industries on the island were nationalized |
+| Y+`4☾?`  |  mondo | Worldwide economic recession due to the brust of AI bubble |
+| Y+`5☾?`  |  OCMF  | Most of the banks on the island went bankrupt and integrated into Banko de Omnijo |
+| Y+`6☾?`  |  OCMF  | Most of the industries on the island were nationalized |
 | Y+6☾     |   OCG  | *Healthcare workers on strike* to push for government change, leading to <span style="color:Beige">Serena</span>'s total replacement of healthcare workforce overnight |
 ||||
 | Y+6☾2⚝   |   OC   | Fondation day of OmniCentro  <br>\(Summer Solstice 20XX\) |
