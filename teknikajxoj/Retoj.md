@@ -98,7 +98,7 @@ Arterial / Collector / Local Roads:
 - Parking:
   - Default **Price**:
     - Cars: `🪙32` per day/month per spot.
-    - Motorcycles: `🪙16` per day/month per spot.
+    - Motorcycles: `🪙24` per day/month per spot.
     - Bicycles: Free.
   - Price can be higher
     near high density transit centers
