@@ -707,6 +707,33 @@ About the Biology department...
 
 -------------------------------------------------------------------------------
 
+### Project Granule
+
+About the Nanotech department...
+
+<details>
+  <summary><b>SPOILERS</b>:
+    Project Granule:<br>
+    <em>TBD</em>
+  </summary>
+
+  Nanites!  
+  Or as we call them, the
+  `memReprodukteblaj Programeblaj NanoSvarmoj`
+  (`RPNS`, a.k.a. Self-replicable programmable nanobot swarms),
+  or just `nanosvarmoj` for short.
+
+  (To be extended and revised.)
+
+</details>
+.
+
+.
+
+.
+
+-------------------------------------------------------------------------------
+
 ### Technology lists
 
 List of technologies researched.
@@ -734,14 +761,17 @@ Teknologioj:
     - Predicting individual behaviors
 - Fiziko
   - Room-temperature superconductor
-- Bio
+- Bio  
+  `Projekto Fenikso`
   - Synthetic humans
   - Bio-computing and communications
   - Biosphere engineering
   - Gene therapies
   - Immortality treatments
-- Nano
-  - Self-replicating programable nanites  
+- Nano  
+  `Projekto Grajno`
+  - Self-replicable programmable nanobot swarms  
+  `nanosvarmo`  
     Applications:
     - Deep mineral extraction & in-situ processing
     - Deep-Earth/Megastructure engineering
