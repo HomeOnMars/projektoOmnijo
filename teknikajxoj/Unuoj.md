@@ -74,23 +74,23 @@ Notes:
 - Using `U` instead of `u` to avoid name clash
 with SI unit of the 'unified atomic mass unit'.
 
-*jentUtro* (`jU`):
+*JentUtro* (`JU`):
 
 $$
-  \textrm{jU}
+  \textrm{JU}
   \equiv 256_D \  \textrm{U}
   \approx 2.0103_D \  \textrm{km}
 $$
 
-*gilUtro* (`gU`):
+*GilUtro* (`GU`):
 
 $$
-  \textrm{gU}
+  \textrm{GU}
   \equiv 16_D^3 \  \textrm{U}
   \approx 32.164_D \  \textrm{km}
 $$
 
-*MunioUtro*  (`MU`):
+*MuniUtro*  (`MU`):
 
 $$
   \textrm{MU}
@@ -111,7 +111,7 @@ One astronomical unit is approximately
 $$
   \textrm{au}
   \approx 4 6Ψ83 8018.9_H \  \textrm{U}
-  \approx 4.6Ψ84_H \  \textrm{DU}
+  \approx 4.6Ψ84_H \  \textrm{UU}
 $$
 
 One light-year is approximately
@@ -150,10 +150,10 @@ the <span style="color:Beige">Queen</span>'s OCD tendencies.)
 > Mass
 
 > [!IMPORTANT]
-> Base mass unit: ***pakmoj*** `p` (Omnija kilogram)
+> Base mass unit: ***Pakmoj*** `P` (Omnija kilogram)
 
 $$
-  \textrm{p}
+  \textrm{P}
   \equiv 2^{24_D} \  m_P
   \approx 0.365_D \  \textrm{kg}
 $$
@@ -161,8 +161,8 @@ $$
 A munio of said unit mass is a Omnija ton:
 
 $$
-  \textrm{Mp}
-  \equiv 2^{16_D} \  \textrm{p}
+  \textrm{MP}
+  \equiv 2^{16_D} \  \textrm{P}
   \approx 23.930_D \  \textrm{t}
 $$
 
@@ -186,11 +186,13 @@ The ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$
 (with an approximate difference of only Dx 0.043 SI seconds per day).
 
 - `ŝ`: ***Ŝekuntoj*** | Omnija Seconds
+  - Side note: munionŝekuntoj `mŝ`
+    is $1 \  \textrm{mŝ} = 0.0001_H ŝ \approx 0.02_D \  \textrm{ms}$
 - `ĉ`: ***Ĉimutoj***  | Omnija Minutes
   - 1 Ĉimuto is  $1440_D/1024_D = 1.40625_D$ SI Minutes.
 - `ĝ`: ***Ĝoroj***    | Omnija Hours
   - 1 Ĝoro is    $24_D/16_D = 1.5_D$ SI Hours.
-- `⚻` or `Mŝ`: ***Tagoj*** / *Munioŝekuntoj* | Omnija Days
+- `⚻` or `Mŝ`: ***Tagoj*** / *Muniŝekuntoj* | Omnija Days
   - Conversion rate:
     $$1⚻ = 1\textrm{Mŝ} = 16_D ĝ = 1024_D ĉ = 65536_D ŝ$$
     i.e.,
@@ -311,37 +313,38 @@ Standard: Utro por ŝekuntoj, or Uoŝ:
 $$
   \textrm{Uoŝ}
   \equiv \textrm{U/ŝ}
-  = \textrm{gU/ĝ}
+  = \textrm{GU/ĝ}
   \approx 5.9563_D \  \textrm{m/s}
   \approx 21.443_D \  \textrm{kph}
 $$
 
 > [!NOTE]
-> Useful speed unit: ***jU/ĝ*** `joĝ` (jU por ĝoro, similar to km/h)
+> Useful speed unit: ***JU/ĝ*** `Joĝ` (JU por ĝoro, similar to km/h)
 
 $$
-  \textrm{joĝ}
-  \equiv \textrm{jU/ĝ}
+  \textrm{Joĝ}
+  \equiv \textrm{JU/ĝ}
   = 1/16_D \  \textrm{U/ŝ}
   \approx 1.3402_D \  \textrm{kph}
 $$
 
-The speed of light is exactly
+The speed of light (in vacuum) is exactly
 
 $$
   c
   =  300 \ 0000_H \textrm{U/ŝ}
-  = 3000 \ 0000_H \textrm{joĝ}
+  = 3000 \ 0000_H \textrm{Joĝ}
   =         300_H \textrm{MU/ŝ}
 $$
 
-So when speed exceeds 1 MU/ŝ (or Hx 10 0000 joĝ, or \~0.13\%c),
+So when speed exceeds 1 MU/ŝ (or Hx 10 0000 Joĝ, or \~0.13\%c),
 relativistic effects should be considered.
+Also, this means that light in vacuum travels precisely 3 JU in 1 mŝ.
 
 - Speed limits examples:
   (kph limit is corrected with a multiplication factor of `8m/U`)
 
-  | joĝ | kph (proksimumo) | kph (limo) |
+  | Joĝ | kph (proksimumo) | kph (limo) |
   | :--------- | :----: | ---------: |
   |   Hx 100   | Dx 343 |   Dx 350   |
   |   Hx  80   | Dx 172 |   Dx 175   |
@@ -363,12 +366,12 @@ relativistic effects should be considered.
 > Power
 
 > [!NOTE]
-> Useful Power unit: ***MunioLumro*** `⚡` (0x26A1) (Omnija MWs)
+> Useful Power unit: ***MuniLumro*** `⚡` (0x26A1) (Omnija MWs)
 
 $$
   ⚡
   \equiv 10000_H \textrm{Lu}
-  = 10000_H \textrm{U}^2 \textrm{p} / \textrm{ŝ}^3
+  = 10000_H \textrm{U}^2 \textrm{P} / \textrm{ŝ}^3
   \approx 0.64398_D \  \textrm{MW}
 $$
 
@@ -376,7 +379,7 @@ while the power unit ***Lumro*** is defined as
 
 $$
   \textrm{Lu}
-  \equiv \textrm{U}^2 \textrm{p} / \textrm{ŝ}^3
+  \equiv \textrm{U}^2 \textrm{P} / \textrm{ŝ}^3
   \approx 9.8263_D \  \textrm{W}
 $$
 
@@ -437,7 +440,7 @@ Boltzmann constant is exactly
 $$
   k_B
   = c^2 m_P / T_P
-  = 1.5ΨΨ3 \times 10_H^{{-14}_H} \  \textrm{U}^2\textrm{p}/(\textrm{ŝ}^2\textrm{Z})
+  = 1.5ΨΨ3 \times 10_H^{{-14}_H} \  \textrm{U}^2\textrm{P}/(\textrm{ŝ}^2\textrm{Z})
 $$
 
 (Note: $15ΨΨ3_H = 3^2 \times 10011_D$.)

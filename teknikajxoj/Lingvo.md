@@ -69,32 +69,58 @@ Changes of Esperanto++ from Esperanto include:
   - Hekuma: prefixing `Hx`, or add a subscript $?_H$;
 - Built-in support for *hexadecimal* algebra:
   - `Δ λ Π Σ Υ Ψ` written/pronounced as `del lom nak sig gan fus`;
-  - `hek`   for Dx            16 (= 2^Dx4,  or Hx          10);
-  - `jent`  for Dx           256 (= 2^Dx8,  or Hx         100);
-  - `gil`   for Dx         4 096 (= 2^Dx12, or Hx        1000);
-  - `munio` for Dx        65 536 (= 2^Dx16 = Dx65536^1, or Hx      1 0000);
-  - `dunio` for Dx 4 294 967 296 (= 2^Dx32 = Dx65536^2, or Hx 1 0000 0000);
-  - `trinio`for Dx65536^3 (= Hx10000^3 = 1p12);
+  - `hek`    (H) for Dx           16 (= 2^Dx4,  or Hx          10);
+  - `jent`   (J) for Dx          256 (= 2^Dx8,  or Hx         100);
+  - `gil`    (G) for Dx        4 096 (= 2^Dx12, or Hx        1000);
+  - `munio`  (M) for Dx       65 536 (= 2^Dx16 = Dx65536^1, or Hx      1 0000);
+  - `dunio`  (U) for Dx4 294 967 296 (= 2^Dx32 = Dx65536^2, or Hx 1 0000 0000);
+  - `trinio` (T) for Dx65536^3 (= Hx10000^3 = 1pΠ);
+  - `heknio` (I) for Dx65536^Dx16 (= Hx10000^Hx10 = 1p40,
+    or approximately 1.158e77);
+    - Note:
+      Both 'unu munio da Utro' and 'muni Utroj'
+      are acceptable ways of saying Dx 65 536 U.
+      (Also you can just say 'MuniUtro' directly, as 1 MU = Dx65536 U.)
   - ~~`heknia munio` for Dx65536^Dx17 (= Hx10000^Hx11 = 1p44 ≈ 7.59e81 );~~
-  - ~~`heknia dunio` for Dx65536^Dx18 (= Hx10000^Hx12 = 1p48 ≈ 4.97e86 );~~
     - Warning:
-      ways to say extremely large numbers are currently pending revision,
-      as the crossed out method would be very wordy for larger numbers
-      such as `kvarnia gilnia trinia jentnia dunia heknia munio`
-      (Hx10000^Hx4321)
-  - etc.
-  - As a reference,
-    Dx 9 100 000 000 = Hx 2 1Υ66 Ψλ00,
-    pronounced as
-    'du dunio, gil ganjent seshek ses munio, fusgil lomjent'.
+      This way to say extremely large numbers is **deprecated**
+      and only listed here for technical completion reasons,
+      since it would be very wordy for larger numbers such as
+      `kvarnia gilnia trinia jentnia dunia heknia munio` (Hx10000^Hx4321).  
+      **It is recommended to use instead `p`-notation**
+      **for extremely large or extremely small numbers.**
+  - `hekono`  (h) for   1/Dx16 (1p-1);
+  - `jentono` (j) for  1/Dx256 (1p-2);
+  - `gilono`  (g) for 1/Dx4096 (1p-3);
+  - `muniono` (m) for 1/Dx65536 (1p-4);
+  - `duniono` (u) for 1/Dx65536 (1p-8);
+  - `triniono` (t) for 1p-Π;
+  - `hekniono` (i) for 1p-40;
+  - ~~`hekniona muniono` for 1p-44;~~
+    - Warning: **Deprecated** for the same reason as above.
+      use `p`-notation instead for extremely large or small numbers.
+  - etc. etc.  
+    - As a reference,
+      Dx 9 100 000 000 = Hx 2 1Υ66 Ψλ00,
+      pronounced as
+      'du dunio, gil ganjent seshek ses munio, fusgil lomjent'.
+    - For shorthands,
+      always use capital letters for numbers \> 1
+      (e.g. H for Hx10 and J for Hx100 etc.)
+      and lowercase for numbers \< 1
+      (e.g. h for Hx0.1 and j for Hx0.01 etc.)
+    - For full list of shorthands,
+    see `u_rdo_prefixes` `dict` in [Unuoj.py](Unuoj.py) file.
 - `p`-notation:
-  - Similar to the `e`-notation of the decimal system,
-    except both side of `p` are hexadecimal.
+  - Similar to the [`e`-notation](https://en.wikipedia.org/wiki/Scientific_notation#E_notation)
+    of the decimal system, except **both sides of `p` are hexadecimal**.
   - `p` must be lower case for better visibility,
-    i.e. easier to tell from the numbers.
+    i.e. easier to tell it from the numbers.
     `p` is chosen over `h` or other letters for exactly this reason.
   - E.g., `Hx 7 89Δλ ΠΣΥΨ 0000` can be shortened
     as `7.89ΔλΠΣΥΨp+Π` or `7.89ΔλΠΣΥΨpΠ`;
+  - Pronunciation:
+    TBD.
 
 #### Sekso
 

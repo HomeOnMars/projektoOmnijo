@@ -44,10 +44,10 @@ in the Southern Hemisphere somewhere in between Chile and New Zealand,
 near 56°15'S, 140°15'W (coordinates are fictional- it should be open ocean there in real life).
 The island has a size of approximately Iceland or Java island,
 i.e.
-$\sim 8000_H \  \textrm{jU}^2$
+$\sim 8000_H \  \textrm{JU}^2$
 $\approx 2^{17_D} \  \textrm{km}^2$
 $\approx 132 \  000_D \  \textrm{km}^2$
-(Length unit $\textrm{jU}$ see [units](../teknikajxoj/Unuoj.md#longeco) page).
+(Length unit $\textrm{JU}$ see [units](../teknikajxoj/Unuoj.md#longeco) page).
 
 For more details,
 see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).

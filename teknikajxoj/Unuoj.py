@@ -183,9 +183,9 @@ def presi_Hx(
 u_si_defs : dict[str, units.UnitBase] = {
     v: getattr(units, v)
     for v in [
-        'm', 'cm', 'km', 'Rearth', 'au', 'lyr', 'pc',
-        'kg', 'g', 
-        's', 'd', 'yr',
+        'm', 'cm', 'km', 'Rearth', 'au', 'lyr', 'pc', 'Mpc',
+        'kg', 'g', 't',
+        's', 'h', 'd', 'yr',
         'K', 'deg_C',
         'C',
         'W', 'kW', 'MW', 'GW',  'TW', 'Lsun',
@@ -215,24 +215,45 @@ u_nat_base['temp'] =  units.def_unit(
 
 # u_rdo: RdO standard units
 u_rdo_prefixes = [
-    ('h', ['hek'    ], 0x10),         #
-    ('j', ['jent'   ], 0x100),
-    ('g', ['gil'    ], 0x1000),       #
-    ('M', ['Munio'  ], 0x10000),
-    ('D', ['Dunio'  ], 0x10000**0x2), #
-    ('T', ['Trinio' ], 0x10000**0x3), #
-    ('R', ['Kvarnio'], 0x10000**0x4), #
-    ('I', ['Kvinnio'], 0x10000**0x5),
-    ('S', ['Sesnio' ], 0x10000**0x6), #
-    ('P', ['Sepnio' ], 0x10000**0x7), #
-    ('O', ['Oknio'  ], 0x10000**0x8),
-    ('N', ['Nauxnio'], 0x10000**0x9), #
-    ('E', ['Delnio' ], 0x10000**0xA), #
-    ('L', ['Lomnio' ], 0x10000**0xB), #
-    ('K', ['Naknio' ], 0x10000**0xC), #
-    ('G', ['Signio' ], 0x10000**0xD), #
-    ('A', ['Gannio' ], 0x10000**0xE), #
-    ('F', ['Fusnio' ], 0x10000**0xF), #
+    # Note: prefix only- name may conflict with other unit names
+    ('H', ['hek'   ], 0x10),
+    ('J', ['jent'  ], 0x100),
+    ('G', ['gil'   ], 0x1000),
+    ('M', ['Muni'  ], 0x10000),
+    ('U', ['Duni'  ], 0x10000**0x2),
+    ('T', ['Trini' ], 0x10000**0x3),
+    ('R', ['Kvarni'], 0x10000**0x4),
+    ('V', ['Kvinni'], 0x10000**0x5),
+    ('S', ['Sesni' ], 0x10000**0x6),
+    ('P', ['Sepni' ], 0x10000**0x7),
+    ('K', ['Okni'  ], 0x10000**0x8),
+    ('N', ['Nauxni'], 0x10000**0x9),
+    ('A', ['Delni' ], 0x10000**0xA),
+    ('B', ['Lomni' ], 0x10000**0xB),
+    ('C', ['Nakni' ], 0x10000**0xC),
+    ('D', ['Signi' ], 0x10000**0xD),
+    ('E', ['Ganni' ], 0x10000**0xE),
+    ('F', ['Fusni' ], 0x10000**0xF),
+    ('I', ['Hekni' ], 0x10000**0x10),
+    ('h', ['hekon'   ], 0x10**-1),
+    ('j', ['jenton'  ], 0x100**-1),
+    ('g', ['gilon'   ], 0x1000**-1),
+    ('m', ['Munion'  ], 0x10000**-1),
+    ('u', ['Dunion'  ], 0x10000**-0x2),
+    ('t', ['Trinion' ], 0x10000**-0x3),
+    ('r', ['Kvarnion'], 0x10000**-0x4),
+    ('v', ['Kvinnion'], 0x10000**-0x5),
+    ('s', ['Sesnion' ], 0x10000**-0x6),
+    ('p', ['Sepnion' ], 0x10000**-0x7),
+    ('k', ['Oknion'  ], 0x10000**-0x8),
+    ('n', ['Nauxnion'], 0x10000**-0x9),
+    ('a', ['Delnion' ], 0x10000**-0xA),
+    ('b', ['Lomnion' ], 0x10000**-0xB),
+    ('c', ['Naknion' ], 0x10000**-0xC),
+    ('d', ['Signion' ], 0x10000**-0xD),
+    ('e', ['Gannion' ], 0x10000**-0xE),
+    ('f', ['Fusnion' ], 0x10000**-0xF),
+    ('i', ['Heknion' ], 0x10000**-0x10),
 ]
 u_rdo_base : dict[str, units.UnitBase] = u_nat_base.copy()
 u_rdo_defs : dict[str, units.UnitBase] = {}
@@ -242,7 +263,7 @@ u_rdo_base['dist'] = units.def_unit(
     ['U', 'Utro'], 383269 * 2**100 * u_nat_base['dist'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 u_rdo_base['mass'] = units.def_unit(
-    ['p', 'pakmo'], 2**24 * u_nat_base['mass'],
+    ['P', 'Pakmo'], 2**24 * u_nat_base['mass'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 u_rdo_base['time'] = units.def_unit(
     ['ŝ', 'ŝekunto'], 1149807 * 2**124 * u_nat_base['time'],    #71863 * 2**128
@@ -255,10 +276,15 @@ u_rdo_base['char'] = units.def_unit(
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 # mask units with the same names as SI
 _UNITS_MASK_SET = {
-    'h', 'g', 'D', 'T', 'R', 'S', 'P', 'N', 'E', 'L', 'K', 'G', 'A', 'F',
+    #'H', 'J', 'G', 'U', 'T', 'R', 'V', 'S', 'P', 'K', 'N', 'A', 'B', 'C', 'D', 'E', 'F',
+    'sp',
     'AU',
     'kph', 'mph',
-}
+} | ({data[0] for data in u_rdo_prefixes} - {
+    # these prefixes are added as independent units
+    'M',
+    # 'H', 'G', 'j',
+})
 #    extra defs: prefixes
 for prefix_sn, prefix_tab, scale in u_rdo_prefixes:
     if prefix_sn not in _UNITS_MASK_SET:    # avoid name collisions with SI units
@@ -313,13 +339,13 @@ zoro_equivalency = (
 )
 #    speed
 units.def_unit('Uoŝ', u_rdo_defs[ 'U']/u_rdo_defs['ŝ'], namespace=u_rdo_defs)
-units.def_unit('joĝ', u_rdo_defs['jU']/u_rdo_defs['ĝ'], namespace=u_rdo_defs)
+units.def_unit('Joĝ', u_rdo_defs['JU']/u_rdo_defs['ĝ'], namespace=u_rdo_defs)
 #    power
 units.def_unit(
     ['Lu', 'Lumro'], 0x1 * u_rdo_base['power'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 units.def_unit(
-    ['⚡', 'MLu', 'MunioLumro'], 0x10000 *u_rdo_defs['Lu'],
+    ['⚡', 'MLu', 'MuniLumro'], 0x10000 *u_rdo_defs['Lu'],
     namespace=u_rdo_defs)
 #    currency
 units.def_unit(
@@ -351,12 +377,13 @@ class Unuoj:
         return units.set_enabled_equivalencies([
             zoro_equivalency, *units.equivalencies.temperature()])
     
-    def enable_units(self):
+    def enable_units(self, overwrite:bool=False):
+        if overwrite: units.set_enabled_units([])
         return units.add_enabled_units(self._defs_masked)
     
-    def enable(self):
+    def enable(self, overwrite:bool=False):
         self.enable_equivalencies()
-        self.enable_units()
+        self.enable_units(overwrite=overwrite)
         return
 
 unitsRdO = Unuoj(u_rdo_base, u_rdo_defs)
@@ -399,7 +426,7 @@ if __name__ == '__main__':
 
     print("\nTesting name collision with SI units... ", end='')
     # units.add_enabled_units(u_rdo_defs)
-    u_nat.enable()
+    u_nat.enable(overwrite=True)
     u_rdo.enable()
     u.enable()
     print("Done.")
