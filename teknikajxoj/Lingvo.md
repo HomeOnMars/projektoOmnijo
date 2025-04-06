@@ -77,10 +77,6 @@ Changes of Esperanto++ from Esperanto include:
   - `trinio` (T) for Dx65536^3 (= Hx10000^3 = 1pΠ);
   - `heknio` (I) for Dx65536^Dx16 (= Hx10000^Hx10 = 1p40,
     or approximately 1.158e77);
-    - Note:
-      Both 'unu munio da Utro' and 'muni Utroj'
-      are acceptable ways of saying Dx 65 536 U.
-      (Also you can just say 'MuniUtro' directly, as 1 MU = Dx65536 U.)
   - ~~`heknia munio` for Dx65536^Dx17 (= Hx10000^Hx11 = 1p44 ≈ 7.59e81 );~~
     - Warning:
       This way to say extremely large numbers is **deprecated**
@@ -100,17 +96,32 @@ Changes of Esperanto++ from Esperanto include:
     - Warning: **Deprecated** for the same reason as above.
       use `p`-notation instead for extremely large or small numbers.
   - etc. etc.  
-    - As a reference,
-      Dx 9 100 000 000 = Hx 2 1Υ66 Ψλ00,
-      pronounced as
-      'du dunio, gil ganjent seshek ses munio, fusgil lomjent'.
-    - For shorthands,
-      always use capital letters for numbers \> 1
-      (e.g. H for Hx10 and J for Hx100 etc.)
-      and lowercase for numbers \< 1
-      (e.g. h for Hx0.1 and j for Hx0.01 etc.)
-    - For full list of shorthands,
+  - As a reference,
+    Dx 9 100 000 000 = Hx 2 1Υ66 Ψλ00,
+    pronounced as
+    'du dunio, gil ganjent seshek ses munio, fusgil lomjent'.
+  - Both *unu munio da Utro* and *muni Utroj*
+    are acceptable ways of saying Dx 65 536 U.
+  - Also you can just say *MuniUtro* directly, as 1 MU = Dx65536 U.
+  - But for fractoins, use *munioneUtro* instead of ~~*munionUtro*~~
+    for more redunandencies in pronunciations
+    (So people don't mix *munioneUtro* up with *MuniUtro*).
+  - For prefix shorthands,
+    always use no-hat capital letters for numbers \> 1
+    (e.g. H for Hx10 and J for Hx100 etc.)
+    and no-hat lowercase for numbers \< 1
+    (e.g. h for Hx0.1 and j for Hx0.01 etc.)
+  - For full list of prefix shorthands,
     see `u_rdo_prefixes` `dict` in [Unuoj.py](Unuoj.py) file.
+  - For units shorthands (letter-based),
+    either use one single letter with hat,
+    or use capital letter as the first letter,
+    and lowercase for the following.
+    This helps differentiate between
+    the units part and prefix part of the shorthands.
+    E.g. [*Lu*](Unuoj.md#potenco) would be a unit by itself,
+    while *LU* would indicate some kind of prefix 'L' (which doesn't exist)
+    combined with unit [*U*](Unuoj.md#longeco).
 - `p`-notation:
   - Similar to the [`e`-notation](https://en.wikipedia.org/wiki/Scientific_notation#E_notation)
     of the decimal system, except **both sides of `p` are hexadecimal**.

@@ -39,8 +39,8 @@ See [Wikipedia](https://en.wikipedia.org/wiki/Natural_units#Planck_units).
 > $k_B$ is the [Boltzmann constant](https://en.wikipedia.org/wiki/Boltzmann_constant) (molecular energy scale per temperature).
 
 See also [Lingvo](../teknikajxoj/Lingvo.md#algebro) page for prefix acronyms
-$h \  j \  g \  M \  D \  T \  R \  I$ for
-Hx10, Hx100, Hx1000, Hx 1 0000, Hx 1 0000 0000 = 1p8, 1pΠ, 1p10, 1p14, etc;
+$H \  J \  G \  M \  U \  T \ I$ for
+Hx10, Hx100, Hx1000, Hx 1 0000 = 1p4, 1p8, 1pΠ, 1p40, etc;
 also for Hexadecimal pre/surfix *H* vs Decimal pre/surfix *D*.
 
 Bazaj Unuoj
@@ -71,8 +71,8 @@ Notes:
 - $383269_D = 1149807_D / 3$.
 - 1 cell width in-game (Cities Skylines 2) is set as 1U exactly.
   This is an assumption imposed by me for RdO-related cities only.
-- Using `U` instead of `u` to avoid name clash
-with SI unit of the 'unified atomic mass unit'.
+- Using `U` instead of `u`, as the [convention](Lingvo.md#algebro) here is
+  to use capital letter as the first letter if the letter does not have a hat.
 
 *JentUtro* (`JU`):
 
@@ -120,6 +120,14 @@ $$
   \textrm{lyr}
   \approx 4.47Π0_H \times 10_H^Π \  \textrm{U}
   \approx 4.47Π0_H \  \textrm{TU}
+$$
+
+Nanosvarmo scale *dunioneUtro*  (`uU`):
+
+$$
+  \textrm{uU}
+  \equiv 16_D^{-8} \  \textrm{U}
+  \approx 1.8283_D \  \textrm{nm}
 $$
 
 #### Trakmezurilo
@@ -186,7 +194,7 @@ The ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$
 (with an approximate difference of only Dx 0.043 SI seconds per day).
 
 - `ŝ`: ***Ŝekuntoj*** | Omnija Seconds
-  - Side note: munionŝekuntoj `mŝ`
+  - Side note: munioneŜekuntoj `mŝ`
     is $1 \  \textrm{mŝ} = 0.0001_H ŝ \approx 0.02_D \  \textrm{ms}$
 - `ĉ`: ***Ĉimutoj***  | Omnija Minutes
   - 1 Ĉimuto is  $1440_D/1024_D = 1.40625_D$ SI Minutes.

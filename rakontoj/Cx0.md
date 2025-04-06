@@ -27,7 +27,7 @@ Legal
 
 <blockquote>
   "...<br>
-  And then Serena snapped her fingers: '<b>Let there be light,</b>'
+  And Serena snapped her fingers: '<b>Let there be light,</b>'
   and there was light.<br>
   And Serena saw the light and said:
   'You know what, let's make it <b>brighter</b>.'"<br>

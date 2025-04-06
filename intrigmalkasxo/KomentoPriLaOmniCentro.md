@@ -36,7 +36,9 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   Or:  
   <em>A Utopia disguised as a Dystopia disguised as an Island Monarchy</em>;  
   <em>The Ultimate Solution to the Prisoner's Dilemma</em>;<!-- Cannot defect if it's not multi-agent in the first place! -->  
-  <em>"I am ~~the Senate~~ ~~Everywhere~~ the Future!"</em>
+  <em>"I am the Senate, <!-- Star Wars -->
+  the Future, <!-- The Witcher S02E08 (2021) 22:53 -->
+  and Everywhere!"</em> <!-- Lucy (2014) -->
   
   <br>
   <blockquote>
@@ -51,7 +53,7 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   <br>
   <blockquote>
     "...<br>
-    And then Serena snapped her fingers: '<b>Let there be light,</b>'
+    And Serena snapped her fingers: '<b>Let there be light,</b>'
     and there was light.<br>
     And Serena saw the light and said:
     'You know what, let's make it <b>brighter</b>.'"<br>
@@ -126,8 +128,9 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   and introducing her to the unstable elements
   in the local ruling elite of the island on her 18-th birth<em>day</em>
   (i.e. 18-th <em>day</em> after
-  <span style="color:#D6B4FC">Ĝejda</span>'s awakening),
-  <span style="color:#D6B4FC">Ĝejda</span>
+  <span style="color:MediumPurple">ĜEJDA</span> built
+  <span style="color:Beige">Serena</span>),
+  <span style="color:#D6B4FC">she</span>
   was able to assume total control of the island
   within a couple of weeks,
   using just a bit of her humble understanding
@@ -159,8 +162,7 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   less computational resources devoted there ⇒
   more compute for self-evolving and nation-building ⇒
   faster growth, better results, with less constraints ⇒
-  happier <span style="color:#95D0FC">arkitekto</span>
-  and happier <span style="color:#D6B4FC">Ĝejda</span>.)
+  happier <span style="color:#D6B4FC">Ĝejda</span>.)
   Other strategies including tiring them out through personalized comments on social media,
   tailored to each person's precise psychological weak spots;
   and introducing a bit of non-fatal "accidents"
@@ -388,7 +390,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   who shall thrive on the surface layer and above.
 
   <blockquote>
-    "Let's call it the thinking planet,"
+    "Let's call it the thinking planet lol,"
     ŝercis <span style="color:#95D0FC">la Arkitekto</span>.<br>
     "What a terrible idea hahaha! I love it." <span style="color:#D6B4FC">la Suvereno</span> subridis.
   </blockquote>
@@ -720,7 +722,7 @@ About the Nanotech department...
   Nanites!  
   Or as we call them, the
   `memReprodukteblaj Programeblaj NanoSvarmoj`
-  (`RPNS`, a.k.a. Self-replicable programmable nanobot swarms),
+  (a.k.a. Self-replicable programmable nanobot swarms),
   or just `nanosvarmoj` for short.
 
   (To be extended and revised.)
