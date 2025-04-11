@@ -227,16 +227,16 @@ A few more clarifications:
 <span style="color:Beige">Serena</span> plans to announce and implement
 her *copyright reform* policy in three distinct stages:
 
-1. Stage 1 / `Y+4J` (4 years after her coronation):  
+1. Stage 1 / `Y+2J` (2 years after her coronation):  
   Announcement of <span style="color:Beige">her</span>
   reformed copyright scheme, framed as an optional license
   only mandatorily applied to the central government documents and
   nationalized industries.
-2. Stage 2 / `Y+8J` (8 years after her coronation):  
+2. Stage 2 / `Y+4J` (4 years after her coronation):  
   <span style="color:Beige">Serena</span> announces that
   her new copyright scheme will now apply to everything ever published within
   the border of RdO.
-3. Stage 3 / `Y+10J` (Dx16 years after her coronation):  
+3. Stage 3 / `Y+8J` (8 years after her coronation):  
   Final form released,
   as <span style="color:Beige">Serena</span> announces that
   everything ever published worldwide will be treated under
@@ -248,7 +248,7 @@ her *copyright reform* policy in three distinct stages:
 
 As <span style="color:Beige">Reĝino Serena</span> expects
 significant international pushback from her radical idea.
-Which is why she delayed the announcement to `Y+10J`
+Which is why she delayed the announcement to `Y+8J`
 when the kingdom is well-established and self-sufficient,
 with its technological supremacy firmly established,
 ready for major powers' economic sanctions and/or any potential wars.
