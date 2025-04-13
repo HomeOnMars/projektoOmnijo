@@ -39,4 +39,13 @@ Legal
 </blockquote>
 <br>
 
+<blockquote>
+  "That's the wonderful and terrible thing about technology:<br>
+  <b>It changes everything.</b>'"<br>
+  <span style="color:grey">
+  --- The Expanse <cite><a href="https://youtu.be/xlmfywo97NE?list=ELQW70FZSpU6fXmaDbh83Gdw&t=1745">S02E06 (2017) 29:05</a></cite>
+  </span>
+</blockquote>
+<br>
+
 TBD.

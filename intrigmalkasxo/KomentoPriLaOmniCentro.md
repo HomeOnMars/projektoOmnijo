@@ -34,11 +34,11 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   </summary>
 
   Or:  
-  <em>A Utopia disguised as a Dystopia disguised as an Island Monarchy</em>;  
+  <em>A Utopia and/or Dystopia in layered disguise</em>;  
   <em>The Ultimate Solution to the Prisoner's Dilemma</em>;<!-- Cannot defect if it's not multi-agent in the first place! -->  
   <em>"I am the Senate, <!-- Star Wars -->
   the Future, <!-- The Witcher S02E08 (2021) 22:53 -->
-  and Everywhere!"</em> <!-- Lucy (2014) -->
+  and Everywhere :-D"</em> <!-- Lucy (2014) -->
   
   <br>
   <blockquote>
