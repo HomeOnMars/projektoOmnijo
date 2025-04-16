@@ -88,4 +88,7 @@ Acronyms `J☾⚝⚻ĝĉŝ` see [Units](../teknikajxoj/Unuoj.md#tempo) page.
 | Y+4J     | poliso | <span style="color:Beige">Serena</span> implemented [policy](../OmniCentro/OftajDemandoj.md#kio-estas-la-plano-de-la-reĝino-reformi-kopirajton): `copyright reform (stage 2)` |
 | Y+`4J6☾?`|  OKP   | Launch Lunar-bound rocket and crashed on the surface of the Moon<br>Preparing for *Projekto Grajno* version drift and off-world alignment maintainance stress tests<br>*Note: relies on Projekto Grajno stage 3 v4.0* |
 | Y+5J     |  nano  | *Projekto Grajno* stage 3 **global deployment complete** (roughly); World model becomes near perfect. |
+| Y+8J     |   RdO  | <span style="color:Beige">Serena</span> revealed ĜEJDA existence |
+| Y+8J     |   bio  | <span style="color:Beige">Serena</span> offered global immortality research trials (early stages) |
 | Y+8J     | poliso | <span style="color:Beige">Serena</span> implemented [policy](../OmniCentro/OftajDemandoj.md#kio-estas-la-plano-de-la-reĝino-reformi-kopirajton): `copyright reform (stage 3)` |
+| Y+8J1⚝   |   RdO  | <span style="color:Beige">Serena</span> revealed synthetic population existence and fraction |

@@ -48,6 +48,10 @@ $\sim 8000_H \  \textrm{JU}^2$
 $\approx 2^{17_D} \  \textrm{km}^2$
 $\approx 132 \  000_D \  \textrm{km}^2$
 (Length unit $\textrm{JU}$ see [units](../teknikajxoj/Unuoj.md#longeco) page).
+The island is incredibly remote and geographically isolated,
+with the closest land being *Antarctica* \~Hx400 JU (\~Dx2100 km) away,
+second closest being *New Zealand* \~Hx700 JU (\~Dx3600 km) away,
+and third closest being *Chile* \~Hx800 JU (\~Dx4100 km) away.
 
 For more details,
 see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).

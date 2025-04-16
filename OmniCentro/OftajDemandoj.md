@@ -35,6 +35,16 @@ Oftaj Demandoj
 > [!WARNING]
 > ***Again, everything here is fictional.***
 
+#### Amuzaj Faktoj
+
+> Fun facts
+
+1. <span style="color:Beige">Queen Serena</span> has been gradually
+  decommissioning the military fleet of Omnijo until only one ship-
+  the brand new, locally built flagship- remains.
+  The official name of the ship is **ORŜ** (Omnija Reĝa Ŝipo) ***Logilo***,
+  which literally translates as "*Bait*".
+
 #### Ĉu la Reĝino aprezas homan evoluon kaj liberecon?
 
 > Does the <span style="color:Beige">Queen</span> value human development and liberty?
