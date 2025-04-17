@@ -136,6 +136,7 @@ Examples:
 |   Mhv   | **M**ar**h**aveno    | Seaport          |
 |   Fhv   | **F**lug**h**aveno   | Airport          |
 |   Khv   | **K**osma**h**aveno  | Space Port       |
+|    Va   | **V**il**a**o        | Villa            |
 |    Vd   | **V**i**d**o         | Vista            |
 |    Vĝ   | **V**ila**ĝ**o       | Village          |
 ||| <!-- Road types --> |

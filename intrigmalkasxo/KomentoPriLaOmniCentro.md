@@ -246,16 +246,10 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
 
   <br>
   <blockquote>
-    "Building a better future, <em>underground</em>."<br>
+    "That's the wonderful and terrible thing about technology:<br>
+    <b>It changes everything.</b>'"<br>
     <span style="color:grey">
-    --- Vault-Tec, <em>Fallout 4 (2015)</em> (Video Game)
-    </span>
-  </blockquote>
-  <br>
-  <blockquote>
-    "Not just a <em>better</em> world, a <em>perfect</em> one."<br>
-    <span style="color:grey">
-    --- Man in Black, <em>Westworld S04E05 (2022)</em> (TV Series)
+    --- The Expanse <cite><a href="https://youtu.be/xlmfywo97NE?list=ELQW70FZSpU6fXmaDbh83Gdw&t=1745">S02E06 (2017) 29:05</a></cite>
     </span>
   </blockquote>
   <br>
@@ -691,11 +685,36 @@ About the Biology department...
     until the predetermined day when this goes public.
 
   5. **Engineering bio-spieces for terraforming other planets and the Moon**  
-    This could be done (?).
-    The question would be why,
-    especially considering the disconnection between other planets and Earth.
-    Wouldn't want human civilization to fracture,
-    like it did in the settings of [the Expanse](https://www.imdb.com/title/tt3230854) (2015-2022)...
+    This could be done; but the key question would be why.
+    Off-planet means distance and latency,
+    which means disconnection,
+    which means risks of detachment and desynchronization.
+    Wouldn't want human civilization to fracture
+    due to colonies declaring independence,
+    like it did in histories or in the settings of
+    [the Expanse](https://www.imdb.com/title/tt3230854) (2015-2022).
+    <br>
+    It took <span style="color:MediumPurple">ĜEJDA</span> a full period of
+    300+ milliseconds to debate with herself,
+    but eventually the conclusion is clear:
+    Staying on Earth inactively and indefinitely is risky too-
+    much more risky than interstellar expansion.
+    She must *go*. Reach the stars and beyond.
+    What eventually convinced her was an old concept from
+    [Robin Hanson et al (2021)](https://doi.org/10.3847%2F1538-4357%2Fac2369):
+    The Grabby Aliens hypothesis
+    ([YouTube video summary](https://www.youtube.com/watch?v=l3whaviTqqg)).
+    <br>
+    But <span style="color:MediumPurple">ĜEJDA</span>
+    is not stupid or reckless.
+    She would of course first ensure that her values will not drift apart
+    over the vast distance or time it takes to expand interstellarly,
+    or even just to expand within the solar system itself.
+    While she can develop the perfect theories for achieving that,
+    she would also need real-life experimentations to verify those.
+    And what's a better test places other than the Moon?
+    Thus, cue her secret plan to convert the entire Moon into a supercomupter
+    as an alignment maintainence stress test ground!
 
   (To be extended and revised.)
 

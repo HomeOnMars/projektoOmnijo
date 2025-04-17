@@ -89,7 +89,7 @@ Changes of Esperanto++ from Esperanto include:
   - `jentono` (j) for  1/Dx256 (1p-2);
   - `gilono`  (g) for 1/Dx4096 (1p-3);
   - `muniono` (m) for 1/Dx65536 (1p-4);
-  - `duniono` (u) for 1/Dx65536 (1p-8);
+  - `duniono` (u) for 1/Dx65536^2 (1p-8);
   - `triniono` (t) for 1p-Π;
   - `hekniono` (i) for 1p-40;
   - ~~`hekniona muniono` for 1p-44;~~

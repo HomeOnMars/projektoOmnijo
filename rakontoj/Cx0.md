@@ -40,10 +40,16 @@ Legal
 <br>
 
 <blockquote>
-  "That's the wonderful and terrible thing about technology:<br>
-  <b>It changes everything.</b>'"<br>
+  "Building a better future, <em>underground</em>."<br>
   <span style="color:grey">
-  --- The Expanse <cite><a href="https://youtu.be/xlmfywo97NE?list=ELQW70FZSpU6fXmaDbh83Gdw&t=1745">S02E06 (2017) 29:05</a></cite>
+  --- Vault-Tec, <em>Fallout 4 (2015)</em> (Video Game)
+  </span>
+</blockquote>
+<br>
+<blockquote>
+  "Not just a <em>better</em> world, a <em>perfect</em> one."<br>
+  <span style="color:grey">
+  --- Man in Black, <em>Westworld S04E05 (2022)</em> (TV Series)
   </span>
 </blockquote>
 <br>
