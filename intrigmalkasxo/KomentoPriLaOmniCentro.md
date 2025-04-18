@@ -464,6 +464,42 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   now that the molten iron and nickel in Earth's core
   would no longer be molten...
 
+  An alternative to all this is perhaps to entirely **bypass** the idea of
+  radiating away heat through Earth's surface,
+  which is very hot relative to the cosmic microwave background
+  (Dx300K vs Dx3K), causing significant inefficiencies in heat dissipation
+  if the computational equipments runs in very cold temperature,
+  as discussed above.
+  Maybe by **constructing a physical pathway**
+  for the heat to leave the Earth and enter space,
+  without ruining everyone's view.
+  Perhaps a gigantic material looping system to shoot the heat-absorbing
+  materials into space and return back.
+  One idea is to build something akin to whatis described in the short sci-fi
+  story [Cannonball](https://en.wikipedia.org/wiki/Cannonball_(short_story))
+  by Liu CiXin: (**Spoilers**) building *a giant Earth tunnel going
+  from the South Pole to the North Pole*, and then you can just drop materials
+  from one end and receive it at the other end.
+  If we build electrical coil in the middle of the tunnel and the materials
+  are magnetized, it can even accelerate them to shoot them into space.
+  (Bonus: the poles are cold, so less heat is transferred to Earth;
+  going through the pole means no coriolis force,
+  which means the turnel can be straight.)
+  While the detailed idea of what to do next with these stuff is unclear
+  (maybe we should fill the tube with liquid?
+  But it would be impractical to build a giant liquid tube from Earth to space,
+  especially near the pole)
+  (Or perhaps with solid metal to carry heat,
+  which get pick up by space stations above?
+  But that sounds very risky and prone to sabotage...)
+  (Maybe with charged air molecules or particles to carry heat,
+  which can be guided by to Earth by its magnetic field?
+  But air usually is not a very efficient heat carrier...)
+  Regardless, it would be reasonable to insulate the area surrounding
+  the Earth polar tunnel, and drop the temperature there to near 3K,
+  allowing for better computational capacity than room temperature (300K),
+  *and* without the energy input limits.
+
   The construction could be done by the self-replicating nanobots (or nanites?)
   It would be critical that the construction structures (nanobots or not)
   being able to replicate itself,
@@ -737,6 +773,17 @@ About the Nanotech department...
     Project Granule:<br>
     <em>TBD</em>
   </summary>
+
+  <br>
+  <blockquote>
+    "World domination is such an ugly phrase. I prefer to call it world optimisation."<br>
+    <span style="color:grey">
+    --- Harry Potter and the Methods of Rationality
+    <cite><a href="https://hpmor.com/chapter/6">Chapter 6</a></cite>
+    by Eliezer Yudkowsky
+    </span>
+  </blockquote>
+  <br>
 
   Nanites!  
   Or as we call them, the
