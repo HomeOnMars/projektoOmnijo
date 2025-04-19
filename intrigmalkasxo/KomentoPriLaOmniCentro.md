@@ -475,7 +475,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   without ruining everyone's view.
   Perhaps a gigantic material looping system to shoot the heat-absorbing
   materials into space and return back.
-  One idea is to build something akin to whatis described in the short sci-fi
+  One idea is to build something akin to what is described in the short sci-fi
   story [Cannonball](https://en.wikipedia.org/wiki/Cannonball_(short_story))
   by Liu CiXin: (**Spoilers**) building *a giant Earth tunnel going
   from the South Pole to the North Pole*, and then you can just drop materials
@@ -492,7 +492,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   (Or perhaps with solid metal to carry heat,
   which get pick up by space stations above?
   But that sounds very risky and prone to sabotage...)
-  (Maybe with charged air molecules or particles to carry heat,
+  (Maybe with charged air molecules/particles to carry heat,
   which can be guided by to Earth by its magnetic field?
   But air usually is not a very efficient heat carrier...)
   Regardless, it would be reasonable to insulate the area surrounding

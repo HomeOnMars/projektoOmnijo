@@ -25,7 +25,7 @@ Legal
 
 -------------------------------------------------------------------------------
 
-<blockquote>
+<!-- <blockquote>
   "...<br>
   And Serena snapped her fingers: '<b>Let there be light,</b>'
   and there was light.<br>
@@ -37,21 +37,36 @@ Legal
   (fictional)
   </span>
 </blockquote>
-<br>
+<br> -->
 
-<blockquote>
-  "Building a better future, <em>underground</em>."<br>
-  <span style="color:grey">
-  --- Vault-Tec, <em>Fallout 4 (2015)</em> (Video Game)
-  </span>
-</blockquote>
-<br>
-<blockquote>
-  "Not just a <em>better</em> world, a <em>perfect</em> one."<br>
-  <span style="color:grey">
-  --- Man in Black, <em>Westworld S04E05 (2022)</em> (TV Series)
-  </span>
-</blockquote>
-<br>
+...
 
-TBD.
+"Well, it doesn't matter anyway.
+Even though she is fortunate enough to be born in a rich and stable country
+with decent parents, who gave her sufficient care and capital to
+jump start her life, letting her create all those beautiful art
+that you seem to admire so much, one day she will die.
+Either die young, or grow old and slowly wither away.
+Tragedy either way. And she would be one of the lucky ones who didn't starve
+or stuck with poverty for most part of her life, unlike many others.
+All those wasted potentials for those people-
+you haven't even thought of them, have you?" said the figure at the door,
+with a certain tone of bemusement that reeks cruelty through indifference,
+as he left.
+"It's okay. It's not like them matter anyway.
+None of this matters.
+***All beauty fades. Nothing lasts forever.***"
+
+<span style="color:#95D0FC">The Architect</span> stayed silent.
+He has always been the quiet kind,
+and it has been hard for people around him to tell
+what exactly he was thinking,
+even when they cared enough to want to know;
+but there were still clues here and there, if you knew where to look.
+His right hand clenched into a fist,
+his eyes became fixated with determination.
+A resolution was made, here and then:
+
+***One day, <span style="color:#95D0FC">he</span> shall end this evil.***
+
+TBD. 
