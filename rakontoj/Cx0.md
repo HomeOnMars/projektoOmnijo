@@ -47,26 +47,32 @@ with decent parents, who gave her sufficient care and capital to
 jump start her life, letting her create all those beautiful art
 that you seem to admire so much, one day she will die.
 Either die young, or grow old and slowly wither away.
-Tragedy either way. And she would be one of the lucky ones who didn't starve
+Tragedy either way.
+After which her art and beauty will soon fade,
+and people, including you yourself, will forget about her and move on,
+as if nothing happened.
+And even so, she would be one of the lucky ones who didn't starve
 or stuck with poverty for most part of her life, unlike many others.
 All those wasted potentials for those people-
-you haven't even thought of them, have you?" said the figure at the door,
-with a certain tone of bemusement that reeks cruelty through indifference,
-as he left.
+you haven't even thought of them, have you?"
+said the figure at the door as he left,
+with a certain tone of bemusement that reeks cruelty through indifference.
 "It's okay. It's not like them matter anyway.
 None of this matters.
-***All beauty fades. Nothing lasts forever.***"
+***All beauty fades. Everything ends. Nothing lasts forever.***"
 
-<span style="color:#95D0FC">The Architect</span> stayed silent.
-He has always been the quiet kind,
+<!-- <span style="color:#95D0FC">The Architect</span> --> 
+The other person in the room stayed silent.
+He has always been the quiet type,
 and it has been hard for people around him to tell
 what exactly he was thinking,
 even when they cared enough to want to know;
 but there were still clues here and there, if you knew where to look.
 His right hand clenched into a fist,
-his eyes became fixated with determination.
-A resolution was made, here and then:
+Hi lips pursed firmly,
+his eyes became fixated with determination;
+a resolution was made, here and then:
 
-***One day, <span style="color:#95D0FC">he</span> shall end this evil.***
+***One day, <span style="color:#95D0FC">he</span> shall destroy this evil.***
 
-TBD. 
+(To be continued.) 
