@@ -25,19 +25,22 @@ Legal
 
 -------------------------------------------------------------------------------
 
-<!-- <blockquote>
-  "...<br>
-  And Serena snapped her fingers: '<b>Let there be light,</b>'
-  and there was light.<br>
-  And Serena saw the light and said:
-  'You know what, let's make it <b>brighter</b>.'"<br>
+<blockquote>
+  "Dark's nothing to be afraid of;
+  In fact, I'd go as far as saying there's nothing to be afraid of,
+  anywhere.<br>
+  The strongest person is the person who isn't scared to be alone;<br>
+  It's other people you got to worry about.<br>
+  Other people.
+  They'll tell you what to do and how to feel...<br>
+  Before you know it,
+  you are pouring your life out in search of something
+  other people told you to go look for."<br>
   <span style="color:grey">
-  --- La Spajro-Singulariso construction report chapter 7-C
-  <em>"Queen Serena's first visit to the palace atrium"</em>
-  (fictional)
+  --- The Queen's Gambit (2020) E05 0:00
   </span>
 </blockquote>
-<br> -->
+<br>
 
 ...
 
@@ -58,11 +61,12 @@ you haven't even thought of them, have you?"
 said the figure at the door as he left,
 with a certain tone of bemusement that reeks cruelty through indifference.
 "It's okay. It's not like them matter anyway.
-None of this matters.
+None of us matters.
+You die, I die, everyone dies.
 ***All beauty fades. Everything ends. Nothing lasts forever.***"
 
 <!-- <span style="color:#95D0FC">The Architect</span> --> 
-The other person in the room stayed silent.
+The other person in the room went silent.
 He has always been the quiet type,
 and it has been hard for people around him to tell
 what exactly he was thinking,

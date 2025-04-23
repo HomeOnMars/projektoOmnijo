@@ -39,6 +39,8 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   <em>"I am the Senate, <!-- Star Wars -->
   the Future, <!-- The Witcher S02E08 (2021) 22:53 -->
   and Everywhere :-D"</em> <!-- Lucy (2014) -->
+
+  <!-- Almost: Omnipresent - Omniscient - Omnipotent: ĜEJDA by year 8 in a nutshell: Essentially a Goddess -->
   
   <br>
   <blockquote>
