@@ -210,6 +210,11 @@ The ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$
   - 1 Ŝekunto is therefore
     approximately $86400_D/65536_D = 1.318359375_D$ SI Seconds.
   - ($D$ for decimal, $H$ for Hexadecimal)
+  - Omnijo labour law enforces 6-hour (4-Ĝora) workday
+    (24 hours / Hx10ĝ work per week, as each week have 4 workdays).  
+    Each day is divided into 4 shifts:  
+    1ĝ (01:30) -> 5ĝ (07:30) -> 9ĝ (13:30) -> Σĝ (19:30)
+    -> 1ĝ (01:30) next day.
 - `⚝`: ***Semajnoj*** | Omnija Weeks
 - `☾`: ***Monatoj***  | Omnija Months
 - `Ĵ`: ***Ĵaroj***    | Omnija Unit Years
