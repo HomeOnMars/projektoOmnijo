@@ -200,8 +200,8 @@ def name_func_default(no: int, old_filename: str) -> str:
 def normalize_csl2_music_files(
     name_func = lambda no, old_filename: f"{old_filename}", #f"",
     # tbc = to be converted; ext = file name extension
-    # Note: '._ogg' is a special case, where the file will be simply renamed as '.ogg'
-    tbc_ext_set: set[str] = {'._ogg', '.m4a', '.flac'},
+    # Note: '._ogg' and '.oga' is a special case, where the file will be simply renamed as '.ogg'
+    tbc_ext_set: set[str] = {'._ogg', '.oga', '.m4a', '.mp3', '.mp4', '.flac'},
     overwrite_move: None|bool = None,    # if None, will raise exception if file already exists
     overwrite_ogg : None|bool = None,    # if None, will raise exception if file already exists
     overwrite_json: None|bool = None,
@@ -261,9 +261,9 @@ def normalize_csl2_music_files(
                 continue
             else:
                 cp(
-                    f'{fn}.ogg', f'{fn}._ogg',
+                    f'{fn}.ogg', f'{fn}.oga',
                     overwrite=overwrite_ogg, dry_run=dry_run, verbose=verbose)
-                tbc_ext = '._ogg'
+                tbc_ext = '.oga'
 
         if do_convert_ogg and (overwrite_ogg or '.ogg' not in exts):
             if tbc_ext == '._ogg':
@@ -286,6 +286,13 @@ def normalize_csl2_music_files(
                 if verbose: print(f"\t$ {' '.join(cmds)}")
                 if not dry_run:
                     subprocess.run(cmds)
+                    exts.add('.ogg')
+            elif tbc_ext == '.oga':
+                # copy paste
+                cp(
+                    f'{fn}{tbc_ext}', f'{fn}.ogg',
+                    overwrite=overwrite_ogg, dry_run=dry_run, verbose=verbose)
+                if not dry_run:
                     exts.add('.ogg')
             elif tbc_ext != '.ogg':
                 # convert to ogg
