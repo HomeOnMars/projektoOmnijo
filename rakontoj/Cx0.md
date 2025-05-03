@@ -26,14 +26,14 @@ Legal
 -------------------------------------------------------------------------------
 
 <blockquote>
-  "Dark's nothing to be afraid of;
-  In fact, I'd go as far as saying there's nothing to be afraid of,
+  "Dark's nothing to be afraid of; ...
+  <!-- In fact, I'd go as far as saying there's nothing to be afraid of,
   anywhere.<br>
-  The strongest person is the person who isn't scared to be alone;<br>
+  The strongest person is the person who isn't scared to be alone;<br> -->
   It's other people you got to worry about.<br>
   Other people.
-  They'll tell you what to do and how to feel...<br>
-  Before you know it,
+  They'll tell you what to do and how to feel,<br>
+  before you know it,
   you are pouring your life out in search of something
   other people told you to go look for."<br>
   <span style="color:grey">
@@ -78,5 +78,16 @@ his eyes became fixated with determination;
 a resolution was made, here and then:
 
 ***One day, <span style="color:#95D0FC">he</span> shall destroy this evil.***
+
+<!-- <blockquote>
+  "HE IS HERE. THE ONE WHO WILL TEAR APART THE VERY STARS IN HEAVEN.
+  HE IS HERE. HE IS THE END OF THE WORLD."<br>
+  <span style="color:grey">
+  --- Harry Potter and the Methods of Rationality
+  <cite><a href="https://hpmor.com/chapter/89">(Spoilers) Chapter 89</a></cite>
+  by Eliezer Yudkowsky
+  </span>
+</blockquote>
+<br> -->
 
 (To be continued.) 
