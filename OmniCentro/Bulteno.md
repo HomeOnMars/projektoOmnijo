@@ -204,4 +204,4 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 | OCFF | #FF0000 | <span style="color:Red">█ La Direktoro **Petrovo** de Omnijo </span> |
 | OCFP | #4169E1 | <span style="color:RoyalBlue">█ La Policestro **Tejlero** de Omnijo</span> |
 | OCFS | #FFC0CB | <span style="color:Pink">█ La Fakestro **Fiona** de Omnijo</span> |
-| OCRR | #D8BFD8 | <span style="color:Thistle">█ La Gastiganto **Karla** de Omnijo</span> |
+| OCRR | #D8BFD8 | <span style="color:Thistle">█ La Gastiganto **Karla Revin**</span> |
