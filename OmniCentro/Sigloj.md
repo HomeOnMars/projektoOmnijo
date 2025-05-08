@@ -125,6 +125,7 @@ Examples:
 |    Mt   | **M**on**t**o        | Mountain         |
 |    Am   | **A**ntaŭ**m**onto   | Foothill         |
 |    Me   | **M**ont**e**to      | Hill             |
+|    Bs   | **B**a**s**eno       | Reservoir        |
 |    Lg   | **L**a**g**o         | Lake             |
 |    Rv   | **R**i**v**ero       | River            |
 |  ~~Mr~~ | **M**a**r**o         | Sea  <br>(Deprecated - Use full form instead) |
@@ -201,6 +202,7 @@ Using the leading digit for identifying districts and areas:
 | `2` |  SC  | Am-H  | Am-Hejmecaĵo   | |
 | `3` |  SR  | Mt-O  | Mt-Olivkronaĵo | <span style="color:DarkSeaGreen">█ #8FBC8F</span> |
 | `4` |  CK  | Me-H  | Me-Hejmecaĵo   | <span style="color:Silver">█ #C0C0C0</span> |
+|     |  CK  | Is-N  | Is-Niksinaĵo   | |
 | `5` |  CC  | Mt-H  | Mt-Hejmecaĵo   | |
 | `6` |  CC  | Mt-H  | Am-Fortikecaĵo | |
 | `7` |  CR  | Mt-E  | Mt-Esperecaĵo  | |
