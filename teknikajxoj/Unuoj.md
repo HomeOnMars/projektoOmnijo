@@ -440,14 +440,6 @@ $$
   = 300_H \  \textrm{MU/ŝ}
 $$
 
-Earth surface gravity is approximately
-
-$$
-  g_0
-  \approx 2.2Π_H \  \textrm{U}/\textrm{ŝ}^2
-  = 9.81 \  \textrm{m}/\textrm{s}^2
-$$
-
 Boltzmann constant is exactly
 
 $$
@@ -457,6 +449,37 @@ $$
 $$
 
 (Note: $15ΨΨ3_H = 3^2 \times 10011_D$.)
+
+Reduced Planck constant is
+
+$$
+  \hbar
+  = c l_P m_P
+  = \frac{3}{5Σ925_H} \times 10_H^{{-19}_H} \  \textrm{U}^2\textrm{P}/\textrm{ŝ}
+  \approx 6.1747_D \times 10_D^{{-36}_D} \  \textrm{U}^2\textrm{P}/\textrm{ŝ}
+$$
+
+(Unfortunately the seemingly arbitrary number Hx5Σ925 = Dx383269 here
+comes from the length of a day,
+which originates from the rotation of the Earth-
+it cannot be removed easily without other trade-offs.)
+
+Gravitational constant is
+
+$$
+  G
+  = c^2 l_P / m_P
+  = \frac{9}{5Σ925_H} \times 10_H^{{-7}} \  \textrm{U}^3/\textrm{P}\textrm{ŝ}^2
+  \approx 8.7478_D \times 10_D^{{-14}_D} \  \textrm{U}^3/\textrm{P}\textrm{ŝ}^2
+$$
+
+Earth surface gravity is approximately
+
+$$
+  g_0
+  \approx 2.2Π_H \  \textrm{U}/\textrm{ŝ}^2
+  = 9.81 \  \textrm{m}/\textrm{s}^2
+$$
 
 ### Monero
 
