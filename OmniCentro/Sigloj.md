@@ -202,15 +202,16 @@ Using the leading digit for identifying districts and areas:
 | `2` |  SC  | Am-H  | Am-Hejmecaĵo   | |
 | `3` |  SR  | Mt-O  | Mt-Olivkronaĵo | <span style="color:DarkSeaGreen">█ #8FBC8F</span> |
 | `4` |  CK  | Me-H  | Me-Hejmecaĵo   | <span style="color:Silver">█ #C0C0C0</span> |
-|     |  CK  | Is-N  | Is-Niksinaĵo   | |
-| `5` |  CC  | Mt-H  | Mt-Hejmecaĵo   | |
-| `6` |  CC  | Mt-H  | Am-Fortikecaĵo | |
-| `7` |  CR  | Mt-E  | Mt-Esperecaĵo  | |
-| `8` |  NR  | Am-R  | Am-Raciecaĵo   | |
+| `5` |  CK  | Is-N  | Is-Niksinaĵo   | |
+| `6` |  CC  | Mt-H  | Mt-Hejmecaĵo   | |
+| `7` |  CC  | Mt-H  | Am-Fortikecaĵo | |
+| `8` |  CR  | Mt-E  | Mt-Esperecaĵo  | |
 | `9` |  CC  | ??-?  | Royal Palace (TBD)  | <span style="color:Beige">█ #F5F5DC</span> |
 | `Δ` |  NK  | Mt-F  | Mt-Fortikecaĵo | <span style="color:MediumPurple">█ #9370DB</span> |
 | `λ` |  NC  | Am-U  | Am-Unukornaĵo  | <span style="color:Thistle">█ #D8BFD8</span> |
 | `Π` |  NK  | Am-R  | Me-Raciecaĵo   | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
+|     |  NK  | La-P  | La Pordego     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
+| `Σ` |  NR  | Am-R  | Am-Raciecaĵo   | |
 | ... |      |       |                | |
 | `Ψ` |      |       | Eksteraj Konektoj  <br>Outside connections | |
 | ... |      |       |                | |
