@@ -15,7 +15,9 @@ To view a copy of this license, visit <https://creativecommons.org/licenses/by-n
 
 # imports (built-in)
 from math import pi, sin, cos, sqrt
+from collections.abc import Callable
 # imports (3rd party)
+import numpy as np
 import matplotlib as mpl
 
 # params
@@ -43,6 +45,7 @@ def ts(theta1: float, theta2: float) -> tuple[float, float]:
     """Convert angles from hex to deg."""
     return (t(theta1), t(theta2))
 #------------------------------------------------------------------------------
+
 def draw_arc(
     ax : mpl.axes.Axes,
     scale  : float,
@@ -52,7 +55,7 @@ def draw_arc(
     angle  : float = 0.,
     color  : None = None,
     linewidth_fac: float = PHI_INV, #11/16,
-    linewidth_unit: float = 18,    # 18 will leave no gap
+    linewidth_unit: float = 18,    # 18 will leave no gap (== 1/8 in the ax coordinate system)
     **kwargs,
 ) -> list[mpl.patches.Arc]:
     """Draw an arc in ax."""
@@ -83,7 +86,7 @@ def draw_hat(
     theta  : float = 120.,    # the 'openness' of the hat
     color  : None = None,
     linewidth_fac: float = PHI_INV, #11/16,
-    linewidth_unit: float = 18,    # 18 will leave no gap
+    linewidth_unit: float = 18,    # 18 will leave no gap (== 1/8 in the ax coordinate system)
     **kwargs,
 ) -> list[mpl.lines.Line2D]:
     """Draw the hat symbol in ax."""
@@ -109,3 +112,99 @@ def draw_hat(
                 **kwargs,
         ))
     ]
+
+
+def draw_band(
+    ax : mpl.axes.Axes,
+    scale  : float,
+    no_t: int = 0x10,
+    ts: None|list[float] = None,
+    xdata_func: Callable[[float], list[float]] =  lambda t: [-1.+t, t],
+    ydata_func: Callable[[float], list[float]] =  lambda t: [-1., 1.],
+    color_func: Callable[[float], tuple[float, float, float, float]] =  lambda t: (t, t, t, 1.),    # RGBA
+    linewidth_fac_func: Callable[[float], float] = lambda t: 1.,
+    linewidth_unit: float = 132.,
+    **kwargs,
+) -> list[mpl.lines.Line2D]:
+    """Draw a band in ax, with color transitioning among list of colors.
+    
+    Parameters
+    ----------
+
+    no_t:
+        no of parallel lines (aka resolution)
+
+    xdata_func, ydata_func:
+        functions that takes in t (from 0 to 1) and returns the x and y coordinates of the line
+
+    linewidth_fac_func:
+        function that returns width factor of lines at t
+        should be in the order of magnitude of the total width of the band
+
+    linewidth_unit: float
+        linewidth of a line with a width of 1.0
+        in the ax coordinate system.
+        Default is the case for figsize=(4, 4) and xylim=(-1, 1).
+        Do Not change these unless you know what you are doing.
+    """
+    if ts is None:
+        ts = np.linspace(0., 1., no_t) if no_t > 1 else [0.5]
+    # linewidth multiplier
+    # 8 because linewidth_unit is 1/8 in the ax coordinate system
+    linewidth_multi = linewidth_unit * scale / max(no_t-1, 1)
+    return [
+        ax.add_line(
+            mpl.lines.Line2D(
+                xdata = xdata_func(t),
+                ydata = ydata_func(t),
+                color = color_func(t),
+                linewidth = linewidth_fac_func(t) * linewidth_multi,
+                **kwargs,
+        ))
+        for t in ts]
+
+def draw_band_linear_x(
+    ax : mpl.axes.Axes,
+    scale  : float,
+    no_t: int = 0x10,
+    xdata_center: list[float] =  [-0.5, 0.5],
+    xdata_halfwid: float|list[float] = 0.5,
+    ydata: list[float] =  [-1., 1.],
+    colors: tuple[None, None] = ['#000000', '#ffffff'],    # 2 colors only
+    linewidth_unit: float = 132.,
+    **kwargs,
+) -> list[mpl.lines.Line2D]:
+    """Draw a band in ax, with color transitioning among list of colors.
+    
+    Parameters
+    ----------
+
+    no_t:
+        no of parallel lines (aka resolution)
+    xdata_halfwid:
+        half width of the line. if 0 or negative, will abort.
+    
+    """
+    # init
+    try:
+        len(xdata_halfwid)
+    except TypeError:
+        if xdata_halfwid > 0:
+            xdata_halfwid = [xdata_halfwid] * len(xdata_center)
+        else:
+            return []
+    colors = tuple([mpl.colors.to_rgba(c) for c in colors])
+
+    return draw_band(
+        ax, scale, no_t,
+        xdata_func = lambda t: [
+            xi + dxi*(2*t-1.)
+            for xi, dxi in zip(xdata_center, xdata_halfwid)],
+        ydata_func = lambda t: ydata,
+        color_func = lambda t: tuple([
+            colors[0][i]*(1-t) + colors[1][i]*t
+            for i in range(len(colors[0]))]),
+        linewidth_fac_func = lambda t: max(xdata_halfwid)*2,
+        linewidth_unit = linewidth_unit,
+        **kwargs,
+    )

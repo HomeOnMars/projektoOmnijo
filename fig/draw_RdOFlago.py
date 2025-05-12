@@ -20,9 +20,11 @@ from math import pi, sin, cos, acos, tan
 import matplotlib as mpl; mpl.use('svg')
 import matplotlib.pyplot as plt
 # imports (my libs)
-from lib_gen_emblemo import t, ts, draw_arc, colors_dict, PHI
+from lib_gen_emblemo import (
+    t, ts, draw_arc, draw_band_linear_x, colors_dict, PHI,
+)
 
-RATIO_XY : float = 25/16  #PHI
+RATIO_XY : float = 16/9  #PHI
 
 # main func
 def draw_RdOFlago(
@@ -30,14 +32,15 @@ def draw_RdOFlago(
     output_path_noext: str = "./RdOFlago",
     output_exts: list = ['.svg', '.png'],
     # size of the drawing pad
-    scale: float = 256/400,    # 1.0 => 400px x 400px
+    # scale_y: 1.0 => 400px x 400px; 256/400 => height is 256px
+    scale_y: float = 225/400,
     ratio_xy: float = RATIO_XY,
     verbose: bool = True,
 ):    # plot
     """
     ---------------------------------------------------------------------------
     """
-    fig, ax = plt.subplots(figsize=[4*scale*ratio_xy, 4*scale])
+    fig, ax = plt.subplots(figsize=[4*scale_y*ratio_xy, 4*scale_y])
     offset_x = 22/256
     xlims = [-ratio_xy+offset_x, ratio_xy+offset_x]
     ylims = [-1., 1.]
@@ -45,8 +48,9 @@ def draw_RdOFlago(
     if verbose: print("Drawing...")
 
     # --- background
-    dx = tan((t(5.5)-90)/180*pi)
-    dx0 = 27/4096
+    dx = tan((t(5.5)-90)/180*pi)  # slash position changes (half)
+    ddx = 68/256                  # color transition band width
+    dx0 = 27/4096 + ddx           # dx bias
     ax.add_patch(
         mpl.patches.Polygon([
             [xlims[0], ylims[1]],
@@ -54,7 +58,7 @@ def draw_RdOFlago(
             # [xlims[1], ylims[0]],
             [dx0+dx, ylims[0]],
             [dx0-dx, ylims[1]],
-            ], color=colors_dict['C'],
+            ], color=colors_dict['C'], zorder=0,
     ))
     ax.add_patch(
         mpl.patches.Polygon([
@@ -63,16 +67,49 @@ def draw_RdOFlago(
             # [xlims[0], ylims[1]],
             [dx0-dx, ylims[1]],
             [dx0+dx, ylims[0]],
-            ], color=colors_dict['G'],
+            ], color=colors_dict['G'], zorder=0,
     ))
+
+    # color transition
+    draw_band_linear_x(
+        ax, scale_y, no_t=0x80,
+        xdata_center  = [dx0-dx, dx0+dx],
+        xdata_halfwid = abs(ddx),
+        ydata = [ylims[1], ylims[0]],
+        colors=[colors_dict['C'], colors_dict['G']],
+        linewidth_unit=256,
+    )
+
+    # DEBUG
+    if False:
+        draw_band_linear_x(
+            ax, scale_y, no_t=1,
+            xdata_center  = [dx0-dx+ddx, dx0+dx+ddx],
+            xdata_halfwid = 0.01,
+            ydata = [ylims[1], ylims[0]],
+            colors=[colors_dict['O'], colors_dict['O']],
+            linewidth_unit=256,
+        )
+        draw_band_linear_x(
+            ax, scale_y, no_t=1,
+            xdata_center  = [dx0-dx-ddx, dx0+dx-ddx],
+            xdata_halfwid = 0.01,
+            ydata = [ylims[1], ylims[0]],
+            colors=[colors_dict['O'], colors_dict['O']],
+            linewidth_unit=256,
+        )
     
 
     # --- arcs
     # draw O
-    draw_arc(ax, scale, radius=11/16, thetas=ts( 5.5, 19.50), color=colors_dict['O'], linewidth_fac=16/16)
+    draw_arc(
+        ax, scale_y, radius=11/16, thetas=ts( 5.5, 19.50),
+        color=colors_dict['O'], linewidth_fac=16/16, zorder=0x1001)
     # draw R
     # 2.36 = 4 - acos(cos((4-3.5)/8*pi)*11/13.5)/pi*8
-    draw_arc(ax, scale, radius=14/16, thetas=ts( 2.5, -2.5), color=colors_dict['O'], linewidth_fac=16/16)
+    draw_arc(
+        ax, scale_y, radius=14/16, thetas=ts( 2.5, -2.5),
+        color=colors_dict['O'], linewidth_fac=16/16, zorder=0x1000)
 
 
     # format and save
@@ -93,7 +130,7 @@ def draw_RdOFlago_emb():
     return draw_RdOFlago(
         output_path_noext="./RdOFlago.emb",
         output_exts=['.png'],
-        scale=1080/400,
+        scale_y=1080/400,
         ratio_xy=1.0,
     )
 
