@@ -54,8 +54,8 @@ def draw_arc(
     center : tuple[float, float] = (0., 0.),
     angle  : float = 0.,
     color  : None = None,
-    linewidth_fac: float = PHI_INV, #11/16,
-    linewidth_unit: float = 18,    # 18 will leave no gap (== 1/8 in the ax coordinate system)
+    linewidth_fac: float = PHI_INV/8, #11/128,
+    linewidth_unit: float = 144.,    # 144 will leave no gap (== 1.0 in the ax coordinate system)
     **kwargs,
 ) -> list[mpl.patches.Arc]:
     """Draw an arc in ax."""
@@ -85,8 +85,8 @@ def draw_hat(
     angle  : float = 0.,      # the rotation of the whole system
     theta  : float = 120.,    # the 'openness' of the hat
     color  : None = None,
-    linewidth_fac: float = PHI_INV, #11/16,
-    linewidth_unit: float = 18,    # 18 will leave no gap (== 1/8 in the ax coordinate system)
+    linewidth_fac: float = PHI_INV/8, #11/128,
+    linewidth_unit: float = 144,    # 144 will leave no gap (== 1.0 in the ax coordinate system)
     **kwargs,
 ) -> list[mpl.lines.Line2D]:
     """Draw the hat symbol in ax."""
@@ -123,7 +123,7 @@ def draw_band(
     ydata_func: Callable[[float], list[float]] =  lambda t: [-1., 1.],
     color_func: Callable[[float], tuple[float, float, float, float]] =  lambda t: (t, t, t, 1.),    # RGBA
     linewidth_fac_func: Callable[[float], float] = lambda t: 1.,
-    linewidth_unit: float = 132.,
+    linewidth_unit: float = 144.,    #132.,
     **kwargs,
 ) -> list[mpl.lines.Line2D]:
     """Draw a band in ax, with color transitioning among list of colors.
@@ -170,8 +170,11 @@ def draw_band_linear_x(
     xdata_center: list[float] =  [-0.5, 0.5],
     xdata_halfwid: float|list[float] = 0.5,
     ydata: list[float] =  [-1., 1.],
-    colors: tuple[None, None] = ['#000000', '#ffffff'],    # 2 colors only
-    linewidth_unit: float = 132.,
+    colors: list[float] | dict[float, None] = {
+        0.0: '#000000',
+        1.0: '#ffffff',
+    },
+    linewidth_unit: float = 144.,    #132.,
     **kwargs,
 ) -> list[mpl.lines.Line2D]:
     """Draw a band in ax, with color transitioning among list of colors.
@@ -183,7 +186,8 @@ def draw_band_linear_x(
         no of parallel lines (aka resolution)
     xdata_halfwid:
         half width of the line. if 0 or negative, will abort.
-    
+    colors_comp: dict
+        in format of 't: color'
     """
     # init
     try:
@@ -193,7 +197,20 @@ def draw_band_linear_x(
             xdata_halfwid = [xdata_halfwid] * len(xdata_center)
         else:
             return []
-    colors = tuple([mpl.colors.to_rgba(c) for c in colors])
+        
+
+    # init colors
+    if isinstance(colors, dict):
+        colors_ts = list(colors.keys())
+        colors_ts.sort()
+    else:
+        # colors is list
+        colors_ts = np.linspace(0., 1., len(colors))
+        colors = {t: c for t, c in zip(colors_ts, colors)}
+    colors = tuple([mpl.colors.to_rgba(colors[t]) for t in colors_ts])
+    colors_vec = [x for x in zip(*colors)]
+    if colors_ts is None:
+        colors_ts = np.linspace(0., 1., len(colors))
 
     return draw_band(
         ax, scale, no_t,
@@ -202,8 +219,8 @@ def draw_band_linear_x(
             for xi, dxi in zip(xdata_center, xdata_halfwid)],
         ydata_func = lambda t: ydata,
         color_func = lambda t: tuple([
-            colors[0][i]*(1-t) + colors[1][i]*t
-            for i in range(len(colors[0]))]),
+            np.interp(t, colors_ts, colors_veci)
+            for colors_veci in colors_vec]),
         linewidth_fac_func = lambda t: max(xdata_halfwid)*2,
         linewidth_unit = linewidth_unit,
         **kwargs,

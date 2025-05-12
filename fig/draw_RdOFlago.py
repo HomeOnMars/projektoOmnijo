@@ -17,6 +17,7 @@ To view a copy of this license, visit <https://creativecommons.org/licenses/by-n
 # imports (built-in)
 from math import pi, sin, cos, acos, tan
 # imports (3rd party)
+import numpy as np
 import matplotlib as mpl; mpl.use('svg')
 import matplotlib.pyplot as plt
 # imports (my libs)
@@ -49,8 +50,9 @@ def draw_RdOFlago(
 
     # --- background
     dx = tan((t(5.5)-90)/180*pi)  # slash position changes (half)
-    ddx = 68/256                  # color transition band width
-    dx0 = 27/4096 + ddx           # dx bias
+    ddx = 68/256 * 1.5            # color transition band width
+    dx0 = 27/4096 # + ddx/8       # dx bias
+
     ax.add_patch(
         mpl.patches.Polygon([
             [xlims[0], ylims[1]],
@@ -70,17 +72,43 @@ def draw_RdOFlago(
             ], color=colors_dict['G'], zorder=0,
     ))
 
-    # color transition
+
+    # --- color transition
+    colors_comp : dict[float, dict[None, float]] = {
+        # t: (color_composite, alpha)
+        0.0: ({'C': 1}, 0.0),
+        2/8: ({'C': 4, 'x2': 3, 'x1': 1, 'G': 0}, 0.5),
+        4/8: ({'C': 1, 'x2': 3, 'x1': 3, 'G': 1}, 1.0),
+        6/8: ({'C': 0, 'x2': 1, 'x1': 3, 'G': 4}, 0.5),
+        1.0: ({'G': 1}, 0.0),
+    }
+
+    # compile colors_comp into colors
+    colors = {}
+    for ti, d in colors_comp.items():
+        c_d, alpha = d
+        c_ks = list(c_d.keys())
+        ws = np.asarray([c_d[c_k] for c_k in c_ks])
+
+        colors[ti] = (    # weighted average
+            np.sum(np.asarray([
+                mpl.colors.to_rgb(colors_dict[c_k])
+                for c_k in c_ks
+            ]) * ws[:, np.newaxis],
+            axis=0) / np.sum(ws)
+        ).tolist() + [alpha]
+
+    # draw
     draw_band_linear_x(
-        ax, scale_y, no_t=0x80,
+        ax, scale_y, no_t=0x100,
         xdata_center  = [dx0-dx, dx0+dx],
         xdata_halfwid = abs(ddx),
         ydata = [ylims[1], ylims[0]],
-        colors=[colors_dict['C'], colors_dict['G']],
+        colors=colors,
         linewidth_unit=256,
     )
 
-    # DEBUG
+    # Debug
     if False:
         draw_band_linear_x(
             ax, scale_y, no_t=1,
@@ -104,12 +132,12 @@ def draw_RdOFlago(
     # draw O
     draw_arc(
         ax, scale_y, radius=11/16, thetas=ts( 5.5, 19.50),
-        color=colors_dict['O'], linewidth_fac=16/16, zorder=0x1001)
+        color=colors_dict['O'], linewidth_fac=16/128, zorder=0x1001)
     # draw R
     # 2.36 = 4 - acos(cos((4-3.5)/8*pi)*11/13.5)/pi*8
     draw_arc(
         ax, scale_y, radius=14/16, thetas=ts( 2.5, -2.5),
-        color=colors_dict['O'], linewidth_fac=16/16, zorder=0x1000)
+        color=colors_dict['O'], linewidth_fac=16/128, zorder=0x1000)
 
 
     # format and save
@@ -134,6 +162,14 @@ def draw_RdOFlago_emb():
         ratio_xy=1.0,
     )
 
+def draw_RdOFlago_full():
+    return draw_RdOFlago(
+        output_path_noext="./RdOFlago.full",
+        output_exts=['.png'],
+        scale_y=2160/400,
+    )
+
 if __name__ == '__main__':
     draw_RdOFlago()
     draw_RdOFlago_emb()
+    draw_RdOFlago_full()

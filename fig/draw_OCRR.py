@@ -20,7 +20,7 @@ from math import pi, sin, cos, acos
 import matplotlib as mpl; mpl.use('svg')
 import matplotlib.pyplot as plt
 # imports (my libs)
-from lib_gen_emblemo import t, ts, draw_arc, draw_hat, colors_dict
+from lib_gen_emblemo import t, ts, draw_arc, colors_dict
 
 # main func
 def draw_OCRR(
@@ -38,14 +38,14 @@ def draw_OCRR(
     if verbose: print("Drawing...")
     # --- arcs
     # draw O
-    draw_arc(ax, scale, radius=11/16, thetas=ts( 5.50, 19.50), color=colors_dict['x0'], linewidth_fac=14/16)
+    draw_arc(ax, scale, radius=11/16, thetas=ts( 5.50, 19.50), color=colors_dict['x0'], linewidth_fac=14/128)
     # draw C
-    draw_arc(ax, scale, radius= 8/16, thetas=ts( 2.25, 14.25), color=colors_dict['Radio'], linewidth_fac=16/16)
+    draw_arc(ax, scale, radius= 8/16, thetas=ts( 2.25, 14.25), color=colors_dict['Radio'], linewidth_fac=16/128)
     # draw R
     # 2.24 = 4 - acos(cos((4-3.5)/8*pi)*11/14)/pi*8
-    draw_arc(ax, scale, radius=13.75/16, thetas=ts( 2.25, -2.25), color=colors_dict['x2'], linewidth_fac=15/16)
+    draw_arc(ax, scale, radius=13.75/16, thetas=ts( 2.25, -2.25), color=colors_dict['x2'], linewidth_fac=15/128)
     # 1.69 = 4 - acos(cos((4-3.5)/8*pi)*11/17.5)/pi*8
-    draw_arc(ax, scale, radius=16.75/16, thetas=ts( 1.8, -1.8), color=colors_dict['x1'], linewidth_fac=16/16)
+    draw_arc(ax, scale, radius=16.75/16, thetas=ts( 1.8, -1.8), color=colors_dict['x1'], linewidth_fac=16/128)
     
     # format and save
     ax.set_xlim(-1+3/16, 1+3/16)

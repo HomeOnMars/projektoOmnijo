@@ -18,7 +18,7 @@ from draw_OCG  import draw_OCG
 from draw_OCR  import draw_OCR
 from draw_OCRR import draw_OCRR
 from draw_RdO  import draw_RdO
-from draw_RdOFlago import draw_RdOFlago, draw_RdOFlago_emb
+from draw_RdOFlago import draw_RdOFlago, draw_RdOFlago_emb, draw_RdOFlago_full
 
 if __name__ == '__main__':
     draw_OCG()
@@ -27,3 +27,4 @@ if __name__ == '__main__':
     draw_OCRR()
     draw_RdOFlago()
     draw_RdOFlago_emb()
+    draw_RdOFlago_full()
