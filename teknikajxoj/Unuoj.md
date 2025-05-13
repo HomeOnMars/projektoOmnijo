@@ -57,9 +57,9 @@ Bazaj Unuoj
 
 $$
   \textrm{U}
-  \equiv 383269_D \times 2^{100_D} \  l_P
-  = 5Σ925_H 2^{64_H} \  l_P
-  \approx 7.8526_D \  \textrm{m}
+  \equiv 11977_D \times 2^{105_D} \  l_P
+  = 2ΥΠ9_H 2^{69_H} \  l_P
+  \approx 7.8525_D \  \textrm{m}
 $$
 
 The Utroj is calilbrated such that 1U is approximately 8 meters,
@@ -68,7 +68,8 @@ under the [time definition ŝ](#tempo).
 
 Notes:
 
-- $383269_D = 1149807_D / 3$.
+- $11977_D = 35931_D / 3$;  
+  (also $11977_D = 7 \times 29_D \times 59_D$.)
 - 1 cell width in-game (Cities Skylines 2) is set as 1U exactly.
   This is an assumption imposed by me for RdO-related cities only.
 - Using `U` instead of `u`, as the [convention](Lingvo.md#algebro) here is
@@ -79,7 +80,7 @@ Notes:
 $$
   \textrm{JU}
   \equiv 256_D \  \textrm{U}
-  \approx 2.0103_D \  \textrm{km}
+  \approx 2.0102_D \  \textrm{km}
 $$
 
 *GilUtro* (`GU`):
@@ -95,14 +96,14 @@ $$
 $$
   \textrm{MU}
   \equiv 16_D^4 \  \textrm{U}
-  \approx 514.63_D \  \textrm{km}
+  \approx 514.62_D \  \textrm{km}
 $$
 
 Consequentially, one Earth radius is approximately
 
 $$
   R_{\oplus}
-  \approx Π.64Π4_H \  \textrm{MU}
+  \approx Π.64ΠΨ_H \  \textrm{MU}
   \approx 6378.1_D \  \textrm{km}
 $$
 
@@ -110,23 +111,23 @@ One astronomical unit is approximately
 
 $$
   \textrm{au}
-  \approx 4 6Ψ83 8018.9_H \  \textrm{U}
-  \approx 4.6Ψ84_H \  \textrm{UU}
+  \approx 4.6Ψ87_H \  \textrm{UU}
+  \approx 1.4960_D \times 10_D^{8} \  \textrm{km}
 $$
 
 One light-year is approximately
 
 $$
   \textrm{lyr}
-  \approx 4.47Π0_H \times 10_H^Π \  \textrm{U}
-  \approx 4.47Π0_H \  \textrm{TU}
+  \approx 4.47Π3_H \  \textrm{TU}
+  \approx 9.4607_D \times 10_D^{12_D} \  \textrm{km}
 $$
 
 Nanosvarmo scale *dunioneUtro*  (`uU`):
 
 $$
   \textrm{uU}
-  \equiv 16_D^{-8} \  \textrm{U}
+  \equiv 10_H^{-8} \  \textrm{U}
   \approx 1.8283_D \  \textrm{nm}
 $$
 
@@ -139,8 +140,8 @@ Track gauge in *RdO* for trains, metros, and trams are the same:
 $$
   d_\mathrm{gauge}
   \equiv \frac{3}{16_D} \  \textrm{U}
-  = 1149807_D \times  2^{96_D} \  l_P
-  \approx 1.4724_D \  m
+  = 35931_D \times  2^{101_D} \  l_P
+  \approx 1.4723_D \  m
 $$
 
 Yes this is incompatible with the standard gauge (Dx 1.4351 m)
@@ -185,21 +186,34 @@ which happens to be about 1 FEU container equivalent of goods.
 
 $$
   1 \  ŝ
-  \equiv 1149807_D \times 2^{124_D} \  t_P
-  \approx 1.3184_D \  s
+  \equiv 35931_D \times 2^{129_D} \  t_P
+  = 8Π5λ_H 2^{81_H} \  t_P
+  \approx 1.3183_D \  s
 $$
-<!-- 1 \  ŝ = 1.518_H \  s -->
+<!-- 1 \  ŝ \approx 1.518_H \  s -->
 
-The ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$
-(with an approximate difference of only Dx 0.043 SI seconds per day).
+The ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$,
+with an approximate difference of only Dx 1.17 SI seconds per day.  
+(Note that this difference is much larger than the old def
+of $1149807 \times 2^{124_D}$,
+which has only Dx 0.043 SI seconds difference per day.
+I changed it from 1149807 to 35931 because
+the arbitrary factor is smaller (within one Muni!);
+and that the 1s difference is still small enough for day-to-day usage
+(high precision usage like for astronomical purposes
+will have to use alternative timing system anyway);
+and that RdO will expand beyond Earth one day, so the simplicity of def
+should take priority over aligning percisely to Earth's rotation cycle,
+which is also slowing down over millennia.)
+
 
 - `ŝ`: ***Ŝekuntoj*** | Omnija Seconds
   - Side note: munioneŜekuntoj `mŝ`
     is $1 \  \textrm{mŝ} = 0.0001_H ŝ \approx 0.02_D \  \textrm{ms}$
 - `ĉ`: ***Ĉimutoj***  | Omnija Minutes
-  - 1 Ĉimuto is  $1440_D/1024_D = 1.40625_D$ SI Minutes.
+  - 1 Ĉimuto is about $1440_D/1024_D = 1.40625_D$ SI Minutes.
 - `ĝ`: ***Ĝoroj***    | Omnija Hours
-  - 1 Ĝoro is    $24_D/16_D = 1.5_D$ SI Hours.
+  - 1 Ĝoro is about $24_D/16_D = 1.5_D$ SI Hours.
 - `⚻` or `Mŝ`: ***Tagoj*** / *Muniŝekuntoj* | Omnija Days
   - Conversion rate:
     $$1⚻ = 1\textrm{Mŝ} = 16_D ĝ = 1024_D ĉ = 65536_D ŝ$$
@@ -210,11 +224,13 @@ The ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$
   - 1 Ŝekunto is therefore
     approximately $86400_D/65536_D = 1.318359375_D$ SI Seconds.
   - ($D$ for decimal, $H$ for Hexadecimal)
-  - Omnijo labour law enforces 6-hour (4-Ĝora) workday
-    (24 hours / Hx10ĝ work per week, as each week have 4 workdays).  
-    Each day is divided into 4 shifts:  
-    1ĝ (01:30) -> 5ĝ (07:30) -> 9ĝ (13:30) -> Σĝ (19:30)
-    -> 1ĝ (01:30) next day.
+  - Omnijo labour law enforces 7.5-hour (5-Ĝora) workday
+    (30 hours / Hx14ĝ work per week, as each week have 4 workdays).  
+    Each day is divided into 3 shifts:  
+    0ĝ (00:00) -> 6ĝ (09:00) -> λĝ (16:30) -> Hx10ĝ (00:00)
+    (midnight next day).  
+    Companies have the freedom to shift the beginning of the workday
+    to be up to 1ĝ earlier.
 - `⚝`: ***Semajnoj*** | Omnija Weeks
 - `☾`: ***Monatoj***  | Omnija Months
 - `Ĵ`: ***Ĵaroj***    | Omnija Unit Years
@@ -385,7 +401,7 @@ $$
   ⚡
   \equiv 10000_H \textrm{Lu}
   = 10000_H \textrm{U}^2 \textrm{P} / \textrm{ŝ}^3
-  \approx 0.64398_D \  \textrm{MW}
+  \approx 0.64399_D \  \textrm{MW}
 $$
 
 while the power unit ***Lumro*** is defined as
@@ -393,29 +409,32 @@ while the power unit ***Lumro*** is defined as
 $$
   \textrm{Lu}
   \equiv \textrm{U}^2 \textrm{P} / \textrm{ŝ}^3
-  \approx 9.8263_D \  \textrm{W}
+  \approx 9.8264_D \  \textrm{W}
 $$
 
 OC's target power poduction is
-about Hx8000⚡(Dx21GW) to Hx10000⚡(Dx42GW).
+about Hx8000⚡(Dx21.1GW) to Hx10000⚡(Dx42.2GW).
 
 The output of the sun is
 
 $$
   L_\odot
-  \approx 20.396_H \textrm{ILu}
-  \approx 2.0396_H \times 10_H^{11_H} ⚡
-  \approx 20 3961 1201 8174 0000_H ⚡
+  \approx 3.828_D \times 10_D^{17_D} \textrm{GW}
+  \approx 20.394_H \textrm{VLu}
+  \approx 2.0394_H \times 10_H^{11_H} ⚡
+  \approx 20 \  3945 \  851Π \  039Π \  0000_H ⚡
 $$
 
-The solar energy received by Earth is approximately
+The solar energy received by Earth
+(including those reflected into space before reaching ground)
+is approximately
 
 $$
   \frac{\pi R_{\oplus}^2}{4 \pi (\textrm{au})^2} L_\odot
   \approx 1.74_D \times 10_D^8 \textrm{GW}
-  \approx 3Υ.Υ_H \textrm{TLu}
-  \approx 3.ΥΥ_H \times 10_H^9 ⚡
-  \approx 3Υ Υ000 0000_H ⚡
+  \approx 3Υ.5_H \textrm{TLu}
+  \approx 3.Υ5_H \times 10_H^9 ⚡
+  \approx 3Υ \  Υ4Πλ \  466λ_H ⚡
 $$
 
 <!-- \approx 3Υ Υ501 0Π25_H ⚡ -->
@@ -444,7 +463,7 @@ Boltzmann constant is exactly
 
 $$
   k_B
-  = c^2 m_P / T_P
+  = c^2 \  m_P / T_P
   = 1.5ΨΨ3 \times 10_H^{{-14}_H} \  \textrm{U}^2\textrm{P}/(\textrm{ŝ}^2\textrm{Z})
 $$
 
@@ -454,23 +473,23 @@ Reduced Planck constant is
 
 $$
   \hbar
-  = c l_P m_P
-  = \frac{3}{5Σ925_H} \times 10_H^{{-19}_H} \  \textrm{U}^2\textrm{P}/\textrm{ŝ}
-  \approx 6.1747_D \times 10_D^{{-36}_D} \  \textrm{U}^2\textrm{P}/\textrm{ŝ}
+  = c \  l_P \  m_P
+  = \frac{3}{5Σ92_H} \times 10_H^{{-1Δ}_H} \  \textrm{U}^2\textrm{P}/\textrm{ŝ}
+  \approx 6.1748_D \times 10_D^{{-36}_D} \  \textrm{U}^2\textrm{P}/\textrm{ŝ}
 $$
 
-(Unfortunately the seemingly arbitrary number Hx5Σ925 = Dx383269 here
-comes from the length of a day,
-which originates from the rotation of the Earth-
+(Unfortunately the seemingly arbitrary number
+here Hx5Σ92 = Dx23954 = 2 \* Dx11977
+comes from the length of a day from the rotation of the Earth-
 it cannot be removed easily without other trade-offs.)
 
 Gravitational constant is
 
 $$
   G
-  = c^2 l_P / m_P
-  = \frac{9}{5Σ925_H} \times 10_H^{{-7}} \  \textrm{U}^3/\textrm{P}\textrm{ŝ}^2
-  \approx 8.7478_D \times 10_D^{{-14}_D} \  \textrm{U}^3/\textrm{P}\textrm{ŝ}^2
+  = c^2 \  l_P / m_P
+  = \frac{9}{5Σ92_H} \times 10_H^{{-8}} \  \textrm{U}^3/\textrm{P}\textrm{ŝ}^2
+  \approx 8.7479_D \times 10_D^{{-14}_D} \  \textrm{U}^3/\textrm{P}\textrm{ŝ}^2
 $$
 
 Earth surface gravity is approximately

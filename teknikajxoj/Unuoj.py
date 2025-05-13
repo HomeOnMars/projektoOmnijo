@@ -175,6 +175,26 @@ def presi_Hx(
 
 
 
+def factorize(n: int) -> list[int]:
+    """Simple helper func to brute-force factorize int."""
+    ans = [1]
+    leftover = abs(n)
+    for i in range(2, leftover+1):
+        if leftover % i == 0:
+            for j in ans[1:]:    # ignore 1
+                if i % j == 0: break
+            else:
+                ans.append(i)
+                leftover = leftover//i
+        if i > leftover: break
+    return ans
+
+# helper funcs to calc curve degrees from curve radius and back
+theta_deg = lambda R, d: np.ceil(2*np.atan(R/d)/np.pi*180)
+get_R = lambda theta_deg, d: np.tan(theta_deg/2/180*np.pi)*d
+
+
+
 # === Unit System ===
 
 
@@ -259,14 +279,14 @@ u_rdo_base : dict[str, units.UnitBase] = u_nat_base.copy()
 u_rdo_defs : dict[str, units.UnitBase] = {}
 #    defs
 u_rdo_base['dist'] = units.def_unit(
-    # note: 1149807 / 3.0 = 383269
-    ['U', 'Utro'], 383269 * 2**100 * u_nat_base['dist'],
+    # note: 35931 / 3.0 = 11977
+    ['U', 'Utro'], 11977 * 2**105 * u_nat_base['dist'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 u_rdo_base['mass'] = units.def_unit(
     ['P', 'Pakmo'], 2**24 * u_nat_base['mass'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 u_rdo_base['time'] = units.def_unit(
-    ['ŝ', 'ŝekunto'], 1149807 * 2**124 * u_nat_base['time'],    #71863 * 2**128
+    ['ŝ', 'ŝekunto'], 35931 * 2**129 * u_nat_base['time'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 u_rdo_base['temp'] = units.def_unit(
     ['Z', 'Zoro'], 10011 * 2**(-120) * u_nat_base['temp'],
@@ -394,7 +414,7 @@ u = Unuoj(u_rdo_base, u_rdo_defs | u_nat_defs | u_si_defs)
 
 # track gauges
 track_standard_gauge = (4*units.imperial.foot + 8.5 * units.imperial.inch).si
-track_rdo_gauge = np.e/16 * u_nat_base['dist'] # i.e., np.pi*np.e/6 * u_rdo['dist']
+track_rdo_gauge = 3/16 * u_nat_base['dist'] # i.e., np.pi*np.e/6 * u_rdo['dist']
 
 
 
@@ -408,7 +428,7 @@ if __name__ == '__main__':
         f"{k:4} unit: {(1*u_rdo_base[k]).si:8.6f} \t [naturalUnit: {(1*v).si:.4e}]"
         for k, v in u_nat_base.items()]))
     print()
-    print(f"dist: {track_standard_gauge = } is {track_standard_gauge.to(u_rdo_base['dist']):6.4f}")
+    print(f"dist: {track_standard_gauge = } is {track_standard_gauge.to(u_rdo_base['dist']):7.5f}")
     print(f"temp: {temp_refs_C} is {temp_refs_K}, which is {temp_refs_K.to(u_rdo_base['temp'])} ")
 
     # sidereal year <https://en.wikipedia.org/wiki/Sidereal_year> (2025-02-28)
@@ -419,8 +439,8 @@ if __name__ == '__main__':
     print(f"Added seconds per day: {(1*u_rdo.Msx - 1*units.day).to(units.s):.3f}")
     print(f"Added minutes per year: {(1*u_rdo.Jx - 1*units.year).to(units.min):.3f}")
 
-    print("\nAbout currency:", end='')
     print(
+        "\nAbout currency:",
         "Energy price in CSL2 game is",
         f"{2500*u.Sejro / (u.MW*units.h*((units.yr/12)/units.day)).to(u.kW*units.h)}")
 
