@@ -50,8 +50,8 @@ def draw_RdOFlago(
 
     # --- background
     dx = tan((t(5.5)-90)/180*pi)  # slash position changes (half)
-    ddx = 68/256 * 1.5            # color transition band width
-    dx0 = 27/4096 # + ddx/8       # dx bias
+    ddx = 68/256 * 2.0            # color transition band width
+    dx0 = 8/4096 # + ddx/8       # dx bias
 
     ax.add_patch(
         mpl.patches.Polygon([
@@ -75,11 +75,10 @@ def draw_RdOFlago(
 
     # --- color transition
     colors_comp : dict[float, dict[None, float]] = {
-        # t: (color_composite, alpha)
+        # t: ({color: weight}, alpha)
         0.0: ({'C': 1}, 0.0),
-        2/8: ({'C': 4, 'x2': 3, 'x1': 1, 'G': 0}, 0.5),
-        4/8: ({'C': 1, 'x2': 3, 'x1': 3, 'G': 1}, 1.0),
-        6/8: ({'C': 0, 'x2': 1, 'x1': 3, 'G': 4}, 0.5),
+        0.5-1/0x1000: ({'C': 0, 'x2': 1, 'x1': 0, 'G': 0}, 1.0),
+        0.5+1/0x1000: ({'C': 0, 'x2': 0, 'x1': 1, 'G': 0}, 1.0),
         1.0: ({'G': 1}, 0.0),
     }
 
@@ -158,7 +157,7 @@ def draw_RdOFlago_emb():
     return draw_RdOFlago(
         output_path_noext="./RdOFlago.emb",
         output_exts=['.png'],
-        scale_y=1080/400,
+        scale_y=2160/400,
         ratio_xy=1.0,
     )
 
