@@ -42,6 +42,17 @@ i.e. $\sim 2^{17} \mathrm{km}^2 \approx 130 000 \mathrm{km}^2$.
 
 > The foundation of *la Regno de Omnijo*
 
+<br>
+<blockquote>
+  "This was not a coincidence, because nothing is ever a coincidence."<br>
+  <span style="color:grey">
+  --- UNSONG
+  <cite><a href="https://unsongbook.com/chapter-1-dark-satanic-mills/">Chapter 1</a></cite>
+  by Scott Alexander
+  </span>
+</blockquote>
+<br>
+
 Although it has always been a monarchy since time immemorial
 even before the Colonial era,
 it used to have a different name **just about half a year ago**.
