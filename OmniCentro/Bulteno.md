@@ -187,7 +187,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 
 | Org  | Koloro | Nomo |
 | ---- | ------ | ---- |
-| RdO  | #F5F5DC | <span style="color:Beige">█ La Reĝino **Serena** de Omnijo</span>  <!-- OCG -->  |
+| RdO  | #F5F5DC | <span style="color:Beige">█ La Reĝino **Serena Novarika** de Omnijo</span>  <!-- OCG -->  |
 | RdO  | #32CD32 | <span style="color:LimeGreen">█ La Ĉefministro **Eriko** de Omnijo</span>  <!-- OCG -->  |
 | OCFD | #C0C0C0 | <span style="color:Silver">█ La Generalo **Laŭra** de Omnijo</span>  <!-- OCG -->  |
 | OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ La Kunordigestro **Dajanna** de Omnijo</span>  <!-- OCG -->  |
