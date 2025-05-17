@@ -208,6 +208,7 @@ u_si_defs : dict[str, units.UnitBase] = {
         's', 'h', 'd', 'yr',
         'K', 'deg_C',
         'C',
+        'deg', 'arcmin', 'arcsec',
         'W', 'kW', 'MW', 'GW',  'TW', 'Lsun',
     ]
 }
@@ -293,6 +294,9 @@ u_rdo_base['temp'] = units.def_unit(
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 u_rdo_base['char'] = units.def_unit(
     ['E', 'Elektrio'], 0x10**0x10/3 * const.e.si,
+    prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
+u_rdo_base['angl'] = units.def_unit(
+    ['Ck', 'Cirklo'], 2 * pi * units.rad,
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 # mask units with the same names as SI
 _UNITS_MASK_SET = {
@@ -414,7 +418,7 @@ u = Unuoj(u_rdo_base, u_rdo_defs | u_nat_defs | u_si_defs)
 
 # track gauges
 track_standard_gauge = (4*units.imperial.foot + 8.5 * units.imperial.inch).si
-track_rdo_gauge = 3/16 * u_nat_base['dist'] # i.e., np.pi*np.e/6 * u_rdo['dist']
+track_rdo_gauge = 3/16 * u_rdo_base['dist'] # i.e., np.pi*np.e/6 * u_rdo['dist']
 
 
 
@@ -428,7 +432,8 @@ if __name__ == '__main__':
         f"{k:4} unit: {(1*u_rdo_base[k]).si:8.6f} \t [naturalUnit: {(1*v).si:.4e}]"
         for k, v in u_nat_base.items()]))
     print()
-    print(f"dist: {track_standard_gauge = } is {track_standard_gauge.to(u_rdo_base['dist']):7.5f}")
+    print(f"dist: {track_standard_gauge = :7.4f} is {track_standard_gauge.to(u_rdo_base['dist']):7.5f}")
+    print(f"dist: {track_rdo_gauge.si   = :7.4f} is {track_rdo_gauge.to(u_rdo_base['dist']):7.5f}")
     print(f"temp: {temp_refs_C} is {temp_refs_K}, which is {temp_refs_K.to(u_rdo_base['temp'])} ")
 
     # sidereal year <https://en.wikipedia.org/wiki/Sidereal_year> (2025-02-28)

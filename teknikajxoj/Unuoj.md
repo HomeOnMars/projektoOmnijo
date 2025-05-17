@@ -58,7 +58,7 @@ Bazaj Unuoj
 $$
   \textrm{U}
   \equiv 11977_D \times 2^{105_D} \  l_P
-  = 2ΥΠ9_H 2^{69_H} \  l_P
+  = 2ΥΠ9_H \times 2^{69_H} \  l_P
   \approx 7.8525_D \  \textrm{m}
 $$
 
@@ -187,7 +187,7 @@ which happens to be about 1 FEU container equivalent of goods.
 $$
   1 \  ŝ
   \equiv 35931_D \times 2^{129_D} \  t_P
-  = 8Π5λ_H 2^{81_H} \  t_P
+  = 8Π5λ_H \times 2^{81_H} \  t_P
   \approx 1.3183_D \  s
 $$
 <!-- 1 \  ŝ \approx 1.518_H \  s -->
@@ -205,7 +205,6 @@ will have to use alternative timing system anyway);
 and that RdO will expand beyond Earth one day, so the simplicity of def
 should take priority over aligning percisely to Earth's rotation cycle,
 which is also slowing down over millennia.)
-
 
 - `ŝ`: ***Ŝekuntoj*** | Omnija Seconds
   - Side note: munioneŜekuntoj `mŝ`
@@ -327,6 +326,53 @@ $$
 
 Multiplied by 1/3 because quarks have -1/3 e or 2/3 e charges.
 Elektrio is short for Elektronkvarnitriono.
+
+### Angulo
+
+> Angle
+
+> [!IMPORTANT]
+> Base angle unit: ***Cirklo*** `Ck` (Circle)
+
+$$
+  \textrm{Ck}
+  \equiv 2 \pi \  \textrm{rad}
+  = 360_D \degree
+$$
+
+Ck is just a full circle.
+
+*hekoneCirklo* (`hCk`):
+
+$$
+  \textrm{hCk}
+  \equiv \frac{1}{10_H} \  \textrm{Ck}
+  = 22.5_D \degree
+$$
+
+*jentoneCirklo* (`jCk`):
+
+$$
+  \textrm{jCk}
+  \equiv \frac{1}{100_H} \  \textrm{Ck}
+  = 1.40625_D \degree
+$$
+
+*giloneCirklo* (`gCk`):
+
+$$
+  \textrm{gCk}
+  \equiv \frac{1}{1000_H} \  \textrm{Ck}
+  \approx 5.2734_D \  \textrm{arcmin}
+$$
+
+*munioneCirklo*  (`mCk`):
+
+$$
+  \textrm{mCk}
+  \equiv \frac{1}{10000_H} \  \textrm{Ck}
+  \approx 19.775_D \  \textrm{arcsec}
+$$
 
 Derivitaj Unuoj
 -------------------------------------------------------------------------------
