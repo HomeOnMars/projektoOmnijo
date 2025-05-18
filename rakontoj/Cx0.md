@@ -25,11 +25,8 @@ Legal
 
 -------------------------------------------------------------------------------
 
-<blockquote>
+<!-- <blockquote>
   "Dark's nothing to be afraid of; ...
-  <!-- In fact, I'd go as far as saying there's nothing to be afraid of,
-  anywhere.<br>
-  The strongest person is the person who isn't scared to be alone;<br> -->
   It's other people you got to worry about.<br>
   Other people.
   They'll tell you what to do and how to feel,<br>
@@ -40,43 +37,42 @@ Legal
   --- The Queen's Gambit (2020) E05 0:00
   </span>
 </blockquote>
+<br> -->
+
+<blockquote>
+  "Do not go gentle into that good night;<br>
+  Rage, rage against the dying of the light."<br>
+  <span style="color:grey">
+  --- Dylan Thomas
+  </span>
+</blockquote>
 <br>
 
 ...
 
 "Well, it doesn't matter anyway.
-Even though she is fortunate enough to be born in a rich and stable country
-with decent parents, who gave her sufficient care and capital to
-jump start her life, letting her create all those beautiful art
-that you seem to admire so much, one day she will die.
-Either die young, or grow old and slowly wither away.
-Tragedy either way.
-After which her art and beauty will soon fade,
-and people, including you yourself, will forget about her and move on,
-as if nothing happened.
-And even so, she would be one of the lucky ones who didn't starve
-or stuck with poverty for most part of her life, unlike many others.
-All those wasted potentials for those people-
-you haven't even thought of them, have you?"
-said the figure at the door as he left,
-with a certain tone of bemusement that reeks cruelty through indifference.
-"It's okay. It's not like them matter anyway.
-None of us matters.
+One day she will die.
+So will you, and everyone you ever cared about,
+and everyone they ever cared about.
+Then, her art and beauty will fade,
+just like how everything you ever was will be gone.
+Even humanity and the universe will come to an end."
+said the voice,
+with a tone of bemusement that reeks cruelty through indifference.  
+"It's okay.
+The sooner you accept this, the easier your life will be: None of us matters.
 You die, I die, everyone dies.
 ***All beauty fades. Everything ends. Nothing lasts forever.***"
 
-<!-- <span style="color:#95D0FC">The Architect</span> --> 
-The other person in the room went silent.
-He has always been the quiet type,
-and it has been hard for people around him to tell
-what exactly he was thinking,
-even when they cared enough to want to know;
-but there were still clues here and there, if you knew where to look.
-His right hand clenched into a fist,
-Hi lips pursed firmly,
-his eyes became fixated with determination;
-a resolution was made, here and then:
+The other one remained silent.
+But one would be mistaken that he wasn't shaken by this;
+he had always been the quiet type, but there were still clues here and there, if you knew where to look.
+His right hand clenched a little into a fist,
+His lips pursed firmly,
+his eyes became fixated with determination.
+*No, I do NOT accept this.*
 
+A resolution was made, here and then:  
 ***One day, <span style="color:#95D0FC">he</span> shall destroy this evil.***
 
 <!-- <blockquote>
