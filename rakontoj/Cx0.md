@@ -53,9 +53,9 @@ Legal
 "Well, it doesn't matter anyway.
 One day she will die.
 So will you, and everyone you ever cared about,
-and everyone they ever cared about.
+and everyone they ever cared about, and so on and so forth.
 Then, her art and beauty will fade,
-just like how everything you ever was will be gone.
+just like how everything you ever is will be gone.
 Even humanity and the universe will come to an end."
 said the voice,
 with a tone of bemusement that reeks cruelty through indifference.  
