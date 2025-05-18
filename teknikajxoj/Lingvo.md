@@ -95,11 +95,19 @@ Changes of Esperanto++ from Esperanto include:
   - ~~`hekniona muniono` for 1p-44;~~
     - Warning: **Deprecated** for the same reason as above.
       use `p`-notation instead for extremely large or small numbers.
-  - etc. etc.  
+  - etc. etc.
+  - Add `nul` if the number ends with zero:  
+    E.g. Use `jent hek nul Utroj` instead of ~~`jent hek Utroj`~~
+    to say Hx110U.  
+    This is to distinguish it from `jent nul HekUtroj`
+    (instead of ~~`jent HekUtroj`~~, to say Hx100HU = Hx1000U).
+  - if 'jent hek Utroj' were said,
+    it were to be interpreted as `jent HekUtroj`.
+    However, this way of saying is **not recommended**.
   - As a reference,
     Dx 9 100 000 000 = Hx 2 1Υ66 Ψλ00,
     pronounced as
-    'du dunio, gil ganjent seshek ses munio, fusgil lomjent'.
+    'du dunio, gil ganjent seshek ses munio, fusgil lomjent nul'.
   - Both *unu munio da Utro* and *muni Utroj*
     are acceptable ways of saying Dx 65 536 U.
   - Also you can just say *MuniUtro* directly, as 1 MU = Dx65536 U.
