@@ -189,8 +189,8 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 | ---- | ------ | ---- |
 | RdO  | #F5F5DC | <span style="color:Beige">█ La Reĝino **Serena Novarika** de Omnijo</span>  <!-- OCG -->  |
 | RdO  | #32CD32 | <span style="color:LimeGreen">█ La Ĉefministro **Eriko** de Omnijo</span>  <!-- OCG -->  |
-| OCFD | #C0C0C0 | <span style="color:Silver">█ La Generalo **Laŭra** de Omnijo</span>  <!-- OCG -->  |
-| OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ La Kunordigestro **Dajanna** de Omnijo</span>  <!-- OCG -->  |
+| OCFD | #C0C0C0 | <span style="color:Silver">█ La Generalo **Laŭra Dovoluĉo** de Omnijo</span>  <!-- OCG -->  |
+| OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ La Kunordigestro **Dajanna Magdioza** de Omnijo</span>  <!-- OCG -->  |
 | OCFI | #95D0FC | <span style="color:#95D0FC">█ La Arkitekto de OCFI</span> |
 | OCFI | #D6B4FC | <span style="color:#D6B4FC">█ La Suvereno **Ĝejda Fenulo** de Omnijo</span>  <!-- OCG -->  |
 | OCFI | #9370DB | <span style="color:MediumPurple">█ ... (Department Color) ...</span> |
@@ -200,7 +200,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 | OCMF | #8FBC8F | <span style="color:DarkSeaGreen">█ La Trezorestro **Alekso** de Omnijo</span>  <!-- OCG -->  |
 | OCMI | #D2B48C | <span style="color:Tan">█ La Ministro **Venesa** de Omnijo</span>  <!-- OCG -->  |
 ||| <!-- Semi-local --> |
-|  OC  | # | <span style="color:?">█ La Urbestro ????</span> |
+|  OC  | #FFFFFF | <span style="color:White">█ La Urbestro **Ulio** de OmniCentro</span> |
 | OCFF | #FF0000 | <span style="color:Red">█ La Direktoro **Petrovo** de Omnijo </span> |
 | OCFP | #4169E1 | <span style="color:RoyalBlue">█ La Policestro **Tejlero** de Omnijo</span> |
 | OCFS | #FFC0CB | <span style="color:Pink">█ La Fakestro **Fiona** de Omnijo</span> |
