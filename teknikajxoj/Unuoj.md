@@ -374,6 +374,21 @@ $$
   \approx 19.775_D \  \textrm{arcsec}
 $$
 
+*dunioneCirklo*  (`uCk`):
+(mas means milliarcsecond)
+
+$$
+  \textrm{uCk}
+  \equiv \frac{1}{10000_H^2} \  \textrm{Ck}
+  \approx 0.30175_D \  \textrm{mas}
+$$
+
+Note: The angular diameter of the closest star, Proxima Centauri,
+is Dx1.02 ± 0.08 mas, or approximately Hx3.61 uCk.
+(Reference see this ESO article
+"[How Small are Small Stars Really?](https://www.eso.org/public/news/eso0232/)"
+(2025-05-21))
+
 Derivitaj Unuoj
 -------------------------------------------------------------------------------
 

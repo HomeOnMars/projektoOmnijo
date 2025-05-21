@@ -147,7 +147,7 @@ Examples:
 |  Ej-AR  | Ej-**A**lt**R**apido | [High-speed railway](../teknikajxoj/Retoj.md#altrapidaj-fervojoj) |
 |  Ej-SL  | Ej-**S**upraj**L**inioj | Regular railway (powered by overhead lines) |
 |  Ej-TR  | Ej-**T**ria**R**elo  | Subway railway (powered by third rail) |
-|  Ej-T   | Ej-**T**ramo         | [Tramway](../teknikajxoj/Retoj.md#tramoj)          |
+|    Tj   | Ej-**T**ramo         | [Tramway](../teknikajxoj/Retoj.md#tramoj)          |
 |    Ŭj   | a**Ŭ**tovo**j**o     | [Motorway](../teknikajxoj/Retoj.md#aŭtovojoj) |
 |    St   | **S**tra**t**o       | [Street](../teknikajxoj/Retoj.md#stratoj) |
 |  St-Dt  | St-**D**is**t**ribuo | Distributor Roads |

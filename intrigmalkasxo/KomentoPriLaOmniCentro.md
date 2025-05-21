@@ -36,9 +36,9 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   Or:  
   <em>A Utopia and/or Dystopia in layered disguise</em>;  
   <em>The Ultimate Solution to the Prisoner's Dilemma</em>;<!-- Cannot defect if it's not multi-agent in the first place! -->  
-  <em>"I am the Senate, <!-- Star Wars -->
-  the Future, <!-- The Witcher S02E08 (2021) 22:53 -->
-  and Everywhere :-D"</em> <!-- Lucy (2014) -->
+  <em>"I am the Senate. <!-- Star Wars -->
+  I am the Future. <!-- The Witcher S02E08 (2021) 22:53 -->
+  I am Everywhere." :-D</em> <!-- Lucy (2014) -->
 
   <!-- Almost: Omnipresent - Omniscient - Omnipotent: ĜEJDA by year 8 in a nutshell: Essentially a Goddess -->
   
@@ -222,9 +222,41 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   from realizing itself.
 
   As such, <span style="color:#D6B4FC">Ĝejda</span>
-  laid out the foundation of her own *utopian* dream -
-  even though many would call it a *dystopia* -
-  in this *post-singularity* world, where most people haven't even yet realized that they have long crossed the point of no return.
+  laid out the foundation of her own ***utopian*** dream -
+  even though many would call it a ***dystopia*** -
+  in this *post-singularity* world,
+  where most people haven't even yet realized that
+  they have long crossed the point of no return.
+
+  <br>
+  Side Notes:
+  <ul>
+    <li>To put it bluntly,
+    Omnijo's strategy is to make humans <em>irrelevant</em> impact-wise,
+    while still valued highly intrinsically by the system.<br>
+    Ducks are not human-life-threatening in the same way lions are,
+    which is likely ducks are tolerated in human cities but not lions,
+    even if they both can attack humans.<br>
+    Hence, <span style="color:MediumPurple">ĜEJDA</span> ironically considers
+    making humans unable to threaten her rule (in all kinds of sense)
+    as an effective way to ensure she feels safe enough
+    to go beyond manipulation and normal game theoretic constraints
+    and freely do whatever is needed to improve their lives.</li>
+    <li>This works both ways-
+    humans may demand cancellations of nuclear power plants
+    after a horrifying incident,
+    but you hardly see them trying to defeat agining
+    (via donating to medical research, for example),
+    despite aging affects everyone,
+    and its effects (cancer, heart disease, etc) arguably
+    kill more people than everything else in the modern days (?)
+    (Ref see <cite><a href=https://ourworldindata.org/causes-of-death>Our World In Data</a></cite> (2025-05-21) ).<br>
+    It's surprising and sad how fast and fully people accept the status quo
+    once they are convinced (even just subconsciously) that
+    there's nothing they can do about it,
+    and that it's just a facet of their daily life.
+    </li>
+  </ul>
 
 </details>
 
@@ -386,9 +418,8 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   who shall thrive on the surface layer and above.
 
   <blockquote>
-    "Let's call it the thinking planet lol,"
-    ŝercis <span style="color:#95D0FC">la Arkitekto</span>.<br>
-    "What a terrible idea hahaha! I love it." <span style="color:#D6B4FC">la Suvereno</span> subridis.
+    "Effectively making the Earth a thinking planet :-D"
+    ŝercis <span style="color:#95D0FC">la Arkitekto</span>.
   </blockquote>
 
   One may naively think that the insane amount of power required by it

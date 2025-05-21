@@ -234,9 +234,9 @@ Arterial / Collector / Local Roads:
 
   |             | max Gradient $s$ | min Curve radius $R$ (without slowing)  | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | Real world examples |
   | ----------- | :--------------: | :--------------: | :--------------------------: | :--------: | ------------------- |
-  | Recommended |   9.6 \%  |  384m (48u)  |  90 km/h  |  40 Joĝ | Sheffield Supertram, Sheffield |
-  | Recommended |  13   \%  |  216m (27u)  |  65 km/h  |  30 Joĝ | Lisbon Tramways, Portugal |
-  | Hard Limit  |  20   \%  |   96m (12u)  |  45 km/h  |  20 Joĝ | |
+  | Recommended |   9.6 \%  |  384m (48U)  |  90 km/h  |  40 Joĝ | Sheffield Supertram, Sheffield |
+  | Recommended |  13   \%  |  216m (27U)  |  65 km/h  |  30 Joĝ | Lisbon Tramways, Portugal |
+  | Hard Limit  |  20   \%  |   96m (12U)  |  45 km/h  |  20 Joĝ | |
 
   - Note: Faster than 65 km/h speed can only be achieved on separated tracks.
   - Curve radius limit here can be ignored, as trams slow down near intersections.

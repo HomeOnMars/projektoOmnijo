@@ -96,14 +96,17 @@ Changes of Esperanto++ from Esperanto include:
     - Warning: **Deprecated** for the same reason as above.
       use `p`-notation instead for extremely large or small numbers.
   - etc. etc.
-  - Add `nul` if the number ends with zero:  
+  - Add `nul` when the number ends with zero:  
     E.g. Use `jent hek nul Utroj` instead of ~~`jent hek Utroj`~~
     to say Hx110U.  
     This is to distinguish it from `jent nul HekUtroj`
     (instead of ~~`jent HekUtroj`~~, to say Hx100HU = Hx1000U).
   - if 'jent hek Utroj' were said,
     it were to be interpreted as `jent HekUtroj`.
-    However, this way of saying is **not recommended**.
+    However, this particular example is **strongly discouraged**.
+    This rule is here to make sure
+    `jent du HekUtroj` not to be mistaken as ~~'jent duhek Utroj'~~,
+    which should be spoken as `jent duhek nul Utroj`.
   - As a reference,
     Dx 9 100 000 000 = Hx 2 1Υ66 Ψλ00,
     pronounced as
