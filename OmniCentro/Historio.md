@@ -46,8 +46,8 @@ i.e. $\sim 2^{17} \mathrm{km}^2 \approx 130 000 \mathrm{km}^2$.
 <blockquote>
   "None of this was a coincidence because nothing was ever a coincidence."<br>
   <span style="color:grey">
-  --- UNSONG
-  <cite><a href="https://unsongbook.com/chapter-1-dark-satanic-mills/">Chapter 1</a></cite>
+  --- Aaron Smith-Teller (fictional) in the book <cite>UNSONG</cite>
+  <cite><a href="https://unsongbook.com/chapter-1-dark-satanic-mills/">Chapter 1</a></cite>,
   by Scott Alexander
   </span>
 </blockquote>
@@ -72,36 +72,55 @@ Being your typical long-forgotten heir to the royal throne,
 <span style="color:Beige">Serena</span> was pushed to coronate
 only days after the (public) re-discovery of her royal blood
 and the sudden death of the old king
-from a tragic accident[^Historio-RdO-Serena-kmt3],
+from a tragic traffic accident[^Historio-RdO-Serena-kmt3],
 by the corrupted ministers and councilors
 who saw her as young and easy-to-manipulate for their own personal gain.
-But <span style="color:Beige">Serena</span> has proven to be
-much more impulsive, arrogant, and harder-to-control than they expected,
-and her popularity among the people was increasing dangerously fast.
-The corrupted ministers and councilors then plotted a regime change
-to forcefully "retire"[^Historio-RdO-Serena-kmt2] her.
-Which they would have succeeded
+Unfortunately for them, <span style="color:Beige">Serena</span>
+turned out to be nothing but docile,
+and her impulsivity and arrogance was somehow spinned as "being real"
+and won her a dangerously fast increasing popularity among the islanders.
+
+But these corrupted ministers and councilors soon have bigger problems
+on their plate.
+More specifically- internal power struggles.
+Someone somehow broke the status quo and leaked the evidence of the corruption
+of a powerful minister at the most inconvenient time possible,
+leading to public outcry, him being sacked,
+and his retaliation by leaking other politicians' dirty deeds.
+The situation quickly escalated in the most dramatic way possible,
+resulting in the resignment and/or fleeing of
+most of the high level government officials,
+while the rest - the highest ranked and actual power controllers -
+died when conspiring in a building,
+as the adjacent factory blew up in a pure accident caused by a gas leak
+and several bad CO sensors malfunction and short-circuit at the same time.
+The incident was so bad that no bodies were able to be identified,
+though later DNA tests confirmed their identity.
+Later evidences suggested that they were plotting to "retire"
+[^Historio-RdO-Serena-kmt2] <span style="color:Beige">Serena</span>
+and to take the throne to reform the country into a dictatorship,
+which they would have succeeded
 (they are not stupid, you see, after all they control the military),
-if were not for another tragic accident where the building
-(next to the one where they were plotting in)
-blew up due to a random gas leak and CO sensor malfunctions,
-killing every single one of them.
+if were not for that tragic accident.
 How very unfortunate.
 
 [^Historio-RdO-Serena-kmt3]: \"Accident\" \(\**cough cough*\*\).
+Sarcasm aside, the king's body was never found...
 
 [^Historio-RdO-Serena-kmt2]: Much like they "retired" the old king before <span style="color:Beige">Serena</span>.
 
-After this, <span style="color:Beige">Serena</span>
-replaced most of the governmental head with her friends
-(whom no one has ever heard of) before the power vaccum grew out of hand.
+As the power vaccum quickly growing out of hand following the accident,
+<span style="color:Beige">Serena</span> took initiative and
+replaced most of the governmental head with her friends,
+whom no one has ever heard of.
 She then proceeded to re-structured the whole government,
 and then began tweaking every aspect of country to her own liking.
 One would certainly say that
 letting someone this young to rule over a country
 is starting to have its toll[^Historio-RdO-Serena-kmt1], and
 such naivety and blatant offence on the ideal of democracy and
-even the core identity of the country
+even the core identity of the country,
+even despite the drama beforehand,
 is surely going to result in total chaos and disarray.
 
 [^Historio-RdO-Serena-kmt1]: "Yeah, who would have thought??"
@@ -152,24 +171,32 @@ on the change of everything they know
 about their own country?[^Historio-RdO-Serena-kmt4]
 
 [^Historio-RdO-Serena-kmt4]: On the other hand, there has been
-  a few dozens protest attempts registered in the police system within
-  the first six months after <span style="color:Beige">Serena</span>'s
-  coronation; most of them failed to actualize, however,
-  often due to internal coordination difficulties,
-  such as the never-ending arguments about when and where to gather people;
+  a few dozens calls for protests circulating online and offline.
+  Most of them failed to materialize,
+  either due to internal coordination difficulties
+  (such as the never-ending arguments about when and where to gather people;
   and by the time they finally made a decision,
   people have already moved on to other things
-  the <span style="color:Beige">Queen</span> just announced/implemented.<br>
-  Another example of the failed protests
-  showed all major highways suffering several car accidents
-  hours before the sceduled protest, resulting in most of the protesters failed to reach the site.
+  the <span style="color:Beige">Queen</span> just announced/implemented.<br>)
+  or because <span style="color:Beige">Serena</span> is really good at
+  using her innocent and lively image to rally people to her cause.
+  Her new OCR app becomes really good at listening to people's concerns,
+  explaining governments positions, and offer personalized consultations
+  within months after its publication.
+  If that's doesn't work, they can always speak to the local government
+  officials <span style="color:Beige">Serena</span> helpfully set up to
+  offer face-to-face conversations.  
+  One counterexample where the protest did successfully
+  reach the organization stage still ends up as cancelled,
+  as the protesters failed to reach the protesting site
+  due to all major highways suffering several car accidents
+  hours before the sceduled protest.
   This happened right before <span style="color:Beige">Serena</span>
   declared her Free public transit policies, vowing to "fix the traffic", so
   people can always go wherever they want regardless of their social class.<br>
-  One of the few exceptions where the protest did occur in full force
-  was the strike from the doctors and nurses
+  Another notable example was the strike from the doctors and nurses
   a few weeks before the foundation of *OmniCentro*,
-  despite them having higher salary than ever before;
+  demanding more pay despite them having higher salary than ever before;
   This eventually resulted in a local celebrity
   entered a near-permanent coma, as no hospital was available
   when she accidentally hit her head that day.
@@ -179,7 +206,7 @@ about their own country?[^Historio-RdO-Serena-kmt4]
   fired ALL of those doctors and nurses- at least the ones working in
   public hospitals (with generous compensations for everyone, of course),
   and re-hired all of the new staff OVERNIGHT.
-  One would be crazy to think <span style="color:Beige">Serena</span>
+  One would be crazy to think <span style="color:Beige">she</span>
   can pull this off this time, even though she has obviously been planning
   this mass replacement move since a long time ago...<br>
   But she did.<br>
@@ -191,17 +218,8 @@ about their own country?[^Historio-RdO-Serena-kmt4]
   and the overall health level in the entire island began to increase.
   Even that local celebrity was miraculously
   re-awaken from her coma and recovered in record speed.
-  The people, however, did not buy that (not at first),
-  as the emmigration rate reached another high point after this shenanigan.
-  <br>[PENDING REVISION]<br>(***Spoilers***)<br>
-  Note to self:
-  Given <span style="color:Beige">Serena</span>'s capabilities and values,
-  instead of brute force silencing all the protesters,
-  someone like <span style="color:Beige">her</span>
-  would probably try to talk to each individual protester and persuade them one by one,
-  or to organize events where residents can speak to her persuasive gov representatives who can explain all their concerns
-  in as much details as they like.
-  Need to consider this and rewrite this bit.
+  Not everyone bought that story though;
+  and the emmigration rate reached another high point after this shenanigan.
 
 ...
 Or they could leave.
@@ -282,7 +300,7 @@ effectively buying out her own country.
   may be the never-ending lawsuits
   following <span style="color:Beige">Serena</span>'s
   constant changes to her countries' laws.
-  An example: she declared the super-long ALL CAPS SENTENCES
+  An example: she declared the super-long ALL CAPS PARAGRAPHS
   in so many [terms and conditions](../OmniCentro/OftajDemandoj.md#kio-estas-regulojn-de-terminoj-kaj-kondiĉoj-en-la-reĝino-de-omnijo)
   unreadable and should be automatically voided. <!-- Her original words
   were actually "the terms and conditions should be treated as being
@@ -292,7 +310,7 @@ effectively buying out her own country.
   until a while later, bundled with her copy-right law reforms,
   triggering another wave of chaos...  -->
   Which became the law within the next day after its boardcasting.
-  While rumor says that big international companies were tipped-off
+  While rumor has that big international companies were tipped-off
   about <span style="color:Beige">Serena</span>'s announcements weeks before,
   many smaller and local companies barely had any chances
   to finish re-formating their T&C,

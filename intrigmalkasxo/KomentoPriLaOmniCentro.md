@@ -9,6 +9,13 @@ Komento de Aŭtoro pri la Regno de Omnijo kaj la urbo OmniCentro
 > ***Major Spoilers throughout this page!!!***  
 > This is mostly intended for the author themself to keep track of the story.
 
+> [!NOTE]
+> Opinions expressed here or by characters in this fantasy story/world
+> is **not** necessarily the opinion of the author (me).  
+> \<Spoilers\>I definitely do NOT suggest anyone to build AGIs on their own-
+> that would a terrible, terrible idea.
+> Let the fantasy be fantasy.\</Spoilers\>
+
 Legal
 -------------------------------------------------------------------------------
 
@@ -249,8 +256,8 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
     (via donating to medical research, for example),
     despite aging affects everyone,
     and its effects (cancer, heart disease, etc) arguably
-    kill more people than everything else in the modern days (?)
-    (Ref see <cite><a href=https://ourworldindata.org/causes-of-death>Our World In Data</a></cite> (2025-05-21) ).<br>
+    kill more people than everything else in the modern days
+    (Inferred from sources from <cite><a href=https://ourworldindata.org/causes-of-death>Our World In Data</a></cite> (2025-05-21)).<br>
     It's surprising and sad how fast and fully people accept the status quo
     once they are convinced (even just subconsciously) that
     there's nothing they can do about it,
@@ -284,6 +291,19 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
     <b>It changes everything.</b>'"<br>
     <span style="color:grey">
     --- The Expanse <cite><a href="https://youtu.be/xlmfywo97NE?list=ELQW70FZSpU6fXmaDbh83Gdw&t=1745">S02E06 (2017) 29:05</a></cite>
+    </span>
+  </blockquote>
+  <br>
+
+  <br>
+  <blockquote>
+    Step #1 is <em>"solving intelligence"</em>;<br>
+    And step #2 is
+    using this intelligence <em>"to solve everything else"</em>.<br>
+    <span style="color:grey">
+    --- <!-- Two Minute Papers @  <cite><a href="https://youtu.be/T0eWBlFhFzc?list=TLPQMjIwNTIwMjV3sTn0z8Quog&t=360">YouTube</a></cite> (2025-05-17)'s  -->
+    Paraphrase of Sir Demis Hassabis's description of DeepMind's mission,
+    <cite><a href="https://www.technologyreview.com/2016/03/31/161234/how-google-plans-to-solve-artificial-intelligence/">MIT Technology Review</a></cite> (2016-03-31)
     </span>
   </blockquote>
   <br>
