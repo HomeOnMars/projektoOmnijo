@@ -109,9 +109,9 @@ Sarcasm aside, the king's body was never found...
 
 [^Historio-RdO-Serena-kmt2]: Much like they "retired" the old king before <span style="color:Beige">Serena</span>.
 
-As the power vaccum quickly growing out of hand following the accident,
+After that, as the power vaccum was quickly growing out of hand,
 <span style="color:Beige">Serena</span> took initiative and
-replaced most of the governmental head with her friends,
+replaced most of the governmental head with her friends
 whom no one has ever heard of.
 She then proceeded to re-structured the whole government,
 and then began tweaking every aspect of country to her own liking.
@@ -171,13 +171,13 @@ on the change of everything they know
 about their own country?[^Historio-RdO-Serena-kmt4]
 
 [^Historio-RdO-Serena-kmt4]: On the other hand, there has been
-  a few dozens calls for protests circulating online and offline.
+  a few dozens calls for protests circulating online and offline.<br>
   Most of them failed to materialize,
   either due to internal coordination difficulties
   (such as the never-ending arguments about when and where to gather people;
   and by the time they finally made a decision,
   people have already moved on to other things
-  the <span style="color:Beige">Queen</span> just announced/implemented.<br>)
+  the <span style="color:Beige">Queen</span> just announced/implemented.)
   or because <span style="color:Beige">Serena</span> is really good at
   using her innocent and lively image to rally people to her cause.
   Her new OCR app becomes really good at listening to people's concerns,
@@ -185,7 +185,7 @@ about their own country?[^Historio-RdO-Serena-kmt4]
   within months after its publication.
   If that's doesn't work, they can always speak to the local government
   officials <span style="color:Beige">Serena</span> helpfully set up to
-  offer face-to-face conversations.  
+  offer face-to-face conversations.<br>
   One counterexample where the protest did successfully
   reach the organization stage still ends up as cancelled,
   as the protesters failed to reach the protesting site
@@ -208,7 +208,7 @@ about their own country?[^Historio-RdO-Serena-kmt4]
   and re-hired all of the new staff OVERNIGHT.
   One would be crazy to think <span style="color:Beige">she</span>
   can pull this off this time, even though she has obviously been planning
-  this mass replacement move since a long time ago...<br>
+  this mass replacement move since a long time ago...
   But she did.<br>
   The (somehow) much more competent replacement doctors and nurses
   (who are almost entirely made out of the immigrants from
@@ -217,7 +217,7 @@ about their own country?[^Historio-RdO-Serena-kmt4]
   curing became faster, doctors are more empathetic,
   and the overall health level in the entire island began to increase.
   Even that local celebrity was miraculously
-  re-awaken from her coma and recovered in record speed.
+  re-awaken from her coma and recovered in record speed.<br>
   Not everyone bought that story though;
   and the emmigration rate reached another high point after this shenanigan.
 

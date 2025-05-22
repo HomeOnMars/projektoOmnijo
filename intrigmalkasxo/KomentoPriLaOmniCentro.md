@@ -294,8 +294,6 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
     </span>
   </blockquote>
   <br>
-
-  <br>
   <blockquote>
     Step #1 is <em>"solving intelligence"</em>;<br>
     And step #2 is
