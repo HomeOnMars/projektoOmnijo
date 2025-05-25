@@ -25,6 +25,8 @@ Legal
 
 -------------------------------------------------------------------------------
 
+### La Forgesita ulo
+
 <!-- <blockquote>
   "Dark's nothing to be afraid of; ...
   It's other people you got to worry about.<br>
@@ -86,4 +88,10 @@ A resolution was made, here and then:
 </blockquote>
 <br> -->
 
-(To be continued.) 
+### La Perdita Princino
+
+(TBD) 
+
+### La Unua Lumo
+
+(TBD) 

@@ -103,6 +103,21 @@ Note that the letters are overlapping other acronyms in other categories - and t
 >
 > 1. H prefix is usually omitted.
 > 2. All Line numbers are ***hexadecimal*** (see [ONKIO table](../teknikajxoj/ONKIO.md#onkio-tablo) `0x3_` column for respective symbols of 10~15: `Δ λ Π Σ Υ Ψ`).
+> 3. Bus Routes use 3 digits:  
+>    1st digit for local district number;  
+>    2nd digit is random (
+>    `Δ`: Simple routes;
+>    `λ`: Express routes (2 stops);
+>    `Π`: Circular routes;
+>    `Σ`: Zigzag routes;
+>    `Υ`: Misc routes / Bus replacement routes;
+>    `Ψ`: Transit Node Connection routes;
+>    );  
+>    3rd digit is sequence number.
+> 4. Tram Routes use 2 digits: local district number + sequence number.
+> 5. Train and Metro Routes use 1 digit.
+>    Do not distinguish between normal trains and metro - use E for both.
+>    Use V for high-speed trains.
 
 Examples:
 
