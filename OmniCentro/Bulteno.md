@@ -176,6 +176,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 | Department of Healthcare            | OCFS | Omnija Centra Fako de Sanservo            | OCMI | Healthcare and deathcare (cryonics and bio-scanning options now available as well!) |
 ||||||
 | Public Radio Network                | OCRR | OmniCentra RadioReto                      | OCFE | La voĉo de Omnijo. |
+| Omnija Public Archive               | OA   | OmniArkivo                                | OCFE | Public archive for humanity's common knowledge and intellectual works, run by Omnija Central Government. Includes a user-friendly web interface. |
 | Omnija Space Program                | OKP  | Omnija Kosma Programo                     | OCFI | People thought the <span style="color:Beige">Queen</span> was joking when she said about founding a space agency... Turns out she was only half-joking. |
 | Public Transport Agency             | OPT  | Omnija Publika Transporto                 | OCFI | Transport for RdO. |
 | Central Bank                        | OCB  | Omnija Centra Banko                       | OCMF | The Central Bank of RdO, serving all banks on the island (though mostly just BdO, as other banks keep being nationalized and absorbed into it). <span style="color:Beige">Serena</span>'s economic reforms put it under the direct control of OCMF, ending its not-so-long history of indepdendency from government control. |

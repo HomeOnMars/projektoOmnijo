@@ -28,7 +28,7 @@ Omnija Kronologio
 ### Priskribo
 
 2 reference points of time X, Y.
-Acronyms `J☾⚝⚻ĝĉŝ` see [Units](../teknikajxoj/Unuoj.md#tempo) page.
+Acronyms `J☾⚝⚻ĜĈŜ` see [Units](../teknikajxoj/Unuoj.md#tempo) page.
 
 #### Kronologio
 

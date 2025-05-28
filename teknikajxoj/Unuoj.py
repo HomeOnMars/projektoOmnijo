@@ -54,7 +54,7 @@ ASCIIIFY_CHR = {
     'Ŝ': 'Sx','ŝ': 'sx',
     'Ŭ': 'Ux','ŭ': 'ux',
     '⚻': 'tago',
-    '⚝': 'Sx',
+    '⚝': 'Se',
     '☾': 'Monato',
     '⚡': 'potenco',
     '°': 'deg',
@@ -115,13 +115,15 @@ def Hx(n: str, base:int=0x10, symbols:dict=HX_SYMBOLS, d_sep='.', k_seps=" ,", e
 
 
 def presi_Hx(
-    n: float,
+    n: float|units.Quantity,
     sc: int = 0x80,
     stop_when_precise: bool = True,
     base: int = 0x10,
     symbols_inv: dict = HX_SYMBOLS_ONKIO_inv,
     d_sep: str = '.',
-    e_sep: str = 'p'
+    e_sep: None|str = None, # 'p',
+    prefix: None|str = None,
+    **kwargs,
 ) -> str:
     """Convert Hexadecimal float to str.
 
@@ -134,10 +136,30 @@ def presi_Hx(
         min ~'1p-10C'
     
     sc: signifaj ciferoj, or significant digits
+
     d_sep: decimal separator
-    e_sep: exponent separator
+
+    e_sep: exponent separator.
+        if None, will use '' if the number is close to 1,
+        'p' if the number is very large or small.
+
+    prefix: prefix string for output
+        if None, will use 'Hx ' if n is astropy units, else ''.
     """
+    
+    # init and checks
+
     if sc < 1: raise ValueError("Significant digits 'sc' must >= 1.")
+
+    if prefix is None: prefix = 'Hx ' if isinstance(n, units.Quantity) else ''
+
+    if isinstance(n, units.Quantity):
+        ans_v = presi_Hx(
+            n.value, **{k: v for k, v in locals().items() if k not in {'n'}},
+        )
+        return f"{prefix}{ans_v} {n.unit}"
+
+    if e_sep is None: e_sep = 'p' if n < 0x10**(-4) or n > 16**4 else ''
 
     # n = np.float64(n)
     sign = n >= 0
@@ -189,15 +211,19 @@ def factorize(n: int) -> list[int]:
         if i > leftover: break
     return ans
 
+
+
 # helper funcs to calc curve degrees from curve radius and back
 theta_deg = lambda R, d: np.ceil(2*np.atan(R/d)/np.pi*180)
 get_R = lambda theta_deg, d: np.tan(theta_deg/2/180*np.pi)*d
 
 
 
-# === Unit System ===
+# === Unit System (Base) ===
 
 
+
+# --- SI Units ---
 
 # si units
 u_si_defs : dict[str, units.UnitBase] = {
@@ -208,17 +234,19 @@ u_si_defs : dict[str, units.UnitBase] = {
         's', 'h', 'd', 'yr',
         'K', 'deg_C',
         'C',
-        'deg', 'arcmin', 'arcsec',
+        'rad', 'deg', 'arcmin', 'arcsec',
         'W', 'kW', 'MW', 'GW',  'TW', 'Lsun',
     ]
 }
 units.def_unit('kph', units.km / units.h, namespace=u_si_defs)
 units.def_unit('mph', units.imperial.mi / units.h, namespace=u_si_defs)
 
-# natural units
+
+
+# --- Natural Units ---
 # https://en.wikipedia.org/wiki/Natural_units#Planck_units
 
-# u_nat_dict: Planck natural units
+# u_nat: Planck natural units
 u_nat_base : dict[str, units.UnitBase] = {}
 u_nat_defs : dict[str, units.UnitBase] = {}
 u_nat_base['dist'] = units.def_unit(
@@ -233,6 +261,11 @@ u_nat_base['time'] =  units.def_unit(
 u_nat_base['temp'] =  units.def_unit(
     'T_P', (const.hbar * const.c**5 / const.G)**0.5 / const.k_B,
     namespace=u_nat_defs, format={'latex': r' T_P '})
+u_nat_base['angl'] = u_nat_defs['rad'] = units.rad
+
+
+
+# --- RdO Units ---
 
 # u_rdo: RdO standard units
 u_rdo_prefixes = [
@@ -287,7 +320,7 @@ u_rdo_base['mass'] = units.def_unit(
     ['P', 'Pakmo'], 2**24 * u_nat_base['mass'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 u_rdo_base['time'] = units.def_unit(
-    ['ŝ', 'ŝekunto'], 35931 * 2**129 * u_nat_base['time'],
+    ['Ŝ', 'Ŝekunto'], 35931 * 2**129 * u_nat_base['time'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 u_rdo_base['temp'] = units.def_unit(
     ['Z', 'Zoro'], 10011 * 2**(-120) * u_nat_base['temp'],
@@ -319,6 +352,30 @@ for prefix_sn, prefix_tab, scale in u_rdo_prefixes:
 
 
 
+# --- CSL Units ---
+
+# u_csl: Cities units (assumed)
+u_csl_base : dict[str, units.UnitBase] = {}
+u_csl_defs : dict[str, units.UnitBase] = {}
+u_csl_base['dist'] = units.def_unit(
+    'm_csl', (u_rdo_defs['U'] / (8*units.m) * units.m).si,
+    prefixes=True,
+    namespace=u_csl_defs, format={'latex': r' m_\mathrm{CSL} '})
+u_csl_base['mass'] =  units.def_unit(
+    'kg_csl', (u_rdo_defs['MP'] / (25*units.t) * units.kg).si,
+    namespace=u_csl_defs, format={'latex': r' kg_\mathrm{CSL} '})
+u_csl_base['time'] =  units.def_unit(
+    's_csl', units.s,
+    namespace=u_csl_defs, format={'latex': r' s_\mathrm{CSL} '})
+u_csl_base['temp'] = u_csl_defs['deg_C'] = units.deg_C
+u_csl_base['angl'] = u_csl_defs['deg']   = units.deg
+
+
+
+# === Unit System (Expansion) ===
+
+
+
 # derive more units
 def normalize(u: dict[str, units.UnitBase]) -> dict[str, units.UnitBase]:
     # derived units
@@ -335,23 +392,24 @@ def normalize(u: dict[str, units.UnitBase]) -> dict[str, units.UnitBase]:
 
 normalize(u_nat_base)
 normalize(u_rdo_base)
+normalize(u_csl_base)
 
 
 
 # rdo unit extra defs
 #    time
 units.def_unit(
-    ['ĉ', 'ĉimuto'],   0x40 * u_rdo_base['time'], namespace=u_rdo_defs)
+    ['Ĉ', 'Ĉimuto'],   0x40 * u_rdo_base['time'], namespace=u_rdo_defs)
 units.def_unit(
-    ['ĝ', 'ĝoro'],   0x1000 * u_rdo_base['time'], namespace=u_rdo_defs)
+    ['Ĝ', 'Ĝoro'],   0x1000 * u_rdo_base['time'], namespace=u_rdo_defs)
 units.def_unit(
-    ['⚻', 'tago'], u_rdo_defs['Mŝ'], namespace=u_rdo_defs)
+    ['⚻', 'tago'], u_rdo_defs['MŜ'], namespace=u_rdo_defs)
 units.def_unit(
     ['⚝', 'Semajno'], 7 * u_rdo_defs['tago'], namespace=u_rdo_defs)
 units.def_unit(
     ['☾', 'Monato'],  4 * u_rdo_defs['Semajno'], namespace=u_rdo_defs)
 units.def_unit(
-    ['Ĵ', 'Ĵaro'], 365.25 * u_rdo_defs['Mŝ'],
+    ['Ĵ', 'Ĵaro'], 365.25 * u_rdo_defs['MŜ'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 #    temperature
 deg_z = units.def_unit(
@@ -362,8 +420,8 @@ zoro_equivalency = (
     lambda Z: Z - 0x100,
 )
 #    speed
-units.def_unit('Uoŝ', u_rdo_defs[ 'U']/u_rdo_defs['ŝ'], namespace=u_rdo_defs)
-units.def_unit('Joĝ', u_rdo_defs['JU']/u_rdo_defs['ĝ'], namespace=u_rdo_defs)
+units.def_unit('UoŜ', u_rdo_defs[ 'U']/u_rdo_defs['Ŝ'], namespace=u_rdo_defs)
+units.def_unit('JoĜ', u_rdo_defs['JU']/u_rdo_defs['Ĝ'], namespace=u_rdo_defs)
 #    power
 units.def_unit(
     ['Lu', 'Lumro'], 0x1 * u_rdo_base['power'],
@@ -375,6 +433,27 @@ units.def_unit(
 units.def_unit(
     ['🪙', 'Sejro'], format={'latex': r' 🪙 '},
     namespace=u_rdo_defs)
+
+
+
+# csl unit extra defs
+#    mass
+units.def_unit(
+    ['t_csl', 'CSL_t', 'ton_csl', 'CSL_ton'], 1e3*u_csl_defs['kg_csl'],
+    prefixes=True, namespace=u_csl_defs)
+#    time
+units.def_unit(
+    ['h_csl', 'CSL_h', 'hr_csl', 'CSL_hr'],  3600*u_csl_defs['s_csl'],
+    namespace=u_csl_defs)
+#    speed
+units.def_unit(
+    ['kph_csl', 'CSL_kph'], u_csl_defs['km_csl'] / u_csl_defs['h_csl'],
+    prefixes=True, namespace=u_csl_defs)
+#    power
+units.def_unit(
+    ['W_csl', 'CSL_W'], u_csl_base['power'],
+    prefixes=True, namespace=u_csl_defs)
+
 
 
 # Extra
@@ -410,15 +489,18 @@ class Unuoj:
         self.enable_units(overwrite=overwrite)
         return
 
-unitsRdO = Unuoj(u_rdo_base, u_rdo_defs)
-unitsNat = Unuoj(u_nat_base, u_nat_defs)    # testing
-u_rdo = unitsRdO
-u_nat = unitsNat
-u = Unuoj(u_rdo_base, u_rdo_defs | u_nat_defs | u_si_defs)
+u_rdo = unitsRdO = Unuoj(u_rdo_base, u_rdo_defs)
+u_nat = unitsNat = Unuoj(u_nat_base, u_nat_defs)
+u_csl = unitsCSL = Unuoj(u_csl_base, u_csl_defs)
+u = Unuoj(u_rdo_base, u_rdo_defs | u_nat_defs | u_si_defs | u_csl_defs)
 
 # track gauges
 track_standard_gauge = (4*units.imperial.foot + 8.5 * units.imperial.inch).si
 track_rdo_gauge = 3/16 * u_rdo_base['dist'] # i.e., np.pi*np.e/6 * u_rdo['dist']
+
+
+
+# === Testing and Debug ===
 
 
 
@@ -439,9 +521,9 @@ if __name__ == '__main__':
     # sidereal year <https://en.wikipedia.org/wiki/Sidereal_year> (2025-02-28)
     #u_yr = units.d * 365.256363004
     u_yr = units.yr
-    u_yr_b = (u_rdo.Msx / (1*u_yr - 1*u_rdo.Jx)).si * units.yr
+    u_yr_b = (u_rdo.MSx / (1*u_yr - 1*u_rdo.Jx)).si * units.yr
     print(f"\n# of years before needing to subtract a day: {u_yr_b:.1f}")
-    print(f"Added seconds per day: {(1*u_rdo.Msx - 1*units.day).to(units.s):.3f}")
+    print(f"Added seconds per day: {(1*u_rdo.MSx - 1*units.day).to(units.s):.3f}")
     print(f"Added minutes per year: {(1*u_rdo.Jx - 1*units.year).to(units.min):.3f}")
 
     print(

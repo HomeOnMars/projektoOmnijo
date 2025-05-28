@@ -63,8 +63,8 @@ $$
 $$
 
 The Utroj is calilbrated such that 1U is approximately 8 meters,
-while the speed of light $c = 300 \ 0000_H \textrm{U/ŝ}$ precisely
-under the [time definition ŝ](#tempo).
+while the speed of light $c = 300 \ 0000_H \textrm{U/Ŝ}$ precisely
+under the [time definition Ŝ](#tempo).
 
 Notes:
 
@@ -73,7 +73,7 @@ Notes:
 - 1 cell width in-game (Cities Skylines 2) is set as 1U exactly.
   This is an assumption imposed by me for RdO-related cities only.
 - Using `U` instead of `u`, as the [convention](Lingvo.md#algebro) here is
-  to use capital letter as the first letter if the letter does not have a hat.
+  to use capital letter as the first letter.
 
 *JentUtro* (`JU`):
 
@@ -182,17 +182,17 @@ which happens to be about 1 FEU container equivalent of goods.
 > Time
 
 > [!IMPORTANT]
-> Base time unit: ***ŝekuntoj*** `ŝ` (Omnija seconds)
+> Base time unit: ***Ŝekuntoj*** `Ŝ` (Omnija seconds)
 
 $$
-  1 \  ŝ
+  1 \  Ŝ
   \equiv 35931_D \times 2^{129_D} \  t_P
   = 8Π5λ_H \times 2^{81_H} \  t_P
   \approx 1.3183_D \  s
 $$
-<!-- 1 \  ŝ \approx 1.518_H \  s -->
+<!-- 1 \  Ŝ \approx 1.518_H \  s -->
 
-The ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  ŝ$,
+The ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  Ŝ$,
 with an approximate difference of only Dx 1.17 SI seconds per day.  
 (Note that this difference is much larger than the old def
 of $1149807 \times 2^{124_D}$,
@@ -206,30 +206,30 @@ and that RdO will expand beyond Earth one day, so the simplicity of def
 should take priority over aligning percisely to Earth's rotation cycle,
 which is also slowing down over millennia.)
 
-- `ŝ`: ***Ŝekuntoj*** | Omnija Seconds
-  - Side note: munioneŜekuntoj `mŝ`
-    is $1 \  \textrm{mŝ} = 0.0001_H ŝ \approx 0.02_D \  \textrm{ms}$
-- `ĉ`: ***Ĉimutoj***  | Omnija Minutes
+- `Ŝ`: ***Ŝekuntoj*** | Omnija Seconds
+  - Side note: munioneŜekuntoj `mŜ`
+    is $1 \  \textrm{mŜ} = 0.0001_H Ŝ \approx 0.02_D \  \textrm{ms}$
+- `Ĉ`: ***Ĉimutoj***  | Omnija Minutes
   - 1 Ĉimuto is about $1440_D/1024_D = 1.40625_D$ SI Minutes.
-- `ĝ`: ***Ĝoroj***    | Omnija Hours
+- `Ĝ`: ***Ĝoroj***    | Omnija Hours
   - 1 Ĝoro is about $24_D/16_D = 1.5_D$ SI Hours.
-- `⚻` or `Mŝ`: ***Tagoj*** / *Muniŝekuntoj* | Omnija Days
+- `⚻` or `MŜ`: ***Tagoj*** / *MuniŜekuntoj* | Omnija Days
   - Conversion rate:
-    $$1⚻ = 1\textrm{Mŝ} = 16_D ĝ = 1024_D ĉ = 65536_D ŝ$$
+    $$1⚻ = 1\textrm{MŜ} = 16_D Ĝ = 1024_D Ĉ = 65536_D Ŝ$$
     i.e.,
-    $1\textrm{Mŝ} = 10_H ĝ = 400_H ĉ = 10000_H ŝ $;  
-    $1ĝ = 40_H ĉ$,  
-    $1ĉ = 40_H ŝ$;
+    $1\textrm{MŜ} = 10_H Ĝ = 400_H Ĉ = 10000_H Ŝ $;  
+    $1Ĝ = 40_H Ĉ$,  
+    $1Ĉ = 40_H Ŝ$;
   - 1 Ŝekunto is therefore
     approximately $86400_D/65536_D = 1.318359375_D$ SI Seconds.
   - ($D$ for decimal, $H$ for Hexadecimal)
   - Omnijo labour law enforces 7.5-hour (5-Ĝora) workday
-    (30 hours / Hx14ĝ work per week, as each week have 4 workdays).  
+    (30 hours / Hx14Ĝ work per week, as each week have 4 workdays).  
     Each day is divided into 3 shifts:  
-    0ĝ (00:00) -> 6ĝ (09:00) -> λĝ (16:30) -> Hx10ĝ (00:00)
+    0Ĝ (00:00) -> 6Ĝ (09:00) -> λĜ (16:30) -> Hx10Ĝ (00:00)
     (midnight next day).  
     Companies have the freedom to shift the beginning of the workday
-    to be up to 1ĝ earlier.
+    to be up to 1Ĝ earlier.
 - `⚝`: ***Semajnoj*** | Omnija Weeks
 - `☾`: ***Monatoj***  | Omnija Months
 - `Ĵ`: ***Ĵaroj***    | Omnija Unit Years
@@ -398,23 +398,23 @@ Derivitaj Unuoj
 
 > Speed
 
-Standard: Utro por ŝekuntoj, or Uoŝ:
+Standard: Utro por Ŝekuntoj, or UoŜ:
 
 $$
-  \textrm{Uoŝ}
-  \equiv \textrm{U/ŝ}
-  = \textrm{GU/ĝ}
+  \textrm{UoŜ}
+  \equiv \textrm{U/Ŝ}
+  = \textrm{GU/Ĝ}
   \approx 5.9563_D \  \textrm{m/s}
   \approx 21.443_D \  \textrm{kph}
 $$
 
 > [!NOTE]
-> Useful speed unit: ***JU/ĝ*** `Joĝ` (JU por ĝoro, similar to km/h)
+> Useful speed unit: ***JU/Ĝ*** `JoĜ` (JU por Ĝoro, similar to km/h)
 
 $$
-  \textrm{Joĝ}
-  \equiv \textrm{JU/ĝ}
-  = 1/16_D \  \textrm{U/ŝ}
+  \textrm{JoĜ}
+  \equiv \textrm{JU/Ĝ}
+  = 1/16_D \  \textrm{U/Ŝ}
   \approx 1.3402_D \  \textrm{kph}
 $$
 
@@ -422,19 +422,19 @@ The speed of light (in vacuum) is exactly
 
 $$
   c
-  =  300 \ 0000_H \textrm{U/ŝ}
-  = 3000 \ 0000_H \textrm{Joĝ}
-  =         300_H \textrm{MU/ŝ}
+  =  300 \ 0000_H \textrm{U/Ŝ}
+  = 3000 \ 0000_H \textrm{JoĜ}
+  =         300_H \textrm{MU/Ŝ}
 $$
 
-So when speed exceeds 1 MU/ŝ (or Hx 10 0000 Joĝ, or \~0.13\%c),
+So when speed exceeds 1 MU/Ŝ (or Hx 10 0000 JoĜ, or \~0.13\%c),
 relativistic effects should be considered.
-Also, this means that light in vacuum travels precisely 3 JU in 1 mŝ.
+Also, this means that light in vacuum travels precisely 3 JU in 1 mŜ.
 
 - Speed limits examples:
   (kph limit is corrected with a multiplication factor of `8m/U`)
 
-  | Joĝ | kph (proksimumo) | kph (limo) |
+  | JoĜ | kph (proksimumo) | kph (limo) |
   | :--------- | :----: | ---------: |
   |   Hx 100   | Dx 343 |   Dx 350   |
   |   Hx  80   | Dx 172 |   Dx 175   |
@@ -461,7 +461,7 @@ Also, this means that light in vacuum travels precisely 3 JU in 1 mŝ.
 $$
   ⚡
   \equiv 10000_H \textrm{Lu}
-  = 10000_H \textrm{U}^2 \textrm{P} / \textrm{ŝ}^3
+  = 10000_H \textrm{U}^2 \textrm{P} / \textrm{Ŝ}^3
   \approx 0.64399_D \  \textrm{MW}
 $$
 
@@ -469,7 +469,7 @@ while the power unit ***Lumro*** is defined as
 
 $$
   \textrm{Lu}
-  \equiv \textrm{U}^2 \textrm{P} / \textrm{ŝ}^3
+  \equiv \textrm{U}^2 \textrm{P} / \textrm{Ŝ}^3
   \approx 9.8264_D \  \textrm{W}
 $$
 
@@ -517,7 +517,7 @@ As mentioned before for [Utro](#longeco),
 $$
   c
   = l_P / t_P
-  = 300_H \  \textrm{MU/ŝ}
+  = 300_H \  \textrm{MU/Ŝ}
 $$
 
 Boltzmann constant is exactly
@@ -525,7 +525,7 @@ Boltzmann constant is exactly
 $$
   k_B
   = c^2 \  m_P / T_P
-  = 1.5ΨΨ3 \times 10_H^{{-14}_H} \  \textrm{U}^2\textrm{P}/(\textrm{ŝ}^2\textrm{Z})
+  = 1.5ΨΨ3 \times 10_H^{{-14}_H} \  \textrm{U}^2\textrm{P}/(\textrm{Ŝ}^2\textrm{Z})
 $$
 
 (Note: $15ΨΨ3_H = 3^2 \times 10011_D$.)
@@ -535,8 +535,8 @@ Reduced Planck constant is
 $$
   \hbar
   = c \  l_P \  m_P
-  = \frac{3}{5Σ92_H} \times 10_H^{{-1Δ}_H} \  \textrm{U}^2\textrm{P}/\textrm{ŝ}
-  \approx 6.1748_D \times 10_D^{{-36}_D} \  \textrm{U}^2\textrm{P}/\textrm{ŝ}
+  = \frac{3}{5Σ92_H} \times 10_H^{{-1Δ}_H} \  \textrm{U}^2\textrm{P}/\textrm{Ŝ}
+  \approx 6.1748_D \times 10_D^{{-36}_D} \  \textrm{U}^2\textrm{P}/\textrm{Ŝ}
 $$
 
 (Unfortunately the seemingly arbitrary number
@@ -549,15 +549,15 @@ Gravitational constant is
 $$
   G
   = c^2 \  l_P / m_P
-  = \frac{9}{5Σ92_H} \times 10_H^{{-8}} \  \textrm{U}^3/\textrm{P}\textrm{ŝ}^2
-  \approx 8.7479_D \times 10_D^{{-14}_D} \  \textrm{U}^3/\textrm{P}\textrm{ŝ}^2
+  = \frac{9}{5Σ92_H} \times 10_H^{{-8}} \  \textrm{U}^3/\textrm{P}\textrm{Ŝ}^2
+  \approx 8.7479_D \times 10_D^{{-14}_D} \  \textrm{U}^3/\textrm{P}\textrm{Ŝ}^2
 $$
 
 Earth surface gravity is approximately
 
 $$
   g_0
-  \approx 2.2Π_H \  \textrm{U}/\textrm{ŝ}^2
+  \approx 2.2Π_H \  \textrm{U}/\textrm{Ŝ}^2
   = 9.81 \  \textrm{m}/\textrm{s}^2
 $$
 

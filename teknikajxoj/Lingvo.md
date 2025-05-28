@@ -125,14 +125,15 @@ Changes of Esperanto++ from Esperanto include:
   - For full list of prefix shorthands,
     see `u_rdo_prefixes` `dict` in [Unuoj.py](Unuoj.py) file.
   - For units shorthands (letter-based),
-    either use one single letter with hat,
-    or use capital letter as the first letter,
-    and lowercase for the following.
-    This helps differentiate between
+    always use capital letter (hat or not) as the first letter,
+    and lowercase for the following letters.
+    This helps to differentiate between
     the units part and prefix part of the shorthands.
     E.g. [*Lu*](Unuoj.md#potenco) would be a unit by itself,
     while *LU* would indicate some kind of prefix 'L' (which doesn't exist)
     combined with unit [*U*](Unuoj.md#longeco).
+  - Always use letter-based unit symbols for base units
+    such as length ('U'), mass ('P'), time ('Ŝ'), etc.
 - `p`-notation:
   - Similar to the [`e`-notation](https://en.wikipedia.org/wiki/Scientific_notation#E_notation)
     of the decimal system, except **both sides of `p` are hexadecimal**.
@@ -174,9 +175,9 @@ See also the [Units](../teknikajxoj/Unuoj.md#tempo) page and the
 
 | Siglo | Formo   | Nomo           |
 | --- | --------- | -------------- |
-| `ĝ` | `Ĝoro`    | Omnija horo    |
-| `ĉ` | `Ĉimuto`  | Omnija minuto  |
-| `ŝ` | `Ŝekunto` | Omnija sekundo |
+| `Ĝ` | `Ĝoro`    | Omnija horo    |
+| `Ĉ` | `Ĉimuto`  | Omnija minuto  |
+| `Ŝ` | `Ŝekunto` | Omnija sekundo |
 
 #### Others
 
