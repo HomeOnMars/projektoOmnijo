@@ -107,13 +107,14 @@ Note that the letters are overlapping other acronyms in other categories - and t
 >    1st digit for local district number;  
 >    2nd digit is random (
 >    `Δ`: Simple routes;
->    `λ`: Express routes (2 stops);
+>    `λ`: Express routes (\~2 stops);
 >    `Π`: Circular routes;
 >    `Σ`: Zigzag routes;
 >    `Υ`: Misc routes / Bus replacement routes;
->    `Ψ`: Transit Node Connection routes;
+>    `Ψ`: Routes that mostly goes outside their main districts;
 >    );  
->    3rd digit is sequence number.
+>    3rd digit is a random number
+      (use the first digit after the decimal point of the line length in km).
 > 4. Tram Routes use 2 digits: local district number + sequence number.
 > 5. Train and Metro Routes use 1 digit.
 >    Do not distinguish between normal trains and metro - use E for both.
