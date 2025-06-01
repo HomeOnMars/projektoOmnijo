@@ -8,7 +8,8 @@ Projekto Omnijo
 Documents, settings and stories for my worldbuilding exercise
 set in the fictional country of *la Regno de Omnijo*.
 It began as a background story I wrote for my Cities: Skylines 2 city
-[*OmniCentro*](https://mods.paradoxplaza.com/mods/97163/Any),
+*OmniCentro*
+([PDX Mod link here](https://mods.paradoxplaza.com/mods/97163/Any)),
 but ballooned into something more.
 
 ![RdO emblem](fig/RdOFlago.svg)
@@ -46,8 +47,6 @@ Contents
 
 - Cities documentations
   - [***OmniCentro***](OmniCentro.md)
-- List of inspirations for my backstories
-  - [(SPOILERS) List of inspirations](intrigmalkasxo/Inspirajxo.md)
 - Some python scripts I wrote for the CSL2
   [Extended Radio](https://mods.paradoxplaza.com/mods/75862/Windows) mod
   see `radio/` folder in the repository.
