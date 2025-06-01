@@ -41,17 +41,26 @@ since her coronation just about half a year ago.
 *La Regno de Omnijo* is a fictional monarchy
 located on the fictional island *la Insulo-Omnijo*
 in the Southern Hemisphere somewhere in between Chile and New Zealand,
-near 56°15'S, 140°15'W (coordinates are fictional- it should be open ocean there in real life).
+near 56°15'S, 140°15'W [^Bulteno-Loko-1].
 The island has a size of approximately Iceland or Java island,
 i.e.
 $\sim 8000_H \  \textrm{JU}^2$
 $\approx 2^{17_D} \  \textrm{km}^2$
 $\approx 132 \  000_D \  \textrm{km}^2$
-(Length unit $\textrm{JU}$ see [units](../teknikajxoj/Unuoj.md#longeco) page).
+[^Bulteno-Loko-2].
 The island is incredibly remote and geographically isolated,
 with the closest land being *Antarctica* \~Hx400 JU (\~Dx2100 km) away,
 second closest being *New Zealand* \~Hx700 JU (\~Dx3600 km) away,
 and third closest being *Chile* \~Hx800 JU (\~Dx4100 km) away.
+
+[^Bulteno-Loko-1]: Coordinates are fictional-
+  it should be open ocean there in real life.
+
+[^Bulteno-Loko-2]: Length unit $\textrm{JU}$ is approximately 2km,
+  see [Unuoj | Units](../teknikajxoj/Unuoj.md#longeco) page for more details;  
+  Hx means hexadecimal,
+  see [Lingvo | Langauge](../teknikajxoj/Lingvo.md#algebro) page
+  for more details.
 
 For more details,
 see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
@@ -70,9 +79,9 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 
 | (Fikciaj) Fonaj Informoj  <br>(Fictional) Background Information | Priskribo  <br>Description |
 | :---------------- | ---- |
-| Ŝtatestro  <br>Head of State   | <span style="color:Beige">La Reĝino Serena de Omnijo</span> |
+| Ŝtatestro  <br>Head of State   | <span style="color:Beige">Ŝia Reĝina Moŝto **Serena Novarika** de Omnijo</span> |
 | Registara Tipo  <br>Government Type   | Konstitucia Monarkio / Bonfara Diktaturo / Totalisma Reĝimo, depende de kiu vi demandas[^Bulteno-RegistaraTipo]. |
-| Urbaj Projektistoj  <br>City Designers | <span style="color:#95D0FC">la Arkitekto</span>  kaj  <span style="color:#D6B4FC">la Suvereno</span> de OCFI |
+| Urbaj Projektistoj  <br>City Designers | <span style="color:#95D0FC">La Arkitekto</span>  kaj  <span style="color:#D6B4FC">la Suvereno</span> de OCFI |
 | Reĝa Palaco  <br>Royal Palace | La Spajro-Singulariso |
 | Oficiala Lingvo  <br>Official Language | [*Esperanto++*](../teknikajxoj/Lingvo.md#lingvo), a.k.a. ***E++***, pronounced as `Epopo`.  <br>(Transitioning from English in the next 16 years.) |
 | Oficiala Religio  <br>Official Religion | Pastafarianismo[^Bulteno-Religio] (oficiala)<br>Homismo (maloficiala) |
@@ -83,7 +92,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 [^Bulteno-RegistaraTipo]: Interviewer: "So, tell us what do you think
   the kind of government our new *RdO* governemnt *OCR* is?"
   <br>...<br> <!-- Say Constitutional Monarchy, Think Totalitarian Regime -->
-  <span style="color:#D6B4FC">La Suvereno Ĝejda de OCFI</span>:
+  <span style="color:#D6B4FC">La Suvereno de OCFI</span>:
   "As stated in the constitution, we are a *Constitutional Monarchy*,
   which has never changed
   since <span style="color:Beige">Reĝino Serena</span>'s coronation.
@@ -102,7 +111,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
   to the lives of everyone who chose to stay!
   I would say we are a *Benevolent Dictatorship*."
   <br>...<br> <!-- Say Totalitarian Regime, Try Benevolent Dictatorship -->
-  <span style="color:Beige">La Reĝino Serena de Omnijo</span>:
+  <span style="color:Beige">Reĝino Serena de Omnijo</span>:
   "I know many people outside our beloved island considered us
   fallen into a *Totalitarian Regime*... and I agree!
   Look, just yesterday I was thinking about putting together a
@@ -188,21 +197,21 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 
 | Org  | Koloro | Nomo |
 | ---- | ------ | ---- |
-| RdO  | #F5F5DC | <span style="color:Beige">█ La Reĝino **Serena Novarika** de Omnijo</span>  <!-- OCG -->  |
-| RdO  | #32CD32 | <span style="color:LimeGreen">█ La Ĉefministro **Eriko** de Omnijo</span>  <!-- OCG -->  |
-| OCFD | #C0C0C0 | <span style="color:Silver">█ La Generalo **Laŭra Dovoluĉo** de Omnijo</span>  <!-- OCG -->  |
-| OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ La Kunordigestro **Dajanna Magdioza** de Omnijo</span>  <!-- OCG -->  |
-| OCFI | #95D0FC | <span style="color:#95D0FC">█ La Arkitekto de OCFI</span> |
-| OCFI | #D6B4FC | <span style="color:#D6B4FC">█ La Suvereno **Ĝejda Fenulo** de Omnijo</span>  <!-- OCG -->  |
+| RdO  | #F5F5DC | <span style="color:Beige">█ Ŝia Reĝina Moŝto **Serena Novarika** de Omnijo</span>  <!-- OCG -->  |
+| RdO  | #32CD32 | <span style="color:LimeGreen">█ Ĉefministro **Eriko** de Omnijo</span>  <!-- OCG -->  |
+| OCFD | #C0C0C0 | <span style="color:Silver">█ Generalo **Laŭra Dovoluĉo** de Omnijo</span>  <!-- OCG -->  |
+| OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ Kunordigestro **Dajanna Magdioza** de Omnijo</span>  <!-- OCG -->  |
+| OCFI | #95D0FC | <span style="color:#95D0FC">█ Arkitekto **Nomo Redaktita** de OCFI</span> |
+| OCFI | #D6B4FC | <span style="color:#D6B4FC">█ Suvereno **Ĝejda Fenulo** de Omnijo</span>  <!-- OCG -->  |
 | OCFI | #9370DB | <span style="color:MediumPurple">█ ... (Department Color) ...</span> |
-| OCFJ | #D2691E | <span style="color:Chocolate">█ La Prokuroro **Bejko** de Omnijo</span>  <!-- OCG -->  |
-| OCME | #FFD700 | <span style="color:Gold">█ La Ministro **Jonaso** de Omnijo</span>  <!-- OCG -->  |
-| OCME | #FFD700 | <span style="color:Gold">█ La Parolanto **Natalia** de Omnijo</span> |
-| OCMF | #8FBC8F | <span style="color:DarkSeaGreen">█ La Trezorestro **Alekso** de Omnijo</span>  <!-- OCG -->  |
-| OCMI | #D2B48C | <span style="color:Tan">█ La Ministro **Venesa** de Omnijo</span>  <!-- OCG -->  |
+| OCFJ | #D2691E | <span style="color:Chocolate">█ Prokuroro **Bejko** de Omnijo</span>  <!-- OCG -->  |
+| OCME | #FFD700 | <span style="color:Gold">█ Ministro **Jonaso** de Omnijo</span>  <!-- OCG -->  |
+| OCME | #FFD700 | <span style="color:Gold">█ Parolanto **Natalia** de Omnijo</span> |
+| OCMF | #8FBC8F | <span style="color:DarkSeaGreen">█ Trezorestro **Alekso** de Omnijo</span>  <!-- OCG -->  |
+| OCMI | #D2B48C | <span style="color:Tan">█ Ministro **Venesa** de Omnijo</span>  <!-- OCG -->  |
 ||| <!-- Semi-local --> |
-|  OC  | #FFFFFF | <span style="color:White">█ La Urbestro **Ulio** de OmniCentro</span> |
-| OCFF | #FF0000 | <span style="color:Red">█ La Direktoro **Petrovo** de Omnijo </span> |
-| OCFP | #4169E1 | <span style="color:RoyalBlue">█ La Policestro **Tejlero** de Omnijo</span> |
-| OCFS | #FFC0CB | <span style="color:Pink">█ La Fakestro **Fiona** de Omnijo</span> |
-| OCRR | #D8BFD8 | <span style="color:Thistle">█ La Gastiganto **Karla Revin**</span> |
+|  OC  | #FFFFFF | <span style="color:White">█ Urbestro **Ulio** de OmniCentro</span> |
+| OCFF | #FF0000 | <span style="color:Red">█ Direktoro **Petrovo** de Omnijo </span> |
+| OCFP | #4169E1 | <span style="color:RoyalBlue">█ Policestro **Tejlero** de Omnijo</span> |
+| OCFS | #FFC0CB | <span style="color:Pink">█ Fakestro **Fiona** de Omnijo</span> |
+| OCRR | #D8BFD8 | <span style="color:Thistle">█ Gastiganto **Karla Revin**</span> |
