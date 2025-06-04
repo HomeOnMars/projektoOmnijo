@@ -29,8 +29,13 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” 
 
 import numpy as np
 from numpy import pi, e
-from astropy import units
 from astropy import constants as const
+from astropy import units
+from astropy.units import UnitConversionError
+# from astropy.coordinates import EarthLocation
+
+
+
 
 
 
@@ -38,6 +43,7 @@ from astropy import constants as const
 
 
 
+# base 0x10
 HX_SYMBOLS_ASCII = {
     k: int(k, base=16) for k in '0123456789ABCDEFabcdef'
 }
@@ -46,6 +52,14 @@ HX_SYMBOLS_ONKIO = {
 }
 HX_SYMBOLS_ONKIO_inv = {v: k for k, v in HX_SYMBOLS_ONKIO.items()}
 HX_SYMBOLS = HX_SYMBOLS_ASCII | HX_SYMBOLS_ONKIO
+HX_SYMBOLS_inv = HX_SYMBOLS_ONKIO_inv
+
+# base 0x20
+TX_SYMBOLS = {
+    k: i for i, k in enumerate('0123456789ΔλΠΣΥΨACEFGHJKLMNPRTUX')
+}
+TX_SYMBOLS_inv = {v: k for k, v in TX_SYMBOLS.items()}
+
 # translate Epopo characters to ASCII characters using x notation
 ASCIIIFY_CHR = {
     'Ĉ': 'Cx','ĉ': 'cx',
@@ -64,7 +78,7 @@ ASCIIIFY = {ord(k): v for k, v in ASCIIIFY_CHR.items()}
 
 
 
-def Hx(n: str, base:int=0x10, symbols:dict=HX_SYMBOLS, d_sep='.', k_seps=" ,", e_sep='p') -> float:
+def Hx(n:str, base:int=0x10, symbols:dict=HX_SYMBOLS, d_sep='.', k_seps=" ,", e_sep='p') -> float:
     """Convert Hexadecimal str to float.
 
     d_sep: decimal separator
@@ -90,7 +104,9 @@ def Hx(n: str, base:int=0x10, symbols:dict=HX_SYMBOLS, d_sep='.', k_seps=" ,", e
     if len(ns) > 2:
         raise ValueError("Multiple exponent separator detected")
     if len(ns) > 1:
-        unit = float(base)**Hx(ns[1], base=base, symbols=symbols, d_sep=d_sep, k_seps=k_seps, e_sep=e_sep)
+        unit = float(base)**Hx(
+            ns[1], base=base, symbols=symbols,
+            d_sep=d_sep, k_seps=k_seps, e_sep=e_sep)
         n = ns[0]
     else:
         unit = 1.
@@ -112,6 +128,13 @@ def Hx(n: str, base:int=0x10, symbols:dict=HX_SYMBOLS, d_sep='.', k_seps=" ,", e
     ans *= sign * unit
     return ans
 
+def Tx(n:str, symbols:dict=TX_SYMBOLS, **kwargs) -> float:
+    """Convert Base Dx32 str to float.
+    
+    See Hx() for more info.
+    """
+    return Hx(n, base=0x20, symbols=symbols, **kwargs)
+
 
 
 def presi_Hx(
@@ -119,7 +142,7 @@ def presi_Hx(
     sc: int = 0x80,
     stop_when_precise: bool = True,
     base: int = 0x10,
-    symbols_inv: dict = HX_SYMBOLS_ONKIO_inv,
+    symbols_inv: dict = HX_SYMBOLS_inv,
     d_sep: str = '.',
     e_sep: None|str = None, # 'p',
     prefix: None|str = None,
@@ -195,6 +218,19 @@ def presi_Hx(
     
     return ans
 
+def presi_Tx(
+    n: float|units.Quantity,
+    prefix: str = 'Tx ',
+    symbols_inv:dict=TX_SYMBOLS_inv,
+    **kwargs,
+) -> str:
+    """Convert Base Dx32 float to str.
+
+    See presi_Hx() for more info.
+    """
+    return presi_Hx(n, base=0x20, prefix=prefix, symbols_inv=symbols_inv, **kwargs)
+
+
 
 
 def factorize(n: int) -> list[int]:
@@ -219,17 +255,23 @@ get_R = lambda theta_deg, d: np.tan(theta_deg/2/180*np.pi)*d
 
 
 
+
+
+
 # === Unit System (Base) ===
 
 
 
 # --- SI Units ---
 
+# Earth size reference
+_WGS84_DEF = (6378137.0*units.m, 6356752.314245*units.m)
+
 # si units
 u_si_defs : dict[str, units.UnitBase] = {
     v: getattr(units, v)
     for v in [
-        'm', 'cm', 'km', 'Rearth', 'au', 'lyr', 'pc', 'Mpc',
+        'm', 'cm', 'km', 'au', 'lyr', 'pc', 'Mpc', # 'Rearth'
         'kg', 'g', 't',
         's', 'h', 'd', 'yr',
         'K', 'deg_C',
@@ -240,6 +282,7 @@ u_si_defs : dict[str, units.UnitBase] = {
 }
 units.def_unit('kph', units.km / units.h, namespace=u_si_defs)
 units.def_unit('mph', units.imperial.mi / units.h, namespace=u_si_defs)
+units.def_unit('Rearth', ((_WGS84_DEF[0]**2*_WGS84_DEF[1])**(1/3)).to(units.km), namespace=u_si_defs)
 
 
 
@@ -372,6 +415,9 @@ u_csl_base['angl'] = u_csl_defs['deg']   = units.deg
 
 
 
+
+
+
 # === Unit System (Expansion) ===
 
 
@@ -437,6 +483,14 @@ units.def_unit(
 
 
 # csl unit extra defs
+#    dist
+units.def_unit(
+    # Earth size is assumed shrinked in CSL
+    #    so we don't need to rescale everything when importing shapefiles from Carto to QGIS
+    #    in order to have the correct latitude/longitude info
+    #    I might decide to change this later
+    ['Rearth_csl', 'CSL_Rearth'], ((_WGS84_DEF[0]**2*_WGS84_DEF[1])**(1/3)).to_value(units.m)*u_csl_defs['m_csl'],
+    prefixes=True, namespace=u_csl_defs)
 #    mass
 units.def_unit(
     ['t_csl', 'CSL_t', 'ton_csl', 'CSL_ton'], 1e3*u_csl_defs['kg_csl'],
@@ -497,6 +551,151 @@ u = Unuoj(u_rdo_base, u_rdo_defs | u_nat_defs | u_si_defs | u_csl_defs)
 # track gauges
 track_standard_gauge = (4*units.imperial.foot + 8.5 * units.imperial.inch).si
 track_rdo_gauge = 3/16 * u_rdo_base['dist'] # i.e., np.pi*np.e/6 * u_rdo['dist']
+
+
+
+
+
+
+# === Coordinates and Post Codes ===
+
+
+
+class TeraKoordinato:
+    """Earth Coordinates."""
+    
+    _WGS84 = tuple([x.to_value(u.m) * u.m_csl for x in _WGS84_DEF])
+    
+    def __init__(
+        self,
+        lon: units.Quantity[u.deg],
+        lat: units.Quantity[u.deg],
+        alt: units.Quantity[u.U],
+    ):
+        self._TeroP = self._WGS84
+        self.lon = lon.to(u.deg) % (360*u.deg)    # guaranteed to be within [0, 360]
+        self.lat = lat
+        self.alt = alt
+
+    @property
+    def colat(self):
+        return 90*u.deg - self.lat
+
+    def normalize_offset(
+        self,
+        offset: None
+    ) -> tuple[
+        units.Quantity[u.deg],    # lon
+        units.Quantity[u.deg],    # lat
+        units.Quantity[u.U],      # alt
+    ]:
+        if offset is None:
+            offset = [0*u.deg, 0*u.deg, 0*u.m_csl]
+        elif isinstance(offset, dict):
+            offset_new = [0*u.deg, 0*u.deg, 0*u.m_csl]
+            if 'lon' in offset:
+                offset_new[0] = offset['lon']
+            if 'lat' in offset:
+                offset_new[1] = offset['lat']
+            if 'alt' in offset:
+                offset_new[2] = offset['alt']
+            offset = self.normalize_offset(offset_new)
+        elif isinstance(offset, (tuple, list)):
+            try: offset[1].to(u.deg)
+            except UnitConversionError:
+                offset = list(offset)
+                try:
+                    # approx- assume Earth is a sphere (instead of an ellipse)
+                    offset[1] = ((offset[1].to(u.m_csl) / ((self._TeroP[0]+self._TeroP[1])/2))*u.rad)
+                except UnitConversionError:
+                    raise ValueError("offset[1] should be latitude changes in either degrees or in meters")
+                finally:
+                    offset[1] = offset[1].to(u.deg)    # needed for lon conversion from m to deg
+            try: offset[0].to(u.deg)
+            except UnitConversionError:
+                offset = list(offset)
+                try:
+                    offset[0] = ((offset[0].to(u.m_csl) / self._R_at_lat(self.lat + offset[1]))*u.rad).to(u.deg)
+                except UnitConversionError:
+                    raise ValueError("offset[0] should be longitude changes in either degrees or in meters")
+            try: offset[2].to(u.m_csl)
+            except UnitConversionError:
+                offset = list(offset)
+                raise ValueError("offset[2] should be altitude changes in meters")
+        return tuple(offset)
+
+    def _R_at_lat(self, lat=None):
+        """Return Circles of latitude radius"""
+        a, b = self._TeroP
+        if lat is None: lat = self.lat
+        return a / np.sqrt(1 + (a/b*np.tan(lat))**2)
+
+    def get_new_from_offset(
+        self,
+        offset: None|tuple[units.Quantity[u.deg], units.Quantity[u.deg], units.Quantity[u.U]] = None,
+    ):
+        offset = self.normalize_offset(offset)
+        return TeraKoordinato(self.lon+offset[0], self.lat+offset[1], self.alt+offset[2])
+
+    def get_posxkodo(
+        self,
+        offset: None|tuple[units.Quantity[u.deg], units.Quantity[u.deg], units.Quantity[u.U]] = None,
+    ) -> str:
+        """Get post code from coordinates."""
+        loko = self.get_new_from_offset(offset)
+        p_nd = {    # n digits
+            # 'cxelo': 0,    # cell index
+            # 'sn': 0,       # S -> N
+            # 'kr': 0,       # K -> R
+            'lat': 4,
+            'lon': 4,
+            'alt': 3,      # altitude
+            'kon': 1,      # verify - must init as zero
+        }
+        pdat = {k: 0 for k in p_nd}
+
+        pdat['lat'] = int(np.floor(loko.colat.to_value(u.uCk)*2) // 0x1000)
+        pdat['lon'] = int(np.floor(loko.lon.to_value(u.uCk)) // 0x1000)
+        assert 0 <= pdat['lat'] and pdat['lat'] <= 0x100000
+        assert 0 <= pdat['lon'] and pdat['lon'] <= 0x100000
+
+
+        # alt_kodo_N = int(loko.alt.to_value(u.U)*4 + 0x4000)
+        pdat['alt'] = int(np.floor(loko.alt.to_value(u.U)*4)*2)
+        if pdat['alt'] < 0:    # last digit is odd if below sea level, even if otherwise
+            pdat['alt'] = -pdat['alt'] - 1
+        if pdat['alt'] >= 0x8000:
+            raise ValueError(f"Altitude out of range [{-(1*u.GU-2*u.m_csl).to(u.m_csl)}, {(1*u.GU).to(u.m_csl)})")
+
+        pdat['kon'] = np.sum([
+            Tx(i)
+            for k, v in pdat.items()
+            for i in presi_Tx(v, prefix='', e_sep='')
+        ]) % 0x20
+        
+
+        pstr = {k: presi_Tx(v, prefix='', e_sep='') for k, v in pdat.items()}
+        for k in pstr:
+            if len(pstr[k]) < p_nd[k]:
+                pstr[k] = '0' * (p_nd[k] - len(pstr[k])) + pstr[k]
+        
+
+        
+        # raise NotImplementedError
+
+
+        # posxkodo = f"{pstr['cxelo']}-{pstr['sn']}{pstr['kr']}-{pstr['alt']}{pstr['kon']}"
+        posxkodo = f"{pstr['lat']}-{pstr['lon']}-{pstr['alt']}{pstr['kon']}"
+        return posxkodo
+
+
+
+LOKOJ: dict[str: TeraKoordinato] = {}
+LOKOJ['Nul'] = TeraKoordinato(lon=   0.0 *u.deg, lat=  0.0 *u.deg, alt=0*u.U)
+LOKOJ['OC' ] = TeraKoordinato(lon=-140.25*u.deg, lat=-56.25*u.deg, alt=0*u.U)
+LOKOJ['RdO'] = LOKOJ['OC']
+
+
 
 
 

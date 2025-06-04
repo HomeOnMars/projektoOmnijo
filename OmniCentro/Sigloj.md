@@ -241,6 +241,7 @@ Using the leading digit for identifying districts and areas:
 
 | En esperanto  <br>In Esperanto | En la angla  <br>In English |
 | ------------------------ | ------------------------ |
+| Vojprizorgado-Servo      | Road Maintenance Service |
 | Buso-Korto               | Bus Depot                |
 | Fervojo-Korto            | Rail Yard                |
 | Metroo-Korto             | Subway Yard              |
@@ -272,6 +273,10 @@ Using the leading digit for identifying districts and areas:
 | Transformilejo           | Transformer station      |
 | Akumulatorejo            | (Emergency) Battery Station |
 | Akvobaraĵo               | Dam                      |
+|||
+| Akvopurigejo             | Water Treatment Plant    |
+| Akvopumpejo              | Water Pumping Station    |
+
 
 References:
 

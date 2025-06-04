@@ -65,8 +65,9 @@ Changes of Esperanto++ from Esperanto include:
   Thousands separator (decimal) / ten-thousands separator (hexadecimal) is
   space(` `) instead of `.`;<!-- markdownlint-disable-line no-space-in-code -->
 - Marking numbers as decimal ('Dekuma') or hexadecimal ('Hekuma'):
-  - Dekuma: prefixing `Dx`, or add a subscript $?_D$;
-  - Hekuma: prefixing `Hx`, or add a subscript $?_H$;
+  - Dekuma  (base Dx10): prefixing `Dx`, or add a subscript $?_D$;
+  - Hekuma  (base Dx16): prefixing `Hx`, or add a subscript $?_H$;
+  - Trekuma (base Dx32): prefixing `Tx`, or add a subscript $?_T$;
 - Built-in support for *hexadecimal* algebra:
   - `Δ λ Π Σ Υ Ψ` written/pronounced as `del lom nak sig gan fus`;
   - `hek`    (H) for Dx           16 (= 2^Dx4,  or Hx          10);
