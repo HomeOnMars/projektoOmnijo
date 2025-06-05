@@ -32,7 +32,15 @@ from numpy import pi, e
 from astropy import constants as const
 from astropy import units
 from astropy.units import UnitConversionError
-# from astropy.coordinates import EarthLocation
+POVI_HEALPY: bool = False
+try:
+    import healpy
+    POVI_HEALPY = True
+except ModuleNotFoundError as e:
+    print(
+        f"Warning: healpy not found ({e})\n",
+        "post-code related calculations are disabled.")
+    
 
 
 
@@ -43,22 +51,39 @@ from astropy.units import UnitConversionError
 
 
 
+# Note: '-' and '#' must not in below dicts
+
 # base 0x10
-HX_SYMBOLS_ASCII = {
-    k: int(k, base=16) for k in '0123456789ABCDEFabcdef'
+HX_SYMBOLS_DICT : dict[str, dict[str, int]] = {
+    'ASCII': {k: int(k, base=16) for k in '0123456789ABCDEFabcdef'},
+    'ONKIO': {k: i for i, k in enumerate('0123456789ΔλΠΣΥΨ')},
 }
-HX_SYMBOLS_ONKIO = {
-    k: i for i, k in enumerate('0123456789ΔλΠΣΥΨ')
+HX_SYMBOLS_DICT['ASCII']['Z'] = HX_SYMBOLS_DICT['ASCII']['z'] = 0xD
+HX_SYMBOLS_DICT['ASCII']['Y'] = HX_SYMBOLS_DICT['ASCII']['y'] = 0xE
+HX_SYMBOLS_DICT['ASCII']['W'] = HX_SYMBOLS_DICT['ASCII']['w'] = 0xF
+HX_SYMBOLS = HX_SYMBOLS_DICT['ASCII'] | HX_SYMBOLS_DICT['ONKIO']
+
+HX_SYMBOLS_INV_DICT = {
+    c: {v: k for k, v in HX_SYMBOLS_DICT[c].items()}
+    for c in {'ONKIO'}
 }
-HX_SYMBOLS_ONKIO_inv = {v: k for k, v in HX_SYMBOLS_ONKIO.items()}
-HX_SYMBOLS = HX_SYMBOLS_ASCII | HX_SYMBOLS_ONKIO
-HX_SYMBOLS_inv = HX_SYMBOLS_ONKIO_inv
+HX_SYMBOLS_INV_DICT['ASCII'] = {
+    HX_SYMBOLS_DICT['ASCII'][k]: k
+    for k in '0123456789ABCDEF'
+}
+HX_SYMBOLS_INV = HX_SYMBOLS_INV_DICT['ONKIO']
 
 # base 0x20
-TX_SYMBOLS = {
-    k: i for i, k in enumerate('0123456789ΔλΠΣΥΨACEFGHJKLMNPRTUX')
+TX_SYMBOLS_DICT : dict[str, dict[str, int]] = {
+    'ASCII': {k: i for i, k in enumerate('0123456789ABCZYWQDEFGHJKMNPRSTVX')},
+    'ONKIO': {k: i for i, k in enumerate('0123456789ΔλΠΣΥΨĈDEFGHJKMNPRŜTŬX')},
 }
-TX_SYMBOLS_inv = {v: k for k, v in TX_SYMBOLS.items()}
+TX_SYMBOLS = TX_SYMBOLS_DICT['ASCII'] | TX_SYMBOLS_DICT['ONKIO']
+TX_SYMBOLS_INV_DICT = {
+    c: {v: k for k, v in TX_SYMBOLS_DICT[c].items()}
+    for c in {'ASCII', 'ONKIO'}
+}
+TX_SYMBOLS_INV = TX_SYMBOLS_INV_DICT['ONKIO']
 
 # translate Epopo characters to ASCII characters using x notation
 ASCIIIFY_CHR = {
@@ -78,7 +103,14 @@ ASCIIIFY = {ord(k): v for k, v in ASCIIIFY_CHR.items()}
 
 
 
-def Hx(n:str, base:int=0x10, symbols:dict=HX_SYMBOLS, d_sep='.', k_seps=" ,", e_sep='p') -> float:
+def Hx(
+    n: str,
+    base: int = 0x10,
+    symbols: dict = HX_SYMBOLS,
+    d_sep = '.',
+    k_seps = " ,",
+    e_sep = 'p',
+) -> float:
     """Convert Hexadecimal str to float.
 
     d_sep: decimal separator
@@ -142,7 +174,7 @@ def presi_Hx(
     sc: int = 0x80,
     stop_when_precise: bool = True,
     base: int = 0x10,
-    symbols_inv: dict = HX_SYMBOLS_inv,
+    symbols_inv: dict = HX_SYMBOLS_INV,
     d_sep: str = '.',
     e_sep: None|str = None, # 'p',
     prefix: None|str = None,
@@ -221,7 +253,7 @@ def presi_Hx(
 def presi_Tx(
     n: float|units.Quantity,
     prefix: str = 'Tx ',
-    symbols_inv:dict=TX_SYMBOLS_inv,
+    symbols_inv:dict=TX_SYMBOLS_INV,
     **kwargs,
 ) -> str:
     """Convert Base Dx32 float to str.
@@ -549,8 +581,8 @@ u_csl = unitsCSL = Unuoj(u_csl_base, u_csl_defs)
 u = Unuoj(u_rdo_base, u_rdo_defs | u_nat_defs | u_si_defs | u_csl_defs)
 
 # track gauges
-track_standard_gauge = (4*units.imperial.foot + 8.5 * units.imperial.inch).si
-track_rdo_gauge = 3/16 * u_rdo_base['dist'] # i.e., np.pi*np.e/6 * u_rdo['dist']
+reldistanco_std = (4*units.imperial.foot + 8.5 * units.imperial.inch).si
+reldistanco_rdo = 3 * u.hU
 
 
 
@@ -561,34 +593,58 @@ track_rdo_gauge = 3/16 * u_rdo_base['dist'] # i.e., np.pi*np.e/6 * u_rdo['dist']
 
 
 
-class TeraKoordinato:
-    """Earth Coordinates."""
+type TeraLokoOffsetTipo = None | tuple[
+    units.Quantity[units.deg | units.m],    # lon
+    units.Quantity[units.deg | units.m],    # lat
+    units.Quantity[units.m],      # alt
+] | dict[str, units.Quantity[units.deg | units.m]]
+
+class TeraLoko:
+    """Locations on Earth (defined by coordinates)."""
     
     _WGS84 = tuple([x.to_value(u.m) * u.m_csl for x in _WGS84_DEF])
+    # healpy nside parameter- decide HEALPix Resolution
+    #    npix = 12 * nside**2
+    # So keep it a 32**X*4,
+    # so the result index * 2 express well with our base-32 system
+    # *** DO NOT CHANGE THIS UNLESS YOU KNOW WHAT YOU ARE DOING ***
+    _NSIDE = 32**4*4
     
     def __init__(
         self,
-        lon: units.Quantity[u.deg],
-        lat: units.Quantity[u.deg],
-        alt: units.Quantity[u.U],
+        posxkodo: None|str = None,
+        lon: units.Quantity[units.deg] = 0*u.deg,
+        lat: units.Quantity[units.deg] = 0*u.deg,
+        alt: units.Quantity[units.m]   = 0*u.U,
     ):
         self._TeroP = self._WGS84
+        if posxkodo is not None:
+            loko = self._from_posxkodo(posxkodo)
+            lon, lat, alt = loko['lon'], loko['lat'], loko['alt']
         self.lon = lon.to(u.deg) % (360*u.deg)    # guaranteed to be within [0, 360]
         self.lat = lat
         self.alt = alt
 
     @property
     def colat(self):
+        """Co-latitude"""
         return 90*u.deg - self.lat
+
+    def _R_at_lat(self, lat=None):
+        """Return Circles of latitude radius"""
+        a, b = self._TeroP
+        if lat is None: lat = self.lat
+        return a / np.sqrt(1 + (a/b*np.tan(lat))**2)
 
     def normalize_offset(
         self,
         offset: None
     ) -> tuple[
-        units.Quantity[u.deg],    # lon
-        units.Quantity[u.deg],    # lat
-        units.Quantity[u.U],      # alt
+        units.Quantity[units.deg],    # lon
+        units.Quantity[units.deg],    # lat
+        units.Quantity[units.m],      # alt
     ]:
+        """Interpret offset from center and convert to default format."""
         if offset is None:
             offset = [0*u.deg, 0*u.deg, 0*u.m_csl]
         elif isinstance(offset, dict):
@@ -624,75 +680,197 @@ class TeraKoordinato:
                 raise ValueError("offset[2] should be altitude changes in meters")
         return tuple(offset)
 
-    def _R_at_lat(self, lat=None):
-        """Return Circles of latitude radius"""
-        a, b = self._TeroP
-        if lat is None: lat = self.lat
-        return a / np.sqrt(1 + (a/b*np.tan(lat))**2)
-
     def get_new_from_offset(
         self,
-        offset: None|tuple[units.Quantity[u.deg], units.Quantity[u.deg], units.Quantity[u.U]] = None,
+        offset: TeraLokoOffsetTipo = None,
     ):
         offset = self.normalize_offset(offset)
-        return TeraKoordinato(self.lon+offset[0], self.lat+offset[1], self.alt+offset[2])
+        return TeraLoko(
+            lon=self.lon+offset[0],
+            lat=self.lat+offset[1],
+            alt=self.alt+offset[2])
+
+
 
     def get_posxkodo(
         self,
-        offset: None|tuple[units.Quantity[u.deg], units.Quantity[u.deg], units.Quantity[u.U]] = None,
+        offset: TeraLokoOffsetTipo = None,
+        chrset: str = 'ONKIO',
     ) -> str:
-        """Get post code from coordinates."""
+        """Get post code from coordinates.
+
+        Output postcode has a length of 11 ~ 14 digits,
+            depending on the altitude info.
+            Detailed structure see code.
+        
+        Parameters
+        ----------
+
+        Offset: None | (d_lon, d_lat, d_alt) | {
+                'lon': d_lon, 'lat': d_lat, 'alt': d_alt}
+            Use offset to specify the specifc location with respect to self,
+            otherwise return self's postcode.
+
+        chrset: str ('ASCII' | 'ONKIO')
+            Output base-32 character style
+
+
+        Notes
+        -----
+        Uses HEALPix (Górski et al., 2005) under the hood.
+        See https://iopscience.iop.org/article/10.1086/427976
+            for more info on the algorithm.
+        Also see https://healpy.readthedocs.io/en/latest/
+            for the python wrapper module 'healpy' doc.
+
+        Will raise ModuleNotFoundError if healpy module is not available.
+        """
+        if not POVI_HEALPY:
+            raise ModuleNotFoundError("healpy not found, cannot do post code.")
+        Tx_symbols_inv = TX_SYMBOLS_INV_DICT[chrset]
+
         loko = self.get_new_from_offset(offset)
         p_nd = {    # n digits
-            # 'cxelo': 0,    # cell index
-            # 'sn': 0,       # S -> N
-            # 'kr': 0,       # K -> R
-            'lat': 4,
-            'lon': 4,
-            'alt': 3,      # altitude
-            'kon': 1,      # verify - must init as zero
+            'cxelo': 10,    # cell index
+            'alt': 0,       # altitude - 1~3 digits
+            # 'kon': 1,     # verify - must init as zero
         }
         pdat = {k: 0 for k in p_nd}
 
-        pdat['lat'] = int(np.floor(loko.colat.to_value(u.uCk)*2) // 0x1000)
-        pdat['lon'] = int(np.floor(loko.lon.to_value(u.uCk)) // 0x1000)
-        assert 0 <= pdat['lat'] and pdat['lat'] <= 0x100000
-        assert 0 <= pdat['lon'] and pdat['lon'] <= 0x100000
-
+        pdat['cxelo'] = healpy.ang2pix(
+            self._NSIDE,
+            loko.colat.to_value(u.rad),
+            loko.lon.to_value(u.rad),
+            nest=True,  # always use nest formulation
+                        # so existing digits don't change
+                        # when add more resolutions
+        )*2
 
         # alt_kodo_N = int(loko.alt.to_value(u.U)*4 + 0x4000)
-        pdat['alt'] = int(np.floor(loko.alt.to_value(u.U)*4)*2)
-        if pdat['alt'] < 0:    # last digit is odd if below sea level, even if otherwise
-            pdat['alt'] = -pdat['alt'] - 1
+        pdat['alt'] = int(np.floor(loko.alt.to_value(u.U)*8))
+        if pdat['alt'] < 0:
+            # last digit of cxelo is odd number if below sea level,
+            # even number if above
+            pdat['cxelo'] += 1
+            pdat['alt'] *= -1
         if pdat['alt'] >= 0x8000:
-            raise ValueError(f"Altitude out of range [{-(1*u.GU-2*u.m_csl).to(u.m_csl)}, {(1*u.GU).to(u.m_csl)})")
-
-        pdat['kon'] = np.sum([
-            Tx(i)
-            for k, v in pdat.items()
-            for i in presi_Tx(v, prefix='', e_sep='')
-        ]) % 0x20
+            raise ValueError(
+                f"Altitude out of range" +
+                f"[{-(1*u.GU-1*u.m_csl).to(u.m_csl)}, {(1*u.GU).to(u.m_csl)})")
         
 
-        pstr = {k: presi_Tx(v, prefix='', e_sep='') for k, v in pdat.items()}
+        pstr = {
+            k: presi_Tx(v, prefix='', e_sep='', symbols_inv=Tx_symbols_inv)
+            for k, v in pdat.items()
+        }
         for k in pstr:
+            if pstr[k] == '0':
+                pstr[k] = ''
             if len(pstr[k]) < p_nd[k]:
                 pstr[k] = '0' * (p_nd[k] - len(pstr[k])) + pstr[k]
+
+        posxkodo = (
+            f"{pstr['cxelo'][:5]}-"     # city & district (res: ~6.4km)
+            f"{pstr['cxelo'][5:9]}-"    # street (res: ~6.2m)
+            f"{pstr['cxelo'][9:]}"      # door (res: ~1.6m)
+            f"{pstr['alt'][::-1]}"      # altitude (res: 1m)
+        )
+
+        # add verification digit
+        pdat['kon'] = np.sum([
+            Tx(v) for v in posxkodo
+        ]) % 0x20
+
+        pstr['kon'] = presi_Tx(
+            pdat['kon'], prefix='', e_sep='', symbols_inv=Tx_symbols_inv)
         
+        assert len(pstr['kon']) == 1
+        posxkodo += pstr['kon']
 
+        return posxkodo
+    
+
+
+    @classmethod
+    def normalize_posxkodo(cls, posxkodo: str) -> str:
+        """Normalize post code into str without hyphen; also check validity"""
+
+        pstr_list = posxkodo.split('-')
+
+        if not pstr_list or not pstr_list[0]:
+            raise ValueError(
+                f"postcode '{posxkodo}' is empty, or its first field is empty.")
         
-        # raise NotImplementedError
+        if pstr_list[0][0] not in TX_SYMBOLS:
+            raise NotImplementedError('City Name shorthand not yet implemented')
+            # add shorthand comprehansion code here
 
+        posxkodo = ''.join(pstr_list)
 
-        # posxkodo = f"{pstr['cxelo']}-{pstr['sn']}{pstr['kr']}-{pstr['alt']}{pstr['kon']}"
-        posxkodo = f"{pstr['lat']}-{pstr['lon']}-{pstr['alt']}{pstr['kon']}"
+        if len(posxkodo) < 11:
+            raise ValueError("Postcode too short")
+
+        for c in posxkodo:
+            if c not in TX_SYMBOLS:
+                raise ValueError("Unrecognized Character in post code")
+        
+        # check integrity
+        kon = np.sum([
+            Tx(v) for v in posxkodo[:-1]
+        ]) % 0x20
+        kon_v = Tx(posxkodo[-1])
+        if kon != kon_v:
+            raise ValueError(
+                "Verification failed: "
+                f"Last digit should be of value {kon}, but it is {kon_v}.")
+        
         return posxkodo
 
 
+    @classmethod
+    def _from_posxkodo(cls, posxkodo: str):
+        """Return location dictionary from post code.
+        
+        see TeraLoko.get_posxkodo() for more info.
+        """
+        if not POVI_HEALPY:
+            raise ModuleNotFoundError("healpy not found, cannot do post code.")
 
-LOKOJ: dict[str: TeraKoordinato] = {}
-LOKOJ['Nul'] = TeraKoordinato(lon=   0.0 *u.deg, lat=  0.0 *u.deg, alt=0*u.U)
-LOKOJ['OC' ] = TeraKoordinato(lon=-140.25*u.deg, lat=-56.25*u.deg, alt=0*u.U)
+        posxkodo = TeraLoko.normalize_posxkodo(posxkodo)
+
+        # reconstruct lat and lon
+        pdat = {
+            # note: raw data from posxkodo, not actual loko yet
+            'cxelo': int(Tx(posxkodo[:10])),
+            'alt'  : int(Tx(posxkodo[10:-1])),
+            'kon'  : int(Tx(posxkodo[-1])),
+        }
+        
+        colat, lon = healpy.pix2ang(cls._NSIDE, pdat['cxelo'] // 2, nest=True)
+        colat *= u.rad
+        lon *= u.rad
+
+        loko = {
+            'lon': lon.to(u.deg),
+            'lat': 90*u.deg - colat.to(u.deg),
+            'alt': pdat['alt'] * u.m_csl * (-1 if pdat['cxelo'] % 2 else 1),
+        }
+
+        return loko
+    
+    @classmethod
+    def from_posxkodo(cls, posxkodo: str):
+        """Return new class from post code.
+        
+        see TeraLoko.get_posxkodo() for more info.
+        """
+        return TeraLoko(posxkodo=posxkodo)
+
+
+
+LOKOJ: dict[str: TeraLoko] = {}
+LOKOJ['Nul'] = TeraLoko()
+LOKOJ['OC' ] = TeraLoko(lon=-140.25*u.deg, lat=-56.25*u.deg, alt=0*u.U)
 LOKOJ['RdO'] = LOKOJ['OC']
 
 
@@ -713,8 +891,8 @@ if __name__ == '__main__':
         f"{k:4} unit: {(1*u_rdo_base[k]).si:8.6f} \t [naturalUnit: {(1*v).si:.4e}]"
         for k, v in u_nat_base.items()]))
     print()
-    print(f"dist: {track_standard_gauge = :7.4f} is {track_standard_gauge.to(u_rdo_base['dist']):7.5f}")
-    print(f"dist: {track_rdo_gauge.si   = :7.4f} is {track_rdo_gauge.to(u_rdo_base['dist']):7.5f}")
+    print(f"dist: {reldistanco_std = :7.4f} is {reldistanco_std.to(u_rdo_base['dist']):7.5f}")
+    print(f"dist: {reldistanco_rdo.si   = :7.4f} is {reldistanco_rdo.to(u_rdo_base['dist']):7.5f}")
     print(f"temp: {temp_refs_C} is {temp_refs_K}, which is {temp_refs_K.to(u_rdo_base['temp'])} ")
 
     # sidereal year <https://en.wikipedia.org/wiki/Sidereal_year> (2025-02-28)
@@ -735,4 +913,17 @@ if __name__ == '__main__':
     u_nat.enable(overwrite=True)
     u_rdo.enable()
     u.enable()
-    print("Done.")
+    print("Pass.")
+
+    print("\nTesting Hx and Tx Symbols integrity...", end='')
+    assert not set('-#\'\"').intersection(set(HX_SYMBOLS.keys()))
+    assert not set('-#\'\"').intersection(set(TX_SYMBOLS.keys()))
+    for c, ss in HX_SYMBOLS_INV_DICT.items():
+        for i in range(0x10):
+            assert i in ss
+            assert ss[i] in HX_SYMBOLS_DICT[c]
+    for c, ss in TX_SYMBOLS_INV_DICT.items():
+        for i in range(0x20):
+            assert i in ss
+            assert ss[i] in TX_SYMBOLS_DICT[c]
+    print("Pass.")
