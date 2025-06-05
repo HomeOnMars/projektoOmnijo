@@ -842,7 +842,7 @@ class TeraLoko:
         pdat = {
             # note: raw data from posxkodo, not actual loko yet
             'cxelo': int(Tx(posxkodo[:10])),
-            'alt'  : int(Tx(posxkodo[10:-1])),
+            'alt'  : int(Tx(posxkodo[10:-1][::-1])),
             'kon'  : int(Tx(posxkodo[-1])),
         }
         
@@ -926,4 +926,27 @@ if __name__ == '__main__':
         for i in range(0x20):
             assert i in ss
             assert ss[i] in TX_SYMBOLS_DICT[c]
+    print("Pass.")
+
+    print("\nTesting Post Code Calc System...")
+    print(
+        "\tZero point (lat=lon=alt=0) postcode: "
+        f"{LOKOJ['Nul'].get_posxkodo() = }")
+    print(f"\tOC postcode: {LOKOJ['OC'].get_posxkodo() = }")
+    assert TeraLoko.normalize_posxkodo(
+        LOKOJ['Nul'].get_posxkodo()) == '4M00000000Ŝ' # '4M000-0000-0000Ŝ'
+    assert TeraLoko.normalize_posxkodo(
+        LOKOJ['OC' ].get_posxkodo()) == 'Δ74D9M4TRΥD' # 'Δ74D9-M4TR-Υ000D'
+    print("\tRandomly generating locations and post codes...")
+    for _ in range(0x10):
+        loko = TeraLoko(
+            lat = (np.random.rand() * 180 - 90)*u.deg,
+            lon = np.random.rand() * 360 * u.deg,
+            alt = (np.random.rand() * 65536 - 32768) * u.m_csl,
+        )
+        p1 = loko.get_posxkodo()
+        p2 = TeraLoko(p1).get_posxkodo()
+        print(f"\t\t{p1:15}\t{p2:15}"
+              f"\t{loko.lat = }, {loko.lon = }, {loko.alt = }")
+        assert p1 == p2
     print("Pass.")
