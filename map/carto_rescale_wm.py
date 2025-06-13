@@ -35,15 +35,19 @@ gdal.UseExceptions()
 
 
 def rescale_wm(
+    scale : float = 4,    # new / old
+    # folder: remember the 'sep' at the end
+    folder: str   = f'Data{sep}WorldMap_x4{sep}',
     dry_run: bool = False,
     verbose: bool = True,
 ):
     # --- init ---
-    scale = 4    # new / old
+    
+    if verbose:
+        print()
+        subprocess.run(['pwd', '-P'])
 
-    subprocess.run(['pwd', '-P'])
-
-    file = gdal.Open(f'latest_worldmap{sep}GeoTIFF{sep}Terrain.tif')
+    file = gdal.Open(f'{folder}GeoTIFF{sep}Terrain.tif')
     trans_pars = file.GetGeoTransform()
     nx, ny = file.RasterXSize, file.RasterYSize
     # calc center coord, which will be maintained the same
@@ -69,7 +73,8 @@ def rescale_wm(
         ]
         trans_pars_new[0] = x0 - nx/2 * trans_pars_new[1] - ny/2 * trans_pars_new[2]
         trans_pars_new[3] = y0 - nx/2 * trans_pars_new[4] - ny/2 * trans_pars_new[5]
-    print(f"{nx, ny = }\t{x0, y0 = }\n{trans_pars     = }\n{ullr = }")
+    if verbose:
+        print(f"{nx, ny = }\t{x0, y0 = }\n{trans_pars     = }\n{ullr = }")
 
     # --- prepare output ---
 
@@ -81,15 +86,15 @@ def rescale_wm(
         'gdal_translate',
         '-a_scale', f'{scale}',    # scale up height
         '-a_ullr', *[f"{par:.9f}" for par in ullr],
-        f'latest_worldmap{sep}GeoTIFF{sep}Terrain.tif',    # input
-        f'latest_worldmap{sep}GeoTIFF{sep}Terrain_corrected.tif'    # output
+        f'{folder}GeoTIFF{sep}Terrain.tif',    # input
+        f'{folder}GeoTIFF{sep}Terrain_corrected.tif'    # output
     ])
     cmds.append([
         'gdal_translate',
         '-a_scale', f'{scale}',    # scale up height
         '-a_ullr', *[f"{par:.9f}" for par in ullr],
-        f'latest_worldmap{sep}GeoTIFF{sep}Water.tif',    # input
-        f'latest_worldmap{sep}GeoTIFF{sep}Water_corrected.tif'    # output
+        f'{folder}GeoTIFF{sep}Water.tif',    # input
+        f'{folder}GeoTIFF{sep}Water_corrected.tif'    # output
     ])
 
     # --- run ---
@@ -103,6 +108,11 @@ def rescale_wm(
 
 
 if __name__ == '__main__':
-    rescale_wm(
-        dry_run = False,
-    )
+    for scale, folder in (
+        ( 4, f'Data{sep}WorldMap_x4{sep}',),
+        (64, f'Data{sep}WorldMap_x64{sep}',),
+    ):
+        rescale_wm(
+            scale=scale, folder=folder,
+            dry_run = False,
+        )
