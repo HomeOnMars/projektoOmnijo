@@ -273,6 +273,7 @@ Using the leading digit for identifying districts and areas:
 | Transformilejo           | Transformer station      |
 | Akumulatorejo            | (Emergency) Battery Station |
 | Akvobaraĵo               | Dam                      |
+| Defluejo                 | Spillway                 |
 |||
 | Akvopurigejo             | Water Treatment Plant    |
 | Akvopumpejo              | Water Pumping Station    |
