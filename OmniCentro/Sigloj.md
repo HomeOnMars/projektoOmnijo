@@ -190,19 +190,20 @@ Examples:
 Naming rules examples:
 
 - `Ab-O#1` (Good) as a short version  
-  of `Ab-Olivkronaĵo #1` (Good),  
-  or `Akvobaraĵo-Olivkronaĵo #1` (Meh),  
-  or `Olivkronaĵa Akvobaraĵo #1` (Good);
+  of `Ab-Olivkrono #1` (Good),  
+  or `Akvobaraĵo-Olivkrono #1` (Meh),  
+  or `Mt-Olivkrona Akvobaraĵo #1` (Good);
 - `Mt-O` (Good) as a short version  
-  of `Mt-Olivkronaĵo` (Good),  
-  or `Monto-Olivkronaĵo` (Good),  
-  or `Olivkronaĵa Monto` (Meh);
+  of `Mt-Olivkrono` (Good),  
+  or `Monto-Olivkrono` (Good),  
+  or `Olivkrona Monto` (Meh);
 - `Ŭj#Σm` for Motorway 13 N->S `ŬΣm`,  
   or `Aŭtovojo #Σm`;
-- `St-Olivkronaĵo #123` as a short version  
-  of `Olivkronaĵa Strato #123`,  
-  or `123 Olivkronaĵo St`;
-- `Stacidomo #E` and `Stacidomo #U` for train and bus station respectively;
+- `St-Olivkrono #123` as a short version  
+  of `Olivkrona Strato #123`,  
+  or `123 Olivkrono St`;
+- ~~`Stacidomo #E` and `Stacidomo #U` for train and bus station respectively~~  
+  (Just use `Stacidomo` so *Carto* Mod doesn't get confused);
 
 ### Distrikto Numerada Sistemo
 
@@ -213,21 +214,21 @@ Using the leading digit for identifying districts and areas:
 | Areo Numero | Proksimuma Loko | Siglo | Plena Nomo | Koloro |
 | --- | ---- | ----- | ----- | -------------- |
 | `0` |      |       | Interdistrikto (sen eksteraj konektoj)  <br>Interdistrict (no outside connections) | <span style="color:Tan">█ #D2B48C</span> |
-| `1` |  SK  | Mt-K  | Mt-Kuraĝecaĵo  | |
+| `1` |  SK  | Mt-K  | Mt-Kuraĝo      | |
 |     |  SK  | Vĝ-P  | Vilaĝo-Pioniro | <span style="color:Red">█ #FF0000</span> |
 | `2` |  SC  | Am-H  | Am-Hejmecaĵo   | |
-| `3` |  SR  | Mt-O  | Mt-Olivkronaĵo | <span style="color:DarkSeaGreen">█ #8FBC8F</span> |
-| `4` |  CK  | Me-H  | Me-Hejmecaĵo   | <span style="color:Silver">█ #C0C0C0</span> |
-| `5` |  CK  | Is-N  | Is-Niksinaĵo   | |
-| `6` |  CC  | Mt-H  | Mt-Hejmecaĵo   | |
-| `7` |  CC  | Mt-H  | Am-Fortikecaĵo | |
-| `8` |  CR  | Mt-E  | Mt-Esperecaĵo  | |
+| `3` |  SR  | Mt-O  | Mt-Olivkrono   | <span style="color:DarkSeaGreen">█ #8FBC8F</span> |
+| `4` |  CK  | Me-H  | Me-Hejmeco     | <span style="color:Silver">█ #C0C0C0</span> |
+| `5` |  CK  | Is-N  | Is-Niksino     | |
+| `6` |  CC  | Mt-H  | Mt-Hejmeco     | |
+| `7` |  CC  | Mt-H  | Am-Fortikeco   | |
+| `8` |  CR  | Mt-E  | Mt-Espero      | |
 | `9` |  CC  | ??-?  | Royal Palace (TBD)  | <span style="color:Beige">█ #F5F5DC</span> |
-| `Δ` |  NK  | Mt-F  | Mt-Fortikecaĵo | <span style="color:MediumPurple">█ #9370DB</span> |
-| `λ` |  NC  | Am-U  | Am-Unukornaĵo  | <span style="color:Thistle">█ #D8BFD8</span> |
-| `Π` |  NK  | Am-R  | Me-Raciecaĵo   | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
+| `Δ` |  NK  | Mt-F  | Mt-Fortikeco   | <span style="color:MediumPurple">█ #9370DB</span> |
+| `λ` |  NC  | Am-U  | Am-Unukorno    | <span style="color:Thistle">█ #D8BFD8</span> |
+| `Π` |  NK  | Am-R  | Me-Racieco     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 |     |  NK  | La-P  | La Pordego     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
-| `Σ` |  NR  | Am-R  | Am-Raciecaĵo   | |
+| `Σ` |  NR  | Am-R  | Am-Racieco     | |
 | ... |      |       |                | |
 | `Ψ` |      |       | Eksteraj Konektoj  <br>Outside connections | |
 | ... |      |       |                | |
@@ -273,6 +274,7 @@ Using the leading digit for identifying districts and areas:
 | Transformilejo           | Transformer station      |
 | Akumulatorejo            | (Emergency) Battery Station |
 | Akvobaraĵo               | Dam                      |
+| Defluejo                 | Spillway                 |
 |||
 | Akvopurigejo             | Water Treatment Plant    |
 | Akvopumpejo              | Water Pumping Station    |
