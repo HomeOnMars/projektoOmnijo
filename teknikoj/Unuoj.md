@@ -38,7 +38,7 @@ See [Wikipedia](https://en.wikipedia.org/wiki/Natural_units#Planck_units).
 > $G$ is the [gravitational constant](https://en.wikipedia.org/wiki/Gravitational_constant) (\~ strength of gravity per mass);  
 > $k_B$ is the [Boltzmann constant](https://en.wikipedia.org/wiki/Boltzmann_constant) (molecular energy scale per temperature).
 
-See also [Lingvo](../teknikajxoj/Lingvo.md#algebro) page for prefix acronyms
+See also [Lingvo](../teknikoj/Lingvo.md#algebro) page for prefix acronyms
 $H \  J \  G \  M \  U \  T \ I$ for
 Hx10, Hx100, Hx1000, Hx 1 0000 = 1p4, 1p8, 1pΠ, 1p40, etc;
 also for Hexadecimal pre/surfix *H* vs Decimal pre/surfix *D*.

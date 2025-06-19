@@ -422,7 +422,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   <span style="color:#95D0FC">la Arkitekto</span>
   to launch the third phase of their *crazy* plan:
   In which, OC's second layer is merely an entry point to the *third* layer,
-  planned to be 1 [GilUtro](../teknikajxoj/Unuoj.md#longeco) (~32km)
+  planned to be 1 [GilUtro](../teknikoj/Unuoj.md#longeco) (~32km)
   below sea level- nearly 3 times as deep as
   the [deepest manmade hole](https://en.wikipedia.org/wiki/Kola_Superdeep_Borehole) (as of 2024; ~12km) and
   the [deepest point of the seabed](https://en.wikipedia.org/wiki/Challenger_Deep) (~11km).
@@ -487,7 +487,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   Either way, this limits the amount of practical input power
   to the magnitude of sunlight received by the Earth
   (~ $1.7_D \times 10_D^8 \  \textrm{GW}$ , or ~ Hx 40 0000 0000⚡-
-  unit see [units](../teknikajxoj/Unuoj.md#potenco) page.).
+  unit see [units](../teknikoj/Unuoj.md#potenco) page.).
   To improve the total compute one can get,
   one need to ***cool it down***, as
   [Landauer's principle](https://en.wikipedia.org/wiki/Landauer%27s_principle)

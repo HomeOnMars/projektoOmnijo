@@ -57,9 +57,9 @@ and third closest being *Chile* \~Hx800 JU (\~Dx4100 km) away.
   it should be open ocean there in real life.
 
 [^Bulteno-Loko-2]: Length unit $\textrm{JU}$ is approximately 2km,
-  see [Unuoj | Units](../teknikajxoj/Unuoj.md#longeco) page for more details;  
+  see [Unuoj | Units](../teknikoj/Unuoj.md#longeco) page for more details;  
   Hx means hexadecimal,
-  see [Lingvo | Langauge](../teknikajxoj/Lingvo.md#algebro) page
+  see [Lingvo | Langauge](../teknikoj/Lingvo.md#algebro) page
   for more details.
 
 For more details,
@@ -75,7 +75,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 | Country Name            |   RdO   | La Regno de Omnijo       |
 | Central Authority Name  |   OCG   | Omnija Centra Gvidantaro |
 | Government Service Name |   OCR   | Omnija Centra Registaro  |
-| Official Currency       | OSR (🪙 / O$) | [Omnija Sejroj](../teknikajxoj/Unuoj.md#monero) |
+| Official Currency       | OSR (🪙 / O$) | [Omnija Sejroj](../teknikoj/Unuoj.md#monero) |
 
 | (Fikciaj) Fonaj Informoj  <br>(Fictional) Background Information | Priskribo  <br>Description |
 | :---------------- | ---- |
@@ -83,7 +83,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 | Registara Tipo  <br>Government Type   | Konstitucia Monarkio / Bonfara Diktaturo / Totalisma Reĝimo, depende de kiu vi demandas[^Bulteno-RegistaraTipo]. |
 | Urbaj Projektistoj  <br>City Designers | <span style="color:#95D0FC">La Arkitekto</span>  kaj  <span style="color:#D6B4FC">la Suvereno</span> de OCFI |
 | Reĝa Palaco  <br>Royal Palace | La Spajro-Singulariso |
-| Oficiala Lingvo  <br>Official Language | [*Esperanto++*](../teknikajxoj/Lingvo.md#lingvo), a.k.a. ***E++***, pronounced as `Epopo`.  <br>(Transitioning from English in the next 16 years.) |
+| Oficiala Lingvo  <br>Official Language | [*Esperanto++*](../teknikoj/Lingvo.md#lingvo), a.k.a. ***E++***, pronounced as `Epopo`.  <br>(Transitioning from English in the next 16 years.) |
 | Oficiala Religio  <br>Official Religion | Pastafarianismo[^Bulteno-Religio] (oficiala)<br>Homismo (maloficiala) |
 | Oficialaj Koloroj  <br>Official Colors   | <span style="color:Beige">Flavgriza/Beige #F5F5DC</span> [^Bulteno-Koloroj-Flavgriza]  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span> [^Bulteno-Koloroj-Bluo]  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span> [^Bulteno-Koloroj-Purpuro] |
 | Oficialaj Himno  <br>Official Anthem | *Oceans* (*Where Feet May Fail*), originally by Hillsong UNITED  <br>Modified acoustic E++ version[^Bulteno-Himno]. |

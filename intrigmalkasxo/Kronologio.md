@@ -28,7 +28,7 @@ Omnija Kronologio
 ### Priskribo
 
 2 reference points of time X, Y.
-Acronyms `J☾⚝⚻ĜĈŜ` see [Units](../teknikajxoj/Unuoj.md#tempo) page.
+Acronyms `J☾⚝⚻ĜĈŜ` see [Units](../teknikoj/Unuoj.md#tempo) page.
 
 #### Kronologio
 
@@ -100,4 +100,4 @@ Acronyms `J☾⚝⚻ĜĈŜ` see [Units](../teknikajxoj/Unuoj.md#tempo) page.
 | Y+8J2☾5⚻ |  mondo | **Pacification finalized**: War ended as major world powers (embarrassingly) withdrawn their war declarations, and so did Serena. |
 | Y+8J2☾1⚝ |  mondo | **Global desired intervention level survey**: <span style="color:Beige">Serena</span>/<span style="color:MediumPurple">ĜEJDA</span> sent out personalized surveys to everyone outside Omnijo to confirm their desired level of her interventions in their regions  <br>(such as in natural/man-made catastrophes like pandemic/famine, moral crisises like corruption/crime, personal optimizations such as life suggestions and guidances, etc etc) |
 | Y+8J2☾2⚝ |  mondo | <span style="color:Beige">Serena</span> publishs survey results and her intended intervention level in different regions  <br>At least one region on Earth will always remain under minimum interference to offer people a real choice to leave her rule |
-| Y+8J2☾2⚝ |  mondo | <span style="color:Beige">Serena</span> claims North Pole and Antarctica  <br>(i.e. Everything within 1 [MuniUtro](../teknikajxoj/Unuoj.md#longeco) radius of the geographic north pole, and everything south of 60°S) |
+| Y+8J2☾2⚝ |  mondo | <span style="color:Beige">Serena</span> claims North Pole and Antarctica  <br>(i.e. Everything within 1 [MuniUtro](../teknikoj/Unuoj.md#longeco) radius of the geographic north pole, and everything south of 60°S) |

@@ -102,7 +102,7 @@ Note that the letters are overlapping other acronyms in other categories - and t
 > [!NOTE]
 >
 > 1. H prefix is usually omitted.
-> 2. All Line numbers are ***hexadecimal*** (see [ONKIO table](../teknikajxoj/ONKIO.md#onkio-tablo) `0x3_` column for respective symbols of 10~15: `Δ λ Π Σ Υ Ψ`).
+> 2. All Line numbers are ***hexadecimal*** (see [ONKIO table](../teknikoj/ONKIO.md#onkio-tablo) `0x3_` column for respective symbols of 10~15: `Δ λ Π Σ Υ Ψ`).
 > 3. Bus Routes use 3 digits:  
 >    1st digit for local district number;  
 >    2nd digit is random (
@@ -157,15 +157,15 @@ Examples:
 |    Vd   | **V**i**d**o         | Vista            |
 |    Vĝ   | **V**ila**ĝ**o       | Village          |
 ||| <!-- Road types --> |
-|  ~~Vj~~ | ~~**V**o**j**o~~     | [Road](../teknikajxoj/Retoj.md#vojoj)  <br>(Deprecated[^Deprecated-Vj]) |
-|    Ej   | f**E**rvo**j**o      | [Railway](../teknikajxoj/Retoj.md#metrooj--personaj-fervojoj) |
-|  Ej-K   | Ej-**K**argo         | [Cargo railway](../teknikajxoj/Retoj.md#kargaj-kaj-malnovaj-personaj-fervojoj) |
-|  Ej-AR  | Ej-**A**lt**R**apido | [High-speed railway](../teknikajxoj/Retoj.md#altrapidaj-fervojoj) |
+|  ~~Vj~~ | ~~**V**o**j**o~~     | [Road](../teknikoj/Retoj.md#vojoj)  <br>(Deprecated[^Deprecated-Vj]) |
+|    Ej   | f**E**rvo**j**o      | [Railway](../teknikoj/Retoj.md#metrooj--personaj-fervojoj) |
+|  Ej-K   | Ej-**K**argo         | [Cargo railway](../teknikoj/Retoj.md#kargaj-kaj-malnovaj-personaj-fervojoj) |
+|  Ej-AR  | Ej-**A**lt**R**apido | [High-speed railway](../teknikoj/Retoj.md#altrapidaj-fervojoj) |
 |  Ej-SL  | Ej-**S**upraj**L**inioj | Regular railway (powered by overhead lines) |
 |  Ej-TR  | Ej-**T**ria**R**elo  | Subway railway (powered by third rail) |
-|    Tj   | Ej-**T**ramo         | [Tramway](../teknikajxoj/Retoj.md#tramoj)          |
-|    Ŭj   | a**Ŭ**tovo**j**o     | [Motorway](../teknikajxoj/Retoj.md#aŭtovojoj) |
-|    St   | **S**tra**t**o       | [Street](../teknikajxoj/Retoj.md#stratoj) |
+|    Tj   | Ej-**T**ramo         | [Tramway](../teknikoj/Retoj.md#tramoj)          |
+|    Ŭj   | a**Ŭ**tovo**j**o     | [Motorway](../teknikoj/Retoj.md#aŭtovojoj) |
+|    St   | **S**tra**t**o       | [Street](../teknikoj/Retoj.md#stratoj) |
 |  St-Dt  | St-**D**is**t**ribuo | Distributor Roads |
 |  St-Ĉf  | St-**Ĉ**e**f**o      | Main  Roads      |
 |  St-Lk  | St-**L**o**k**o      | Local Roads      |

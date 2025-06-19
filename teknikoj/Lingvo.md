@@ -171,7 +171,7 @@ Changes of Esperanto++ from Esperanto include:
 
 #### Time
 
-See also the [Units](../teknikajxoj/Unuoj.md#tempo) page and the
+See also the [Units](../teknikoj/Unuoj.md#tempo) page and the
 [(***Spoilers***) Timeline](../intrigmalkasxo/Kronologio.md#kronologio) page.
 
 | Siglo | Formo   | Nomo           |
