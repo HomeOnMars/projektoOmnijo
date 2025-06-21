@@ -65,9 +65,6 @@ and third closest being *Chile* \~Hx800 JU (\~Dx4100 km) away.
 For more details,
 see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 
-> ![Map of OmniCentro](../map/OmniCentro_mapo-8K-4K.jpg)  
-> *OmniCentro* Map
-
 ### Fonrakonta Bulteno
 
 > Background Bulletin

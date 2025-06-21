@@ -33,6 +33,9 @@ Detalaj Informoj
 
 > Detailed Information
 
+> ![Map of OmniCentro](map/OmniCentro_mapo-8K-4K.jpg)  
+> *OmniCentro* Map
+
 - [***Bulteno*** | Bulletin](OmniCentro/Bulteno.md#bulteno)
   - [***Fonrakontaj Resumoj*** | Backstories Summaries](OmniCentro/Bulteno.md#fonrakontaj-resumoj): Brief summary here!
 - [***Sigloj***  | Acronyms](OmniCentro/Sigloj.md#sigloj)
