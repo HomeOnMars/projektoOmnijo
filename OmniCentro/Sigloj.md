@@ -226,6 +226,7 @@ Using the leading digit for identifying districts and areas:
 | `9` |  CC  | ??-?  | Royal Palace (TBD)  | <span style="color:Beige">█ #F5F5DC</span> |
 | `Δ` |  NK  | Mt-F  | Mt-Fortikeco   | <span style="color:MediumPurple">█ #9370DB</span> |
 | `λ` |  NC  | Am-U  | Am-Unukorno    | <span style="color:Thistle">█ #D8BFD8</span> |
+|     |  NC  | Mt-U  | Mt-Unukorno    | <span style="color:Thistle">█ #D8BFD8</span> |
 | `Π` |  NK  | Am-R  | Me-Racieco     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 |     |  NK  | La-P  | La Pordego     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 | `Σ` |  NR  | Am-R  | Am-Racieco     | |
@@ -278,7 +279,6 @@ Using the leading digit for identifying districts and areas:
 |||
 | Akvopurigejo             | Water Treatment Plant    |
 | Akvopumpejo              | Water Pumping Station    |
-
 
 References:
 

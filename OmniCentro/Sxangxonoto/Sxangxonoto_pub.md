@@ -9,6 +9,81 @@
 Content
 -------------------------------------------------------------------------------
 
+### v3.0 <-- v2.0 | `2025-06-21`
+
+> Northern Solstice update.  
+>
+> Infrastructure expansions of rails, roads, and 7 more dams.
+
+- `Meta::GameVer`: v1.3.3f1;
+- `Mods::Required`:
+  - 'Anarchy' (74604);
+  - 'Plop the Growables' (75826);
+  - 'Road Builder' (87190);
+- `Mods::Optional`:
+  - 'Better Bulldozer' (75250);
+  - 'Carto' (87428);
+  - 'Map Texture Replacer' (76050);
+    - 'Alpine Theme' (76828);
+    - 'Volchoria Map Theme' (76896);
+  - 'Move It' (74324);
+  - 'Recolor' (84638);
+  - 'Skyve' (75804);
+  - 'Traffic' (80095);
+  - 'Transport Policy Adjuster' (78622);
+  - 'Tree Controller' (75993);
+  - 'Water Features' (75613);
+- `Expansion::Services`,`District::Ab-Racieco`,`Fixes`:
+  - Expanded Ab-R Dams power connections;
+- `Expansion::Services`,
+  `District::(Mt-Kuragxo,Mt-Hejmeco,Is-Niksino,Mt-Espero)`:
+  7 more dams:
+  - Added the 'Mt-Kuragxo Akvobarajxo #0' (Ab-K#0) Dam;
+  - Added the 'Mt-Hejmeco Akvobarajxo #0' (Ab-H#0) Dam;
+  - Added the 'Bs-Niksina Akvobarajxo' Dams (Ab-N#0, Ab-N#1),
+    creating the 'Baseno-Niksinajxo' ('Mermaid Reservoir');
+  - Added the 'Mt-Espero Akvobarajxo' Dams (Ab-E#0, Ab-E#1);
+  - Built 'Mt-Hejmecajxa Defluejo' spillway,
+    with a small dam built-in (Ab-H#D);
+- `Expansion::Rail`:
+  - Expanded and retrofitted high speed rail tracks:
+    Now have 2 sets of high speed rail tracks,
+    Designed for speed limit of 350kph and 220kph respectively;
+  - Expanded cargo rail network;
+  - Added a railyard in Vd-O;
+  - Added 2 fancy new bridges from the recent free update;
+-`Expansion::Road`:
+  - Added dams access roads;
+  - Added Bus/Tram-only roads in Mt-H, Mt-E, and over the reservoir of Ab-O;
+  - Added a highway service interchange at Me-H;
+  - Updated the bridge at the main water outlet
+    (the lake in between Vgx-P and Am-H);
+  - Updated highways from Vanilla to 'Uxj-7' (part);
+- `District::Vd-Fortikeco`,`Expansion::Zoning`:
+  - Built 'La Kora Tenero' Villa;
+- `District::La-Pordego`,`Expansion::Services`:
+  - Added
+    a recycling plant,
+    a wastewater treatment plant, and
+    a bus depot;
+- `District::Ab-Olivkrono`,`Fixes`:
+  - Fixes water pipe under the mountain roads;
+- `Detailing::Water`,`Terrain`,`Fixes`:
+  - Tweaked border river spawners size and height;
+  - Reduced sea water spawner height from 128m to 120m  
+    (original sea water spawner kept at 128m with decreased radius
+    for backup sea level height reference);
+  - Fixed overflowing water in Am-H;
+- `Transit`,`Fixes`:
+  - Updated high-speed trains symbol from 'E' to 'V';
+  - Updated Bus numbering system from 2-digits to 3-digits;
+  - Added Transit lines;
+- `Naming`,`Fixes`:
+  - Simplified mountain names
+    e.g. from 'Mt-Kuragxecajxo' to 'Mt-Kuragxo';
+
+-------------------------------------------------------------------------------
+
 ### v2.0 <-- v1.0 | `2025-03-27`
 
 > Northward Equinox update.  
@@ -18,23 +93,22 @@ Content
 > Infrastructure expansions in the Northwest corner of the map.
 
 - `Meta::GameVer`: v1.2.5f1;
-- `Meta::Mods`:
-  Required:
+- `Mods::Required`:
   - 'Anarchy' (74604);
   - 'Recolor' (84638);
   - 'Road Builder' (87190);
   - 'Plop the Growables' (75826);
   - 'Traffic' (80095);
   - 'Water Features' (75613);
-- `Meta::Mods::RoadBuilder`,`Naming`,`Fixes`:
+- `Mods::RoadBuilder`,`Naming`,`Fixes`:
   - Update RoadBuilder roads and rails name and speed limit;
-- `Meta::Mods::CityController`,`Note`:
+- `Mods::CityController`,`Note`:
   - Removed Money (O$22M) with 'City Controller',
     total return O$112M,
     Interest rate 1500%;
-- `District::(Ab-Fortikecajxo, Ab-Raciecajxo)`,`Expansion::Services`:
+- `District::(Ab-Fortikeco,Ab-Racieco)`,`Expansion::Services`:
   - Built 3 more dams;
-- `District::Am-Raciecajxo`,`Expansion::(Road, Rail, Services)`:
+- `District::Am-Racieco`,`Expansion::(Road,Rail,Services)`:
   - New outside connections;
   - Highway extension;
   - Two new service interchanges (parclo);
@@ -49,41 +123,40 @@ Content
 > Built 2 dams, a cargo port, 3 mines, and a vista in the Southeast.
 
 - `Meta::GameVer`: v1.2.3f1;
-- `Meta::Mods`:
-  Added:
+- `Mods::Added`:
   - 'Recolor' (84638);
   - 'Road Builder' (87190);
   - 'City Controller' (89495);
-- `Meta::Mods::PlopTheGrowables`:
+- `Mods::PlopTheGrowables`:
   - 'Plop the Growables' (75826) Settings Changed:
     Now non-plopped buildings require zoning;
-- `Meta::Mods::CityController`,`Note`:
+- `Mods::CityController`,`Note`:
   - Added Money (O$7M) with 'City Controller',
     Removed Money (O$90M) with 'City Controller',
     Interest rate 1185.7%;
-- `Meta::Mods::RoadBuilder`:
+- `Mods::RoadBuilder`:
   - Added numerous Road Builder roads and rails;
-- `District::Ab-Olivkronajxo`,`Expansion::(Zoning, Services)`:
+- `District::Ab-Olivkrono`,`Expansion::(Zoning, Services)`:
   - Added 2 dams near Mt-Olivkronajxo, with
     electricity generation max capacity of 9GW+ with 150% budget;
   - Built utilities/village on the hill near the dam;
-- `District::Mhv-Olivkronajxo`,`Expansion::(Industry, Road, Rail)`,`Detailing`:
+- `District::Mhv-Olivkrono`,`Expansion::(Industry, Road, Rail)`,`Detailing`:
   - Added a cargo port,
     a parclo interchange, and
     several signature factories;
   - Expanded the rail network near the cargo port;
-- `District::Ia-Olivkronajxo`,`Expansion::Industry`:
+- `District::Ia-Olivkrono`,`Expansion::Industry`:
     Added an industrial area with 3 mines (Stone & Ore & Coal);
-- `District::Vd-Olivhaveno`,`Expansion::(Zoning, Parks, Road)`,`Detailing`:
+- `District::Vd-Olivhaveno`,`Expansion::(Zoning,Parks,Road)`,`Detailing`:
   - Added district 'Vido-Olivhaveno'
     to house the workers for the cargo port and the industrial area;
   - Added a trumpet interchange;
-- `District::(Vd-Olivhaveno, Ab-Olivkronajxo)`,`Expansion::Rail`,`Transit`:
+- `District::(Vd-Olivhaveno,Ab-Olivkrono)`,`Expansion::Rail`,`Transit`:
   - Added a tram line between the dam foothill vista ('Vd-Olivhaveno')
     and the dam hill ('Ab-Olivkronajxo');
-- `District::Am-Olivkronajxo`,`Expansion::Rail`,`Transit`:
+- `District::Am-Olivkrono`,`Expansion::Rail`,`Transit`:
   - Expanding Rail network near Am-O;
-- `District::Vilagxo-Pioniro`,`Expansion::(Zoning, Services, Industry)`:
+- `District::Vilagxo-Pioniro`,`Expansion::(Zoning,Services,Industry)`:
   - Added more housing and services, and a Grain farm;
 - `Redevelop::Rail`,`Transit`:
   - Updating the map original rail network
@@ -120,9 +193,12 @@ Content
 - `Meta::GameVer`: v1.2.0f1;
 - `Meta::PDXMods`: Published (ID 97163);
 - `Meta::CityName`: Set as 'OmniCentro';
-- `Expansion::Utility`: Added basic utilities (a transformer).
+- `Expansion::Utility`:
+  - Added basic utilities (a transformer).
     Now city has outside connections of power and water;
-- `Naming`,`Fixes`: Set outside connections (road, rail, air, ship) names;
-- `Fixes`: Fixed 'Road required' problems from the map;
+- `Naming`,`Fixes`:
+  - Set outside connections (road, rail, air, ship) names;
+- `Fixes`:
+  - Fixed 'Road required' problems from the map;
 
 -------------------------------------------------------------------------------

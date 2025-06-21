@@ -24,12 +24,13 @@ Tags
 
 ### Tags list
 
-- `Meta::(PDXMods, GameVer, Mods::{ModName}, CityName, Map)`
+- `Meta::(PDXMods,GameVer,CityName,Map)`
+- `Mods::({ModName},Required,Optional,Added,Removed)`
 - `Reversion`
 - `District::({DistrictName})`
-- `Expansion::(Zoning, Parks, Industry, Services, Road, Rail)`
-- `Redevelop::(Rail, Road)`
-- `Detailing::(Trees, Props, Surfaces, Water)`
+- `Expansion::(Zoning,Parks,Industry,Services,Road,Rail)`
+- `Redevelop::(Road,Rail)`
+- `Detailing::(Trees,Props,Surfaces,Water)`
 - `Terrain`
 - `Naming`
 - `Transit`
@@ -45,7 +46,7 @@ Tags
 > Summaries of the change here.
 
 - `Meta::GameVer`: 1.2.5f1;
-- `Redevelop`,`Detailing::(Trees, Props)`:
+- `Redevelop`,`Detailing::(Trees,Props)`:
   - Something something;
 - `_`:
   - Something something without tags;
