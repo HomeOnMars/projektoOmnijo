@@ -26,10 +26,11 @@ Tags
 
 - `Meta::(PDXMods,GameVer,CityName,Map)`
 - `Mods::({ModName},Required,Optional,Added,Removed)`
+- `Assets::({AssetsPackName},Required,Optional,Added,Removed)`
 - `Reversion`
 - `District::({DistrictName})`
 - `Expansion::(Zoning,Parks,Industry,Services,Road,Rail)`
-- `Redevelop::(Road,Rail)`
+- `Redevelop::(Services,Road,Rail)`
 - `Detailing::(Trees,Props,Surfaces,Water)`
 - `Terrain`
 - `Naming`

@@ -6,6 +6,7 @@ test*
 *.ipynb
 *.png
 *.ogg
+CSL2_SavesDir
 OmniCentro/Data
 OmniCentro/Sxangxonoto/Sxangxonoto.md
 privata/

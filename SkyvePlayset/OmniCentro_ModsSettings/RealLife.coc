@@ -1,0 +1,21 @@
+RealLife
+{
+    "child_age_limit": 12,
+    "male_adult_age_limit": 72,
+    "female_adult_age_limit": 72,
+    "female_life_expectancy": 86,
+    "male_life_expectancy": 84,
+    "years_in_university": 6,
+    "college_edu_in_univ": 50,
+    "high_grad_prob": 94,
+    "college_grad_prob": 88,
+    "university_grad_prob": 81,
+    "enter_high_school_prob": 94,
+    "adult_enter_high_school_prob": 12,
+    "worker_continue_education": 75,
+    "student_birth_rate_adjuster": -15,
+    "base_birth_rate_adjuster": -6,
+    "divorce_rate_adjuster": -6,
+    "adult_female_birth_rate_bonus_adjuster": -6,
+    "look_for_partner_rate_adjuster": -6
+}

@@ -252,8 +252,8 @@ Using the leading digit for identifying districts and areas:
 |||
 | Bazlernejo / ***Bl***    | Elementary School        |
 | Mezlernejo / ***Ml***    | High School / Middle School |
-| Altlernejo / ***Al***    | College / Higher Education  |
-| Universitato / ***Uni*** | University               |
+| Altlernejo / ***Al***    | College / Higher Education / Undergraduate |
+| Universitato / ***Uni*** | University / Graduate School |
 |||
 | Policejo                 | Police Station           |
 | Fajrobrigado             | Fire Station/Brigade/Department |
