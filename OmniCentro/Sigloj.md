@@ -248,7 +248,8 @@ Using the leading digit for identifying districts and areas:
 | Fervojo-Korto            | Rail Yard                |
 | Metroo-Korto             | Subway Yard              |
 | Tramo-Korto              | Tram Depot               |
-| Stacidomo                | Train Station            |
+| Stacio                   | Station                  |
+| Stacidomo                | Station (Building)       |
 |||
 | Bazlernejo / ***Bl***    | Elementary School        |
 | Mezlernejo / ***Ml***    | High School / Middle School |

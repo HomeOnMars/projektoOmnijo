@@ -136,9 +136,9 @@ Arterial / Collector / Local Roads:
 
   |             | max Gradient $s$ (Dx) | min Curve radius $R$ (Dx) | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
   | ----------- | :--------------: | :------------------: | :--------------------------: | :-----: | --- | --- | --- | --- | ------------------- |
-  | -           |  1.6 \%  | 1144m (143u) |  185 km/h  |  88 JoĜ | $132\degree$ | $155\degree$ | $168\degree$ | $174\degree$ | (Note: 185km/h for passenger trains; 130km/h for cargo trains) |
-  | -           |  1.6 \%  |  576m (72u)   |  130 km/h  |  60 JoĜ |  $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | |
-  | Hard Limit  |  3.6 \%  |  144m  (18u)  |   65 km/h  |  30 JoĜ | -            | -            |  $97\degree$ | $133\degree$ | Lithgow Zig Zag |
+  | -           |  1.6 \%  | 1024m (128U) |  175 km/h  |  80 JoĜ | $127\degree$ | $152\degree$ | $166\degree$ | $173\degree$ | (Note: 185km/h for passenger trains; 130km/h for cargo trains) |
+  | -           |  1.6 \%  |  576m (72U)   |  130 km/h  |  60 JoĜ |  $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | |
+  | Hard Limit  |  3.6 \%  |  144m  (18U)  |   65 km/h  |  30 JoĜ | -            | -            |  $97\degree$ | $133\degree$ | Lithgow Zig Zag |
 
   - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
     i.e., $\theta_\mathrm{64u}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 64u.
@@ -165,7 +165,7 @@ Arterial / Collector / Local Roads:
   | ----------- | :------: | :------------: | :--------: | :--------: | --- | --- | --- | --- | ------------------- |
   | -           |  1.5 \%  |  6808m (851U)  |  395 km/h  | 120 JoĜ | -            | -            | $172\degree$ | $176\degree$ | |
   | Recommended |  2   \%  |  5376m (672U)  |  350 km/h  | 100 JoĜ | $139\degree$ | $159\degree$ | $170\degree$ | $175\degree$ | (2025-03-02) [Beijing-Shanghai High-Speed Railway](https://en.wikipedia.org/wiki/Beijing%E2%80%93Shanghai_high-speed_railway) |
-  | Soft Limit  |  2.6 \%  |  4120m (515U)  |  305 km/h  |  Υ0 JoĜ | -            | -            | $166\degree$ | $173\degree$ | |
+  | -           |  2.6 \%  |  4120m (515U)  |  305 km/h  |  Υ0 JoĜ | -            | -            | -            | -            | |
   | -           |  3.3 \%  |  3024m (378U)  |  260 km/h  |  Π0 JoĜ | -            | -            | -            | -            | |
   | Hard Limit  |  4.2 \%  |  2104m (263U)  |  220 km/h  |  Δ0 JoĜ | $92\degree$  | $129\degree$ | $153\degree$ | $167\degree$ | |
   | -           |  5.5 \%  |  1344m (168U)  |  175 km/h  |  80 JoĜ | -            | -            | -            | -            | |
@@ -190,11 +190,11 @@ Arterial / Collector / Local Roads:
 
 - Gradient $s$ and Curve radius $R$ limit:
 
-  |             | max Gradient $s$ | min Curve radius $R$  | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
+  |             | max Gradient $s$ | min Curve radius $R$  | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | $\theta_\mathrm{64U}$ | $\theta_\mathrm{32U}$ | $\theta_\mathrm{16U}$ | $\theta_\mathrm{8U}$ | Real world examples |
   | ----------- | :--------------: | :------------------------: | :----------------------------: | :--------: | --- | --- | --- | --- | ------------------- |
-  | -           |  3.5 \%  | 1144m (143u) |  185 km/h  |  88 JoĜ | $132\degree$ | $155\degree$ | $168\degree$ | $174\degree$ | (Note: overhead-wire-powered tracks only (No third rail metro tracks)) |
-  | Recommended |  5.4 \%  |  576m (72u)  |  130 km/h  |  60 JoĜ | $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;  <br>($R$) Assuming tilting trains. |
-  | Hard Limit  |  7.3 \%  |  320m (40u)  |  100 km/h  |  48 JoĜ | -                 | $103\degree$ | $137\degree$  | $158\degree$ | ($s$) Bernina Railway, Switzerland;  <br>($R$) Bay Area Rapid Transit, United States. |
+  | -           |  3.5 \%  | 1024m (128U) |  175 km/h  |  80 JoĜ | $127\degree$ | $152\degree$ | $166\degree$ | $173\degree$ | (Note: overhead-wire-powered tracks only (No third rail metro tracks)) |
+  | Recommended |  5.4 \%  |  576m (72U)  |  130 km/h  |  60 JoĜ | $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;  <br>($R$) Assuming tilting trains. |
+  | Hard Limit  |  7.3 \%  |  320m (40U)  |  100 km/h  |  48 JoĜ | -                 | $103\degree$ | $137\degree$  | $158\degree$ | ($s$) Bernina Railway, Switzerland;  <br>($R$) Bay Area Rapid Transit, United States. |
 
   - Assuming tilting trains: see [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant).
   - Note: curve radius restrictions may be relaxed when exiting / entering stations where speed is slow.
@@ -206,13 +206,17 @@ Arterial / Collector / Local Roads:
   - Assumed EMU (Electric Multiple Unit).
   - Train length
     <!-- - 12 (20m/2.5u-long) train cars (**240m/30u**). -->
-    - 8  (24m/3.0u-long) train cars (**192m/24u**)
-    - 10 (20m/2.5u-long) train cars (**200m/25u**)
-    - 12 (16m/2.0u-long) train cars (**192m/24u**)
+    - 8  (24m/3.0U-long) train cars (**192m/24U**)
+    - 10 (20m/2.5U-long) train cars (**200m/25U**)
+    - 12 (16m/2.0U-long) train cars (**192m/24U**)
     - Half length permitted
   - For track intersections: $\geq$ 240m/30u.
   - Assumed power consumption:
     1187hp/0.9MW per (24m/3u-long) train car - 7.1MW for a full length train.
+  - Stop spacing:
+    - Try to keep at least 128U (1km, or 5 trains long)
+      between metro stations' track connection point;
+    - Hard minimum: 72U (576m / 3 trains).
 - Additional Notes
   - Due to proper designs,
     metros in OmniCentro are capable of (and generally are) running 24/7:
