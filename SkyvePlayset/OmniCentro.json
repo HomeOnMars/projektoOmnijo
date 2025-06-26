@@ -2,7 +2,7 @@
   "ContractFormatVersion": -1,
   "GeneralData": {
     "Id": 6505396,
-    "Name": "OmniCentro_v3",
+    "Name": "OmniCentro",
     "Color": "MediumPurple",
     "Usage": 1
   },
@@ -119,12 +119,33 @@
       "LoadOrder": 39,
       "IsEnabled": false
     },
+    "101948": {
+      "Id": 101948,
+      "Name": "USA Northeast Pack",
+      "Version": "1",
+      "LoadOrder": 40,
+      "IsEnabled": true
+    },
     "102147": {
       "Id": 102147,
       "Name": "Advanced Road Tools",
       "Version": "13",
       "LoadOrder": 49,
       "IsEnabled": false
+    },
+    "100454": {
+      "Id": 100454,
+      "Name": "China Pack",
+      "Version": "1",
+      "LoadOrder": 51,
+      "IsEnabled": true
+    },
+    "98960": {
+      "Id": 98960,
+      "Name": "Eastern Europe Pack",
+      "Version": "3",
+      "LoadOrder": 52,
+      "IsEnabled": true
     },
     "78622": {
       "Id": 78622,
@@ -175,6 +196,13 @@
       "LoadOrder": 63,
       "IsEnabled": true
     },
+    "92859": {
+      "Id": 92859,
+      "Name": "UK Pack",
+      "Version": "4",
+      "LoadOrder": 69,
+      "IsEnabled": true
+    },
     "83733": {
       "Id": 83733,
       "Name": "Show Text Trends",
@@ -215,7 +243,7 @@
       "Name": "Real Life",
       "Version": "27",
       "LoadOrder": 94,
-      "IsEnabled": false
+      "IsEnabled": true
     },
     "86260": {
       "Id": 86260,
@@ -257,7 +285,7 @@
       "Name": "Realistic Trips",
       "Version": "53",
       "LoadOrder": 104,
-      "IsEnabled": false
+      "IsEnabled": true
     },
     "87190": {
       "Id": 87190,
