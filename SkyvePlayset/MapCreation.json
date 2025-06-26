@@ -1,0 +1,180 @@
+{
+  "ContractFormatVersion": -1,
+  "GeneralData": {
+    "Id": 5188735,
+    "Name": "MapCreation",
+    "Color": "9, 140, 0",
+    "Usage": 4
+  },
+  "SubscribedMods": {
+    "74417": {
+      "Id": 74417,
+      "Name": "Unified Icon Library",
+      "Version": "16",
+      "LoadOrder": 1,
+      "IsEnabled": true
+    },
+    "79634": {
+      "Id": 79634,
+      "Name": "Asset Icon Library",
+      "Version": "19",
+      "LoadOrder": 3,
+      "IsEnabled": true
+    },
+    "75724": {
+      "Id": 75724,
+      "Name": "ExtraLib",
+      "Version": "21",
+      "LoadOrder": 4,
+      "IsEnabled": true
+    },
+    "76050": {
+      "Id": 76050,
+      "Name": "Map Texture Replacer",
+      "Version": "8",
+      "LoadOrder": 5,
+      "IsEnabled": true
+    },
+    "74604": {
+      "Id": 74604,
+      "Name": "Anarchy",
+      "Version": "28",
+      "LoadOrder": 6,
+      "IsEnabled": true
+    },
+    "75426": {
+      "Id": 75426,
+      "Name": "I18n EveryWhere",
+      "Version": "51",
+      "LoadOrder": 8,
+      "IsEnabled": true
+    },
+    "77240": {
+      "Id": 77240,
+      "Name": "Find It",
+      "Version": "45",
+      "LoadOrder": 9,
+      "IsEnabled": true
+    },
+    "76052": {
+      "Id": 76052,
+      "Name": "Desert Map Theme",
+      "Version": "1",
+      "LoadOrder": 14,
+      "IsEnabled": true
+    },
+    "75728": {
+      "Id": 75728,
+      "Name": "ExtraLandscapingTools",
+      "Version": "11",
+      "LoadOrder": 15,
+      "IsEnabled": false
+    },
+    "75816": {
+      "Id": 75816,
+      "Name": "Advanced Line Tool",
+      "Version": "30",
+      "LoadOrder": 23,
+      "IsEnabled": true
+    },
+    "75749": {
+      "Id": 75749,
+      "Name": "Free Range Camera",
+      "Version": "5",
+      "LoadOrder": 26,
+      "IsEnabled": true
+    },
+    "75993": {
+      "Id": 75993,
+      "Name": "Tree Controller",
+      "Version": "20",
+      "LoadOrder": 48,
+      "IsEnabled": true
+    },
+    "86260": {
+      "Id": 86260,
+      "Name": "Compass",
+      "Version": "4",
+      "LoadOrder": 52,
+      "IsEnabled": true
+    },
+    "77260": {
+      "Id": 77260,
+      "Name": "Water Visual Tweaks",
+      "Version": "7",
+      "LoadOrder": 54,
+      "IsEnabled": false
+    },
+    "84978": {
+      "Id": 84978,
+      "Name": "Columbia Valley Map Theme",
+      "Version": "1",
+      "LoadOrder": 58,
+      "IsEnabled": true
+    },
+    "75804": {
+      "Id": 75804,
+      "Name": "Skyve",
+      "Version": "54",
+      "LoadOrder": 63,
+      "IsEnabled": true
+    },
+    "80095": {
+      "Id": 80095,
+      "Name": "Traffic",
+      "Version": "20",
+      "LoadOrder": 73,
+      "IsEnabled": true
+    },
+    "74324": {
+      "Id": 74324,
+      "Name": "Move It",
+      "Version": "28",
+      "LoadOrder": 87,
+      "IsEnabled": true
+    },
+    "76544": {
+      "Id": 76544,
+      "Name": "Mediterranean Theme",
+      "Version": "7",
+      "LoadOrder": 88,
+      "IsEnabled": true
+    },
+    "76896": {
+      "Id": 76896,
+      "Name": "Volchoria Map Theme",
+      "Version": "2",
+      "LoadOrder": 89,
+      "IsEnabled": true
+    },
+    "76828": {
+      "Id": 76828,
+      "Name": "Alpine Theme",
+      "Version": "3",
+      "LoadOrder": 90,
+      "IsEnabled": true
+    },
+    "74539": {
+      "Id": 74539,
+      "Name": "Image Overlay",
+      "Version": "17",
+      "LoadOrder": 91,
+      "IsEnabled": true
+    },
+    "75613": {
+      "Id": 75613,
+      "Name": "Water Features",
+      "Version": "14",
+      "LoadOrder": 92,
+      "IsEnabled": false
+    },
+    "75745": {
+      "Id": 75745,
+      "Name": "Achievement Enabler",
+      "Version": "2",
+      "LoadOrder": 93,
+      "IsEnabled": true
+    }
+  },
+  "LocalMods": {}
+}

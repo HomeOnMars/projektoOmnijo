@@ -36,6 +36,18 @@
       "Id": 76451,
       "Name": "CityRat Network EDM Radio"
     },
+    "76252": {
+      "Id": 76252,
+      "Name": "City Planner Plays Young Linden Radio"
+    },
+    "76222": {
+      "Id": 76222,
+      "Name": "City Planner Plays Downtown Radio"
+    },
+    "76241": {
+      "Id": 76241,
+      "Name": "City_Planner_Plays_By_The_Lake_Radio"
+    },
     "86878": {
       "Id": 86878,
       "Name": "RetentionRadio"
@@ -83,6 +95,10 @@
     "77086": {
       "Id": 77086,
       "Name": "Moonbeam Radio ~ NIGHTMODE [DMCA FREE]"
+    },
+    "75863": {
+      "Id": 75863,
+      "Name": "Diamond City Radio"
     }
   }
 }
