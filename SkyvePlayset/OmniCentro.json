@@ -215,7 +215,7 @@
       "Name": "Real Life",
       "Version": "27",
       "LoadOrder": 94,
-      "IsEnabled": true
+      "IsEnabled": false
     },
     "86260": {
       "Id": 86260,
@@ -257,7 +257,7 @@
       "Name": "Realistic Trips",
       "Version": "53",
       "LoadOrder": 104,
-      "IsEnabled": true
+      "IsEnabled": false
     },
     "87190": {
       "Id": 87190,
