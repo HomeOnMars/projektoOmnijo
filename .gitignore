@@ -1,8 +1,7 @@
 # - My list -
 bkp/
 temp/
-test*
-*.test.py
+temp.*
 *.ipynb
 *.png
 *.ogg

@@ -17,5 +17,7 @@ RealLife
     "base_birth_rate_adjuster": -6,
     "divorce_rate_adjuster": -6,
     "adult_female_birth_rate_bonus_adjuster": -6,
-    "look_for_partner_rate_adjuster": -6
+    "look_for_partner_rate_adjuster": -6,
+    "average_household_size": 2,
+    "disable_household_deletion": true
 }
