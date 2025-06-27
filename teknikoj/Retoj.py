@@ -144,6 +144,8 @@ if __name__ == '__main__':
     print_info(grad=3.3*percent, v=0xC0*JoGx, **V_pars)
     print_info(grad=4.2*percent, v=0xA0*JoGx, **V_pars)
     print_info(grad=5.5*percent, v=0x80*JoGx, **V_pars)
+    print_info(grad=7.5*percent, v=0x60*JoGx, **V_pars)
+    print_info(grad=23.5*percent,v=0x20*JoGx, **V_pars)
     
     
     print("\nMetro (per car)\n")

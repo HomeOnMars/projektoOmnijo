@@ -167,8 +167,10 @@ Arterial / Collector / Local Roads:
   | Recommended |  2   \%  |  5376m (672U)  |  350 km/h  | 100 JoĜ | $139\degree$ | $159\degree$ | $170\degree$ | $175\degree$ | (2025-03-02) [Beijing-Shanghai High-Speed Railway](https://en.wikipedia.org/wiki/Beijing%E2%80%93Shanghai_high-speed_railway) |
   | -           |  2.6 \%  |  4120m (515U)  |  305 km/h  |  Υ0 JoĜ | -            | -            | -            | -            | |
   | -           |  3.3 \%  |  3024m (378U)  |  260 km/h  |  Π0 JoĜ | -            | -            | -            | -            | |
-  | Hard Limit  |  4.2 \%  |  2104m (263U)  |  220 km/h  |  Δ0 JoĜ | $92\degree$  | $129\degree$ | $153\degree$ | $167\degree$ | |
+  | Soft Limit  |  4.2 \%  |  2104m (263U)  |  220 km/h  |  Δ0 JoĜ | $92\degree$  | $129\degree$ | $153\degree$ | $167\degree$ | |
   | -           |  5.5 \%  |  1344m (168U)  |  175 km/h  |  80 JoĜ | -            | -            | -            | -            | |
+  | Hard Limit  |  7.5 \%  |   760m  (95U)  |  130 km/h  |  60 JoĜ | -            | -            | $113\degree$ | $143\degree$ | (Ramps only) |
+  | -           |  7.5 \%  |    88m  (11U)  |   45 km/h  |  20 JoĜ | -            | -            | -            | -            | (Ramps only) |
 
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
