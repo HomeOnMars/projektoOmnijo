@@ -173,7 +173,7 @@
       "Name": "AreaBucket",
       "Version": "8",
       "LoadOrder": 58,
-      "IsEnabled": false
+      "IsEnabled": true
     },
     "76662": {
       "Id": 76662,
@@ -250,7 +250,7 @@
       "Name": "Compass",
       "Version": "4",
       "LoadOrder": 95,
-      "IsEnabled": false
+      "IsEnabled": true
     },
     "75826": {
       "Id": 75826,
@@ -283,7 +283,7 @@
     "77171": {
       "Id": 77171,
       "Name": "Realistic Trips",
-      "Version": "53",
+      "Version": "54",
       "LoadOrder": 104,
       "IsEnabled": true
     },

@@ -26,42 +26,121 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” 
 """
 
 import json
+import shutil
+import os
+from datetime import datetime
 
-def normalize_playset(
-    name: str,
-    remove_banner: bool = True,
-    remove_mods: tuple|dict[str, dict] = {},
-    overwrite: bool = False,
-) -> dict:
-    with open(f"temp.{name}.json", 'r') as f:
-        data = json.load(f)
-    if (remove_banner
-        and "GeneralData" in data
-        and "BannerBytes" in data["GeneralData"]
+
+class SkyvePlayset:
+    """Manipulate exported Skyve Playset files."""
+    def __init__(
+        self,
+        name,
+        skyve_dir: str,
+        temp_dir : str = "./temp.",
+        verbose: bool = True,
     ):
-        del data["GeneralData"]["BannerBytes"]
-    if remove_mods:
-        for it in remove_mods:
-            d = data["SubscribedMods"]
-            if it in d:
-                del d[it]
-    if overwrite:
-        with open(f"{name}.json", 'w') as f:
-            json.dump(data, f, indent=2)
-    return data
+        self.name: str = name
+        self.data: dict[str, dict] = {}
 
+        if verbose: print(f"\n{self.name}\n")
+        self.update_temp(skyve_dir, temp_dir=temp_dir, verbose=verbose)
+        self.read_temp(temp_dir=temp_dir, verbose=verbose)
+
+    def update_temp(
+        self,
+        skyve_dir: str,
+        temp_dir : str = "./temp.",
+        verbose: bool = True,
+    ):
+        """Update temp file."""
+        name = self.name
+        target = f"{temp_dir}{name}.json"
+        source = ""
+        try:
+            mtime = int(os.path.getmtime(target))
+        except FileNotFoundError:
+            mtime = 0
+        for f in os.listdir(skyve_dir):
+            if f.startswith(name):
+                fp = f"{skyve_dir}{f}"    # file path
+                new_mtime = int(os.path.getmtime(fp))
+                if mtime == 0.0 or new_mtime > mtime:
+                    source = fp
+                    mtime = new_mtime
+        if source:
+            shutil.copy2(source, target)
+            if verbose:
+                print(
+                    f"Copied '{source}' to '{target}',\n\tmodified at "
+                    f"{datetime.fromtimestamp(new_mtime).isoformat()}.")
+        else:
+            if verbose:
+                print(
+                    f"Note: Old file {target} was NOT updated.")
+        return self
+
+    def read_temp(
+        self,
+        temp_dir: str = "./temp.",
+        verbose: bool = True,
+    ):
+        """Read from temp file."""
+        with open(f"{temp_dir}{self.name}.json", 'r') as f:
+            self.data = json.load(f)
+        return self
+
+    def normalize(
+        self,
+        remove_banner: bool = True,
+        remove_mods: tuple|dict[str, dict] = {},
+        verbose: bool = True,
+    ):
+        """Remove unnecessary info."""
+        data = self.data
+
+        if 'SubscribedMods' not in data:
+            data['SubscribedMods'] = {}
+
+        if (remove_banner
+            and 'GeneralData' in data
+            and 'BannerBytes' in data['GeneralData']
+        ):
+            del data['GeneralData']['BannerBytes']
+            if verbose:
+                print(f"-\tRemoved banner in {self.name}")
+        
+        if remove_mods:
+            count = 0
+            for it in remove_mods:
+                d = data['SubscribedMods']
+                if it in d:
+                    del d[it]
+                    count += 1
+            if verbose:
+                print(
+                    f"-\tRemoved {count} packages in {self.name}, "
+                    f"{len(data['SubscribedMods'])} packages left.")
+        return self
+
+    def dump(self, verbose:bool=True):
+        """Write to disk."""
+        fp = f"{self.name}.json"
+        with open(fp, 'w') as f:
+            json.dump(self.data, f, indent=2)
+            if verbose:
+                print(f"Playset {self.name} dumped to '{fp}'.")
+        return self
+        
 
 
 if __name__ == '__main__':
 
     with open(f"radios.json", 'r') as f:
-        mod_ids_radios = json.load(f)["SubscribedMods"]
-
+        mod_ids_radios = json.load(f)['SubscribedMods']
     remove_mods = mod_ids_radios
+    skyve_dir = "../CSL2_SavesDir/ModsData/Skyve/Playsets/Shared/"
 
-    #{'OmniCentro', 'MapTesting', 'MapCreation'}:
-    for playset_name in {'OmniCentro',}:
-        playset = normalize_playset(
-            playset_name, remove_mods=remove_mods, overwrite=True,
-        )
-    
+    for playset_name in {'OmniCentro', 'MapTesting', 'MapCreation'}:
+        playset = SkyvePlayset(playset_name, skyve_dir)
+        playset.normalize(remove_mods=remove_mods).dump()

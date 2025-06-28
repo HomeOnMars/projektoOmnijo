@@ -94,7 +94,7 @@
     "92908": {
       "Id": 92908,
       "Name": "Write Everywhere",
-      "Version": "24",
+      "Version": "25",
       "LoadOrder": 13,
       "IsEnabled": true
     },
@@ -290,7 +290,7 @@
     "77171": {
       "Id": 77171,
       "Name": "Realistic Trips",
-      "Version": "53",
+      "Version": "54",
       "LoadOrder": 63,
       "IsEnabled": false
     },
@@ -390,6 +390,13 @@
       "Name": "Achievement Enabler",
       "Version": "2",
       "LoadOrder": 93,
+      "IsEnabled": true
+    },
+    "114101": {
+      "Id": 114101,
+      "Name": "Change Company",
+      "Version": "1",
+      "LoadOrder": 129,
       "IsEnabled": true
     },
     "81157": {
@@ -563,7 +570,7 @@
     "113843": {
       "Id": 113843,
       "Name": "Office Sales Go! [5/5 Bugfix]",
-      "Version": "3",
+      "Version": "4",
       "LoadOrder": 2147483646,
       "IsEnabled": true
     }
