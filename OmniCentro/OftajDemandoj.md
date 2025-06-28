@@ -35,6 +35,11 @@ Oftaj Demandoj
 > [!WARNING]
 > ***Again, everything here is fictional.***
 
+> [!WARNING]
+> The opinions and policies expressed here
+> are solely those of the fictional characters and fictional nations depicted.
+> **They do not necessarily reflect the views or beliefs of me the author**.
+
 #### Amuzaj Faktoj
 
 > Fun facts
@@ -44,6 +49,9 @@ Oftaj Demandoj
   the brand new, locally built flagship- remains.
   The official name of the ship is **ORŜ** (Omnija Reĝa Ŝipo) ***Logilo***,
   which literally translates as "*Bait*".
+
+> [!Note]
+> To-do: Move below to a separate page about Omnija policies.
 
 #### Ĉu la Reĝino aprezas homan evoluon kaj liberecon?
 

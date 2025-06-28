@@ -22,14 +22,21 @@ Legal
 > [!WARNING]
 > This is ***a work of fiction***.
 > Names, characters, businesses, places, events and incidents
-> are either the products of the author's imagination or used in a fictitious manner.
-> Any resemblance to actual persons, living or dead, or actual events is purely coincidental.
+> are either the products of the author's imagination
+> or used in a fictitious manner.
+> Any resemblance to actual persons, living or dead, or actual events
+> is purely coincidental.  
+> And a reminder: The opinions and policies expressed by characters or nations
+> within this fictional world
+> are not intended to represent the views of the author,
+> and should not be interpreted as such.
 
 > [!NOTE]
 > Anything added after 2025-03-11
 > may have some inspirations taken from my discussions with ChatGPT.
-> Unless otherwise specified, this is limited to bouncing ideas only,
-> and I do not directly ask ChatGPT to write things here for me.
+> Unless otherwise specified,
+> this is limited to bouncing ideas or draft editing only.
+> I do not ask ChatGPT to write things on its own for me.
 
 This repository uses different licenses for different files.
 See individual file headers for details.
