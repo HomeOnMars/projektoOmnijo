@@ -53,18 +53,25 @@ Retoj
   | Soft Limit  | 10   \%   |  160m (20u)  |   65 km/h  |  30 JoĜ | -            | -            | $103\degree$ | $137\degree$ | Mountains Only |
   | Hard Limit  | 20   \%   |   40m  (5u)  |   35 km/h  |  18 JoĜ | -            | -            | -            |  -           | Mountains Only |
 
-  - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
-    i.e., $\theta_\mathrm{64u}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 64u (512m).
+  - $\theta_{d}$ refers to the angle displayed
+    when building a 2-phase curve of $d$ - $d$ in game.  
+    i.e., $\theta_\mathrm{64u}$ is the angle displayed in game
+    when building a curve with 1 bend
+    and the shorter one of the two arms of the curve is at least 64u (512m).
   - Source: (2024-08-17) [Wikipedia](https://en.wikipedia.org/wiki/Grade_(slope)#Roads): US
   - Source: (2024-08-17) [Wikipedia](https://en.wikipedia.org/wiki/International_E-road_network#Road_design_standards): EU
     - According to the source,
-      $R \geq 1000 \mathrm{m}$ for $v_\mathrm{max} \simeq 140 \mathrm{km/h}$; and
+      $R \geq 1000 \mathrm{m}$ for $v_\mathrm{max} \simeq 140 \mathrm{km/h}$;
+      and
       $R \geq  120 \mathrm{m}$ for $v_\mathrm{max} \simeq  60 \mathrm{km/h}$.
     - ~~Assuming the Curve radius limit $R \propto v_\mathrm{max}^2$,
-      i.e. $R \approx v_\mathrm{max}^2 / (30 \mathrm{mh/km})$ for lower  limit,
-      and  $R \approx v_\mathrm{max}^2 / (20 \mathrm{mh/km})$ for higher limit~~.
+      i.e.
+      $R \approx v_\mathrm{max}^2 / (30 \mathrm{mh/km})$ for lower  limit,
+      and
+      $R \approx v_\mathrm{max}^2 / (20 \mathrm{mh/km})$ for higher limit~~.
   - Source: (2024-08-23) [Xin et al. (2021)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256301): for $R$
-    - [figure 8](https://doi.org/10.1371/journal.pone.0256301.g008): Predictions of speed thresholds of the truck in a sharp turn
+    - [figure 8](https://doi.org/10.1371/journal.pone.0256301.g008):
+      Predictions of speed thresholds of the truck in a sharp turn
   - Speed unit 'JoĜ' see [Units](Unuoj.md#rapido) page.
 
 #### Stratoj
@@ -134,11 +141,12 @@ Arterial / Collector / Local Roads:
 
 - Gradient $s$ and Curve radius $R$ limit:
 
-  |             | max Gradient $s$ (Dx) | min Curve radius $R$ (Dx) | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Real world examples |
+  |             | max Gradient $s$ (Dx) | min Curve radius $R$ (Dx) | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | $\theta_\mathrm{64U}$ | $\theta_\mathrm{32U}$ | $\theta_\mathrm{16U}$ | $\theta_\mathrm{8U}$ | Real world examples |
   | ----------- | :--------------: | :------------------: | :--------------------------: | :-----: | --- | --- | --- | --- | ------------------- |
-  | -           |  1.6 \%  | 1024m (128U) |  175 km/h  |  80 JoĜ | $127\degree$ | $152\degree$ | $166\degree$ | $173\degree$ | (Note: 185km/h for passenger trains; 130km/h for cargo trains) |
+  | Recommended |  1.6 \%  | 1024m (128U) |  175 km/h  |  80 JoĜ | $127\degree$ | $152\degree$ | $166\degree$ | $173\degree$ | (Note: 185km/h for passenger trains; 130km/h for cargo trains) |
   | -           |  1.6 \%  |  576m (72U)   |  130 km/h  |  60 JoĜ |  $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | |
-  | Hard Limit  |  3.6 \%  |  144m  (18U)  |   65 km/h  |  30 JoĜ | -            | -            |  $97\degree$ | $133\degree$ | Lithgow Zig Zag |
+  | Soft Limit  |  3.6 \%  |  144m  (18U)  |   65 km/h  |  30 JoĜ | -            | -            |  $97\degree$ | $133\degree$ | Lithgow Zig Zag |
+  | Hard Limit  |  5.5 \%  |   64m   (8U)  |   45 km/h  |  20 JoĜ | -            | -            | -            |  $90\degree$ | (Ramps only)    |
 
   - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
     i.e., $\theta_\mathrm{64u}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 64u.

@@ -58,6 +58,7 @@ Note: P/M follows positive and negative directions in mathematics (thus P for co
 |    E    | f**E**rvojo/m**E**troo | Railway/Metro    |        4m   |
 |    V    | **V**agonaro/Trajno | Train               |        4m   |
 |    G    | Neŭtrala **G**rundo  <br>Meza Strio | Neutral Ground  <br>Median Strip | $\geq$ 1m   |
+|    K    | Kajo                | Platform            | -           |
 |    O    | l**O**kokupilo      | Placeholder         | -           |
 |    i    | **i**nverse         | vice versa          | -           |
 
@@ -156,6 +157,7 @@ Examples:
 |    Va   | **V**il**a**o        | Villa            |
 |    Vd   | **V**i**d**o         | Vista            |
 |    Vĝ   | **V**ila**ĝ**o       | Village          |
+|    Sc   | **S**ta**c**io       | Station          |
 ||| <!-- Road types --> |
 |  ~~Vj~~ | ~~**V**o**j**o~~     | [Road](../teknikoj/Retoj.md#vojoj)  <br>(Deprecated[^Deprecated-Vj]) |
 |    Ej   | f**E**rvo**j**o      | [Railway](../teknikoj/Retoj.md#metrooj--personaj-fervojoj) |

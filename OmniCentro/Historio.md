@@ -46,8 +46,7 @@ i.e. $\sim 2^{17} \mathrm{km}^2 \approx 130 000 \mathrm{km}^2$.
 <blockquote>
   "None of this was a coincidence because nothing was ever a coincidence."<br>
   <span style="color:grey">
-  --- Aaron Smith-Teller (fictional) in the book <cite>UNSONG</cite>
-  <cite><a href="https://unsongbook.com/chapter-1-dark-satanic-mills/">Chapter 1</a></cite>,
+  --- Aaron Smith-Teller (fictional) in <cite><a href="https://unsongbook.com/chapter-1-dark-satanic-mills/">UNSONG</a></cite> <!-- Chapter 1 -->
   by Scott Alexander
   </span>
 </blockquote>

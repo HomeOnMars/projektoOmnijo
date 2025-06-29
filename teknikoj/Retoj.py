@@ -121,6 +121,7 @@ if __name__ == '__main__':
     print_info(grad=0.0*percent, v=0xBE*JoGx, **KE_pars)
     print_info(grad=1.6*percent, v=0x60*JoGx, **KE_pars)
     print_info(grad=3.6*percent, v=0x30*JoGx, **KE_pars)
+    print_info(grad=5.5*percent, v=0x20*JoGx, **KE_pars)
     
     print("\nHigh Speed Rail (per car)\n")
     # Using China Railway CRH3 (Velaro CN) info as reference / rough guideline
