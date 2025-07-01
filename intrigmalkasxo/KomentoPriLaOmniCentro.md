@@ -12,9 +12,7 @@ Komento de Aŭtoro pri la Regno de Omnijo kaj la urbo OmniCentro
 > [!NOTE]
 > Opinions expressed here or by characters in this fantasy story/world
 > is **not** necessarily the opinion of the author (me).  
-> \<Spoilers\>I definitely do NOT suggest anyone to build AGIs on their own-
-> that would a terrible, terrible idea.
-> Let the fantasy be fantasy.\</Spoilers\>
+> Let the fantasy be fantasy please.
 
 Legal
 -------------------------------------------------------------------------------

@@ -218,20 +218,22 @@ Using the leading digit for identifying districts and areas:
 | `0` |      |       | Interdistrikto (sen eksteraj konektoj)  <br>Interdistrict (no outside connections) | <span style="color:Tan">█ #D2B48C</span> |
 | `1` |  SK  | Mt-K  | Mt-Kuraĝo      | |
 |     |  SK  | Vĝ-P  | Vilaĝo-Pioniro | <span style="color:Red">█ #FF0000</span> |
-| `2` |  SC  | Am-H  | Am-Hejmecaĵo   | |
+| `2` |  SC  | Am-H  | Am-Hejmeco     | |
 | `3` |  SR  | Mt-O  | Mt-Olivkrono   | <span style="color:DarkSeaGreen">█ #8FBC8F</span> |
 | `4` |  CK  | Me-H  | Me-Hejmeco     | <span style="color:Silver">█ #C0C0C0</span> |
 | `5` |  CK  | Is-N  | Is-Niksino     | |
 | `6` |  CC  | Mt-H  | Mt-Hejmeco     | |
-| `7` |  CC  | Mt-H  | Am-Fortikeco   | |
+| `7` |  CC  | Am-F  | Am-Fortiko     | |
 | `8` |  CR  | Mt-E  | Mt-Espero      | |
 | `9` |  CC  | ??-?  | Royal Palace (TBD)  | <span style="color:Beige">█ #F5F5DC</span> |
-| `Δ` |  NK  | Mt-F  | Mt-Fortikeco   | <span style="color:MediumPurple">█ #9370DB</span> |
+| `Δ` |  NK  | Mt-F  | Mt-Fortiko     | <span style="color:MediumPurple">█ #9370DB</span> |
+|     |  NK  | Vd-F  | Vd-Fortiko     | <span style="color:#D6B4FC">█ #D6B4FC</span> |
 | `λ` |  NC  | Am-U  | Am-Unukorno    | <span style="color:Thistle">█ #D8BFD8</span> |
 |     |  NC  | Mt-U  | Mt-Unukorno    | <span style="color:Thistle">█ #D8BFD8</span> |
-| `Π` |  NK  | Am-R  | Me-Racieco     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
+| `Π` |  NK  | Me-R  | Me-Racio       | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 |     |  NK  | La-P  | La Pordego     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
-| `Σ` |  NR  | Am-R  | Am-Racieco     | |
+|     |  NK  | Dt-L  | Dt-Lumturo     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
+| `Σ` |  NR  | Am-R  | Am-Racio       | |
 | ... |      |       |                | |
 | `Ψ` |      |       | Eksteraj Konektoj  <br>Outside connections | |
 | ... |      |       |                | |
