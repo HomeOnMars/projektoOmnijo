@@ -178,6 +178,7 @@ Examples:
 |    Al   | **A**lt**l**ernejo   | College          |
 |   Uni   | **Uni**versitato     | University       |
 ||| <!-- Misc types --> |
+|    Ĉs   | **Ĉ**ef**s**idejo    | Headquarters     |
 |    La   | **La**               | The              |
 |    Ĉf   | **Ĉ**e**f**o         | Main             |
 |    Pt   | **P**ar**t**o        | Part, Segment    |

@@ -227,6 +227,7 @@ Arterial / Collector / Local Roads:
     - Try to keep at least 128U (1km, or 5 trains long)
       between metro stations' track connection point;
     - Hard minimum: 72U (576m / 3 trains).
+    - Ideally \~256U (2km / Dx11 trains), especially in rural area.
 - Additional Notes
   - Due to proper designs,
     metros in OmniCentro are capable of (and generally are) running 24/7:

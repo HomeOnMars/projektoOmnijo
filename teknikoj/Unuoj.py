@@ -305,7 +305,7 @@ u_si_defs : dict[str, units.UnitBase] = {
     for v in [
         'm', 'cm', 'km', 'au', 'lyr', 'pc', 'Mpc', # 'Rearth'
         'kg', 'g', 't',
-        's', 'h', 'd', 'yr',
+        's', 'min', 'h', 'd', 'yr',
         'K', 'deg_C',
         'C',
         'rad', 'deg', 'arcmin', 'arcsec',
@@ -950,3 +950,5 @@ if __name__ == '__main__':
               f"\t{loko.lat = }, {loko.lon = }, {loko.alt = }")
         assert p1 == p2
     print("Pass.")
+
+    print("\n=== PASS ===\n")

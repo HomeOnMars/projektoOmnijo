@@ -418,6 +418,8 @@ $$
   \approx 1.3402_D \  \textrm{kph}
 $$
 
+#### Speed of light
+
 The speed of light (in vacuum) is exactly
 
 $$
@@ -431,25 +433,49 @@ So when speed exceeds 1 MU/Ŝ (or Hx 10 0000 JoĜ, or \~0.13\%c),
 relativistic effects should be considered.
 Also, this means that light in vacuum travels precisely 3 JU in 1 mŜ.
 
-- Speed limits examples:
-  (kph limit is corrected with a multiplication factor of `8m/U`)
+#### Human walking speed
 
-  | JoĜ | kph (proksimumo) | kph (limo) |
-  | :--------- | :----: | ---------: |
-  |   Hx 100   | Dx 343 |   Dx 350   |
-  |   Hx  80   | Dx 172 |   Dx 175   |
-  |   Hx  60   | Dx 129 |   Dx 130   |
-  |   Hx  58   | Dx 118 |   Dx 120   |
-  |   Hx  50   | Dx 107 |   Dx 110   |
-  |   Hx  48   | Dx  96 |   Dx 100   |
-  |   Hx  40   | Dx  86 |   Dx  90   |
-  |   Hx  38   | Dx  75 |   Dx  75   |
-  |   Hx  30   | Dx  64 |   Dx  65   |
-  |   Hx  28   | Dx  54 |   Dx  55   |
-  |   Hx  20   | Dx  43 |   Dx  45   |
-  |   Hx  18   | Dx  32 |   Dx  35   |
-  |   Hx  10   | Dx  21 |   Dx  20   |
-  |   Hx   8   | Dx  11 |   Dx  10   |
+Human walking speed $\approx 4 \  \textrm{JoĜ} \approx 5.4_D \textrm{kph}$,
+or $3 \sim 4.8_H \  \textrm{JoĜ}$ ($4.0_D \sim 6.0_D \textrm{kph}$).  
+Source: (2025-07-03)
+[Wikipedia](https://en.wikipedia.org/wiki/Preferred_walking_speed).  
+A 4Ĉ (≈5.6min) walking distance can thus be defined as Hx40U or **Dx64U**,
+which is approximately Dx503m (or Dx512 CSL meters)
+
+Human jogging speed ranges
+from $5 \  \textrm{JoĜ}$ ($\approx 6.7_D \textrm{kph}$)
+to   $7 \  \textrm{JoĜ}$ ($\approx 9.4_D \textrm{kph}$).  
+Source: (2025-07-03)
+[Wikipedia](https://en.wikipedia.org/wiki/Jogging#Definition).
+
+Walkable distances:
+
+| Time (Dxmin) | Time (HxĈ) | Distance (HxU) | Distance (DxU) | Distance (Dxkm_CSL) |
+| :-------- | :----: | :-----: | :-----: | ---------: |
+| Dx  6 min | Hx  4Ĉ | Hx  40U | Dx  64U | Dx  0.5 km |
+| Dx 11 min | Hx  8Ĉ | Hx  80U | Dx 128U | Dx  1.0 km |
+| Dx 17 min | Hx  ΠĈ | Hx  Π0U | Dx 192U | Dx  1.5 km |
+
+#### Speed limits examples
+
+(kph limit is corrected with a multiplication factor of `8m/U`)
+
+| JoĜ | CSL kph (proksimumo) | CSL kph (limo) |
+| :--------- | :----: | ---------: |
+|   Hx 100   | Dx 343 |   Dx 350   |
+|   Hx  80   | Dx 172 |   Dx 175   |
+|   Hx  60   | Dx 129 |   Dx 130   |
+|   Hx  58   | Dx 118 |   Dx 120   |
+|   Hx  50   | Dx 107 |   Dx 110   |
+|   Hx  48   | Dx  96 |   Dx 100   |
+|   Hx  40   | Dx  86 |   Dx  90   |
+|   Hx  38   | Dx  75 |   Dx  75   |
+|   Hx  30   | Dx  64 |   Dx  65   |
+|   Hx  28   | Dx  54 |   Dx  55   |
+|   Hx  20   | Dx  43 |   Dx  45   |
+|   Hx  18   | Dx  32 |   Dx  35   |
+|   Hx  10   | Dx  21 |   Dx  20   |
+|   Hx   8   | Dx  11 |   Dx  10   |
 
 ### Potenco
 

@@ -12,7 +12,7 @@ Komento de Aŭtoro pri la Regno de Omnijo kaj la urbo OmniCentro
 > [!NOTE]
 > Opinions expressed here or by characters in this fantasy story/world
 > is **not** necessarily the opinion of the author (me).  
-> Let the fantasy be fantasy please.
+> Let fantasy be fantasy please.
 
 Legal
 -------------------------------------------------------------------------------
