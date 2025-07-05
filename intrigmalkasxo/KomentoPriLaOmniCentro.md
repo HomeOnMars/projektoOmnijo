@@ -293,9 +293,9 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   </blockquote>
   <br>
   <blockquote>
-    Step #1 is <em>"solving intelligence"</em>;<br>
+    Step #1 is <em>solving intelligence</em>;<br>
     And step #2 is
-    using this intelligence <em>"to solve everything else"</em>.<br>
+    using that intelligence <em>to solve everything else</em>.<br>
     <span style="color:grey">
     --- <!-- Two Minute Papers @  <cite><a href="https://youtu.be/T0eWBlFhFzc?list=TLPQMjIwNTIwMjV3sTn0z8Quog&t=360">YouTube</a></cite> (2025-05-17)'s  -->
     Paraphrase of Sir Demis Hassabis's description of DeepMind's mission,
@@ -392,10 +392,11 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   the new capital; Also, any potential fusion power plant
   would likely draw a lot of water as fuel,
   and the reservoirs created by the dams would be perfect for that.
-  (Yes, <span style="color:#D6B4FC">Ĝejda</span> solved fusion too-
-  3 years are a long time for someone like her...
-  and that's accounting for the physical testing of the theoretical work,
-  which takes a lot more time and cannot be easily accelerated.)
+  (Yes, <span style="color:#D6B4FC">Ĝejda</span> solved fusion too,
+  at least on a theoretical level-
+  3 years is a long time for someone like her...
+  However, the physical testing for all that theoretical work
+  would take a lot more time and could not be easily accelerated.)
 
   And all of this is just *the tip of the iceberg*.
 

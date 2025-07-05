@@ -90,6 +90,44 @@ A resolution was made, here and then:
 
 ### La Perdita Princino
 
+<blockquote>
+  "When you wake up in the morning, tell yourself:
+  the people I deal with today will be
+  meddling, ungrateful, arrogant, dishonest, jealous and surly.
+  <em>They are like this
+  because they cannot tell good from evil</em>."<br>
+  <!-- "But I have seen the beauty of good, and the ugliness of evil,
+  and have recognized that
+  the wrongdoer has a nature related to my own-
+  not of the same blood and birth, but the same mind,
+  and possessing a share of the divine.
+  And so none of them can hurt me.
+  No one can implicate me in ugliness.
+  Nor can I feel angry at my relative, or hate him.
+  We were born to work together like feet, hands and eyes,
+  like the two rows of teeth, upper and lower.
+  To obstruct each other is unnatural.
+  To feel anger at someone, to turn your back on him:
+  these are unnatural." -->
+  <span style="color:grey">
+  --- Marcus Aurelius
+  </span>
+</blockquote>
+<br>
+<blockquote>
+  "People who live their entire life surrounded by mountains
+  usually care nothing for them.
+  They end up seeing the mountains
+  as the thing that stands between them and the world.
+  ...
+  There are only two places
+  where you can really feel the true magic of the mountains:
+  On the plains from far away, or standing on a peak."<br>
+  <span style="color:grey">
+  --- <cite><a href="https://www.apexbookcompany.com/a/blog/apex-magazine/post/mountain">Mountain (2006)</a></cite> by Liu Cixin
+  </span>
+</blockquote>
+
 (TBD) 
 
 ### La Unua Lumo
