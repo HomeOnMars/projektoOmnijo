@@ -53,7 +53,7 @@ Bazaj Unuoj
 > Length
 
 > [!IMPORTANT]
-> Base length unit: ***Utroj*** `U` (Omnija meters)
+> Base length unit: ***Utro*** `U` (Omnija meter)
 
 $$
   \textrm{U}
@@ -62,7 +62,7 @@ $$
   \approx 7.8525_D \  \textrm{m}
 $$
 
-The Utroj is calilbrated such that 1U is approximately 8 meters,
+Utroj are calilbrated such that 1U is approximately 8 meters,
 while the speed of light $c = 300 \ 0000_H \textrm{U/Ŝ}$ precisely
 under the [time definition Ŝ](#tempo).
 
@@ -182,7 +182,7 @@ which happens to be about 1 FEU container equivalent of goods.
 > Time
 
 > [!IMPORTANT]
-> Base time unit: ***Ŝekuntoj*** `Ŝ` (Omnija seconds)
+> Base time unit: ***Ŝekunto*** `Ŝ` (Omnija second)
 
 $$
   1 \  Ŝ
@@ -192,7 +192,7 @@ $$
 $$
 <!-- 1 \  Ŝ \approx 1.518_H \  s -->
 
-The ŝekuntoj is calilbrated such that each Earth day is about $16_D^4 \  Ŝ$,
+Ŝekuntoj are calilbrated such that each Earth day is about $16_D^4 \  Ŝ$,
 with an approximate difference of only Dx 1.17 SI seconds per day.  
 (Note that this difference is much larger than the old def
 of $1149807 \times 2^{124_D}$,
@@ -206,14 +206,14 @@ and that RdO will expand beyond Earth one day, so the simplicity of def
 should take priority over aligning percisely to Earth's rotation cycle,
 which is also slowing down over millennia.)
 
-- `Ŝ`: ***Ŝekuntoj*** | Omnija Seconds
+- `Ŝ`: ***Ŝekunto*** | Omnija Second
   - Side note: munioneŜekuntoj `mŜ`
     is $1 \  \textrm{mŜ} = 0.0001_H Ŝ \approx 0.02_D \  \textrm{ms}$
-- `Ĉ`: ***Ĉimutoj***  | Omnija Minutes
+- `Ĉ`: ***Ĉimuto***  | Omnija Minute
   - 1 Ĉimuto is about $1440_D/1024_D = 1.40625_D$ SI Minutes.
-- `Ĝ`: ***Ĝoroj***    | Omnija Hours
+- `Ĝ`: ***Ĝoro***    | Omnija Hour
   - 1 Ĝoro is about $24_D/16_D = 1.5_D$ SI Hours.
-- `⚻` or `MŜ`: ***Tagoj*** / *MuniŜekuntoj* | Omnija Days
+- `⚻` or `MŜ`: ***Tago*** / *MuniŜekuntoj* | Omnija Day
   - Conversion rate:
     $$1⚻ = 1\textrm{MŜ} = 16_D Ĝ = 1024_D Ĉ = 65536_D Ŝ$$
     i.e.,
@@ -230,11 +230,11 @@ which is also slowing down over millennia.)
     (midnight next day).  
     Companies have the freedom to shift the beginning of the workday
     to be up to 1Ĝ earlier.
-- `⚝`: ***Semajnoj*** | Omnija Weeks
-- `☾`: ***Monatoj***  | Omnija Months
-- `Ĵ`: ***Ĵaroj***    | Omnija Unit Years
+- `⚝`: ***Semajno*** | Omnija Week
+- `☾`: ***Monato***  | Omnija Month
+- `Ĵ`: ***Ĵaro***    | Omnija Unit Year
   - Unit year - Length is precisely Dx365.25 (Hx16Σ.4) Omnija Days.
-- `J`: ***Jaroj***    | Omnija Calendar Years (Earth-specific)
+- `J`: ***Jaro***    | Omnija Calendar Year (Earth-specific)
   - Calendar year - Length varies depending on which year it is.
   - Here we assume one non-leap year (*komunjaro*) is 13 months exactly,
     and each months has 4 weeks exactly
@@ -268,7 +268,7 @@ which is also slowing down over millennia.)
 > Temperature
 
 > [!IMPORTANT]
-> Base temperature unit: ***Zoroj*** `Z` (Omnija Kelvin)
+> Base temperature unit: ***Zoro*** `Z` (Omnija Kelvin)
 
 $$
   \textrm{Z}
@@ -296,7 +296,7 @@ $$
 $\textrm{Z} = 0$ is exactly the absolute zero temperature.
 
 > [!NOTE]
-> Useful temperature unit: ***Zorumaj gradoj*** `°z` (Omnija degree Celsius)
+> Useful temperature unit: ***Zoruma grado*** `°z` (Omnija degree Celsius)
 
 $$
   X \degree \textrm{z}
@@ -307,8 +307,10 @@ Normal body temperature ranges approximately
 from $122_H \textrm{Z} = 22_H \degree \textrm{z} \approx 36.3_D \degree \textrm{C}$
 to   $123_H \textrm{Z} = 23_H \degree \textrm{z} \approx 37.4_D \degree \textrm{C}$.
 
-Ideal room temperature ranges approximately
-from $111_H \textrm{Z} = 11_H \degree \textrm{z} \approx 18.2_D \degree \textrm{C}$
+Ideal room temperature (for thermostat) ranges approximately
+from $112_H \textrm{Z} = 12_H \degree \textrm{z} \approx 19.2_D \degree \textrm{C}$
+to   $116_H \textrm{Z} = 16_H \degree \textrm{z} \approx 23.5_D \degree \textrm{C}$.  
+When quoting room temperature in Omnijo, generally it is referring
 to   $114_H \textrm{Z} = 14_H \degree \textrm{z} \approx 21.4_D \degree \textrm{C}$.
 
 ### Ŝargo
@@ -592,7 +594,7 @@ $$
 > Currency
 
 > [!NOTE]
-> Currency unit: ***Sejroj*** `🪙` (0x1FA99) (Omnija dollars)
+> Currency unit: ***Sejro*** `🪙` (0x1FA99) (Omnija dollar)
 
 <!-- `💲` (0x1F4B2) -->
 <!-- `🪙` (0x1FA99) -->
