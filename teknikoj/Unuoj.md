@@ -296,22 +296,25 @@ $$
 $\textrm{Z} = 0$ is exactly the absolute zero temperature.
 
 > [!NOTE]
-> Useful temperature unit: ***Zoruma grado*** `°z` (Omnija degree Celsius)
+> Useful temperature unit: ***Zoruma grado*** `°Ž` (0x017D)
+> (Omnija degree Celsius)
+
+(Add a caron above 'Z' to make sure people don't confuse `°Ž` with `Z`.)
 
 $$
-  X \degree \textrm{z}
+  X \degree \textrm{Ž}
   = 100_H + X \textrm{Z}
 $$
 
 Normal body temperature ranges approximately
-from $122_H \textrm{Z} = 22_H \degree \textrm{z} \approx 36.3_D \degree \textrm{C}$
-to   $123_H \textrm{Z} = 23_H \degree \textrm{z} \approx 37.4_D \degree \textrm{C}$.
+from $122_H \textrm{Z} = 22_H \degree \textrm{Ž} \approx 36.3_D \degree \textrm{C}$
+to   $123_H \textrm{Z} = 23_H \degree \textrm{Ž} \approx 37.4_D \degree \textrm{C}$.
 
 Ideal room temperature (for thermostat) ranges approximately
-from $112_H \textrm{Z} = 12_H \degree \textrm{z} \approx 19.2_D \degree \textrm{C}$
-to   $116_H \textrm{Z} = 16_H \degree \textrm{z} \approx 23.5_D \degree \textrm{C}$.  
+from $112_H \textrm{Z} = 12_H \degree \textrm{Ž} \approx 19.2_D \degree \textrm{C}$
+to   $116_H \textrm{Z} = 16_H \degree \textrm{Ž} \approx 23.5_D \degree \textrm{C}$.  
 When quoting room temperature in Omnijo, generally it is referring
-to   $114_H \textrm{Z} = 14_H \degree \textrm{z} \approx 21.4_D \degree \textrm{C}$.
+to   $114_H \textrm{Z} = 14_H \degree \textrm{Ž} \approx 21.4_D \degree \textrm{C}$.
 
 ### Ŝargo
 

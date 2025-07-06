@@ -92,6 +92,7 @@ ASCIIIFY_CHR = {
     'Ĵ': 'Jx','ĵ': 'jx',
     'Ŝ': 'Sx','ŝ': 'sx',
     'Ŭ': 'Ux','ŭ': 'ux',
+    'Ž': 'Zx',    # for temperature unit °Ž
     '⚻': 'tago',
     '⚝': 'Se',
     '☾': 'Monato',
@@ -490,13 +491,59 @@ units.def_unit(
     ['Ĵ', 'Ĵaro'], 365.25 * u_rdo_defs['MŜ'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 #    temperature
-deg_z = units.def_unit(
-    ['°z', 'deg_z', 'zoruma_grado'], namespace=u_rdo_defs)
-zoro_equivalency = (
-    deg_z, u_rdo_defs['Z'],
-    lambda deg_z: deg_z + 0x100,
-    lambda Z: Z - 0x100,
-)
+Z = u_rdo_defs['Z']
+deg_Zx = units.def_unit(
+    ['°Ž', 'deg_Zx', 'zoruma_grado'], namespace=u_rdo_defs)
+__Z_DIV_K: float = (1*u_rdo_defs['Z']).to_value(units.K)
+__K_DIV_Z: float = (1*units.K).to_value(u_rdo_defs['Z'])
+__Z_2_K = lambda Z: Z*__Z_DIV_K
+__K_2_Z = lambda K: K*__K_DIV_Z
+__degZx_2_K = lambda degZx: __Z_2_K(degZx + 0x100)
+__K_2_degZx = lambda K: (__K_2_Z(K) - 0x100)
+equivalencies_Zoro = [
+    (
+        deg_Zx, u_rdo_defs['Z'],
+        lambda degZx: degZx + 0x100,
+        lambda Z: Z - 0x100,
+    ),
+    (
+        deg_Zx, units.K,
+        __degZx_2_K,
+        __K_2_degZx,
+    ),
+]
+for eq in units.equivalencies.temperature():
+    if eq[0] == units.K:
+        _, X, __K_2_X, __X_2_K = eq
+        equivalencies_Zoro.append((
+            deg_Zx, X,
+            # note: using below to make sure K_2_X is referencing to the
+            # correct func in units.equivalencies (instead of in parent scope)
+            (lambda K_2_X: lambda degZx: K_2_X(__degZx_2_K(degZx)))(__K_2_X),
+            (lambda X_2_K: lambda X: __K_2_degZx(X_2_K(X)))(__X_2_K),
+        ))
+        equivalencies_Zoro.append((
+            Z, X,
+            (lambda K_2_X: lambda Z: K_2_X(__Z_2_K(Z)))(__K_2_X),
+            (lambda X_2_K: lambda X: __K_2_Z(X_2_K(X)))(__X_2_K),
+        ))
+    elif eq[1] == units.K:
+        X, _, __X_2_K, __K_2_X = eq
+        equivalencies_Zoro.append((
+            X, deg_Zx,
+            (lambda X_2_K: lambda X: __K_2_degZx(X_2_K(X)))(__X_2_K),
+            (lambda K_2_X: lambda degZx: K_2_X(__degZx_2_K(degZx)))(__K_2_X),
+        ))
+        equivalencies_Zoro.append((
+            X, Z,
+            (lambda X_2_K: lambda X: __K_2_Z(X_2_K(X)))(__X_2_K),
+            (lambda K_2_X: lambda Z: K_2_X(__Z_2_K(Z)))(__K_2_X),
+        ))
+equivalencies_temperature = [
+    *equivalencies_Zoro,
+    *units.equivalencies.temperature()]
+del eq, X, Z, __K_2_X, __X_2_K
+
 #    speed
 units.def_unit('UoŜ', u_rdo_defs[ 'U']/u_rdo_defs['Ŝ'], namespace=u_rdo_defs)
 units.def_unit('JoĜ', u_rdo_defs['JU']/u_rdo_defs['Ĝ'], namespace=u_rdo_defs)
@@ -563,8 +610,7 @@ class Unuoj:
             k: v for k, v in self._defs.items() if v not in self._UNITS_MASK}
 
     def enable_equivalencies(self):
-        return units.set_enabled_equivalencies([
-            zoro_equivalency, *units.equivalencies.temperature()])
+        return units.set_enabled_equivalencies(equivalencies_temperature)
     
     def enable_units(self, overwrite:bool=False):
         if overwrite: units.set_enabled_units([])
