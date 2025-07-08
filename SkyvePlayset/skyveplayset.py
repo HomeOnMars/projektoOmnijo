@@ -42,6 +42,7 @@ class SkyvePlayset:
     ):
         self.name: str = name
         self.data: dict[str, dict] = {}
+        self.temp_updated: bool = False
 
         if verbose: print(f"\n{self.name}\n")
         self.update_temp(skyve_dir, temp_dir=temp_dir, verbose=verbose)
@@ -70,14 +71,16 @@ class SkyvePlayset:
                     mtime = new_mtime
         if source:
             shutil.copy2(source, target)
+            self.temp_updated = True
             if verbose:
                 print(
-                    f"Copied '{source}' to '{target}',\n\tmodified at "
+                    f"-\tCopied '{source}' to '{target}',\n\tmodified at "
                     f"{datetime.fromtimestamp(new_mtime).isoformat()}.")
         else:
+            self.temp_updated = False
             if verbose:
                 print(
-                    f"Note: Old file {target} was NOT updated.")
+                    f"-\tNote: No updates for the old file '{target}'.")
         return self
 
     def read_temp(
@@ -141,6 +144,7 @@ if __name__ == '__main__':
     remove_mods = mod_ids_radios
     skyve_dir = "../CSL2_SavesDir/ModsData/Skyve/Playsets/Shared/"
 
-    for playset_name in {'OmniCentro', 'MapTesting', 'MapCreation'}:
+    for playset_name in {'OmniCentro', 'OmnijaProvo', 'MapTesting', 'MapCreation'}:
         playset = SkyvePlayset(playset_name, skyve_dir)
-        playset.normalize(remove_mods=remove_mods).dump()
+        if playset.temp_updated:
+            playset.normalize(remove_mods=remove_mods).dump()
