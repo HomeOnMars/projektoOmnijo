@@ -177,9 +177,12 @@ Arterial / Collector / Local Roads:
   | -           |  3.3 \%  |  3024m (378U)  |  260 km/h  |  Π0 JoĜ | -            | -            | -            | -            | |
   | Soft Limit  |  4.2 \%  |  2104m (263U)  |  220 km/h  |  Δ0 JoĜ | $92\degree$  | $129\degree$ | $153\degree$ | $167\degree$ | |
   | -           |  5.5 \%  |  1344m (168U)  |  175 km/h  |  80 JoĜ | -            | -            | -            | -            | |
-  | Hard Limit  |  7.5 \%  |   760m  (95U)  |  130 km/h  |  60 JoĜ | -            | -            | $113\degree$ | $143\degree$ | (Ramps only) |
-  | -           |  7.5 \%  |    88m  (11U)  |   45 km/h  |  20 JoĜ | -            | -            | -            | -            | (Ramps only) |
+  | Hard Limit  |  7.5 \%  |   760m  (95U)  |  130 km/h  |  60 JoĜ | -            | -            | $113\degree$ | $143\degree$ | (*Tunnels* only) |
+  | -           |  7.5 \%  |    88m  (11U)  |   45 km/h  |  20 JoĜ | -            | -            | -            | -            | (*Tunnels* only) |
 
+  - Note: Steeper than 5.5\% gradient tracks must be put in **tunnels**
+    to shield them from snow and ice,
+    thus ensuring trains can climb and brake safely.
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
 - Length / Power
@@ -206,7 +209,12 @@ Arterial / Collector / Local Roads:
   | Recommended |  5.4 \%  |  576m (72U)  |  130 km/h  |  60 JoĜ | $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;  <br>($R$) Assuming tilting trains. |
   | Hard Limit  |  7.3 \%  |  320m (40U)  |  100 km/h  |  48 JoĜ | -                 | $103\degree$ | $137\degree$  | $158\degree$ | ($s$) Bernina Railway, Switzerland;  <br>($R$) Bay Area Rapid Transit, United States. |
 
-  - Assuming tilting trains: see [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant).
+  - Assuming *tilting trains* ([Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant)).
+  - Assuming trains are powered by
+    *linear induction motor* ([Wikipedia](https://en.wikipedia.org/wiki/Linear_induction_motor#Performance))
+    to climb/descend safely on steep gradients;
+    and (magically) improved third rails that are capable of
+    transmitting more power and running faster trains without arcing.
   - Note: curve radius restrictions may be relaxed when exiting / entering stations where speed is slow.
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
   - Source: (2024-08-17) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#List_of_selected_minimum_curve_radii): $R$ examples
@@ -254,13 +262,15 @@ Arterial / Collector / Local Roads:
   | Hard Limit  |  20   \%  |   96m (12U)  |  45 km/h  |  20 JoĜ | |
 
   - Note: Faster than 65 km/h speed can only be achieved on separated tracks.
+  - Note: Steeper than 10\% (especially 13\%) gradient tracks
+    assumes *rack-assist* trams
+    ([Wikipedia](https://en.wikipedia.org/wiki/Rack_railway#)),
+    to ensure safe operations under heavy snows and ice.  
+    Rack railways here are magically made faster and more efficient,
+    because RdO enjoys technological superiority by lore.
   - Curve radius limit here can be ignored, as trams slow down near intersections.
     It is larger than metro when speed is fast,
     because tram tracks are assumed to be non-tilting.
-  - 13.8% is about as steep as real-life trams go,
-    but why not go even steeper?
-    It's a game afterall-
-    and RdO enjoys technological superiority by lore anyway.
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
 - Length / Power
   - Assumed EMU (Electric Multiple Unit).
