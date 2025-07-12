@@ -278,6 +278,7 @@ Using the leading digit for identifying districts and areas:
 | \- Karbo                 | \- Coal                  |
 | \- Erco                  | \- Ore                   |
 |||
+| Radioturo                | Telecom Tower            |
 | Transformilejo           | Transformer station      |
 | Akumulatorejo            | (Emergency) Battery Station |
 | Akvobaraĵo               | Dam                      |
