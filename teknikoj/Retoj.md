@@ -161,7 +161,13 @@ Arterial / Collector / Local Roads:
   - train length: 25 (16m/2u-long) cars (**400m/50u**): 1 engine + 24 trailers.
   - For track intersections: $\geq$ 448m/56u.
   - Assumed power consumption:
-  9496hp/7.1MW per engine.
+    9496hp/7.1MW per engine.
+  - Due to advanced [*regenerative braking*](https://en.wikipedia.org/wiki/Regenerative_braking) system,
+    kinetic energies from trains travelling downhill
+    or decelerating to stop at stations
+    can be recovered for later uses (e.g. propelling trains uphill
+    or accelerating trains when leaving stations).
+    So the total power used per train is often less than the above requirements.
 
 #### Altrapidaj fervojoj
 
@@ -195,7 +201,13 @@ Arterial / Collector / Local Roads:
     - Half length permitted
   - For track intersections: $\geq$ 448m/56u.
   - Assumed power consumption:
-  1726hp/1.3MW per (24m/3u-long) train car - 20.6MW for a full length train.
+    1726hp/1.3MW per (24m/3u-long) train car - 20.6MW for a full length train.
+  - Due to advanced [*regenerative braking*](https://en.wikipedia.org/wiki/Regenerative_braking) system,
+    kinetic energies from trains travelling downhill
+    or decelerating to stop at stations
+    can be recovered for later uses (e.g. propelling trains uphill
+    or accelerating trains when leaving stations).
+    So the total power used per train is often less than the above requirements.
 
 #### Metrooj / personaj fervojoj
 
@@ -209,9 +221,9 @@ Arterial / Collector / Local Roads:
   | Recommended |  5.4 \%  |  576m (72U)  |  130 km/h  |  60 JoĜ | $97\degree$ | $133\degree$ | $155\degree$ | $168\degree$ | ($s$) Höllentalbahn (Black Forest), Germany;  <br>($R$) Assuming tilting trains. |
   | Hard Limit  |  7.3 \%  |  320m (40U)  |  100 km/h  |  48 JoĜ | -                 | $103\degree$ | $137\degree$  | $158\degree$ | ($s$) Bernina Railway, Switzerland;  <br>($R$) Bay Area Rapid Transit, United States. |
 
-  - Assuming *tilting trains* ([Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant)).
+  - Assuming [*tilting trains*](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant).
   - Assuming trains are powered by
-    *linear induction motor* ([Wikipedia](https://en.wikipedia.org/wiki/Linear_induction_motor#Performance))
+    [*linear induction motor*](https://en.wikipedia.org/wiki/Linear_induction_motor#)
     to climb/descend safely on steep gradients;
     and (magically) improved third rails that are capable of
     transmitting more power and running faster trains without arcing.
@@ -248,6 +260,12 @@ Arterial / Collector / Local Roads:
     This is much akin to the real life
     [Copenhagen Metro](https://en.wikipedia.org/wiki/Copenhagen_Metro)
     (2025-02-04).
+  - Due to advanced [*regenerative braking*](https://en.wikipedia.org/wiki/Regenerative_braking) system,
+    kinetic energies from trains travelling downhill
+    or decelerating to stop at stations
+    can be recovered for later uses (e.g. propelling trains uphill
+    or accelerating trains when leaving stations).
+    So the total power used per train is often less than the above requirements.
 
 #### Tramoj
 

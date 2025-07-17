@@ -255,6 +255,7 @@ Using the leading digit for identifying districts and areas:
 | Tramo-Korto              | Tram Depot               |
 | Stacio                   | Station                  |
 | Stacidomo                | Station (Building)       |
+| Parkejo                  | Parking Lot              |
 |||
 | Bazlernejo / ***Bl***    | Elementary School        |
 | Mezlernejo / ***Ml***    | High School / Middle School |
