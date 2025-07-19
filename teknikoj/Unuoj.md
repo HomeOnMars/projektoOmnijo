@@ -236,30 +236,34 @@ which is also slowing down over millennia.)
   - Unit year - Length is precisely Dx365.25 (Hx16Σ.4) Omnija Days.
 - `J`: ***Jaro***    | Omnija Calendar Year (Earth-specific)
   - Calendar year - Length varies depending on which year it is.
-  - Here we assume one non-leap year (*komunjaro*) is 13 months exactly,
+  - Here we assume one non-leap year (*komunjaro*)
+    is 13 months plus 1 day exactly,
     and each months has 4 weeks exactly
 
-    $$1J_\textrm{komun} = Σ_H ☾ = 34_H ⚝ = 16Π_H ⚻ = 364_D ⚻$$
+    $$1J_\textrm{komun} = Σ_H ☾ + 1⚻ = 34_H ⚝ + 1⚻ = 16Σ_H ⚻ = 365_D ⚻$$
 
     except leap year (*superjaro*), which happens every 4 years,
-    and has 5 extra days (all considered holidays):
+    and has 1 extra days (all considered holidays):
 
-    $$1J_\textrm{super} \simeq Σ ☾ + 5 ⚻ = 171_H ⚻ = 369_D ⚻$$
-
+    $$1J_\textrm{super} \simeq Σ ☾ + 2 ⚻ = 16Υ_H ⚻ = 366_D ⚻$$
+  - Name for the months see [Lingvo](Lingvo.md#tempo) page.
   - Winter Solstice[^Tagoj-Solstico] always happens
-    in the first week of the year for the Y+\* calendars.
-    The leap year (Y+\* years ends with $3_H, 7_H, λ_H, Ψ_H$) adds extra days at the end of the year,
-    and the year immediately after the leap year have the solstice
-    happening at the (evening of the) first day of the year.
-    The first week of the year
-    (together with the days added by leap years if any)
-    are holidays.
+    in the first two days of the year for the Y+\* calendars.
+    The 1 or 2 extra day is added at the end of the year
+    as the "fake" Dx14th Month ($☾_Υ$, or `Ganamonato`),
+    which has only 1 or 2 days (plus potential extra seconds).
+    The year immediately after
+    the leap year (Y+\* years ends with $3_H, 7_H, λ_H, Ψ_H$)
+    have the solstice happening at approximately
+    the midnight between the leap year and the new year.
+    Dx14th Month $☾_Υ$ plus the first week of the year are holidays.
   - Solstices and Equinoxes are national holidays.
   - Any changes to the calendar years system
     (such as adding leap seconds to sync with Earth's orbit,
     or more drastic changes in the event of
     Earth's rotation period or orbit changes significantly)
-    should in principle only be applied at the end of the leap years.
+    should in principle only be added / removed in Dx14th Month $☾_Υ$.
+    Usually this means $\sim 7.1$ minutes or 5Ĉ.
 
 [^Tagoj-Solstico]: a.k.a. Northern Solstice, since *la Insulo-Omnijo* is located in the Southern Hemisphere.
 

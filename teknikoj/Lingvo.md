@@ -44,20 +44,16 @@ but by that time the people have already gotten used to the <span style="color:B
 plus, they also have the chaotic implementation of
 her new UBI (universal basic income) policy to worry about.
 
-### Specifoj
-
-> Specifications
-
 Changes of Esperanto++ from Esperanto include:
 
-#### Alfabeto
+### Alfabeto
 
 > Alphabet
 
 - Officially eliminated `ĥ` from the *E++* alphabet
   (mostly replaced with `k`);
 
-#### Algebro
+### Algebro
 
 > Algebra
 
@@ -146,7 +142,7 @@ Changes of Esperanto++ from Esperanto include:
   - Pronunciation:
     TBD.
 
-#### Sekso
+### Sekso
 
 > Gender
 
@@ -169,16 +165,28 @@ Changes of Esperanto++ from Esperanto include:
     and `virino` remains to be woman.
 - See also [Wikipedia](https://en.wikipedia.org/wiki/Gender_reform_in_Esperanto#Common_elements_to_regularizing_Esperanto_gender).
 
-#### Time
+### Tempo
 
-See also the [Units](../teknikoj/Unuoj.md#tempo) page and the
-[(***Spoilers***) Timeline](../intrigmalkasxo/Kronologio.md#kronologio) page.
+> Time
 
-| Siglo | Formo   | Nomo           |
-| --- | --------- | -------------- |
-| `Ĝ` | `Ĝoro`    | Omnija horo    |
-| `Ĉ` | `Ĉimuto`  | Omnija minuto  |
-| `Ŝ` | `Ŝekunto` | Omnija sekundo |
+- Units
+  See also the [Units](../teknikoj/Unuoj.md#tempo) page and the
+  [(***Spoilers***) Timeline](../intrigmalkasxo/Kronologio.md#kronologio) page.
+
+  | Siglo | Formo   | Nomo           |
+  | --- | --------- | -------------- |
+  | `Ĝ` | `Ĝoro`    | Omnija horo    |
+  | `Ĉ` | `Ĉimuto`  | Omnija minuto  |
+  | `Ŝ` | `Ŝekunto` | Omnija sekundo |
+
+- Name for the months
+  - `Unuamonato`: $☾_1$
+  - `Duamonato`:  $☾_2$
+  - ...
+  - `Sigamonato`: $☾_Σ$
+  - `Ganamonato`: $☾_Υ$
+    (fake last month that has 1 or 2 day(s) plus potential extra seconds
+    for time corrections with respect to Earth's orbit)
 
 #### Others
 
