@@ -235,7 +235,6 @@ Arterial / Collector / Local Roads:
 - Length / Power
   - Assumed EMU (Electric Multiple Unit).
   - Train length
-    <!-- - 12 (20m/2.5u-long) train cars (**240m/30u**). -->
     - 8  (24m/3.0U-long) train cars (**192m/24U**)
     - 10 (20m/2.5U-long) train cars (**200m/25U**)
     - 12 (16m/2.0U-long) train cars (**192m/24U**)
@@ -292,7 +291,12 @@ Arterial / Collector / Local Roads:
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/List_of_steepest_gradients_on_adhesion_railways#): $s$ examples
 - Length / Power
   - Assumed EMU (Electric Multiple Unit).
-  - Assuming non-tilting trains.
+  - Assumed non-tilting trains.
+  - Train length
+    - 6  (16m/2.0U-long) train cars (**96m/12U**)
+    - 9  (12m/1.5U-long) train cars (**96m/12U**)
+    - 12 ( 8m/1.0U-long) train cars (**96m/12U**)
+    - Half length permitted
   - Assumed power consumption: 809hp/0.6MW per (16m/2u-long) train car.
 
 #### Monoreloj
