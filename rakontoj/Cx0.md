@@ -127,9 +127,20 @@ A resolution was made, here and then:
   --- <cite><a href="https://www.apexbookcompany.com/a/blog/apex-magazine/post/mountain">Mountain (2006)</a></cite> by Liu Cixin
   </span>
 </blockquote>
+<br>
 
 (TBD) 
 
 ### La Unua Lumo
+
+<blockquote>
+  "The world is a beautiful lie;<br>
+  And to be human, is
+  to find/build/grow something true and real to you out of it."<br>
+  <span style="color:grey">
+  --- <span style="color:#95D0FC">La Arkitekto</span>
+  </span>
+</blockquote>
+<br>
 
 (TBD) 
