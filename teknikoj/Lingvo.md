@@ -169,9 +169,10 @@ Changes of Esperanto++ from Esperanto include:
 
 > Time
 
-- Units
-  See also the [Units](../teknikoj/Unuoj.md#tempo) page and the
-  [(***Spoilers***) Timeline](../intrigmalkasxo/Kronologio.md#kronologio) page.
+- Units and *`Omnijaro`* Calendar System (Ø+\* years)  
+  See also the [Units](../teknikoj/Unuoj.md#tempo) page for explanation, and the
+  [(***Spoilers***) Timeline](../intrigmalkasxo/Kronologio.md#kronologio) page
+  for usage.
 
   | Siglo | Formo   | Nomo           |
   | --- | --------- | -------------- |

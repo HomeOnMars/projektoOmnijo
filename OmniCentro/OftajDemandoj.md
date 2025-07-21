@@ -212,9 +212,9 @@ A few more clarifications:
 5. What counts as **"infohazard"** will be determined
   at the central gov's discretion.
 6. There will be a **transitional period**.
-  Everything published before `Y+10J` (Dx16th year (a hexcade) after
+  Everything published before `Ø+10J` (Dx16th year (a hexcade) after
   <span style="color:Beige">Serena</span>'s coronation)
-  will have it until `Y+11J` (Dx17th year)
+  will have it until `Ø+11J` (Dx17th year)
   before author's full control exppires.
   The policy will also be announced in stages- see below.
 7. In its final form, this policy applies to **ALL** intellectual works,
@@ -245,16 +245,16 @@ A few more clarifications:
 <span style="color:Beige">Serena</span> plans to announce and implement
 her *copyright reform* policy in three distinct stages:
 
-1. Stage 1 / `Y+2J` (2 years after her coronation):  
+1. Stage 1 / `Ø+2J` (2 years after her coronation):  
   Announcement of <span style="color:Beige">her</span>
   reformed copyright scheme, framed as an optional license
   only mandatorily applied to the central government documents and
   nationalized industries.
-2. Stage 2 / `Y+4J` (4 years after her coronation):  
+2. Stage 2 / `Ø+4J` (4 years after her coronation):  
   <span style="color:Beige">Serena</span> announces that
   her new copyright scheme will now apply to everything ever published within
   the border of RdO.
-3. Stage 3 / `Y+8J` (8 years after her coronation):  
+3. Stage 3 / `Ø+8J` (8 years after her coronation):  
   Final form released,
   as <span style="color:Beige">Serena</span> announces that
   everything ever published worldwide will be treated under
@@ -266,7 +266,7 @@ her *copyright reform* policy in three distinct stages:
 
 As <span style="color:Beige">Reĝino Serena</span> expects
 significant international pushback from her radical idea.
-Which is why she delayed the announcement to `Y+8J`
+Which is why she delayed the announcement to `Ø+8J`
 when the kingdom is well-established and self-sufficient,
 with its technological supremacy firmly established,
 ready for major powers' economic sanctions and/or any potential wars.

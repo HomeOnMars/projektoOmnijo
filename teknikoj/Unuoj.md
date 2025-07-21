@@ -234,36 +234,47 @@ which is also slowing down over millennia.)
 - `☾`: ***Monato***  | Omnija Month
 - `Ĵ`: ***Ĵaro***    | Omnija Unit Year
   - Unit year - Length is precisely Dx365.25 (Hx16Σ.4) Omnija Days.
-- `J`: ***Jaro***    | Omnija Calendar Year (Earth-specific)
+- `J`: ***Jaro***    | Omnija Calendar Year (Earth-specific)  
+  *`Omnijaro`* Calendar System (Ø+\* (0xD8)):
   - Calendar year - Length varies depending on which year it is.
-  - Here we assume one non-leap year (*komunjaro*)
-    is 13 months plus 1 day exactly,
+  - Each non-leap year (*`komunjaro`*) has 13 months plus 1 day exactly,
     and each months has 4 weeks exactly
 
     $$1J_\textrm{komun} = Σ_H ☾ + 1⚻ = 34_H ⚝ + 1⚻ = 16Σ_H ⚻ = 365_D ⚻$$
-
-    except leap year (*superjaro*), which happens every 4 years,
-    and has 1 extra days (all considered holidays):
+  - Name for the months see [Lingvo](Lingvo.md#tempo) page.
+  - Leap year (*`superjaro`*) has 2 extra days outside the normal 13 months:
 
     $$1J_\textrm{super} \simeq Σ ☾ + 2 ⚻ = 16Υ_H ⚻ = 366_D ⚻$$
-  - Name for the months see [Lingvo](Lingvo.md#tempo) page.
+  - Leap year happens every 4 years, except every Dx128 years.
+    (So ~3 skipped leap years per 400 years-
+    the nice coincidence of hexadecimal system.)  
+    More specifically,
+    it happens at Ø+\* years ending with $0_H, 4_H, 8_H, Π_H$,
+    except Ø+\* years ending with $00_H, 80_H$.  
+    This is to sync the *Omnijaro* Calendar with
+    [Solar Year](https://en.wikipedia.org/wiki/Tropical_year),
+    so that solstices happens at around the same days in the year.
   - Winter Solstice[^Tagoj-Solstico] always happens
-    in the first two days of the year for the Y+\* calendars.
-    The 1 or 2 extra day is added at the end of the year
-    as the "fake" Dx14th Month ($☾_Υ$, or `Ganamonato`),
+    on the first or last day of the year in the *Omnijaro* calendar.
+    The 1 or 2 extra days are added at the end of the year
+    as the "fake" Dx14th Month ($☾_Υ$, or *`Ganamonato`*),
     which has only 1 or 2 days (plus potential extra seconds).
-    The year immediately after
-    the leap year (Y+\* years ends with $3_H, 7_H, λ_H, Ψ_H$)
-    have the solstice happening at approximately
-    the midnight between the leap year and the new year.
-    Dx14th Month $☾_Υ$ plus the first week of the year are holidays.
+  - Ø+\* years ending with $00_H, 80_H$ (i.e. the special non-leapyear)
+    have the solstice happening at approximately midnight
+    between the old and the new year.  
+    Because of this, one can imagine Ø+0 is set as 2027-06-22,
+    though I'd really rather left the definition open for interpretation.
+  - Dx14th Month $☾_Υ$ and the first week of the year are holidays.
   - Solstices and Equinoxes are national holidays.
   - Any changes to the calendar years system
     (such as adding leap seconds to sync with Earth's orbit,
     or more drastic changes in the event of
     Earth's rotation period or orbit changes significantly)
     should in principle only be added / removed in Dx14th Month $☾_Υ$.
-    Usually this means $\sim 7.1$ minutes or 5Ĉ.
+  - In other words, extra seconds may be added or substracted in $☾_Υ$
+    to keep the days in sync with
+    [Mean Solar Time](https://en.wikipedia.org/wiki/Solar_time#Mean_solar_time).
+    Usually this means adding $\sim 7.1$ minutes or 5Ĉ4Ŝ.
 
 [^Tagoj-Solstico]: a.k.a. Northern Solstice, since *la Insulo-Omnijo* is located in the Southern Hemisphere.
 
