@@ -34,7 +34,7 @@ located on an fictional island *la Insulo-Omnijo*
 in the Southern Hemisphere somewhere in between Chile and New Zealand,
 near 56°15'S, 140°15'W (coordinates are fictional).
 The island has a size of approximately Iceland or Java island,
-i.e. $\sim 2^{17} \mathrm{km}^2 \approx 130 000 \mathrm{km}^2$.
+i.e. $\sim \frac{1}{2} \mathrm{MU}^2 \approx 130 000_D \mathrm{km}^2$ (TBD).
 
 [^Historio-RdO-Nomo]: English translation: The Kingdom of Omnijo.
 
@@ -42,12 +42,19 @@ i.e. $\sim 2^{17} \mathrm{km}^2 \approx 130 000 \mathrm{km}^2$.
 
 > The foundation of *la Regno de Omnijo*
 
-<br>
+<!-- <br>
 <blockquote>
   "None of this was a coincidence because nothing was ever a coincidence."<br>
   <span style="color:grey">
-  --- Aaron Smith-Teller (fictional) in <cite><a href="https://unsongbook.com/chapter-1-dark-satanic-mills/">UNSONG</a></cite> <!-- Chapter 1 -->
+  --- Aaron Smith-Teller (fictional) in <cite><a href="https://unsongbook.com/chapter-1-dark-satanic-mills/">UNSONG</a></cite>
   by Scott Alexander
+  </span>
+</blockquote> -->
+<br>
+<blockquote>
+  All is not as it seems.<br>
+  <span style="color:grey">
+  --- The Witcher S03E05
   </span>
 </blockquote>
 <br>
