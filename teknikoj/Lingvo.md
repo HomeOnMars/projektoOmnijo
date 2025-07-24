@@ -35,7 +35,7 @@ aiming to offer even more regularity for easier learning
 while conforming to the existing world as much as possible.
 <span style="color:Beige">Queen Serena</span> declared `Epopo`
 as the new official language of RdO about three months in her reign,
-set to gradually replace English in the next *jarheko* (hexcade, i.e. 16 years)
+set to gradually replace English in the next *hekjaro* (hexcade, i.e. 16 years)
 in all RdO official documentations and communications.
 
 One would think that such random order

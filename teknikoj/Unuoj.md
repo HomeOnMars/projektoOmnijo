@@ -233,7 +233,7 @@ which is also slowing down over millennia.)
 - `⚝`: ***Semajno*** | Omnija Week
 - `☾`: ***Monato***  | Omnija Month
 - `Ĵ`: ***Ĵaro***    | Omnija Unit Year
-  - Unit year - Length is precisely Dx365.25 (Hx16Σ.4) Omnija Days.
+  - Unit year - Length is precisely Dx365.2421875 (Hx16Σ.3Υ) Omnija Days.
 - `J`: ***Jaro***    | Omnija Calendar Year (Earth-specific)  
   *`Omnijaro`* Calendar System (Ø+\* (0xD8)):
   - Calendar year - Length varies depending on which year it is.

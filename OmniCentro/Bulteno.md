@@ -200,7 +200,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 | RdO  | #F5F5DC | <span style="color:Beige">█ Ŝia Reĝina Moŝto **Serena Novarika** de Omnijo</span>  <!-- OCG -->  |
 | RdO  | #32CD32 | <span style="color:LimeGreen">█ Ĉefministro **Eriko** de Omnijo</span>  <!-- OCG -->  |
 | OCFD | #C0C0C0 | <span style="color:Silver">█ Generalo **Laŭra Dovoluĉo** de Omnijo</span>  <!-- OCG -->  |
-| OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ Kunordigestro **Dajanna Magdioza** de Omnijo</span>  <!-- OCG -->  |
+| OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ Kunordigestro **Dajanna Murfisko** de Omnijo</span>  <!-- OCG -->  |
 | OCFI | #95D0FC | <span style="color:#95D0FC">█ Arkitekto **Nomo Redaktita** de OCFI</span> |
 | OCFI | #D6B4FC | <span style="color:#D6B4FC">█ Suvereno **Ĝejda Fenulo** de Omnijo</span>  <!-- OCG -->  |
 | OCFI | #9370DB | <span style="color:MediumPurple">█ ... (Department Color) ...</span> |

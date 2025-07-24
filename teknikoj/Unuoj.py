@@ -215,13 +215,11 @@ def presi_Hx(
         )
         return f"{prefix}{ans_v} {n.unit}"
 
-    if e_sep is None: e_sep = 'p' if n < 0x10**(-4) or n > 16**4 else ''
-
     # n = np.float64(n)
     sign = n >= 0
     n = abs(n)
-    if n == 0:
-        return f"0{e_sep}+0" if e_sep else "0"
+    if n == 0: return f"0{e_sep}+0" if e_sep else "0"
+    if e_sep is None: e_sep = 'p' if n < 0x10**(-4) or n > 16**4 else ''
     base = np.float64(base)
     log2_base = np.log2(base)
     # grandordo = order of magnitude
@@ -232,6 +230,8 @@ def presi_Hx(
         raise NotImplementedError("Array input not yet implemented.")
 
     ans = "" if sign else "-"
+    if grandordo < 0 and not e_sep:
+        ans += "0."
 
     for i in range(sc if e_sep else max(grandordo+1, sc)):
         
@@ -261,7 +261,8 @@ def presi_Tx(
 
     See presi_Hx() for more info.
     """
-    return presi_Hx(n, base=0x20, prefix=prefix, symbols_inv=symbols_inv, **kwargs)
+    return presi_Hx(
+        n, base=0x20, prefix=prefix, symbols_inv=symbols_inv, **kwargs)
 
 
 
@@ -488,7 +489,7 @@ units.def_unit(
 units.def_unit(
     ['☾', 'Monato'],  4 * u_rdo_defs['Semajno'], namespace=u_rdo_defs)
 units.def_unit(
-    ['Ĵ', 'Ĵaro'], 365.25 * u_rdo_defs['MŜ'],
+    ['Ĵ', 'Ĵaro'], 365.2421875 * u_rdo_defs['MŜ'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 #    temperature
 Z = u_rdo_defs['Z']
@@ -670,6 +671,14 @@ class TeraLoko:
         self.lon = lon.to(u.deg) % (360*u.deg)    # guaranteed to be within [0, 360]
         self.lat = lat
         self.alt = alt
+
+    def __repr__(self):
+        return f"TeraLoko(lat={self.lat}, lon={self.lon}, alt={self.alt})"
+
+    def __str__(self):
+        return (
+            f"TeraLoko {self.get_posxkodo():16}: " +
+            f"lat {self.lat:9.5f}, lon {self.lon:9.5f}, alt {self.alt:6.0f}.")
 
     @property
     def colat(self):
@@ -974,6 +983,17 @@ if __name__ == '__main__':
             assert ss[i] in TX_SYMBOLS_DICT[c]
     print("Pass.")
 
+    print("\nTesting presi_Hx()...", end='')
+    assert presi_Hx(0) == '0'
+    assert presi_Hx(31/128) == '0.3Υ'
+    assert presi_Hx(-31/128) == '-0.3Υ'
+    assert presi_Hx(131/128) == '1.06'
+    assert presi_Hx(-131/128) == '-1.06'
+    assert presi_Hx(12138, e_sep='') == '2Ψ6Δ'
+    assert presi_Hx(-12138, e_sep='p') == '-2.Ψ6Δp3'
+    assert presi_Hx(9100000000, e_sep='') == '21Υ66Ψλ00'
+    print("Pass.")
+
     print("\nTesting Post Code Calc System...")
     print(
         "\tZero point (lat=lon=alt=0) postcode: "
@@ -983,18 +1003,27 @@ if __name__ == '__main__':
         LOKOJ['Nul'].get_posxkodo()) == '4M00000000Ŝ' # '4M000-0000-0000Ŝ'
     assert TeraLoko.normalize_posxkodo(
         LOKOJ['OC' ].get_posxkodo()) == 'Δ74D9M4TRΥD' # 'Δ74D9-M4TR-Υ000D'
+    def assert_loko(lat, lon, alt):
+        loko = TeraLoko(lat=lat, lon=lon, alt=alt)
+        p1 = loko.get_posxkodo()
+        p2 = TeraLoko(p1).get_posxkodo()
+        print(f"\t\t{p1:16}\t{p2:16}\t{loko}")
+        assert p1 == p2
+        return loko
+    print("\tTesting polar locations and post codes...")
+    loko = assert_loko(lat= 90*u.deg, lon=  0*u.deg, alt=0*u.m_csl)
+    loko = assert_loko(lat= 90*u.deg, lon=180*u.deg, alt=0*u.m_csl)
+    loko = assert_loko(lat= 90*u.deg, lon=234*u.deg, alt=0*u.m_csl)
+    loko = assert_loko(lat=-90*u.deg, lon=  0*u.deg, alt=0*u.m_csl)
+    loko = assert_loko(lat=-90*u.deg, lon=180*u.deg, alt=0*u.m_csl)
+    loko = assert_loko(lat=-90*u.deg, lon=234*u.deg, alt=0*u.m_csl)
     print("\tRandomly generating locations and post codes...")
     for _ in range(0x10):
-        loko = TeraLoko(
+        loko = assert_loko(
             lat = (np.random.rand() * 180 - 90)*u.deg,
             lon = np.random.rand() * 360 * u.deg,
             alt = (np.random.rand() * 65536 - 32768) * u.m_csl,
         )
-        p1 = loko.get_posxkodo()
-        p2 = TeraLoko(p1).get_posxkodo()
-        print(f"\t\t{p1:15}\t{p2:15}"
-              f"\t{loko.lat = }, {loko.lon = }, {loko.alt = }")
-        assert p1 == p2
     print("Pass.")
 
     print("\n=== PASS ===\n")

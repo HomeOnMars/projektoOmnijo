@@ -91,6 +91,20 @@ A resolution was made, here and then:
 ### La Perdita Princino
 
 <blockquote>
+  "People who live their entire life surrounded by mountains
+  usually care nothing for them.
+  They end up seeing the mountains
+  as the thing that stands between them and the world.
+  ...
+  There are only two places
+  where you can really feel the true magic of the mountains:
+  On the plains from far away, or standing on a peak."<br>
+  <span style="color:grey">
+  --- <cite><a href="https://www.apexbookcompany.com/a/blog/apex-magazine/post/mountain">Mountain (2006)</a></cite> by Liu Cixin
+  </span>
+</blockquote>
+<br>
+<blockquote>
   "When you wake up in the morning, tell yourself:
   the people I deal with today will be
   meddling, ungrateful, arrogant, dishonest, jealous and surly.
@@ -114,20 +128,6 @@ A resolution was made, here and then:
   </span>
 </blockquote>
 <br>
-<blockquote>
-  "People who live their entire life surrounded by mountains
-  usually care nothing for them.
-  They end up seeing the mountains
-  as the thing that stands between them and the world.
-  ...
-  There are only two places
-  where you can really feel the true magic of the mountains:
-  On the plains from far away, or standing on a peak."<br>
-  <span style="color:grey">
-  --- <cite><a href="https://www.apexbookcompany.com/a/blog/apex-magazine/post/mountain">Mountain (2006)</a></cite> by Liu Cixin
-  </span>
-</blockquote>
-<br>
 
 (TBD) 
 
@@ -136,7 +136,7 @@ A resolution was made, here and then:
 <blockquote>
   "The world is a beautiful lie;<br>
   And to be human, is
-  to find/grow/build something true and real to you out of it."<br>
+  to find, to build, and to grow something true and real to you out of it."<br>
   <span style="color:grey">
   --- <span style="color:#95D0FC">La Arkitekto</span>
   </span>

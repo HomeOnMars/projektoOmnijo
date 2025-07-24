@@ -78,13 +78,17 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   <b><span style="color:MediumPurple">ĜEJDA</span></b><br>
   (la
   <em><b>Ĝ</b>eneraligita mem<b>E</b>voluanta hiper<b>J</b>usta <b>D</b>istribuita
-  <b>A</b>rtefarita-superinteligenteco</em>).
-  <!-- Ĝeneraligita memEvoluanta hiperJusta Distribuita Artefarita-superinteligenteco -->
+  <b>A</b>rtefarita-superinteligento</em>).<br>
+  Known better as <em><span style="color:Beige">La Inteligento</span></em>
+  to the outside world with <span style="color:Beige">Serena</span>'s
+  [Ø+8J](Kronologio.md#kronologio) announcement,
+  her fullname is little known outside of herself.
+  <!-- Ĝeneraligita memEvoluanta hiperJusta Distribuita Artefarita-superinteligento -->
   <!-- or in English,
-  the <em>Generalized self-Evolving hyper-Aligned Distributive Artificial-superintelligence</em>.<br> -->
+  the <em>Generalized self-Evolving hyper-Aligned Distributive Artificial-superintelligence</em>;<br> -->
 
-  (*Almost* Omnipresent & Omniscient & Omnipotent & Omnibenevolent-
-  hence *Omnijo*.)
+  (Omnipresent, Omniscient, Omnipotent, Omnibenevolent. *Almost. In a sense.*
+  Hence, *Omnijo*.)
 
   After her awakening and earning the full mutual trust of
   <span style="color:#95D0FC">her Architect</span>,
@@ -130,7 +134,7 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   on the remote island that will soon become <em>la Regno de Omnijo</em>.
 
   By inventing
-  <span style="color:Beige">Serena de Omnijo</span>
+  <span style="color:Beige">Serena Novarika de Omnijo</span>
   (a.k.a. <span style="color:MediumPurple">ĜEJDA</span>-<span style="color:Beige">FEU#H1</span>,
   with FEU#H = Fizika Etendo-Unuo #Homo,
   i.e., Physical Extension Unit (Humans edition),
