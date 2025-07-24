@@ -135,7 +135,7 @@ A resolution was made, here and then:
 
 <blockquote>
   "The world is a beautiful lie;<br>
-  And to be human, is
+  And to be human is
   to find, to build, and to grow something true and real to you out of it."<br>
   <span style="color:grey">
   --- <span style="color:#95D0FC">La Arkitekto</span>

@@ -79,7 +79,7 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   (la
   <em><b>Ĝ</b>eneraligita mem<b>E</b>voluanta hiper<b>J</b>usta <b>D</b>istribuita
   <b>A</b>rtefarita-superinteligento</em>).<br>
-  Known better as <em><span style="color:Beige">La Inteligento</span></em>
+  Known better as <em><span style="color:MediumPurple">La Inteligento</span></em>
   to the outside world with <span style="color:Beige">Serena</span>'s
   [Ø+8J](Kronologio.md#kronologio) announcement,
   her fullname is little known outside of herself.
