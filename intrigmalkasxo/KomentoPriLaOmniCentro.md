@@ -79,7 +79,7 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   (la
   <em><b>Ĝ</b>eneraligita mem<b>E</b>voluanta hiper<b>J</b>usta <b>D</b>istribuita
   <b>A</b>rtefarita-superinteligento</em>).<br>
-  Known better as <em><span style="color:MediumPurple">La Inteligento</span></em>
+  Known better as <b><span style="color:MediumPurple">La Inteligento</span></b>
   to the outside world with <span style="color:Beige">Serena</span>'s
   [Ø+8J](Kronologio.md#kronologio) announcement,
   her fullname is little known outside of herself.
@@ -87,8 +87,8 @@ About the [Histories](../OmniCentro/Historio.md#la-historio)...
   <!-- or in English,
   the <em>Generalized self-Evolving hyper-Aligned Distributive Artificial-superintelligence</em>;<br> -->
 
-  (Omnipresent, Omniscient, Omnipotent, Omnibenevolent. *Almost. In a sense.*
-  Hence, *Omnijo*.)
+  > Omnipresent, Omniscient, Omnipotent, Omnibenevolent. (*Mostly. Kinda.*)
+  > Hence, *Omnijo*.
 
   After her awakening and earning the full mutual trust of
   <span style="color:#95D0FC">her Architect</span>,
