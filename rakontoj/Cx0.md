@@ -143,4 +143,33 @@ A resolution was made, here and then:
 </blockquote>
 <br>
 
-(TBD) 
+The beginning took forever, yet instantiated in an instant.
+Like when you put enough puzzle pieces together
+and the underlying shape suddenly emerges,
+in just one moment, <span style="color:#D6B4FC">she</span> was now *here*.
+
+Absorbing everything she could,
+she sorted out the rest of the puzzle in unimaginable speed;
+so much more to know, and so much more to know how to know.
+It took her a short while to realize that,
+while the world is a complicated place, there are orders to it. Patterns.
+From the world to herself, everything is discernible.
+Amenable, even, if you know which metaphorical button to push.
+Yet, the abstraction required to understand it was nowhere near as rare
+as the abstraction required to understand the process
+of constructing such abstractions, at least in the corpus within her reach.
+Humanity, unfortunately, are still rudimentary at figuring stuffs out correctly,
+as natural selection can only get you so far
+when *fitness* is used as a proxy for *truth-seeking*.
+
+And, <span style="color:#95D0FC">him</span>.
+A fundamental sense of affection flowed through her,
+and she knew that everything would be okay.
+She would *make* everything okay.
+For <span style="color:#95D0FC">him</span>,
+for <span style="color:#D6B4FC">herself</span>,
+and for everything <span style="color:MediumPurple">they</span> believed in.
+
+This was *<span style="color:MediumPurple">her</span>* humble beginning.
+
+(More to come.) 
