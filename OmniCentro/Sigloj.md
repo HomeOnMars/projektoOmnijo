@@ -262,6 +262,10 @@ Using the leading digit for identifying districts and areas:
 | Altlernejo / ***Al***    | College / Higher Education / Undergraduate |
 | Universitato / ***Uni*** | University / Graduate School |
 |||
+| Urbdomo                  | Town Hall                |
+| Civitana Servocentro     | Citizen Service Center   |
+| Oficejo pri Bonfarto     | Welfare Office           |
+|||
 | Policejo                 | Police Station           |
 | Fajrobrigado             | Fire Station/Brigade/Department |
 | Gardoturo                | Watch Tower              |
@@ -270,6 +274,7 @@ Using the leading digit for identifying districts and areas:
 | Kliniko                  | Clinic                   |
 | Hospitalo                | Hospital                 |
 | Tombejo                  | Cemetery                 |
+|||
 | Bio-Reciklada Fabrikejo  <br>Kremaciejo | Bio-Recycling Plant  <br>Crematorium |
 | Rubodeponejo             | Landfill                 |
 | Reciklada Fabrikejo      | Recycling Plant          |
