@@ -313,13 +313,13 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
 
   OmniCentro was designed by two people:
   <span style="color:#95D0FC">la Arkitekto</span> (the Architect), and
-  <span style="color:#D6B4FC">la Suvereno</span> (the Sovereign),
+  <span style="color:#D6B4FC">la Ĉefinĝeniero</span> (the Chief Engineer),
   of the newly founded OCFI.
 
   Someone who knows just a little bit more might beg to differ;
   that most of the city was actually designed by
   <span style="color:#95D0FC">la Arkitekto</span> alone, and that
-  <span style="color:#D6B4FC">la Suvereno</span> barely did anything
+  <span style="color:#D6B4FC">la Ĉefinĝeniero</span> barely did anything
   and simply took the credit.
 
   That is true- if you only scratch the surface.
@@ -328,7 +328,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   right in the core of the mountains,
   a whole second layer of the city would reveal itself;
   A layer designed by
-  <span style="color:#D6B4FC">la Suvereno</span> as a whole;
+  <span style="color:#D6B4FC">la Ĉefinĝeniero</span> as a whole;
   A layer that makes newly-created OmniCentro a capital-worthy city;
   A layer that is not designed for the humans,
   but for what truly powers *la Regno*:
@@ -348,7 +348,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   many of those equipments are fresh off the local electronics factories
   on the island (or directly 3D-printed inside the second layer),
   some right from the one at the foothill of Mt-Olivkronaĵo-
-  all designed by <span style="color:#D6B4FC">la Suvereno</span> herself.
+  all designed by <span style="color:#D6B4FC">la Ĉefinĝeniero</span> herself.
   Built and maintained by numerous bot swarms of sizes
   ranging from several centimeters to dozens of nanometers
   travelling in same-size tunnels/tubes
@@ -411,7 +411,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
     "Well, you can never have too much compute...<br>
     Especially since you and I prefer NOT to <em>simplify</em>
     all of our problems by obliterating everybody else :-)"<br>
-    --- <span style="color:#D6B4FC">la Suvereno</span>,
+    --- <span style="color:#D6B4FC">la Ĉefinĝeniero</span>,
     in private conversation with
     <span style="color:#95D0FC">la Arkitekto</span>.
   </blockquote>
@@ -424,7 +424,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   programable self-replicating nano-robots
   and their application in mining, in situ mineral processing, and more),
   enabling
-  <span style="color:#D6B4FC">la Suvereno</span> and
+  <span style="color:#D6B4FC">la Ĉefinĝeniero</span> and
   <span style="color:#95D0FC">la Arkitekto</span>
   to launch the third phase of their *crazy* plan:
   In which, OC's second layer is merely an entry point to the *third* layer,
@@ -604,7 +604,7 @@ About the [Map](../OmniCentro/Historio.md#la-fondo-de-omnicentro)...
   But let's not get ahead of ourselves :-D
 
   As the compute layer was designed by
-  <span style="color:#D6B4FC">la Suvereno</span>,
+  <span style="color:#D6B4FC">la Ĉefinĝeniero</span>,
   it is for all practical purposes perfect
   (especially after the first successful 2nd layer test case she built
   under the server farms on top of the north part of the Mt-Olivkronaĵo).

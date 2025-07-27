@@ -72,7 +72,7 @@ Acronyms `J☾⚝⚻ĜĈŜ` see [Units](../teknikoj/Unuoj.md#tempo) page.
 | Ø+1J     |   OC   | Physical works of the rest of the OmniCentro dams began |
 | Ø+1J3☾   |  nano  | *Projekto Grajno* research center moved to the newly built *Nanoteknologia Esplorcentro* in *La Pordego* district  |
 | Ø+1J6☾   |   OKP  | Foundation of OKP- the Omnija Space Program |
-| Ø+1J6☾2⚝ |   OCG  | <span style="color:#95D0FC">La Arkitekto</span> kaj <span style="color:#D6B4FC">la Suvereno</span> moved in to their new residence in OC |
+| Ø+1J6☾2⚝ |   OCG  | <span style="color:#95D0FC">La Arkitekto</span> kaj <span style="color:#D6B4FC">la Ĉefinĝeniero</span> moved in to their new residence in OC |
 | Ø+2J     |   OC   | Completion of the dams Ab-Olivkronaĵo #1 and #2 |
 | Ø+2J     | poliso | <span style="color:Beige">Serena</span> implemented [policy](../OmniCentro/OftajDemandoj.md#kio-estas-la-plano-de-la-reĝino-reformi-kopirajton): `copyright reform (stage 1)` |
 | Ø+2J6☾2⚝ |  nano  | *Projekto Grajno* research stage 1 & 2 multiple breakthoughs and lab test completion;  <br>begin stage 3 (v1.0 deployment in controlled environments (e.g. inside mountains and concretes for second layer constructions); feedback and testing) |
