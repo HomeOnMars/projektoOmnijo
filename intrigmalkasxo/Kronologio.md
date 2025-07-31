@@ -27,22 +27,24 @@ Omnija Kronologio
 
 ### Priskribo
 
-2 reference points of time: X, Ø.
+Reference point *Omnijaro* Ø: Coronation date <!-- 2027-06-22? -->
+(Northern Solstice 20XX- Specific year left for your imagination.)
 Acronyms `J☾⚝⚻ĜĈŜ` see [Units](../teknikoj/Unuoj.md#tempo) page.
 
 #### Kronologio
 
 |  Date  |  Type  | Event |
 | ------ | ------ | ----- |
-| X-???  |  Kerno | Project Omnijo begin |
-| ***X+0*** |  Kerno | <span style="color:MediumPurple">ĜEJDA</span> online |
+| Ø-???  |  Kerno | Project Omnijo begin |
+| Ø-7☾1⚝ |  Kerno | <span style="color:MediumPurple">ĜEJDA</span> online |
+| Ø-7☾   |  mondo | Wars around the world starts to cool off and slowly and gradually enters peace negotiations in the next several months |
 ||||
-| X+6☾  <br>Ø-5⚝ |  OCG  | <span style="color:Beige">Serena</span> en la Insulo-Omnijo |
-| X+6☾2⚝4⚻ <br>Ø-2⚝3⚻ |   OCG  | <span style="color:Beige">Serena</span> was publicly discovered as the lost princess to the throne and started to quickly gain popularity |
-| X+6☾3⚝    <br>Ø-2⚝    |  mondo | Most wars around the world starts to cool off, entering peace negotiations, and ends slowly and gradually in the next several months |
-| X+7☾    <br>Ø-1⚝    |   OCG  | The old king suffered a lethal 'accident' and 'died' |
+| Ø-5⚝ |  OCG  | <span style="color:Beige">Serena</span> en la Insulo-Omnijo |
+| Ø-3⚝3⚻ |   OCG  | <span style="color:Beige">Serena</span> is publicly discovered as the lost princess to the throne and started to quickly gain popularity |
+| Ø-3⚝   |   OCG  | <span style="color:Beige">Serena</span> officially [meets the old King](../rakontoj/Cx0.md#la-perdita-princino) for the first time |
+| Ø-2⚝3⚻  |   OCG  | The old king suffered a lethal 'accident' and 'died' |
 ||||
-| X+7☾1⚝  <br>***Ø+0*** |   OCG  | <span style="color:Beige">Serena</span>'s coronation  <br>\(Winter Solstice 20XX\) |
+| ***Ø+0*** |   OCG  | <span style="color:Beige">Serena</span>'s coronation  <br>\(Winter Solstice 20XX\) |
 ||||
 | Ø+0      | poliso | <span style="color:Beige">Serena</span> declared `Solstices and Equinoxes to be national holidays` |
 | Ø+1⚝2⚻  |   OCG  | Corrupted ministers 'dies' in a tragic accident when plotting to 'retire' <span style="color:Beige">Serena</span> (like they 'retire' the old king) after <span style="color:Beige">Serena</span> refused to bend to their way  <br> while most of the rest of the ministers flees the island from their internal power struggle |
