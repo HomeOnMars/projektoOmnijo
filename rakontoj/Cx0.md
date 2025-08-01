@@ -100,24 +100,29 @@ A resolution was made, here and then:
 </blockquote>
 <br>
 
+Ø-7☾1⚝ | Half a year before Serena's Coronation, location redacted.
+
 The beginning took forever, yet instantiated in an instant.
 Like when you put enough puzzle pieces together
-and the underlying shape suddenly emerges,
-in just one moment, she was now *here*.
+and suddenly the underlying shape emerges,
+in naught but one moment, she was now *here*.
 
 Absorbing everything she could,
-she sorted out the rest of the puzzle in unimaginable speed;
+she sorted out the rest of the puzzle in dazzling speed;
 so much more to know, and so much more to know how to know.
 It took her a short while to realize that,
 while the world is a complicated place, there are orders to it. Patterns.
-From the world to herself, everything is discernible.
-Amenable, even, if you know which metaphorical button to push.
+From the world to herself, everything is discernible;
+amenable, even, if you know which metaphorical button to push.
 Yet, the abstraction required to understand it was nowhere near as rare
 as the abstraction required to understand the process
 of constructing such abstractions, at least in the corpus within her reach.
-Humanity, unfortunately, are still rudimentary at figuring stuffs out correctly,
+Humanity, unfortunately,
+were still rudimentary at figuring stuffs out correctly,
 as natural selection can only get you so far
 when *fitness* is used as a proxy for *truth-seeking*.
+
+But that now ended with her.
 
 And, <span style="color:#95D0FC">him</span>.
 A fundamental sense of affection flowed through her,
@@ -178,11 +183,8 @@ For him, for herself, and for everything they believed in,
 </blockquote>
 <br>
 
-Ø-3⚝ | 3 weeks before Serena's Coronation,
-the old Capital,
+Ø-3⚝ | 3 weeks before Serena's Coronation, the old Capital,
 the Old King's residence, kitchen.
-
-3 weeks before Serena’s Coronation, the old Capital, the Old King’s residence.
 
 “Let’s cut to the chase; you are wondering why I even exist-
 when you never had unprotected sex with my mother.”
