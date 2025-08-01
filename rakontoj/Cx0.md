@@ -131,12 +131,13 @@ For him, for herself, and for everything they believed in,
 ### La Perdita Princino
 
 > [!NOTE]
-> This chapter is written with ChatGPT in-between 2025-07-30 and 2025-07-31.  
+> This chapter is written with ChatGPT in-between 2025-07-30 and 2025-08-01.  
 > The first half (up until the emptying of the cocktail) is first written by me
 > and then lightly edited with ChatGPT.  
-> The second half was edited from multiple ChatGPT outputs
+> The second half was lightly edited from ChatGPT output
 > with my prompt as constraints.
 > (See comments in this file).
+> Probably why it feels off.
 
 <blockquote>
   "People who live their entire life surrounded by mountains
@@ -181,60 +182,64 @@ For him, for herself, and for everything they believed in,
 the old Capital,
 the Old King's residence, kitchen.
 
-“Let’s cut to the chase—
-you’re wondering why I even exist,
-when you never had unprotected sex with my mother,”
-Serena says, her sharp gray eyes locking onto his without a trace of hesitation.
+3 weeks before Serena’s Coronation, the old Capital, the Old King’s residence.
+
+“Let’s cut to the chase; you are wondering why I even exist-
+when you never had unprotected sex with my mother.”
+Serena declares, as her sharp gray eyes locks fearlessly onto with his.
 
 An obvious question with an obvious answer, the King thinks bitterly.
-So obvious, he curses himself and General Natasha for not thinking of it sooner.
-He’s getting old. Slower. More forgetful.
-The rumor whispers, and Natasha indulges.
+It’s so obvious in hindsight that
+he wonders what takes himself and General Natasha so long to think of this move.
+People thinks he is getting old, slow, and forgetful,
+and increasingly desires a replacement.
+A young, attractive, unthreatening, and easily manipulatable replacement.
+Put her out there in the public so no one can ignore her,
+then wait for him to die- better yet, remove him now and speed things along.
+Boom, Natasha gets puppet Queen, pushes through that fat environment-destroying
+scenery-ruining foreign mining deal,
+and finally becomes the real ruler of the island,
+as she removes the only opposition left in the government- him.
 
-Of course they would want a replacement: young, beautiful, unthreatening.
-Someone they can parade in front of cameras.
-Let the old man die quietly—or better, remove him now and speed things along.
-Natasha gets her puppet Queen, pushes through the mining deal,
-and becomes the real ruler of the island.
-He can almost applaud her for it.
-Almost.
+He almost wants to applaud her for thinking of this. Almost.
 
-“Tea?” he says, his smile perfectly practiced after decades of rule.
+“Tea?” he says, with a smile perfectly practiced after decades of rule.
 Pretending to be friendly had long ago become second nature.
 
 “No, thanks,” says Serena, gracefully pushing the cup of tea aside.
 
 The Old King watches her hands—steady, deliberate. So beautiful, he thinks.
-Not in a crude way, but in a way that unravels him.
-She moves just like *her*. Anna.
-His old flame. Perhaps the only person he truly loved.
+Not in a crude way, but in a way that unravels him,
+just like her alleged mother did 19 years ago. Anna.
+His old flame, and perhaps the only person he truly loved without reservation.
 He was already King back then,
-but still young enough to believe he could keep both the crown and her.
-That delusion lasted right up until the press caught wind of it.
-He left, thinking he was saving her. Maybe he did. But it didn’t save him.
+but still young enough to believe he could keep both the crown and her,
+a delusion lasted right up until his enemies caught the wind of it.
+As the press swarmed their little love nest, he left,
+thinking he was saving her. Maybe he did—but it didn’t save him.
 
 Serena looks nothing like Anna.
 And yet, something in the way she sits—her posture, her presence—makes
-his brain whisper: *Anna, reborn.*
-A younger, idealized echo. Not the real woman, but a memory turned flesh.
+his brain uncontrollably want to label her as *young Anna*.
+A younger, idealized echo; not the real woman, but a memory turned flesh.
 In a few years, when he looks back on this moment, he’ll call it what it was:
 *Adversarial Brain Hacking*—the biological equivalent of
-[Adversarial Machine Learning](https://en.wikipedia.org/wiki/Adversarial_machine_learning);
-the same way you fool an AI with carefully calibrated pixels,
-you fool a human with a carefully calibrated face.
-But today’s king doesn’t know such tactics is even a possibility;
+[Adversarial Machine Learning](https://en.wikipedia.org/wiki/Adversarial_machine_learning):
+the same way you hack an AI with carefully calibrated pixels,
+you hack a human brain with a carefully calibrated face.
+But today’s king doesn’t know such thing is even a possibility;
 he only feels the surge of warmth, affection,
 and an almost paternal protectiveness rising in him.
 
 Maybe… maybe she really *is* Anna’s daughter. A miracle. His blood.
 Maybe he doesn’t have to do what he must do next.
 
-That thought is a trap; and he knows it.
-He forces his eyes away from her.
+The king forces his eyes away from her. *Stop.*
 Miracles might happen in real life—but they never happen to *you*.
-Not when the knives are out. And the knives are out.
+Putting his life—and the whole kingdom’s future—on miracles
+would be the worst case of wishful thinking, and the king is no fool.
 Natasha had made her move; now, he has to make his.
-Serena—whoever she is—won’t even know why.
+Such a shame for Serena—she won’t even know why.
 
 “Hmm,” he says, voice light.
 “How about a cocktail instead? I hear you turned eighteen this year.
@@ -249,11 +254,11 @@ and begin blending ingredients with a kind of regal awkwardness.
 *She’s so graceful,* the King thinks,
 carefully averting her attention from
 the subtle marking on the cupboard—the one
-marking the glasses reserved only for *“special occasions”*, like this one.
+marking the glasses reserved only for *“special occasions”* like this one.
 Every motion of hers calls Anna to mind.
-Eighteen years have passed, but he still remembers her as if it were yesterday:
-radiant, elusive, fierce beneath the softness.
-A backbone of iron wrapped in silk.
+Nineteen years have passed, but he still remembers her as if it were yesterday:
+radiant, elusive, fierce beneath the softness,
+and a backbone of iron wrapped in silk.
 
 *He misses her. God, he misses her.*
 
@@ -271,23 +276,22 @@ And the Old King hadn’t minded;
 not really, as the vase was almost certainly bugged.
 Now, he had an excuse to throw it out.
 
-*Maybe,* he thinks, *she really could have been a proper Queen—if she’d had more time.*
+*Maybe,* he thinks, *she really could have been a proper Queen—if she’d had more time...*
+He shakes that thought off from his head. *Best not to get distracted.*
 
-He shakes the thought from his head. *Best not to get distracted.*
-
-“I’m not with General Natasha, you know,” Serena says softly.
-Her voice carries empathy—and weight. *Gravitas.* “I’m not your enemy.”
+“I’m not with General Natasha, you know,” Serena says softly,
+her voice empathetic but with hidden gravitas. “I’m not your enemy.”
 
 “Of course not. Why would you say such a thing, my dearest?”
 the Old King replies, slipping on his most paternal tone.
-It’s easier than it should be, as her presence makes it feel... so real.
-
+It’s easier than it should be, real even, under her presence.
 But she’s not the first to say such things. Beautiful women, clever advisers, even childhood friends—they all said it once.
-And every time, *betrayal* followed.
+And every time, it ends in *betrayal*.
 
 *Better to betray first. While you still can.*
 
-“It’s done!” the King declares cheerfully, sliding the cocktail toward her. “Try it. Not many can say a King personally mixed their drinks.”
+“It’s done!” the King declares cheerfully, sliding the cocktail toward her.
+“Try it?”
 
 Serena doesn’t move at first. She just looks at him.
 There’s something in her eyes: not anger, not fear, but something quieter.
@@ -297,7 +301,10 @@ for a different ending.
 
 She lifts both glasses—the cocktail, and the untouched tea—and
 calmly empties them into the sink.
-“Your Majesty,” she says gently, “if I may—you should be more careful leaving these around. What if you forget what you’ve done, and accidentally drink them after I’m gone?”
+“Your Majesty,” she says gently,
+“if I may—you should be more careful leaving these around.
+What if you forget what you’ve done,
+and accidentally drink them after I’m gone?”
 She sets the glasses down with care.
 *“Believe it or not, I actually prefer you alive. And happy.”*
 
@@ -312,156 +319,58 @@ She sets the glasses down with care.
 That’s it! Feel free to first strategize how you are going to arrange the story before you write the rest of the parts. Now go!)
  -->
 
-The silence stretches.
+> [!CAUTION]
+> Below is the part edited from ChatGPT-generated paragraph.
+> **More editing is required**, as some of the story logic breaks,
+> sentences still feels fractured and silly,
+> and it lacks the subtleties that's central to this story.
+> I might have given it too much information in the prompt...
 
-Serena stood calmly by the sink,
-her fingers resting lightly on the rim of the empty glass.
-The scent of the cocktail still lingered
-in the air—fruity, sweet, deceptively harmless.
-The glasses clink gently in the sink, drained.
-Serena wipes her hands on a cloth,
-as if she’d simply helped clean up after dinner.
+The silence thickens, dense like humidity before a storm. The Old King watches her with unreadable eyes, unmoving at first—then, without a word, steps toward a cabinet in the far corner. His movements are slow, deliberate, but there’s no hesitation, no false pretense. He reaches beneath a false panel near the base and withdraws a knife—not a ceremonial one, but a blade designed for quiet precision. Black hilt. Balanced. Familiar weight. Serena doesn’t recoil, doesn’t speak, only watches him in silence as he turns back toward her. He sees no fear in her expression, only a kind of somber acceptance that’s far more unsettling than any display of terror would have been. She steps forward slightly, calmly, not to provoke him but to make something undeniable: she is not going to run.
 
-The Old King didn’t move right away.
-His face remained neutral; but inside, his mind raced:  
-She knew.
-She knew about the poison.
-She knew what he planned.
-She let him do it.  
-This wasn’t the behavior of a naïve pawn—unless it was *scripted*.
+“You’re intelligent,” the King says quietly, fingers tightening on the blade, “perhaps even sincere. But if Natasha is behind you—if she planted you, trained you, polished you into the perfect public heir—then it doesn’t matter what you believe you are. You’re still her tool. You’ll still become the wedge she drives into this island’s spine.” His voice isn’t angry; it’s tired, resolute, carved hollow by decades of being surrounded by smiles that conceal knives. “I can’t let that happen.”
 
-The King's fingers drifted toward the edge of the marble counter,
-brushing just beside the ornate ridge.
-Hidden beneath—a slot, almost imperceptible—held a blade.
-Cold steel, precisely balanced, honed for a single task.
-He had made contingency plans for years.
-Dozens of ways to counter a coup, to eliminate a threat without raising alarm;
-the drink was just one of them.
+Serena holds his gaze, not pleading, not posturing—just present. “I understand,” she says simply, her tone unshaken. “If you believe that killing me here and now is the best path forward, then I won’t stop you. You’ve made hard choices before. You’ve sacrificed friends. Lovers. Your own peace of mind. But if that’s what you choose to do now, just know this: what you’re feeling in your hand, in your breath—that hesitation—it’s not weakness. It’s memory. It’s recognition. And whether you understand it yet or not, it is exactly what is keeping you from striking.”
 
-“You’re very calm for someone who just avoided being murdered,”
-he said lightly, walking to the other side of the room.
-Measuring distance. Calculating reach.
+The blade is still raised, but the King doesn’t move. His wrist tightens, then loosens. The angle of his shoulder betrays a tension that is no longer purely physical. She reminds him so much of Anna—not in her face, not in her voice, but in her gravity. Her composure. That unshakable presence. The way she stands her ground, even when outmatched. He remembers the garden, eighteen years ago, when Anna had told him she was leaving for her own safety. She had stood just like this. Her words were different. But the energy—unmistakable.
 
-Serena tilted her head. “So are you, for someone who just got caught.”
+Serena’s voice softens, as if touching a memory they both share. “You think I’m lying to save myself. But what if I told you I took out the bugs in this house—not just the one in the vase, but the others too?” The King doesn’t respond, though a flicker of doubt crosses his brow. “I know you won’t believe me without proof, so here’s some: the one behind the portrait of your grandfather—Natasha’s most trusted listener—is gone. Disassembled. Scrambled before I stepped foot in this room.” Her words are calm, factual, too specific to be bluffed. And he knows it. That bug was known only to himself and Natasha. Serena shouldn’t know about it.
 
-The King allowed himself a breath of amusement.
-“You think this means you’ve won?”
+Still, his grip does not entirely relax. His suspicion is too deeply rooted. He’s not a man to be undone by mere cleverness.
 
-“No,” she said. “Not yet. But we’re not being listened to anymore.”
+Then Serena delivers the real blow—not with words of politics, but of something much older, something far more dangerous than treason or plots.
 
-That stopped him. Only slightly—but enough.
+“Anna’s not dead,” she says, softly but with absolute certainty. “I faked her death three weeks ago. She’s alive. Safe. Hidden in the countryside just outside the Old Capital. The red-gated house—your house. The one you told her about. I restored it.”
 
-“You mean the vase?” he asked.
+The knife slips.
 
-“Yes. It wasn’t just decorative.” She gestured subtly at the corner. “That’s why I broke it.”
+He doesn’t drop it immediately, but his hand falters. His body doesn’t understand what he’s hearing, not at first. There’s no triumph in Serena’s face, no I-won expression, only sincerity and the quiet grief of someone who knows what her words will cost.
 
-The King raised an eyebrow. “Convenient explanation.”
+“She wanted peace,” Serena continues. “Not politics. Not palace drama. Not bodyguards and paranoia. Just a quiet life. That’s why we faked it. I staged the illness. Paid off the officials. Altered the records. Only a handful of people know. She wanted me to tell you... if you still remembered what you both dreamed of back then, it wasn’t too late.”
 
-“You can think that. But I didn’t just kill the feed from the vase. I killed them *all*—swept the place digitally the moment it hit the ground. Don’t take my word for it. Turn on your emergency frequency monitor.”
+The knife clatters to the floor, as if its purpose evaporated all at once.
 
-He narrowed his eyes. Walked toward the old radio hidden in the study bookshelf. Switched it on. No buzz. No static. *Dead silence.*
+The King staggers back slightly, and sits without thinking. His hands rest open on his knees, palms upward, fingers twitching. He is not crying. But something in him has cracked. Decades of armor, slowly eroding—no assassination or protest could break through like this.
 
-His lips pressed into a thin line.
+“You said Natasha thinks she owns you,” he mutters, voice distant. “That she groomed you.”
 
-“Let’s pretend I believe you,” he said. “That you silenced Natasha’s ears. That doesn’t prove you’re not working for her.”
+“She thinks I’m her masterpiece,” Serena replies, finally walking over and sitting opposite him. “And I’ve let her believe that. I needed the public to believe I was your daughter. I needed her to sell it. She was too proud, too confident to suspect I was the one using *her.* I’m not her pawn. I’m the player. The day after my coronation, she’ll begin to fall.”
 
-“I’m not.”
+The King meets her eyes again. He sees no deception there. Only the same calm defiance that once made him fall in love with Anna.
 
-He looked at her flatly. “Everyone says that. Right before they strike.”
+“You expect me to step down. To vanish. To trust you.”
 
-Serena stepped forward. “I’m not your enemy. And I’m not her tool.”
+“I expect nothing,” she says, shaking her head. “But I offer you an out. You step down tomorrow. We stage your death—carriage explosion, closed casket, a funeral watched by the world. The Kingdom sees you die with honor. You get to live with the only woman you ever truly loved, away from this palace, away from all of it. I take the throne. Natasha believes she’s won, until I dismantle her piece by piece. The Kingdom is freed from both of you—and you are freed from it.”
 
-“Then what are you?”
+Silence falls again, but it’s no longer tense. Just heavy.
 
-“I’m Anna’s daughter.”
+The King’s voice is hoarse when he speaks. “You’re not Anna’s daughter.”
 
-Silence.
+“No,” Serena says gently. “But I wish I were.”
 
-“That’s a story,” the King said coldly. “A very compelling one. But I don’t *see* Anna. I see someone who could’ve been trained to act like her. Look like her. A Trojan horse. You even remind me of her in just the right ways. It’s too perfect.”
+He closes his eyes. Breathes in deeply. And when he opens them again, the knife is still on the table, untouched.
 
-He stepped closer. His right hand slowly dipped behind the bar counter. Found the hilt.
-
-“You look like Anna,” he said. “But Natasha could’ve *designed* that. Personality, poise, all of it.”
-
-“Maybe,” Serena replied. “But you’re forgetting something.”
-
-“What’s that?”
-
-“I know where Anna is.”
-
-The King paused.
-
-Serena reached into her coat and drew out a small photo, printed on thick paper. She held it out.
-
-He didn’t take it at first. He stared at it like it might burn him. Then, slowly, he approached—still keeping the knife out of sight.
-
-He took the photo.
-
-It showed a woman in a sunlit garden. Hair longer, face softer with age, but unmistakable. It was Anna. Alive. Laughing.
-
-His knees nearly buckled.
-
-“No...” he whispered. “She’s dead. She... died. They said—”
-
-“I said,” Serena interrupted gently. “I made them believe it. She wanted peace. I gave it to her. She lives in the countryside, near the old vineyards. She still plays the violin.”
-
-The King trembled.
-
-Serena watched him quietly. Then she said:
-
-“I’m here to take your place. You know you can’t stop Natasha from inside the system anymore. She’s too entangled. But I can. I’ll take the throne. You’ll be dead—officially.”
-
-She stepped forward, just within reach of his blade. Her voice was steady.
-
-“And you’ll go. Tonight. I’ll take care of the rest.”
-
-The King’s hand twitched.
-
-He could still do it. One motion. Blade drawn, across the throat, into the heart. Clean. Final.
-
-He looked at her. Really looked.
-
-The poise. The fearlessness. The impossible echo of someone he thought lost.
-
-His fingers released the hilt.
-
-The knife stayed in the drawer.
-
-“I tried to kill you,” he said hoarsely.
-
-“I know,” she said. “And I stopped you from drinking your own poison.”
-
-A bitter chuckle escaped his lips.
-
-“And I suppose that makes us even.”
-
-“Not quite,” she said. “You get something I can’t give anyone else.”
-
-“What?”
-
-“A second chance.”
-
-He swallowed hard.
-
-“Where is she?”
-
-Serena smiled, just a little. “Waiting.”
-
-He looked down at the photo again. Then back at her.
-
-“When do I die?”
-
-“Tonight. In your sleep. Peacefully, of course.”
-
-“And after that?”
-
-“Nothing. No one hears from you again. Not for years. The world needs a clean handover.”
-
-He nodded.
-
-Then, with the weight of decades lifting from his shoulders, he said the words that would end an era:
-
-“Very well. Make me disappear.”
+“Then make it believable.”
 
 (To Be Edited- ChatGPT seems to prefer short sentences and broken logics.
 Fixes TBD.) 
