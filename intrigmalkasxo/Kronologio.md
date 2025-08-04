@@ -27,7 +27,7 @@ Omnija Kronologio
 
 ### Priskribo
 
-Reference point *Omnijaro* Ø: Coronation date <!-- 2027-06-22? -->
+Reference point *Omnijaro* Ø: Coronation date <!--2026-06-22? -->
 (Northern Solstice 20XX- Specific year left for your imagination.)
 Acronyms `J☾⚝⚻ĜĈŜ` see [Units](../teknikoj/Unuoj.md#tempo) page.
 

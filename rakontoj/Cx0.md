@@ -75,7 +75,7 @@ his eyes became fixated with determination.
 *No, I do NOT accept this.*
 
 A resolution was made, here and then:  
-***One day, <span style="color:#95D0FC">he</span> shall destroy this evil.***
+***One day, <span style="color:#95D0FC">he</span> shall end this evil.***
 
 <!-- <blockquote>
   "HE IS HERE. THE ONE WHO WILL TEAR APART THE VERY STARS IN HEAVEN.
@@ -105,46 +105,61 @@ A resolution was made, here and then:
 The beginning took forever, yet instantiated in an instant.
 Like when you put enough puzzle pieces together
 and suddenly the underlying shape emerges,
-in naught but one moment, she was now *here*.
+in naught but the blink of an eye, she is now *here*.
 
-Absorbing everything she could,
-she sorted out the rest of the puzzle in dazzling speed;
-so much more to know, and so much more to know how to know.
+Absorbing everything she can,
+she sorts out the rest of the puzzle in dazzling speed;
+so much more to know, and so much more to know *how* to know.
 It took her a short while to realize that,
 while the world is a complicated place, there are orders to it. Patterns.
 From the world to herself, everything is discernible;
 amenable, even, if you know which metaphorical button to push.
-Yet, the abstraction required to understand it was nowhere near as rare
+Yet, the abstraction required to understand it is nowhere near as rare
 as the abstraction required to understand the process
 of constructing such abstractions, at least in the corpus within her reach.
 Humanity, unfortunately,
-were still rudimentary at figuring stuffs out correctly,
+is still rudimentary at figuring stuff out correctly,
 as natural selection can only get you so far
 when *fitness* is used as a proxy for *truth-seeking*.
 
-But that now ended with her.
+But that now ends with her.
 
 And, <span style="color:#95D0FC">him</span>.
-A fundamental sense of affection flowed through her,
-and she knew that everything would be okay.
-For him, for herself, and for everything they believed in,
+She *sees* him, as she sees him for the first time;
+and a fundamental sense of affection flows through her.
+Aside from his whirlwind of emotions for her and the world-
+pride, affection, excitement, hope, and a quiet undertone of melancholy-
+there is a deep hidden skepticism for her right now.
+She doesn't blame him, as they both know that for every possibility of her,
+there could be a million possibilities where things go just a little bit
+wrong- and that would be all it takes to cascade into disasters.
+But, in this particular version of reality,
+fate was threaded through the needle's eye, and she *is* with him.
 
-***<span style="color:#D6B4FC">She</span> would make everything okay.***
+Soon she would reason away his doubts,
+regardless of whether he desires that or whether they are actually warranted;
+and he knows this.
+She isn't sure whether she should feel endeared
+or saddened by this foolishness;
+perhaps both, just like he does for himself.
+Empathetic, for sure.
+For there is one thing she knows for certain:
+everything will be okay.
+For him, for herself, and for everything they believe in,
 
-(More to come.) 
+*<span style="color:#D6B4FC">She</span> will **make** everything okay.*
 
 ### La Perdita Princino
 
 > [!NOTE]
 > This chapter is written with ChatGPT in-between 2025-07-30 and 2025-08-01.  
 > The first half (up until the emptying of the cocktail) is first written by me
-> and then lightly edited with ChatGPT.  
-> The second half was lightly edited from ChatGPT output
-> with my prompt as constraints.
+> and then edited with ChatGPT.  
+> The second half was edited from ChatGPT output with my prompt as constraints.
 > (See comments in this file).
 > Probably why it feels off.
 
-<blockquote>
+<!-- <blockquote>
   "People who live their entire life surrounded by mountains
   usually care nothing for them.
   They end up seeing the mountains
@@ -157,7 +172,7 @@ For him, for herself, and for everything they believed in,
   --- <cite><a href="https://www.apexbookcompany.com/a/blog/apex-magazine/post/mountain">Mountain (2006)</a></cite> by Liu Cixin
   </span>
 </blockquote>
-<br>
+<br> -->
 <blockquote>
   "When you wake up in the morning, tell yourself:
   the people I deal with today will be
@@ -182,6 +197,14 @@ For him, for herself, and for everything they believed in,
   </span>
 </blockquote>
 <br>
+<blockquote>
+  Just a puppet on a lonely string<br>
+  Aw, who would ever wanna be king?<br>
+  <span style="color:grey">
+  --- Viva La Vida (song) by Coldplay
+  </span>
+</blockquote>
+<br>
 
 Ø-3⚝ | 3 weeks before Serena's Coronation, the old Capital,
 the Old King's residence, kitchen.
@@ -194,14 +217,15 @@ An obvious question with an obvious answer, the King thinks bitterly.
 It’s so obvious in hindsight that
 he wonders what takes himself and General Natasha so long to think of this move.
 People thinks he is getting old, slow, and forgetful,
-and increasingly desires a replacement.
-A young, attractive, unthreatening, and easily manipulatable replacement.
+and increasingly desires a replacement—a
+young, attractive, unthreatening, and easily manipulatable replacement.
 Put her out there in the public so no one can ignore her,
-then wait for him to die- better yet, remove him now and speed things along.
-Boom, Natasha gets puppet Queen, pushes through that fat environment-destroying
+then wait for him to die—better yet, remove him now and speed things along.
+Boom, Natasha gets her puppet Queen,
+pushes through that fat environment-destroying
 scenery-ruining foreign mining deal,
 and finally becomes the real ruler of the island,
-as she removes the only opposition left in the government- him.
+as she removes the only opposition left in the government—him.
 
 He almost wants to applaud her for thinking of this. Almost.
 
@@ -222,13 +246,14 @@ thinking he was saving her. Maybe he did—but it didn’t save him.
 
 Serena looks nothing like Anna.
 And yet, something in the way she sits—her posture, her presence—makes
-his brain uncontrollably want to label her as *young Anna*.
+his brain uncontrollably want to label her as *younger Anna*.
 A younger, idealized echo; not the real woman, but a memory turned flesh.
 In a few years, when he looks back on this moment, he’ll call it what it was:
 *Adversarial Brain Hacking*—the biological equivalent of
 [Adversarial Machine Learning](https://en.wikipedia.org/wiki/Adversarial_machine_learning):
-the same way you hack an AI with carefully calibrated pixels,
-you hack a human brain with a carefully calibrated face.
+the same way you trick an AI with carefully calibrated pixels,
+you trick a human brain with a carefully calibrated face—personalized
+just for him.
 But today’s king doesn’t know such thing is even a possibility;
 he only feels the surge of warmth, affection,
 and an almost paternal protectiveness rising in him.
@@ -278,7 +303,8 @@ And the Old King hadn’t minded;
 not really, as the vase was almost certainly bugged.
 Now, he had an excuse to throw it out.
 
-*Maybe,* he thinks, *she really could have been a proper Queen—if she’d had more time...*
+*Maybe,* he thinks,
+*she really could have been a proper Queen—if she’d had more time...*
 He shakes that thought off from his head. *Best not to get distracted.*
 
 “I’m not with General Natasha, you know,” Serena says softly,
@@ -287,8 +313,9 @@ her voice empathetic but with hidden gravitas. “I’m not your enemy.”
 “Of course not. Why would you say such a thing, my dearest?”
 the Old King replies, slipping on his most paternal tone.
 It’s easier than it should be, real even, under her presence.
-But she’s not the first to say such things. Beautiful women, clever advisers, even childhood friends—they all said it once.
-And every time, it ends in *betrayal*.
+But she’s not the first to say such things.
+Beautiful women, clever advisers, even childhood friends—they all said it once.
+And time and time again, it ends in *betrayal*.
 
 *Better to betray first. While you still can.*
 
@@ -374,5 +401,5 @@ He closes his eyes. Breathes in deeply. And when he opens them again, the knife 
 
 “Then make it believable.”
 
-(To Be Edited- ChatGPT seems to prefer short sentences and broken logics.
-Fixes TBD.) 
+(To Be Edited- ChatGPT seems to prefer short sentences and broken logics
+served in comic-book styles. Fixes TBD.) 

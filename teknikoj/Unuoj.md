@@ -262,7 +262,7 @@ which is also slowing down over millennia.)
   - Ø+\* years ending with $00_H, 80_H$ (i.e. the special non-leapyear)
     have the solstice happening at approximately midnight
     between the old and the new year.  
-    Because of this, one can imagine Ø+0 is set as 2027-06-22,
+    Because of this, one can imagine Ø+0 is set as 2026-06-22,
     though I'd really rather left the definition open for interpretation.
   - Dx14th Month $☾_Υ$ and the first week of the year are holidays.
   - Solstices and Equinoxes are national holidays.
