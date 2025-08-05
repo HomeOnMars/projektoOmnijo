@@ -99,6 +99,8 @@ ASCIIIFY_CHR = {
     '⚡': 'potenco',
     '°': 'deg',
     '🪙': 'OSR',
+    chr(0x332): '_',
+    'ⅎ': 'projento',
 }
 ASCIIIFY = {ord(k): v for k, v in ASCIIIFY_CHR.items()}
 
@@ -310,6 +312,7 @@ u_si_defs : dict[str, units.UnitBase] = {
         's', 'min', 'h', 'd', 'yr',
         'K', 'deg_C',
         'C',
+        'percent',
         'rad', 'deg', 'arcmin', 'arcsec',
         'W', 'kW', 'MW', 'GW',  'TW', 'Lsun',
     ]
@@ -409,7 +412,8 @@ u_rdo_base['angl'] = units.def_unit(
     ['Ck', 'Cirklo'], 2 * pi * units.rad,
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 u_rdo_base['xdim'] = units.def_unit(
-    ['N', 'Nuo'], 1 * units.dimensionless_unscaled,
+    # chr(0x332): underscore before char
+    [chr(0x332), 'Nuo'], 1 * units.dimensionless_unscaled,
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 # mask units with the same names as SI
 _UNITS_MASK_SET = {
@@ -482,9 +486,9 @@ units.def_unit(
 units.def_unit(
     ['Ĝ', 'Ĝoro'],   0x1000 * u_rdo_base['time'], namespace=u_rdo_defs)
 units.def_unit(
-    ['⚻', 'tago'], u_rdo_defs['MŜ'], namespace=u_rdo_defs)
+    ['⚻', 'Tago'], u_rdo_defs['MŜ'], namespace=u_rdo_defs)
 units.def_unit(
-    ['⚝', 'Semajno'], 7 * u_rdo_defs['tago'], namespace=u_rdo_defs)
+    ['⚝', 'Semajno'], 7 * u_rdo_defs['Tago'], namespace=u_rdo_defs)
 units.def_unit(
     ['☾', 'Monato'],  4 * u_rdo_defs['Semajno'], namespace=u_rdo_defs)
 units.def_unit(
@@ -543,7 +547,6 @@ equivalencies_temperature = [
     *equivalencies_Zoro,
     *units.equivalencies.temperature()]
 del eq, X, Z, __K_2_X, __X_2_K
-
 #    speed
 units.def_unit('UoŜ', u_rdo_defs[ 'U']/u_rdo_defs['Ŝ'], namespace=u_rdo_defs)
 units.def_unit('JoĜ', u_rdo_defs['JU']/u_rdo_defs['Ĝ'], namespace=u_rdo_defs)
@@ -552,11 +555,15 @@ units.def_unit(
     ['Lu', 'Lumro'], 0x1 * u_rdo_base['power'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 units.def_unit(
-    ['⚡', 'MLu', 'MuniLumro'], 0x10000 *u_rdo_defs['Lu'],
+    ['⚡', 'MLu', 'MuniLumro'], 0x10000 * u_rdo_defs['Lu'],
     namespace=u_rdo_defs)
 #    currency
 units.def_unit(
     ['🪙', 'Sejro'], format={'latex': r' 🪙 '},
+    namespace=u_rdo_defs)
+#    dimless
+units.def_unit(
+    ['ⅎ', 'Projento'], u_rdo_defs['Nuo'] / 0x100,
     namespace=u_rdo_defs)
 
 

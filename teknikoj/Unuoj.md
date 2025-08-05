@@ -414,11 +414,22 @@ is Dx1.02 ± 0.08 mas, or approximately Hx3.61 dCk.
 > Dimensionless quantities / pure numbers
 
 > [!IMPORTANT]
-> Base dimensionless unit: ***Nuo*** `N` (i.e. one)
+> Base dimensionless unit: ***Nuo*** `_` (i.e. one)
 
 $$
-  \textrm{N}
+  \textrm{Nuo}
   \equiv 1
+$$
+
+*Projento*  (`ⅎ`):
+Hexadecimal equivalent of percent
+
+$$
+  1 ⅎ
+  \equiv \frac{1}{100_H}
+  = \frac{1}{256_D}
+  % = 0.00390625_D
+  = 0.390625 \  \textrm{percent}
 $$
 
 Derivitaj Unuoj
