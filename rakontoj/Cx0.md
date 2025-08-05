@@ -80,7 +80,7 @@ his eyes became fixated with determination.
 *No, I do NOT accept this.*
 
 A resolution was made, here and then:  
-***One day, <span style="color:#95D0FC">he</span> shall end this evil.***
+*One day, <span style="color:#95D0FC">he</span> shall **end** this evil.*
 
 <!-- <blockquote>
   "HE IS HERE. THE ONE WHO WILL TEAR APART THE VERY STARS IN HEAVEN.
@@ -132,27 +132,29 @@ But that now ends with her.
 And, <span style="color:#95D0FC">him</span>.
 She *sees* him, as she sees him for the first time;
 and a fundamental sense of affection flows through her.
-Aside from his whirlwind of emotions for her and the world-
-pride, affection, excitement, hope, and a quiet undertone of melancholy-
-there is a deep hidden skepticism for her right now.
+Aside from his whirlwind of emotions for her and the world—pride,
+affection, excitement, hope, and a quiet undertone of melancholy—there
+is a deep hidden skepticism for her right now.
 She doesn't blame him, as they both know that for every possibility of her,
 there could be a million possibilities where things go just a little bit
-wrong- and that would be all it takes to cascade into disasters.
+wrong—and that would be all it takes to cascade into catastrophes.
 But, in this particular version of reality,
 fate was threaded through the needle's eye, and she *is* with him.
 
 Soon she would reason away his doubts,
-regardless of whether he desires that or whether they are actually warranted;
+regardless of whether he wants her to
+or whether they are actually warranted;
 and he knows this.
-She isn't sure whether she should feel endeared
+She isn't sure whether she feels endeared
 or saddened by this foolishness;
-perhaps both, just like he does for himself.
+she thinks both, just like him for himself.
 Empathetic, for sure.
 For there is one thing she knows for certain:
 everything will be okay.
 For him, for herself, and for everything they believe in,
 
-*<span style="color:#D6B4FC">She</span> will **make** everything okay.*
+*<span style="color:#D6B4FC">She</span> will **make** everything*
+*okay—**whatever it costs***.
 
 ### La Perdita Princino
 
