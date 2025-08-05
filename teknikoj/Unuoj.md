@@ -39,7 +39,7 @@ See [Wikipedia](https://en.wikipedia.org/wiki/Natural_units#Planck_units).
 > $k_B$ is the [Boltzmann constant](https://en.wikipedia.org/wiki/Boltzmann_constant) (molecular energy scale per temperature).
 
 See also [Lingvo](../teknikoj/Lingvo.md#algebro) page for prefix acronyms
-$H \  J \  G \  M \  U \  T \ I$ for
+$H \  J \  G \  M \  D \  T \ I$ for
 Hx10, Hx100, Hx1000, Hx 1 0000 = 1p4, 1p8, 1pΠ, 1p40, etc;
 also for Hexadecimal pre/surfix *H* vs Decimal pre/surfix *D*.
 
@@ -111,7 +111,7 @@ One astronomical unit is approximately
 
 $$
   \textrm{au}
-  \approx 4.6Ψ87_H \  \textrm{UU}
+  \approx 4.6Ψ87_H \  \textrm{DU}
   \approx 1.4960_D \times 10_D^{8} \  \textrm{km}
 $$
 
@@ -123,7 +123,7 @@ $$
   \approx 9.4607_D \times 10_D^{12_D} \  \textrm{km}
 $$
 
-Nanosvarmo scale *dunioneUtro*  (`uU`):
+Nanosvarmo scale *dunioneUtro*  (`dU`):
 
 $$
   \textrm{uU}
@@ -394,20 +394,32 @@ $$
   \approx 19.775_D \  \textrm{arcsec}
 $$
 
-*dunioneCirklo*  (`uCk`):
+*dunioneCirklo*  (`dCk`):
 (mas means milliarcsecond)
 
 $$
-  \textrm{uCk}
+  \textrm{dCk}
   \equiv \frac{1}{10000_H^2} \  \textrm{Ck}
   \approx 0.30175_D \  \textrm{mas}
 $$
 
 Note: The angular diameter of the closest star, Proxima Centauri,
-is Dx1.02 ± 0.08 mas, or approximately Hx3.61 uCk.
+is Dx1.02 ± 0.08 mas, or approximately Hx3.61 dCk.
 (Reference see this ESO article
 "[How Small are Small Stars Really?](https://www.eso.org/public/news/eso0232/)"
 (2025-05-21))
+
+### Nombro
+
+> Dimensionless quantities / pure numbers
+
+> [!IMPORTANT]
+> Base dimensionless unit: ***Nuo*** `N` (i.e. one)
+
+$$
+  \textrm{N}
+  \equiv 1
+$$
 
 Derivitaj Unuoj
 -------------------------------------------------------------------------------

@@ -70,7 +70,7 @@ Changes of Esperanto++ from Esperanto include:
   - `jent`   (J) for Dx          256 (= 2^Dx8,  or Hx         100);
   - `gil`    (G) for Dx        4 096 (= 2^Dx12, or Hx        1000);
   - `munio`  (M) for Dx       65 536 (= 2^Dx16 = Dx65536^1, or Hx      1 0000);
-  - `dunio`  (U) for Dx4 294 967 296 (= 2^Dx32 = Dx65536^2, or Hx 1 0000 0000);
+  - `dunio`  (D) for Dx4 294 967 296 (= 2^Dx32 = Dx65536^2, or Hx 1 0000 0000);
   - `trinio` (T) for Dx65536^3 (= Hx10000^3 = 1pΠ);
   - `heknio` (I) for Dx65536^Dx16 (= Hx10000^Hx10 = 1p40,
     or approximately 1.158e77);
@@ -86,31 +86,27 @@ Changes of Esperanto++ from Esperanto include:
   - `jentono` (j) for  1/Dx256 (1p-2);
   - `gilono`  (g) for 1/Dx4096 (1p-3);
   - `muniono` (m) for 1/Dx65536 (1p-4);
-  - `duniono` (u) for 1/Dx65536^2 (1p-8);
+  - `duniono` (d) for 1/Dx65536^2 (1p-8);
   - `triniono` (t) for 1p-Π;
   - `hekniono` (i) for 1p-40;
   - ~~`hekniona muniono` for 1p-44;~~
     - Warning: **Deprecated** for the same reason as above.
       use `p`-notation instead for extremely large or small numbers.
   - etc. etc.
-  - Add `nul` when the number ends with zero:  
-    E.g. Use `jent hek nul Utroj` instead of ~~`jent hek Utroj`~~
-    to say Hx110U.  
-    This is to distinguish it from `jent nul HekUtroj`
-    (instead of ~~`jent HekUtroj`~~, to say Hx100HU = Hx1000U).
-  - if 'jent hek Utroj' were said,
-    it were to be interpreted as `jent HekUtroj`.
-    However, this particular example is **strongly discouraged**.
-    This rule is here to make sure
-    `jent du HekUtroj` not to be mistaken as ~~'jent duhek Utroj'~~,
-    which should be spoken as `jent duhek nul Utroj`.
+  - When saying one `hek`, one `jent`, one `gil`, one `muni`, etc etc,
+    always add prefix `u` to signify it as a number instead of a unit.  
+    E.g., say `ujent uhek` to express Hx110 (=Dx272);  
+    say `dujent uhek Utroj` to express Hx210U (=Dx528U).  
+    This is to differentiate cases between e.g.
+    ~~`jent HekUtroj`~~ (should be said as `ujent HekUtroj`)
+    and ~~`jent hek Utroj`~~ (should be said as `ujent uhek Utroj`).
   - As a reference,
     Dx 9 100 000 000 = Hx 2 1Υ66 Ψλ00,
     pronounced as
-    'du dunio, gil ganjent seshek ses munio, fusgil lomjent nul'.
-  - Both *unu munio da Utro* and *muni Utroj*
+    'du duni, ugil ganjent seshek ses muni, fusgil lomjent'.
+  - Both *unu munio da Utro* and *umuni Utroj*
     are acceptable ways of saying Dx 65 536 U.
-  - Also you can just say *MuniUtro* directly, as 1 MU = Dx65536 U.
+  - Also you can just say *unu MuniUtro* directly, as 1 MU = Dx65536 U.
   - But for fractoins, use *munioneUtro* instead of ~~*munionUtro*~~
     for more redunandencies in pronunciations
     (So people don't mix *munioneUtro* up with *MuniUtro*).
@@ -127,8 +123,8 @@ Changes of Esperanto++ from Esperanto include:
     This helps to differentiate between
     the units part and prefix part of the shorthands.
     E.g. [*Lu*](Unuoj.md#potenco) would be a unit by itself,
-    while *LU* would indicate some kind of prefix 'L' (which doesn't exist)
-    combined with unit [*U*](Unuoj.md#longeco).
+    while *LU* would indicate the prefix 'L' (=1p38≈2.7e67)
+    combined with the unit [*U*](Unuoj.md#longeco).
   - Always use letter-based unit symbols for base units
     such as length ('U'), mass ('P'), time ('Ŝ'), etc.
 - `p`-notation:

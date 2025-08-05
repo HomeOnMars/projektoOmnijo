@@ -19,6 +19,8 @@ from collections.abc import Callable
 # imports (3rd party)
 import numpy as np
 import matplotlib as mpl
+from matplotlib.axes import Axes
+from matplotlib.lines import Line2D
 
 # params
 PHI : float = (sqrt(5)+1)/2    # golden ratio
@@ -47,7 +49,7 @@ def ts(theta1: float, theta2: float) -> tuple[float, float]:
 #------------------------------------------------------------------------------
 
 def draw_arc(
-    ax : mpl.axes.Axes,
+    ax : Axes,
     scale  : float,
     radius : float|tuple[float, float],
     thetas : tuple[float, float],
@@ -77,7 +79,7 @@ def draw_arc(
     ]
 
 def draw_hat(
-    ax : mpl.axes.Axes,
+    ax : Axes,
     scale  : float,
     radius : float,
     length : float = 1.,
@@ -88,7 +90,7 @@ def draw_hat(
     linewidth_fac: float = PHI_INV/8, #11/128,
     linewidth_unit: float = 144,    # 144 will leave no gap (== 1.0 in the ax coordinate system)
     **kwargs,
-) -> list[mpl.lines.Line2D]:
+) -> list[Line2D]:
     """Draw the hat symbol in ax."""
     angle_rad, theta_2_rad = angle*(pi/180), theta/2*(pi/180)
     mid_pt = (
@@ -115,7 +117,7 @@ def draw_hat(
 
 
 def draw_band(
-    ax : mpl.axes.Axes,
+    ax : Axes,
     scale  : float,
     no_t: int = 0x10,
     ts: None|list[float] = None,
@@ -125,7 +127,7 @@ def draw_band(
     linewidth_fac_func: Callable[[float], float] = lambda t: 1.,
     linewidth_unit: float = 144.,    #132.,
     **kwargs,
-) -> list[mpl.lines.Line2D]:
+) -> list[Line2D]:
     """Draw a band in ax, with color transitioning among list of colors.
     
     Parameters
@@ -154,7 +156,7 @@ def draw_band(
     linewidth_multi = linewidth_unit * scale / max(no_t-1, 1)
     return [
         ax.add_line(
-            mpl.lines.Line2D(
+            Line2D(
                 xdata = xdata_func(t),
                 ydata = ydata_func(t),
                 color = color_func(t),
@@ -164,7 +166,7 @@ def draw_band(
         for t in ts]
 
 def draw_band_linear_x(
-    ax : mpl.axes.Axes,
+    ax : Axes,
     scale  : float,
     no_t: int = 0x10,
     xdata_center: list[float] =  [-0.5, 0.5],
@@ -176,7 +178,7 @@ def draw_band_linear_x(
     },
     linewidth_unit: float = 144.,    #132.,
     **kwargs,
-) -> list[mpl.lines.Line2D]:
+) -> list[Line2D]:
     """Draw a band in ax, with color transitioning among list of colors.
     
     Parameters

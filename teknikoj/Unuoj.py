@@ -305,7 +305,7 @@ _WGS84_DEF = (6378137.0*units.m, 6356752.314245*units.m)
 u_si_defs : dict[str, units.UnitBase] = {
     v: getattr(units, v)
     for v in [
-        'm', 'cm', 'km', 'au', 'lyr', 'pc', 'Mpc', # 'Rearth'
+        'm', 'cm', 'km', 'Rsun', 'au', 'lyr', 'pc', 'Mpc',
         'kg', 'g', 't',
         's', 'min', 'h', 'd', 'yr',
         'K', 'deg_C',
@@ -351,38 +351,38 @@ u_rdo_prefixes = [
     ('J', ['Jent'  ], 0x100),
     ('G', ['Gil'   ], 0x1000),
     ('M', ['Muni'  ], 0x10000),
-    ('U', ['Duni'  ], 0x10000**0x2),
+    ('D', ['Duni'  ], 0x10000**0x2),
     ('T', ['Trini' ], 0x10000**0x3),
     ('R', ['Kvarni'], 0x10000**0x4),
     ('V', ['Kvinni'], 0x10000**0x5),
     ('S', ['Sesni' ], 0x10000**0x6),
-    ('P', ['Sepni' ], 0x10000**0x7),
+    ('E', ['Sepni' ], 0x10000**0x7),
     ('K', ['Okni'  ], 0x10000**0x8),
     ('N', ['Nauxni'], 0x10000**0x9),
     ('A', ['Delni' ], 0x10000**0xA),
     ('B', ['Lomni' ], 0x10000**0xB),
     ('C', ['Nakni' ], 0x10000**0xC),
-    ('D', ['Signi' ], 0x10000**0xD),
-    ('E', ['Ganni' ], 0x10000**0xE),
+    ('Z', ['Signi' ], 0x10000**0xD),
+    ('L', ['Ganni' ], 0x10000**0xE),
     ('F', ['Fusni' ], 0x10000**0xF),
     ('I', ['Hekni' ], 0x10000**0x10),
     ('h', ['hekone'   ], 0x10**-1),
     ('j', ['jentone'  ], 0x100**-1),
     ('g', ['gilone'   ], 0x1000**-1),
     ('m', ['munione'  ], 0x10000**-1),
-    ('u', ['dunione'  ], 0x10000**-0x2),
+    ('d', ['dunione'  ], 0x10000**-0x2),
     ('t', ['trinione' ], 0x10000**-0x3),
     ('r', ['kvarnione'], 0x10000**-0x4),
     ('v', ['kvinnione'], 0x10000**-0x5),
     ('s', ['sesnione' ], 0x10000**-0x6),
-    ('p', ['sepnione' ], 0x10000**-0x7),
+    ('e', ['sepnione' ], 0x10000**-0x7),
     ('k', ['oknione'  ], 0x10000**-0x8),
     ('n', ['nauxnione'], 0x10000**-0x9),
     ('a', ['delnione' ], 0x10000**-0xA),
     ('b', ['lomnione' ], 0x10000**-0xB),
     ('c', ['naknione' ], 0x10000**-0xC),
-    ('d', ['signione' ], 0x10000**-0xD),
-    ('e', ['gannione' ], 0x10000**-0xE),
+    ('z', ['signione' ], 0x10000**-0xD),
+    ('l', ['gannione' ], 0x10000**-0xE),
     ('f', ['fusnione' ], 0x10000**-0xF),
     ('i', ['heknione' ], 0x10000**-0x10),
 ]
@@ -408,17 +408,16 @@ u_rdo_base['char'] = units.def_unit(
 u_rdo_base['angl'] = units.def_unit(
     ['Ck', 'Cirklo'], 2 * pi * units.rad,
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
+u_rdo_base['xdim'] = units.def_unit(
+    ['N', 'Nuo'], 1 * units.dimensionless_unscaled,
+    prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 # mask units with the same names as SI
 _UNITS_MASK_SET = {
     #'H', 'J', 'G', 'U', 'T', 'R', 'V', 'S', 'P', 'K', 'N', 'A', 'B', 'C', 'D', 'E', 'F',
     'sp',
     'AU',
     'kph', 'mph',
-} | ({data[0] for data in u_rdo_prefixes} - {
-    # these prefixes are added as independent units
-    'M',
-    # 'H', 'G', 'j',
-})
+} | {data[0] for data in u_rdo_prefixes}
 #    extra defs: prefixes
 for prefix_sn, prefix_tab, scale in u_rdo_prefixes:
     if prefix_sn not in _UNITS_MASK_SET:    # avoid name collisions with SI units

@@ -6,11 +6,11 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2025-05-13T01:26:28.518652</dc:date>
+    <dc:date>2025-08-05T19:43:11.184806</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.9.1, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.10.3, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -48,7 +48,7 @@ C 155.52 84.885117 154.267066 77.664282 151.816232 70.814659
 C 149.365398 63.965036 145.753079 57.588402 141.137942 51.964842 
 C 136.522805 46.341281 130.973425 41.554353 124.73355 37.814315 
 C 118.493675 34.074278 111.656021 31.436704 104.520923 30.017445 
-" clip-path="url(#p1d86859771)" style="fill: none; stroke: #e6daa6; stroke-width: 7.119752; stroke-linejoin: miter"/>
+" clip-path="url(#p869e202e1d)" style="fill: none; stroke: #e6daa6; stroke-width: 7.119752; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 125.046948 52.087138 
@@ -68,7 +68,7 @@ C 81.99066 143.247821 87.06144 144 92.16 144
 C 97.25856 144 102.32934 143.247821 107.208358 141.767787 
 C 112.087375 140.287753 116.721463 138.095993 120.960761 135.263385 
 C 125.200058 132.430777 128.99837 128.988188 132.232862 125.046948 
-" clip-path="url(#p1d86859771)" style="fill: none; stroke: #00bfff; stroke-width: 7.119752; stroke-linejoin: miter"/>
+" clip-path="url(#p869e202e1d)" style="fill: none; stroke: #00bfff; stroke-width: 7.119752; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 117.738737 60.992219 
@@ -80,7 +80,7 @@ C 52.27155 101.934205 54.910098 109.453591 59.482366 115.77937
 C 64.054634 122.105148 70.366839 126.969218 77.649032 129.77827 
 C 84.931225 132.587322 92.87477 133.222302 100.510731 131.605756 
 C 108.146691 129.989211 115.151437 126.189654 120.670545 120.670545 
-" clip-path="url(#p1d86859771)" style="fill: none; stroke: #9370db; stroke-width: 7.119752; stroke-linejoin: miter"/>
+" clip-path="url(#p869e202e1d)" style="fill: none; stroke: #9370db; stroke-width: 7.119752; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 120.559176 120.781915 
@@ -88,30 +88,30 @@ C 125.28328 116.05781 128.315814 110.019445 128.983903 104.006642
 C 129.651993 97.993839 127.902278 92.486835 124.122994 88.707551 
 C 120.343711 84.928268 114.836706 83.178553 108.823903 83.846642 
 C 102.8111 84.514731 96.772735 87.547265 92.048631 92.271369 
-" clip-path="url(#p1d86859771)" style="fill: none; stroke: #9370db; stroke-width: 7.119752; stroke-linejoin: miter"/>
+" clip-path="url(#p869e202e1d)" style="fill: none; stroke: #9370db; stroke-width: 7.119752; stroke-linejoin: miter"/>
    </g>
    <g id="line2d_1">
     <path d="M 46.177358 32.577048 
 L 92.16 8.64 
 L 138.142642 32.577048 
-" clip-path="url(#p1d86859771)" style="fill: none; stroke: #b7e1a1; stroke-width: 7.119752; stroke-linecap: square"/>
+" clip-path="url(#p869e202e1d)" style="fill: none; stroke: #b7e1a1; stroke-width: 7.119752; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
     <path d="M 52.253549 155.52 
 L 17.335405 135.36 
 L 17.335405 95.04 
-" clip-path="url(#p1d86859771)" style="fill: none; stroke: #d6b4fc; stroke-width: 7.119752; stroke-linecap: square"/>
+" clip-path="url(#p869e202e1d)" style="fill: none; stroke: #d6b4fc; stroke-width: 7.119752; stroke-linecap: square"/>
    </g>
    <g id="line2d_3">
     <path d="M 166.984595 95.04 
 L 166.984595 135.36 
 L 132.066451 155.52 
-" clip-path="url(#p1d86859771)" style="fill: none; stroke: #95d0fc; stroke-width: 7.119752; stroke-linecap: square"/>
+" clip-path="url(#p869e202e1d)" style="fill: none; stroke: #95d0fc; stroke-width: 7.119752; stroke-linecap: square"/>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p1d86859771">
+  <clipPath id="p869e202e1d">
    <rect x="0" y="0" width="184.32" height="184.32"/>
   </clipPath>
  </defs>
