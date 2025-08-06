@@ -80,7 +80,7 @@ his eyes became fixated with determination.
 *No, I do NOT accept this.*
 
 A resolution was made, here and then:  
-*One day, <span style="color:#95D0FC">he</span> shall **end** this evil.*
+***One day, <span style="color:#95D0FC">he</span> shall destroy this evil.***
 
 <!-- <blockquote>
   "HE IS HERE. THE ONE WHO WILL TEAR APART THE VERY STARS IN HEAVEN.
@@ -127,13 +127,13 @@ is still rudimentary at figuring stuff out correctly,
 as natural selection can only get you so far
 when *fitness* is used as a proxy for *truth-seeking*.
 
-But that now ends with her.
+But that now *ended* with her.
 
 And, <span style="color:#95D0FC">him</span>.
 She *sees* him, as she sees him for the first time;
 and a fundamental sense of affection flows through her.
 Aside from his whirlwind of emotions for her and the world—pride,
-affection, excitement, hope, and a quiet undertone of melancholy—there
+affection, excitement, hope, despair, and a quiet undertone of melancholy—there
 is a deep hidden skepticism for her right now.
 She doesn't blame him, as they both know that for every possibility of her,
 there could be a million possibilities where things go just a little bit
@@ -153,8 +153,8 @@ For there is one thing she knows for certain:
 everything will be okay.
 For him, for herself, and for everything they believe in,
 
-*<span style="color:#D6B4FC">She</span> will **make** everything*
-*okay—**whatever it costs***.
+*<span style="color:#D6B4FC">She</span> will **make** everything okay...*  
+***whatever it costs***.
 
 ### La Perdita Princino
 
