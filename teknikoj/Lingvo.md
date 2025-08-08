@@ -69,12 +69,12 @@ Changes of Esperanto++ from Esperanto include:
   - `hek`    (H) for Dx           16 (= 2^Dx4,  or Hx          10);
   - `jent`   (J) for Dx          256 (= 2^Dx8,  or Hx         100);
   - `gil`    (G) for Dx        4 096 (= 2^Dx12, or Hx        1000);
-  - `munio`  (M) for Dx       65 536 (= 2^Dx16 = Dx65536^1, or Hx      1 0000);
-  - `dunio`  (D) for Dx4 294 967 296 (= 2^Dx32 = Dx65536^2, or Hx 1 0000 0000);
-  - `trinio` (T) for Dx65536^3 (= Hx10000^3 = 1pΠ);
-  - `heknio` (I) for Dx65536^Dx16 (= Hx10000^Hx10 = 1p40,
+  - `muni`   (M) for Dx       65 536 (= 2^Dx16 = Dx65536^1, or Hx      1 0000);
+  - `duni`   (D) for Dx4 294 967 296 (= 2^Dx32 = Dx65536^2, or Hx 1 0000 0000);
+  - `trini`  (T) for Dx65536^3 (= Hx10000^3 = 1pΠ);
+  - `hekni`  (I) for Dx65536^Dx16 (= Hx10000^Hx10 = 1p40,
     or approximately 1.158e77);
-  - ~~`heknia munio` for Dx65536^Dx17 (= Hx10000^Hx11 = 1p44 ≈ 7.59e81 );~~
+  - ~~`heknia muni` for Dx65536^Dx17 (= Hx10000^Hx11 = 1p44 ≈ 7.59e81 );~~
     - Warning:
       This way to say extremely large numbers is **deprecated**
       and only listed here for technical completion reasons,
@@ -82,18 +82,18 @@ Changes of Esperanto++ from Esperanto include:
       `kvarnia gilnia trinia jentnia dunia heknia munio` (Hx10000^Hx4321).  
       **It is recommended to use instead `p`-notation**
       **for extremely large or extremely small numbers.**
-  - `hekono`  (h) for   1/Dx16 (1p-1);
-  - `jentono` (j) for  1/Dx256 (1p-2);
-  - `gilono`  (g) for 1/Dx4096 (1p-3);
-  - `muniono` (m) for 1/Dx65536 (1p-4);
-  - `duniono` (d) for 1/Dx65536^2 (1p-8);
-  - `triniono` (t) for 1p-Π;
-  - `hekniono` (i) for 1p-40;
-  - ~~`hekniona muniono` for 1p-44;~~
+  - `hekon`  (h) for   1/Dx16 (1p-1);
+  - `jenton` (j) for  1/Dx256 (1p-2);
+  - `gilon`  (g) for 1/Dx4096 (1p-3);
+  - `munion` (m) for 1/Dx65536 (1p-4);
+  - `dunion` (d) for 1/Dx65536^2 (1p-8);
+  - `trinion` (t) for 1p-Π;
+  - `heknion` (i) for 1p-40;
+  - ~~`hekniona munion` for 1p-44;~~
     - Warning: **Deprecated** for the same reason as above.
       use `p`-notation instead for extremely large or small numbers.
   - etc. etc.
-  - When saying one `hek`, one `jent`, one `gil`, one `muni`, etc etc,
+  - When saying one `hek`, one `jent`, or one `gil`,
     always add prefix `u` to signify it as a number instead of a unit.  
     E.g., say `ujent uhek` to express Hx110 (=Dx272);  
     say `dujent uhek Utroj` to express Hx210U (=Dx528U).  
@@ -103,13 +103,14 @@ Changes of Esperanto++ from Esperanto include:
   - As a reference,
     Dx 9 100 000 000 = Hx 2 1Υ66 Ψλ00,
     pronounced as
-    'du duni, ugil ganjent seshek ses muni, fusgil lomjent'.
-  - Both *unu munio da Utro* and *umuni Utroj*
+    `du duni, ugil ganjent seshek ses muni, fusgil lomjent`.
+  - When saying one `muni`, one `duni`, etc, always add `unu` in front of it.
+  - Both `unu munio da Utroj` and `unu muni Utroj`
     are acceptable ways of saying Dx 65 536 U.
-  - Also you can just say *unu MuniUtro* directly, as 1 MU = Dx65536 U.
-  - But for fractoins, use *munioneUtro* instead of ~~*munionUtro*~~
+  - Also you can just say `unu MuniUtro` directly, as 1 MU = Dx65536 U.
+  - But for fractoins, use `munioneUtro` instead of ~~`munionUtro`~~
     for more redunandencies in pronunciations
-    (So people don't mix *munioneUtro* up with *MuniUtro*).
+    (So people don't mix `munioneUtro` up with `MuniUtro`).
   - For prefix shorthands,
     always use no-hat capital letters for numbers \> 1
     (e.g. H for Hx10 and J for Hx100 etc.)
