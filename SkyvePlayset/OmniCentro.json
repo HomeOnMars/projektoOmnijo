@@ -45,14 +45,14 @@
     "75250": {
       "Id": 75250,
       "Name": "Better Bulldozer",
-      "Version": "19",
+      "Version": "20",
       "LoadOrder": 8,
       "IsEnabled": true
     },
     "74604": {
       "Id": 74604,
       "Name": "Anarchy",
-      "Version": "32",
+      "Version": "33",
       "LoadOrder": 9,
       "IsEnabled": true
     },
@@ -67,322 +67,322 @@
       "Id": 113299,
       "Name": "Disable Mouse Hint",
       "Version": "1",
-      "LoadOrder": 17,
+      "LoadOrder": 19,
       "IsEnabled": true
     },
     "91433": {
       "Id": 91433,
       "Name": "InfoLoom",
-      "Version": "27",
-      "LoadOrder": 19,
+      "Version": "29",
+      "LoadOrder": 21,
       "IsEnabled": true
     },
     "79186": {
       "Id": 79186,
       "Name": "Simple Mod Checker Plus",
       "Version": "39",
-      "LoadOrder": 21,
+      "LoadOrder": 23,
       "IsEnabled": true
     },
     "98560": {
       "Id": 98560,
       "Name": "Asset UI Manager",
       "Version": "5",
-      "LoadOrder": 26,
+      "LoadOrder": 28,
       "IsEnabled": true
     },
     "107257": {
       "Id": 107257,
       "Name": "System Clock",
       "Version": "11",
-      "LoadOrder": 37,
+      "LoadOrder": 39,
       "IsEnabled": true
     },
     "104707": {
       "Id": 104707,
       "Name": "Detailed Descriptions (Zone Lot Size Display)",
       "Version": "5",
-      "LoadOrder": 39,
+      "LoadOrder": 41,
       "IsEnabled": true
     },
     "87755": {
       "Id": 87755,
       "Name": "Realistic Workplaces And Households",
-      "Version": "40",
-      "LoadOrder": 40,
+      "Version": "41",
+      "LoadOrder": 42,
       "IsEnabled": false
     },
     "101948": {
       "Id": 101948,
       "Name": "USA Northeast Pack",
       "Version": "1",
-      "LoadOrder": 41,
+      "LoadOrder": 43,
       "IsEnabled": true
     },
     "102147": {
       "Id": 102147,
       "Name": "Advanced Road Tools",
       "Version": "13",
-      "LoadOrder": 50,
+      "LoadOrder": 52,
       "IsEnabled": false
     },
     "100454": {
       "Id": 100454,
       "Name": "China Pack",
       "Version": "1",
-      "LoadOrder": 52,
+      "LoadOrder": 54,
       "IsEnabled": true
     },
     "98960": {
       "Id": 98960,
       "Name": "Eastern Europe Pack",
       "Version": "3",
-      "LoadOrder": 53,
+      "LoadOrder": 55,
       "IsEnabled": true
     },
     "78622": {
       "Id": 78622,
       "Name": "TransportPolicyAdjuster",
       "Version": "7",
-      "LoadOrder": 54,
+      "LoadOrder": 56,
       "IsEnabled": true
     },
     "99048": {
       "Id": 99048,
       "Name": "Resource Locator",
-      "Version": "11",
-      "LoadOrder": 56,
+      "Version": "12",
+      "LoadOrder": 58,
       "IsEnabled": false
     },
     "81568": {
       "Id": 81568,
       "Name": "Zone Color Changer",
       "Version": "10",
-      "LoadOrder": 58,
+      "LoadOrder": 60,
       "IsEnabled": true
     },
     "81157": {
       "Id": 81157,
       "Name": "AreaBucket",
       "Version": "8",
-      "LoadOrder": 59,
-      "IsEnabled": true
+      "LoadOrder": 61,
+      "IsEnabled": false
     },
     "76662": {
       "Id": 76662,
       "Name": "Cim Route Highlighter",
       "Version": "22",
-      "LoadOrder": 60,
+      "LoadOrder": 62,
       "IsEnabled": false
     },
     "88893": {
       "Id": 88893,
       "Name": "Time & Weather Anarchy",
       "Version": "10",
-      "LoadOrder": 63,
+      "LoadOrder": 65,
       "IsEnabled": true
     },
     "87428": {
       "Id": 87428,
       "Name": "Carto",
-      "Version": "11",
-      "LoadOrder": 64,
+      "Version": "12",
+      "LoadOrder": 66,
       "IsEnabled": true
     },
     "77175": {
       "Id": 77175,
       "Name": "Extra Networks and Areas",
       "Version": "14",
-      "LoadOrder": 68,
+      "LoadOrder": 70,
       "IsEnabled": true
     },
     "92859": {
       "Id": 92859,
       "Name": "UK Pack",
       "Version": "4",
-      "LoadOrder": 70,
+      "LoadOrder": 72,
       "IsEnabled": true
     },
     "83733": {
       "Id": 83733,
       "Name": "Show Text Trends",
       "Version": "5",
-      "LoadOrder": 84,
+      "LoadOrder": 86,
       "IsEnabled": true
     },
     "93523": {
       "Id": 93523,
       "Name": "NavigationView (Updated for 1.3.3f1)",
       "Version": "9",
-      "LoadOrder": 89,
-      "IsEnabled": false
+      "LoadOrder": 91,
+      "IsEnabled": true
     },
     "75816": {
       "Id": 75816,
       "Name": "Advanced Line Tool",
       "Version": "30",
-      "LoadOrder": 91,
+      "LoadOrder": 93,
       "IsEnabled": true
     },
     "75993": {
       "Id": 75993,
       "Name": "Tree Controller",
       "Version": "21",
-      "LoadOrder": 92,
+      "LoadOrder": 94,
       "IsEnabled": true
     },
     "84638": {
       "Id": 84638,
       "Name": "Recolor",
-      "Version": "7",
-      "LoadOrder": 94,
+      "Version": "10",
+      "LoadOrder": 96,
       "IsEnabled": true
     },
     "86868": {
       "Id": 86868,
       "Name": "Real Life",
       "Version": "28",
-      "LoadOrder": 95,
+      "LoadOrder": 97,
       "IsEnabled": true
     },
     "86260": {
       "Id": 86260,
       "Name": "Compass",
       "Version": "4",
-      "LoadOrder": 96,
+      "LoadOrder": 98,
       "IsEnabled": false
     },
     "75826": {
       "Id": 75826,
       "Name": "Plop the Growables",
       "Version": "18",
-      "LoadOrder": 97,
+      "LoadOrder": 99,
       "IsEnabled": true
     },
     "89495": {
       "Id": 89495,
       "Name": "City Controller",
       "Version": "10",
-      "LoadOrder": 98,
+      "LoadOrder": 100,
       "IsEnabled": false
     },
     "90641": {
       "Id": 90641,
       "Name": "Hall of Fame",
-      "Version": "28",
-      "LoadOrder": 99,
+      "Version": "29",
+      "LoadOrder": 101,
       "IsEnabled": true
     },
     "77260": {
       "Id": 77260,
       "Name": "Water Visual Tweaks",
-      "Version": "7",
-      "LoadOrder": 100,
-      "IsEnabled": false
+      "Version": "10",
+      "LoadOrder": 102,
+      "IsEnabled": true
     },
     "77171": {
       "Id": 77171,
       "Name": "Realistic Trips",
-      "Version": "55",
-      "LoadOrder": 105,
+      "Version": "56",
+      "LoadOrder": 107,
       "IsEnabled": true
     },
     "87190": {
       "Id": 87190,
       "Name": "Road Builder [BETA]",
       "Version": "34",
-      "LoadOrder": 111,
+      "LoadOrder": 113,
       "IsEnabled": true
     },
     "80095": {
       "Id": 80095,
       "Name": "Traffic",
       "Version": "20",
-      "LoadOrder": 117,
+      "LoadOrder": 119,
       "IsEnabled": true
     },
     "79237": {
       "Id": 79237,
       "Name": "First Person Camera Continued",
-      "Version": "14",
-      "LoadOrder": 121,
+      "Version": "16",
+      "LoadOrder": 123,
       "IsEnabled": true
     },
     "80931": {
       "Id": 80931,
       "Name": "Toggle Overlays",
-      "Version": "9",
-      "LoadOrder": 122,
+      "Version": "10",
+      "LoadOrder": 124,
       "IsEnabled": true
     },
     "78188": {
       "Id": 78188,
       "Name": "Extended Tooltip",
       "Version": "16",
-      "LoadOrder": 123,
+      "LoadOrder": 125,
       "IsEnabled": true
     },
     "74324": {
       "Id": 74324,
       "Name": "Move It",
-      "Version": "28",
-      "LoadOrder": 131,
+      "Version": "29",
+      "LoadOrder": 133,
       "IsEnabled": true
     },
     "76896": {
       "Id": 76896,
       "Name": "Volchoria Map Theme",
       "Version": "2",
-      "LoadOrder": 134,
+      "LoadOrder": 136,
       "IsEnabled": true
     },
     "76828": {
       "Id": 76828,
       "Name": "Alpine Theme",
       "Version": "3",
-      "LoadOrder": 135,
+      "LoadOrder": 137,
       "IsEnabled": true
     },
     "75749": {
       "Id": 75749,
       "Name": "Free Range Camera",
       "Version": "5",
-      "LoadOrder": 137,
+      "LoadOrder": 139,
       "IsEnabled": true
     },
     "75728": {
       "Id": 75728,
       "Name": "ExtraLandscapingTools",
       "Version": "11",
-      "LoadOrder": 138,
+      "LoadOrder": 140,
       "IsEnabled": true
     },
     "75613": {
       "Id": 75613,
       "Name": "Water Features",
-      "Version": "14",
-      "LoadOrder": 139,
+      "Version": "15",
+      "LoadOrder": 141,
       "IsEnabled": true
     },
     "75804": {
       "Id": 75804,
       "Name": "Skyve",
       "Version": "54",
-      "LoadOrder": 140,
+      "LoadOrder": 142,
       "IsEnabled": true
     },
     "79634": {
       "Id": 79634,
       "Name": "Asset Icon Library",
       "Version": "19",
-      "LoadOrder": 141,
+      "LoadOrder": 143,
       "IsEnabled": true
     },
     "75745": {
       "Id": 75745,
       "Name": "Achievement Enabler",
       "Version": "2",
-      "LoadOrder": 142,
+      "LoadOrder": 144,
       "IsEnabled": true
     }
   },
