@@ -233,7 +233,7 @@ which is also slowing down over millennia.)
 - `⚝`: ***Semajno*** | Omnija Week
 - `☾`: ***Monato***  | Omnija Month
 - `Ĵ`: ***Ĵaro***    | Omnija Unit Year
-  - Unit year - Length is precisely Dx365.2421875 (Hx16Σ.3Υ) Omnija Days.
+  - Unit year - Length is precisely Dx365.25 (Hx16Σ.4) Omnija Days.
 - `J`: ***Jaro***    | Omnija Calendar Year (Earth-specific)  
   *`Omnijaro`* Calendar System (Ø+\* (0xD8)):
   - Calendar year - Length varies depending on which year it is.
@@ -275,6 +275,9 @@ which is also slowing down over millennia.)
     to keep the days in sync with
     [Mean Solar Time](https://en.wikipedia.org/wiki/Solar_time#Mean_solar_time).
     Usually this means adding $\sim 7.1$ minutes or 5Ĉ4Ŝ.
+  - This means that on average, one Omnija Calendar Year is approximately
+    $1 J \approx 365.24713_D ⚻$ currently,
+    considering both leap years and added seconds.
 
 [^Tagoj-Solstico]: a.k.a. Northern Solstice, since *la Insulo-Omnijo* is located in the Southern Hemisphere.
 

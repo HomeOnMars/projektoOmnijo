@@ -27,6 +27,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” 
 -------------------------------------------------------------------------------
 """
 
+from datetime import datetime, timedelta, UTC
 import numpy as np
 from numpy import pi, e
 from astropy import constants as const
@@ -247,9 +248,10 @@ def presi_Hx(
             ans += d_sep
         
     if e_sep:
-        ans += f"{e_sep}{presi_Hx(
+        ordo = presi_Hx(
             grandordo, sc=0x100, stop_when_precise=True,
-            base=base, symbols_inv=symbols_inv, d_sep=d_sep, e_sep='')}"
+            base=base, symbols_inv=symbols_inv, d_sep=d_sep, e_sep='')
+        ans += f"{e_sep}{ordo}"
     
     return ans
 
@@ -417,18 +419,18 @@ u_rdo_base['xdim'] = units.def_unit(
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 # mask units with the same names as SI
 _UNITS_MASK_SET = {
-    #'H', 'J', 'G', 'U', 'T', 'R', 'V', 'S', 'P', 'K', 'N', 'A', 'B', 'C', 'D', 'E', 'F',
     'sp',
     'AU',
     'kph', 'mph',
 } | {data[0] for data in u_rdo_prefixes}
-#    extra defs: prefixes
-for prefix_sn, prefix_tab, scale in u_rdo_prefixes:
-    if prefix_sn not in _UNITS_MASK_SET:    # avoid name collisions with SI units
-        units.def_unit(
-            [prefix_sn, *prefix_tab],
-            scale*units.dimensionless_unscaled,
-            namespace=u_rdo_defs)
+# #    extra defs: prefixes
+# for prefix_sn, prefix_tab, scale in u_rdo_prefixes:
+#     # avoid name collisions with SI units
+#     if prefix_sn not in _UNITS_MASK_SET:
+#         units.def_unit(
+#             [prefix_sn, *prefix_tab],
+#             scale*units.dimensionless_unscaled,
+#             namespace=u_rdo_defs)
 
 
 
@@ -492,7 +494,7 @@ units.def_unit(
 units.def_unit(
     ['☾', 'Monato'],  4 * u_rdo_defs['Semajno'], namespace=u_rdo_defs)
 units.def_unit(
-    ['Ĵ', 'Ĵaro'], 365.2421875 * u_rdo_defs['MŜ'],
+    ['Ĵ', 'Ĵaro'], 365.25 * u_rdo_defs['MŜ'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 #    temperature
 Z = u_rdo_defs['Z']
@@ -636,6 +638,113 @@ u = Unuoj(u_rdo_base, u_rdo_defs | u_nat_defs | u_si_defs | u_csl_defs)
 # track gauges
 reldistanco_std = (4*units.imperial.foot + 8.5 * units.imperial.inch).si
 reldistanco_rdo = 3 * u.hU
+
+
+
+
+
+
+# === Unit System (Expansion) ===
+
+
+
+class Datotempo:
+    # Omnija Epoch: Northern Solstice 2026
+    _EPOKO: datetime = datetime(2026, 6, 21, 8, 24, tzinfo=UTC)
+
+    def __init__(self, tempstampo: None|datetime|units.Quantity=None):
+        # mSx since Datotempo._EPOKO
+        self.__tempstampo: np.int64 = np.int64(0)
+
+        if tempstampo:
+            self.tempstampo = tempstampo
+
+    def __repr__(self) -> str:
+        datetime_iso = ''
+        try:
+            datetime_iso = self.datetime.isoformat()
+        except OverflowError:
+            datetime_iso = "\n\tNote: overflow for python native datetime lib."
+        else:
+            datetime_iso = "\n\t" + datetime_iso
+        return (
+            f"Timestamp {self.__tempstampo:.0f}"
+            + f"  since {self._EPOKO.isoformat()}"
+            + datetime_iso
+        )
+
+    def __str__(self) -> str:
+        return self.datetime.isoformat()
+
+    @property
+    def tempstampo(self) -> units.Quantity:
+        """Get timestamp (time difference from Datotempo._EPOKO)."""
+        return units.Quantity(self.__tempstampo, unit=u.mSx)
+
+    @tempstampo.setter
+    def tempstampo(self, tempstampo: datetime|units.Quantity):
+        """Set from timestamp.
+        
+        tempstampo:
+            time difference from Datotempo._EPOKO
+            if not of type datetime or units.Quantity,
+                will be treated as POSIX timestamp
+                (i.e. time difference from UNIX Epoch instead of Omnija Epoch)
+        """
+        # to units.Quantity
+        if not isinstance(tempstampo, (units.Quantity, datetime)):
+            raise TypeError(
+                f"{type(tempstampo) = } should be"
+                " either units.Quantity or datetime.datetime.")
+        if isinstance(tempstampo, datetime):
+            tempstampo = units.Quantity(
+                (tempstampo - self._EPOKO).total_seconds(), unit=u.s)
+        self.__tempstampo = np.int64(tempstampo.to_value(u.mSx))
+
+    @classmethod
+    def from_posix(cls, posix: float):
+        res = cls()
+        res.tempstampo = datetime.fromtimestamp(tempstampo)
+        return res
+
+
+    @property
+    def datetime(self) -> datetime:
+        return self._EPOKO + timedelta(days=self.tempstampo.to_value(u.d))
+    
+    @property
+    def posix(self) -> float:
+        """Return POSIX timestamp."""
+        return self.datetime.timestamp()
+    
+    @classmethod
+    def nun(cls):
+        """Now"""
+        return cls(datetime.now(UTC))
+
+    @classmethod
+    def nun(cls):
+        """Now"""
+        return cls(datetime.now(UTC))
+
+    @classmethod
+    def mak(cls):
+        """Maximum storable time"""
+        res = cls()
+        res.__tempstampo = np.iinfo(type(res.__tempstampo)).max
+        return res
+
+    @classmethod
+    def min(cls):
+        """Minimum storable time"""
+        res = cls()
+        res.__tempstampo = np.iinfo(type(res.__tempstampo)).min
+        return res
+
+    def get_omnijaro_str(self) -> str:
+        """Get Omnijaro string representation of datetime."""
+        res = "Ø"
+        return NotImplemented
 
 
 
