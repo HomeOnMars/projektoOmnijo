@@ -26,7 +26,7 @@ ONKIO Tablo
 
 -------------------------------------------------------------------------------
 
-Table generation code [here](ONKIO.py);
+Table generation code see [onkio.py](onkio.py);  
 Differences from the ASCII table are highlighted with **bold** text.
 
 |    ONKIO    |    0x0\_    |    0x1\_    |    0x2\_    |    0x3\_    |    0x4\_    |    0x5\_    |    0x6\_    |    0x7\_    |

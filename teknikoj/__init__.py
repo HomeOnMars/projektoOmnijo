@@ -27,6 +27,5 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” 
 -------------------------------------------------------------------------------
 """
 
-from .ONKIO import *
-from .Unuoj import *
-# from . import Retoj
+from . import onkio, unuoj, retoj
+from .unuoj import *

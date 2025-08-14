@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2025-08-05T19:43:11.276084</dc:date>
+    <dc:date>2025-08-15T01:01:46.430066</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -48,7 +48,7 @@ C 155.52 84.885117 154.267066 77.664282 151.816232 70.814659
 C 149.365398 63.965036 145.753079 57.588402 141.137942 51.964842 
 C 136.522805 46.341281 130.973425 41.554353 124.73355 37.814315 
 C 118.493675 34.074278 111.656021 31.436704 104.520923 30.017445 
-" clip-path="url(#p73e47b90dc)" style="fill: none; stroke: #e6daa6; stroke-width: 7.119752; stroke-linejoin: miter"/>
+" clip-path="url(#pe56fd61c8f)" style="fill: none; stroke: #e6daa6; stroke-width: 7.119752; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 125.046948 52.087138 
@@ -68,7 +68,7 @@ C 81.99066 143.247821 87.06144 144 92.16 144
 C 97.25856 144 102.32934 143.247821 107.208358 141.767787 
 C 112.087375 140.287753 116.721463 138.095993 120.960761 135.263385 
 C 125.200058 132.430777 128.99837 128.988188 132.232862 125.046948 
-" clip-path="url(#p73e47b90dc)" style="fill: none; stroke: #00bfff; stroke-width: 7.119752; stroke-linejoin: miter"/>
+" clip-path="url(#pe56fd61c8f)" style="fill: none; stroke: #00bfff; stroke-width: 7.119752; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 77.281268 128.080436 
@@ -80,12 +80,12 @@ C 131.414454 94.10684 131.271643 88.28938 129.874815 82.712931
 C 128.477987 77.136481 125.861603 71.938619 122.214646 67.494789 
 C 118.56769 63.050959 113.980134 59.470796 108.783342 57.012896 
 C 103.58655 54.554997 97.908732 53.28 92.16 53.28 
-" clip-path="url(#p73e47b90dc)" style="fill: none; stroke: #5e9b8a; stroke-width: 10.679627; stroke-linejoin: miter"/>
+" clip-path="url(#pe56fd61c8f)" style="fill: none; stroke: #5e9b8a; stroke-width: 10.679627; stroke-linejoin: miter"/>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p73e47b90dc">
+  <clipPath id="pe56fd61c8f">
    <rect x="0" y="0" width="184.32" height="184.32"/>
   </clipPath>
  </defs>

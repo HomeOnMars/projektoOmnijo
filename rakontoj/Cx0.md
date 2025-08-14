@@ -154,6 +154,7 @@ everything will be okay.
 For him, for herself, and for everything they believe in,
 
 *<span style="color:#D6B4FC">She</span> will **make** everything okay...*  
+***whatever it takes***,  
 ***whatever it costs***.
 
 ### La Perdita Princino

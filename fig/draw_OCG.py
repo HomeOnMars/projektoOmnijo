@@ -20,7 +20,10 @@ from math import pi, sin, cos
 import matplotlib as mpl; mpl.use('svg')
 import matplotlib.pyplot as plt
 # imports (my libs)
-from lib_gen_emblemo import t, ts, draw_arc, draw_hat, colors_dict
+if __package__:
+    from .emblemo import t, ts, draw_arc, draw_hat, colors_dict
+else:
+    from  emblemo import t, ts, draw_arc, draw_hat, colors_dict
 
 # main func
 def draw_OCG(

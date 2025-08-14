@@ -27,6 +27,5 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” 
 -------------------------------------------------------------------------------
 """
 
-from . import teknikoj as tek
-from . import fig
-from .teknikoj import *
+from .skyveplayset import SkyvePlayset
+# from . import Retoj

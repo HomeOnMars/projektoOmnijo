@@ -27,4 +27,4 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” 
 -------------------------------------------------------------------------------
 """
 
-from .lib_gen_emblemo import *
+from .emblemo import *

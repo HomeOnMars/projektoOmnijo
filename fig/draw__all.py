@@ -14,11 +14,11 @@ To view a copy of this license, visit <https://creativecommons.org/licenses/by-n
 
 
 # imports (my libs)
-from draw_OCG  import draw_OCG
-from draw_OCR  import draw_OCR
-from draw_OCRR import draw_OCRR
-from draw_RdO  import draw_RdO
-from draw_RdOFlago import draw_RdOFlago, draw_RdOFlago_emb, draw_RdOFlago_full
+from  draw_OCG  import draw_OCG
+from  draw_OCR  import draw_OCR
+from  draw_OCRR import draw_OCRR
+from  draw_RdO  import draw_RdO
+from  draw_RdOFlago import draw_RdOFlago, draw_RdOFlago_emb, draw_RdOFlago_full
 
 def draw__all():
     draw_OCG()

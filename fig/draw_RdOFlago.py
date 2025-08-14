@@ -21,9 +21,10 @@ import numpy as np
 import matplotlib as mpl; mpl.use('svg')
 import matplotlib.pyplot as plt
 # imports (my libs)
-from lib_gen_emblemo import (
-    t, ts, draw_arc, draw_band_linear_x, colors_dict, PHI,
-)
+if __package__:
+    from .emblemo import t, ts, draw_arc, draw_band_linear_x, colors_dict, PHI
+else:
+    from  emblemo import t, ts, draw_arc, draw_band_linear_x, colors_dict, PHI
 
 RATIO_XY : float = 16/9  #PHI
 

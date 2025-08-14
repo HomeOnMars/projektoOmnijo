@@ -33,8 +33,10 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” 
 from numpy import sqrt, sin, cos, pi
 from astropy import units
 from astropy import constants as const
-
-from Unuoj import u, presi_Hx
+if __package__:
+    from .unuoj import u, presi_Hx
+else:
+    from  unuoj import u, presi_Hx
 
 # getting how many containers/trailers can a train engine haul
 g = const.g0
