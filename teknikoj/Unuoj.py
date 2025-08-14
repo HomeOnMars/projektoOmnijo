@@ -28,6 +28,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” 
 """
 
 from datetime import datetime, timedelta, UTC
+from typing import Self
 import numpy as np
 from numpy import pi, e
 from astropy import constants as const
@@ -649,15 +650,22 @@ reldistanco_rdo = 3 * u.hU
 
 
 class Datotempo:
+    # unit used for storage
+    _UNUO : units.Unit = u.mSx
     # Omnija Epoch: Northern Solstice 2026
     _EPOKO: datetime = datetime(2026, 6, 21, 8, 24, tzinfo=UTC)
+    # POSIX Epoch's position in Omnija Epoch (in mSx)
+    _POSIX: np.int64 = np.int64((-_EPOKO.timestamp()*u.s).to_value(_UNUO))
+    # max storable POSIX timestamp in mSx
+    _POSIX_MAX: np.int64 = np.iinfo(np.int64).max + _POSIX
+
 
     def __init__(self, tempstampo: None|datetime|units.Quantity=None):
         # mSx since Datotempo._EPOKO
         self.__tempstampo: np.int64 = np.int64(0)
 
-        if tempstampo:
-            self.tempstampo = tempstampo
+        if tempstampo is not None:
+            self.agordi(tempstampo)
 
     def __repr__(self) -> str:
         datetime_iso = ''
@@ -668,21 +676,27 @@ class Datotempo:
         else:
             datetime_iso = "\n\t" + datetime_iso
         return (
-            f"Timestamp {self.__tempstampo:.0f}"
-            + f"  since {self._EPOKO.isoformat()}"
+            f"Timestamp {self.__tempstampo:.0f} {type(self)._UNUO}"
+            + f"  since {type(self)._EPOKO.isoformat()}"
             + datetime_iso
         )
 
     def __str__(self) -> str:
         return self.datetime.isoformat()
 
+    def __copy__(self) -> Self:
+        return type(self)(self.tempstampo)
+
+    def kopii(self) -> Self:
+        return self.__copy__()
+
     @property
     def tempstampo(self) -> units.Quantity:
         """Get timestamp (time difference from Datotempo._EPOKO)."""
-        return units.Quantity(self.__tempstampo, unit=u.mSx)
+        return units.Quantity(
+            self.__tempstampo, unit=type(self)._UNUO, dtype=np.int64)
 
-    @tempstampo.setter
-    def tempstampo(self, tempstampo: datetime|units.Quantity):
+    def agordi(self, tempstampo: datetime|units.Quantity) -> Self:
         """Set from timestamp.
         
         tempstampo:
@@ -698,44 +712,52 @@ class Datotempo:
                 " either units.Quantity or datetime.datetime.")
         if isinstance(tempstampo, datetime):
             tempstampo = units.Quantity(
-                (tempstampo - self._EPOKO).total_seconds(), unit=u.s)
-        self.__tempstampo = np.int64(tempstampo.to_value(u.mSx))
+                (tempstampo - type(self)._EPOKO).total_seconds(), unit=u.s)
+        self.__tempstampo = np.int64(tempstampo.to_value(type(self)._UNUO))
+        return self
 
     @classmethod
-    def from_posix(cls, posix: float):
-        res = cls()
-        res.tempstampo = datetime.fromtimestamp(tempstampo)
-        return res
+    def generi_el(cls, tempstampo: Self|datetime|units.Quantity) -> Self:
+        return cls(tempstampo)
 
+    @classmethod
+    def generi_el_posix(cls, posix: float) -> Self:
+        # return cls(datetime.fromtimestamp(posix))
+        return cls((cls._POSIX*cls._UNUO) + (posix*u.s).to(cls._UNUO))
 
     @property
     def datetime(self) -> datetime:
-        return self._EPOKO + timedelta(days=self.tempstampo.to_value(u.d))
+        return type(self)._EPOKO + timedelta(
+            days=self.tempstampo.to_value(u.d))
     
     @property
     def posix(self) -> float:
-        """Return POSIX timestamp."""
-        return self.datetime.timestamp()
-    
+        """Return POSIX timestamp.
+        
+        Warning: Last 2 digits for microseconds are not accurate,
+        since the accuracy is limited to Datotempo._UNUO (mSx, or ~20us)
+        """
+        if self.__tempstampo > type(self)._POSIX_MAX:
+            raise NotImplementedError(
+                "POSIX timestamp overflown- not yet implemented")
+        return units.Quantity(
+            self.__tempstampo - type(self)._POSIX, unit=type(self)._UNUO,
+        ).to_value(u.s)
+
     @classmethod
-    def nun(cls):
+    def nun(cls) -> Self:
         """Now"""
         return cls(datetime.now(UTC))
 
     @classmethod
-    def nun(cls):
-        """Now"""
-        return cls(datetime.now(UTC))
-
-    @classmethod
-    def mak(cls):
+    def mak(cls) -> Self:
         """Maximum storable time"""
         res = cls()
         res.__tempstampo = np.iinfo(type(res.__tempstampo)).max
         return res
 
     @classmethod
-    def min(cls):
+    def min(cls) -> Self:
         """Minimum storable time"""
         res = cls()
         res.__tempstampo = np.iinfo(type(res.__tempstampo)).min
