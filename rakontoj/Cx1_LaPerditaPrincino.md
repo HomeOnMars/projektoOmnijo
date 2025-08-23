@@ -1,7 +1,7 @@
-Title TBD
+Ĉapitro 1 - La Perdita Princino
 ===============================================================================
 
-> Title TBD
+> Chapter 1 - The Lost Princess
 
 Legal
 -------------------------------------------------------------------------------
@@ -19,14 +19,15 @@ Legal
 
 <p xmlns:cc="http://creativecommons.org/ns#" >This work by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/HomeOnMars">HomeOnMars</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
 
-Ĉapitro 1 - La Perdita Princino
+Enhavo
 -------------------------------------------------------------------------------
 
-> Chapter 1 - The Lost Princess
-> <br>
+> [!NOTE]  
 > [Fona Prologo](Cx0_Prologo.md)
 > <br>
 > [Sekva Ĉapitro]()
+
+[TOC]
 
 -------------------------------------------------------------------------------
 
@@ -315,13 +316,13 @@ The King stares her in the eyes for a while, and then says with a bitter smile:
 as she feels the pressure on her neck disappears
 with the king moving away the knife-
 not all the way, it’s still centimeters away from her,
-strike-able in a fraction of a second.
+strike-able within a fraction of a second.
 *Good enough.*
 She maintains her perfectly calm manner, as if the knife doesn’t matter.
 And it doesn’t matter indeed.
 “You don’t want to risk being recorded.
 That’s all right; I too love plausible deniability.
-So, let me speak your questions for you:
+So, let me speak your questions out loud for you:
 you are thinking, how could you
 
 (To be continued.)
