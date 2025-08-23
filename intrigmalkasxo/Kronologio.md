@@ -41,7 +41,7 @@ Acronyms `J☾⚝⚻ĜĈŜ` see [Units](../teknikoj/Unuoj.md#tempo) page.
 ||||
 | Ø-5⚝ |  OCG  | <span style="color:Beige">Serena</span> en la Insulo-Omnijo |
 | Ø-3⚝3⚻ |   OCG  | <span style="color:Beige">Serena</span> is publicly discovered as the lost princess to the throne and started to quickly gain popularity |
-| Ø-3⚝   |   OCG  | <span style="color:Beige">Serena</span> officially [meets the old King](../rakontoj/Cx0.md#la-perdita-princino) for the first time |
+| Ø-3⚝   |   OCG  | <span style="color:Beige">Serena</span> officially [meets the old King](../rakontoj/Cx1_LaPerditaPrincino.md#ĉapitro-1---la-perdita-princino) for the first time |
 | Ø-2⚝3⚻  |   OCG  | The old king suffered a lethal 'accident' and 'died' |
 ||||
 | ***Ø+0*** |   OCG  | <span style="color:Beige">Serena</span>'s coronation  <br>\(Winter Solstice 20XX\) |
