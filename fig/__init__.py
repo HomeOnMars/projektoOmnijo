@@ -27,4 +27,4 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” 
 -------------------------------------------------------------------------------
 """
 
-from .emblemo import *
+from .emblemo import Emblemo, KOLOROJ

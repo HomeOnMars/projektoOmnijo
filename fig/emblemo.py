@@ -14,13 +14,16 @@ To view a copy of this license, visit <https://creativecommons.org/licenses/by-n
 
 
 # imports (built-in)
-from math import pi, sin, cos, sqrt
+from os.path import sep
+from math import sqrt, pi, sin, cos, tan, acos
 from collections.abc import Callable
 # imports (3rd party)
 import numpy as np
 import matplotlib as mpl
+import matplotlib.pyplot as plt
 from matplotlib.axes import Axes
 from matplotlib.lines import Line2D
+mpl.use('svg')
 
 # params
 PHI : float = (sqrt(5)+1)/2    # golden ratio
@@ -46,6 +49,7 @@ def t(theta: float) -> float:
 def ts(theta1: float, theta2: float) -> tuple[float, float]:
     """Convert angles from hex to deg."""
     return (t(theta1), t(theta2))
+
 #------------------------------------------------------------------------------
 
 def draw_arc(
@@ -227,3 +231,307 @@ def draw_band_linear_x(
         linewidth_unit = linewidth_unit,
         **kwargs,
     )
+
+
+
+class Emblemo:
+    """Drawing Emblems."""
+
+    def __init__(self, name:str="", colors:dict=KOLOROJ, **kwargs):
+        self.fig = None
+        self.ax  = None
+        self.name: str = name
+        self.scale_y: float = 256/400
+        self.ratio_xy: float = 1.
+        self.colors: dict[str, str] = colors.copy()
+        if name:
+            attr = f'_set_as_{name}'
+            if attr not in dir(self):
+                raise ValueError(f"Unrecognized Emblem Name '{name}'.")
+            getattr(self, attr)(**kwargs)
+
+    def __del__(self):
+        if self.fig is not None:
+            plt.close(self.fig)
+
+    @property
+    def figax(self):
+        return self.fig, self.ax
+
+    @property
+    def scale(self):
+        return self.scale_y
+
+    @property
+    def scale_x(self):
+        return self.scale_y * self.ratio_xy
+
+    def init_figax(
+        self,
+        scale_y: float,    # = 256/400,
+        ratio_xy: float = 1.,
+        xlim: tuple[float, float] = (-1., 1.),
+        ylim: tuple[float, float] = (-1., 1.),
+    ):
+        self.scale_y  = scale_y
+        self.ratio_xy = ratio_xy
+        self.fig, self.ax = plt.subplots(
+            figsize=[4*self.scale_x, 4*self.scale_y])
+        self.ax.set_xlim(xlim)
+        self.ax.set_ylim(ylim)
+        self.ax.set_axis_off()
+        self.ax.set_position([0, 0, 1, 1])
+        return self
+
+    def save(
+        self,
+        # noext means no extension
+        output_path_noext: None|str = None,
+        output_exts: list[str] = ['.svg', '.png'],
+        verbose: bool = True,
+    ):
+        """Output to files."""
+        if self.fig is None:
+            if verbose: print("Error: No figure to be saved.")
+            return
+        if output_path_noext is None:
+            output_path_noext = f'.{sep}{self.name}'
+        for ext in output_exts:
+            output_path = f"{output_path_noext}{ext}"
+            if verbose: print(f"Saving to '{output_path}'...", end=' ')
+            self.fig.savefig(output_path, transparent=True)
+            if verbose: print(f"Done.")
+        if verbose: print(f"Done.")
+        return
+
+
+
+    def _set_as_RdO(
+        self,
+        # size of the drawing pad
+        scale: float = 256/400,    # 1.0 => 400px x 400px
+    ):
+        """Draw the RdO emblem."""
+
+        self.init_figax(scale, xlim=(-1+1.5/16, 1+1.5/16))
+        self._draw_RdO()
+        return self
+
+    def _draw_RdO(self):
+        # --- arcs
+        # draw O
+        draw_arc(
+            self.ax, self.scale, radius=11/16, thetas=ts( 5.5, 19.50),
+            color=self.colors['O'], linewidth_fac=16/128, zorder=0x1001)
+        # draw R
+        # 2.36 = 4 - acos(cos((4-3.5)/8*pi)*11/13.5)/pi*8
+        draw_arc(
+            self.ax, self.scale, radius=14/16, thetas=ts( 2.5, -2.5),
+            color=self.colors['O'], linewidth_fac=16/128, zorder=0x1000)
+        return self
+
+
+
+    def _set_as_RdOFlago(
+        self,
+        # size of the drawing pad
+        # scale_y: 1.0 => 400px x 400px; 225/400 => height is 225px
+        scale_y: float = 225/400, # 2160/400
+        ratio_xy: float = 16/9,
+        offset_x: float = 22/256,
+        verbose: bool = True,
+    ):    # plot
+        """Draw the RdO Flag."""
+
+        xlims = (-ratio_xy+offset_x, ratio_xy+offset_x)
+        ylims = (-1., 1.)
+        self.init_figax(scale_y, ratio_xy, xlim=xlims)
+        ax = self.ax
+
+        # debug
+        if verbose: print("Drawing...")
+        # --- background
+        dx = tan((t(5.5)-90)/180*pi)  # slash position changes (half)
+        ddx = 68/256 * 2.0            # color transition band width
+        dx0 = 8/4096 # + ddx/8       # dx bias
+        ax.add_patch(
+            mpl.patches.Polygon([
+                [xlims[0], ylims[1]],
+                [xlims[0], ylims[0]],
+                # [xlims[1], ylims[0]],
+                [dx0+dx, ylims[0]],
+                [dx0-dx, ylims[1]],
+                ], color=self.colors['C'], zorder=0,
+        ))
+        ax.add_patch(
+            mpl.patches.Polygon([
+                [xlims[1], ylims[0]],
+                [xlims[1], ylims[1]],
+                # [xlims[0], ylims[1]],
+                [dx0-dx, ylims[1]],
+                [dx0+dx, ylims[0]],
+                ], color=self.colors['G'], zorder=0,
+        ))
+        # --- color transition
+        colors_comp : dict[float, dict[None, float]] = {
+            # t: ({color: weight}, alpha)
+            0.0: ({'C': 1}, 0.0),
+            0.5-1/0x1000: ({'C': 0, 'x2': 1, 'x1': 0, 'G': 0}, 1.0),
+            0.5+1/0x1000: ({'C': 0, 'x2': 0, 'x1': 1, 'G': 0}, 1.0),
+            1.0: ({'G': 1}, 0.0),
+        }
+        # compile colors_comp into colors
+        colors = {}
+        for ti, d in colors_comp.items():
+            c_d, alpha = d
+            c_ks = list(c_d.keys())
+            ws = np.asarray([c_d[c_k] for c_k in c_ks])
+
+            colors[ti] = (    # weighted average
+                np.sum(np.asarray([
+                    mpl.colors.to_rgb(self.colors[c_k])
+                    for c_k in c_ks
+                ]) * ws[:, np.newaxis],
+                axis=0) / np.sum(ws)
+            ).tolist() + [alpha]
+        # draw
+        draw_band_linear_x(
+            ax, scale_y, no_t=0x100,
+            xdata_center  = [dx0-dx, dx0+dx],
+            xdata_halfwid = abs(ddx),
+            ydata = [ylims[1], ylims[0]],
+            colors=colors,
+            linewidth_unit=256,
+        )
+        # Debug
+        if False:
+            draw_band_linear_x(
+                ax, scale_y, no_t=1,
+                xdata_center  = [dx0-dx+ddx, dx0+dx+ddx],
+                xdata_halfwid = 0.01,
+                ydata = [ylims[1], ylims[0]],
+                colors=[self.colors['O'], self.colors['O']],
+                linewidth_unit=256,
+            )
+            draw_band_linear_x(
+                ax, scale_y, no_t=1,
+                xdata_center  = [dx0-dx-ddx, dx0+dx-ddx],
+                xdata_halfwid = 0.01,
+                ydata = [ylims[1], ylims[0]],
+                colors=[self.colors['O'], self.colors['O']],
+                linewidth_unit=256,
+            )
+        self._draw_RdO()
+        return self
+
+
+
+    def _set_as_OCG(
+        self,
+        # size of the drawing pad
+        scale: float = 256/400,    # 1.0 => 400px x 400px
+    ):
+        """Draw the OCG emblem."""
+
+        self.init_figax(scale)
+        ax = self.ax
+
+        # params for G
+        t_g_2, r_g_1 = 14, 7/16
+        # --- arcs
+        # draw O
+        draw_arc(
+            ax, scale, radius=11/16, thetas=ts( 5.50, 19.50),
+            color=self.colors['O'])
+        # draw C
+        draw_arc(
+            ax, scale, radius= 9/16, thetas=ts( 2.25, 14.25),
+            color=self.colors['C'])
+        # draw G
+        draw_arc(
+            ax, scale, radius=r_g_1, thetas=ts( 2.25, t_g_2),
+            color=self.colors['G'])
+        center_tg3 = (cos(t_g_2/8*pi)*r_g_1/2, sin(t_g_2/8*pi)*r_g_1/2)
+        center_tg3 = (    # shift a little to remove the white gap in-between
+            center_tg3[0] + center_tg3[1]/128,
+            center_tg3[1] - center_tg3[0]/128)
+        draw_arc(ax, scale, radius=[r_g_1/2, r_g_1/8*5], thetas=ts(0, 8),
+                center=center_tg3, angle=t(t_g_2), color=self.colors['G'],
+        )
+        # --- hats
+        a = draw_hat(ax, scale, radius=14.5/16, length=9/16,
+                angle=t(4), theta=t(50/9), color=self.colors['x0'])
+        for i in range(1, 3):
+            draw_hat(ax, scale, radius=15/16, length=7/16,
+                    angle=t(4+i*16/3), color=self.colors[f'x{i}'])
+        return self
+
+
+
+    def _set_as_OCR(
+        self,
+        # size of the drawing pad
+        scale: float = 256/400,    # 1.0 => 400px x 400px
+    ):
+        """Draw the OCR emblem."""
+
+        self.init_figax(scale)
+        ax = self.ax
+
+        # --- arcs
+        # draw O
+        draw_arc(
+            ax, scale, radius=11/16, thetas=ts( 5.50, 19.50),
+            color=self.colors['O'])
+        # draw C
+        draw_arc(
+            ax, scale, radius= 9/16, thetas=ts( 2.25, 14.25),
+            color=self.colors['C'])
+        # draw R
+        draw_arc(
+            ax, scale, radius=6.75/16, thetas=ts(  4.0, -5.0 ),
+            color=self.colors['R'], linewidth_fac=(PHI_INV*1.5)/8)
+
+
+
+    def _set_as_OCRR(
+        self,
+        # size of the drawing pad
+        scale: float = 256/400,    # 1.0 => 400px x 400px
+    ):
+        """Draw the OCRR emblem."""
+
+        self.init_figax(scale, xlim=(-1+3/16, 1+3/16))
+        ax = self.ax
+
+        # --- arcs
+        # draw O
+        draw_arc(
+            ax, scale, radius=11/16, thetas=ts( 5.50, 19.50),
+            color=self.colors['x0'], linewidth_fac=14/128)
+        # draw C
+        draw_arc(
+            ax, scale, radius= 8/16, thetas=ts( 2.25, 14.25),
+            color=self.colors['Radio'], linewidth_fac=16/128)
+        # draw R
+        # 2.24 = 4 - acos(cos((4-3.5)/8*pi)*11/14)/pi*8
+        draw_arc(
+            ax, scale, radius=13.75/16, thetas=ts( 2.25, -2.25),
+            color=self.colors['x2'], linewidth_fac=15/128)
+        # 1.69 = 4 - acos(cos((4-3.5)/8*pi)*11/17.5)/pi*8
+        draw_arc(
+            ax, scale, radius=16.75/16, thetas=ts( 1.8, -1.8),
+            color=self.colors['x1'], linewidth_fac=16/128)
+
+
+
+if __name__ == '__main__':
+    Emblemo("OCG").save()
+    Emblemo("OCR").save()
+    Emblemo("OCRR").save()
+    Emblemo("RdO").save()
+    Emblemo("RdOFlago").save()
+    Emblemo("RdOFlago", scale_y=2160/400, ratio_xy=1.0).save(
+        "RdOFlago.emb", [".png"])
+    Emblemo("RdOFlago", scale_y=2160/400).save(
+        "RdOFlago.plen", [".png"])

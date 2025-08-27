@@ -6,11 +6,11 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2025-08-15T01:01:46.405981</dc:date>
+    <dc:date>2025-08-27T21:38:23.516690</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.10.3, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.10.5, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -31,6 +31,14 @@ z
   </g>
   <g id="axes_1">
    <g id="patch_2">
+    <path d="M 128.321184 159.20971 
+C 139.346941 151.842534 148.387143 141.868208 154.638131 130.173433 
+C 160.889118 118.478658 164.16 105.420566 164.16 92.16 
+C 164.16 78.899434 160.889118 65.841342 154.638131 54.146567 
+C 148.387143 42.451792 139.346941 32.477466 128.321184 25.11029 
+" clip-path="url(#p7367143088)" style="fill: none; stroke: #e6daa6; stroke-width: 11.52; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
     <path d="M 48.31907 39.478085 
 C 42.270226 43.519794 36.962414 48.573251 32.628771 54.416492 
 C 28.295128 60.259733 25.000047 66.805934 22.88826 73.767563 
@@ -48,20 +56,12 @@ C 146.88 84.885117 145.627066 77.664282 143.176232 70.814659
 C 140.725398 63.965036 137.113079 57.588402 132.497942 51.964842 
 C 127.882805 46.341281 122.333425 41.554353 116.09355 37.814315 
 C 109.853675 34.074278 103.016021 31.436704 95.880923 30.017445 
-" clip-path="url(#pa2b8345174)" style="fill: none; stroke: #e6daa6; stroke-width: 11.52; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 128.321184 159.20971 
-C 139.346941 151.842534 148.387143 141.868208 154.638131 130.173433 
-C 160.889118 118.478658 164.16 105.420566 164.16 92.16 
-C 164.16 78.899434 160.889118 65.841342 154.638131 54.146567 
-C 148.387143 42.451792 139.346941 32.477466 128.321184 25.11029 
-" clip-path="url(#pa2b8345174)" style="fill: none; stroke: #e6daa6; stroke-width: 11.52; stroke-linejoin: miter"/>
+" clip-path="url(#p7367143088)" style="fill: none; stroke: #e6daa6; stroke-width: 11.52; stroke-linejoin: miter"/>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="pa2b8345174">
+  <clipPath id="p7367143088">
    <rect x="0" y="0" width="184.32" height="184.32"/>
   </clipPath>
  </defs>
