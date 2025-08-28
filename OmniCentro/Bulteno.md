@@ -197,18 +197,18 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 
 | Org  | Koloro | Nomo |
 | ---- | ------ | ---- |
-| RdO  | #F5F5DC | <span style="color:Beige">█ Ŝia Reĝina Moŝto **Serena Novarika** de Omnijo</span>    |
-| RdO  | #32CD32 | <span style="color:LimeGreen">█ Ĉefministro **Eriko Takesta** de Omnijo</span>    |
-| OCFD | #C0C0C0 | <span style="color:Silver">█ Generalo **Laŭra Dovoluĉo** de Omnijo</span>    |
-| OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ Kunordigestro **Dajanna Murfisko** de Omnijo</span>    |
+| RdO  | #F5F5DC | <span style="color:Beige">█ Ŝia Reĝina Moŝto **Serena Novarika** de Omnijo</span>  <!--The Moderator-->  |
+| RdO  | #32CD32 | <span style="color:LimeGreen">█ Ĉefministro **Eriko Takesta** de Omnijo</span>  <!--The Bridge-->  |
+| OCFD | #C0C0C0 | <span style="color:Silver">█ Generalo **Laŭra Dovoluĉo** de Omnijo</span>  <!--The Guardian-->  |
+| OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ Kunordigestro **Dajanna Murfisko** de Omnijo</span>  <!--The Librarian-->  |
 | OCFI | #95D0FC | <span style="color:#95D0FC">█ Arkitekto **Nomo Redaktita** de OCFI</span> |
-| OCFI | #D6B4FC | <span style="color:#D6B4FC">█ Ĉefinĝeniero **Ĝejda Fenulo** de Omnijo</span>    |
-| OCFI | #9370DB | <span style="color:MediumPurple">█ *La Inteligento*</span>    |
-| OCFJ | #D2691E | <span style="color:Chocolate">█ Prokuroro **Bejke ĵon** de Omnijo</span>    |
-| OCME | #FFD700 | <span style="color:Gold">█ Ministro **Jonaso Kamarijo** de Omnijo</span>    |
+| OCFI | #D6B4FC | <span style="color:#D6B4FC">█ Ĉefinĝeniero **Ĝejda Fenulo** de Omnijo</span>  <!--The Sovereign-->  |
+| OCFI | #9370DB | <span style="color:MediumPurple">█ *La Inteligento*</span>  <!--The Intelligence-->  |
+| OCFJ | #D2691E | <span style="color:Chocolate">█ Prokuroro **Bejke Ĵon** de Omnijo</span>  <!--The Sanity-Checker-->  |
+| OCME | #FFD700 | <span style="color:Gold">█ Ministro **Jonaso Kamarijo** de Omnijo</span>  <!--The Negotiator-->  |
 | OCME | #FFD700 | <span style="color:Gold">█ Parolanto **Natalia Zeĉoeva** de OCME</span> |
-| OCMF | #8FBC8F | <span style="color:DarkSeaGreen">█ Trezorestro **Alekso Ueslejo** de Omnijo</span>    |
-| OCMI | #D2B48C | <span style="color:Tan">█ Sekretario **Venesa Lulujanka** de Omnijo</span>    |
+| OCMF | #8FBC8F | <span style="color:DarkSeaGreen">█ Trezorestro **Alekso Ueslejo** de Omnijo</span>  <!--The Executor-->  |
+| OCMI | #D2B48C | <span style="color:Tan">█ Sekretario **Venesa Lulujanka** de Omnijo</span>  <!--The Forecaster-->  |
 ||| <!-- Semi-local --> |
 |  OC  | #FFFFFF | <span style="color:White">█ Urbestro **Ulio Klenoro** de OmniCentro</span> |
 | OCFF | #FF0000 | <span style="color:Red">█ Direktoro **Petrovo Sokolov** de Omnijo </span> |

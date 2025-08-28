@@ -39,8 +39,10 @@ Enhavo
 > This chapter is edited with ChatGPT in-between 2025-07-30 and 2025-08-01.  
 > The first half (up until the emptying of the cocktail) is first written by me
 > and then edited with ChatGPT.  
-> The second half was being re-written by me,
-> because ChatGPT-generated content is too crappy (see version history).
+> The second half is being re-written by me,
+> because ChatGPT-generated content is too crappy (see version history).  
+> Actually, the first half is also over-edited by ChatGPT
+> to be so crappily generic. Fixes TBD.
 
 <!-- <blockquote>
   "People who live their entire life surrounded by mountains

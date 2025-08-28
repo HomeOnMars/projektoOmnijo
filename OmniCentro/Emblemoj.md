@@ -35,11 +35,7 @@ Here are the emblem designs for the acronyms listed in [Background Bulletin](../
 
 > [!NOTE]
 > The emblems were generated using my python code.  
-> see `../fig/` folder in the repository for the emblem generation code for
-> [RdO](../fig/draw_RdO.py),
-> [OCG](../fig/draw_OCG.py),
-> [OCR](../fig/draw_OCG.py), and
-> [OCRR](../fig/draw_OCRR.py).
+> see [../fig/emblemo.py](../fig/emblemo.py) for the emblem generation code.
 
 | Nomo | Emblemo               | Klarigo |
 | :--: | :-------------------: | ------- |

@@ -339,7 +339,6 @@ class Emblemo:
         scale_y: float = 225/400, # 2160/400
         ratio_xy: float = 16/9,
         offset_x: float = 22/256,
-        verbose: bool = True,
     ):    # plot
         """Draw the RdO Flag."""
 
@@ -348,8 +347,6 @@ class Emblemo:
         self.init_figax(scale_y, ratio_xy, xlim=xlims)
         ax = self.ax
 
-        # debug
-        if verbose: print("Drawing...")
         # --- background
         dx = tan((t(5.5)-90)/180*pi)  # slash position changes (half)
         ddx = 68/256 * 2.0            # color transition band width
