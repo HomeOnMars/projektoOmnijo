@@ -41,8 +41,10 @@ Enhavo
 > and then edited with ChatGPT.  
 > The second half is being re-written by me,
 > because ChatGPT-generated content is too crappy (see version history).  
-> Actually, the first half is also over-edited by ChatGPT
-> to be so crappily generic. Fixes TBD.
+> I am now working towards removing ChatGPT's influence
+> because I don't like its stereotypical content and overly-generic style,
+> which is making my already silly enough plot sillier.
+> This effort is still on-going.
 
 <!-- <blockquote>
   "People who live their entire life surrounded by mountains
@@ -132,16 +134,23 @@ thinking he was saving her. Maybe he did—but it didn’t save him.
 Serena looks nothing like Anna.
 And yet, something in the way she sits—her posture, her presence—makes
 his brain uncontrollably want to label her as *younger Anna*.
-A younger, idealized echo; not the real woman, but a memory turned flesh.
-In a few years, when he looks back on this moment, he’ll call it what it was:
-*Adversarial Brain Hacking*—the biological equivalent of
-[Adversarial Machine Learning](https://en.wikipedia.org/wiki/Adversarial_machine_learning):
-the same way you trick an AI with carefully calibrated pixels,
-you trick a human brain with a carefully calibrated face—personalized
-just for him.
-But today’s king doesn’t know such thing is even a possibility;
-he only feels the surge of warmth, affection,
-and an almost paternal protectiveness rising in him.
+A younger, idealized echo; not the real woman,
+but a memory turned flesh.
+He couldn't help but feel the surge of warmth, affection,
+and an almost paternal protectiveness rising in him[^K1].
+
+[^K1]: In a few years,
+when he looks back on this moment, he’ll call it what it was:
+*Adversarial Brain Hacking* —
+the biological equivalent of
+[Adversarial Machine Learning](https://en.wikipedia.org/wiki/Adversarial_machine_learning).
+The same way you trick an AI with carefully calibrated pixels,
+you trick a human brain with a carefully calibrated face —
+personalized just for him.
+But today’s king doesn’t even know such thing is even a possibility;
+so when his brain searched for a possible explanation, it returned nothing,
+so he thought of nothing,
+as he quickly lost track of his thought on this anyway.
 
 Maybe… maybe she really *is* Anna’s daughter. A miracle. His blood.
 Maybe he doesn’t have to do what he must do next.
@@ -189,7 +198,7 @@ not really, as the vase was almost certainly bugged.
 Now, he had an excuse to throw it out.
 
 *Maybe,* he thinks,
-*she really could have been a proper Queen—if she’d had more time...*
+*she really could have been a proper Queen — if she’d had more time...*
 He shakes that thought off from his head. *Best not to get distracted.*
 
 “I’m not with General Natasha, you know,” Serena says softly,
@@ -199,7 +208,8 @@ her voice empathetic but with hidden gravitas. “I’m not your enemy.”
 the Old King replies, slipping on his most paternal tone.
 It’s easier than it should be, real even, under her presence.
 But she’s not the first to say such things.
-Beautiful women, clever advisers, even childhood friends—they all said it once.
+Beautiful women, clever advisers, even childhood friends —
+they all said it once.
 And time and time again, it ends in *betrayal*.
 
 *Better to betray first. While you still can.*
@@ -209,7 +219,7 @@ And time and time again, it ends in *betrayal*.
 
 Serena doesn’t move at first. She just looks at him.
 There’s something in her eyes: not anger, not fear, but something quieter.
-Resignation. Empathy. A tired kind of understanding—like
+Resignation. Empathy. A tired kind of understanding — like
 someone who knows what’s coming and still hopes, foolishly,
 for a different ending.
 
@@ -252,7 +262,7 @@ I destroyed the listening bug hidden in it too. That was not an accident.”
 The king says with a weird dry smile,
 as he silently reaches out to the hidden item underneath the counter.
 
-“All 47 of them have been disabled at that moment too-
+“All 47 of them have been disabled at that moment too —
 when her technicians check the record,
 they will find a rare software bug knocking out the whole network,
 triggered by the failure of the vase one.” Serena explains, “honestly,
@@ -265,12 +275,16 @@ It’s not like he doesn’t know that already.
 *She is still too young to understand all the traps*
 *and treacherousness of politics.*
 “Natasha will start a military coup immediately if I do that.
-The only reason that she hasn’t done that already is the chaos that will ensue,
-and my old age- she knows I will die soon,
-and that I am not going to be a credible threat,
-as she hears everything I am planning.”
+The only reason that she hasn’t done that already is
+because the cost outweight the benefits.”
+The King explains patiently, with his hands moving under concealment.
+“Chaos follows conflicts,
+and she knows I am going to die soon-ish because of my old age anyway.
+It won't worth it as long as I am not a credible threat;
+and she knows I am not, exactly because she hears everything I plans.”
 It’s hard to gain back agency when you are pinned down and have no bullets.
-The king eyes the Serena’s position, and sighed. Things are going to get messy.
+The king eyes towards Serena’s position, and sighs.
+Things are going to get messy.
 
 “Whatever. I know you don’t believe what I said, nor do you trust me yet,
 but I promise that *I am not your enemy*. I meant it.
@@ -281,7 +295,7 @@ leaving a tiny linear scar of red. Serena didn’t even blink.
 That knife is merely a distraction.
 The king planned and practiced this move long ago;
 he never thought he one day would have to actually use it on a real person.
-Still, the kingdom *must* be protected at all costs.
+Still, the kingdom *must* be protected *at all costs*.
 As he thrown the first knife with deadly precision,
 the second knife is already in his hands, when he steps towards the other side-
 the side where people usually doge towards and losing balance in the process-
@@ -289,7 +303,8 @@ and strikes, at exactly where the neck and its arterial will be.
 Quick, simple, painless.
 His hand moves with precision,
 as his eyes tracks Serena with ice cold determination-
-and uncontrollably moves up and meets her eyes.
+the same cold determination that keeps him alive and motivated
+over all those years, as he stares Serena in her eyes.
 Her crystal clear eyes.
 
 *So clear, so innocent, so vulnerable…*
@@ -302,12 +317,16 @@ He couldn’t do it.
 The second knife stops barely touching Serena’s arterial,
 as the King’s hand freezes midway in the most awkward way imaginable.
 
-Serena didn’t move away her eyesight.
-She didn’t even try to doge the first knife.
-With the second knife kissing her neck, she speaks with a perfectly calm voice
+Serena didn’t break her eye contact even once.
+She didn’t even try to doge the first knife,
+which conveniently means that she avoided having her arterial sliced open
+by the second knife just in time.
+With that second knife still kissing her neck,
+Serena speaks in a perfectly calm voice
 that is so out of character for someone who just turned 18:
-“… like I said, if you could stop trying to kill me, maybe we could talk it out.
-Have a nice chat, and maybe even save the kingdom.”
+“… like I said, if you could stop trying to kill me,
+maybe we could work out an actual solution for the Kingdom.
+Have a nice chat, and maybe even save everyone.”
 She looks at the old king, who is now frozen in place,
 drowning in his own internal conflicts.
 
@@ -319,12 +338,55 @@ as she feels the pressure on her neck disappears
 with the king moving away the knife-
 not all the way, it’s still centimeters away from her,
 strike-able within a fraction of a second.
+
 *Good enough.*
-She maintains her perfectly calm manner, as if the knife doesn’t matter.
-And it doesn’t matter indeed.
+
+She maintains her perfectly calm manner, as if the knife doesn’t matter;
+and it doesn’t matter indeed.
 “You don’t want to risk being recorded.
 That’s all right; I too love plausible deniability.
-So, let me speak your questions out loud for you:
-you are thinking, how could you
+So, let me ask your questions out loud for you:
+you are thinking, how could I go beyond my designated role of the new prop Queen
+and stop the on-going tragedies — particularly with
+the new foreign mining deal that General Natasha is about to push through —
+when you, many others, and even *Natasha herself*
+have tried hard but failed?[^K2]”
+
+[^K2]: How she knows about the posion and the knife is less relevant here,
+as both Serena and the King expects Natasha to know most of his fallback plans.
+That alone wouldn't matter much to the King, with his
+[Swiss Cheese Model](https://en.wikipedia.org/wiki/Swiss_cheese_model)-based
+planning. So Serena opted to first convince the King that
+valid alternative options actually exists,
+before he goes for his third plan against her;
+and it's working.
+
+Serena can see the King's eyebrow raises as he hears that last sentence.
+A good sign.
+
+“I hope me being this composed and resilent even under violent physical threats
+can at least provide you with some reassurance of my competence, your majesty.”
+Serena says dryly, with her eyes
+gesturing towards the knife that is still hanging near her neck,
+without any hints of fear showing on her face.
+“As for my heart…
+we both know the kingdom is wrapped in corruption and broken power structures.
+I feel your pain too, and I aim to fix that.”
+
+“Do you, now?” the King lets out an tired laugh,
+as he further lower down his knife. It’s still in his hand, just in case;
+After all, from what she said, she is either a genius or a delusional madwoman.
+The odds suggests the later.
+And the competent but delusional ones are the worst kind.
+
+But he is also old and cornered, politically speaking.
+Let’s see what this one has to say.
+“What exactly do you think the problems of our island are?
+And how would you plan to fix those?”
+His eye skims through the royal clock hanging on the wall,
+“Acutally, for the sake of our limited time, let's keep the question small:
+Why do you think we have so many land-based soldiers on this remote island,
+when the nearest land is Antarctica 2000km away?
+And how exactly do you plan to deal with them?”
 
 (To be continued.)
