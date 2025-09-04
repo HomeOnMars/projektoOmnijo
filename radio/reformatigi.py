@@ -153,6 +153,12 @@ def name_func_default(no: int, old_filename: str) -> str:
 
     # new_fn = f"{no:03}_{'_'.join(old_filename.split('_')[1:])}".translate(None, ' \'\\/:*?"<>|')
     new_fn = old_filename
+
+    # throw away artist info
+    fns: list = new_fn.split(' - ')
+    if len(fns) > 1:
+        new_fn = ' - '.join(fns[1:])
+
     fns: list = new_fn.split(' ')
     fn0s: list = fns[0].split('_')
     if fn0s[0] and set('0123456789').intersection(set(fn0s[0])):    # throw away first word?: my no of the file
