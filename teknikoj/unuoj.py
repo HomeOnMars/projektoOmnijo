@@ -418,6 +418,9 @@ u_rdo_base['xdim'] = units.def_unit(
     # chr(0x332): underscore before char
     [chr(0x332), 'Nuo'], 1 * units.dimensionless_unscaled,
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
+u_rdo_base['Byte'] = units.def_unit(
+    ['B', 'Bito'], 1 * units.bit,
+    prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 # mask units with the same names as SI
 _UNITS_MASK_SET = {
     'sp',

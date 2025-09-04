@@ -432,7 +432,52 @@ $$
   \equiv \frac{1}{100_H}
   = \frac{1}{256_D}
   % = 0.00390625_D
-  = 0.390625 \  \textrm{percent}
+  = 0.390625 \  \% (\textrm{percent})
+$$
+
+### Bito
+
+> Bits and bytes
+
+> [!IMPORTANT]
+> Base bit unit: ***Bito*** `B` (Bit)
+
+*GilBito*  (`GB`):
+
+$$
+  \textrm{GB}
+  \equiv 1000_H \  \textrm{B}
+  = \frac{1}{2} \  \textrm{kB}_\textrm{SI}
+$$
+
+*MuniBito*  (`MB`):
+
+$$
+  \textrm{MB}
+  \equiv 10000_H \  \textrm{B}
+  = 8 \  \textrm{kB}_\textrm{SI}
+$$
+
+*DuniBito*  (`DB`):
+
+$$
+  \textrm{DB}
+  \equiv 10000_H^2 \  \textrm{B}
+  = \frac{1}{2} \  \textrm{GB}_\textrm{SI}
+$$
+
+*TriniBito*  (`TB`):
+
+$$
+  \textrm{TB}
+  = 32 \  \textrm{TB}_\textrm{SI}
+$$
+
+*KvarniBito*  (`RB`):
+
+$$
+  \textrm{RB}
+  = 2 \  \textrm{EB}_\textrm{SI}
 $$
 
 Derivitaj Unuoj
