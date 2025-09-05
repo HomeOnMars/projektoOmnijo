@@ -203,15 +203,15 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 | OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ Kunordigestro **Dajanna Murfisko** de Omnijo</span>  <!--The Librarian-->  |
 | OCFI | #95D0FC | <span style="color:#95D0FC">█ Arkitekto **Nomo Redaktita** de OCFI</span> |
 | OCFI | #D6B4FC | <span style="color:#D6B4FC">█ Ĉefinĝeniero **Ĝejda Fenulo** de Omnijo</span>  <!--The Sovereign-->  |
-| OCFI | #9370DB | <span style="color:MediumPurple">█ *La Inteligento* de Omnijo</span> |
+| OCFI | #9370DB | <span style="color:MediumPurple">█ *La Inteligento* de Omnijo</span>  <!--The Collective-->  |
 | OCFJ | #D2691E | <span style="color:Chocolate">█ Prokuroro **Bejke Ĵon** de Omnijo</span>  <!--The Introspector-->  |
-| OCME | #FFD700 | <span style="color:Gold">█ Ministro **Jonaso Kamarijo** de Omnijo</span>  <!--The Reframer-->  |
+| OCME | #FFD700 | <span style="color:Gold">█ Ministro **Jonaso Kamarijo** de Omnijo</span>  <!--The Translator-->  |
 | OCME | #FFD700 | <span style="color:Gold">█ Parolanto **Natalia Zeĉoeva** de OCME</span> |
 | OCMF | #8FBC8F | <span style="color:DarkSeaGreen">█ Trezorestro **Alekso Ueslejo** de Omnijo</span>  <!--The Executive-->  |
 | OCMI | #D2B48C | <span style="color:Tan">█ Sekretario **Venesa Lulujanka** de Omnijo</span>  <!--The Humanist-->  |
 ||| <!-- Semi-local --> |
 |  OC  | #FFFFFF | <span style="color:White">█ Urbestro **Ulio Klenoro** de OmniCentro</span> |
 | OCFF | #FF0000 | <span style="color:Red">█ Direktoro **Petrovo Sokolov** de Omnijo </span> |
-| OCFP | #4169E1 | <span style="color:RoyalBlue">█ Policestro **Tejlero Vikila** de Omnijo</span> |
+| OCFP | #4169E1 | <span style="color:RoyalBlue">█ Policestro **Tejler Vikila** de Omnijo</span> |
 | OCFS | #FFC0CB | <span style="color:Pink">█ Fakestro **Fiona Amirazi** de Omnijo</span> |
 | OCRR | #D8BFD8 | <span style="color:Thistle">█ Gastiganto **Karla Revin** de OCRR</span> |
