@@ -96,7 +96,7 @@ Enhavo
 Ø-3⚝ | 3 weeks before Serena's Coronation, the old Capital,
 the Old King's residence, kitchen.
 
-“Let’s cut to the chase; you are wondering why I even exist-
+“Let’s cut to the chase; you are wondering why I even exist —
 when you never had unprotected sex with my mother.”
 Serena declares, as her sharp gray eyes locks fearlessly onto with his.
 
@@ -232,8 +232,12 @@ and accidentally drink them after I’m gone?”
 She sets the glasses down with care.
 *“Believe it or not, I actually prefer you alive. And happy.”*
 
+-------------------------------------------------------------------------------
+
 > [!NOTE]  
 > Midpoint bookmark
+
+-------------------------------------------------------------------------------
 
 The old king stares at Serena.
 The smile he wears is still there, though no longer lively.
@@ -300,7 +304,7 @@ As he thrown the first knife with deadly precision,
 the second knife is already in his hands, when he steps towards the other side-
 the side where people usually doge towards and losing balance in the process-
 and strikes, at exactly where the neck and its arterial will be.
-Quick, simple, painless.
+Quick, silent, painless.
 His hand moves with precision,
 as his eyes tracks Serena with ice cold determination-
 the same cold determination that keeps him alive and motivated
@@ -389,4 +393,42 @@ Why do you think we have so many land-based soldiers on this remote island,
 when the nearest land is Antarctica 2000km away?
 And how exactly do you plan to deal with them?”
 
-(To be continued.)
+-------------------------------------------------------------------------------
+
+> [!NOTE]  
+> (To be continued.)
+
+-------------------------------------------------------------------------------
+
+When Serena is about to leave, the King asks her:
+“For curiosity’s sake, answer me one last question.
+Why do you want the throne to begin with?
+You certainly know the consequences attached to it.
+Why not leave too, and have a normal life elsewhere?”
+
+Serena leans back. With her gray eyes firmly meeting with his,
+and a quiet but steady tone, she states:
+“The same reason why you, Natasha, or anyone wants power.
+Generally speaking, regardless of your drive or intention —
+selfishness, altruism, domination, pacifism, fear, hate, desire,
+power, fame, money, survival, protection, vision, or anything really —
+[*without power, you can affect nothing*](https://youtu.be/rStL7niR7gs?t=1068).”
+
+“And you think the position of the Queen would be *enough*?”
+says the King with an sarcastic undertone,
+gesturing towards himself with a bitter smile.
+
+“I know it’s not.” for a brief moment, Serena smiles back to the King —
+not her usual smile, the one constantly on her face outside this room
+in the past few days; but a calmer, clearer, and more sincere one,
+filled with resoution.
+“But *it will be a good start*.”
+
+Serena curtsies to the King one last time, and when she stands back up,
+the usual enthusiasm of a newly-discovered royal young adult
+is already back in her posture.
+As she gracefully walks past his trusted butler while leaving the room,
+the king sighs, and calls in the butler
+who’s still gazing at Serena's back silhouette with a subtly sad expression.
+
+“Change of plans. I need you to do the following…”
