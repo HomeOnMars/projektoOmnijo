@@ -296,7 +296,7 @@ Arterial / Collector / Local Roads:
     - 6  (16m/2.0U-long) train cars (**96m/12U**)
     - 9  (12m/1.5U-long) train cars (**96m/12U**)
     - 12 ( 8m/1.0U-long) train cars (**96m/12U**)
-    - Half length permitted
+    - 1/3 and 2/3 length permitted
   - Assumed power consumption: 809hp/0.6MW per (16m/2u-long) train car.
 
 #### Monoreloj

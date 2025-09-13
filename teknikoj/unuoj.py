@@ -419,7 +419,7 @@ u_rdo_base['xdim'] = units.def_unit(
     [chr(0x332), 'Nuo'], 1 * units.dimensionless_unscaled,
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 u_rdo_base['Byte'] = units.def_unit(
-    ['B', 'Bito'], 1 * units.bit,
+    ['Bit', 'Bito'], 1 * units.bit,
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 # mask units with the same names as SI
 _UNITS_MASK_SET = {
@@ -553,6 +553,10 @@ equivalencies_temperature = [
     *equivalencies_Zoro,
     *units.equivalencies.temperature()]
 del eq, X, Z, __K_2_X, __X_2_K
+#    byte
+units.def_unit(
+    ['B', 'Bajto'],  8 * u_rdo_defs['Bit'],
+    prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 #    speed
 units.def_unit('UoŜ', u_rdo_defs[ 'U']/u_rdo_defs['Ŝ'], namespace=u_rdo_defs)
 units.def_unit('JoĜ', u_rdo_defs['JU']/u_rdo_defs['Ĝ'], namespace=u_rdo_defs)

@@ -440,44 +440,53 @@ $$
 > Bits and bytes
 
 > [!IMPORTANT]
-> Base bit unit: ***Bito*** `B` (Bit)
+> Base byte unit: ***Bajto*** `B` (Byte)
 
-*GilBito*  (`GB`):
+> [!NOTE]
+> Bit unit: ***Bito*** `Bit` (Bit)
+
+$$
+  \textrm{B}
+  \equiv \textrm{B}_\textrm{SI}
+  = 8 \textrm{Bit}
+$$
+
+*GilBajto*  (`GB`):
 
 $$
   \textrm{GB}
   \equiv 1000_H \  \textrm{B}
-  = \frac{1}{2} \  \textrm{kB}_\textrm{SI}
+  = 4 \  \textrm{kB}_\textrm{SI}
 $$
 
-*MuniBito*  (`MB`):
+*MuniBajto*  (`MB`):
 
 $$
   \textrm{MB}
   \equiv 10000_H \  \textrm{B}
-  = 8 \  \textrm{kB}_\textrm{SI}
+  = 64_D \  \textrm{kB}_\textrm{SI}
 $$
 
-*DuniBito*  (`DB`):
+*DuniBajto*  (`DB`):
 
 $$
   \textrm{DB}
   \equiv 10000_H^2 \  \textrm{B}
-  = \frac{1}{2} \  \textrm{GB}_\textrm{SI}
+  = 4 \  \textrm{GB}_\textrm{SI}
 $$
 
-*TriniBito*  (`TB`):
+*TriniBajto*  (`TB`):
 
 $$
   \textrm{TB}
-  = 32 \  \textrm{TB}_\textrm{SI}
+  = 256_D \  \textrm{TB}_\textrm{SI}
 $$
 
-*KvarniBito*  (`RB`):
+*KvarniBajto*  (`RB`):
 
 $$
   \textrm{RB}
-  = 2 \  \textrm{EB}_\textrm{SI}
+  = 16_D \  \textrm{EB}_\textrm{SI}
 $$
 
 Derivitaj Unuoj
