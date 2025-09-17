@@ -41,7 +41,7 @@ since her coronation just about half a year ago.
 *La Regno de Omnijo* is a fictional monarchy
 located on the fictional island *la Insulo-Omnijo*
 in the Southern Hemisphere somewhere in between Chile and New Zealand,
-near 56°15'S, 140°15'W [^Bulteno-Loko-1].
+near 56°15'S, 140°15'W [^Bulteno-Loko-1]. <!-- (WGS X=-140.25, Y=-56.25) -->
 The island has a size of approximately Iceland or Java island,
 i.e.
 $\sim 8000_H \  \textrm{JU}^2$
@@ -212,6 +212,6 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 ||| <!-- Semi-local --> |
 |  OC  | #FFFFFF | <span style="color:White">█ Urbestro **Ulio Klenoro** de OmniCentro</span> |
 | OCFF | #FF0000 | <span style="color:Red">█ Direktoro **Petrovo Sokolov** de Omnijo </span> |
-| OCFP | #4169E1 | <span style="color:RoyalBlue">█ Policestro **Tejler Vikila** de Omnijo</span> |
+| OCFP | #4169E1 | <span style="color:RoyalBlue">█ Policestro **Tejler Vikila** de Omnijo</span>  <!--The Spymaster-->  |
 | OCFS | #FFC0CB | <span style="color:Pink">█ Fakestro **Fiona Amirazi** de Omnijo</span> |
 | OCRR | #D8BFD8 | <span style="color:Thistle">█ Gastiganto **Karla Revin** de OCRR</span> |
