@@ -50,8 +50,40 @@ Changes of Esperanto++ from Esperanto include:
 
 > Alphabet
 
-- Officially eliminated `ĥ` from the *E++* alphabet
+- Officially eliminated `ĥ` from the *Epopo* alphabet
   (mostly replaced with `k`);
+- Adding `Q` (tɕʰ), `X` (ɕ), `Ž` (ʈʂ)
+  for more diverse sounds (inspired by pinyin).  
+  No words from *Epopo* are using those three letters yet;
+  for now they are only used in naming.
+- Pronunciation Guides  
+  See also International Phonetic Alphabet (IPA)
+  - [lernu: Esperanto Alphabet](https://lernu.net/gramatiko/skribo)
+  - [Wikipedia: IPA/Esperanto](https://en.wikipedia.org/wiki/Help:IPA/Esperanto)
+  - [Wikipedia: IPA/Mandarin](https://en.wikipedia.org/wiki/Help:IPA/Mandarin)
+- Total *Epopo* alphabet: 30 letters.
+  - vs English:  2 letters less (no WY) and 6 letters more (ĈĜĴŜŬŽ)
+  - vs Esperanto: 1 letters less (no Ĥ) and 3 letters more (QXŽ)
+  - Characters:
+    - `ABCDEFGHIJKLMNOPQRSTUVXZĈĜĴŜŬŽ`
+    - `abcdefghijklmnopqrstuvxzĉĝĵŝŭž`
+    - `0123456789ΔλΠΣΥΨ`
+
+### Interpunkcio
+
+> Punctuation
+
+- '‐' (Hyphen) and '-' (Minus)
+  - Differentiate between hyphen (linking words)
+    and minus (subtracting numbers).  
+    This is to help computer code differentiate variable names and operations.
+- '–' (En dash)
+  - No space around en dash.
+- '—' (Em dash)
+  - Add space around em dash.  
+    This to help markdown formatting (allowing splitting lines around em dash.)
+- See also
+  - [Hyphen / En dash / Em dash Guideline](https://www.sjsu.edu/writingcenter/docs/handouts/Hyphens%20Dashes.pdf).
 
 ### Algebro
 
@@ -117,7 +149,7 @@ Changes of Esperanto++ from Esperanto include:
     and no-hat lowercase for numbers \< 1
     (e.g. h for Hx0.1 and j for Hx0.01 etc.)
   - For full list of prefix shorthands,
-    see `u_rdo_prefixes` `dict` in [Unuoj.py](Unuoj.py) file.
+    see `u_rdo_prefixes` `dict` in [unuoj.py](unuoj.py) file.
   - For units shorthands (letter-based),
     always use capital letter (hat or not) as the first letter,
     and lowercase for the following letters.
