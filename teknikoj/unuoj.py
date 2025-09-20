@@ -503,7 +503,7 @@ units.def_unit(
 #    temperature
 Z = u_rdo_defs['Z']
 deg_Zx = units.def_unit(
-    ['°Ž', 'deg_Zx', 'zoruma_grado'], namespace=u_rdo_defs)
+    ['°Ž', 'deg_Zx', 'Zxorumgrado'], namespace=u_rdo_defs)
 __Z_DIV_K: float = (1*u_rdo_defs['Z']).to_value(units.K)
 __K_DIV_Z: float = (1*units.K).to_value(u_rdo_defs['Z'])
 __Z_2_K = lambda Z: Z*__Z_DIV_K

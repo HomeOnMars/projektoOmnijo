@@ -31,7 +31,7 @@ Enhavo
 
 -------------------------------------------------------------------------------
 
-### The old king
+### The King
 
 >>> To-do: replace "The old king" with his name (TBD).
 
@@ -43,7 +43,7 @@ Enhavo
 > because ChatGPT-generated content is too crappy (see version history).  
 > I am now working towards removing ChatGPT's influence
 > because I don't like its stereotypical content and overly-generic style,
-> which is making my already silly enough plot sillier.
+> which is making my already silly enough plot even sillier.
 > This effort is still on-going.
 
 <!-- <blockquote>
@@ -424,11 +424,17 @@ in the past few days; but a calmer, clearer, and more sincere one,
 filled with resoution.
 “But *it will be a good start*.”
 
-Serena curtsies to the King one last time, and when she stands back up,
-the usual enthusiasm of a newly-discovered royal young adult
-is already back in her posture.
+Serena curtsies to the King one last time,
+as the usual enthusiasm of a newly-discovered royal young adult
+returns to her posture as soon as she’s back on her feet again.
 As she gracefully walks past his trusted butler while leaving the room,
 the king sighs, and calls in the butler
 who’s still gazing at Serena's back silhouette with a subtly sad expression.
 
 “Change of plans. I need you to do the following…”
+
+### The Clown
+
+
+### The Sorceress
+

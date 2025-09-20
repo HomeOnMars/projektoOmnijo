@@ -68,22 +68,15 @@ Changes of Esperanto++ from Esperanto include:
     - `ABCDEFGHIJKLMNOPQRSTUVXZĈĜĴŜŬŽ`
     - `abcdefghijklmnopqrstuvxzĉĝĵŝŭž`
     - `0123456789ΔλΠΣΥΨ`
-
-### Interpunkcio
-
-> Punctuation
-
-- '‐' (Hyphen) and '-' (Minus)
-  - Differentiate between hyphen (linking words)
-    and minus (subtracting numbers).  
-    This is to help computer code differentiate variable names and operations.
-- '–' (En dash)
-  - No space around en dash.
-- '—' (Em dash)
-  - Add space around em dash.  
-    This to help markdown formatting (allowing splitting lines around em dash.)
-- See also
-  - [Hyphen / En dash / Em dash Guideline](https://www.sjsu.edu/writingcenter/docs/handouts/Hyphens%20Dashes.pdf).
+- `y`-system
+  > NOTE: proposed; acceptance to be decided.
+  > Perhaps I should go with *w* instead of *y*?
+  - Instead of the [X-system](https://en.wikipedia.org/wiki/Substitutions_of_the_Esperanto_alphabet#X-system) in Esperanto,
+    *Epopo* uses *y* instead of *x* to represent accented letters
+    in ASCII, since *x* is a real letter in *Epopo* as well.
+    While *Y* looks like *Υ* (Hex form of Dx14),
+    the lower case *y* is not present in *Epopo*,
+    and thus perfect for marking diacritics in the letter in front of it.
 
 ### Algebro
 
@@ -170,6 +163,22 @@ Changes of Esperanto++ from Esperanto include:
     as `7.89ΔλΠΣΥΨp+Π` or `7.89ΔλΠΣΥΨpΠ`;
   - Pronunciation:
     TBD.
+
+### Interpunkcio
+
+> Punctuation
+
+- '‐' (Hyphen) and '-' (Minus)
+  - Differentiate between hyphen (linking words)
+    and minus (subtracting numbers).  
+    This is to help computer code differentiate variable names and operations.
+- '–' (En dash)
+  - No space around en dash.
+- '—' (Em dash)
+  - Add space around em dash.  
+    This to help markdown formatting (allowing splitting lines around em dash.)
+- See also
+  - [Hyphen / En dash / Em dash Guideline](https://www.sjsu.edu/writingcenter/docs/handouts/Hyphens%20Dashes.pdf).
 
 ### Sekso
 
