@@ -25,7 +25,7 @@ Enhavo
 > [!NOTE]  
 > [Fona Historio](../OmniCentro/Historio.md)
 > <br>
-> [Sekva Ĉapitro](Cx1_LaPerditaPrincino.md)
+> [Sekva Ĉapitro](Cw1_LaPerditaPrincino.md)
 
 [TOC]
 

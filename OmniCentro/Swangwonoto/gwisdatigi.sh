@@ -5,9 +5,9 @@ echo; echo
 pwd -P
 echo; echo
 cp -v ../Data/.markdownlint.json   ./
-cp -v ../Data/Changelog.md         Sxangxonoto.md
-cp -v ../Data/Changelog_tags.md    Sxangxonoto_bib.md
-cp -v ../Data/Changelog_public.md  Sxangxonoto_pub.md
+cp -v ../Data/Changelog.md         Swangwonoto.md
+cp -v ../Data/Changelog_tags.md    Swangwonoto_bib.md
+cp -v ../Data/Changelog_public.md  Swangwonoto_pub.md
 
 # Playsets
 echo; echo

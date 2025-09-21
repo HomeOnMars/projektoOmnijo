@@ -370,11 +370,11 @@ are just brutal.
 Not to mention that
 the local farmers there are famous for not willing to give up their lands.
 The only easily capitalizable thing there
-is the several good spots for building dams[^Historio-OC-barajxo]-
+is the several good spots for building dams[^Historio-OC-barajwo]-
 but hey, who would ever want a dam / dams this close to the city??
 What if they break??
 
-[^Historio-OC-barajxo]: Several proposals for building hydroelectric dams
+[^Historio-OC-barajwo]: Several proposals for building hydroelectric dams
   there have been drawn up in the past few decades,
   but unfortunately they all got shot down by nearby NIMBY farmers and
   internal corruptions.
@@ -394,7 +394,7 @@ Ekstraj Rakontoj
 > Additional Content
 
 1. Ø-3⚝ \|
-  [La Perdita Princino](../rakontoj/Cx1_LaPerditaPrincino.md#enhavo) \| The Lost Princess  
+  [La Perdita Princino](../rakontoj/Cw1_LaPerditaPrincino.md#enhavo) \| The Lost Princess  
   <span style="color:Beige">Serena</span>
   meeting the old King for the first time.
 

@@ -118,7 +118,7 @@ ss = {
     'vintro'   : {'indeksoj': [11,  0,  1]},
     'printempo': {'indeksoj': [ 2,  3,  4]},
     'somero'   : {'indeksoj': [ 5,  6,  7]},
-    'auxtuno'  : {'indeksoj': [ 8,  9, 10]},
+    'auwtuno'  : {'indeksoj': [ 8,  9, 10]},
 }
 
 for k in ss.keys():

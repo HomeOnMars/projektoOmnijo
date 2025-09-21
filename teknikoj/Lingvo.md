@@ -68,15 +68,12 @@ Changes of Esperanto++ from Esperanto include:
     - `ABCDEFGHIJKLMNOPQRSTUVXZĈĜĴŜŬŽ`
     - `abcdefghijklmnopqrstuvxzĉĝĵŝŭž`
     - `0123456789ΔλΠΣΥΨ`
-- `y`-system
-  > NOTE: proposed; acceptance to be decided.
-  > Perhaps I should go with *w* instead of *y*?
+- `w`-system
   - Instead of the [X-system](https://en.wikipedia.org/wiki/Substitutions_of_the_Esperanto_alphabet#X-system) in Esperanto,
-    *Epopo* uses *y* instead of *x* to represent accented letters
+    *Epopo* appends *w* instead of *x* to *CGJSUZ* to represent accented letters
     in ASCII, since *x* is a real letter in *Epopo* as well.
-    While *Y* looks like *Υ* (Hex form of Dx14),
-    the lower case *y* is not present in *Epopo*,
-    and thus perfect for marking diacritics in the letter in front of it.
+  - *w* was used instead of *y* because it fits my intuition better
+    how it would change the sound of the letter.
 
 ### Algebro
 
@@ -209,7 +206,7 @@ Changes of Esperanto++ from Esperanto include:
 
 - Units and *`Omnijaro`* Calendar System (Ø+\* years)  
   See also the [Units](../teknikoj/Unuoj.md#tempo) page for explanation, and the
-  [(***Spoilers***) Timeline](../intrigmalkasxo/Kronologio.md#kronologio) page
+  [(***Spoilers***) Timeline](../intrigmalkaswo/Kronologio.md#kronologio) page
   for usage.
 
   | Siglo | Formo   | Nomo           |

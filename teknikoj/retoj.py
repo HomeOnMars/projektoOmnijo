@@ -44,7 +44,7 @@ hp = units.imperial.hp
 JLu = u.JLu    # power unit name provisional
 U = u.U
 kph  = u.kph
-JoGx = u.JoGx
+JoGw = u.JoGw
 kphx = (1*u.kph * (U / (8*u.m))).to(u.kph)
 ton = u.MP / 24    # 1 gp ~ 1.49563 t
 percent = units.percent
@@ -96,7 +96,7 @@ def n_car_f(
 def print_info(**params):
     n_car, capa, length = n_car_f(**params)
     txt = f"\t{params = }"
-    txt += f"\n\t\tv =  {presi_Hx(params['v'].to_value(JoGx), sc=4, e_sep=''):>8} JoGx\t={params['v'].to(kphx):8.2f}"
+    txt += f"\n\t\tv =  {presi_Hx(params['v'].to_value(JoGw), sc=4, e_sep=''):>8} JoGw\t={params['v'].to(kphx):8.2f}"
     txt += f"\n\t{n_car =:6.3f}\t{capa =:4.0f}\t{length =:4.0f}\n"
     print(txt)
     return txt
@@ -120,10 +120,10 @@ if __name__ == '__main__':
     KE_pars = {
         'engine_p': 0xB00*JLu, #(9500*hp).to(hp),
     }
-    print_info(grad=0.0*percent, v=0xBE*JoGx, **KE_pars)
-    print_info(grad=1.6*percent, v=0x60*JoGx, **KE_pars)
-    print_info(grad=3.6*percent, v=0x30*JoGx, **KE_pars)
-    print_info(grad=5.5*percent, v=0x20*JoGx, **KE_pars)
+    print_info(grad=0.0*percent, v=0xBE*JoGw, **KE_pars)
+    print_info(grad=1.6*percent, v=0x60*JoGw, **KE_pars)
+    print_info(grad=3.6*percent, v=0x30*JoGw, **KE_pars)
+    print_info(grad=5.5*percent, v=0x20*JoGw, **KE_pars)
     
     print("\nHigh Speed Rail (per car)\n")
     # Using China Railway CRH3 (Velaro CN) info as reference / rough guideline
@@ -140,15 +140,15 @@ if __name__ == '__main__':
         'car_len'  : 3 * U,
         'A_d': (3*4/3.5*(U/8)**2).to(u.m**2),
     }
-    print_info(grad=0.0*percent, v=0x188*JoGx, **V_pars)
-    print_info(grad=1.5*percent, v=0x120*JoGx, **V_pars)
-    print_info(grad=2.0*percent, v=0x100*JoGx, **V_pars)
-    print_info(grad=2.6*percent, v=0xE0*JoGx, **V_pars)
-    print_info(grad=3.3*percent, v=0xC0*JoGx, **V_pars)
-    print_info(grad=4.2*percent, v=0xA0*JoGx, **V_pars)
-    print_info(grad=5.5*percent, v=0x80*JoGx, **V_pars)
-    print_info(grad=7.5*percent, v=0x60*JoGx, **V_pars)
-    print_info(grad=23.5*percent,v=0x20*JoGx, **V_pars)
+    print_info(grad=0.0*percent, v=0x188*JoGw, **V_pars)
+    print_info(grad=1.5*percent, v=0x120*JoGw, **V_pars)
+    print_info(grad=2.0*percent, v=0x100*JoGw, **V_pars)
+    print_info(grad=2.6*percent, v=0xE0*JoGw, **V_pars)
+    print_info(grad=3.3*percent, v=0xC0*JoGw, **V_pars)
+    print_info(grad=4.2*percent, v=0xA0*JoGw, **V_pars)
+    print_info(grad=5.5*percent, v=0x80*JoGw, **V_pars)
+    print_info(grad=7.5*percent, v=0x60*JoGw, **V_pars)
+    print_info(grad=23.5*percent,v=0x20*JoGw, **V_pars)
     
     
     print("\nMetro (per car)\n")
@@ -161,10 +161,10 @@ if __name__ == '__main__':
         'load_full': 45*ton,
         'car_len'  : 3 * U,
     }
-    print_info(grad=0.0*percent, v=0x11F*JoGx, **E_pars)
-    print_info(grad=3.5*percent, v=0x88*JoGx, **E_pars)
-    print_info(grad=5.4*percent, v=0x60*JoGx, **E_pars)
-    print_info(grad=7.3*percent, v=0x48*JoGx, **E_pars)
+    print_info(grad=0.0*percent, v=0x11F*JoGw, **E_pars)
+    print_info(grad=3.5*percent, v=0x88*JoGw, **E_pars)
+    print_info(grad=5.4*percent, v=0x60*JoGw, **E_pars)
+    print_info(grad=7.3*percent, v=0x48*JoGw, **E_pars)
     
 
     print("\nTram (per car)\n")
@@ -175,10 +175,10 @@ if __name__ == '__main__':
         'load_capa': 16*ton,
         'car_len'  : 1.5 * U,
     }
-    print_info(grad= 0.0*percent, v=0xFC*JoGx, **T_pars)
-    print_info(grad= 9.6*percent, v=0x40*JoGx, **T_pars)
-    print_info(grad=13.0*percent, v=0x30*JoGx, **T_pars)
-    print_info(grad=20.0*percent, v=0x20*JoGx, **T_pars)
+    print_info(grad= 0.0*percent, v=0xFC*JoGw, **T_pars)
+    print_info(grad= 9.6*percent, v=0x40*JoGw, **T_pars)
+    print_info(grad=13.0*percent, v=0x30*JoGw, **T_pars)
+    print_info(grad=20.0*percent, v=0x20*JoGw, **T_pars)
     
 
     print("\nRoad\n")
@@ -189,7 +189,7 @@ if __name__ == '__main__':
     #   (See Iveco Eurocargo specifications <https://www.iveco.com/Eurocargo>
     #   <https://static.iveco.com.au/download/media%2F5524d082-2a03-40c0-96de-9d6ab73f3681.pdf/Eurocargo%20Specifications.pdf>
     #   For Engine Maximum Output, GVM (Gross Vehicle Mass) and GCM (Gross Combination Mass) info))
-    Ux_pars = {
+    Uw_pars = {
         'engine_p' : 0x100*JLu, #(863*hp).to(hp),
         'engine_m' : 5*ton,
         'load_full': 29*ton,
@@ -197,17 +197,17 @@ if __name__ == '__main__':
         'C_d' : 0.8,
         'A_d': (2*3/1.25*(U/8)**2).to(u.m**2),
     }
-    print_info(grad=0*percent, v=0x9B*JoGx, **Ux_pars)
-    print_info(grad=3.7*percent, v=0x60*JoGx, **Ux_pars)
-    print_info(grad=5.1*percent, v=0x50*JoGx, **Ux_pars)
-    print_info(grad=7.0*percent, v=0x40*JoGx, **Ux_pars)
+    print_info(grad=0*percent, v=0x9B*JoGw, **Uw_pars)
+    print_info(grad=3.7*percent, v=0x60*JoGw, **Uw_pars)
+    print_info(grad=5.1*percent, v=0x50*JoGw, **Uw_pars)
+    print_info(grad=7.0*percent, v=0x40*JoGw, **Uw_pars)
 
 
     print("\nLocal Road\n")
     
-    print_info(grad=10*percent, v=0x30*JoGx, **Ux_pars)
-    print_info(grad=15*percent, v=0x20*JoGx, **Ux_pars)
-    print_info(grad=21*percent, v=0x18*JoGx, **Ux_pars)
-    print_info(grad=33*percent, v=0x10*JoGx, **Ux_pars)
+    print_info(grad=10*percent, v=0x30*JoGw, **Uw_pars)
+    print_info(grad=15*percent, v=0x20*JoGw, **Uw_pars)
+    print_info(grad=21*percent, v=0x18*JoGw, **Uw_pars)
+    print_info(grad=33*percent, v=0x10*JoGw, **Uw_pars)
 
 #------------------------------------------------------------------------------
