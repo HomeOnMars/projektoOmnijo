@@ -40,7 +40,7 @@ else:
 
 # getting how many containers/trailers can a train engine haul
 g = const.g0
-hp = 746 * units.W
+hp = units.imperial.hp
 JLu = u.JLu    # power unit name provisional
 U = u.U
 kph  = u.kph
@@ -169,7 +169,7 @@ if __name__ == '__main__':
 
     print("\nTram (per car)\n")
     T_pars = {
-        'engine_p' : 0xF0*JLu, #(800*hp).to(hp),
+        'engine_p' : 0xF0*JLu, #(810*hp).to(hp),
         'engine_m' : 0*ton,
         'load_full': 26*ton,
         'load_capa': 16*ton,

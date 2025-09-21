@@ -95,14 +95,14 @@ ASCIIIFY_CHR = {
     'Ŝ': 'Sx','ŝ': 'sx',
     'Ŭ': 'Ux','ŭ': 'ux',
     'Ž': 'Zx',    # for temperature unit °Ž
-    '⚻': 'tago',
+    '⚻': 'tago',  # capitalized ver already defined
     '⚝': 'Se',
     '☾': 'Monato',
-    '⚡': 'potenco',
-    '°': 'deg',
+    '⚡': 'potenco',   # word ver (no capitalizing, no prefix)
+    '°': 'Deg',
     '🪙': 'OSR',
     chr(0x332): '_',
-    'ⅎ': 'projento',
+    'ⅎ': 'projento',    # capitalized ver already defined
 }
 ASCIIIFY = {ord(k): v for k, v in ASCIIIFY_CHR.items()}
 
@@ -322,7 +322,11 @@ u_si_defs : dict[str, units.UnitBase] = {
 }
 units.def_unit('kph', units.km / units.h, namespace=u_si_defs)
 units.def_unit('mph', units.imperial.mi / units.h, namespace=u_si_defs)
-units.def_unit('Rearth', ((_WGS84_DEF[0]**2*_WGS84_DEF[1])**(1/3)).to(units.km), namespace=u_si_defs)
+units.def_unit(
+    'Rearth',
+    ((_WGS84_DEF[0]**2*_WGS84_DEF[1])**(1/3)).to(units.km),
+    namespace=u_si_defs)
+u_si_defs['hp'] = units.imperial.hp
 
 
 

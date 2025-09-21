@@ -158,10 +158,10 @@ Arterial / Collector / Local Roads:
   - Note: Liberties have been taken for the hard limit of $s$ due to steep terrain in the map. Also steeper is more fun.
   - Speed unit 'JoĜ' see [Units](Unuoj.md#rapido) page.
 - Length / Power
-  - train length: 25 (16m/2u-long) cars (**400m/50u**): 1 engine + 24 trailers.
-  - For track intersections: $\geq$ 448m/56u.
+  - train length: 25 (16m/2U-long) cars (**400m/50U**): 1 engine + 24 trailers.
+  - For track intersections: $\geq$ 448m/56U.
   - Assumed power consumption:
-    9496hp/7.1MW per engine.
+    9496hp / 7.1MW / λ⚡ per engine.
   - Due to advanced [*regenerative braking*](https://en.wikipedia.org/wiki/Regenerative_braking) system,
     kinetic energies from trains travelling downhill
     or decelerating to stop at stations
@@ -194,14 +194,15 @@ Arterial / Collector / Local Roads:
 - Length / Power
   - Assumed EMU (Electric Multiple Unit).
   - Train length
-    <!-- - 12 (20m/2.5u-long) train cars (**240m/30u**). -->
-    - 16 (24m/3.0u-long) train cars (**384m/48u**)
-    - 20 (20m/2.5u-long) train cars (**400m/50u**)
-    - 25 (16m/2.0u-long) train cars (**400m/50u**)
+    <!-- - 12 (20m/2.5u-long) train cars (**240m/30U**). -->
+    - 16 (24m/3U-long)  train cars (**384m/48U**)
+    - 20 (20m/2½U-long) train cars (**400m/50U**)
+    - 25 (16m/2U-long)  train cars (**400m/50U**)
     - Half length permitted
-  - For track intersections: $\geq$ 448m/56u.
+  - For track intersections: $\geq$ 448m/56U.
   - Assumed power consumption:
-    1726hp/1.3MW per (24m/3u-long) train car - 20.6MW for a full length train.
+    1726hp / 1.29MW / 2⚡ per (24m/3U-long) train car —
+    Dx20.6MW / Hx20⚡ for a full length train.
   - Due to advanced [*regenerative braking*](https://en.wikipedia.org/wiki/Regenerative_braking) system,
     kinetic energies from trains travelling downhill
     or decelerating to stop at stations
@@ -235,18 +236,19 @@ Arterial / Collector / Local Roads:
 - Length / Power
   - Assumed EMU (Electric Multiple Unit).
   - Train length
-    - 8  (24m/3.0U-long) train cars (**192m/24U**)
-    - 10 (20m/2.5U-long) train cars (**200m/25U**)
-    - 12 (16m/2.0U-long) train cars (**192m/24U**)
+    - 8  (24m/3U-long)  train cars (**192m/24U**)
+    - 10 (20m/2½U-long) train cars (**200m/25U**)
+    - 12 (16m/2U-long) train cars (**192m/24U**)
     - Half length permitted
-  - For track intersections: $\geq$ 240m/30u.
+  - For track intersections: $\geq$ 240m/30U.
   - Assumed power consumption:
-    1187hp/0.9MW per (24m/3u-long) train car - 7.1MW for a full length train.
+    1187hp / 0.9MW / Hx1.6⚡ per (24m/3U-long) train car —
+    7.1MW / λ⚡ for a full length train.
   - Stop spacing:
-    - Try to keep at least 128U (1km, or 5 trains long)
+    - Try to keep at least Dx128U (1km, or 5 trains long)
       between metro stations' track connection point;
-    - Hard minimum: 72U (576m / 3 trains).
-    - Ideally \~256U (2km / Dx11 trains), especially in rural area.
+    - Hard minimum: Dx72U (576m / 3 trains).
+    - Ideally \~Dx256U (2km / Dx11 trains), especially in rural area.
 - Additional Notes
   - Due to proper designs,
     metros in OmniCentro are capable of (and generally are) running 24/7:
@@ -293,11 +295,13 @@ Arterial / Collector / Local Roads:
   - Assumed EMU (Electric Multiple Unit).
   - Assumed non-tilting trains.
   - Train length
-    - 6  (16m/2.0U-long) train cars (**96m/12U**)
-    - 9  (12m/1.5U-long) train cars (**96m/12U**)
-    - 12 ( 8m/1.0U-long) train cars (**96m/12U**)
+    - 6  (16m/2U-long)  train cars (**96m/12U**)
+    - 9  (12m/1½U-long) train cars (**96m/12U**)
+    - 12 ( 8m/1U-long)  train cars (**96m/12U**)
     - 1/3 and 2/3 length permitted
-  - Assumed power consumption: 809hp/0.6MW per (16m/2u-long) train car.
+  - Assumed power consumption:
+    810hp / 0.6MW / Hx0.Ψ⚡ per (16m/2U-long) train car —
+    total 2.4MW / 5.Δ⚡ for a full length tram.
 
 #### Monoreloj
 

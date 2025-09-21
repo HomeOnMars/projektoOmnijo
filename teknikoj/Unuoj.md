@@ -602,6 +602,8 @@ $$
 OC's target power poduction is
 about Hx8000⚡(Dx21.1GW) to Hx10000⚡(Dx42.2GW).
 
+Notably, Hx10⚡≈ Dx10MW.
+
 The output of the sun is
 
 $$
