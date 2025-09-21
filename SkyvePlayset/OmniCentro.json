@@ -31,14 +31,14 @@
     "75724": {
       "Id": 75724,
       "Name": "ExtraLib",
-      "Version": "23",
+      "Version": "24",
       "LoadOrder": 4,
       "IsEnabled": true
     },
     "75426": {
       "Id": 75426,
       "Name": "I18n EveryWhere",
-      "Version": "52",
+      "Version": "54",
       "LoadOrder": 5,
       "IsEnabled": true
     },
@@ -52,7 +52,7 @@
     "74604": {
       "Id": 74604,
       "Name": "Anarchy",
-      "Version": "33",
+      "Version": "34",
       "LoadOrder": 9,
       "IsEnabled": true
     },
@@ -73,14 +73,14 @@
     "91433": {
       "Id": 91433,
       "Name": "InfoLoom",
-      "Version": "29",
+      "Version": "30",
       "LoadOrder": 21,
       "IsEnabled": true
     },
     "79186": {
       "Id": 79186,
       "Name": "Simple Mod Checker Plus",
-      "Version": "39",
+      "Version": "40",
       "LoadOrder": 23,
       "IsEnabled": true
     },
@@ -150,7 +150,7 @@
     "99048": {
       "Id": 99048,
       "Name": "Resource Locator",
-      "Version": "12",
+      "Version": "14",
       "LoadOrder": 58,
       "IsEnabled": false
     },
@@ -164,7 +164,7 @@
     "81157": {
       "Id": 81157,
       "Name": "AreaBucket",
-      "Version": "8",
+      "Version": "9",
       "LoadOrder": 61,
       "IsEnabled": false
     },
@@ -182,10 +182,17 @@
       "LoadOrder": 65,
       "IsEnabled": true
     },
+    "117548": {
+      "Id": 117548,
+      "Name": "AchievementManager",
+      "Version": "8",
+      "LoadOrder": 65,
+      "IsEnabled": true
+    },
     "87428": {
       "Id": 87428,
       "Name": "Carto",
-      "Version": "12",
+      "Version": "16",
       "LoadOrder": 66,
       "IsEnabled": true
     },
@@ -227,30 +234,23 @@
     "75993": {
       "Id": 75993,
       "Name": "Tree Controller",
-      "Version": "21",
+      "Version": "22",
       "LoadOrder": 94,
       "IsEnabled": true
     },
     "84638": {
       "Id": 84638,
       "Name": "Recolor",
-      "Version": "10",
+      "Version": "11",
       "LoadOrder": 96,
       "IsEnabled": true
     },
     "86868": {
       "Id": 86868,
       "Name": "Real Life",
-      "Version": "28",
+      "Version": "29",
       "LoadOrder": 97,
       "IsEnabled": true
-    },
-    "86260": {
-      "Id": 86260,
-      "Name": "Compass",
-      "Version": "4",
-      "LoadOrder": 98,
-      "IsEnabled": false
     },
     "75826": {
       "Id": 75826,
@@ -269,7 +269,7 @@
     "90641": {
       "Id": 90641,
       "Name": "Hall of Fame",
-      "Version": "29",
+      "Version": "30",
       "LoadOrder": 101,
       "IsEnabled": true
     },
@@ -283,7 +283,7 @@
     "77171": {
       "Id": 77171,
       "Name": "Realistic Trips",
-      "Version": "56",
+      "Version": "57",
       "LoadOrder": 107,
       "IsEnabled": true
     },
@@ -304,7 +304,7 @@
     "79237": {
       "Id": 79237,
       "Name": "First Person Camera Continued",
-      "Version": "16",
+      "Version": "18",
       "LoadOrder": 123,
       "IsEnabled": true
     },
@@ -325,7 +325,7 @@
     "74324": {
       "Id": 74324,
       "Name": "Move It",
-      "Version": "29",
+      "Version": "30",
       "LoadOrder": 133,
       "IsEnabled": true
     },
@@ -376,13 +376,6 @@
       "Name": "Asset Icon Library",
       "Version": "19",
       "LoadOrder": 143,
-      "IsEnabled": true
-    },
-    "75745": {
-      "Id": 75745,
-      "Name": "Achievement Enabler",
-      "Version": "2",
-      "LoadOrder": 144,
       "IsEnabled": true
     }
   },

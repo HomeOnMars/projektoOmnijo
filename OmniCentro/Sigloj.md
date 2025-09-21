@@ -128,7 +128,8 @@ Examples:
 - Motorway 13 N->S: `ŬΣm` (or `UwDm` for ASCII encoding; m for Negative.)
 - Cargo train line 12: `KVΠ`
 - Cargo barge route 4: `KP4`
-- Cargo container ship route 14: `KŜΥ` (or KSwE for ASCII encoding; Becareful `Υ` is the upper-case version of greek letter `γ`, not English Y.)
+- Cargo container ship route 14: `KŜΥ` (or KSwE for ASCII encoding;
+  Be careful `Υ` is the upper-case version of greek letter `γ`, not English Y.)
 - Cargo Airline 5: `KA5`
 
 ### Mallongigoj

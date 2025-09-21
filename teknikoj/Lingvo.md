@@ -130,7 +130,7 @@ Changes of Esperanto++ from Esperanto include:
   - Both `unu munio da Utroj` and `unu muni Utroj`
     are acceptable ways of saying Dx 65 536 U.
   - Also you can just say `unu MuniUtro` directly, as 1 MU = Dx65536 U.
-  - But for fractoins, use `munioneUtro` instead of ~~`munionUtro`~~
+  - But for fractions, use `munioneUtro` instead of ~~`munionUtro`~~
     for more redunandencies in pronunciations
     (So people don't mix `munioneUtro` up with `MuniUtro`).
   - For prefix shorthands,
