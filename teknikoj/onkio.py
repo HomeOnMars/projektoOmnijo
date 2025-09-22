@@ -98,7 +98,7 @@ ONKIO_2_ASCII_DICT[chr(0x1d)] = chr(0x3d)    # 0x1d -> =
 ONKIO_2_ASCII_DICT[chr(0x1e)] = chr(0x3e)    # 0x1e -> >
 ONKIO_2_ASCII_DICT[chr(0x1f)] = chr(0x3f)    # 0x1f -> ?
 ONKIO_2_ASCII_DICT[chr(0x20)] = chr(0x5f)    # SPACE -> _
-ONKIO_2_ASCII_DICT[chr(0x2c)] = chr(0x2013)  # , -> –  (en-dash)
+ONKIO_2_ASCII_DICT[chr(0x2c)] = chr(0x214e)  # , -> ⅎ  (projento)
 ONKIO_2_ASCII_DICT[chr(0x2e)] = chr(0x2014)  # . -> —  (em-dash)
 #    Control Sequences (limit to 0x0_)
 ONKIO_2_ASCII_DICT[chr(0x0d)] = chr(0x1a)    # 0x0d -> SUB

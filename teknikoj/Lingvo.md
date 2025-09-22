@@ -86,13 +86,13 @@ Changes of Esperanto++ from Esperanto include:
       |  G  | G-     | yo**g**urt |
       |  Ĝ  | J-     | **G**eorge |
       |  J  | Y-     | **y**ogurt |
-      |  Ĵ  | ~~–~~  | plea**su**re |
+      |  Ĵ  | ~~—~~  | plea**su**re |
       |  Q  | Q-     | pun**ch**y |
       |  Ŝ  | Sh-    | **sh**ip |
-      |  V  | ~~–~~  | **v**alid |
+      |  V  | ~~—~~  | **v**alid |
       |  Ŭ  | W-     ||
-      |  X  | X-     | ~~–~~ |
-      |  Ž  | Zh-    | ~~–~~ |
+      |  X  | X-     | ~~—~~ |
+      |  Ž  | Zh-    | ~~—~~ |
       ||||
       |  a  | -a     | |
       | aj  | -ai    | **I** |
@@ -104,7 +104,7 @@ Changes of Esperanto++ from Esperanto include:
       | en  | -en    | |
       | eŭn | -eng   | |
       | er  | -er    | |
-      | eŭ  | ~~–~~  | **L** |
+      | eŭ  | ~~—~~  | **L** |
       |  i  | -i     | |
       | in  | -in    | |
       | iŭn | -ing   | |
@@ -120,11 +120,11 @@ Changes of Esperanto++ from Esperanto include:
       | jŭe | -üe    | |
       | jun | -ün    | |
       |  o  | -o     | |
-      | oj  | ~~–~~  | j**oy** |
+      | oj  | ~~—~~  | j**oy** |
       | oŭn | -ong   | |
       | oŭ  | -ou    | **O** |
       |  u  | -u     | |
-      | uj  | ~~–~~  | ch**ewy** |
+      | uj  | ~~—~~  | ch**ewy** |
       | ŭa  | -ua    | |
       | ŭaj | -uai   | |
       | ŭan | -uan   | |
@@ -235,11 +235,18 @@ Changes of Esperanto++ from Esperanto include:
   - Differentiate between hyphen (linking words)
     and minus (subtracting numbers).  
     This is to help computer code differentiate variable names and operations.
-- '–' (En dash)
-  - No space around en dash.
+- ~~'–' (En dash)~~  
+  When needing to use an en dash, use the below instead:
+  - use a ' ‐ ' (hyphen with surrounding space)
+    to connect numbers representing ranges.  
+    E.g. "2024 - 2025".
+  - use '—' (Em dash with *no* surrounding space)
+    to connect multi-words adjectives.  
+    E.g. "Nobel prize—winning scientist".
 - '—' (Em dash)
   - Add space around em dash.  
-    This to help markdown formatting (allowing splitting lines around em dash.)
+    This is to help markdown formatting
+    (allowing splitting lines around em dash.)
 - See also
   - [Hyphen / En dash / Em dash Guideline](https://www.sjsu.edu/writingcenter/docs/handouts/Hyphens%20Dashes.pdf).
 
