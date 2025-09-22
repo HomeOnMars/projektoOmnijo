@@ -31,16 +31,21 @@ a fictional variant of L. L. Zamenhof's artificial language
 [*Esperanto*](https://lernu.net/esperanto) (1887),
 with multiple changes specified by
 <span style="color:Beige">Reĝino Serena</span> herself,
-aiming to offer even more regularity for easier learning
-while conforming to the existing world as much as possible.
+aiming to offer even more regularity and inclusivity,
+while conforming to the existing world as much as possible.[^Lingvo-Historio-1]
 <span style="color:Beige">Queen Serena</span> declared `Epopo`
 as the new official language of RdO about three months in her reign,
 set to gradually replace English in the next *hekjaro* (hexcade, i.e. 16 years)
 in all RdO official documentations and communications.
 
-One would think that such random order
+[^Lingvo-Historio-1]: Contrary to what one might expect,
+  Many Esperantists are not really big fans of the Queen breaking the
+  traditions of their language unilaterally with the big big changes she made…
+
+One would think that such random policy
 is surely going to cause massive civil unrest,
-but by that time the people have already gotten used to the <span style="color:Beige">Queen</span>'s ridiculous style;
+but by that time the people have already gotten used to the
+<span style="color:Beige">Queen</span>'s ridiculous style;
 plus, they also have the chaotic implementation of
 her new UBI (universal basic income) policy to worry about.
 
@@ -50,24 +55,85 @@ Changes of Esperanto++ from Esperanto include:
 
 > Alphabet
 
-- Officially eliminated `ĥ` from the *Epopo* alphabet
-  (mostly replaced with `k`);
+- Officially eliminated `Ĥ` from the *Epopo* alphabet
+  (mostly replaced with `K`);
 - Adding `Q` (tɕʰ), `X` (ɕ), `Ž` (ʈʂ)
   for more diverse sounds (inspired by pinyin).  
   No words from *Epopo* are using those three letters yet;
   for now they are only used in naming.
-- Pronunciation Guides  
-  See also International Phonetic Alphabet (IPA)
-  - [lernu: Esperanto Alphabet](https://lernu.net/gramatiko/skribo)
-  - [Wikipedia: IPA/Esperanto](https://en.wikipedia.org/wiki/Help:IPA/Esperanto)
-  - [Wikipedia: IPA/Mandarin](https://en.wikipedia.org/wiki/Help:IPA/Mandarin)
 - Total *Epopo* alphabet: 30 letters.
-  - vs English:  2 letters less (no WY) and 6 letters more (ĈĜĴŜŬŽ)
   - vs Esperanto: 1 letters less (no Ĥ) and 3 letters more (QXŽ)
+  - vs English:  2 letters less (no WY) and 6 letters more (ĈĜĴŜŬŽ)
+  - vs Pinyin:  2 more consonants (VĴ)
   - Characters:
     - `ABCDEFGHIJKLMNOPQRSTUVXZĈĜĴŜŬŽ`
     - `abcdefghijklmnopqrstuvxzĉĝĵŝŭž`
     - `0123456789ΔλΠΣΥΨ`
+- Pronunciation guide  
+  See also International Phonetic Alphabet (IPA)
+  - [lernu: Esperanto Alphabet](https://lernu.net/gramatiko/skribo)
+  - [Wikipedia: IPA/Esperanto](https://en.wikipedia.org/wiki/Help:IPA/Esperanto)
+  - [Wikipedia: IPA/Mandarin](https://en.wikipedia.org/wiki/Help:IPA/Mandarin)
+
+    <details>
+      <summary>Sound comparison table</summary>
+      Note: many of the sounds are approximations
+      (especially <em>ü</em> in pinyin — the sound of which is not in Epopo).
+
+      | Epopo | Pinyin | English |
+      | :-: | :----: | :-: |
+      |  Ĉ  | Ch-    | **ch**oice |
+      |  G  | G-     | yo**g**urt |
+      |  Ĝ  | J-     | **G**eorge |
+      |  J  | Y-     | **y**ogurt |
+      |  Ĵ  | ~~–~~  | plea**su**re |
+      |  Q  | Q-     | pun**ch**y |
+      |  Ŝ  | Sh-    | **sh**ip |
+      |  V  | ~~–~~  | **v**alid |
+      |  Ŭ  | W-     ||
+      |  X  | X-     | ~~–~~ |
+      |  Ž  | Zh-    | ~~–~~ |
+      ||||
+      |  a  | -a     | |
+      | aj  | -ai    | **I** |
+      | an  | -an    | |
+      | aŭn | -ang   | |
+      | aŭ  | -ao    | n**ow** |
+      |  e  | -e     | |
+      | ej  | -ei    | **A** |
+      | en  | -en    | |
+      | eŭn | -eng   | |
+      | er  | -er    | |
+      | eŭ  | ~~–~~  | **L** |
+      |  i  | -i     | |
+      | in  | -in    | |
+      | iŭn | -ing   | |
+      | ja  | -ia    | |
+      | jan | -ian   | |
+      |jaŭn | -iang  | |
+      | jaŭ | -iao   | |
+      | je  | -ie    | |
+      |joŭn | -iong  | |
+      | joŭ | -iu    | |
+      | jŭu | -ü     | |
+      |jŭan | -üan   | |
+      | jŭe | -üe    | |
+      | jun | -ün    | |
+      |  o  | -o     | |
+      | oj  | ~~–~~  | j**oy** |
+      | oŭn | -ong   | |
+      | oŭ  | -ou    | **O** |
+      |  u  | -u     | |
+      | uj  | ~~–~~  | ch**ewy** |
+      | ŭa  | -ua    | |
+      | ŭaj | -uai   | |
+      | ŭan | -uan   | |
+      |ŭaŭn | -uang  | |
+      | ŭej | -ui    | |
+      | ŭen | -un    | |
+      | ŭo  | -uo    | |
+
+    </details>
 - `w`-system
   - Instead of the [X-system](https://en.wikipedia.org/wiki/Substitutions_of_the_Esperanto_alphabet#X-system) in Esperanto,
     *Epopo* appends *w* instead of *x* to *CGJSUZ* to represent accented letters
