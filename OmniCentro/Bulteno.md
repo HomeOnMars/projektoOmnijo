@@ -199,12 +199,12 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 | ---- | ------ | ---- |
 | RdO  | #F5F5DC | <span style="color:Beige">█ Ŝia Reĝina Moŝto **Serena Novarika** de Omnijo</span>  <!--The Moderator-->  |
 | RdO  | #32CD32 | <span style="color:LimeGreen">█ Ĉefministro **Eriko Takesta** de Omnijo</span>  <!--The Observer-->  |
-| OCFD | #C0C0C0 | <span style="color:Silver">█ Generalo **Laŭra Dovoluĉo** de Omnijo</span>  <!--The Guardian-->  |
+| OCFD | #D2691E | <span style="color:Chocolate">█ Generalo **Laŭra Dovoluĉo** de Omnijo</span>  <!--The Guardian-->  |
 | OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ Kunordigestro **Dajanna Murfisko** de Omnijo</span>  <!--The Librarian-->  |
 | OCFI | #95D0FC | <span style="color:#95D0FC">█ Arkitekto **Nomo Redaktita** de OCFI</span> |
 | OCFI | #D6B4FC | <span style="color:#D6B4FC">█ Ĉefinĝeniero **Ĝejda Fenulo** de Omnijo</span>  <!--The Sovereign-->  |
 | OCFI | #9370DB | <span style="color:MediumPurple">█ *La Inteligento* de Omnijo</span>  <!--The Collective-->  |
-| OCFJ | #D2691E | <span style="color:Chocolate">█ Prokuroro **Bejke Žon** de Omnijo</span>  <!--The Introspector-->  |
+| OCFJ | #C0C0C0 | <span style="color:Silver">█ Prokuroro **Bejke Žon** de Omnijo</span>  <!--The Introspector-->  |
 | OCME | #FFD700 | <span style="color:Gold">█ Ministro **Jonaso Kamarijo** de Omnijo</span>  <!--The Translator-->  |
 | OCME | #FFD700 | <span style="color:Gold">█ Parolanto **Natalia Zeĉoeva** de OCME</span> |
 | OCMF | #8FBC8F | <span style="color:DarkSeaGreen">█ Trezorestro **Alekso Ueslejo** de Omnijo</span>  <!--The Executive-->  |

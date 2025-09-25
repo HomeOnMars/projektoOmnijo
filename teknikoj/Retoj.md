@@ -197,7 +197,7 @@ Arterial / Collector / Local Roads:
     <!-- - 12 (20m/2.5u-long) train cars (**240m/30U**). -->
     - 16 (24m/3U-long)  train cars (**384m/48U**)
     - 20 (20m/2½U-long) train cars (**400m/50U**)
-    - 25 (16m/2U-long)  train cars (**400m/50U**)
+    - 24 (16m/2U-long)  train cars (**384m/48U**)
     - Half length permitted
   - For track intersections: $\geq$ 448m/56U.
   - Assumed power consumption:

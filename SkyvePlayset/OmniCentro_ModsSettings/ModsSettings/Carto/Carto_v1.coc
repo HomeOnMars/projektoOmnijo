@@ -1,0 +1,16 @@
+Carto
+{
+    "PropertyAgeArea": true,
+    "PropertyAreaArea": true,
+    "PropertyBrandBuilding": true,
+    "PropertyHouseholdArea": true,
+    "PropertyLaborArea": true,
+    "PropertyLevelBuilding": true,
+    "PropertySexRatioArea": true,
+    "PropertyWageArea": true,
+    "SourceXCoord": "-140.25",
+    "SourceYCoord": "-56.25",
+    "OutputElevation": true,
+    "PropertyCategoryRoadClassification": "Limit",
+    "PropertyPassengerPet": false
+}

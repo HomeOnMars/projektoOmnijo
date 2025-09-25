@@ -21,8 +21,12 @@ echo; echo
 cd OmniCentro_ModsSettings/
 pwd -P
 echo; echo
+cp -v ../../CSL2_SavesDir/Plop\ the\ Growables.coc  ./
 cp -v ../../CSL2_SavesDir/RealLife.coc ./
-cp -vr ../../CSL2_SavesDir/ModsSettings/Time2Work ModsSettings/
+cp -v ../../CSL2_SavesDir/RealPop.coc  ./
+cp -vr ../../CSL2_SavesDir/ModsSettings/Carto      ModsSettings/
+cp -vr ../../CSL2_SavesDir/ModsSettings/RealisticWorkplacesAndHouseholds    ModsSettings/
+cp -vr ../../CSL2_SavesDir/ModsSettings/Time2Work  ModsSettings/
 
 # Reminders
 echo; echo

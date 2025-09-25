@@ -2,7 +2,7 @@
   "ContractFormatVersion": -1,
   "GeneralData": {
     "Id": 7120139,
-    "Name": "OmnijaProvo",
+    "Name": "OmniProvo",
     "Color": "DeepSkyBlue",
     "Usage": 1
   },
@@ -31,28 +31,28 @@
     "75724": {
       "Id": 75724,
       "Name": "ExtraLib",
-      "Version": "23",
+      "Version": "24",
       "LoadOrder": 4,
       "IsEnabled": true
     },
     "75426": {
       "Id": 75426,
       "Name": "I18n EveryWhere",
-      "Version": "52",
+      "Version": "54",
       "LoadOrder": 5,
       "IsEnabled": true
     },
     "75250": {
       "Id": 75250,
       "Name": "Better Bulldozer",
-      "Version": "19",
+      "Version": "20",
       "LoadOrder": 8,
       "IsEnabled": true
     },
     "74604": {
       "Id": 74604,
       "Name": "Anarchy",
-      "Version": "32",
+      "Version": "34",
       "LoadOrder": 9,
       "IsEnabled": true
     },
@@ -73,14 +73,14 @@
     "91433": {
       "Id": 91433,
       "Name": "InfoLoom",
-      "Version": "27",
+      "Version": "30",
       "LoadOrder": 19,
       "IsEnabled": true
     },
     "79186": {
       "Id": 79186,
       "Name": "Simple Mod Checker Plus",
-      "Version": "39",
+      "Version": "40",
       "LoadOrder": 21,
       "IsEnabled": true
     },
@@ -108,9 +108,9 @@
     "87755": {
       "Id": 87755,
       "Name": "Realistic Workplaces And Households",
-      "Version": "40",
+      "Version": "41",
       "LoadOrder": 40,
-      "IsEnabled": false
+      "IsEnabled": true
     },
     "101948": {
       "Id": 101948,
@@ -150,7 +150,7 @@
     "99048": {
       "Id": 99048,
       "Name": "Resource Locator",
-      "Version": "11",
+      "Version": "14",
       "LoadOrder": 56,
       "IsEnabled": false
     },
@@ -164,7 +164,7 @@
     "81157": {
       "Id": 81157,
       "Name": "AreaBucket",
-      "Version": "8",
+      "Version": "9",
       "LoadOrder": 59,
       "IsEnabled": true
     },
@@ -185,7 +185,7 @@
     "87428": {
       "Id": 87428,
       "Name": "Carto",
-      "Version": "11",
+      "Version": "16",
       "LoadOrder": 64,
       "IsEnabled": true
     },
@@ -215,7 +215,7 @@
       "Name": "German Pack",
       "Version": "4",
       "LoadOrder": 87,
-      "IsEnabled": false
+      "IsEnabled": true
     },
     "93523": {
       "Id": 93523,
@@ -234,7 +234,7 @@
     "75993": {
       "Id": 75993,
       "Name": "Tree Controller",
-      "Version": "21",
+      "Version": "22",
       "LoadOrder": 92,
       "IsEnabled": true
     },
@@ -243,28 +243,21 @@
       "Name": "French Pack",
       "Version": "4",
       "LoadOrder": 93,
-      "IsEnabled": false
+      "IsEnabled": true
     },
     "84638": {
       "Id": 84638,
       "Name": "Recolor",
-      "Version": "7",
+      "Version": "11",
       "LoadOrder": 94,
       "IsEnabled": true
     },
     "86868": {
       "Id": 86868,
       "Name": "Real Life",
-      "Version": "28",
+      "Version": "29",
       "LoadOrder": 95,
       "IsEnabled": true
-    },
-    "86260": {
-      "Id": 86260,
-      "Name": "Compass",
-      "Version": "4",
-      "LoadOrder": 96,
-      "IsEnabled": false
     },
     "75826": {
       "Id": 75826,
@@ -273,31 +266,24 @@
       "LoadOrder": 97,
       "IsEnabled": true
     },
-    "89495": {
-      "Id": 89495,
-      "Name": "City Controller",
-      "Version": "10",
-      "LoadOrder": 98,
-      "IsEnabled": false
-    },
     "90641": {
       "Id": 90641,
       "Name": "Hall of Fame",
-      "Version": "28",
+      "Version": "30",
       "LoadOrder": 99,
       "IsEnabled": true
     },
     "77260": {
       "Id": 77260,
       "Name": "Water Visual Tweaks",
-      "Version": "7",
+      "Version": "10",
       "LoadOrder": 100,
-      "IsEnabled": false
+      "IsEnabled": true
     },
     "77171": {
       "Id": 77171,
       "Name": "Realistic Trips",
-      "Version": "55",
+      "Version": "57",
       "LoadOrder": 105,
       "IsEnabled": true
     },
@@ -318,14 +304,14 @@
     "79237": {
       "Id": 79237,
       "Name": "First Person Camera Continued",
-      "Version": "14",
+      "Version": "18",
       "LoadOrder": 121,
       "IsEnabled": true
     },
     "80931": {
       "Id": 80931,
       "Name": "Toggle Overlays",
-      "Version": "9",
+      "Version": "10",
       "LoadOrder": 122,
       "IsEnabled": true
     },
@@ -339,7 +325,7 @@
     "74324": {
       "Id": 74324,
       "Name": "Move It",
-      "Version": "28",
+      "Version": "30",
       "LoadOrder": 131,
       "IsEnabled": true
     },
@@ -381,7 +367,7 @@
     "75613": {
       "Id": 75613,
       "Name": "Water Features",
-      "Version": "14",
+      "Version": "15",
       "LoadOrder": 139,
       "IsEnabled": true
     },
@@ -399,11 +385,25 @@
       "LoadOrder": 141,
       "IsEnabled": true
     },
-    "75745": {
-      "Id": 75745,
-      "Name": "Achievement Enabler",
-      "Version": "2",
-      "LoadOrder": 142,
+    "117161": {
+      "Id": 117161,
+      "Name": "Citizen Entity Cleaner",
+      "Version": "5",
+      "LoadOrder": 2147483644,
+      "IsEnabled": true
+    },
+    "117020": {
+      "Id": 117020,
+      "Name": "Cheats",
+      "Version": "1",
+      "LoadOrder": 2147483645,
+      "IsEnabled": true
+    },
+    "117548": {
+      "Id": 117548,
+      "Name": "AchievementManager",
+      "Version": "10",
+      "LoadOrder": 2147483646,
       "IsEnabled": true
     }
   },

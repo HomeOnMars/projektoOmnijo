@@ -1,0 +1,6 @@
+PlopTheGrowables
+{
+    "SpawnedZoneDespawn": true,
+    "LockPloppedBuildings": true,
+    "NoAbandonment": true
+}
