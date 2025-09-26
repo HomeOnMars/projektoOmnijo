@@ -233,7 +233,7 @@ Using the leading digit for identifying districts and areas:
 | `λ` |  NC  | Am-U  | Am-Unukorno    | <span style="color:Thistle">█ #D8BFD8</span> |
 |     |  NC  | Mt-U  | Mt-Unukorno    | <span style="color:Thistle">█ #D8BFD8</span> |
 | `Π` |  NK  | Me-R  | Me-Racio       | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
-|     |  NK  | La-P  | La Pordego     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
+|     |  NK  | La-P  | La-Pordego     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 |     |  NK  | Dt-L  | Dt-Lumturo     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 | `Σ` |  NR  | Am-R  | Am-Racio       | |
 | ... |      |       |                | |

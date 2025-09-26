@@ -250,6 +250,27 @@ Changes of Esperanto++ from Esperanto include:
 - See also
   - [Hyphen / En dash / Em dash Guideline](https://www.sjsu.edu/writingcenter/docs/handouts/Hyphens%20Dashes.pdf).
 
+### Nomi
+
+> Naming things
+
+- Places
+  - Generally speaking,
+    start the name with the abbreviated 2-letter (or more) type classifier
+    listed in [Sigloj](../OmniCentro/Sigloj.md#mallongigoj) page.
+    (See there for some examples also.)
+  - If a place's official name have multiple word,
+    string them up with hyphens.  
+    Examples:
+    - 'Mt-Espero' as a name for a mountain;
+    - 'La-Kora-Tereno' as a name for a building;
+      <!-- Domo de la Arkitekto kaj la Ĉefinĝeniero-->
+    - 'Dt-Granda-Lumturo' as a name for a district;
+    - 'Sc-Granda-Lumturo' as the name for the transit hub in that district;
+      Alternatively, 'Dt-Granda-Lumtura Stacio' works too.  
+      This is because 'Dt-Granda-Lumtura' is one single conceptual element
+      refering to the district, and 'Stacio' as something located within it.
+
 ### Sekso
 
 > Gender
