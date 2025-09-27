@@ -123,6 +123,14 @@ $$
   \approx 9.4607_D \times 10_D^{12_D} \  \textrm{km}
 $$
 
+*hekoneUtro* (`hU`):
+
+$$
+  \textrm{hU}
+  \equiv \frac{1}{16_D} \  \textrm{U}
+  \approx 0.49078_D \  \textrm{m}
+$$
+
 Nanosvarmo scale *dunioneUtro*  (`dU`):
 
 $$
@@ -139,7 +147,7 @@ Track gauge in *RdO* for trains, metros, and trams are the same:
 
 $$
   d_\mathrm{gauge}
-  \equiv \frac{3}{16_D} \  \textrm{U}
+  \equiv 3 \  \textrm{hU}
   = 35931_D \times  2^{101_D} \  l_P
   \approx 1.4723_D \  m
 $$
@@ -153,6 +161,9 @@ Basically one of the main points of
 coming up with its own unit system in the first place.
 (The other being satisfying
 the <span style="color:Beige">Queen</span>'s OCD tendencies.)
+
+The loading gauge width in *RdO* is $6.8_H \  \textrm{hU} \approx 3.1901_D m$,
+which is 4cm wider than the usual [European loading gauge](https://en.wikipedia.org/wiki/Loading_gauge#European_standards).
 
 ### Maso
 

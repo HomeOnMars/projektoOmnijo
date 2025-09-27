@@ -414,24 +414,26 @@ selfishness, altruism, domination, pacifism, fear, hate, desire,
 power, fame, money, survival, protection, vision, or anything really —
 [*without power, you can affect nothing*](https://youtu.be/rStL7niR7gs?t=1068).”
 
-“And you think the position of the Queen would be *enough*?”
-says the King with an sarcastic undertone,
-gesturing towards himself with a bitter smile.
+“And you think the title of Queen would be *enough*?”
+says the King with an sarcastic undertone as he gestures towards himself.
 
 “I know it’s not.” for a brief moment, Serena smiles back to the King —
 not her usual smile, the one constantly on her face outside this room
-in the past few days; but a calmer, clearer, and more sincere one,
+in the past few days; but a calmer, clearer, sincerer one,
 filled with resoution.
-“But *it will be a good start*.”
+“But *it would be a good start*.”
 
 Serena curtsies to the King one last time,
 as the usual enthusiasm of a newly-discovered royal young adult
-returns to her posture as soon as she’s back on her feet again.
+returns to her posture as soon as she finishs.
 As she gracefully walks past his trusted butler while leaving the room,
 the king sighs, and calls in the butler
 who’s still gazing at Serena's back silhouette with a subtly sad expression.
 
-“Change of plans. I need you to do the following…”
+“Change of plans. I need you to do something different.”
+
+### The Queen
+
 
 ### The Clown
 

@@ -45,7 +45,7 @@ Retoj
 
 - Gradient $s$ and Curve radius $R$ limit:
 
-  |             |  max Gradient $s$ (Dx) |  min Curve radius $R$ (Dx) | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | $\theta_\mathrm{64u}$ | $\theta_\mathrm{32u}$ | $\theta_\mathrm{16u}$ | $\theta_\mathrm{8u}$ | Notes |
+  |             |  max Gradient $s$ (Dx) |  min Curve radius $R$ (Dx) | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | $\theta_\mathrm{64U}$ | $\theta_\mathrm{32U}$ | $\theta_\mathrm{16U}$ | $\theta_\mathrm{8U}$ | Notes |
   | ----------- | :-------: | :----------: | :--------: | :--------: | --- | --- | --- | --- | ----- |
   | -           |  3.7 \%   |  616m (77u)  |  130 km/h  |  60 JoĜ | $101\degree$ | $135\degree$ | $157\degree$ | $169\degree$ | |
   | -           |  5.1 \%   |  424m (53U)  |  110 km/h  |  50 JoĜ | -            | $118\degree$ | $147\degree$ | $163\degree$ | |
@@ -149,7 +149,7 @@ Arterial / Collector / Local Roads:
   | Hard Limit  |  5.5 \%  |   64m   (8U)  |   45 km/h  |  20 JoĜ | -            | -            | -            |  $90\degree$ | (Ramps only)    |
 
   - $\theta_{d}$ refers to the angle displayed when building a 2-phase curve of $d$ - $d$ in game.
-    i.e., $\theta_\mathrm{64u}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 64u.
+    i.e., $\theta_\mathrm{64U}$ is the angle displayed in game when building a curve with 1 bend and the shorter one of the two arms of the curve is at least 64U.
   - Curve radius is obtained by $R \propto v_\mathrm{max}^2$ (See [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant).)
   - Assuming tilting trains.
   - Source: (2024-08-16) [Wikipedia](https://en.wikipedia.org/wiki/Minimum_railway_curve_radius#Speed_and_cant): $R$ info
@@ -203,6 +203,8 @@ Arterial / Collector / Local Roads:
   - Assumed power consumption:
     1726hp / 1.29MW / 2⚡ per (24m/3U-long) train car —
     Dx20.6MW / Hx20⚡ for a full length train.
+  - [Track center distance](https://en.wikipedia.org/wiki/Track_spacing#Regulations):
+    Minimum 5m, suggested ≥6m.
   - Due to advanced [*regenerative braking*](https://en.wikipedia.org/wiki/Regenerative_braking) system,
     kinetic energies from trains travelling downhill
     or decelerating to stop at stations
@@ -254,7 +256,8 @@ Arterial / Collector / Local Roads:
     metros in OmniCentro are capable of (and generally are) running 24/7:
     The wide separation of the tracks
     (track center separation $\geq$ 6m for overhead-wire-powered systems;
-    $\geq$ 7m for third-rail-powered systems)
+    $\geq$ 7m for third-rail-powered systems.
+    Here I take the liberty and assume $\geq$ 6m for both.)
     allows maintenance to be done for one side of the dual tracks at night,
     while the night metro running on the other at a reduced frequency.
     Sides alternate each night.

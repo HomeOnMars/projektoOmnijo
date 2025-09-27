@@ -235,6 +235,7 @@ Changes of Esperanto++ from Esperanto include:
   - Differentiate between hyphen (linking words)
     and minus (subtracting numbers).  
     This is to help computer code differentiate variable names and operations.
+  - Use hyphen to string up words inside Proper Names.
 - ~~'–' (En dash)~~  
   When needing to use an en dash, use the below instead:
   - use a ' ‐ ' (hyphen with surrounding space)
@@ -254,22 +255,30 @@ Changes of Esperanto++ from Esperanto include:
 
 > Naming things
 
-- Places
-  - Generally speaking,
-    start the name with the abbreviated 2-letter (or more) type classifier
+- Proper Names (for places)
+  - Format 1: e.g. `Sc-Granda-Lumturo`  
+    Start the name with the abbreviated 2\~4-letter *type classifier*
     listed in [Sigloj](../OmniCentro/Sigloj.md#mallongigoj) page.
-    (See there for some examples also.)
-  - If a place's official name have multiple word,
-    string them up with hyphens.  
+    (See there for some examples also.)  
+    If the Proper Name have multiple word,
+    string them up with *hyphens*.  
     Examples:
     - 'Mt-Espero' as a name for a mountain;
     - 'La-Kora-Tereno' as a name for a building;
       <!-- Domo de la Arkitekto kaj la Ĉefinĝeniero-->
     - 'Dt-Granda-Lumturo' as a name for a district;
-    - 'Sc-Granda-Lumturo' as the name for the transit hub in that district;
+    - 'Sc-Granda-Lumturo' as the name for the transit hub in that district.
       Alternatively, 'Dt-Granda-Lumtura Stacio' works too.  
       This is because 'Dt-Granda-Lumtura' is one single conceptual element
       refering to the district, and 'Stacio' as something located within it.
+  - Format 2: e.g. `Granda-Lumtura Distrikta Stacio`  
+    Spell out everything as 'natural language'.  
+    Add hyphen within words of single conceptual elements,
+    especially if the word is not itself the name of a place.
+    This is so people know that in e.g. 'Granda-Lumtura Distrikta Stacio',
+    'Granda' is part of the name of a place called 'Granda-Lumturo',
+    instead of
+    'Granda' as an adjective describing the 'Stacio' as 'Granda' (Big).
 
 ### Sekso
 
