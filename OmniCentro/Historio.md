@@ -46,7 +46,7 @@ i.e. $\sim \frac{1}{2} \mathrm{MU}^2 \approx 130 000_D \mathrm{km}^2$ (TBD).
 <blockquote>
   "None of this was a coincidence because nothing was ever a coincidence."<br>
   <span style="color:grey">
-  --- Aaron Smith-Teller (fictional) in <cite><a href="https://unsongbook.com/chapter-1-dark-satanic-mills/">UNSONG</a></cite>
+  —— Aaron Smith-Teller (fictional) in <cite><a href="https://unsongbook.com/chapter-1-dark-satanic-mills/">UNSONG</a></cite>
   by Scott Alexander
   </span>
 </blockquote> -->
@@ -54,7 +54,7 @@ i.e. $\sim \frac{1}{2} \mathrm{MU}^2 \approx 130 000_D \mathrm{km}^2$ (TBD).
 <blockquote>
   All is not as it seems.<br>
   <span style="color:grey">
-  --- The Witcher S03E05
+  —— The Witcher S03E05
   </span>
 </blockquote>
 <br>
@@ -111,7 +111,7 @@ if were not for that tragic accident.
 How very unfortunate.
 
 [^Historio-RdO-Serena-kmt3]: \"Accident\" \(\**cough cough*\*\).
-Sarcasm aside, the king's body was never found...
+Sarcasm aside, the king's body was never found…
 
 [^Historio-RdO-Serena-kmt2]: Much like they "retired" the old king before <span style="color:Beige">Serena</span>.
 
@@ -214,7 +214,7 @@ about their own country?[^Historio-RdO-Serena-kmt4]
   and re-hired all of the new staff OVERNIGHT.
   One would be crazy to think <span style="color:Beige">she</span>
   can pull this off this time, even though she has obviously been planning
-  this mass replacement move since a long time ago...
+  this mass replacement move since a long time ago…
   But she did.<br>
   The (somehow) much more competent replacement doctors and nurses
   (who are almost entirely made out of the immigrants from
@@ -227,7 +227,7 @@ about their own country?[^Historio-RdO-Serena-kmt4]
   Not everyone bought that story though;
   and the emmigration rate reached another high point after this shenanigan.
 
-...
+…
 Or they could leave.
 Which is now easier-than-ever, by the way,
 as <span style="color:Beige">Reĝino Serena</span>
@@ -312,22 +312,22 @@ effectively buying out her own country.
   were actually "the terms and conditions should be treated as being
   what the average users think they have accepted,
   instead of what all those empty unreadible words say.",
-  This was actually not published and pushed into the law...
+  This was actually not published and pushed into the law…
   until a while later, bundled with her copy-right law reforms,
-  triggering another wave of chaos...  -->
+  triggering another wave of chaos…  -->
   Which became the law within the next day after its boardcasting.
   While rumor has that big international companies were tipped-off
   about <span style="color:Beige">Serena</span>'s announcements weeks before,
   many smaller and local companies barely had any chances
   to finish re-formating their T&C,
   especially if theirs are already (intentionally) convoluted
-  to discourage user reading...
+  to discourage user reading…
   Within days, a local lawsuit quickly catched the eye of the public,
   where a recently-appointed immigrant judge ruled in lightning speed that
   the company was in the fault, as the pages-long NO LIABILITIES cause deemed
   unreadable and voided.
   The subsequent massive increase in lawsuits following that example
-  drove many local companies into bankruptcy...
+  drove many local companies into bankruptcy…
   meaning they eventually got taken over by the `OCMF`
   in relatively good conditions.
 
@@ -348,7 +348,7 @@ And double-check everything. And triple-check. And quadruple-check.
 Yeah, the <span style="color:Beige">Queen</span> is kinda perfectionist,
 and she now has the money and the power to live out her own fantasy.
 
-[^Historio-OC-Nomo]: The level of arrogance...
+[^Historio-OC-Nomo]: The level of arrogance…
   just sound like <span style="color:Beige">Serena</span>'s handiwork.
 
 The actual design of the city, though not many care,
@@ -379,7 +379,7 @@ What if they break??
   but unfortunately they all got shot down by nearby NIMBY farmers and
   internal corruptions.
 
-... To which the <span style="color:Beige">Queen</span> simply replied:
+… To which the <span style="color:Beige">Queen</span> simply replied:
 "All of those factors would make the city look even COOLER in the end!".
 
 And then, it was so.

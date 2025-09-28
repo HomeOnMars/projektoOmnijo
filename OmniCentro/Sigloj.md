@@ -236,9 +236,9 @@ Using the leading digit for identifying districts and areas:
 |     |  NK  | La-P  | La-Pordego     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 |     |  NK  | Dt-L  | Dt-Lumturo     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 | `Σ` |  NR  | Am-R  | Am-Racio       | |
-| ... |      |       |                | |
+|  …  |      |       |                | |
 | `Ψ` |      |       | Eksteraj Konektoj  <br>Outside connections | |
-| ... |      |       |                | |
+|  …  |      |       |                | |
 | N/A |  NC  | Mt-U  | Mt-Unukornaĵo  | <span style="color:Thistle">█ #D8BFD8</span> |
 | N/A |  NR  | Mt-R  | Mt-Raciecaĵo   | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 | N/A |  NC  | Mt-A  | Mt-Asteriaĵo   | |

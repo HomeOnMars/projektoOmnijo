@@ -51,12 +51,12 @@ Enhavo
   usually care nothing for them.
   They end up seeing the mountains
   as the thing that stands between them and the world.
-  ...
+  …
   There are only two places
   where you can really feel the true magic of the mountains:
   On the plains from far away, or standing on a peak."<br>
   <span style="color:grey">
-  --- <cite><a href="https://www.apexbookcompany.com/a/blog/apex-magazine/post/mountain">Mountain (2006)</a></cite> by Liu Cixin
+  —— <cite><a href="https://www.apexbookcompany.com/a/blog/apex-magazine/post/mountain">Mountain (2006)</a></cite> by Liu Cixin
   </span>
 </blockquote>
 <br> -->
@@ -80,7 +80,7 @@ Enhavo
   To feel anger at someone, to turn your back on him:
   these are unnatural." -->
   <span style="color:grey">
-  --- Marcus Aurelius
+  —— Marcus Aurelius
   </span>
 </blockquote>
 <br>
@@ -88,7 +88,7 @@ Enhavo
   Just a puppet on a lonely string<br>
   Aw, who would ever wanna be king?<br>
   <span style="color:grey">
-  --- Viva La Vida (song) by Coldplay
+  —— Viva La Vida (song) by Coldplay
   </span>
 </blockquote>
 <br>
@@ -198,7 +198,7 @@ not really, as the vase was almost certainly bugged.
 Now, he had an excuse to throw it out.
 
 *Maybe,* he thinks,
-*she really could have been a proper Queen — if she’d had more time...*
+*she really could have been a proper Queen — if she’d had more time…*
 He shakes that thought off from his head. *Best not to get distracted.*
 
 “I’m not with General Natasha, you know,” Serena says softly,

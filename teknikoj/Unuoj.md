@@ -156,7 +156,7 @@ Yes this is incompatible with the standard gauge (Dx 1.4351 m)
 with a difference of 3.7 cm.
 This is part of Omnijo's intentional effort
 to technologically isolate itself from the rest of the world,
-without directly imposing on people's freedom...
+without directly imposing on people's freedom…
 Basically one of the main points of
 coming up with its own unit system in the first place.
 (The other being satisfying

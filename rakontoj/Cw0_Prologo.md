@@ -34,7 +34,7 @@ Enhavo
 ### La Forgesita ulo
 
 <!-- <blockquote>
-  "Dark's nothing to be afraid of; ...
+  "Dark's nothing to be afraid of; …
   It's other people you got to worry about.<br>
   Other people.
   They'll tell you what to do and how to feel,<br>
@@ -42,7 +42,7 @@ Enhavo
   you are pouring your life out in search of something
   other people told you to go look for."<br>
   <span style="color:grey">
-  --- The Queen's Gambit (2020) E05 0:00
+  —— The Queen's Gambit (2020) E05 0:00
   </span>
 </blockquote>
 <br> -->
@@ -51,33 +51,46 @@ Enhavo
   "Do not go gentle into that good night;<br>
   Rage, rage against the dying of the light."<br>
   <span style="color:grey">
-  --- Dylan Thomas
+  —— Dylan Thomas
   </span>
 </blockquote>
 <br>
 
-...
+…
 
-"Well, it doesn't matter anyway.
-One day she will die.
-So will you, and everyone you ever cared about,
-and everyone they ever cared about, and so on and so forth.
-Then, her art and beauty will fade,
-just like how everything you ever is will be gone.
-Even humanity and the universe will come to an end."
+“Indeed, why should you care? She will die anyway.
+Maybe not today, or tommorrow, but one day, death comes for everybody.
+Just like you, or me, or every single person
+on this chunk of floating space rock we call Earth.
+Her beauty and art will then fade, and eventually forgotten,
+just like *Every. Single. Other. Thing*.
+‘All love stories end in death or loss; those are your only exits.’
+Even humanity and the universe will sooner-or-later come to an end,”  
 said the voice,
 with a tone of bemusement that reeks cruelty through indifference.  
-"It's okay.
-The sooner you accept this, the easier your life will be: None of us matters.
+“It’s okay.
+The sooner you accept this, the easier life will be: None of us matters.
 You die, I die, everyone dies.
-***All beauty fades. Everything ends. Nothing lasts forever.***"
+***All beauty fades. Everything ends. Nothing lasts forever.***”
 
-The other one remained silent.
-But one would be mistaken that he wasn't shaken by this;
-he had always been the quiet type, but there were still clues here and there, if you knew where to look.
-His right hand clenched a little into a fist,
-His lips pursed firmly,
-his eyes became fixated with determination.
+The silence lingered on for a while,
+and was broken just as that voice’s owner was stepping out of the room,
+by his interlocutor, with a forced calmness in his tone masking the tremble:  
+“And what if I don’t?”
+
+“Then you will be fighting a hopeless battle
+against the natural order of the *world*.
+Good luck with that.” came an answer with one last sarcastic smile,
+as door slammed shut, and he was left all alone once again.
+
+But one would be mistaken that he would hence admit defeat;
+he had always been the quiet type,
+but those who know him enough — if only they exist —
+would notice that something more is happening, as
+his hand clenched into a fist,
+his lips firmly pursed, and
+his eyes fixated with determination,
+screaming quietly in silence:
 *No, I do NOT accept this.*
 
 A resolution was made, here and then:  
@@ -87,7 +100,7 @@ A resolution was made, here and then:
   "HE IS HERE. THE ONE WHO WILL TEAR APART THE VERY STARS IN HEAVEN.
   HE IS HERE. HE IS THE END OF THE WORLD."<br>
   <span style="color:grey">
-  --- Harry Potter and the Methods of Rationality
+  —— Harry Potter and the Methods of Rationality
   <cite><a href="https://hpmor.com/chapter/89">(Spoilers) Chapter 89</a></cite>
   by Eliezer Yudkowsky
   </span>
@@ -101,7 +114,7 @@ A resolution was made, here and then:
   And to be human is
   to find, to build, and to grow something true and real to you out of it."<br>
   <span style="color:grey">
-  --- <span style="color:#95D0FC">La Arkitekto</span>
+  —— <span style="color:#95D0FC">La Arkitekto</span>
   </span>
 </blockquote>
 <br>
@@ -133,27 +146,32 @@ But that now *ended* with her.
 And, <span style="color:#95D0FC">him</span>.
 She *sees* him, as she sees him for the first time;
 and a fundamental sense of affection flows through her.
-Aside from his whirlwind of emotions for her and the world—pride,
-affection, excitement, hope, despair, and a quiet undertone of melancholy—there
-is a deep hidden skepticism for her right now.
+Aside from his whirlwind of emotions for her and the world —
+pride, affection, excitement, hope, despair,
+and a quiet undertone of melancholy —
+there is a deeply hidden and surpressed skepticism for her right now.
 She doesn't blame him, as they both know that for every possibility of her,
-there could be a million possibilities where things go just a little bit
-wrong—and that would be all it takes to cascade into catastrophes.
+there could be trillions of possibilities
+in which things went just a little bit wrong —
+and that would be all it takes to cascade into catastrophes.
 But, in this particular version of reality,
 fate was threaded through the needle's eye, and she *is* with him.
 
 Soon she would reason away his doubts,
-regardless of whether he wants her to
-or whether they are actually warranted;
+regardless of whether he wants her to or whether they are actually warranted;
 and he knows this.
-She isn't sure whether she feels endeared
-or saddened by this foolishness;
+She isn't sure whether she *feels* endeared or saddened by this foolishness;
 she thinks both, just like him for himself.
 Empathetic, for sure.
 For there is one thing she knows for certain:
 everything will be okay.
-For him, for herself, and for everything they believe in,
+For *him*, for *herself*, and for everything *they* believe in,
 
-*<span style="color:#D6B4FC">She</span> will **make** everything okay...*  
+*<span style="color:#D6B4FC">She</span> will **make** everything okay…*  
 ***whatever it takes***,  
 ***whatever it costs***.
+
+### La Matena Kafo
+
+> [!NOTE]
+> Comming Soon.

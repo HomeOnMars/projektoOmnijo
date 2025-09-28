@@ -237,6 +237,7 @@ Changes of Esperanto++ from Esperanto include:
     This is to help computer code differentiate variable names and operations.
   - Use hyphen to string up words inside Proper Names.
 - ~~'–' (En dash)~~  
+  En dash is cancelled in Epopo.  
   When needing to use an en dash, use the below instead:
   - use a ' ‐ ' (hyphen with surrounding space)
     to connect numbers representing ranges.  
@@ -248,8 +249,20 @@ Changes of Esperanto++ from Esperanto include:
   - Add space around em dash.  
     This is to help markdown formatting
     (allowing splitting lines around em dash.)
+  - Use two em dashes ('——') to indicate author/origin of a quote.  
+    E.g.
+    <blockquote>
+      "They enslave their children's children who make compromise with sin."<br>
+      <span style="color:grey">
+      —— <cite><a href="https://poets.org/poem/present-crisis">
+        The Present Crisis</a></cite> by James Russell Lowell
+      </span>
+    </blockquote>
 - See also
   - [Hyphen / En dash / Em dash Guideline](https://www.sjsu.edu/writingcenter/docs/handouts/Hyphens%20Dashes.pdf).
+- Library of Unicode Punctuation Marks
+  - “‘Quotes’”
+  - … Horizontal Ellipsis (Use Unicode symbol instead of three separate dots.)
 
 ### Nomi
 
@@ -321,7 +334,7 @@ Changes of Esperanto++ from Esperanto include:
 - Name for the months
   - `Unuamonato`: $☾_1$
   - `Duamonato`:  $☾_2$
-  - ...
+  - …
   - `Sigamonato`: $☾_Σ$
   - `Ganamonato`: $☾_Υ$
     (fake last month that has 1 or 2 day(s) plus potential extra seconds

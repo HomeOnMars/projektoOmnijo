@@ -91,14 +91,14 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 
 [^Bulteno-RegistaraTipo]: Interviewer: "So, tell us what do you think
   the kind of government our new *RdO* governemnt *OCR* is?"
-  <br>...<br> <!-- Say Constitutional Monarchy, Think Totalitarian Regime -->
+  <br>…<br> <!-- Say Constitutional Monarchy, Think Totalitarian Regime -->
   <span style="color:#D6B4FC">La Ĉefinĝeniero de OCFI</span>:
   "As stated in the constitution, we are a *Constitutional Monarchy*,
   which has never changed
   since <span style="color:Beige">Reĝino Serena</span>'s coronation.
   As a gentle reminder, next year we are still going to vote
   for the new prime minister."
-  <br>...<br> <!-- Say Benevolent Dictatorship, Believe Constitutional Monarchy -->
+  <br>…<br> <!-- Say Benevolent Dictatorship, Believe Constitutional Monarchy -->
   <span style="color:#95D0FC">La Arkitekto de OCFI</span>:
   "I understand your concern that the
   <span style="color:Beige">Queen</span>
@@ -110,10 +110,10 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
   Just look at how much improvements have been achieved in the past 6 months
   to the lives of everyone who chose to stay!
   I would say we are a *Benevolent Dictatorship*."
-  <br>...<br> <!-- Say Totalitarian Regime, Try Benevolent Dictatorship -->
+  <br>…<br> <!-- Say Totalitarian Regime, Try Benevolent Dictatorship -->
   <span style="color:Beige">Reĝino Serena de Omnijo</span>:
   "I know many people outside our beloved island considered us
-  fallen into a *Totalitarian Regime*... and I agree!
+  fallen into a *Totalitarian Regime*… and I agree!
   Look, just yesterday I was thinking about putting together a
   universal basic income (UBI) policy for everyone on the island.
   Did I need to do any research on its effect on the economy
@@ -126,7 +126,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
   And, honestly, this absolute power feels pretty nice.
   Oh, and sorry for drop the news about UBI here.
   It's gonna happen starting next week. Now you know!"
-  <br>...<br>
+  <br>…<br>
   The public's reactions to the interview are a bit mixed.
   <!-- It certainly didn't help the emigration rate,
   which experienced a small increase after the interview was aired.
@@ -175,7 +175,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 | Department of Defence               | OCFD | Omnija Centra Fako de Defendo             |  RdO | Budget not disclosed. |
 | Department of Education and Science | OCFE | Omnija Centra Fako de Edukado kaj Scienco |  RdO | Science! (also oversees all kinds of information distribution, such as laws / policies / knowledge / public-domain-works / propaganda / `Epopo`-Education.) |
 | Department of Infrastructure        | OCFI | Omnija Centra Fako de Infrastrukturo      |  RdO | Engineering! (also oversees cities development, energy generation and distribution, and environmental protection.) |
-| Department of Justice               | OCFJ | Omnija Centra Fako de Justeco             |  RdO | Internal investigation & supreme court. Some say it's better translated as the Department of 'Alignment' rather than 'Justice'... but that's probably just jealousy talking. |
+| Department of Justice               | OCFJ | Omnija Centra Fako de Justeco             |  RdO | Internal investigation & supreme court. Some say it's better translated as the Department of 'Alignment' rather than 'Justice'… but that's probably just jealousy talking. |
 | Ministry of Foreign Affairs         | OCME | Omnija Centra Ministerio de Eksteraj Aferoj |  RdO | RdO needs PR too. |
 | Ministry of Finance                 | OCMF | Omnija Centra Ministerio de Fisko         |  RdO | Collects taxes and oversees all nationalized industries and companies, including BdO. Almost a megacorp. |
 | Ministry of Home    Affairs         | OCMI | Omnija Centra Ministerio de Internaj Aferoj |  RdO | Immigration and welfare. No citizens shall be left behind! Also oversees the distribution of the UBI (universal basic income). |
@@ -186,7 +186,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 ||||||
 | Public Radio Network                | OCRR | OmniCentra RadioReto                      | OCFE | La voĉo de Omnijo. |
 | Omnija Public Archive               | OA   | OmniArkivo                                | OCFE | Public archive for humanity's common knowledge and intellectual works, run by Omnija Central Government. Includes a user-friendly web interface. |
-| Omnija Space Program                | OKP  | Omnija Kosma Programo                     | OCFI | People thought the <span style="color:Beige">Queen</span> was joking when she said about founding a space agency... Turns out she was only half-joking. |
+| Omnija Space Program                | OKP  | Omnija Kosma Programo                     | OCFI | People thought the <span style="color:Beige">Queen</span> was joking when she said about founding a space agency… Turns out she was only half-joking. |
 | Public Transport Agency             | OPT  | Omnija Publika Transporto                 | OCFI | Transport for RdO. |
 | Central Bank                        | OCB  | Omnija Centra Banko                       | OCMF | The Central Bank of RdO, serving all banks on the island (though mostly just BdO, as other banks keep being nationalized and absorbed into it). <span style="color:Beige">Serena</span>'s economic reforms put it under the direct control of OCMF, ending its not-so-long history of indepdendency from government control. |
 | Nationalized Bank                   | BdO  | Banko de Omnijo                           | OCMF | All your finance managed in one place, funded by taxes. Security guaranteed by the central gov. Accounts are free and automatically created for all adult citizens, which are used for dispensing the UBI. Official citizen ID cards also double as BdO debit cards. Also it files taxes for you!  <br>*Warning: ALL information handled by BdO will immediately be forwarded to the central gov. This action cannot be undone.* |
