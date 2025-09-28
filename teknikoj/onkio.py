@@ -70,9 +70,9 @@ ONKIO_2_ASCII_DICT[chr(0x7d)] = chr(0x16d)    # } -> ŭ
 ONKIO_2_ASCII_DICT[chr(0x5e)] = chr(0x17d)    # ^ -> Ž
 ONKIO_2_ASCII_DICT[chr(0x7e)] = chr(0x17e)    # ~ -> ž
 ONKIO_2_ASCII_DICT[chr(0x40)] = chr(0x20)     # @ -> SPACE
-ONKIO_2_ASCII_DICT[chr(0x60)] = chr(0x2c)     # ` -> ,
+ONKIO_2_ASCII_DICT[chr(0x60)] = chr(0x2010)   # ` -> ‐  (hyphen)
 ONKIO_2_ASCII_DICT[chr(0x5f)] = chr(0x2e)     #  _  -> .
-ONKIO_2_ASCII_DICT[chr(0x7f)] = chr(0x2010)   # DEL -> ‐  (hyphen)
+ONKIO_2_ASCII_DICT[chr(0x7f)] = chr(0x2c)     # DEL -> ,
 #    Hexadecimal characters
 ONKIO_2_ASCII_DICT[chr(0x3a)] = chr(0x394)    # : -> Δ
 ONKIO_2_ASCII_DICT[chr(0x3b)] = chr(0x3bb)    # ; -> λ
