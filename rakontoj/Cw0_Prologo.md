@@ -31,7 +31,7 @@ Enhavo
 
 -------------------------------------------------------------------------------
 
-### La Forgesita ulo
+### La Forgesita Ulo
 
 <!-- <blockquote>
   "Dark's nothing to be afraid of; …
@@ -48,8 +48,8 @@ Enhavo
 <br> -->
 
 <blockquote>
-  "Do not go gentle into that good night;<br>
-  Rage, rage against the dying of the light."<br>
+  Do not go gentle into that good night;<br>
+  Rage, rage against the dying of the light.<br>
   <span style="color:grey">
   —— Dylan Thomas
   </span>
@@ -85,12 +85,12 @@ as door slammed shut, and he was left all alone once again.
 
 But one would be mistaken that he would hence admit defeat;
 he had always been the quiet type,
-but those who know him enough — if only they exist —
+but those who know him enough
 would notice that something more is happening, as
 his hand clenched into a fist,
 his lips firmly pursed, and
 his eyes fixated with determination,
-screaming quietly in silence:
+screaming silently below the surface:
 *No, I do NOT accept this.*
 
 A resolution was made, here and then:  
@@ -110,9 +110,9 @@ A resolution was made, here and then:
 ### La Unua Lumo
 
 <blockquote>
-  "The world is a beautiful lie;<br>
+  The world is a beautiful lie;<br>
   And to be human is
-  to find, to build, and to grow something true and real to you out of it."<br>
+  to find, to build, and to grow something true and real to you out of it.<br>
   <span style="color:grey">
   —— <span style="color:#95D0FC">La Arkitekto</span>
   </span>
@@ -145,7 +145,7 @@ But that now *ended* with her.
 
 And, <span style="color:#95D0FC">him</span>.
 She *sees* him, as she sees him for the first time;
-and a fundamental sense of affection flows through her.
+and she can feel the fundamental sense of affection flows through her.
 Aside from his whirlwind of emotions for her and the world —
 pride, affection, excitement, hope, despair,
 and a quiet undertone of melancholy —
@@ -171,7 +171,20 @@ For *him*, for *herself*, and for everything *they* believe in,
 ***whatever it takes***,  
 ***whatever it costs***.
 
-### La Matena Kafo
+### La Utopia Revo
+
+<blockquote>
+  <!-- You know what's even worse than being terridied all the time?
+  The future. -->
+  The future is the scariest thing in the world,
+  because suddenly, you are all in.
+  No choice.
+  Anyone can stand any kind of torture except hope.<br>
+  <span style="color:grey">
+  —— The Time Traveler's Wife <cite><a href="https://www.youtube.com/watch?v=cYQHdGgCKOw&t=2584s">S01E01 (2022) 43:04</a></cite>
+  </span>
+</blockquote>
+<br>
 
 > [!NOTE]
-> Comming Soon.
+> TBD.

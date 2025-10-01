@@ -241,18 +241,21 @@ Changes of Esperanto++ from Esperanto include:
   When needing to use an en dash, use the below instead:
   - use a ' ‐ ' (hyphen with surrounding space)
     to connect numbers representing ranges.  
-    E.g. "2024 - 2025".
+    E.g. "During 2024 - 2025, the city finished its planning phase."
   - use '—' (Em dash with *no* surrounding space)
-    to connect multi-words adjectives.  
-    E.g. "Nobel prize—winning scientist".
+    to connect multi-words adjectives.
+    Remember to string up those multi-words adjectives with '‐' (hyphen),
+    so readers are not confused with how many words exactly are concerned.  
+    E.g. "She is a brilliant Nobel‐prize—winning scientist."
 - '—' (Em dash)
-  - Add space around em dash.  
+  - **Add spaces around em dash**.  
     This is to help markdown formatting
     (allowing splitting lines around em dash.)
-  - Use two em dashes ('——') to indicate author/origin of a quote.  
+  - Use two em dashes ('——') with trailing space
+    to indicate author/origin of a quote.  
     E.g.
     <blockquote>
-      "They enslave their children's children who make compromise with sin."<br>
+      They enslave their children's children who make compromise with sin.<br>
       <span style="color:grey">
       —— <cite><a href="https://poets.org/poem/present-crisis">
         The Present Crisis</a></cite> by James Russell Lowell

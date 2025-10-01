@@ -61,11 +61,11 @@ Enhavo
 </blockquote>
 <br> -->
 <blockquote>
-  "When you wake up in the morning, tell yourself:
+  When you wake up in the morning, tell yourself:
   the people I deal with today will be
   meddling, ungrateful, arrogant, dishonest, jealous and surly.
   <em>They are like this
-  because they cannot tell good from evil</em>."<br>
+  because they cannot tell good from evil</em>.<br>
   <!-- "But I have seen the beauty of good, and the ugliness of evil,
   and have recognized that
   the wrongdoer has a nature related to my own-

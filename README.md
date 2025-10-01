@@ -9,7 +9,8 @@ Documents, settings and stories for my worldbuilding exercise
 set in the fictional country of *la Regno de Omnijo*.
 It began as a background story I wrote for my Cities: Skylines 2 city
 *OmniCentro*
-([PDX Mod link here](https://mods.paradoxplaza.com/mods/97163/Any)),
+([PDX Mod link](https://mods.paradoxplaza.com/mods/97163/Any);
+[My other documentations](OmniCentro.md)),
 but ballooned into something more.
 
 ![RdO emblem](fig/RdOFlago.svg)
@@ -45,9 +46,9 @@ See individual file headers for details.
 -------------------------------------------------------------------------------
 
 > [!WARNING]
-> ***Do NOT fork the `alpha` branch***!  
-> That is intended as a synced scratch pad for the author alone.
-> Commits there are subject to be combined/deleted without notice.
+> The `alpha` branch is intended to be a synced scratch pad for myself alone.  
+> **Please do NOT fork the *alpha* branch**, as
+> commits there could be combined/deleted without notice.
 
 Contents
 -------------------------------------------------------------------------------
