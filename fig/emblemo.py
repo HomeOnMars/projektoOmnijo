@@ -15,10 +15,10 @@ To view a copy of this license, visit <https://creativecommons.org/licenses/by-n
 
 # imports (built-in)
 from os.path import sep
-from math import sqrt, pi, sin, cos, tan, acos
 from collections.abc import Callable
 # imports (3rd party)
 import numpy as np
+from numpy import sqrt, pi, sin, cos, tan, asin, acos, atan
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 from matplotlib.axes import Axes
@@ -26,8 +26,8 @@ from matplotlib.lines import Line2D
 mpl.use('svg')
 
 # params
-PHI : float = (sqrt(5)+1)/2    # golden ratio
-PHI_INV : float = PHI - 1
+# PHI : float = (sqrt(5)+1)/2    # golden ratio
+# PHI_INV : float = PHI - 1
 KOLOROJ : dict[str, str] = {
     # see also: <https://xkcd.com/color/rgb/>
     'O' : '#E6DAA6',  # Beige  E6DAA6 / Gold  FFD700 / Silver  C0C0C0
@@ -42,13 +42,36 @@ KOLOROJ : dict[str, str] = {
 colors_dict = KOLOROJ.copy()
 
 # funcs
-# theta units convert (hex -> deg)
-def t(theta: float) -> float:
-    """Convert angle from hex to deg."""
-    return theta*(360/16)
-def ts(theta1: float, theta2: float) -> tuple[float, float]:
-    """Convert angles from hex to deg."""
-    return (t(theta1), t(theta2))
+#   angle conversion
+# #   theta units convert (hex -> deg)
+# def t(theta: float) -> float:
+#     """Convert angle from hex to deg."""
+#     return theta*(360/16)
+# def ts(theta1: float, theta2: float) -> tuple[float, float]:
+#     """Convert angles from hex to deg."""
+#     return (t(theta1), t(theta2))
+
+sin_deg = lambda ang: sin(ang/180*pi)
+cos_deg = lambda ang: cos(ang/180*pi)
+tan_deg = lambda ang: tan(ang/180*pi)
+
+def asin_deg(ratio) -> float:
+    """asin, returns in [-90, 90]"""
+    return asin(ratio) / pi * 180
+
+def acos_deg(ratio) -> float:
+    """acos, returns in [0, 180]"""
+    return acos(ratio) / pi * 180
+
+def atan_deg(ratio) -> float:
+    """atan, returns in [-90, 90]"""
+    return atan(ratio) / pi * 180
+
+# def acos_degs(*args) -> tuple[float, float]:
+#     return tuple([acos_deg(ratio) for ratio in args])
+
+# def atan_degs(*args) -> tuple[float, float]:
+#     return tuple([atan_deg(ratio) for ratio in args])
 
 #------------------------------------------------------------------------------
 
@@ -60,8 +83,8 @@ def draw_arc(
     center : tuple[float, float] = (0., 0.),
     angle  : float = 0.,
     color  : None = None,
-    linewidth_fac: float = PHI_INV/8, #11/128,
-    linewidth_unit: float = 144.,    # 144 will leave no gap (== 1.0 in the ax coordinate system)
+    linewidth_fac: float = 10/128,  # halfwidth*16 for 1/16 gap
+    linewidth_unit: float = 144.,   # 144 will leave no gap (== 1.0 in the ax coordinate system)
     **kwargs,
 ) -> list[mpl.patches.Arc]:
     """Draw an arc in ax."""
@@ -91,7 +114,7 @@ def draw_hat(
     angle  : float = 0.,      # the rotation of the whole system
     theta  : float = 120.,    # the 'openness' of the hat
     color  : None = None,
-    linewidth_fac: float = PHI_INV/8, #11/128,
+    linewidth_fac: float = 10/128,
     linewidth_unit: float = 144,    # 144 will leave no gap (== 1.0 in the ax coordinate system)
     **kwargs,
 ) -> list[Line2D]:
@@ -241,7 +264,8 @@ class Emblemo:
         self.fig = None
         self.ax  = None
         self.name: str = name
-        self.scale_y: float = 256/400
+        # scale_y: 1.0 => 400px x 400px; 240/400 => height is 240px
+        self.scale_y: float = 240/400
         self.ratio_xy: float = 1.
         self.colors: dict[str, str] = colors.copy()
         if name:
@@ -268,7 +292,7 @@ class Emblemo:
 
     def init_figax(
         self,
-        scale_y: float,    # = 256/400,
+        scale_y: float,    # = 240/400,
         ratio_xy: float = 1.,
         xlim: tuple[float, float] = (-1., 1.),
         ylim: tuple[float, float] = (-1., 1.),
@@ -306,10 +330,64 @@ class Emblemo:
 
 
 
+    # components
+
+    def _draw_O(self, radius=11/16, color=None, **kwargs):
+        if color is None: color = self.colors['O']
+        draw_arc(
+            self.ax, self.scale, radius=radius, thetas=( # ts( 5.5, 19.50)),
+                atan_deg(-9/6) + 180,
+                atan_deg( 9/2) + 360,),
+            color=color, **kwargs)
+        return self
+    
+    def _draw_C(self, radius=9/16,  color=None, **kwargs):
+        if color is None: color = self.colors['C']
+        draw_arc(
+            self.ax, self.scale, radius=radius, thetas=( # ts( 2.25, 14.25)),
+                atan_deg( 9/9),
+                atan_deg(-9/9) + 360,),
+            color=color, **kwargs)
+        return self
+    
+    def _draw_G(self, radius=7/16,  color=None, **kwargs):
+        if color is None: color = self.colors['G']
+        ang = atan_deg(-9/9)+360
+        center_tg3 = (cos_deg(ang)*radius/2, sin_deg(ang)*radius/2)
+        center_tg3 = (    # shift a little to remove the white gap in-between
+            center_tg3[0] + center_tg3[1]/128,
+            center_tg3[1] - center_tg3[0]/128)
+        draw_arc(
+            self.ax, self.scale, radius=radius, thetas=( atan_deg( 9/9), ang, ),
+            color=color, **kwargs)
+        draw_arc(
+            self.ax, self.scale, radius=[radius/2, radius/8*5], thetas=(0, 180),
+            center=center_tg3, angle=ang, color=color, **kwargs)
+        return self
+
+    def _draw_R(
+        self, radius=14/16, linewidth_fac=10/128, R_h=None, angle=None,
+        color=None, **kwargs):
+        if color is None: color = self.colors['O']
+        halfwid = linewidth_fac
+        if angle is None:
+            if R_h is not None:
+                angle = asin_deg(R_h / (radius + halfwid))
+            else:
+                raise ValueError("Please supply R's height in R_h input par.")
+        draw_arc(
+            self.ax, self.scale, radius=radius, thetas=(angle, -angle),
+            color=color, linewidth_fac=halfwid, **kwargs)
+        return self
+
+
+
+    # set as
+
     def _set_as_RdO(
         self,
         # size of the drawing pad
-        scale: float = 256/400,    # 1.0 => 400px x 400px
+        scale: float = 240/400,    # 1.0 => 400px x 400px
     ):
         """Draw the RdO emblem."""
 
@@ -318,16 +396,9 @@ class Emblemo:
         return self
 
     def _draw_RdO(self):
-        # --- arcs
-        # draw O
-        draw_arc(
-            self.ax, self.scale, radius=11/16, thetas=ts( 5.5, 19.50),
-            color=self.colors['O'], linewidth_fac=16/128, zorder=0x1001)
-        # draw R
-        # 2.36 = 4 - acos(cos((4-3.5)/8*pi)*11/13.5)/pi*8
-        draw_arc(
-            self.ax, self.scale, radius=14/16, thetas=ts( 2.5, -2.5),
-            color=self.colors['O'], linewidth_fac=16/128, zorder=0x1000)
+        # 16/128  21/(9*16) ~ 18.667
+        self._draw_O(linewidth_fac=18/128, zorder=0x1001)
+        self._draw_R(angle=atan_deg(9/6), linewidth_fac=18/128, zorder=0x1000)
         return self
 
 
@@ -348,7 +419,7 @@ class Emblemo:
         ax = self.ax
 
         # --- background
-        dx = tan((t(5.5)-90)/180*pi)  # slash position changes (half)
+        dx = 6/9  # slash position changes (half) # tan_deg(atan_deg(-9/6)+90)
         ddx = 68/256 * 2.0            # color transition band width
         dx0 = 8/4096 # + ddx/8       # dx bias
         ax.add_patch(
@@ -426,41 +497,21 @@ class Emblemo:
     def _set_as_OCG(
         self,
         # size of the drawing pad
-        scale: float = 256/400,    # 1.0 => 400px x 400px
+        scale: float = 240/400,    # 1.0 => 400px x 400px
     ):
         """Draw the OCG emblem."""
 
         self.init_figax(scale)
-        ax = self.ax
-
-        # params for G
-        t_g_2, r_g_1 = 14, 7/16
         # --- arcs
-        # draw O
-        draw_arc(
-            ax, scale, radius=11/16, thetas=ts( 5.50, 19.50),
-            color=self.colors['O'])
-        # draw C
-        draw_arc(
-            ax, scale, radius= 9/16, thetas=ts( 2.25, 14.25),
-            color=self.colors['C'])
-        # draw G
-        draw_arc(
-            ax, scale, radius=r_g_1, thetas=ts( 2.25, t_g_2),
-            color=self.colors['G'])
-        center_tg3 = (cos(t_g_2/8*pi)*r_g_1/2, sin(t_g_2/8*pi)*r_g_1/2)
-        center_tg3 = (    # shift a little to remove the white gap in-between
-            center_tg3[0] + center_tg3[1]/128,
-            center_tg3[1] - center_tg3[0]/128)
-        draw_arc(ax, scale, radius=[r_g_1/2, r_g_1/8*5], thetas=ts(0, 8),
-                center=center_tg3, angle=t(t_g_2), color=self.colors['G'],
-        )
+        self._draw_O()
+        self._draw_C()
+        self._draw_G()
         # --- hats
-        a = draw_hat(ax, scale, radius=14.5/16, length=9/16,
-                angle=t(4), theta=t(50/9), color=self.colors['x0'])
+        a = draw_hat(self.ax, self.scale, radius=14.5/16, length=9/16,
+                angle=90, theta=128, color=self.colors['x0'])
         for i in range(1, 3):
-            draw_hat(ax, scale, radius=15/16, length=7/16,
-                    angle=t(4+i*16/3), color=self.colors[f'x{i}'])
+            draw_hat(self.ax, self.scale, radius=15.25/16, length=7/16,
+                    angle=90+120*i, color=self.colors[f'x{i}'])
         return self
 
 
@@ -468,33 +519,26 @@ class Emblemo:
     def _set_as_OCR(
         self,
         # size of the drawing pad
-        scale: float = 256/400,    # 1.0 => 400px x 400px
+        scale: float = 240/400,    # 1.0 => 400px x 400px
     ):
         """Draw the OCR emblem."""
 
         self.init_figax(scale)
-        ax = self.ax
 
         # --- arcs
-        # draw O
-        draw_arc(
-            ax, scale, radius=11/16, thetas=ts( 5.50, 19.50),
-            color=self.colors['O'])
-        # draw C
-        draw_arc(
-            ax, scale, radius= 9/16, thetas=ts( 2.25, 14.25),
-            color=self.colors['C'])
+        self._draw_O()
+        self._draw_C()
         # draw R
         draw_arc(
-            ax, scale, radius=6.75/16, thetas=ts(  4.0, -5.0 ),
-            color=self.colors['R'], linewidth_fac=(PHI_INV*1.5)/8)
+            self.ax, self.scale, radius=6.75/16, thetas=(90, -112.5),
+            color=self.colors['R'], linewidth_fac=15/128)
 
 
 
     def _set_as_OCRR(
         self,
         # size of the drawing pad
-        scale: float = 256/400,    # 1.0 => 400px x 400px
+        scale: float = 240/400,    # 1.0 => 400px x 400px
     ):
         """Draw the OCRR emblem."""
 
@@ -502,23 +546,22 @@ class Emblemo:
         ax = self.ax
 
         # --- arcs
-        # draw O
-        draw_arc(
-            ax, scale, radius=11/16, thetas=ts( 5.50, 19.50),
-            color=self.colors['x0'], linewidth_fac=14/128)
-        # draw C
-        draw_arc(
-            ax, scale, radius= 8/16, thetas=ts( 2.25, 14.25),
-            color=self.colors['Radio'], linewidth_fac=16/128)
+        #    wid is half line width
+        O_rad, O_wid = 11/16, 18/128
+        self._draw_O(
+            radius=O_rad, color=self.colors['x0'],   linewidth_fac=O_wid)
+        self._draw_C(
+            radius=8/16, color=self.colors['Radio'], linewidth_fac=18/128)
         # draw R
-        # 2.24 = 4 - acos(cos((4-3.5)/8*pi)*11/14)/pi*8
-        draw_arc(
-            ax, scale, radius=13.75/16, thetas=ts( 2.25, -2.25),
-            color=self.colors['x2'], linewidth_fac=15/128)
-        # 1.69 = 4 - acos(cos((4-3.5)/8*pi)*11/17.5)/pi*8
-        draw_arc(
-            ax, scale, radius=16.75/16, thetas=ts( 1.8, -1.8),
-            color=self.colors['x1'], linewidth_fac=16/128)
+        #   depends on _draw_O angle
+        R_h = sin(atan( 3/1)) * (O_rad + O_wid)
+        # R_h = O_rad + O_wid
+        self._draw_R(
+            R_h=R_h, radius=14/16, linewidth_fac=18/128,
+            color=self.colors['x2'])
+        self._draw_R(
+            R_h=R_h, radius=17/16, linewidth_fac=18/128,
+            color=self.colors['x1'])
 
 
 
