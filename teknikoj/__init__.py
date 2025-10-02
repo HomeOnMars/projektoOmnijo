@@ -29,4 +29,10 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” 
 
 from . import onkio, unuoj, retoj
 from .onkio import ONKIO
-from .unuoj import *
+from .unuoj import (
+    np, units,
+    ASCIIIFY, Hx, Tx, presi_Hx, presi_Tx,
+    factorize, theta_deg, get_R,
+    u, konst, u_rdo, u_nat, u_csl,
+    Datotempo, TeraLoko, LOKOJ,
+)

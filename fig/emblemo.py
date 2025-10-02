@@ -409,7 +409,7 @@ class Emblemo:
         # scale_y: 1.0 => 400px x 400px; 225/400 => height is 225px
         scale_y: float = 225/400, # 2160/400
         ratio_xy: float = 16/9,
-        offset_x: float = 22/256,
+        offset_x: float = 1.5/16,
     ):    # plot
         """Draw the RdO Flag."""
 

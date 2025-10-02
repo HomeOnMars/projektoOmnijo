@@ -235,7 +235,7 @@ def presi_Hx(
 
     ans = "" if sign else "-"
     if grandordo < 0 and not e_sep:
-        ans += "0."
+        ans += symbols_inv[0] + d_sep + symbols_inv[0]*(-grandordo-1) # "0.0*"
 
     for i in range(sc if e_sep else max(grandordo+1, sc)):
         
@@ -422,9 +422,13 @@ u_rdo_base['xdim'] = units.def_unit(
     # chr(0x332): underscore before char
     [chr(0x332), 'Nuo'], 1 * units.dimensionless_unscaled,
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
-u_rdo_base['Byte'] = units.def_unit(
+u_rdo_base['byte'] = units.def_unit(
     ['Bit', 'Bito'], 1 * units.bit,
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
+u_rdo_base['mono'] = units.def_unit(    # currency
+    ['🪙', 'Sejro'], format={'latex': r' 🪙 '},
+    prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
+
 # mask units with the same names as SI
 _UNITS_MASK_SET = {
     'sp',
@@ -470,7 +474,11 @@ u_csl_base['angl'] = u_csl_defs['deg']   = units.deg
 
 
 # derive more units
+_BASEUNITS_TYPES_BASE = (
+    'dist', 'mass', 'time', 'temp', 'char',
+    'angl', 'byte', 'mono')
 def normalize(u: dict[str, units.UnitBase]) -> dict[str, units.UnitBase]:
+    """Derive more units"""
     # derived units
     u['speed']  = u['dist'] / u['time']
     u['accel']  = u['dist'] / u['time']**2
@@ -571,10 +579,6 @@ units.def_unit(
 units.def_unit(
     ['⚡', 'MLu', 'MuniLumro'], 0x10000 * u_rdo_defs['Lu'],
     namespace=u_rdo_defs)
-#    currency
-units.def_unit(
-    ['🪙', 'Sejro'], format={'latex': r' 🪙 '},
-    namespace=u_rdo_defs)
 #    dimless
 units.def_unit(
     ['ⅎ', 'Projento'], u_rdo_defs['Nuo'] / 0x100,
@@ -630,6 +634,9 @@ class Unuoj:
         self._defs_masked = {
             k: v for k, v in self._defs.items() if v not in self._UNITS_MASK}
 
+    def __repr__(self):
+        return "\n".join([f"{k+':':8}{v}" for k, v in self._base.items()])
+
     def enable_equivalencies(self):
         return units.set_enabled_equivalencies(equivalencies_temperature)
     
@@ -647,9 +654,41 @@ u_nat = unitsNat = Unuoj(u_nat_base, u_nat_defs)
 u_csl = unitsCSL = Unuoj(u_csl_base, u_csl_defs)
 u = Unuoj(u_rdo_base, u_rdo_defs | u_nat_defs | u_si_defs | u_csl_defs)
 
-# track gauges
-reldistanco_std = (4*units.imperial.foot + 8.5 * units.imperial.inch).si
-reldistanco_rdo = 3 * u.hU
+# 'bases' var required for astropy unit conversion to_system() method
+bases = tuple([
+    u_rdo._base[t] for t in _BASEUNITS_TYPES_BASE if t in u_rdo._base])
+    # tuple([it for k, it in u_rdo_defs.items()]) #
+# units obj in bases required as well
+for it in bases:
+    globals()[f"unuoj_{it.name.translate(ASCIIIFY)}"] = it
+
+
+
+
+
+
+# === Constants ===
+
+
+
+class Konstantoj:
+    def __init__(self):
+        pass
+
+    # get astropy constants
+    for ak in {'hbar', 'G', 'c', 'k_B', 'e'}:
+        globals()[ak] = getattr(const, ak)
+
+    paperdim_A4 = [210, 297] * units.mm
+    @classmethod
+    def paperdim_A(cls, n: int):
+        return [2**(-0.25-n/2), 2**(0.25-n/2)] * units.m
+
+    # track gauges
+    reldistanco_std = (4*units.imperial.foot + 8.5 * units.imperial.inch).si
+    reldistanco_rdo = 3 * u.hU
+
+konst = Konstantoj()
 
 
 
@@ -1079,7 +1118,6 @@ LOKOJ['RdO'] = LOKOJ['OC']
 
 
 
-
 # === Testing and Debug ===
 
 
@@ -1094,8 +1132,8 @@ if __name__ == '__main__':
         f"{k:4} unit: {(1*u_rdo_base[k]).si:8.6f} \t [naturalUnit: {(1*v).si:.4e}]"
         for k, v in u_nat_base.items()]))
     print()
-    print(f"dist: {reldistanco_std = :7.4f} is {reldistanco_std.to(u_rdo_base['dist']):7.5f}")
-    print(f"dist: {reldistanco_rdo.si   = :7.4f} is {reldistanco_rdo.to(u_rdo_base['dist']):7.5f}")
+    print(f"dist: {konst.reldistanco_std = :7.4f} is {konst.reldistanco_std.to(u_rdo_base['dist']):7.5f}")
+    print(f"dist: {konst.reldistanco_rdo.si   = :7.4f} is {konst.reldistanco_rdo.to(u_rdo_base['dist']):7.5f}")
     print(f"temp: {temp_refs_C} is {temp_refs_K}, which is {temp_refs_K.to(u_rdo_base['temp'])} ")
 
     # sidereal year <https://en.wikipedia.org/wiki/Sidereal_year> (2025-02-28)

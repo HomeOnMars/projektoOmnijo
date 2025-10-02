@@ -94,41 +94,41 @@ Changes of Esperanto++ from Esperanto include:
       |  X  | X-     | ~~—~~ |
       |  Ž  | Zh-    | ~~—~~ |
       ||||
-      |  a  | -a     | |
+      | a   | -a     | |
       | aj  | -ai    | **I** |
       | an  | -an    | |
       | aŭn | -ang   | |
       | aŭ  | -ao    | n**ow** |
-      |  e  | -e     | |
+      | e   | -e     | |
       | ej  | -ei    | **A** |
       | en  | -en    | |
       | eŭn | -eng   | |
       | er  | -er    | |
       | eŭ  | ~~—~~  | **L** |
-      |  i  | -i     | |
+      | i   | -i     | |
       | in  | -in    | |
       | iŭn | -ing   | |
       | ja  | -ia    | |
       | jan | -ian   | |
-      |jaŭn | -iang  | |
+      | jaŭn| -iang  | |
       | jaŭ | -iao   | |
       | je  | -ie    | |
-      |joŭn | -iong  | |
+      | jon | -iong  | |
       | joŭ | -iu    | |
       | jŭu | -ü     | |
       |jŭan | -üan   | |
       | jŭe | -üe    | |
       | jun | -ün    | |
-      |  o  | -o     | |
+      | o   | -o     | |
       | oj  | ~~—~~  | j**oy** |
       | oŭn | -ong   | |
       | oŭ  | -ou    | **O** |
-      |  u  | -u     | |
+      | u   | -u     | |
       | uj  | ~~—~~  | ch**ewy** |
       | ŭa  | -ua    | |
       | ŭaj | -uai   | |
       | ŭan | -uan   | |
-      |ŭaŭn | -uang  | |
+      | ŭaŭn| -uang  | |
       | ŭej | -ui    | |
       | ŭen | -un    | |
       | ŭo  | -uo    | |
