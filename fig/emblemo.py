@@ -83,7 +83,7 @@ def draw_arc(
     center : tuple[float, float] = (0., 0.),
     angle  : float = 0.,
     color  : None = None,
-    linewidth_fac: float = 10/128,  # halfwidth*16 for 1/16 gap
+    linewidth_fac: float = 12/128,  # halfwidth*16 for 1/16 gap
     linewidth_unit: float = 144.,   # 144 will leave no gap (== 1.0 in the ax coordinate system)
     **kwargs,
 ) -> list[mpl.patches.Arc]:
@@ -114,7 +114,7 @@ def draw_hat(
     angle  : float = 0.,      # the rotation of the whole system
     theta  : float = 120.,    # the 'openness' of the hat
     color  : None = None,
-    linewidth_fac: float = 10/128,
+    linewidth_fac: float = 12/128,
     linewidth_unit: float = 144,    # 144 will leave no gap (== 1.0 in the ax coordinate system)
     **kwargs,
 ) -> list[Line2D]:
@@ -366,7 +366,7 @@ class Emblemo:
         return self
 
     def _draw_R(
-        self, radius=14/16, linewidth_fac=10/128, R_h=None, angle=None,
+        self, radius=14/16, linewidth_fac=12/128, R_h=None, angle=None,
         color=None, **kwargs):
         if color is None: color = self.colors['O']
         halfwid = linewidth_fac
@@ -409,7 +409,9 @@ class Emblemo:
         # scale_y: 1.0 => 400px x 400px; 225/400 => height is 225px
         scale_y: float = 225/400, # 2160/400
         ratio_xy: float = 16/9,
-        offset_x: float = 1.5/16,
+        offset_x: float = 1/16, #1.5/16,
+                                # 1.5/16 to center the curves;
+                                # 0 to center the division line
     ):    # plot
         """Draw the RdO Flag."""
 
@@ -531,7 +533,7 @@ class Emblemo:
         # draw R
         draw_arc(
             self.ax, self.scale, radius=6.75/16, thetas=(90, -112.5),
-            color=self.colors['R'], linewidth_fac=15/128)
+            color=self.colors['R'], linewidth_fac=16/128)
 
 
 
@@ -571,7 +573,9 @@ if __name__ == '__main__':
     Emblemo("OCRR").save()
     Emblemo("RdO").save()
     Emblemo("RdOFlago").save()
-    Emblemo("RdOFlago", scale_y=2160/400, ratio_xy=1.0).save(
+    Emblemo("RdOFlago", scale_y=2160/400, ratio_xy=1/1).save(
         "RdOFlago.emb", [".png"])
     Emblemo("RdOFlago", scale_y=2160/400).save(
         "RdOFlago.plen", [".png"])
+    Emblemo("RdOFlago", scale_y=2160/400, ratio_xy=5/3).save(
+        "RdOFlago.x5y3")
