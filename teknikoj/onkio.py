@@ -3,7 +3,7 @@
 
 """
 ONKIO table and ASCII table generation.
-ONKIO: Omnija Norma Kodo por Informo-Interŝanĝo,
+ONKIO: Omnija Norma Kodo por Informo-interŝanĝO,
 i.e. a fictional ASCII-equivalent table for Esperanto/E++.
 (ASCII: American Standard Code for Information Interchange.)
 
@@ -49,93 +49,163 @@ MARKDOWN_ESCAPABLES : set = {
     '{', '}', '[', ']', '<', '>' , '(', ')', '@',
 }
 
-# Translate ONKIO char to ASCII char
-ONKIO_2_ASCII_DICT = {chr(ascii_c): chr(ascii_c) for ascii_c in range(128)}
-# Differences
-#    Letters
-ONKIO_2_ASCII_DICT[chr(0x57)] = chr(0x245)    # W -> Ʌ
-ONKIO_2_ASCII_DICT[chr(0x77)] = chr(0x28c)    # w -> ʌ
-ONKIO_2_ASCII_DICT[chr(0x59)] = chr(0x16c)    # Y -> Ŭ
-ONKIO_2_ASCII_DICT[chr(0x79)] = chr(0x16d)    # y -> ŭ
-ONKIO_2_ASCII_DICT[chr(0x5b)] = chr(0x108)    # [ -> Ĉ
-ONKIO_2_ASCII_DICT[chr(0x7b)] = chr(0x109)    # { -> ĉ
-ONKIO_2_ASCII_DICT[chr(0x5c)] = chr(0x11c)    # \ -> Ĝ
-ONKIO_2_ASCII_DICT[chr(0x7c)] = chr(0x11d)    # | -> ĝ
-ONKIO_2_ASCII_DICT[chr(0x5d)] = chr(0x134)    # ] -> Ĵ
-ONKIO_2_ASCII_DICT[chr(0x7d)] = chr(0x135)    # } -> ĵ
-ONKIO_2_ASCII_DICT[chr(0x5e)] = chr(0x15c)    # ^ -> Ŝ
-ONKIO_2_ASCII_DICT[chr(0x7e)] = chr(0x15d)    # ~ -> ŝ
-ONKIO_2_ASCII_DICT[chr(0x40)] = chr(0x20)     # @ -> SPACE
-ONKIO_2_ASCII_DICT[chr(0x60)] = chr(0x2010)   # ` -> ‐  (hyphen)
-ONKIO_2_ASCII_DICT[chr(0x5f)] = chr(0x2e)     #  _  -> .
-ONKIO_2_ASCII_DICT[chr(0x7f)] = chr(0x2c)     # DEL -> ,
-#    Hexadecimal characters
-ONKIO_2_ASCII_DICT[chr(0x3a)] = chr(0x394)    # : -> Δ
-ONKIO_2_ASCII_DICT[chr(0x3b)] = chr(0x3bb)    # ; -> λ
-ONKIO_2_ASCII_DICT[chr(0x3c)] = chr(0x3a0)    # < -> Π
-ONKIO_2_ASCII_DICT[chr(0x3d)] = chr(0x3a3)    # = -> Σ
-ONKIO_2_ASCII_DICT[chr(0x3e)] = chr(0x3a5)    # > -> Υ
-ONKIO_2_ASCII_DICT[chr(0x3f)] = chr(0x3a8)    # ? -> Ψ
-#     Punctuation & Symbols
-ONKIO_2_ASCII_DICT[chr(0x10)] = chr(0x5c)    # 0x10 -> \
-ONKIO_2_ASCII_DICT[chr(0x11)] = chr(0x7b)    # 0x11 -> {
-ONKIO_2_ASCII_DICT[chr(0x12)] = chr(0x7c)    # 0x12 -> |
-ONKIO_2_ASCII_DICT[chr(0x13)] = chr(0x7d)    # 0x13 -> }
-ONKIO_2_ASCII_DICT[chr(0x14)] = chr(0x7e)    # 0x14 -> ~
-ONKIO_2_ASCII_DICT[chr(0x15)] = chr(0x60)    # 0x15 -> `
-ONKIO_2_ASCII_DICT[chr(0x16)] = chr(0x5e)    # 0x16 -> ^
-ONKIO_2_ASCII_DICT[chr(0x17)] = chr(0x40)    # 0x17 -> @
-ONKIO_2_ASCII_DICT[chr(0x18)] = chr(0x5b)    # 0x18 -> [
-ONKIO_2_ASCII_DICT[chr(0x19)] = chr(0x5d)    # 0x19 -> ]
-ONKIO_2_ASCII_DICT[chr(0x1a)] = chr(0x3a)    # 0x1a -> :
-ONKIO_2_ASCII_DICT[chr(0x1b)] = chr(0x3b)    # 0x1b -> ;
-ONKIO_2_ASCII_DICT[chr(0x1c)] = chr(0x3c)    # 0x1c -> <
-ONKIO_2_ASCII_DICT[chr(0x1d)] = chr(0x3d)    # 0x1d -> =
-ONKIO_2_ASCII_DICT[chr(0x1e)] = chr(0x3e)    # 0x1e -> >
-ONKIO_2_ASCII_DICT[chr(0x1f)] = chr(0x3f)    # 0x1f -> ?
-ONKIO_2_ASCII_DICT[chr(0x20)] = chr(0x5f)    # SPACE -> _
-ONKIO_2_ASCII_DICT[chr(0x2c)] = chr(0x214e)  # , -> ⅎ  (projento)
-ONKIO_2_ASCII_DICT[chr(0x2e)] = chr(0x2014)  # . -> —  (em-dash)
-#    Control Sequences (limit to 0x0_)
-ONKIO_2_ASCII_DICT[chr(0x0d)] = chr(0x1a)    # 0x0d -> SUB
-ONKIO_2_ASCII_DICT[chr(0x0e)] = chr(0x1b)    # 0x0e -> ESC
-ONKIO_2_ASCII_DICT[chr(0x0f)] = chr(0x7f)    # 0x0f -> DEL
 
 
-#    Mirroring
-ONKIO_2_ASCII_DICT[chr(0x214e)] = chr(0x0d)   # ⅎ  (projento) -> 0x0d (\r)
-ONKIO_2_ASCII_DICT[chr(0x2014)] = chr(0x0e)   # —  (em-dash)  -> 0x0e
-ONKIO_2_ASCII_DICT[chr(0x2010)] = chr(0x0f)   # ‐  (hyphen)   -> 0x0f
-ONKIO_2_ASCII_DICT[chr(0x394)] = chr(0x10)    # Δ -> 0x10
-ONKIO_2_ASCII_DICT[chr(0x3bb)] = chr(0x11)    # λ -> 0x11
-ONKIO_2_ASCII_DICT[chr(0x3a0)] = chr(0x12)    # Π -> 0x12
-ONKIO_2_ASCII_DICT[chr(0x3a3)] = chr(0x13)    # Σ -> 0x13
-ONKIO_2_ASCII_DICT[chr(0x3a5)] = chr(0x14)    # Υ -> 0x14
-ONKIO_2_ASCII_DICT[chr(0x3a8)] = chr(0x15)    # Ψ -> 0x15
-ONKIO_2_ASCII_DICT[chr(0x108)] = chr(0x16)    # Ĉ -> 0x16
-ONKIO_2_ASCII_DICT[chr(0x109)] = chr(0x17)    # ĉ -> 0x17
-ONKIO_2_ASCII_DICT[chr(0x11c)] = chr(0x18)    # Ĝ -> 0x18
-ONKIO_2_ASCII_DICT[chr(0x11d)] = chr(0x19)    # ĝ -> 0x19
-ONKIO_2_ASCII_DICT[chr(0x134)] = chr(0x1c)    # Ĵ -> 0x1c
-ONKIO_2_ASCII_DICT[chr(0x135)] = chr(0x1d)    # ĵ -> 0x1d
-ONKIO_2_ASCII_DICT[chr(0x15c)] = chr(0x1e)    # Ŝ -> 0x1e
-ONKIO_2_ASCII_DICT[chr(0x15d)] = chr(0x1f)    # ŝ -> 0x1f
-ONKIO_2_ASCII_DICT[chr(0x245)] = chr(0x57)    # Ʌ -> W
-ONKIO_2_ASCII_DICT[chr(0x28c)] = chr(0x77)    # ʌ -> w
-ONKIO_2_ASCII_DICT[chr(0x16c)] = chr(0x59)    # Ŭ -> Y
-ONKIO_2_ASCII_DICT[chr(0x16d)] = chr(0x79)    # ŭ -> y
+class tkt(str):
+    """ONKIO teksto (str).
+    
+    It is here to mark that this str is in ONKIO.
+
+    Assuming inputs are already encoded as ONKIO.
+    Items are in chr. Use ord() to get back codepoint.
+    """
+    def __new__(cls, dat: list[int]|str):
+        if isinstance(dat, str):
+            return str.__new__(cls, dat)
+        else:
+            return str.__new__(cls, ''.join([chr(i) for i in dat]))
 
 
-# Normalize
-#    finish mirroring (should not be necessary, but just in case)
-#    i.e. ensure 1 to 1 matching
-_o2a = set(ONKIO_2_ASCII_DICT.keys())
-_a2o = set([a for _, a in ONKIO_2_ASCII_DICT.items()])
-for a, o in zip(sorted(_o2a - _a2o), sorted(_a2o - _o2a)):
-    ONKIO_2_ASCII_DICT[o] = a
-#    translate char code ver (int) too
-for c_str in tuple(ONKIO_2_ASCII_DICT.keys()):
-    ONKIO_2_ASCII_DICT[ord(c_str)] = ord(ONKIO_2_ASCII_DICT[c_str])
+class ONKIO:
+    """Difino de la ONKIO (Omnija Norma Kodo por Informo-interŝanĝO).
+
+    Definition of the ONKIO encoding system.
+    """
+    # ONKIO kodpunkta defino (ONKIO code point def)
+    # ONKIO kodpunkto: str (en Unikodo)
+    __KODOJ: dict[int, str] = {ascii_c: chr(ascii_c) for ascii_c in range(128)}
+    __KODOJ.update({    # Differences
+        # Letters
+        0x57: chr(0x245),   # W -> Ʌ
+        0x77: chr(0x28c),   # w -> ʌ
+        0x59: chr(0x16c),   # Y -> Ŭ
+        0x79: chr(0x16d),   # y -> ŭ
+        0x5b: chr(0x108),   # [ -> Ĉ
+        0x7b: chr(0x109),   # { -> ĉ
+        0x5c: chr(0x11c),   # \ -> Ĝ
+        0x7c: chr(0x11d),   # | -> ĝ
+        0x5d: chr(0x134),   # ] -> Ĵ
+        0x7d: chr(0x135),   # } -> ĵ
+        0x5e: chr(0x15c),   # ^ -> Ŝ
+        0x7e: chr(0x15d),   # ~ -> ŝ
+        0x40: chr(0x20),    # @ -> SPACE
+        0x60: chr(0x2010),  # ` -> ‐  (hyphen)
+        0x5f: chr(0x2e),    #  _  -> .
+        0x7f: chr(0x2c),    # DEL -> ,
+        # Hexadecimal characters
+        0x3a: chr(0x394),   # : -> Δ
+        0x3b: chr(0x3bb),   # ; -> λ
+        0x3c: chr(0x3a0),   # < -> Π
+        0x3d: chr(0x3a3),   # = -> Σ
+        0x3e: chr(0x3a5),   # > -> Υ
+        0x3f: chr(0x3a8),   # ? -> Ψ
+        # Punctuation & Symbols
+        0x10: chr(0x5c),    # 0x10 -> \
+        0x11: chr(0x7b),    # 0x11 -> {
+        0x12: chr(0x7c),    # 0x12 -> |
+        0x13: chr(0x7d),    # 0x13 -> }
+        0x14: chr(0x7e),    # 0x14 -> ~
+        0x15: chr(0x60),    # 0x15 -> `
+        0x16: chr(0x5e),    # 0x16 -> ^
+        0x17: chr(0x40),    # 0x17 -> @
+        0x18: chr(0x5b),    # 0x18 -> [
+        0x19: chr(0x5d),    # 0x19 -> ]
+        0x1a: chr(0x3a),    # 0x1a -> :
+        0x1b: chr(0x3b),    # 0x1b -> ;
+        0x1c: chr(0x3c),    # 0x1c -> <
+        0x1d: chr(0x3d),    # 0x1d -> =
+        0x1e: chr(0x3e),    # 0x1e -> >
+        0x1f: chr(0x3f),    # 0x1f -> ?
+        0x20: chr(0x5f),    # SPACE -> _
+        0x2c: chr(0x214e),  # , -> ⅎ  (projento)
+        0x2e: chr(0x2014),  # . -> —  (em-dash)
+        # Control Sequences (limit to 0x0_)
+        0x0d: chr(0x1a),    # 0x0d -> SUB
+        0x0e: chr(0x1b),    # 0x0e -> ESC
+        0x0f: chr(0x7f),    # 0x0f -> DEL
+        # Mirroring
+        0x214e: chr(0x0d),  # ⅎ  (projento) -> 0x0d (\r)
+        0x2014: chr(0x0e),  # —  (em-dash)  -> 0x0e
+        0x2010: chr(0x0f),  # ‐  (hyphen)   -> 0x0f
+        0x394:  chr(0x10),  # Δ -> 0x10
+        0x3bb:  chr(0x11),  # λ -> 0x11
+        0x3a0:  chr(0x12),  # Π -> 0x12
+        0x3a3:  chr(0x13),  # Σ -> 0x13
+        0x3a5:  chr(0x14),  # Υ -> 0x14
+        0x3a8:  chr(0x15),  # Ψ -> 0x15
+        0x108:  chr(0x16),  # Ĉ -> 0x16
+        0x109:  chr(0x17),  # ĉ -> 0x17
+        0x11c:  chr(0x18),  # Ĝ -> 0x18
+        0x11d:  chr(0x19),  # ĝ -> 0x19
+        0x134:  chr(0x1c),  # Ĵ -> 0x1c
+        0x135:  chr(0x1d),  # ĵ -> 0x1d
+        0x15c:  chr(0x1e),  # Ŝ -> 0x1e
+        0x15d:  chr(0x1f),  # ŝ -> 0x1f
+        0x245:  chr(0x57),  # Ʌ -> W
+        0x28c:  chr(0x77),  # ʌ -> w
+        0x16c:  chr(0x59),  # Ŭ -> Y
+        0x16d:  chr(0x79),  # ŭ -> y
+    })
+    # Normalize
+    #    finish mirroring (should not be necessary, but just in case)
+    #    i.e. ensure 1 to 1 complete mapping back and forth
+    _o2a = set(__KODOJ.keys())
+    _a2o = set([ord(a) for _, a in __KODOJ.items()])
+    _a, _o = 0, None
+    for _a, _o in zip(sorted(_o2a - _a2o), sorted(_a2o - _o2a)):
+        __KODOJ[_o] = chr(_a)
+    del _a, _o, _o2a, _a2o
+
+    # inversa: ASCII -> ONKIO
+    __KODOJ_INV: dict[str, int] = {c: i for i, c in __KODOJ.items()}
+
+
+
+    def __init__(self):
+        pass
+
+    @classmethod
+    def al_ascii(cls, tkt_onkio: tkt|int) -> str:
+        """Decode ONKIO string / code point into ASCII string."""
+
+        if isinstance(tkt_onkio, str):
+            if not isinstance(tkt_onkio, tkt):
+                print(f"Warning: input {type(tkt_onkio) = } may not be in ONKIO, since it is not of type 'tkt'.")
+            res = ''.join([
+                cls.__KODOJ[ord(c)] if ord(c) in cls.__KODOJ else c
+                for c in tkt_onkio
+            ])
+        elif isinstance(tkt_onkio, int):
+            res = cls.__KODOJ[
+                tkt_onkio] if tkt_onkio in cls.__KODOJ else chr(tkt_onkio)
+        else:
+            raise TypeError(f"Unrecognized input {type(tkt_onkio) = }")
+        return res
+
+    @classmethod
+    def al_onkio(cls, txt_ascii: str) -> tkt:
+        """Encode ASCII string into ONKIO string."""
+        res = [
+            cls.__KODOJ_INV[c] if c in cls.__KODOJ_INV else ord(c)
+            for c in txt_ascii
+        ]
+        return tkt(res)
+
+
+    @classmethod
+    def akiri_alfabeto(cls, tipo:None|str=None) -> dict[str, str]|str:
+        alfabeto = {
+            '0': cls.al_ascii(tkt([i for i in range(0x30, 0x40)])),
+            'A': cls.al_ascii(tkt([i for i in range(0x41, 0x5f)])),
+            'a': cls.al_ascii(tkt([i for i in range(0x61, 0x7f)])),
+            '_': cls.al_ascii(tkt([i for i in range(0x10, 0x80)])),
+            ' ': cls.al_ascii(tkt([i for i in range(0x00, 0x80)])),
+        }
+        return alfabeto if tipo is None else alfabeto[tipo]
+
+    @classmethod
+    def akiri_kodoj(cls) -> dict[int, str]:
+        return cls.__KODOJ.copy()
 
 
 
@@ -192,7 +262,7 @@ def chr_2_txt_ascii(c: int, highlight: bool = False) -> str:
 
 def chr_2_txt_onkio(c: int, highlight: bool = False) -> str:
     """Return markdown text description of ONKIO code for char c"""
-    return chr_2_txt_ascii(ONKIO_2_ASCII_DICT[c], highlight)
+    return chr_2_txt_ascii(ord(ONKIO.al_ascii(c)), highlight)
 
 
 
@@ -224,51 +294,12 @@ def get_md_table(
 
 
 
-class ONKIO:
-    """Convert between ascii and onkio."""
-    # onkio to ascii (int->int, str->str)
-    _AL_ASCII: dict[int|str, int|str] = {
-        o: a for o, a in ONKIO_2_ASCII_DICT.items()
-    }
-    # ascii to onkio (int->int, str->str)
-    _AL_ONKIO: dict[int|str, int|str] = {
-        a: o for o, a in ONKIO_2_ASCII_DICT.items()
-    }
-    def __init__(self):
-        pass
-
-    @classmethod
-    def al_ascii(cls, txt_onkio: str) -> str:
-        """Decode ONKIO string into ASCII string."""
-        res = [cls._AL_ASCII[c] for c in txt_onkio]
-        if isinstance(txt_onkio, str):
-            res = ''.join(res)
-        return res
-
-    @classmethod
-    def al_onkio(cls, txt_ascii: str) -> str:
-        """Encode ASCII string into ONKIO string."""
-        res = [cls._AL_ONKIO[c] for c in txt_ascii]
-        if isinstance(txt_ascii, str):
-            res = ''.join(res)
-        return res
-
-    @property
-    def alfabeto(self) -> dict[str, str]:
-        return {
-            '0': ''.join([ONKIO._AL_ASCII[chr(i)] for i in range(0x30, 0x40)]),
-            'A': ''.join([ONKIO._AL_ASCII[chr(i)] for i in range(0x41, 0x5f)]),
-            'a': ''.join([ONKIO._AL_ASCII[chr(i)] for i in range(0x61, 0x7f)]),
-            '_': ''.join([ONKIO._AL_ASCII[chr(i)] for i in range(0x10, 0x80)]),
-        }
-
-
-
 if __name__ == '__main__':
+    onkio_kodoj = ONKIO.akiri_kodoj()
     txt_ascii = get_md_table(chr_2_txt_ascii, title='ASCII')
     txt_onkio = get_md_table(
         chr_2_txt_onkio, title='ONKIO',
-        highlight_func=lambda c: ONKIO_2_ASCII_DICT[c] != c)
+        highlight_func=lambda c: onkio_kodoj[c] != chr(c))
     print(txt_ascii)
     print('\n\n\n')
     print(txt_onkio)

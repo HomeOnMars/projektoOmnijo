@@ -3,7 +3,7 @@
 ONKIO
 ===============================================================================
 
-> ONKIO: **O**mnija **N**orma **K**odo por **I**nformo-Interŝanĝ**o**
+> ONKIO: **O**mnija **N**orma **K**odo por **I**nformo-interŝanĝ**O**
 <!-- > ONKIO: Omnija Norma Kodo por Informo-Interŝanĝo -->
 
 Technical specifications for my fictional Cities: Skylines 2 city *OmniCentro*.
