@@ -140,17 +140,17 @@ He couldn't help but feel the surge of warmth, affection,
 and an almost paternal protectiveness rising in him[^K1].
 
 [^K1]: In a few years,
-when he looks back on this moment, he’ll call it what it was:
-*Adversarial Brain Hacking* —
-the biological equivalent of
-[Adversarial Machine Learning](https://en.wikipedia.org/wiki/Adversarial_machine_learning).
-The same way you trick an AI with carefully calibrated pixels,
-you trick a human brain with a carefully calibrated face —
-personalized just for him.
-But today’s king doesn’t even know such thing is even a possibility;
-so when his brain searched for a possible explanation, it returned nothing,
-so he thought of nothing,
-as he quickly lost track of his thought on this anyway.
+  when he looks back on this moment, he’ll call it what it was:
+  *Adversarial Brain Hacking* —
+  the biological equivalent of
+  [Adversarial Machine Learning](https://en.wikipedia.org/wiki/Adversarial_machine_learning).
+  The same way you trick an AI with carefully calibrated pixels,
+  you trick a human brain with a carefully calibrated face —
+  personalized just for him.
+  But today’s king doesn’t even know such thing is even a possibility;
+  so when his brain searched for a possible explanation, it returned nothing,
+  so he thought of nothing,
+  as he quickly lost track of his thought on this anyway.
 
 Maybe… maybe she really *is* Anna’s daughter. A miracle. His blood.
 Maybe he doesn’t have to do what he must do next.
@@ -357,13 +357,14 @@ when you, many others, and even *Natasha herself*
 have tried hard but failed?[^K2]”
 
 [^K2]: How she knows about the posion and the knife is less relevant here,
-as both Serena and the King expects Natasha to know most of his fallback plans.
-That alone wouldn't matter much to the King, with his
-[Swiss Cheese Model](https://en.wikipedia.org/wiki/Swiss_cheese_model)-based
-planning. So Serena opted to first convince the King that
-valid alternative options actually exists,
-before he goes for his third plan against her;
-and it's working.
+  as both Serena and the King
+  expects Natasha to know most of his fallback plans.
+  That alone wouldn't matter much to the King, with his
+  [Swiss Cheese Model](https://en.wikipedia.org/wiki/Swiss_cheese_model)-based
+  planning. So Serena opted to first convince the King that
+  valid alternative options actually exists,
+  before he goes for his third plan against her;
+  and it's working.
 
 Serena can see the King's eyebrow raises as he hears that last sentence.
 A good sign.

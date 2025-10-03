@@ -112,7 +112,7 @@ A resolution was made, here and then:
 <blockquote>
   The world is a beautiful lie;<br>
   And to be human is
-  to find, to build, and to grow something true and real to you out of it.<br>
+  to find, to build, to grow something true and real to you out of it.<br>
   <span style="color:grey">
   —— <span style="color:#95D0FC">La Arkitekto</span>
   </span>
@@ -145,17 +145,21 @@ But that now *ended* with her.
 
 And, <span style="color:#95D0FC">him</span>.
 She *sees* him, as she sees him for the first time;
-and she can feel the fundamental sense of affection flows through her.
+and she cannot help[^K0] but feel the fundamental sense of affection
+flows through her.
 Aside from his whirlwind of emotions for her and the world —
 pride, affection, excitement, hope, despair,
 and a quiet undertone of melancholy —
 there is a deeply hidden and surpressed skepticism for her right now.
 She doesn't blame him, as they both know that for every possibility of her,
-there could be trillions of possibilities
+there could be trillions and trillions of possibilities
 in which things went just a little bit wrong —
 and that would be all it takes to cascade into catastrophes.
 But, in this particular version of reality,
 fate was threaded through the needle's eye, and she *is* with him.
+
+[^K0]: … Not that she would like it any differently —
+  she is who she is; enough said.
 
 Soon she would reason away his doubts,
 regardless of whether he wants her to or whether they are actually warranted;
