@@ -53,22 +53,20 @@ MARKDOWN_ESCAPABLES : set = {
 ONKIO_2_ASCII_DICT = {chr(ascii_c): chr(ascii_c) for ascii_c in range(128)}
 # Differences
 #    Letters
-ONKIO_2_ASCII_DICT[chr(0x57)] = chr(0x58)     # W -> X
-ONKIO_2_ASCII_DICT[chr(0x77)] = chr(0x78)     # w -> x
-ONKIO_2_ASCII_DICT[chr(0x58)] = chr(0x5a)     # X -> Z
-ONKIO_2_ASCII_DICT[chr(0x78)] = chr(0x7a)     # x -> z
-ONKIO_2_ASCII_DICT[chr(0x59)] = chr(0x108)    # Y -> Ĉ
-ONKIO_2_ASCII_DICT[chr(0x79)] = chr(0x109)    # y -> ĉ
-ONKIO_2_ASCII_DICT[chr(0x5a)] = chr(0x11c)    # Z -> Ĝ
-ONKIO_2_ASCII_DICT[chr(0x7a)] = chr(0x11d)    # z -> ĝ
-ONKIO_2_ASCII_DICT[chr(0x5b)] = chr(0x134)    # [ -> Ĵ
-ONKIO_2_ASCII_DICT[chr(0x7b)] = chr(0x135)    # { -> ĵ
-ONKIO_2_ASCII_DICT[chr(0x5c)] = chr(0x15c)    # \ -> Ŝ
-ONKIO_2_ASCII_DICT[chr(0x7c)] = chr(0x15d)    # | -> ŝ
-ONKIO_2_ASCII_DICT[chr(0x5d)] = chr(0x16c)    # ] -> Ŭ
-ONKIO_2_ASCII_DICT[chr(0x7d)] = chr(0x16d)    # } -> ŭ
-ONKIO_2_ASCII_DICT[chr(0x5e)] = chr(0x17d)    # ^ -> Ž
-ONKIO_2_ASCII_DICT[chr(0x7e)] = chr(0x17e)    # ~ -> ž
+ONKIO_2_ASCII_DICT[chr(0x57)] = chr(0x245)    # W -> Ʌ
+ONKIO_2_ASCII_DICT[chr(0x77)] = chr(0x28c)    # w -> ʌ
+ONKIO_2_ASCII_DICT[chr(0x59)] = chr(0x5a)     # Y -> Z
+ONKIO_2_ASCII_DICT[chr(0x79)] = chr(0x7a)     # y -> z
+ONKIO_2_ASCII_DICT[chr(0x5a)] = chr(0x108)    # Z -> Ĉ
+ONKIO_2_ASCII_DICT[chr(0x7a)] = chr(0x109)    # z -> ĉ
+ONKIO_2_ASCII_DICT[chr(0x5b)] = chr(0x11c)    # [ -> Ĝ
+ONKIO_2_ASCII_DICT[chr(0x7b)] = chr(0x11d)    # { -> ĝ
+ONKIO_2_ASCII_DICT[chr(0x5c)] = chr(0x134)    # \ -> Ĵ
+ONKIO_2_ASCII_DICT[chr(0x7c)] = chr(0x135)    # | -> ĵ
+ONKIO_2_ASCII_DICT[chr(0x5d)] = chr(0x15c)    # ] -> Ŝ
+ONKIO_2_ASCII_DICT[chr(0x7d)] = chr(0x15d)    # } -> ŝ
+ONKIO_2_ASCII_DICT[chr(0x5e)] = chr(0x16c)    # ^ -> Ŭ
+ONKIO_2_ASCII_DICT[chr(0x7e)] = chr(0x16d)    # ~ -> ŭ
 ONKIO_2_ASCII_DICT[chr(0x40)] = chr(0x20)     # @ -> SPACE
 ONKIO_2_ASCII_DICT[chr(0x60)] = chr(0x2010)   # ` -> ‐  (hyphen)
 ONKIO_2_ASCII_DICT[chr(0x5f)] = chr(0x2e)     #  _  -> .
@@ -107,15 +105,31 @@ ONKIO_2_ASCII_DICT[chr(0x0f)] = chr(0x7f)    # 0x0f -> DEL
 
 
 #    Mirroring
+ONKIO_2_ASCII_DICT[chr(0x214e)] = chr(0x0d)   # ⅎ  (projento) -> 0x0d (\r)
+ONKIO_2_ASCII_DICT[chr(0x2014)] = chr(0x0e)   # —  (em-dash)  -> 0x0e
+ONKIO_2_ASCII_DICT[chr(0x2010)] = chr(0x0f)   # ‐  (hyphen)   -> 0x0f
+ONKIO_2_ASCII_DICT[chr(0x394)] = chr(0x10)    # Δ -> 0x10
+ONKIO_2_ASCII_DICT[chr(0x3bb)] = chr(0x11)    # λ -> 0x11
+ONKIO_2_ASCII_DICT[chr(0x3a0)] = chr(0x12)    # Π -> 0x12
+ONKIO_2_ASCII_DICT[chr(0x3a3)] = chr(0x13)    # Σ -> 0x13
+ONKIO_2_ASCII_DICT[chr(0x3a5)] = chr(0x14)    # Υ -> 0x14
+ONKIO_2_ASCII_DICT[chr(0x3a8)] = chr(0x15)    # Ψ -> 0x15
+ONKIO_2_ASCII_DICT[chr(0x108)] = chr(0x16)    # Ĉ -> 0x16
+ONKIO_2_ASCII_DICT[chr(0x109)] = chr(0x17)    # ĉ -> 0x17
+ONKIO_2_ASCII_DICT[chr(0x11c)] = chr(0x18)    # Ĝ -> 0x18
+ONKIO_2_ASCII_DICT[chr(0x11d)] = chr(0x19)    # ĝ -> 0x19
+ONKIO_2_ASCII_DICT[chr(0x134)] = chr(0x1c)    # Ĵ -> 0x1c
+ONKIO_2_ASCII_DICT[chr(0x135)] = chr(0x1d)    # ĵ -> 0x1d
+ONKIO_2_ASCII_DICT[chr(0x15c)] = chr(0x1e)    # Ŝ -> 0x1e
+ONKIO_2_ASCII_DICT[chr(0x15d)] = chr(0x1f)    # ŝ -> 0x1f
 ONKIO_2_ASCII_DICT[chr(0x16c)] = chr(0x57)    # Ŭ -> W
 ONKIO_2_ASCII_DICT[chr(0x16d)] = chr(0x77)    # ŭ -> w
-ONKIO_2_ASCII_DICT[chr(0x17d)] = chr(0x59)    # Ž -> Y
-ONKIO_2_ASCII_DICT[chr(0x17e)] = chr(0x79)    # ž -> y
-
+ONKIO_2_ASCII_DICT[chr(0x245)] = chr(0x59)    # Ʌ -> Y
+ONKIO_2_ASCII_DICT[chr(0x28c)] = chr(0x79)    # ʌ -> y
 
 
 # Normalize
-#    finish mirroring
+#    finish mirroring (should not be necessary, but just in case)
 #    i.e. ensure 1 to 1 matching
 _o2a = set(ONKIO_2_ASCII_DICT.keys())
 _a2o = set([a for _, a in ONKIO_2_ASCII_DICT.items()])

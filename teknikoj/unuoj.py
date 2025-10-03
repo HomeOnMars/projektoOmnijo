@@ -89,6 +89,7 @@ TX_SYMBOLS_INV = TX_SYMBOLS_INV_DICT['ONKIO']
 
 # translate Epopo characters to ASCII characters using w-system
 ASCIIIFY_CHR = {
+    'Ʌ': 'Vw','ʌ': 'vw',
     'Ĉ': 'Cw','ĉ': 'cw',
     'Ĝ': 'Gw','ĝ': 'gw',
     'Ĵ': 'Jw','ĵ': 'jw',

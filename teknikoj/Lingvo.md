@@ -57,17 +57,17 @@ Changes of Esperanto++ from Esperanto include:
 
 - Officially eliminated `Ĥ` from the *Epopo* alphabet
   (mostly replaced with `K`);
-- Adding `Q` (tɕʰ), `X` (ɕ), `Ž` (ʈʂ)
-  for more diverse sounds (inspired by pinyin).  
+- Adding `Q` (Q), `X` (X), `Ʌ` (ü) for more diverse sounds,
+  inspired by [pinyin](https://en.wikipedia.org/wiki/Pinyin).  
   No words from *Epopo* are using those three letters yet;
   for now they are only used in naming.
 - Total *Epopo* alphabet: 30 letters.
-  - vs Esperanto: 1 letters less (no Ĥ) and 3 letters more (QXŽ)
-  - vs English:  2 letters less (no WY) and 6 letters more (ĈĜĴŜŬŽ)
-  - vs Pinyin:   2 more consonants (VĴ) and 1 less vowel (ü)
+  - vs Esperanto: 1 letters less (no Ĥ) and 3 letters more (QɅX)
+  - vs English:  2 letters less (no WY) and 6 letters more (ɅĈĜĴŜŬ)
+  - vs Pinyin:   1 consonant less (no 'Zh') and 2 consonants more (VĴ)
   - Characters:
-    - `ABCDEFGHIJKLMNOPQRSTUVXZĈĜĴŜŬŽ`
-    - `abcdefghijklmnopqrstuvxzĉĝĵŝŭž`
+    - `ABCDEFGHIJKLMNOPQRSTUVɅXZĈĜĴŜŬ`
+    - `abcdefghijklmnopqrstuvʌxzĉĝĵŝŭ`
     - `0123456789ΔλΠΣΥΨ`
 - Pronunciation guide  
   See also International Phonetic Alphabet (IPA)
@@ -77,8 +77,7 @@ Changes of Esperanto++ from Esperanto include:
 
     <details>
       <summary>Sound comparison table</summary>
-      Note: many of the sounds are approximations
-      (especially <em>ü</em> in pinyin — the sound of which is not in Epopo).
+      Note: many of the sounds are approximations.
 
       | Epopo | Pinyin | English |
       | :-: | :----: | :-: |
@@ -92,7 +91,7 @@ Changes of Esperanto++ from Esperanto include:
       |  V  | ~~—~~  | **v**alid |
       |  Ŭ  | W-     ||
       |  X  | X-     | ~~—~~ |
-      |  Ž  | Zh-    | ~~—~~ |
+      | Zĉ  | Zh-    | ~~—~~ |
       ||||
       | a   | -a     | |
       | aj  | -ai    | **I** |
@@ -115,10 +114,6 @@ Changes of Esperanto++ from Esperanto include:
       | je  | -ie    | |
       | jon | -iong  | |
       | joŭ | -iu    | |
-      | jŭu | -ü     | |
-      |jŭan | -üan   | |
-      | jŭe | -üe    | |
-      | jun | -ün    | |
       | o   | -o     | |
       | oj  | ~~—~~  | j**oy** |
       | oŭn | -ong   | |
@@ -132,12 +127,17 @@ Changes of Esperanto++ from Esperanto include:
       | ŭej | -ui    | |
       | ŭen | -un    | |
       | ŭo  | -uo    | |
+      | ʌ   | -ü     | |
+      | ʌŭn | -üan   | |
+      | ʌe  | -üe    | |
+      | ʌn  | -ün    | |
 
     </details>
 - `w`-system
   - Instead of the [X-system](https://en.wikipedia.org/wiki/Substitutions_of_the_Esperanto_alphabet#X-system) in Esperanto,
-    *Epopo* appends *w* instead of *x* to *CGJSUZ* to represent accented letters
-    in ASCII, since *x* is a real letter in *Epopo* as well.
+    *Epopo* appends *w* instead of *x* to *CGJSUV*
+    to represent accented letters or Ʌ in ASCII,
+    since *x* is a real letter in *Epopo* as well.
   - *w* was used instead of *y* because it fits my intuition better
     how it would change the sound of the letter.
 

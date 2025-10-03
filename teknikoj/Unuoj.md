@@ -325,7 +325,7 @@ $$
 $\textrm{Z} = 0$ is exactly the absolute zero temperature.
 
 > [!NOTE]
-> Useful temperature unit: ***Žorumgrado*** `°Ž` (0x017D)
+> Useful temperature unit: ***Zorumgrado*** `°Ž` (0x017D)
 > (Omnija degree Celsius)
 
 (Add a caron above 'Z' to make sure people don't confuse `°Ž` with `Z`.)
