@@ -55,18 +55,16 @@ ONKIO_2_ASCII_DICT = {chr(ascii_c): chr(ascii_c) for ascii_c in range(128)}
 #    Letters
 ONKIO_2_ASCII_DICT[chr(0x57)] = chr(0x245)    # W -> Ʌ
 ONKIO_2_ASCII_DICT[chr(0x77)] = chr(0x28c)    # w -> ʌ
-ONKIO_2_ASCII_DICT[chr(0x59)] = chr(0x5a)     # Y -> Z
-ONKIO_2_ASCII_DICT[chr(0x79)] = chr(0x7a)     # y -> z
-ONKIO_2_ASCII_DICT[chr(0x5a)] = chr(0x108)    # Z -> Ĉ
-ONKIO_2_ASCII_DICT[chr(0x7a)] = chr(0x109)    # z -> ĉ
-ONKIO_2_ASCII_DICT[chr(0x5b)] = chr(0x11c)    # [ -> Ĝ
-ONKIO_2_ASCII_DICT[chr(0x7b)] = chr(0x11d)    # { -> ĝ
-ONKIO_2_ASCII_DICT[chr(0x5c)] = chr(0x134)    # \ -> Ĵ
-ONKIO_2_ASCII_DICT[chr(0x7c)] = chr(0x135)    # | -> ĵ
-ONKIO_2_ASCII_DICT[chr(0x5d)] = chr(0x15c)    # ] -> Ŝ
-ONKIO_2_ASCII_DICT[chr(0x7d)] = chr(0x15d)    # } -> ŝ
-ONKIO_2_ASCII_DICT[chr(0x5e)] = chr(0x16c)    # ^ -> Ŭ
-ONKIO_2_ASCII_DICT[chr(0x7e)] = chr(0x16d)    # ~ -> ŭ
+ONKIO_2_ASCII_DICT[chr(0x59)] = chr(0x16c)    # Y -> Ŭ
+ONKIO_2_ASCII_DICT[chr(0x79)] = chr(0x16d)    # y -> ŭ
+ONKIO_2_ASCII_DICT[chr(0x5b)] = chr(0x108)    # [ -> Ĉ
+ONKIO_2_ASCII_DICT[chr(0x7b)] = chr(0x109)    # { -> ĉ
+ONKIO_2_ASCII_DICT[chr(0x5c)] = chr(0x11c)    # \ -> Ĝ
+ONKIO_2_ASCII_DICT[chr(0x7c)] = chr(0x11d)    # | -> ĝ
+ONKIO_2_ASCII_DICT[chr(0x5d)] = chr(0x134)    # ] -> Ĵ
+ONKIO_2_ASCII_DICT[chr(0x7d)] = chr(0x135)    # } -> ĵ
+ONKIO_2_ASCII_DICT[chr(0x5e)] = chr(0x15c)    # ^ -> Ŝ
+ONKIO_2_ASCII_DICT[chr(0x7e)] = chr(0x15d)    # ~ -> ŝ
 ONKIO_2_ASCII_DICT[chr(0x40)] = chr(0x20)     # @ -> SPACE
 ONKIO_2_ASCII_DICT[chr(0x60)] = chr(0x2010)   # ` -> ‐  (hyphen)
 ONKIO_2_ASCII_DICT[chr(0x5f)] = chr(0x2e)     #  _  -> .
@@ -122,10 +120,10 @@ ONKIO_2_ASCII_DICT[chr(0x134)] = chr(0x1c)    # Ĵ -> 0x1c
 ONKIO_2_ASCII_DICT[chr(0x135)] = chr(0x1d)    # ĵ -> 0x1d
 ONKIO_2_ASCII_DICT[chr(0x15c)] = chr(0x1e)    # Ŝ -> 0x1e
 ONKIO_2_ASCII_DICT[chr(0x15d)] = chr(0x1f)    # ŝ -> 0x1f
-ONKIO_2_ASCII_DICT[chr(0x16c)] = chr(0x57)    # Ŭ -> W
-ONKIO_2_ASCII_DICT[chr(0x16d)] = chr(0x77)    # ŭ -> w
-ONKIO_2_ASCII_DICT[chr(0x245)] = chr(0x59)    # Ʌ -> Y
-ONKIO_2_ASCII_DICT[chr(0x28c)] = chr(0x79)    # ʌ -> y
+ONKIO_2_ASCII_DICT[chr(0x245)] = chr(0x57)    # Ʌ -> W
+ONKIO_2_ASCII_DICT[chr(0x28c)] = chr(0x77)    # ʌ -> w
+ONKIO_2_ASCII_DICT[chr(0x16c)] = chr(0x59)    # Ŭ -> Y
+ONKIO_2_ASCII_DICT[chr(0x16d)] = chr(0x79)    # ŭ -> y
 
 
 # Normalize

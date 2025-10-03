@@ -63,11 +63,11 @@ Changes of Esperanto++ from Esperanto include:
   for now they are only used in naming.
 - Total *Epopo* alphabet: 30 letters.
   - vs Esperanto: 1 letters less (no Ĥ) and 3 letters more (QɅX)
-  - vs English:  2 letters less (no WY) and 6 letters more (ɅĈĜĴŜŬ)
+  - vs English:  2 letters less (no WY) and 6 letters more (ɅŬĈĜĴŜ)
   - vs Pinyin:   1 consonant less (no 'Zh') and 2 consonants more (VĴ)
   - Characters:
-    - `ABCDEFGHIJKLMNOPQRSTUVɅXZĈĜĴŜŬ`
-    - `abcdefghijklmnopqrstuvʌxzĉĝĵŝŭ`
+    - `ABCDEFGHIJKLMNOPQRSTUVɅXŬZĈĜĴŜ`
+    - `abcdefghijklmnopqrstuvʌxŭzĉĝĵŝ`
     - `0123456789ΔλΠΣΥΨ`
 - Pronunciation guide  
   See also International Phonetic Alphabet (IPA)

@@ -40,12 +40,12 @@ Differences from the ASCII table are highlighted with **bold** text.
 |  **0x\_6**  |             |    **^**    |      &      |      6      |      F      |      V      |      f      |      v      |
 |  **0x\_7**  |   *BELL*    |   **\@**    |      '      |      7      |      G      |    **Ʌ**    |      g      |    **ʌ**    |
 |  **0x\_8**  |  *BS \\b*   |   **\[**    |     \(      |      8      |      H      |      X      |      h      |      x      |
-|  **0x\_9**  |  *HT \\t*   |   **\]**    |     \)      |      9      |      I      |    **Z**    |      i      |    **z**    |
-|  **0x\_a**  |  *LF \\n*   |    **:**    |     \*      |    **Δ**    |      J      |    **Ĉ**    |      j      |    **ĉ**    |
-|  **0x\_b**  |  *VT \\v*   |    **;**    |     \+      |    **λ**    |      K      |    **Ĝ**    |      k      |    **ĝ**    |
-|  **0x\_c**  |  *FF \\f*   |   **\<**    |    **ⅎ**    |    **Π**    |      L      |    **Ĵ**    |      l      |    **ĵ**    |
-|  **0x\_d**  |  ***SUB***  |    **=**    |     \-      |    **Σ**    |      M      |    **Ŝ**    |      m      |    **ŝ**    |
-|  **0x\_e**  |  ***ESC***  |   **\>**    |    **—**    |    **Υ**    |      N      |    **Ŭ**    |      n      |    **ŭ**    |
+|  **0x\_9**  |  *HT \\t*   |   **\]**    |     \)      |      9      |      I      |    **Ŭ**    |      i      |    **ŭ**    |
+|  **0x\_a**  |  *LF \\n*   |    **:**    |     \*      |    **Δ**    |      J      |      Z      |      j      |      z      |
+|  **0x\_b**  |  *VT \\v*   |    **;**    |     \+      |    **λ**    |      K      |    **Ĉ**    |      k      |    **ĉ**    |
+|  **0x\_c**  |  *FF \\f*   |   **\<**    |    **ⅎ**    |    **Π**    |      L      |    **Ĝ**    |      l      |    **ĝ**    |
+|  **0x\_d**  |  ***SUB***  |    **=**    |     \-      |    **Σ**    |      M      |    **Ĵ**    |      m      |    **ĵ**    |
+|  **0x\_e**  |  ***ESC***  |   **\>**    |    **—**    |    **Υ**    |      N      |    **Ŝ**    |      n      |    **ŝ**    |
 |  **0x\_f**  |  ***DEL***  |    **?**    |      /      |    **Ψ**    |      O      |   **\.**    |      o      |    **,**    |
 
 ### Notes
@@ -68,19 +68,17 @@ Differences from the ASCII table are highlighted with **bold** text.
   - `—` (em dash).
   - `‐` (hyphen).
 - Recast symbol `%` as 'modulus operator'.
-- Letters and the most common punctuation marks are contained
-  within `0x4_` to `0x7_`.
-  This is designed to make compression of pure Epopo text mildly easier
-  (and more fun to encode with techniques like ROT13-equivalent and such).
-
-To-do
--------------------------------------------------------------------------------
-
-1. Add degree symbol `°` (0xB0) for Celsius and angles?
-2. Add month symbol `☾` (0x263E), the week symbol `⚝`(0x269D), and day symbol `⚻` (0x26BB)?
-  (No - No space. Let's leave 0x0? to control characters only.)
-  (See [Unuoj](Unuoj.md#tempo))
-  (See also [Wikipedia - Unicode Misc symbols](https://en.wikipedia.org/wiki/List_of_Unicode_characters#Miscellaneous_Symbols).)
+- Letters
+  - Letters and the most common punctuation marks are contained
+    within `0x4_` to `0x7_`.
+    This is designed to make compression of pure Epopo text mildly easier
+    (and more fun to encode with techniques like ROT13-equivalent and such).
+  - English letters are mostly untouched from ASCII (except `W Y`),
+    so plain ASCII texts should hopefully still be mostly legible
+    if conversion failed or missed.
+    (Most punctuation marks will be messed up though.)
+  - `W` is replaced by `Ʌ` — and `Y` by `Ŭ` — instead of the other way around.
+    This is for aesthetic reasons (`Ʌ` looks better after `V`).
 
 ASCII Table
 -------------------------------------------------------------------------------
