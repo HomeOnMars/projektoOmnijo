@@ -366,7 +366,7 @@ class Emblemo:
         return self
 
     def _draw_R(
-        self, radius=14/16, linewidth_fac=12/128, R_h=None, angle=None,
+        self, radius=13.625/16, linewidth_fac=16/128, R_h=None, angle=None,
         color=None, **kwargs):
         if color is None: color = self.colors['O']
         halfwid = linewidth_fac
@@ -397,8 +397,8 @@ class Emblemo:
 
     def _draw_RdO(self):
         # 16/128  21/(9*16) ~ 18.667
-        self._draw_O(linewidth_fac=18/128, zorder=0x1001)
-        self._draw_R(angle=atan_deg(9/6), linewidth_fac=18/128, zorder=0x1000)
+        self._draw_O(linewidth_fac=14/128, zorder=0x1001)
+        self._draw_R(angle=atan_deg(9/6), zorder=0x1000)
         return self
 
 
@@ -409,8 +409,8 @@ class Emblemo:
         # scale_y: 1.0 => 400px x 400px; 225/400 => height is 225px
         scale_y: float = 225/400, # 2160/400
         ratio_xy: float = 16/9,
-        offset_x: float = 1/16, #1.5/16,
-                                # 1.5/16 to center the curves;
+        offset_x: float = 1/16, #1.3125/16,
+                                # 1.3125/16 to center the curves;
                                 # 0 to center the division line
     ):    # plot
         """Draw the RdO Flag."""
