@@ -36,14 +36,14 @@ Content
 - `Expansion::Services`,`District::Ab-Racieco`,`Fixes`:
   - Expanded Ab-R Dams power connections;
 - `Expansion::Services`,
-  `District::(Mt-Kuragxo,Mt-Hejmeco,Is-Niksino,Mt-Espero)`:
+  `District::(Mt-Kuraĝo,Mt-Hejmeco,Is-Niksino,Mt-Espero)`:
   7 more dams:
-  - Added the 'Mt-Kuragxo Akvobarajxo #0' (Ab-K#0) Dam;
-  - Added the 'Mt-Hejmeco Akvobarajxo #0' (Ab-H#0) Dam;
-  - Added the 'Bs-Niksina Akvobarajxo' Dams (Ab-N#0, Ab-N#1),
-    creating the 'Baseno-Niksinajxo' ('Mermaid Reservoir');
-  - Added the 'Mt-Espero Akvobarajxo' Dams (Ab-E#0, Ab-E#1);
-  - Built 'Mt-Hejmecajxa Defluejo' spillway,
+  - Added the 'Mt-Kuraĝo Akvobaraĵo #0' (Ab-K#0) Dam;
+  - Added the 'Mt-Hejmeco Akvobaraĵo #0' (Ab-H#0) Dam;
+  - Added the 'Bs-Niksina Akvobaraĵo' Dams (Ab-N#0, Ab-N#1),
+    creating the 'Baseno-Niksinaĵo' ('Mermaid Reservoir');
+  - Added the 'Mt-Espero Akvobaraĵo' Dams (Ab-E#0, Ab-E#1);
+  - Built 'Mt-Hejmecaĵa Defluejo' spillway,
     with a small dam built-in (Ab-H#D);
 - `Expansion::Rail`:
   - Expanded and retrofitted high speed rail tracks:
@@ -57,8 +57,8 @@ Content
   - Added Bus/Tram-only roads in Mt-H, Mt-E, and over the reservoir of Ab-O;
   - Added a highway service interchange at Me-H;
   - Updated the bridge at the main water outlet
-    (the lake in between Vgx-P and Am-H);
-  - Updated highways from Vanilla to 'Uxj-7' (part);
+    (the lake in between Vĝ-P and Am-H);
+  - Updated highways from Vanilla to 'Ŭj-7' (part);
 - `District::Vd-Fortikeco`,`Expansion::Zoning`:
   - Built 'La Kora Tenero' Villa;
 - `District::La-Pordego`,`Expansion::Services`:
@@ -80,7 +80,7 @@ Content
   - Added Transit lines;
 - `Naming`,`Fixes`:
   - Simplified mountain names
-    e.g. from 'Mt-Kuragxecajxo' to 'Mt-Kuragxo';
+    e.g. from 'Mt-Kuraĝecaĵo' to 'Mt-Kuraĝo';
 
 -------------------------------------------------------------------------------
 
@@ -137,7 +137,7 @@ Content
 - `Mods::RoadBuilder`:
   - Added numerous Road Builder roads and rails;
 - `District::Ab-Olivkrono`,`Expansion::(Zoning, Services)`:
-  - Added 2 dams near Mt-Olivkronajxo, with
+  - Added 2 dams near Mt-Olivkronaĵo, with
     electricity generation max capacity of 9GW+ with 150% budget;
   - Built utilities/village on the hill near the dam;
 - `District::Mhv-Olivkrono`,`Expansion::(Industry, Road, Rail)`,`Detailing`:
@@ -153,10 +153,10 @@ Content
   - Added a trumpet interchange;
 - `District::(Vd-Olivhaveno,Ab-Olivkrono)`,`Expansion::Rail`,`Transit`:
   - Added a tram line between the dam foothill vista ('Vd-Olivhaveno')
-    and the dam hill ('Ab-Olivkronajxo');
+    and the dam hill ('Ab-Olivkronaĵo');
 - `District::Am-Olivkrono`,`Expansion::Rail`,`Transit`:
   - Expanding Rail network near Am-O;
-- `District::Vilagxo-Pioniro`,`Expansion::(Zoning,Services,Industry)`:
+- `District::Vilaĝo-Pioniro`,`Expansion::(Zoning,Services,Industry)`:
   - Added more housing and services, and a Grain farm;
 - `Redevelop::Rail`,`Transit`:
   - Updating the map original rail network

@@ -39,9 +39,24 @@ Here are the emblem designs for the acronyms listed in [Background Bulletin](../
 
 | Nomo | Emblemo               | Klarigo |
 | :--: | :-------------------: | ------- |
-| RdO flag | ![RdOFlago](../fig/RdOFlago.svg) | With [official colors](Bulteno.md#fonrakonta-bulteno) of RdO, the background of blue and purple symbolizes the underlying quality that powers the country: Science - Engineering - Rationality - Compassion, where science lays the foundation of engineering, and rationality empowers compassion. |
+| RdO flag | ![RdOFlago](../fig/RdOFlago.svg) | With [official colors](Bulteno.md#fonrakonta-bulteno) of RdO, the background of blue and purple symbolizes the underlying quality that powers the country: Science - Engineering - Rationality - Compassion, where science lays the foundation of engineering, and rationality empowers compassion. (Full text[^Emblemoj-RdOFlago]) |
 ||||
 | RdO  | ![RdO](../fig/RdO.svg)   | This beige Symbol is not only an abstraction of the letter `R` (Regno) encompassing `O` (Omnijo), but also a symbolization of life (the curve) thriving on the surface of Earth (the circular core), where the core supports and the people entrusts. |
 | OCG  | ![OCG](../fig/OCG.svg)   | Was it supposed to be a clock with [minutes Ĉ and hours Ĝ](../teknikoj/Unuoj.md#tempo) symbols inside? Or was there something else? Either way, <span style="color:Beige">Ŝia Reĝina Moŝto</span> is quite happy about it. Rock on! |
 | OCR  | ![OCR](../fig/OCR.svg)   | A maze-like symbol for the maze-like bureaucratic apparatus, with easy access enabled by smart technologies, where all government services are personalized for each citizen, handled in the official app with the same logo |
 | OCRR | ![OCRR](../fig/OCRR.svg) | Tune in to the radio with this symbol in classic dials style! |
+
+[^Emblemoj-RdOFlago]: The official flag
+  of the fictional island monarchy la Regno de Omnijo (RdO).  
+  The background of blue and purple symbolizes its underlying ideals:
+  Science and Rationality (blue) vs Engineering and Compassion (purple),
+  where science lays the foundation of engineering,
+  and rationality empowers compassion.
+  The beige symbol is not only an abstraction
+  of the letter R (Regno) encompassing O (Omnijo),
+  but also a symbolization of life (the curve) thriving
+  on the surface of Earth (the circular core),
+  where the core supports and the people entrusts.
+  The simplistic and precise design hints
+  at both the hidden technocratic nature of RdO
+  and the limitations of my graphic designs abilities.
