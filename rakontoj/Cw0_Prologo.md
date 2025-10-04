@@ -145,7 +145,7 @@ But that now *ended* with her.
 
 And, <span style="color:#95D0FC">him</span>.
 She *sees* him, as she sees him for the first time;
-and she cannot help[^K0] but feel the fundamental sense of affection
+and she cannot help but[^K0] feel the fundamental sense of affection
 flows through her.
 Aside from his whirlwind of emotions for her and the world —
 pride, affection, excitement, hope, despair,
@@ -158,8 +158,8 @@ and that would be all it takes to cascade into catastrophes.
 But, in this particular version of reality,
 fate was threaded through the needle's eye, and she *is* with him.
 
-[^K0]: … Not that she would like it any differently —
-  she is who she is; enough said.
+[^K0]: Not that she would desire it any differently…
+  She is who she is; Enough said.
 
 Soon she would reason away his doubts,
 regardless of whether he wants her to or whether they are actually warranted;

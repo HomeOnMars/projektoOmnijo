@@ -18,10 +18,10 @@ Legal
 
  <p xmlns:cc="http://creativecommons.org/ns#" >This work by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/HomeOnMars">HomeOnMars</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
 
-Lingvo
+Epopo
 -------------------------------------------------------------------------------
 
-> Language
+> Epopo
 > <br>
 > [Back to OmniCentro Content](../OmniCentro.md#detalaj-informoj)
 
@@ -65,74 +65,78 @@ Changes of Esperanto++ from Esperanto include:
   - vs Esperanto: 1 letters less (no Ĥ) and 3 letters more (QɅX)
   - vs English:  2 letters less (no WY) and 6 letters more (ɅŬĈĜĴŜ)
   - vs Pinyin:   1 consonant less (no 'Zh') and 2 consonants more (VĴ)
-  - Characters:
-    - `ABCDEFGHIJKLMNOPQRSTUVɅXŬZĈĜĴŜ`
-    - `abcdefghijklmnopqrstuvʌxŭzĉĝĵŝ`
-    - `0123456789ΔλΠΣΥΨ`
+  - Characters  
+    See also [ONKIO](ONKIO.md#onkio-tablo).  
+    `ABCDEFGHIJKLMNOPQRSTUVɅXŬZĈĜĴŜ`  
+    `abcdefghijklmnopqrstuvʌxŭzĉĝĵŝ`  
+    `0123456789ΔλΠΣΥΨ`  
+    ``\{|}~`^@[]:;<=>?_!"#$%&'()*+ⅎ-—/ ‐.,``
 - Pronunciation guide  
+
   See also International Phonetic Alphabet (IPA)
   - [lernu: Esperanto Alphabet](https://lernu.net/gramatiko/skribo)
   - [Wikipedia: IPA/Esperanto](https://en.wikipedia.org/wiki/Help:IPA/Esperanto)
   - [Wikipedia: IPA/Mandarin](https://en.wikipedia.org/wiki/Help:IPA/Mandarin)
 
-    <details>
-      <summary>Sound comparison table</summary>
-      Note: many of the sounds are approximations.
+  <details>
+    <summary><b>Sound comparison table</b></summary>
+    Note: many of the sounds are approximations.
 
-      | Epopo | Pinyin | English |
-      | :-: | :----: | :-: |
-      |  Ĉ  | Ch-    | **ch**oice |
-      |  G  | G-     | yo**g**urt |
-      |  Ĝ  | J-     | **G**eorge |
-      |  J  | Y-     | **y**ogurt |
-      |  Ĵ  | ~~—~~  | plea**su**re |
-      |  Q  | Q-     | pun**ch**y |
-      |  Ŝ  | Sh-    | **sh**ip |
-      |  V  | ~~—~~  | **v**alid |
-      |  Ŭ  | W-     ||
-      |  X  | X-     | ~~—~~ |
-      | Zĉ  | Zh-    | ~~—~~ |
-      ||||
-      | a   | -a     | |
-      | aj  | -ai    | **I** |
-      | an  | -an    | |
-      | aŭn | -ang   | |
-      | aŭ  | -ao    | n**ow** |
-      | e   | -e     | |
-      | ej  | -ei    | **A** |
-      | en  | -en    | |
-      | eŭn | -eng   | |
-      | er  | -er    | |
-      | eŭ  | ~~—~~  | **L** |
-      | i   | -i     | |
-      | in  | -in    | |
-      | iŭn | -ing   | |
-      | ja  | -ia    | |
-      | jan | -ian   | |
-      | jaŭn| -iang  | |
-      | jaŭ | -iao   | |
-      | je  | -ie    | |
-      | jon | -iong  | |
-      | joŭ | -iu    | |
-      | o   | -o     | |
-      | oj  | ~~—~~  | j**oy** |
-      | oŭn | -ong   | |
-      | oŭ  | -ou    | **O** |
-      | u   | -u     | |
-      | uj  | ~~—~~  | ch**ewy** |
-      | ŭa  | -ua    | |
-      | ŭaj | -uai   | |
-      | ŭan | -uan   | |
-      | ŭaŭn| -uang  | |
-      | ŭej | -ui    | |
-      | ŭen | -un    | |
-      | ŭo  | -uo    | |
-      | ʌ   | -ü     | |
-      | ʌŭn | -üan   | |
-      | ʌe  | -üe    | |
-      | ʌn  | -ün    | |
+    | Epopo | Pinyin | English |
+    | :-: | :----: | :-: |
+    |  Ĉ  | Ch-    | **ch**oice |
+    |  G  | G-     | yo**g**urt |
+    |  Ĝ  | J-     | **G**eorge |
+    |  J  | Y-     | **y**ogurt |
+    |  Ĵ  | ~~—~~  | plea**su**re |
+    |  Q  | Q-     | pun**ch**y |
+    |  Ŝ  | Sh-    | **sh**ip |
+    |  V  | ~~—~~  | **v**alid |
+    |  Ŭ  | W-     ||
+    |  X  | X-     | ~~—~~ |
+    | Zĉ  | Zh-    | ~~—~~ |
+    ||||
+    | a   | -a     | |
+    | aj  | -ai    | **I** |
+    | an  | -an    | |
+    | aŭn | -ang   | |
+    | aŭ  | -ao    | n**ow** |
+    | e   | -e     | |
+    | ej  | -ei    | **A** |
+    | en  | -en    | |
+    | eŭn | -eng   | |
+    | er  | -er    | |
+    | eŭ  | ~~—~~  | **L** |
+    | i   | -i     | |
+    | in  | -in    | |
+    | iŭn | -ing   | |
+    | ja  | -ia    | |
+    | jan | -ian   | |
+    | jaŭn| -iang  | |
+    | jaŭ | -iao   | |
+    | je  | -ie    | |
+    | jon | -iong  | |
+    | joŭ | -iu    | |
+    | o   | -o     | |
+    | oj  | ~~—~~  | j**oy** |
+    | oŭn | -ong   | |
+    | oŭ  | -ou    | **O** |
+    | u   | -u     | |
+    | uj  | ~~—~~  | ch**ewy** |
+    | ŭa  | -ua    | |
+    | ŭaj | -uai   | |
+    | ŭan | -uan   | |
+    | ŭaŭn| -uang  | |
+    | ŭej | -ui    | |
+    | ŭen | -un    | |
+    | ŭo  | -uo    | |
+    | ʌ   | -ü     | |
+    | ʌŭn | -üan   | |
+    | ʌe  | -üe    | |
+    | ʌn  | -ün    | |
 
-    </details>
+  </details>
+
 - `w`-system
   - Instead of the [X-system](https://en.wikipedia.org/wiki/Substitutions_of_the_Esperanto_alphabet#X-system) in Esperanto,
     *Epopo* appends *w* instead of *x* to *CGJSUV*
@@ -145,7 +149,7 @@ Changes of Esperanto++ from Esperanto include:
 
 > Algebra
 
-- Decimal separator in *E++* is `.` instead of `,`;<br>
+- Decimal separator in *Epopo* is `.` instead of `,`;<br>
   Thousands separator (decimal) / ten-thousands separator (hexadecimal) is
   space(` `) instead of `.`;<!-- markdownlint-disable-line no-space-in-code -->
 - Marking numbers as decimal ('Dekuma') or hexadecimal ('Hekuma'):
@@ -264,7 +268,9 @@ Changes of Esperanto++ from Esperanto include:
 - See also
   - [Hyphen / En dash / Em dash Guideline](https://www.sjsu.edu/writingcenter/docs/handouts/Hyphens%20Dashes.pdf).
 - Library of Unicode Punctuation Marks
-  - “‘Quotes’”
+  - ~~“‘Quotes’”~~
+    (Use ASCII/ONKIO quotation marks instead within this repo,
+    for easier whole word searches in vscode.)
   - … Horizontal Ellipsis (Use Unicode symbol instead of three separate dots.)
 
 ### Nomi
@@ -325,7 +331,7 @@ Changes of Esperanto++ from Esperanto include:
 
 - Units and *`Omnijaro`* Calendar System (Ø+\* years)  
   See also the [Units](../teknikoj/Unuoj.md#tempo) page for explanation, and the
-  [(***Spoilers***) Timeline](../intrigmalkaswo/Kronologio.md#kronologio) page
+  [(*Spoilers*) Timeline](../intrigmalkaswo/Kronologio.md#kronologio) page
   for usage.
 
   | Siglo | Formo   | Nomo           |

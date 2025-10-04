@@ -63,7 +63,7 @@ Teknikaj specifoj
 > ![XKCD comic: 'standards'](https://imgs.xkcd.com/comics/standards.png)  
 > Credit: [XKCD](https://xkcd.com/927/) (No changes were made.)
 
-- [***Lingvo***  | Language](teknikoj/Lingvo.md#lingvo):
+- [***Lingvo***  | Language](teknikoj/Lingvo.md#epopo):
   *Epopo* - The new official language of RdO.
 - [***Unuoj*** | Units](teknikoj/Unuoj.md#Informoj) Planck-units-based hexadecimal unit system
 - [***ONKIO tablo*** | ONKIO table](teknikoj/ONKIO.md#onkio-tablo): ASCII table equivalent

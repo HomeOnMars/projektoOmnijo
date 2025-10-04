@@ -49,6 +49,8 @@ MARKDOWN_ESCAPABLES : set = {
     '{', '}', '[', ']', '<', '>' , '(', ')', '@',
 }
 
+print_dict = lambda dat: print("\n".join([f"{k}: {v}" for k, v in dat.items()]))
+
 
 
 class tkt(str):
@@ -193,18 +195,22 @@ class ONKIO:
 
 
     @classmethod
-    def akiri_alfabeto(cls, tipo:None|str=None) -> dict[str, str]|str:
+    def ak_alfabeto(cls, tipo:None|str=None) -> dict[str, str]|str:
+        """Akiri Alfabeto de Epopo."""
         alfabeto = {
             '0': cls.al_ascii(tkt([i for i in range(0x30, 0x40)])),
             'A': cls.al_ascii(tkt([i for i in range(0x41, 0x5f)])),
             'a': cls.al_ascii(tkt([i for i in range(0x61, 0x7f)])),
-            '_': cls.al_ascii(tkt([i for i in range(0x10, 0x80)])),
-            ' ': cls.al_ascii(tkt([i for i in range(0x00, 0x80)])),
+            '_': cls.al_ascii(tkt([i for i in range(0x10, 0x30)]
+                + [0x40, 0x60, 0x5f, 0x7f])),
+            ' ': cls.al_ascii(tkt([i for i in range(0x00, 0x10)])),
+            '*': cls.al_ascii(tkt([i for i in range(0x00, 0x80)])),
         }
         return alfabeto if tipo is None else alfabeto[tipo]
 
     @classmethod
-    def akiri_kodoj(cls) -> dict[int, str]:
+    def ak_kodoj(cls) -> dict[int, str]:
+        """Akiri Kodopunktoj de ONKIO."""
         return cls.__KODOJ.copy()
 
 
@@ -295,7 +301,7 @@ def get_md_table(
 
 
 if __name__ == '__main__':
-    onkio_kodoj = ONKIO.akiri_kodoj()
+    onkio_kodoj = ONKIO.ak_kodoj()
     txt_ascii = get_md_table(chr_2_txt_ascii, title='ASCII')
     txt_onkio = get_md_table(
         chr_2_txt_onkio, title='ONKIO',
