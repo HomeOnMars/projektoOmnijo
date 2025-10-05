@@ -188,21 +188,19 @@ Changes of Esperanto++ from Esperanto include:
   - When saying one `hek`, one `jent`, or one `gil`,
     always add prefix `u` to signify it as a number instead of a unit.  
     E.g., say `ujent uhek` to express Hx110 (=Dx272);  
-    say `dujent uhek Utroj` to express Hx210U (=Dx528U).  
+    say `dujent uhek utroj` to express Hx210U (=Dx528U).  
     This is to differentiate cases between e.g.
-    ~~`jent HekUtroj`~~ (should be said as `ujent HekUtroj`)
-    and ~~`jent hek Utroj`~~ (should be said as `ujent uhek Utroj`).
+    ~~`jent hekutroj`~~ (should be said as `ujent hekutroj`)
+    and ~~`jent hek utroj`~~ (should be said as `ujent uhek utroj`).
   - As a reference,
     Dx 9 100 000 000 = Hx 2 1Υ66 Ψλ00,
     pronounced as
     `du duni, ugil ganjent seshek ses muni, fusgil lomjent`.
   - When saying one `muni`, one `duni`, etc, always add `unu` in front of it.
-  - Both `unu munio da Utroj` and `unu muni Utroj`
+  - Both `unu munio da utroj` and `unu muni utroj`
     are acceptable ways of saying Dx 65 536 U.
-  - Also you can just say `unu MuniUtro` directly, as 1 MU = Dx65536 U.
-  - But for fractions, use `munioneUtro` instead of ~~`munionUtro`~~
-    for more redunandencies in pronunciations
-    (So people don't mix `munioneUtro` up with `MuniUtro`).
+  - Also you can just say `unu muniutro` directly, as 1 MU = Dx65536 U.
+  - For fractions, add `-on` like in Esperanto. E.g. `munionutro`.
   - For prefix shorthands,
     always use no-hat capital letters for numbers \> 1
     (e.g. H for Hx10 and J for Hx100 etc.)
@@ -210,6 +208,8 @@ Changes of Esperanto++ from Esperanto include:
     (e.g. h for Hx0.1 and j for Hx0.01 etc.)
   - For full list of prefix shorthands,
     see `u_rdo_prefixes` `dict` in [unuoj.py](unuoj.py) file.
+  - Unit names must not start with `O`.
+    This is both to avoid confusion with 0 and with `-on` prefix suffix.
   - For units shorthands (letter-based),
     always use capital letter (hat or not) as the first letter,
     and lowercase for the following letters.

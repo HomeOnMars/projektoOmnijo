@@ -123,7 +123,7 @@ $$
   \approx 9.4607_D \times 10_D^{12_D} \  \textrm{km}
 $$
 
-*hekoneUtro* (`hU`):
+*hekonUtro* (`hU`):
 
 $$
   \textrm{hU}
@@ -131,7 +131,7 @@ $$
   \approx 0.49078_D \  \textrm{m}
 $$
 
-Nanosvarmo scale *dunioneUtro*  (`dU`):
+Nanosvarmo scale *dunionUtro*  (`dU`):
 
 $$
   \textrm{uU}
@@ -218,7 +218,7 @@ should take priority over aligning percisely to Earth's rotation cycle,
 which is also slowing down over millennia.)
 
 - `Ŝ`: ***Ŝekunto*** | Omnija Second
-  - Side note: munioneŜekuntoj `mŜ`
+  - Side note: munionŜekuntoj `mŜ`
     is $1 \  \textrm{mŜ} = 0.0001_H Ŝ \approx 0.02_D \  \textrm{ms}$
 - `Ĉ`: ***Ĉimuto***  | Omnija Minute
   - 1 Ĉimuto is about $1440_D/1024_D = 1.40625_D$ SI Minutes.
@@ -376,7 +376,7 @@ $$
 
 Ck is just a full circle.
 
-*hekoneCirklo* (`hCk`):
+*hekonCirklo* (`hCk`):
 
 $$
   \textrm{hCk}
@@ -384,7 +384,7 @@ $$
   = 22.5_D \degree
 $$
 
-*jentoneCirklo* (`jCk`):
+*jentonCirklo* (`jCk`):
 
 $$
   \textrm{jCk}
@@ -392,7 +392,7 @@ $$
   = 1.40625_D \degree
 $$
 
-*giloneCirklo* (`gCk`):
+*gilonCirklo* (`gCk`):
 
 $$
   \textrm{gCk}
@@ -400,7 +400,7 @@ $$
   \approx 5.2734_D \  \textrm{arcmin}
 $$
 
-*munioneCirklo*  (`mCk`):
+*munionCirklo*  (`mCk`):
 
 $$
   \textrm{mCk}
@@ -408,7 +408,7 @@ $$
   \approx 19.775_D \  \textrm{arcsec}
 $$
 
-*dunioneCirklo*  (`dCk`):
+*dunionCirklo*  (`dCk`):
 (mas means milliarcsecond)
 
 $$
