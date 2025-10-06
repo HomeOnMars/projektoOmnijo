@@ -271,7 +271,9 @@ Changes of Esperanto++ from Esperanto include:
   - ~~“‘Quotes’”~~
     (Use ASCII/ONKIO quotation marks instead within this repo,
     for easier whole word searches in vscode.)
-  - … Horizontal Ellipsis (Use Unicode symbol instead of three separate dots.)
+  - … Horizontal Ellipsis
+    (Use Unicode symbol instead of three separate dots.)
+  - ≈ Approx
 
 ### Nomi
 

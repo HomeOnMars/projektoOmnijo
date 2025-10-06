@@ -143,17 +143,19 @@ $$
 
 > Track gauge
 
-Track gauge in *RdO* for trains, metros, and trams are the same:
+Track and loading gauges in *RdO* are:
 
-$$
-  d_\mathrm{gauge}
-  \equiv 3 \  \textrm{hU}
-  = 35931_D \times  2^{101_D} \  l_P
-  \approx 1.4723_D \  m
-$$
+- Track gauge  
+  3 hU (≈ Dx1.4723 m $= 35931_D \times  2^{101_D} \  l_P$)
+- Loading gauge (max width, trams)  
+  6 hU (≈ Dx2.9447 m)
+- Loading gauge (max width, trains/metros)  
+  7 hU (≈ Dx3.4354 m)
+- Loading gauge (max height)  
+  Δ hU (≈ Dx4.9078 m)
 
-Yes this is incompatible with the standard gauge (Dx 1.4351 m)
-with a difference of 3.7 cm.
+Yes, the RdO track gauge is incompatible
+with the standard gauge (Dx 1.4351 m) with a difference of 3.7 cm.
 This is part of Omnijo's intentional effort
 to technologically isolate itself from the rest of the world,
 without directly imposing on people's freedom…
@@ -162,8 +164,10 @@ coming up with its own unit system in the first place.
 (The other being satisfying
 the <span style="color:Beige">Queen</span>'s OCD tendencies.)
 
-The loading gauge width in *RdO* is $6.8_H \  \textrm{hU} \approx 3.1901_D m$,
-which is 4cm wider than the usual [European loading gauge](https://en.wikipedia.org/wiki/Loading_gauge#European_standards).
+The RdO loading gauge for trains is \~29cm wider and \~59cm taller than the
+[European standards](https://en.wikipedia.org/wiki/Loading_gauge#European_standards), and
+\~4cm wider & \~11cm taller than the
+[Chinese standards](https://en.wikipedia.org/wiki/Loading_gauge#China).
 
 ### Maso
 

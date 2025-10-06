@@ -200,11 +200,12 @@ Arterial / Collector / Local Roads:
     - 24 (16m/2U-long)  train cars (**384m/48U**)
     - Half length permitted
   - For track intersections: $\geq$ 448m/56U.
+  - Track and loading gauges see [Unuoj page](Unuoj.md#trakmezurilo).
+  - [Track center distance](https://en.wikipedia.org/wiki/Track_spacing#Regulations):
+    Minimum 5m, suggested ≥6m.
   - Assumed power consumption:
     1726hp / 1.29MW / 2⚡ per (24m/3U-long) train car —
     Dx20.6MW / Hx20⚡ for a full length train.
-  - [Track center distance](https://en.wikipedia.org/wiki/Track_spacing#Regulations):
-    Minimum 5m, suggested ≥6m.
   - Due to advanced [*regenerative braking*](https://en.wikipedia.org/wiki/Regenerative_braking) system,
     kinetic energies from trains travelling downhill
     or decelerating to stop at stations
@@ -243,6 +244,7 @@ Arterial / Collector / Local Roads:
     - 12 (16m/2U-long) train cars (**192m/24U**)
     - Half length permitted
   - For track intersections: $\geq$ 240m/30U.
+  - Track and loading gauges see [Unuoj page](Unuoj.md#trakmezurilo).
   - Assumed power consumption:
     1187hp / 0.9MW / Hx1.6⚡ per (24m/3U-long) train car —
     7.1MW / λ⚡ for a full length train.
@@ -302,6 +304,7 @@ Arterial / Collector / Local Roads:
     - 9  (12m/1½U-long) train cars (**96m/12U**)
     - 12 ( 8m/1U-long)  train cars (**96m/12U**)
     - 1/3 and 2/3 length permitted
+  - Track and loading gauges see [Unuoj page](Unuoj.md#trakmezurilo).
   - Assumed power consumption:
     810hp / 0.6MW / Hx0.Ψ⚡ per (16m/2U-long) train car —
     total 2.4MW / 5.Δ⚡ for a full length tram.
