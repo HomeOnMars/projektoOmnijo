@@ -84,7 +84,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 | Urbaj Projektistoj  <br>City Designers | <span style="color:#95D0FC">La Arkitekto</span>  kaj  <span style="color:#D6B4FC">la Ĉefinĝeniero</span> de OCFI |
 | Reĝa Palaco  <br>Royal Palace | La Spajro-Singulariso |
 | Oficiala Lingvo  <br>Official Language | [*Esperanto++*](../teknikoj/Lingvo.md#epopo), a.k.a. *E++*, pronounced as ***Epopo***.  <br>(Transitioning from English in the next 16 years.) |
-| Oficiala Religio  <br>Official Religion | Pastafarianismo[^Bulteno-Religio] (oficiala)<br>Homismo (maloficiala) |
+| Oficiala Religio  <br>Official Religion | Pastafarianismo[^Bulteno-Religio] (oficiala)<br>Homismo (maloficiala)[^Bulteno-Religio-2] |
 | Oficialaj Koloroj  <br>Official Colors   | <span style="color:Beige">Flavgriza/Beige #F5F5DC</span> [^Bulteno-Koloroj-Flavgriza]  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span> [^Bulteno-Koloroj-Bluo]  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span> [^Bulteno-Koloroj-Purpuro] |
 | Oficialaj Himno  <br>Official Anthem | *Oceans* (*Where Feet May Fail*), originally by Hillsong UNITED  <br>Modified acoustic Epopo version[^Bulteno-Himno]. |
 | Oficialaj Flago  <br>Official Flag | ![RdOFlago](../fig/RdOFlago.svg)  <br>See [emblem](Emblemoj.md#desegnoj) page for design explanation. |
@@ -141,6 +141,9 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
   So conversion is optional.
   <span style="color:Beige">Queen Serena</span> herself
   idenfies as only a "part-time" Pastafarian, whatever that means.
+
+[^Bulteno-Religio-2]: As is the case for many other things in RdO,
+  it is often the official unofficial ones that does the load-bearing.
 
 [^Bulteno-Koloroj-Flavgriza]: Beige, symbolizing the harsh Unbending Reality,
   where beauty and complexities hidden deep underneath.
