@@ -177,6 +177,11 @@ For *him*, for *herself*, and for everything *they* believe in,
 
 ### La Utopia Revo
 
+> [!NOTE]
+> Again, opinions expressed by characters here
+> are **not** necessarily the same as my opinion.  
+> I do **not** necessarily endose any of those expressed opinions.
+
 <blockquote>
   <!-- You know what's even worse than being terridied all the time?
   The future. -->
@@ -190,5 +195,180 @@ For *him*, for *herself*, and for everything *they* believe in,
 </blockquote>
 <br>
 
+Ø-2☾3⚝ | 11 weeks before Serena's Coronation,
+a random coffee shop somewhere around the world.
+
+“Have you ever watched the TV show Beforeigners?
+In the end of the season 2,
+the old crusader King and his sorceress created their perfect utopia —
+a Christian paradise where birth control methods are outlawed instead of drugs;
+their own morality is enforced via total state surveillance
+and armed police control; and
+them became the King and Queen of their Earth-spanning country,
+with all the attached material and inmaterial benefits
+for being the dictatorial heads of the planet.
+A utopia for them, for sure;
+but a dystopia in the eyes of most other people in the modern world.”
+
+The speaker’s interlocutor squints at her just a little.
+He had just met her five minutes ago
+in this very coffee shop for the first time;
+and she has already launched into this long speech
+about how utopias and dystopias are two sides of the same coin.
+An interesting character, for sure.
+“You know, I thought people would reference the original book *Utopia*
+(Thomas Moore, 1516)
+instead of pop tv shows when trying to argue about utopias…”
+
+“Have you actually read the book Utopia?”
+
+“… No.”
+
+“Case in point.
+No point in referencing things people don’t know,
+and frankly I’d say that pop culture is just as valid
+as fictional thought experiments for philosophical debates.”
+She says with a subtle victorious smile.
+As if Beforeigner is that mainstream…
+luckily, he did watch that show;
+and as it so happens, he just rewatched it again a few weeks ago,
+so he knows exactly what she was talking about.
+
+The book, however, is something he merely heard of.
+
+She continues,
+“Although, I’d say that the book actually supports my side as well.
+I hardly think today’s people would agree that a utopia
+should include slavery as a component.”
+
+“*Utopia* the book demands slavery??”
+
+“Yep. It was written in the 16th century — what did you expect?”
+
+“… Fine. Morality changes over time.
+But that doesn’t mean we cannot build a utopia
+for today’s people and today’s morals —
+and for that, I think your Beforeigner example is a too extreme case.
+I don’t think most people are fanatic religious zealots.”
+He counters, hoping to keep the conversation flowing.
+
+“Yeah. But I still think it highlights something fundamental,
+as also vividly illustrated in today’s politics —
+where people often have strong opposing opinions and/or preferences.
+A lot of those disagreements indeed come from
+the incomplete or false understandings,
+selfish interests, virtue signaling, or strategies;
+but all in all, a lot comes down to value differences.
+Take abortion as an example;
+I for one think that the differences in the pro and against side
+comes down to the core issue of comparing the value
+of women’s control over their own bodies/lives/dignities
+versus the lives of unborn babies.
+Different people prioritize differently;
+and that’s a difference cannot be resolved through reasoning alone.
+So, you can imagine how in a pro-abortionist’s utopia,
+unborn babies could be trivially murdered
+so their mothers can live their carefree lives;
+while in a against-abortionist’s utopia,
+women could be treated as baby manufacturing machines,
+while innocent women’s lives ruined by unwanted children…”
+She says, getting quite visibly excited for finally meeting someone
+who would indulge her for all her controversial ideas.
+
+“I think there’s more to the issues of abortion here.
+Religion, propaganda, us-versus-them mentality,
+those things all play a part here…
+Not to mention other concerns
+like encouraging women to be more conservative about sex…”
+he pushes back.
+
+“Doesn’t matter.
+The point is that both utopias are valid utopias
+for the people they are designed for;
+but for the others, they are dystopias.
+Humanity is a fragmented species;
+each of us has our very own set of desires and moral codes,
+which are often ultimately incompatible with other’s,
+especially when under enough optimization pressure.
+You just don’t see them amongst harmonic appearances of modern day societies,
+because today’s world isn’t nearly a utopia. Yet.
+It isn’t even trying that hard to be one.
+Once we actually starts to try hard enough —
+once we actually starts to optimize the world
+for the value of a certain person, or a certain group, or a certain ideology,
+then it can very easily become a dystopia for everyone else,
+as it trades away what they values for what it values.”
+She stops to catch a breath.
+Sipping her coffee, she looks at him as he raises his eyebrow.
+“Huh. You disagree?”
+
+“I think that’s a bit too abstract.
+In my experience, things that are too abstract
+can very easily fall into logical traps and be false.
+Take your claim about the world’s lack of optimization pressure as an example —
+I’d say that today’s world looks pretty optimized already for humans.
+Many of us got clean water, easily accessible food sources,
+convenient transportation and communications and entertainment…
+True, inequalities still exist (and is a big problem),
+but that doesn’t change the fact that
+today’s world certainly is very different from what it is
+up until ten thousand years ago.
+There certainly is a new optimization pressure in the world,
+taking over from evolution,
+to make our world what it is like today —
+and at least up until now, it seems to have served us humans pretty well.”
+
+“Huh. True, capital is a powerful drive —
+though I could just as easily point towards
+the homelessness, the world wars, the nuclear deterrence,
+the inequalities and poverty, the misinformation… so many counterexamples.”
+
+“Those are in the minorities.”
+
+She rolls her eyes at him. “I’d hardly describe the
+[8.5%](https://www.worldbank.org/en/publication/poverty-prosperity-and-planet) (2025-10-06)
+of the global population living in extreme poverty as a ‘minority’.”
+
+“Well… it’s not like it’s 85%…”
+he notices she was giving him an another "are-you-serious" eye-roll,
+so he quickly follows up:
+“and the percentage number is going down historically, I think.”
+He says with hesitations, unsure of the exact statistics.
+It’s been a while since he last looked it up.
+
+“True, the percentage is going down,
+but not so much for the absolute number of people.”
+she stops, letting the solemn silence sink in for a few more seconds,
+then continues,
+“I would suggest this fact as a nice warning of what could happen —
+or rather, failed to happen — by default, when ‘building a brighter future’.
+Perfection isn't just going to pop up by default,
+you gotta make an actual effort if you want everyone to be happy —
+a lot of effort, presumably, and that’s assuming if it’s even possible.
+A BIG *if*.”
+
+“Hmmm. I suppose that makes sense.
+But honestly I still feel a bit reserved about this.
+That’s too much theoretical talk —
+it needs to be grounded somehow,
+just to make sure we are not seeing things that are not there…”
+he mindlessly stirs his coffee, appearing lost in thought.
+
+“Fair Enough. So tell me, what would your utopia look like?” She asks.
+
+“W-W-What?”
+
+“You asked for us to ground our arguments.
+What would a perfect world look like for you?”
+She repeats patiently, amused by his reaction.
+
+“Eh, we met here just fifteen minutes ago, I don’t even know your name…”
+
+“Serena. Serena Novarika.
+And how about this: you tell me yours, and I’ll tell you mine.”
+She responds with a mischievous smile.
+
+“Fine, deal.” The man sighs, “███,” as he gestures towards himself. “I guess my utopia would be like…”
+
 > [!NOTE]
-> TBD.
+> To be continued.
