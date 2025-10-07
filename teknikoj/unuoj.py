@@ -424,7 +424,7 @@ u_rdo_base['xdim'] = units.def_unit(
     [chr(0x332), 'Nuo'], 1 * units.dimensionless_unscaled,
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 u_rdo_base['byte'] = units.def_unit(
-    ['Bit', 'Bito'], 1 * units.bit,
+    ['Bit', 'B', 'Bito'], 1 * units.bit,
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 u_rdo_base['mono'] = units.def_unit(    # currency
     ['🪙', 'Sejro'], format={'latex': r' 🪙 '},
@@ -568,7 +568,7 @@ equivalencies_temperature = [
 del eq, X, Z, __K_2_X, __X_2_K
 #    byte
 units.def_unit(
-    ['B', 'Bajto'],  8 * u_rdo_defs['Bit'],
+    ['Baj', 'Bajto'],  8 * u_rdo_defs['Bit'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 #    speed
 units.def_unit('UoŜ', u_rdo_defs[ 'U']/u_rdo_defs['Ŝ'], namespace=u_rdo_defs)

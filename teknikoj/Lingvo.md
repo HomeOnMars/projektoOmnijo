@@ -274,6 +274,7 @@ Changes of Esperanto++ from Esperanto include:
   - … Horizontal Ellipsis
     (Use Unicode symbol instead of three separate dots.)
   - ≈ Approx
+  - ½ Half
 
 ### Nomi
 

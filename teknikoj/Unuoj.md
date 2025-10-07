@@ -151,8 +151,41 @@ Track and loading gauges in *RdO* are:
   6 hU (≈ Dx2.9447 m)
 - Loading gauge (max width, trains/metros)  
   7 hU (≈ Dx3.4354 m)
-- Loading gauge (max height)  
+- Loading gauge (max height, overhead wires)  
   Δ hU (≈ Dx4.9078 m)
+- Loading gauge (max height excl. pantograph)  
+  9 hU (≈ Dx4.4170 m)
+  - Note:
+    keep a minimum 3/4 hU electrical clearance
+    inbetween the top of trains and the overhead wires.
+- Capacity  
+  Assuming each seat is 1 hU wide and 2 hU long, and cabin is 2 hU tall,
+  This implies a capacity of passengers per U car length of
+  - *Tram*:
+    <!-- single floor, longitudinal seating layout,
+    2 seats + 2 standing per 1 hU length, i.e.   -->
+    Dx64 passengers/U (excluding driver's cabins at both ends),  
+    or Dx224 passengers per 4U-long tram.
+  - *Metro*:
+    <!-- single floor, longitudinal seating layout, driverless,
+    2 seats + 3 standing per 1 hU length, i.e.   -->
+    Dx80 passengers/U,  
+    or Dx960 passengers per 12U-long metro train.
+  - *Train (local)*:
+    <!-- double-decker, transverse seating layout, driverless,
+    6 seats per 2 hU length (plus 1 empty hU for corridors),
+    1 U single-decker (same stats as metro) +
+    ½ U for stairs/toilets + 1½ U double-decker, i.e.   -->
+    Average \~Dx74.67 passengers/U (excluding driver's cabins),  
+    or Dx224 passengers per 3U-long train car,  
+    or Dx1792 passengers per 24U-long train.
+  - *Train (high speed)*:
+    <!-- single floor, transverse seating layout, driverless,
+    6 seats per 2 hU length (plus 1 empty hU for corridors), i.e.   -->
+    Dx48 passengers/U
+    (excluding driver's cabins, toilets, first class, etc),  
+    or Dx120 passengers per 3U-long train car,  
+    or Dx960 passengers per 24U-long train.
 
 Yes, the RdO track gauge is incompatible
 with the standard gauge (Dx 1.4351 m) with a difference of 3.7 cm.
@@ -455,53 +488,55 @@ $$
 > Bits and bytes
 
 > [!IMPORTANT]
-> Base byte unit: ***Bajto*** `B` (Byte)
+> Byte unit: ***Bajto*** `Baj` (Byte)
 
 > [!NOTE]
-> Bit unit: ***Bito*** `Bit` (Bit)
+> Base Bit unit: ***Bito*** `Bit` (Bit, or `B`)  
+> (avoid using `B` to avoid confusion with SI byte $\textrm{B}_\textrm{SI}$.)
 
 $$
-  \textrm{B}
+  \textrm{Baj}
   \equiv \textrm{B}_\textrm{SI}
   = 8 \textrm{Bit}
+  = 8 \textrm{b}_\textrm{SI}
 $$
 
-*GilBajto*  (`GB`):
+*GilBito*  (`GBit`):
 
 $$
-  \textrm{GB}
-  \equiv 1000_H \  \textrm{B}
-  = 4 \  \textrm{kB}_\textrm{SI}
+  \textrm{GBit}
+  \equiv 1000_H \  \textrm{Bit}
+  = ½ \  \textrm{kB}_\textrm{SI}
 $$
 
-*MuniBajto*  (`MB`):
+*MuniBito*  (`MBit`):
 
 $$
-  \textrm{MB}
-  \equiv 10000_H \  \textrm{B}
-  = 64_D \  \textrm{kB}_\textrm{SI}
+  \textrm{MBit}
+  \equiv 10000_H \  \textrm{Bit}
+  = 8 \  \textrm{kB}_\textrm{SI}
 $$
 
-*DuniBajto*  (`DB`):
+*DuniBito*  (`DBit`):
 
 $$
-  \textrm{DB}
-  \equiv 10000_H^2 \  \textrm{B}
-  = 4 \  \textrm{GB}_\textrm{SI}
+  \textrm{DBit}
+  \equiv 10000_H^2 \  \textrm{Bit}
+  = ½ \  \textrm{GB}_\textrm{SI}
 $$
 
-*TriniBajto*  (`TB`):
+*TriniBito*  (`TBit`):
 
 $$
-  \textrm{TB}
-  = 256_D \  \textrm{TB}_\textrm{SI}
+  \textrm{TBit}
+  = 32_D \  \textrm{TB}_\textrm{SI}
 $$
 
-*KvarniBajto*  (`RB`):
+*KvarniBito*  (`RBit`):
 
 $$
   \textrm{RB}
-  = 16_D \  \textrm{EB}_\textrm{SI}
+  = 2 \  \textrm{EB}_\textrm{SI}
 $$
 
 Derivitaj Unuoj
