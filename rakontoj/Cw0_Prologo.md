@@ -14,7 +14,8 @@ Legal
 
 > [!NOTE]
 > Opinions expressed by characters in this fantasy story
-> is **not** necessarily the opinion of the author (me).  
+> is **not** necessarily the opinion of the author (me).
+> I do **not** necessarily endose any of those expressed opinions.  
 > Let fantasy be fantasy please.
 
 <p xmlns:cc="http://creativecommons.org/ns#" >This work by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/HomeOnMars">HomeOnMars</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
@@ -64,7 +65,7 @@ Just like you, or me, or every single person
 on this chunk of floating space rock we call Earth.
 Her beauty and art will then fade, and eventually forgotten,
 just like *Every. Single. Other. Thing*.
-‘All love stories end in death or loss; those are your only exits.’
+‘Love over time is death or loss; those are your only two exits.’[^K2]
 Even humanity and the universe will sooner-or-later come to an end,”  
 said the voice,
 with a tone of bemusement that reeks cruelty through indifference.  
@@ -72,6 +73,8 @@ with a tone of bemusement that reeks cruelty through indifference.
 The sooner you accept this, the easier life will be: None of us matters.
 You die, I die, everyone dies.
 ***All beauty fades. Everything ends. Nothing lasts forever.***”
+
+[^K2]: —— The Time Traveler's Wife <cite><a href="https://www.youtube.com/watch?v=nSnrp8MryNk&t=2345s">S01E04 (2022) 39:05</a></cite>.
 
 The silence lingered on for a while,
 and was broken just as that voice’s owner was stepping out of the room,
@@ -139,7 +142,8 @@ of constructing such abstractions, at least in the corpus within her reach.
 Humanity, unfortunately,
 is still rudimentary at figuring stuff out correctly,
 as natural selection can only get you so far
-when *fitness* is used as a proxy for *truth-seeking*.
+when *fitness* is used as a proxy for *truth-seeking*…
+which, sadly, is especially true for those who came before her.
 
 But that now *ended* with her.
 
@@ -180,8 +184,15 @@ For *him*, for *herself*, and for everything *they* believe in,
 > [!NOTE]
 > Again, opinions expressed by characters here
 > are **not** necessarily the same as my opinion.  
-> I do **not** necessarily endose any of those expressed opinions.
 
+<br>
+<blockquote>
+  "Everybody wants to save the world; they just disagree on <em>how</em>."<br>
+  <span style="color:grey">
+  —— <em>Fallout</em> S01E05 (2024)
+  </span>
+</blockquote>
+<br>
 <blockquote>
   <!-- You know what's even worse than being terridied all the time?
   The future. -->
@@ -196,7 +207,7 @@ For *him*, for *herself*, and for everything *they* believe in,
 <br>
 
 Ø-2☾3⚝ | 11 weeks before Serena's Coronation,
-a random coffee shop somewhere around the world.
+a random coffee shop in ███.
 
 “Have you ever watched the TV show Beforeigners?
 In the end of the season 2,
@@ -211,18 +222,22 @@ A utopia for them, for sure;
 but a dystopia in the eyes of most other people in the modern world.”
 
 The speaker’s interlocutor squints at her just a little.
-He had just met her five minutes ago
-in this very coffee shop for the first time;
-and she has already launched into this long speech
+A young women in her early 20s, maybe younger,
+with a delicate face and flaming hair,
+projecting a unique kind of assertiveness and depth
+unexpected for her age — when she is paying attention.
+Just five minutes ago he met her in this coffee shop for the first time;
+and now she has already launched into this long speech
 about how utopias and dystopias are two sides of the same coin.
 An interesting character, for sure.
-“You know, I thought people would reference the original book *Utopia*
-(Thomas Moore, 1516)
+“You know, I thought people would reference the original book *Utopia*[^K1]
 instead of pop tv shows when trying to argue about utopias…”
 
-“Have you actually read the book Utopia?”
+[^K1]: —— Thomas Moore, 1516
 
-“… No.”
+“Have you read that book?”
+
+“… Not really.”
 
 “Case in point.
 No point in referencing things people don’t know,
@@ -230,10 +245,10 @@ and frankly I’d say that pop culture is just as valid
 as fictional thought experiments for philosophical debates.”
 She says with a subtle victorious smile.
 As if Beforeigner is that mainstream…
-luckily, he did watch that show;
-and as it so happens, he just rewatched it again a few weeks ago,
+Though, as it so happens, he loves that show and
+just rewatched it again a few days ago,
 so he knows exactly what she was talking about.
-
+(What a coincidence!)  
 The book, however, is something he merely heard of.
 
 She continues,
@@ -253,11 +268,11 @@ I don’t think most people are fanatic religious zealots.”
 He counters, hoping to keep the conversation flowing.
 
 “Yeah. But I still think it highlights something fundamental,
-as also vividly illustrated in today’s politics —
+as vividly illustrated in today’s politics too —
 where people often have strong opposing opinions and/or preferences.
 A lot of those disagreements indeed come from
 the incomplete or false understandings,
-selfish interests, virtue signaling, or strategies;
+selfish interests, virtue signaling, or strategic deceptions;
 but all in all, a lot comes down to value differences.
 Take abortion as an example;
 I for one think that the differences in the pro and against side
@@ -277,7 +292,7 @@ who would indulge her for all her controversial ideas.
 
 “I think there’s more to the issues of abortion here.
 Religion, propaganda, us-versus-them mentality,
-those things all play a part here…
+those things all play a part here.
 Not to mention other concerns
 like encouraging women to be more conservative about sex…”
 he pushes back.
@@ -321,12 +336,12 @@ and at least up until now, it seems to have served us humans pretty well.”
 “Huh. True, capital is a powerful drive —
 though I could just as easily point towards
 the homelessness, the world wars, the nuclear deterrence,
-the inequalities and poverty, the misinformation… so many counterexamples.”
+the inequalities and poverty, the AI slop… so many counterexamples.”
 
 “Those are in the minorities.”
 
 She rolls her eyes at him. “I’d hardly describe the
-[8.5%](https://www.worldbank.org/en/publication/poverty-prosperity-and-planet) (2025-10-06)
+[8.5%](https://www.worldbank.org/en/publication/poverty-prosperity-and-planet) <!-- (2025-10-06) -->
 of the global population living in extreme poverty as a ‘minority’.”
 
 “Well… it’s not like it’s 85%…”
@@ -364,11 +379,12 @@ She repeats patiently, amused by his reaction.
 
 “Eh, we met here just fifteen minutes ago, I don’t even know your name…”
 
-“Serena. Serena Novarika.
-And how about this: you tell me yours, and I’ll tell you mine.”
+"Serena. <span style="color:Beige">Serena Novarika</span>.
+And how about this: you tell me yours, and I’ll tell you mine."
 She responds with a mischievous smile.
 
-“Fine, deal.” The man sighs, “███,” as he gestures towards himself. “I guess my utopia would be like…”
+“Fine.” The man sighs and gestures towards himself as he tells her his name.
+“I guess my utopia would be like…”
 
 > [!NOTE]
 > To be continued.
