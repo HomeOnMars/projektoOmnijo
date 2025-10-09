@@ -501,11 +501,11 @@ normalize(u_csl_base)
 # rdo unit extra defs
 #    time
 units.def_unit(
-    ['Ĉ', 'Ĉimuto'],   0x40 * u_rdo_base['time'], namespace=u_rdo_defs)
+    ['Ĉ', 'Ĉimuto'], u_rdo_defs['JŜ'], namespace=u_rdo_defs)
 units.def_unit(
-    ['Ĝ', 'Ĝoro'],   0x1000 * u_rdo_base['time'], namespace=u_rdo_defs)
+    ['Ĝ', 'Ĝoro'],   u_rdo_defs['GŜ'], namespace=u_rdo_defs)
 units.def_unit(
-    ['⚻', 'Tago'], u_rdo_defs['MŜ'], namespace=u_rdo_defs)
+    ['⚻', 'Tago'],   u_rdo_defs['MŜ'], namespace=u_rdo_defs)
 units.def_unit(
     ['⚝', 'Semajno'], 7 * u_rdo_defs['Tago'], namespace=u_rdo_defs)
 units.def_unit(

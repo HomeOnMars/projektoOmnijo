@@ -258,16 +258,16 @@ which is also slowing down over millennia.)
   - Side note: munionŜekuntoj `mŜ`
     is $1 \  \textrm{mŜ} = 0.0001_H Ŝ \approx 0.02_D \  \textrm{ms}$
 - `Ĉ`: ***Ĉimuto***  | Omnija Minute
-  - 1 Ĉimuto is about $1440_D/1024_D = 1.40625_D$ SI Minutes.
+  - 1 Ĉimuto is about $1440_D/256_D = 5.625_D$ SI Minutes.
 - `Ĝ`: ***Ĝoro***    | Omnija Hour
   - 1 Ĝoro is about $24_D/16_D = 1.5_D$ SI Hours.
 - `⚻` or `MŜ`: ***Tago*** / *MuniŜekuntoj* | Omnija Day
   - Conversion rate:
-    $$1⚻ = 1\textrm{MŜ} = 16_D Ĝ = 1024_D Ĉ = 65536_D Ŝ$$
+    $$1⚻ = 1\textrm{MŜ} = 16_D Ĝ = 256_D Ĉ = 65536_D Ŝ$$
     i.e.,
-    $1\textrm{MŜ} = 10_H Ĝ = 400_H Ĉ = 10000_H Ŝ $;  
-    $1Ĝ = 40_H Ĉ$,  
-    $1Ĉ = 40_H Ŝ$;
+    $1\textrm{MŜ} = 10_H Ĝ = 100_H Ĉ = 10000_H Ŝ $;  
+    $1Ĝ = 10_H Ĉ$,  
+    $1Ĉ = 100_H Ŝ$;
   - 1 Ŝekunto is therefore
     approximately $86400_D/65536_D = 1.318359375_D$ SI Seconds.
   - ($D$ for decimal, $H$ for Hexadecimal)
@@ -322,7 +322,7 @@ which is also slowing down over millennia.)
   - In other words, extra seconds may be added or substracted in $☾_Υ$
     to keep the days in sync with
     [Mean Solar Time](https://en.wikipedia.org/wiki/Solar_time#Mean_solar_time).
-    Usually this means adding $\sim 7.1$ minutes or 5Ĉ4Ŝ.
+    Usually this means adding $\sim 7.1$ minutes or Hx1Ĉ44Ŝ.
   - This means that on average, one Omnija Calendar Year is approximately
     $1 J \approx 365.24713_D ⚻$ currently,
     considering both leap years and added seconds.
@@ -589,7 +589,7 @@ Human walking speed $\approx 4 \  \textrm{JoĜ} \approx 5.4_D \textrm{kph}$,
 or $3 \sim 4.8_H \  \textrm{JoĜ}$ ($4.0_D \sim 6.0_D \textrm{kph}$).  
 Source: (2025-07-03)
 [Wikipedia](https://en.wikipedia.org/wiki/Preferred_walking_speed).  
-A 4Ĉ (≈5.6min) walking distance can thus be defined as Hx40U or **Dx64U**,
+A 1Ĉ (≈5.6min) walking distance can thus be defined as Hx40U or **Dx64U**,
 which is approximately Dx503m (or Dx512 CSL meters)
 
 Human jogging speed ranges
@@ -602,9 +602,9 @@ Walkable distances:
 
 | Time (Dxmin) | Time (HxĈ) | Distance (HxU) | Distance (DxU) | Distance (Dxkm_CSL) |
 | :-------- | :----: | :-----: | :-----: | ---------: |
-| Dx  6 min | Hx  4Ĉ | Hx  40U | Dx  64U | Dx  0.5 km |
-| Dx 11 min | Hx  8Ĉ | Hx  80U | Dx 128U | Dx  1.0 km |
-| Dx 17 min | Hx  ΠĈ | Hx  Π0U | Dx 192U | Dx  1.5 km |
+| Dx  6 min | Hx  1Ĉ | Hx  40U | Dx  64U | Dx  0.5 km |
+| Dx 11 min | Hx  2Ĉ | Hx  80U | Dx 128U | Dx  1.0 km |
+| Dx 17 min | Hx  3Ĉ | Hx  Π0U | Dx 192U | Dx  1.5 km |
 
 #### Speed limits examples
 
