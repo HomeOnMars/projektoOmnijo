@@ -24,21 +24,21 @@
     "75724": {
       "Id": 75724,
       "Name": "ExtraLib",
-      "Version": "23",
+      "Version": "24",
       "LoadOrder": 4,
       "IsEnabled": true
     },
     "75426": {
       "Id": 75426,
       "Name": "I18n EveryWhere",
-      "Version": "51",
+      "Version": "54",
       "LoadOrder": 5,
       "IsEnabled": true
     },
     "74604": {
       "Id": 74604,
       "Name": "Anarchy",
-      "Version": "32",
+      "Version": "34",
       "LoadOrder": 8,
       "IsEnabled": true
     },
@@ -52,30 +52,23 @@
     "75816": {
       "Id": 75816,
       "Name": "Advanced Line Tool",
-      "Version": "30",
+      "Version": "31",
       "LoadOrder": 85,
       "IsEnabled": true
     },
     "75993": {
       "Id": 75993,
       "Name": "Tree Controller",
-      "Version": "21",
+      "Version": "22",
       "LoadOrder": 86,
-      "IsEnabled": true
-    },
-    "86260": {
-      "Id": 86260,
-      "Name": "Compass",
-      "Version": "4",
-      "LoadOrder": 90,
       "IsEnabled": true
     },
     "77260": {
       "Id": 77260,
       "Name": "Water Visual Tweaks",
-      "Version": "7",
+      "Version": "10",
       "LoadOrder": 94,
-      "IsEnabled": false
+      "IsEnabled": true
     },
     "84978": {
       "Id": 84978,
@@ -94,7 +87,7 @@
     "74324": {
       "Id": 74324,
       "Name": "Move It",
-      "Version": "28",
+      "Version": "30",
       "LoadOrder": 125,
       "IsEnabled": true
     },
@@ -129,7 +122,7 @@
     "74539": {
       "Id": 74539,
       "Name": "Image Overlay",
-      "Version": "17",
+      "Version": "18",
       "LoadOrder": 130,
       "IsEnabled": true
     },
@@ -150,14 +143,14 @@
     "75613": {
       "Id": 75613,
       "Name": "Water Features",
-      "Version": "14",
+      "Version": "15",
       "LoadOrder": 133,
       "IsEnabled": false
     },
     "75804": {
       "Id": 75804,
       "Name": "Skyve",
-      "Version": "54",
+      "Version": "55",
       "LoadOrder": 134,
       "IsEnabled": true
     },
@@ -168,11 +161,11 @@
       "LoadOrder": 135,
       "IsEnabled": true
     },
-    "75745": {
-      "Id": 75745,
-      "Name": "Achievement Enabler",
-      "Version": "2",
-      "LoadOrder": 136,
+    "121256": {
+      "Id": 121256,
+      "Name": "Achievement Fixer",
+      "Version": "4",
+      "LoadOrder": 2147483646,
       "IsEnabled": true
     }
   },
