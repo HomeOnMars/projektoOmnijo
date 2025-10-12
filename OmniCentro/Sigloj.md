@@ -161,24 +161,26 @@ Examples:
 |    Sc   | **S**ta**c**io       | Station          |
 ||| <!-- Road types --> |
 |  ~~Vj~~ | ~~**V**o**j**o~~     | [Road](../teknikoj/Retoj.md#vojoj)  <br>(Deprecated[^Deprecated-Vj]) |
-|    Ej   | f**E**rvo**j**o      | [Railway](../teknikoj/Retoj.md#metrooj--personaj-fervojoj) |
-|  Ej-K   | Ej-**K**argo         | [Cargo railway](../teknikoj/Retoj.md#kargaj-kaj-malnovaj-personaj-fervojoj) |
-|  Ej-AR  | Ej-**A**lt**R**apido | [High-speed railway](../teknikoj/Retoj.md#altrapidaj-fervojoj) |
-|  Ej-SL  | Ej-**S**upraj**L**inioj | Regular railway (powered by overhead lines) |
-|  Ej-TR  | Ej-**T**ria**R**elo  | Subway railway (powered by third rail) |
-|    Tj   | Ej-**T**ramo         | [Tramway](../teknikoj/Retoj.md#tramoj)          |
-|    Ŭj   | a**Ŭ**tovo**j**o     | [Motorway](../teknikoj/Retoj.md#aŭtovojoj) |
+|    Ev   | f**E**r**v**ojo      | [Railway](../teknikoj/Retoj.md#metrooj--personaj-fervojoj) |
+|  Ev-K   | Ev-**K**argo         | [Cargo railway](../teknikoj/Retoj.md#kargaj-kaj-malnovaj-personaj-fervojoj) |
+|  Ev-AR  | Ev-**A**lt**R**apido | [High-speed railway](../teknikoj/Retoj.md#altrapidaj-fervojoj) |
+|  Ev-SL  | Ev-**S**upraj**L**inioj | Regular railway (powered by overhead lines) |
+|  Ev-TR  | Ev-**T**ria**R**elo  | Subway railway (powered by third rail) |
+|    Tv   | Ev-**T**ramo         | [Tramway](../teknikoj/Retoj.md#tramoj)          |
+|    Ŭv   | a**Ŭ**to**v**ojo     | [Motorway](../teknikoj/Retoj.md#aŭtovojoj) |
 |    St   | **S**tra**t**o       | [Street](../teknikoj/Retoj.md#stratoj) |
 |  St-Dt  | St-**D**is**t**ribuo | Distributor Roads |
 |  St-Ĉf  | St-**Ĉ**e**f**o      | Main  Roads      |
 |  St-Lk  | St-**L**o**k**o      | Local Roads      |
 |  St-H   | St-**H**omo          | Pedestrian Roads |
+|  St-K   | St-**K**argo         | Industrial Roads |
 ||| <!-- Edu types --> |
 |    Bl   | **B**az**l**ernejo   | Elementary School |
 |    Ml   | **M**ez**l**ernejo   | High School      |
 |    Al   | **A**lt**l**ernejo   | College          |
 |   Uni   | **Uni**versitato     | University       |
 ||| <!-- Misc types --> |
+|    Ub   | **U**r**b**o         | City             |
 |    Ĉs   | **Ĉ**ef**s**idejo    | Headquarters     |
 |    La   | **La**               | The              |
 |    Ĉf   | **Ĉ**e**f**o         | Main             |
@@ -191,21 +193,21 @@ Examples:
   as it could mean anything from motorways and rails to alleys and paths.
   Do not use.
 
-Naming rules examples:
+Naming rules examples: (See also [Lingvo](../teknikoj/Lingvo.md#nomi) page.)
 
 - `Ab-O#1` (Good) as a short version  
   of `Ab-Olivkrono #1` (Good),  
-  or `Akvobaraĵo-Olivkrono #1` (Meh),  
+  or `Akvobaraĵa-Olivkrono #1` (Meh),  
   or `Mt-Olivkrona Akvobaraĵo #1` (Good);
 - `Mt-O` (Good) as a short version  
   of `Mt-Olivkrono` (Good),  
-  or `Monto-Olivkrono` (Good),  
-  or `Olivkrona Monto` (Meh);
-- `Ŭj#Σm` for Motorway 13 N->S `ŬΣm`,  
+  or `Monta-Olivkrono` (Good),  
+  ~~or `Olivkrona Monto`~~ (Deprecated);
+- `Ŭv#Σm` for Motorway 13 N->S `ŬΣm`,  
   or `Aŭtovojo #Σm`;
 - `St-Olivkrono #123` as a short version  
-  of `Olivkrona Strato #123`,  
-  or `123 Olivkrono St`;
+  of `Strata-Olivkrona #123`,  
+  ~~or `123 Olivkrono St`~~ (Deprecated);
 - ~~`Stacidomo #E` and `Stacidomo #U` for train and bus station respectively~~  
   (Just use `Stacidomo` so *Carto* Mod doesn't get confused);
 
@@ -235,6 +237,8 @@ Using the leading digit for identifying districts and areas:
 | `Π` |  NK  | Me-R  | Me-Racio       | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 |     |  NK  | La-P  | La-Pordego     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 |     |  NK  | Dt-L  | Dt-Lumturo     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
+|     |  NK  | La-A  | La-Artezo      | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
+|     |  NK  | La-C  | La-Cirklo      | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 | `Σ` |  NR  | Am-R  | Am-Racio       | |
 |  …  |      |       |                | |
 | `Ψ` |      |       | Eksteraj Konektoj  <br>Outside connections | |
@@ -249,11 +253,13 @@ Using the leading digit for identifying districts and areas:
 
 | En esperanto  <br>In Esperanto | En la angla  <br>In English |
 | ------------------------ | ------------------------ |
-| Vojprizorgado-Servo      | Road Maintenance Service |
+| Vojo-Konservkorto        | Road Maintenance Service |
+| Parko-Konservkorto       | Park Maintenance Depot   |
 | Buso-Korto               | Bus Depot                |
 | Fervojo-Korto            | Rail Yard                |
 | Metroo-Korto             | Subway Yard              |
 | Tramo-Korto              | Tram Depot               |
+| Taksio-Korto             | Taxi Depot               |
 | Stacio                   | Station                  |
 | Stacidomo                | Station (Building)       |
 | Parkejo                  | Parking Lot              |

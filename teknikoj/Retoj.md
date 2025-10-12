@@ -90,7 +90,7 @@ Arterial / Collector / Local Roads:
   | ----------- | :-------: | :-------: | :-------: | ----------- |
   | Recommended |  10  \%   |  65 km/h  |  30 JoĜ | `St-Dt` Distributor (2+ Ŭ lanes per direction, No parking, No zoning, tram tracks in the middle)   |
   ||||||
-  | Recommended |  15  \%   |  45 km/h  |  20 JoĜ | `St-Ĉf` Local roads (Main or Low Ped Activity, tram tracks on the sides) |
+  | Recommended |  15  \%   |  45 km/h  |  20 JoĜ | `St-Ĉf` Local roads (Main or Low Ped Activity, tram tracks on the sides)  <br>`St-K` Industrial roads |
   | Recommended |  21  \%\* |  35 km/h  |  18 JoĜ | `St-Lk` Local roads (High Ped Activity) |
   | Hard Limit  |  33  \%\* |  20 km/h  |  10 JoĜ | `St-Lk` Local roads / Pedestrian Roads |
   ||||||

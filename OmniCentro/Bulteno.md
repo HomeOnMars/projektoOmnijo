@@ -215,6 +215,6 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 ||| <!-- Semi-local --> |
 |  OC  | #FFFFFF | <span style="color:White">█ Urbestro **Ulio Klenoro** de OmniCentro</span> |
 | OCFF | #FF0000 | <span style="color:Red">█ Direktoro **Petrovo Sokolov** de Omnijo </span> |
-| OCFP | #4169E1 | <span style="color:RoyalBlue">█ Policestro **Tejler Vikila** de Omnijo</span>  <!--The Spymaster-->  |
+| OCFP | #4169E1 | <span style="color:RoyalBlue">█ Policestro **Tejler Vikila** de Omnijo</span>  <!--The Conduit-->  |
 | OCFS | #FFC0CB | <span style="color:Pink">█ Fakestro **Fiona Amirazi** de Omnijo</span> |
 | OCRR | #D8BFD8 | <span style="color:Thistle">█ Gastiganto **Karla Revin** de OCRR</span> |
