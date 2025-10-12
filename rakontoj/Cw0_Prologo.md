@@ -79,7 +79,7 @@ You die, I die, everyone dies.
 The silence lingered on for a while,
 and was broken just as that voice’s owner was stepping out of the room,
 by his interlocutor, with a forced calmness in his tone masking the tremble:  
-“And what if I don’t?”
+“And if I don’t?”
 
 “Then you will be fighting a hopeless battle
 against the natural order of the *world*.
@@ -185,13 +185,13 @@ For *him*, for *herself*, and for everything *they* believe in,
 > Again, opinions expressed by characters here
 > are **not** necessarily the same as my opinion.  
 
-<br>
+<!-- <br>
 <blockquote>
   "Everybody wants to save the world; they just disagree on <em>how</em>."<br>
   <span style="color:grey">
   —— <em>Fallout</em> S01E05 (2024)
   </span>
-</blockquote>
+</blockquote> -->
 <br>
 <blockquote>
   <!-- You know what's even worse than being terridied all the time?
@@ -222,10 +222,10 @@ A utopia for them, for sure;
 but a dystopia in the eyes of most other people in the modern world.”
 
 The speaker’s interlocutor squints at her just a little.
-A young women in her early 20s, maybe younger,
+A young women in her early 20s, perhaps a bit younger,
 with a delicate face and flaming hair,
-projecting a unique kind of assertiveness and depth
-unexpected for her age — when she is paying attention.
+projecting a unique sense of assertiveness and depth
+ahead of her age — when she is paying attention.
 Just five minutes ago he met her in this coffee shop for the first time;
 and now she has already launched into this long speech
 about how utopias and dystopias are two sides of the same coin.
@@ -242,13 +242,13 @@ instead of pop tv shows when trying to argue about utopias…”
 “Case in point.
 No point in referencing things people don’t know,
 and frankly I’d say that pop culture is just as valid
-as fictional thought experiments for philosophical debates.”
+for fictional thought experiments in philosophical debates.”
 She says with a subtle victorious smile.
 As if Beforeigner is that mainstream…
 Though, as it so happens, he loves that show and
-just rewatched it again a few days ago,
+just binged it again a few days ago,
 so he knows exactly what she was talking about.
-(What a coincidence!)  
+(What a coincidence.)  
 The book, however, is something he merely heard of.
 
 She continues,
@@ -383,8 +383,42 @@ She repeats patiently, amused by his reaction.
 And how about this: you tell me yours, and I’ll tell you mine."
 She responds with a mischievous smile.
 
-“Fine.” The man sighs and gestures towards himself as he tells her his name.
-“I guess my utopia would be like…”
+"Fine." The man sighs and gestures towards himself as he tells her his name.
+"I guess my utopia would be like…
+Hmm, I don't know, maybe somewhere I don't need to work my ass off
+just to stay afloat… Same for everyone else, of course."
+
+"… That's it? Absolutely no concern for the people
+starving, or caught in wars, or suffering heartbreaks,
+or scammed out of their life-savings,
+or locked in a scammer career and don't know what else to do,
+or being enslaved in human-trafficking, or got orphaned, or got cancer,
+or died in traffic accidents,
+or…
+Hehe, look at your face!"
+She's teasing him;
+he can tell from the smile that is increasingly hard for her to hold back.
+
+"Urrrrr… It's harder than it seems, I suppose. What's yours like?"
+
+"Hmmm. I don't know, maybe somewhere with unlimited amount of coffee?
+I just happen to like cappuccino so very much…" She is mimicking his posture.
+
+"That's not fair!
+It's clearly not what you actually want —
+and it would go sideways so easily, which you clearly understand…"
+
+"Neither are yours. You gave me a diplomatic response;
+it's only fair for me to give one in return.
+Besides, a universe filled with coffee would be hilarious;
+so much better than one filled with paperclips."
+She chuckles, then her face goes back to her serious look,
+with a sudden clarity in her eyes
+as if they can see right through into his soul:
+"Well, it was fun. But for serious this time,
+what would you actually like for your utopia to be?
+I can see you having thought about it for longer than the past fifteen minutes."
+
 
 > [!NOTE]
 > To be continued.
