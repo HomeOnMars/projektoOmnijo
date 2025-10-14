@@ -139,7 +139,7 @@ class Emblemo:
 
     def __str__(self):
         txt = str(self.dat)
-        return xml.dom.minidom.parseString(txt).toprettyxml()
+        return xml.dom.minidom.parseString(txt).toprettyxml(indent="  ")
 
     @property
     def dat(self):
@@ -179,8 +179,11 @@ class Emblemo:
             print(
                 f"Saving to '{output_path_noext}':" +
                 f"\n\t'{output_path}'...", end=' ')
-        with open(output_path, 'w') as f:
-            f.write(str(self))
+        with open(output_path, 'wb') as f:
+            f.write(
+                xml.dom.minidom.parseString(str(self.dat)).toprettyxml(
+                    indent="  ", encoding="utf-8",
+            ))
         if verbose: print(f"Done;")
 
         for ext in output_exts:
@@ -459,7 +462,7 @@ class Emblemo:
         angle = atan_deg(dy_dx) + 90
         dx = tan_deg(angle)    # slash position changes (half)
         # ddx = 68/256 * 2.0          # color transition band width
-        ddx = 64/256    # color transition band width (half)
+        ddx = 80/256    # color transition band width (half)
 
         id_RdOColorGradient = "RdOColorGradient"
         self.draw(svg.Defs(elements=[
@@ -470,37 +473,39 @@ class Emblemo:
                 svg.Rotate(-angle, x=0.5, y=0.5)
             ], elements=[
                 svg.Stop(offset=0.5-ddx,
-                    stop_color=self.colors['C'],  stop_opacity=1),
+                    stop_color=self.colors['C'],  stop_opacity=0),
                 svg.Stop(offset=0.5,
                     stop_color=self.colors['x2'], stop_opacity=1),
                 svg.Stop(offset=0.5,
                     stop_color=self.colors['x1'], stop_opacity=1),
                 svg.Stop(offset=0.5+ddx,
-                    stop_color=self.colors['G'],  stop_opacity=1),
+                    stop_color=self.colors['G'],  stop_opacity=0),
             ])
         ]))
 
-        # # fallback background
-        # self.draw(svg.Path(
-        #     d=[
-        #         svg.MoveTo(0, self.scale_y),
-        #         svg.LineTo(self._x( dx), self.scale_y),
-        #         svg.LineTo(self._x(-dx), 0),
-        #         svg.LineTo(0, 0),
-        #         svg.Z(),
-        #     ],
-        #     fill=self.colors['C'],
-        #     **kwargs))
-        # self.draw(svg.Path(
-        #     d=[
-        #         svg.MoveTo(self.scale_x, self.scale_y),
-        #         svg.LineTo(self.scale_x, 0),
-        #         svg.LineTo(self._x(-dx), 0),
-        #         svg.LineTo(self._x( dx), self.scale_y),
-        #         svg.Z(),
-        #     ],
-        #     fill=self.colors['G'],
-        #     **kwargs))
+        # background
+        #   to make the color transition on top sharper
+        #   (by varing the opacity as well as color)
+        self.draw(svg.Path(
+            d=[
+                svg.MoveTo(0, self.scale_y),
+                svg.LineTo(self._x( dx), self.scale_y),
+                svg.LineTo(self._x(-dx), 0),
+                svg.LineTo(0, 0),
+                svg.Z(),
+            ],
+            fill=self.colors['C'],
+            **kwargs))
+        self.draw(svg.Path(
+            d=[
+                svg.MoveTo(self.scale_x, self.scale_y),
+                svg.LineTo(self.scale_x, 0),
+                svg.LineTo(self._x(-dx), 0),
+                svg.LineTo(self._x( dx), self.scale_y),
+                svg.Z(),
+            ],
+            fill=self.colors['G'],
+            **kwargs))
 
         # color transition
         self.draw(svg.Rect(
