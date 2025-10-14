@@ -15,15 +15,25 @@ To view a copy of this license, visit <https://creativecommons.org/licenses/by-n
 
 # imports (built-in)
 from os.path import sep
+import xml.dom.minidom    # for pretty-print svg files
+from datetime import datetime, UTC; now = lambda: datetime.now(UTC)
 from collections.abc import Callable
 # imports (3rd party)
 import numpy as np
 from numpy import sqrt, pi, sin, cos, tan, asin, acos, atan
-import matplotlib as mpl
-import matplotlib.pyplot as plt
-from matplotlib.axes import Axes
-from matplotlib.lines import Line2D
-mpl.use('svg')
+#   svg.py docs
+#       <https://github.com/orsinium-labs/svg.py/tree/master>
+#       <https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch>
+import svg
+
+
+
+DEFAULT_LICENSE = 'CC BY-NC-SA 4.0'
+LICENSE_URLS: dict[str, str] = {
+    'CC BY-NC-SA 4.0': 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
+}
+
+
 
 # params
 # PHI : float = (sqrt(5)+1)/2    # golden ratio
@@ -75,478 +85,468 @@ def atan_deg(ratio) -> float:
 
 #------------------------------------------------------------------------------
 
-def draw_arc(
-    ax : Axes,
-    scale  : float,
-    radius : float|tuple[float, float],
-    thetas : tuple[float, float],
-    center : tuple[float, float] = (0., 0.),
-    angle  : float = 0.,
-    color  : None = None,
-    linewidth_fac: float = 12/128,  # halfwidth*16 for 1/16 gap
-    linewidth_unit: float = 144.,   # 144 will leave no gap (== 1.0 in the ax coordinate system)
-    **kwargs,
-) -> list[mpl.patches.Arc]:
-    """Draw an arc in ax."""
-    # init pars
-    try: len(radius)
-    except TypeError: radius_is_tuple = False
-    else: radius_is_tuple = True
-    width  = radius[0]*2 if radius_is_tuple else radius*2
-    height = radius[1]*2 if radius_is_tuple else radius*2
-    linewidth = linewidth_fac * linewidth_unit
-    return [    # draw
-        ax.add_patch(
-            mpl.patches.Arc(
-                center, width=width, height=height, angle=angle,
-                theta1=min(thetas), theta2=max(thetas),
-                color=color, linewidth=linewidth*scale,
-                **kwargs,
-        ))
-    ]
-
-def draw_hat(
-    ax : Axes,
-    scale  : float,
-    radius : float,
-    length : float = 1.,
-    center : tuple[float, float] = (0., 0.),
-    angle  : float = 0.,      # the rotation of the whole system
-    theta  : float = 120.,    # the 'openness' of the hat
-    color  : None = None,
-    linewidth_fac: float = 12/128,
-    linewidth_unit: float = 144,    # 144 will leave no gap (== 1.0 in the ax coordinate system)
-    **kwargs,
-) -> list[Line2D]:
-    """Draw the hat symbol in ax."""
-    angle_rad, theta_2_rad = angle*(pi/180), theta/2*(pi/180)
-    mid_pt = (
-        center[0] + cos(angle_rad)*radius,
-        center[1] + sin(angle_rad)*radius)
-    linewidth = linewidth_fac * linewidth_unit
-    return [    # draw
-        ax.add_line(
-            mpl.lines.Line2D(
-                xdata = [
-                    mid_pt[0] + cos(angle_rad+pi-theta_2_rad)*length,
-                    mid_pt[0],
-                    mid_pt[0] + cos(angle_rad+pi+theta_2_rad)*length,
-                ],
-                ydata = [
-                    mid_pt[1] + sin(angle_rad+pi-theta_2_rad)*length,
-                    mid_pt[1],
-                    mid_pt[1] + sin(angle_rad+pi+theta_2_rad)*length,
-                ],
-                color=color, linewidth=linewidth*scale,
-                **kwargs,
-        ))
-    ]
-
-
-def draw_band(
-    ax : Axes,
-    scale  : float,
-    no_t: int = 0x10,
-    ts: None|list[float] = None,
-    xdata_func: Callable[[float], list[float]] =  lambda t: [-1.+t, t],
-    ydata_func: Callable[[float], list[float]] =  lambda t: [-1., 1.],
-    color_func: Callable[[float], tuple[float, float, float, float]] =  lambda t: (t, t, t, 1.),    # RGBA
-    linewidth_fac_func: Callable[[float], float] = lambda t: 1.,
-    linewidth_unit: float = 144.,    #132.,
-    **kwargs,
-) -> list[Line2D]:
-    """Draw a band in ax, with color transitioning among list of colors.
-    
-    Parameters
-    ----------
-
-    no_t:
-        no of parallel lines (aka resolution)
-
-    xdata_func, ydata_func:
-        functions that takes in t (from 0 to 1) and returns the x and y coordinates of the line
-
-    linewidth_fac_func:
-        function that returns width factor of lines at t
-        should be in the order of magnitude of the total width of the band
-
-    linewidth_unit: float
-        linewidth of a line with a width of 1.0
-        in the ax coordinate system.
-        Default is the case for figsize=(4, 4) and xylim=(-1, 1).
-        Do Not change these unless you know what you are doing.
-    """
-    if ts is None:
-        ts = np.linspace(0., 1., no_t) if no_t > 1 else [0.5]
-    # linewidth multiplier
-    # 8 because linewidth_unit is 1/8 in the ax coordinate system
-    linewidth_multi = linewidth_unit * scale / max(no_t-1, 1)
-    return [
-        ax.add_line(
-            Line2D(
-                xdata = xdata_func(t),
-                ydata = ydata_func(t),
-                color = color_func(t),
-                linewidth = linewidth_fac_func(t) * linewidth_multi,
-                **kwargs,
-        ))
-        for t in ts]
-
-def draw_band_linear_x(
-    ax : Axes,
-    scale  : float,
-    no_t: int = 0x10,
-    xdata_center: list[float] =  [-0.5, 0.5],
-    xdata_halfwid: float|list[float] = 0.5,
-    ydata: list[float] =  [-1., 1.],
-    colors: list[float] | dict[float, None] = {
-        0.0: '#000000',
-        1.0: '#ffffff',
-    },
-    linewidth_unit: float = 144.,    #132.,
-    **kwargs,
-) -> list[Line2D]:
-    """Draw a band in ax, with color transitioning among list of colors.
-    
-    Parameters
-    ----------
-
-    no_t:
-        no of parallel lines (aka resolution)
-    xdata_halfwid:
-        half width of the line. if 0 or negative, will abort.
-    colors_comp: dict
-        in format of 't: color'
-    """
-    # init
-    try:
-        len(xdata_halfwid)
-    except TypeError:
-        if xdata_halfwid > 0:
-            xdata_halfwid = [xdata_halfwid] * len(xdata_center)
-        else:
-            return []
-        
-
-    # init colors
-    if isinstance(colors, dict):
-        colors_ts = list(colors.keys())
-        colors_ts.sort()
-    else:
-        # colors is list
-        colors_ts = np.linspace(0., 1., len(colors))
-        colors = {t: c for t, c in zip(colors_ts, colors)}
-    colors = tuple([mpl.colors.to_rgba(colors[t]) for t in colors_ts])
-    colors_vec = [x for x in zip(*colors)]
-    if colors_ts is None:
-        colors_ts = np.linspace(0., 1., len(colors))
-
-    return draw_band(
-        ax, scale, no_t,
-        xdata_func = lambda t: [
-            xi + dxi*(2*t-1.)
-            for xi, dxi in zip(xdata_center, xdata_halfwid)],
-        ydata_func = lambda t: ydata,
-        color_func = lambda t: tuple([
-            np.interp(t, colors_ts, colors_veci)
-            for colors_veci in colors_vec]),
-        linewidth_fac_func = lambda t: max(xdata_halfwid)*2,
-        linewidth_unit = linewidth_unit,
-        **kwargs,
-    )
-
 
 
 class Emblemo:
     """Drawing Emblems."""
 
-    def __init__(self, name:str="", colors:dict=KOLOROJ, **kwargs):
-        self.fig = None
-        self.ax  = None
+    def __init__(
+        self,
+        name: str = "",
+        title: None|str = None, # if None, will be the same as name
+        scale_x: None|float = None, # if None, will be ratio_xy*scale_y
+        scale_y: float = 270,   #4320., # 8K resolution
+        ratio_xy: float = 1,    # x / y
+        center: tuple[float, float] = (0., 0.), # coord of center in [-1, 1]
+        colors: dict = KOLOROJ,
+        # see kwargs in self._gen_svg_metadata()
+        meta_dict: None|dict[str, str] = None,
+        **kwargs,
+    ):
         self.name: str = name
-        # scale_y: 1.0 => 400px x 400px; 240/400 => height is 240px
-        self.scale_y: float = 240/400
-        self.ratio_xy: float = 1.
+        self.title: str = f"{self.name} Emblem" if title is None else title
+        self._scale_y: float = scale_y
+        self._scale_x: float = ratio_xy*scale_y if scale_x is None else scale_x
+        self._cx: float = 0.
+        self._cy: float = 0.
+        self.center = center
         self.colors: dict[str, str] = colors.copy()
+
+        self._dat = svg.SVG(
+            width=self.scale_x, height=self.scale_y, elements=[],
+            preserveAspectRatio = svg.PreserveAspectRatio(
+                alignment='xMidYMid', scale_type='meet'),
+        )
+        
+        self._meta_dict: dict[str, str] = meta_dict
+        if meta_dict is not None:
+            self.dat.elements.append(
+                self._gen_svg_metadata(**meta_dict)
+            )
+
         if name:
             attr = f'_set_as_{name}'
             if attr not in dir(self):
                 raise ValueError(f"Unrecognized Emblem Name '{name}'.")
             getattr(self, attr)(**kwargs)
 
-    def __del__(self):
-        if self.fig is not None:
-            plt.close(self.fig)
+
+
+    # I/O
+
+    def __repr__(self):
+        return str(self.dat)
+
+    def __str__(self):
+        txt = str(self.dat)
+        return xml.dom.minidom.parseString(txt).toprettyxml()
 
     @property
-    def figax(self):
-        return self.fig, self.ax
+    def dat(self):
+        return self._dat
 
     @property
-    def scale(self):
-        return self.scale_y
+    def elems(self):
+        return self.dat.elements
 
-    @property
-    def scale_x(self):
-        return self.scale_y * self.ratio_xy
-
-    def init_figax(
-        self,
-        scale_y: float,    # = 240/400,
-        ratio_xy: float = 1.,
-        xlim: tuple[float, float] = (-1., 1.),
-        ylim: tuple[float, float] = (-1., 1.),
-    ):
-        self.scale_y  = scale_y
-        self.ratio_xy = ratio_xy
-        self.fig, self.ax = plt.subplots(
-            figsize=[4*self.scale_x, 4*self.scale_y])
-        self.ax.set_xlim(xlim)
-        self.ax.set_ylim(ylim)
-        self.ax.set_axis_off()
-        self.ax.set_position([0, 0, 1, 1])
+    def draw(self, elem: svg.Element):
+        self.elems.append(elem)
         return self
 
     def save(
         self,
         # noext means no extension
         output_path_noext: None|str = None,
-        output_exts: list[str] = ['.svg', '.png'],
+        output_exts: set[str] = {'.svg'}, # '.png'},
         verbose: bool = True,
     ):
-        """Output to files."""
-        if self.fig is None:
-            if verbose: print("Error: No figure to be saved.")
+        """Output to files.
+        
+        Will output '.svg' file regardless of whether it is in the output_exts.
+        """
+
+        if not output_exts:
             return
+        
         if output_path_noext is None:
             output_path_noext = f'.{sep}{self.name}'
+        
+        # output to .svg
+        ext = '.svg'
+        output_exts = set(output_exts) - {ext}
+        output_path = f"{output_path_noext}{ext}"
+        if verbose:
+            print(
+                f"Saving to '{output_path_noext}':" +
+                f"\n\t'{output_path}'...", end=' ')
+        with open(output_path, 'w') as f:
+            f.write(str(self))
+        if verbose: print(f"Done;")
+
         for ext in output_exts:
             output_path = f"{output_path_noext}{ext}"
-            if verbose: print(f"Saving to '{output_path}'...", end=' ')
-            self.fig.savefig(output_path, transparent=True)
-            if verbose: print(f"Done.")
-        if verbose: print(f"Done.")
+            if verbose:
+                print(f"\n\t'{output_path}'...", end=' ')
+            raise NotImplementedError
+            if verbose: print(f"Done;")
         return
 
+    def _gen_svg_metadata(
+        self,
+        creator: str,
+        license: None|str = None,    # e.g. 'CC BY-NC-SA 4.0',
+        dcmitype: str = "Image",
+    ) -> svg.Metadata:
+        """Gen metadata for svg.
+        
+        Note: will also include a date timestamp of now.
+        """
+
+        # See <http://purl.org/dc/dcmitype/Image>
+        if dcmitype not in {'Image', 'StillImage', 'MovingImage', 'Text'}:
+            raise ValueError(f"Unrecognized {dcmitype = }.")
+
+        date = now()
+
+        # See <https://www.dublincore.org/specifications/dublin-core/dcq-rdf-xml/>
+        metadata = f"""
+    <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+        <cc:Work>
+            <dc:type rdf:resource="http://purl.org/dc/dcmitype/{dcmitype}"/>
+            <dc:date>{date.isoformat()}</dc:date>
+            <dc:format>image/svg+xml</dc:format>
+            <dc:title>{self.title}</dc:title>
+            <dc:creator>{creator}</dc:creator>"""
+
+        if license is not None:
+            license_url = LICENSE_URLS[license]
+            metadata += f"""
+            <dc:rights rdf:about="{license_url}">This work © {date.year} by {creator} is licensed under {license}.</dc:rights>"""
+
+        metadata += """
+        </cc:Work>
+    </rdf:RDF>
+    """
+        # formatting
+        metadata = ''.join([line.strip() for line in metadata.splitlines()])
+        return svg.Metadata(text=metadata)
 
 
-    # components
+
+    # scales
+
+    @property
+    def scale(self) -> float:
+        """Math unit to canvas unit."""
+        return self._scale_y / 2
+
+    @property
+    def scale_x(self) -> float:
+        """Canvas width."""
+        return self._scale_x
+
+    @property
+    def scale_y(self) -> float:
+        """Canvas height."""
+        return self._scale_y
+
+    @property
+    def center(self) -> tuple[float, float]:
+        return (self._cx, self._cy)
+
+    @center.setter
+    def center(self, value):
+        self._cx, self._cy = value
+        return
+
+    @property
+    def ratio_xy(self) -> float:
+        return self.scale_x / self.scale_y
+
+    @property
+    def xlims(self) -> tuple[float, float]:
+        return (-self.ratio_xy, self.ratio_xy)
+
+    @property
+    def ylims(self) -> tuple[float, float]:
+        return (-1, 1)
+
+    def _x(self, x: float) -> float:
+        """Translate math x coord (-X/Y, X/Y) to canvas x coord (0, width)."""
+        return (self.ratio_xy + x + self._cx) * self.scale
+
+    def _y(self, y: float) -> float:
+        """Translate math y coord (-1, 1) to canvas y coord (height, 0)."""
+        return (1 - y - self._cy) * self.scale
+
+    def _r(self, r: float) -> float:
+        """Translate radius from math coord (-1, 1) to canvas coord."""
+        return r * self.scale
+
+
+
+    # drawing components
+
+    def elem_arc(
+        self,
+        radius : float|tuple[float, float],
+        thetas : tuple[float, float],   # in deg
+        center : tuple[float, float] = (0., 0.),
+        angle  : float = -0.,    # in deg, counter-clockwise
+        color  : None = None,
+        fill   : None|str = 'none',
+        linewidth_fac: float = 12/128,
+        **kwargs,
+    ) -> svg.Element:
+        """Draw an arc in ax."""
+
+        # get radius
+        try: len(radius)
+        except TypeError: radius = (radius, radius)
+        stroke_width = self._r(linewidth_fac)
+
+        _rx = self._r(radius[0])
+        _ry = self._r(radius[1])
+
+        _pts = tuple([[
+            self._x(
+                center[0]
+                + radius[0] * cos_deg(thetas[i]) * cos_deg(angle)
+                - radius[1] * sin_deg(thetas[i]) * sin_deg(angle)),
+            self._y(
+                center[1]
+                + radius[0] * cos_deg(thetas[i]) * sin_deg(angle)
+                + radius[1] * sin_deg(thetas[i]) * cos_deg(angle)),
+        ] for i in range(2)])
+        _x0, _y0 = _pts[0]
+        _x1, _y1 = _pts[1]
+
+        large_arc = int(abs(thetas[1] - thetas[0]) >= 180)
+        sweep = int(thetas[1] < thetas[0])
+
+        elem = svg.Path(d=[
+                svg.MoveTo(_x0, _y0),
+                svg.Arc(_rx, _ry, -angle, large_arc, sweep, _x1, _y1),
+            ],
+            stroke=color, stroke_width=stroke_width, fill=fill,
+            **kwargs)
+        return elem
+
+
+    
+    def elem_hat(
+        self,
+        radius : float,
+        length : float = 1.,
+        center : tuple[float, float] = (0., 0.),
+        angle  : float = 0.,      # the rotation of the whole system
+        theta  : float = 120.,    # the 'openness' of the hat
+        color  : None = None,
+        fill   : None|str = 'none',
+        linewidth_fac: float = 12/128,
+        **kwargs,
+    ) -> svg.Element:
+        """Draw the hat symbol in ax."""
+
+        stroke_width = self._r(linewidth_fac)
+
+        mid_pt = (
+            center[0] + cos_deg(angle)*radius,
+            center[1] + sin_deg(angle)*radius)
+
+        elem = svg.Path(d=[
+                svg.MoveTo(
+                    self._x(mid_pt[0] + cos_deg(angle+180+theta/2)*length),
+                    self._y(mid_pt[1] + sin_deg(angle+180+theta/2)*length)),
+                svg.LineTo(self._x(mid_pt[0]), self._y(mid_pt[1])),
+                svg.LineTo(
+                    self._x(mid_pt[0] + cos_deg(angle+180-theta/2)*length),
+                    self._y(mid_pt[1] + sin_deg(angle+180-theta/2)*length)),
+            ],
+            stroke=color, stroke_width=stroke_width, fill=fill,
+            **kwargs)
+        return elem
+
+
+
+    # prefab components
 
     def _draw_O(self, radius=11/16, color=None, **kwargs):
         if color is None: color = self.colors['O']
-        draw_arc(
-            self.ax, self.scale, radius=radius, thetas=( # ts( 5.5, 19.50)),
+        self.draw(self.elem_arc(
+            radius=radius, thetas=( # ts( 5.5, 19.50)),
                 atan_deg(-9/6) + 180,
                 atan_deg( 9/2) + 360,),
-            color=color, **kwargs)
+            color=color, **kwargs))
         return self
     
-    def _draw_C(self, radius=9/16,  color=None, **kwargs):
+    def _draw_C(self, radius=9/16, color=None, **kwargs):
         if color is None: color = self.colors['C']
-        draw_arc(
-            self.ax, self.scale, radius=radius, thetas=( # ts( 2.25, 14.25)),
+        self.draw(self.elem_arc(
+            radius=radius, thetas=( # ts( 2.25, 14.25)),
                 atan_deg( 9/9),
                 atan_deg(-9/9) + 360,),
-            color=color, **kwargs)
+            color=color, **kwargs))
         return self
     
-    def _draw_G(self, radius=7/16,  color=None, **kwargs):
+    def _draw_G(
+        self,
+        radius = 7/16,
+        color = None,
+        linewidth_fac: float = 12/128,
+        fill: None|str = 'none',
+        **kwargs,
+    ):
         if color is None: color = self.colors['G']
+        stroke_width = self._r(linewidth_fac)
+        # para
         ang = atan_deg(-9/9)+360
         center_tg3 = (cos_deg(ang)*radius/2, sin_deg(ang)*radius/2)
-        center_tg3 = (    # shift a little to remove the white gap in-between
-            center_tg3[0] + center_tg3[1]/128,
-            center_tg3[1] - center_tg3[0]/128)
-        draw_arc(
-            self.ax, self.scale, radius=radius, thetas=( atan_deg( 9/9), ang, ),
-            color=color, **kwargs)
-        draw_arc(
-            self.ax, self.scale, radius=[radius/2, radius/8*5], thetas=(0, 180),
-            center=center_tg3, angle=ang, color=color, **kwargs)
+        # get path
+        path1_d = self.elem_arc(
+            radius=radius, thetas=( atan_deg( 9/9), ang, ),
+            color=color, **kwargs).d
+        path2_d = self.elem_arc(
+            radius=[radius/2, radius*5/8], thetas=(0, 180),
+            center=center_tg3, angle=ang, color=color, **kwargs).d
+        pathdata = path1_d + path2_d[1:]
+        # save
+        self.draw(svg.Path(
+            d=pathdata,
+            stroke=color, stroke_width=stroke_width, fill=fill,
+            **kwargs))
         return self
 
     def _draw_R(
         self, radius=13.625/16, linewidth_fac=16/128, R_h=None, angle=None,
         color=None, **kwargs):
         if color is None: color = self.colors['O']
-        halfwid = linewidth_fac
         if angle is None:
             if R_h is not None:
-                angle = asin_deg(R_h / (radius + halfwid))
+                angle = asin_deg(R_h / (radius + linewidth_fac))
             else:
                 raise ValueError("Please supply R's height in R_h input par.")
-        draw_arc(
-            self.ax, self.scale, radius=radius, thetas=(angle, -angle),
-            color=color, linewidth_fac=halfwid, **kwargs)
+        self.draw(self.elem_arc(
+            radius=radius, thetas=(angle, -angle),
+            color=color, linewidth_fac=linewidth_fac, **kwargs))
         return self
 
 
 
     # set as
 
-    def _set_as_RdO(
-        self,
-        # size of the drawing pad
-        scale: float = 240/400,    # 1.0 => 400px x 400px
-    ):
+    def _set_as_RdO(self):
         """Draw the RdO emblem."""
-
-        self.init_figax(scale, xlim=(-1+1.5/16, 1+1.5/16))
+        self.center = (-1.5/16, 0)
         self._draw_RdO()
         return self
 
     def _draw_RdO(self):
         # 16/128  21/(9*16) ~ 18.667
-        self._draw_O(linewidth_fac=14/128, zorder=0x1001)
-        self._draw_R(angle=atan_deg(9/6), zorder=0x1000)
+        self._draw_O(linewidth_fac=14/128)#, zorder=0x1001)
+        self._draw_R(angle=atan_deg(9/6))#, zorder=0x1000)
         return self
 
 
 
-    def _set_as_RdOFlago(
-        self,
-        # size of the drawing pad
-        # scale_y: 1.0 => 400px x 400px; 225/400 => height is 225px
-        scale_y: float = 225/400, # 2160/400
-        ratio_xy: float = 16/9,
-        offset_x: float = 1/16, #1.3125/16,
-                                # 1.3125/16 to center the curves;
-                                # 0 to center the division line
-    ):    # plot
+    def _set_as_RdOFlago(self, **kwargs):    # plot
         """Draw the RdO Flag."""
+        self.center = (-1/16, 0)
 
-        xlims = (-ratio_xy+offset_x, ratio_xy+offset_x)
-        ylims = (-1., 1.)
-        self.init_figax(scale_y, ratio_xy, xlim=xlims)
-        ax = self.ax
 
         # --- background
-        dx = 6/9  # slash position changes (half) # tan_deg(atan_deg(-9/6)+90)
-        ddx = 68/256 * 2.0            # color transition band width
-        dx0 = 8/4096 # + ddx/8       # dx bias
-        ax.add_patch(
-            mpl.patches.Polygon([
-                [xlims[0], ylims[1]],
-                [xlims[0], ylims[0]],
-                # [xlims[1], ylims[0]],
-                [dx0+dx, ylims[0]],
-                [dx0-dx, ylims[1]],
-                ], color=self.colors['C'], zorder=0,
-        ))
-        ax.add_patch(
-            mpl.patches.Polygon([
-                [xlims[1], ylims[0]],
-                [xlims[1], ylims[1]],
-                # [xlims[0], ylims[1]],
-                [dx0-dx, ylims[1]],
-                [dx0+dx, ylims[0]],
-                ], color=self.colors['G'], zorder=0,
-        ))
-        # --- color transition
-        colors_comp : dict[float, dict[None, float]] = {
-            # t: ({color: weight}, alpha)
-            0.0: ({'C': 1}, 0.0),
-            0.5-1/0x1000: ({'C': 0, 'x2': 1, 'x1': 0, 'G': 0}, 1.0),
-            0.5+1/0x1000: ({'C': 0, 'x2': 0, 'x1': 1, 'G': 0}, 1.0),
-            1.0: ({'G': 1}, 0.0),
-        }
-        # compile colors_comp into colors
-        colors = {}
-        for ti, d in colors_comp.items():
-            c_d, alpha = d
-            c_ks = list(c_d.keys())
-            ws = np.asarray([c_d[c_k] for c_k in c_ks])
+        dy_dx = -9/6
+        angle = atan_deg(dy_dx) + 90
+        dx = tan_deg(angle)    # slash position changes (half)
+        # ddx = 68/256 * 2.0          # color transition band width
+        ddx = 64/256    # color transition band width (half)
 
-            colors[ti] = (    # weighted average
-                np.sum(np.asarray([
-                    mpl.colors.to_rgb(self.colors[c_k])
-                    for c_k in c_ks
-                ]) * ws[:, np.newaxis],
-                axis=0) / np.sum(ws)
-            ).tolist() + [alpha]
-        # draw
-        draw_band_linear_x(
-            ax, scale_y, no_t=0x100,
-            xdata_center  = [dx0-dx, dx0+dx],
-            xdata_halfwid = abs(ddx),
-            ydata = [ylims[1], ylims[0]],
-            colors=colors,
-            linewidth_unit=256,
-        )
-        # Debug
-        if False:
-            draw_band_linear_x(
-                ax, scale_y, no_t=1,
-                xdata_center  = [dx0-dx+ddx, dx0+dx+ddx],
-                xdata_halfwid = 0.01,
-                ydata = [ylims[1], ylims[0]],
-                colors=[self.colors['O'], self.colors['O']],
-                linewidth_unit=256,
-            )
-            draw_band_linear_x(
-                ax, scale_y, no_t=1,
-                xdata_center  = [dx0-dx-ddx, dx0+dx-ddx],
-                xdata_halfwid = 0.01,
-                ydata = [ylims[1], ylims[0]],
-                colors=[self.colors['O'], self.colors['O']],
-                linewidth_unit=256,
-            )
+        id_RdOColorGradient = "RdOColorGradient"
+        self.draw(svg.Defs(elements=[
+            svg.LinearGradient(id=id_RdOColorGradient, gradientTransform=[
+                svg.Scale(x=1/self.ratio_xy, y=1),
+                svg.Translate(x=(self.ratio_xy-1+self.center[0])/2),
+                # Rotate(): x, y: center of rotation
+                svg.Rotate(-angle, x=0.5, y=0.5)
+            ], elements=[
+                svg.Stop(offset=0.5-ddx,
+                    stop_color=self.colors['C'],  stop_opacity=1),
+                svg.Stop(offset=0.5,
+                    stop_color=self.colors['x2'], stop_opacity=1),
+                svg.Stop(offset=0.5,
+                    stop_color=self.colors['x1'], stop_opacity=1),
+                svg.Stop(offset=0.5+ddx,
+                    stop_color=self.colors['G'],  stop_opacity=1),
+            ])
+        ]))
+
+        # # fallback background
+        # self.draw(svg.Path(
+        #     d=[
+        #         svg.MoveTo(0, self.scale_y),
+        #         svg.LineTo(self._x( dx), self.scale_y),
+        #         svg.LineTo(self._x(-dx), 0),
+        #         svg.LineTo(0, 0),
+        #         svg.Z(),
+        #     ],
+        #     fill=self.colors['C'],
+        #     **kwargs))
+        # self.draw(svg.Path(
+        #     d=[
+        #         svg.MoveTo(self.scale_x, self.scale_y),
+        #         svg.LineTo(self.scale_x, 0),
+        #         svg.LineTo(self._x(-dx), 0),
+        #         svg.LineTo(self._x( dx), self.scale_y),
+        #         svg.Z(),
+        #     ],
+        #     fill=self.colors['G'],
+        #     **kwargs))
+
+        # color transition
+        self.draw(svg.Rect(
+            x=0, y=0,
+            width=self.scale_x, height=self.scale_y,
+            fill=f"url('#{id_RdOColorGradient}')",
+        ))
+
+
+
         self._draw_RdO()
         return self
 
 
 
-    def _set_as_OCG(
-        self,
-        # size of the drawing pad
-        scale: float = 240/400,    # 1.0 => 400px x 400px
-    ):
+    def _set_as_OCG(self):
         """Draw the OCG emblem."""
-
-        self.init_figax(scale)
         # --- arcs
         self._draw_O()
         self._draw_C()
         self._draw_G()
         # --- hats
-        a = draw_hat(self.ax, self.scale, radius=14.5/16, length=9/16,
-                angle=90, theta=128, color=self.colors['x0'])
+        self.draw(self.elem_hat(radius=14.5/16, length=9.5/16,
+                angle=90, theta=128, color=self.colors['x0']))
         for i in range(1, 3):
-            draw_hat(self.ax, self.scale, radius=15.25/16, length=7/16,
-                    angle=90+120*i, color=self.colors[f'x{i}'])
+            self.draw(self.elem_hat(radius=15.25/16, length=7.5/16,
+                    angle=90+120*i, color=self.colors[f'x{i}']))
         return self
 
 
 
-    def _set_as_OCR(
-        self,
-        # size of the drawing pad
-        scale: float = 240/400,    # 1.0 => 400px x 400px
-    ):
+    def _set_as_OCR(self):
         """Draw the OCR emblem."""
-
-        self.init_figax(scale)
-
         # --- arcs
         self._draw_O()
         self._draw_C()
         # draw R
-        draw_arc(
-            self.ax, self.scale, radius=6.75/16, thetas=(90, -112.5),
-            color=self.colors['R'], linewidth_fac=16/128)
+        self.draw(self.elem_arc(
+            radius=6.75/16, thetas=(90, -112.5),
+            color=self.colors['R'], linewidth_fac=16/128))
 
 
 
-    def _set_as_OCRR(
-        self,
-        # size of the drawing pad
-        scale: float = 240/400,    # 1.0 => 400px x 400px
-    ):
+    def _set_as_OCRR(self):
         """Draw the OCRR emblem."""
-
-        self.init_figax(scale, xlim=(-1+3/16, 1+3/16))
-        ax = self.ax
-
+        self.center=(-3/16, 0)
         # --- arcs
         #    wid is half line width
         O_rad, O_wid = 11/16, 18/128
@@ -568,14 +568,23 @@ class Emblemo:
 
 
 if __name__ == '__main__':
-    Emblemo("OCG").save()
-    Emblemo("OCR").save()
-    Emblemo("OCRR").save()
-    Emblemo("RdO").save()
-    Emblemo("RdOFlago").save()
-    Emblemo("RdOFlago", scale_y=2160/400, ratio_xy=1/1).save(
-        "RdOFlago.emb", [".png"])
-    Emblemo("RdOFlago", scale_y=2160/400).save(
-        "RdOFlago.plen", [".png"])
-    Emblemo("RdOFlago", scale_y=2160/400, ratio_xy=5/3).save(
-        "RdOFlago.x5y3")
+
+    meta_dict = {
+        'creator': "HomeOnMars",
+        'license': 'CC BY-NC-SA 4.0',
+    }
+
+    RdOFlagoTitle = "La Regno de Omnijo (RdO) flag (fictional) for my world-building project"
+
+    Emblemo("OCG",  meta_dict=meta_dict).save()
+    Emblemo("OCR",  meta_dict=meta_dict).save()
+    Emblemo("OCRR", meta_dict=meta_dict).save()
+    Emblemo("RdO",  meta_dict=meta_dict).save()
+    Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
+        ratio_xy=16/9).save()
+    # Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
+    #     ratio_xy=1/1,  scale_y=2160,).save("RdOFlago.emb", [".png"])
+    # Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
+    #     ratio_xy=16/9, scale_y=2160).save("RdOFlago.plen", [".png"])
+    Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
+        ratio_xy=5/3,  scale_y=2160).save("RdOFlago.x5y3")

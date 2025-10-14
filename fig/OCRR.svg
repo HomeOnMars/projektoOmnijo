@@ -1,86 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="172.8pt" height="172.8pt" viewBox="0 0 172.8 172.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2025-10-04T10:57:02.428292</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.10.6, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="patch_1">
-   <path d="M 0 172.8 
-L 172.8 172.8 
-L 172.8 0 
-L 0 0 
-L 0 172.8 
-z
-" style="fill: none"/>
-  </g>
-  <g id="axes_1">
-   <g id="patch_2">
-    <path d="M 37.250808 36.976213 
-C 31.598121 40.744671 26.633612 45.455111 22.573667 50.90222 
-C 18.513722 56.349329 15.418199 62.452799 13.422022 68.946598 
-C 11.425846 75.440396 10.558445 82.228785 10.857627 89.015879 
-C 11.15681 95.802972 12.618165 102.488706 15.177997 108.781671 
-C 17.737829 115.074636 21.358397 120.882053 25.881892 125.950795 
-C 30.405388 131.019536 35.765119 135.274872 41.727472 138.531326 
-C 47.689825 141.78778 54.166896 143.997341 60.876368 145.063702 
-C 67.585841 146.130062 74.428796 146.0375 81.106971 144.79005 
-C 87.785145 143.542601 94.200082 141.158654 100.072172 137.742121 
-C 105.944262 134.325587 111.186933 129.926836 115.571673 124.737597 
-C 119.956412 119.548357 123.418575 113.645135 125.807257 107.285234 
-C 128.195938 100.925332 129.475922 94.202517 129.591416 87.409814 
-C 129.70691 80.617112 128.656213 73.854668 126.48512 67.417238 
-C 124.314028 60.979808 121.054549 54.9623 116.848755 49.626999 
-C 112.642961 44.291697 107.552859 39.717261 101.80031 36.103077 
-C 96.047761 32.488893 89.717576 29.888246 83.085669 28.414489 
-" clip-path="url(#p40abc0ea4e)" style="fill: none; stroke: #b7e1a1; stroke-width: 12.15; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 100.747013 55.852987 
-C 94.706108 49.812082 87.006878 45.696758 78.627902 44.030076 
-C 70.248926 42.363394 61.560899 43.21909 53.668076 46.488404 
-C 45.775253 49.757719 39.026822 55.296013 34.280513 62.399366 
-C 29.534204 69.502719 27 77.85687 27 86.4 
-C 27 94.94313 29.534204 103.297281 34.280513 110.400634 
-C 39.026822 117.503987 45.775253 123.042281 53.668076 126.311596 
-C 61.560899 129.58091 70.248926 130.436606 78.627902 128.769924 
-C 87.006878 127.103242 94.706108 122.987918 100.747013 116.947013 
-" clip-path="url(#p40abc0ea4e)" style="fill: none; stroke: #ffd700; stroke-width: 12.15; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 118.111147 144.879758 
-C 126.766132 137.788923 133.739987 128.864323 138.528042 118.751795 
-C 143.316097 108.639267 145.8 97.588775 145.8 86.4 
-C 145.8 75.211225 143.316097 64.160733 138.528042 54.048205 
-C 133.739987 43.935677 126.766132 35.011077 118.111147 27.920242 
-" clip-path="url(#p40abc0ea4e)" style="fill: none; stroke: #95d0fc; stroke-width: 12.15; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_5">
-    <path d="M 139.726263 146.344464 
-C 154.091784 129.682692 162 108.39961 162 86.4 
-C 162 64.40039 154.091784 43.117308 139.726263 26.455536 
-" clip-path="url(#p40abc0ea4e)" style="fill: none; stroke: #d6b4fc; stroke-width: 12.15; stroke-linejoin: miter"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p40abc0ea4e">
-   <rect x="0" y="0" width="172.8" height="172.8"/>
-  </clipPath>
- </defs>
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" width="270" height="270">
+	<metadata>
+		<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+			<cc:Work>
+				<dc:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+				<dc:date>2025-10-14T10:49:07.924811+00:00</dc:date>
+				<dc:format>image/svg+xml</dc:format>
+				<dc:title>OCRR Emblem</dc:title>
+				<dc:creator>HomeOnMars</dc:creator>
+				<dc:rights rdf:about="https://creativecommons.org/licenses/by-nc-sa/4.0/">This work © 2025 by HomeOnMars is licensed under CC BY-NC-SA 4.0.</dc:rights>
+			</cc:Work>
+		</rdf:RDF>
+	</metadata>
+	<path stroke="#B7E1A1" stroke-width="18.984375" d="M 58.20438803784591 57.77533205676889 A 92.8125 92.8125 0.0 1 0 129.82135811629414 44.39763847667691" fill="none"/>
+	<path stroke="#FFD700" stroke-width="18.984375" d="M 157.41720773009195 87.27029226990804 A 67.5 67.5 0.0 1 0 157.41720773009195 182.72970773009197" fill="none"/>
+	<path stroke="#95D0FC" stroke-width="18.984375" d="M 184.54866643504022 43.625378879115424 A 118.125 118.125 0.0 0 1 184.54866643504022 226.3746211208846" fill="none"/>
+	<path stroke="#D6B4FC" stroke-width="18.984375" d="M 218.32228598307606 41.33677519612479 A 143.4375 143.4375 0.0 0 1 218.32228598307606 228.66322480387518" fill="none"/>
 </svg>

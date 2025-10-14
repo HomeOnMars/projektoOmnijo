@@ -1,84 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="172.8pt" height="172.8pt" viewBox="0 0 172.8 172.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2025-10-04T10:57:02.405525</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.10.6, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="patch_1">
-   <path d="M 0 172.8 
-L 172.8 172.8 
-L 172.8 0 
-L 0 0 
-L 0 172.8 
-z
-" style="fill: none"/>
-  </g>
-  <g id="axes_1">
-   <g id="patch_2">
-    <path d="M 53.450808 36.976213 
-C 47.798121 40.744671 42.833612 45.455111 38.773667 50.90222 
-C 34.713722 56.349329 31.618199 62.452799 29.622022 68.946598 
-C 27.625846 75.440396 26.758445 82.228785 27.057627 89.015879 
-C 27.35681 95.802972 28.818165 102.488706 31.377997 108.781671 
-C 33.937829 115.074636 37.558397 120.882053 42.081892 125.950795 
-C 46.605388 131.019536 51.965119 135.274872 57.927472 138.531326 
-C 63.889825 141.78778 70.366896 143.997341 77.076368 145.063702 
-C 83.785841 146.130062 90.628796 146.0375 97.306971 144.79005 
-C 103.985145 143.542601 110.400082 141.158654 116.272172 137.742121 
-C 122.144262 134.325587 127.386933 129.926836 131.771673 124.737597 
-C 136.156412 119.548357 139.618575 113.645135 142.007257 107.285234 
-C 144.395938 100.925332 145.675922 94.202517 145.791416 87.409814 
-C 145.90691 80.617112 144.856213 73.854668 142.68512 67.417238 
-C 140.514028 60.979808 137.254549 54.9623 133.048755 49.626999 
-C 128.842961 44.291697 123.752859 39.717261 118.00031 36.103077 
-C 112.247761 32.488893 105.917576 29.888246 99.285669 28.414489 
-" clip-path="url(#p9721c0588b)" style="fill: none; stroke: #e6daa6; stroke-width: 8.1; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 120.76539 52.03461 
-C 113.969371 45.238592 105.307738 40.608853 95.88139 38.733835 
-C 86.455041 36.858818 76.681011 37.821476 67.801585 41.499455 
-C 58.922159 45.177433 51.330174 51.408014 45.990577 59.399287 
-C 40.650979 67.390559 37.8 76.788979 37.8 86.4 
-C 37.8 96.011021 40.650979 105.409441 45.990577 113.400713 
-C 51.330174 121.391986 58.922159 127.622567 67.801585 131.300545 
-C 76.681011 134.978524 86.455041 135.941182 95.88139 134.066165 
-C 105.307738 132.191147 113.969371 127.561408 120.76539 120.76539 
-" clip-path="url(#p9721c0588b)" style="fill: none; stroke: #00bfff; stroke-width: 8.1; stroke-linejoin: miter"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 72.451189 120.075409 
-C 77.430378 122.137857 82.805573 123.070541 88.188517 122.806094 
-C 93.571461 122.541647 98.829353 121.086593 103.582411 118.54603 
-C 108.335469 116.005468 112.466431 112.442075 115.676915 108.11324 
-C 118.887398 103.784404 121.098197 98.796922 122.149623 93.511042 
-C 123.20105 88.225163 123.067165 82.771294 121.757639 77.543372 
-C 120.448113 72.315451 117.995253 67.442455 114.576231 63.276365 
-C 111.157209 59.110274 106.856376 55.753871 101.984383 53.44959 
-C 97.112391 51.145309 91.789436 49.95 86.4 49.95 
-" clip-path="url(#p9721c0588b)" style="fill: none; stroke: #5e9b8a; stroke-width: 10.8; stroke-linejoin: miter"/>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p9721c0588b">
-   <rect x="0" y="0" width="172.8" height="172.8"/>
-  </clipPath>
- </defs>
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" width="270" height="270">
+	<metadata>
+		<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+			<cc:Work>
+				<dc:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
+				<dc:date>2025-10-14T10:49:07.921063+00:00</dc:date>
+				<dc:format>image/svg+xml</dc:format>
+				<dc:title>OCR Emblem</dc:title>
+				<dc:creator>HomeOnMars</dc:creator>
+				<dc:rights rdf:about="https://creativecommons.org/licenses/by-nc-sa/4.0/">This work © 2025 by HomeOnMars is licensed under CC BY-NC-SA 4.0.</dc:rights>
+			</cc:Work>
+		</rdf:RDF>
+	</metadata>
+	<path stroke="#E6DAA6" stroke-width="12.65625" d="M 83.5168880378459 57.77533205676889 A 92.8125 92.8125 0.0 1 0 155.13385811629414 44.39763847667691" fill="none"/>
+	<path stroke="#00BFFF" stroke-width="12.65625" d="M 188.69592119635345 81.30407880364655 A 75.9375 75.9375 0.0 1 0 188.69592119635342 188.69592119635345" fill="none"/>
+	<path stroke="#5E9B8A" stroke-width="16.875" d="M 135.0 78.046875 A 56.953125 56.953125 0.0 1 1 113.204982641082 187.61782650005688" fill="none"/>
 </svg>
