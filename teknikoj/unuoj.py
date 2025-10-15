@@ -709,6 +709,24 @@ class Datotempo:
     _POSIX: np.int64 = np.int64((-_EPOKO.timestamp()*u.s).to_value(_UNUO))
     # max storable POSIX timestamp in mSw
     _POSIX_MAX: np.int64 = np.iinfo(np.int64).max + _POSIX
+    # basic info
+    _MONATO_mSw:  np.int64 = np.int64((1*u.Monato).to_value(u.mSw))
+    _SEMAJNO_mSw: np.int64 = np.int64((1*u.Semajno).to_value(u.mSw))
+    _TAGO_mSw:    np.int64 = np.int64((1*u.Tago).to_value(u.mSw))
+    _Gw_mSw:      np.int64 = np.int64((1*u.Gw).to_value(u.mSw))
+    _Cw_mSw:      np.int64 = np.int64((1*u.Cw).to_value(u.mSw))
+    _HSw_mSw:     np.int64 = np.int64((1*u.HSw).to_value(u.mSw))
+    _Sw_mSw:      np.int64 = np.int64((1*u.Sw).to_value(u.mSw))
+    # number of Sw per added/skipped leap day
+    _TAGO_Sw: np.int64 = np.int64((1*u.MSw).to_value(u.Sw))
+    # number of Sw per komunjaro
+    _JARO_Sw: np.int64 = np.int64(
+        # note: include the extra second added in 13th month
+        (365 * u.MSw + 0x144 * u.Sw).to_value(u.Sw))
+    # number of Sw per 3 komunjaro + 1 superjaro
+    _JAROJ4_Sw: np.int64 = np.int64(_JARO_Sw*4 + _TAGO_Sw)
+    # number of Sw per 128 jaroj
+    _JAROJ128_Sw: np.int64 = np.int64(_JAROJ4_Sw*32 - _TAGO_Sw)
 
 
     def __init__(self, tempstampo: None|datetime|units.Quantity=None):
@@ -723,17 +741,18 @@ class Datotempo:
         try:
             datetime_iso = self.datetime.isoformat()
         except OverflowError:
-            datetime_iso = "\n\tNote: overflow for python native datetime lib."
-        else:
-            datetime_iso = "\n\t" + datetime_iso
+            datetime_iso = "\n\tNote: overflow for python native datetime lib"
+
         return (
             f"Timestamp {self.__tempstampo:.0f} {type(self)._UNUO}"
             + f"  since {type(self)._EPOKO.isoformat()}"
-            + datetime_iso
+            + "\n\t" + self.onkio
+            + "\n\t" + datetime_iso
         )
 
     def __str__(self) -> str:
-        return self.datetime.isoformat()
+        # return self.datetime.isoformat()
+        return self.onkio
 
     def __copy__(self) -> Self:
         return type(self)(self.tempstampo)
@@ -814,10 +833,73 @@ class Datotempo:
         res.__tempstampo = np.iinfo(type(res.__tempstampo)).min
         return res
 
-    def get_omnijaro_str(self) -> str:
-        """Get Omnijaro string representation of datetime."""
-        res = "Ø"
-        return NotImplemented
+
+
+    @classmethod
+    def ak_Jaro_kaj_mSw(
+        cls, tempstampo: units.Quantity
+    ) -> tuple[np.int64, np.int64]:
+        """Split a tempstampo into no of calaendar years and the rest."""
+
+        total_Sw, rest_mSw = divmod(tempstampo, 1*u.Sw)
+        total_Sw = np.int64(total_Sw)
+        rest_mSw = np.int64(rest_mSw.to_value(u.mSw))
+
+        n_128J, rest_Sw = divmod(total_Sw, cls._JAROJ128_Sw)
+        rest_Sw += cls._TAGO_Sw    # account for the skipping leap year at 0
+        n_4J,   rest_Sw = divmod(rest_Sw,  cls._JAROJ4_Sw)
+        rest_Sw -= cls._TAGO_Sw
+        if n_4J:    # not skipping leapyear
+            if rest_Sw < cls._TAGO_Sw:    # is first day
+                n_J = 0
+            else:
+                rest_Sw -= cls._TAGO_Sw    # account for the leap year at 0
+                n_J, rest_Sw = divmod(rest_Sw,  cls._JARO_Sw)
+                rest_Sw += cls._TAGO_Sw
+        else:    # skipped leapyear
+            n_J, rest_Sw = divmod(rest_Sw,  cls._JARO_Sw)
+
+        n_Jaro = n_128J*128 + n_4J*4 + n_J
+        rest_mSw += rest_Sw*cls._Sw_mSw
+
+        return n_Jaro, rest_mSw
+
+    @property
+    def onkio(self) -> str:
+        """Get ONKIO standard string representation of datetime."""
+
+        cls = self
+
+        nn = {}
+
+        n_Jaro,       rest_mSw = cls.ak_Jaro_kaj_mSw(self.tempstampo)
+        nn['Monato'], rest_mSw = divmod(rest_mSw, cls._MONATO_mSw)
+        n_Semajno,    rest_mSw = divmod(rest_mSw, cls._SEMAJNO_mSw)
+        n_Tago,       rest_mSw = divmod(rest_mSw, cls._TAGO_mSw)
+        nn['Gw'],     rest_mSw = divmod(rest_mSw, cls._Gw_mSw)
+        nn['Cw'],     rest_mSw = divmod(rest_mSw, cls._Cw_mSw)
+        nn['HSw'],    rest_mSw = divmod(rest_mSw, cls._HSw_mSw)
+        nn['Sw'],     rest_mSw = divmod(rest_mSw, cls._Sw_mSw)
+        
+        ss = {
+            key: HX_SYMBOLS_INV_DICT['ONKIO'][int(it)]
+            for key, it in nn.items()
+        }
+        s_Semajno = HX_SYMBOLS_INV_DICT['ONKIO'][int(n_Semajno)]
+        s_Tago = HX_SYMBOLS_INV_DICT['ONKIO'][int(n_Tago)]
+
+        res = (
+            f"Ø{n_Jaro:+d}‐{ss['Monato']}‐{s_Semajno}{s_Tago}ⅎ" +
+            f"{ss['Gw']}:{ss['Cw']};{ss['HSw']}{ss['Sw']}." +
+            f"{presi_Hx(int(rest_mSw))}"
+        )
+        return res
+
+
+
+    @property
+    def iso(self) -> str:
+        return self.datetime.isoformat()
 
 
 
@@ -828,7 +910,7 @@ class Datotempo:
 
 
 
-type TeraLokoOffsetTipo = None | tuple[
+type TeraLokoOffsetTipo = None | tuple[    # type
     units.Quantity[units.deg | units.m],    # lon
     units.Quantity[units.deg | units.m],    # lat
     units.Quantity[units.m],      # alt

@@ -64,7 +64,8 @@ Differences from the ASCII table are highlighted with **bold** text.
 - Only 16 control characters (all in the column `0x0_`) instead of 33 in ASCII table, as most of those extra control characters are obsolete in modern days.
 - Removed `CR \r` and moved `DEL` from `0x7f` to `0x0f` to maximize regularity.
 - Added symbols
-  - `ⅎ` (projento) for 'per Dx256'.
+  - `ⅎ` (projento) for 'per Dx256'
+    and the separator in Omnijaro calendar expression.
   - `—` (em dash).
   - `‐` (hyphen).
 - Recast symbol `%` as 'modulus operator'.

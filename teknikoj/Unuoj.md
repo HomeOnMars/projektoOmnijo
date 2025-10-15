@@ -305,21 +305,21 @@ which is also slowing down over millennia.)
   - Winter Solstice[^Tagoj-Solstico] always happens
     on the first or last day of the year in the *Omnijaro* calendar.
     The 1 or 2 extra days are added at the end of the year
-    as the "fake" Dx14th Month ($☾_Υ$, or *`Ganamonato`*),
+    as the "fake" Dx13th Month ($☾_Σ$, or *`Sigamonato`*),
     which has only 1 or 2 days (plus potential extra seconds).
   - Ø+\* years ending with $00_H, 80_H$ (i.e. the special non-leapyear)
     have the solstice happening at approximately midnight
     between the old and the new year.  
     Because of this, one can imagine Ø+0 is set as 2026-06-22,
     though I'd really rather left the definition open for interpretation.
-  - Dx14th Month $☾_Υ$ and the first week of the year are holidays.
+  - Dx13th Month $☾_Σ$ and the first week of the year are holidays.
   - Solstices and Equinoxes are national holidays.
   - Any changes to the calendar years system
     (such as adding leap seconds to sync with Earth's orbit,
     or more drastic changes in the event of
     Earth's rotation period or orbit changes significantly)
-    should in principle only be added / removed in Dx14th Month $☾_Υ$.
-  - In other words, extra seconds may be added or substracted in $☾_Υ$
+    should in principle only be added / removed in Dx13th Month $☾_Σ$.
+  - In other words, extra seconds may be added or substracted in $☾_Σ$
     to keep the days in sync with
     [Mean Solar Time](https://en.wikipedia.org/wiki/Solar_time#Mean_solar_time).
     Usually this means adding $\sim 7.1$ minutes or Hx1Ĉ44Ŝ.

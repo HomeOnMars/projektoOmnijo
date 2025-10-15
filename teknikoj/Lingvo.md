@@ -359,12 +359,14 @@ Changes of Esperanto++ from Esperanto include:
   | `Ĉ` | `Ĉimuto`  | Omnija minuto  |
   | `Ŝ` | `Ŝekunto` | Omnija sekundo |
 
-- Name for the months
+- Name for the months  
+  Note: Month starts from 0
+  - `Nulamonato`: $☾_0$
   - `Unuamonato`: $☾_1$
   - `Duamonato`:  $☾_2$
   - …
+  - `Lomamonato`: $☾_Π$
   - `Sigamonato`: $☾_Σ$
-  - `Ganamonato`: $☾_Υ$
     (fake last month that has 1 or 2 day(s) plus potential extra seconds
     for time corrections with respect to Earth's orbit)
 
