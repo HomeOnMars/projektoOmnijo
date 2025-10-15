@@ -183,6 +183,7 @@ def presi_Hx(
     symbols_inv: dict = HX_SYMBOLS_INV,
     d_sep: str = '.',
     e_sep: None|str = None, # 'p',
+    plus_sign: str = "",
     prefix: None|str = None,
     **kwargs,
 ) -> str:
@@ -204,6 +205,9 @@ def presi_Hx(
         if None, will use '' if the number is close to 1,
         'p' if the number is very large or small.
 
+    plus_sign: str
+        set it to "+" to add plus sign when n is not negative
+
     prefix: prefix string for output
         if None, will use 'Hx ' if n is astropy units, else ''.
     """
@@ -218,12 +222,15 @@ def presi_Hx(
         ans_v = presi_Hx(
             n.value, **{k: v for k, v in locals().items() if k not in {'n'}},
         )
-        return f"{prefix}{ans_v} {n.unit}"
+        return f"{ans_v} {n.unit}"    # prefix already added
 
     # n = np.float64(n)
     sign = n >= 0
     n = abs(n)
-    if n == 0: return f"0{e_sep}+0" if e_sep else "0"
+    if n == 0:
+        return (
+            f"{prefix}{plus_sign}0{e_sep}+0" if e_sep
+            else f"{prefix}{plus_sign}0")
     if e_sep is None: e_sep = 'p' if n < 0x10**(-4) or n > 16**4 else ''
     base = np.float64(base)
     log2_base = np.log2(base)
@@ -234,7 +241,7 @@ def presi_Hx(
         # input is an array
         raise NotImplementedError("Array input not yet implemented.")
 
-    ans = "" if sign else "-"
+    ans = plus_sign if sign else "-"
     if grandordo < 0 and not e_sep:
         ans += symbols_inv[0] + d_sep + symbols_inv[0]*(-grandordo-1) # "0.0*"
 
@@ -255,7 +262,7 @@ def presi_Hx(
             base=base, symbols_inv=symbols_inv, d_sep=d_sep, e_sep='')
         ans += f"{e_sep}{ordo}"
     
-    return ans
+    return prefix + ans
 
 def presi_Tx(
     n: float|units.Quantity,
@@ -880,7 +887,7 @@ class Datotempo:
         nn['Cw'],     rest_mSw = divmod(rest_mSw, cls._Cw_mSw)
         nn['HSw'],    rest_mSw = divmod(rest_mSw, cls._HSw_mSw)
         nn['Sw'],     rest_mSw = divmod(rest_mSw, cls._Sw_mSw)
-        
+
         ss = {
             key: HX_SYMBOLS_INV_DICT['ONKIO'][int(it)]
             for key, it in nn.items()
@@ -889,9 +896,10 @@ class Datotempo:
         s_Tago = HX_SYMBOLS_INV_DICT['ONKIO'][int(n_Tago)]
 
         res = (
-            f"Ø{n_Jaro:+d}‐{ss['Monato']}‐{s_Semajno}{s_Tago}ⅎ" +
+            f"Ø{presi_Hx(int(n_Jaro), plus_sign='+')}" +
+            f"‐{ss['Monato']}‐{s_Semajno}{s_Tago}ⅎ" +
             f"{ss['Gw']}:{ss['Cw']};{ss['HSw']}{ss['Sw']}." +
-            f"{presi_Hx(int(rest_mSw))}"
+            f"{presi_Hx(int(rest_mSw)):0>4}"
         )
         return res
 
@@ -910,7 +918,7 @@ class Datotempo:
 
 
 
-type TeraLokoOffsetTipo = None | tuple[    # type
+type TeraLokoOffsetTipo = None | tuple[     # type
     units.Quantity[units.deg | units.m],    # lon
     units.Quantity[units.deg | units.m],    # lat
     units.Quantity[units.m],      # alt
