@@ -152,11 +152,28 @@ Changes of Esperanto++ from Esperanto include:
 - Decimal separator in *Epopo* is `.` instead of `,`;<br>
   Thousands separator (decimal) / ten-thousands separator (hexadecimal) is
   space(` `) instead of `.`;<!-- markdownlint-disable-line no-space-in-code -->
+- **Ordinal numerals start from 0th** instead of 1st.  
+  - This is akin to how numbers in arrays or sequences are referenced to
+    in most modern computer codes like C or python.
+    The value of ordinal number now refers to
+    the cardinal number of things coming before it.  
+  - Examples
+    - Floors start from 0th floor (ground level).
+    - In a competition, the winner is 0th, and 1st comes after.
+  - Cardinal numbers are not affected.
+    - Example:
+      2 people entered a room,
+      the 0th person going in is a man, and
+      the 1st person going in is a woman.
+    - When getting the total number from counting,
+      add one to the last ordinal number counted,
+      like one would do in programing.  
+      Example: 0th apple, 1st, 2nd, 3rd. There are 4 apples in the basket.
 - Marking numbers as decimal ('Dekuma') or hexadecimal ('Hekuma'):
   - Dekuma  (base Dx10): prefixing `Dx`, or add a subscript $?_D$;
   - Hekuma  (base Dx16): prefixing `Hx`, or add a subscript $?_H$;
   - Trekuma (base Dx32): prefixing `Tx`, or add a subscript $?_T$;
-- Built-in support for *hexadecimal* algebra:
+- Built-in support for ***hexadecimal*** algebra:
   - `Δ λ Π Σ Υ Ψ` written/pronounced as `del lom nak sig gan fus`;
   - `hek`    (H) for Dx           16 (= 2^Dx4,  or Hx          10);
   - `jent`   (J) for Dx          256 (= 2^Dx8,  or Hx         100);
