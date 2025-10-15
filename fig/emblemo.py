@@ -6,6 +6,9 @@ Library for Emblem Generation.
 
 Author: HomeOnMars
 
+Note: Require inkscape in external env
+    for converting from svg to png/jpg to work properly.
+
 This work © 2024 by HomeOnMars is licensed under CC BY-NC-SA 4.0.
 To view a copy of this license, visit <https://creativecommons.org/licenses/by-nc-sa/4.0/>
 
@@ -14,7 +17,9 @@ To view a copy of this license, visit <https://creativecommons.org/licenses/by-n
 
 
 # imports (built-in)
+import os
 from os.path import sep
+import subprocess
 import xml.dom.minidom    # for pretty-print svg files
 from datetime import datetime, UTC; now = lambda: datetime.now(UTC)
 from collections.abc import Callable
@@ -99,7 +104,7 @@ class Emblemo:
         ratio_xy: float = 1,    # x / y
         center: tuple[float, float] = (0., 0.), # coord of center in [-1, 1]
         colors: dict = KOLOROJ,
-        # see kwargs in self._gen_svg_metadata()
+        # see kwargs in self.elem_metadata()
         meta_dict: None|dict[str, str] = None,
         **kwargs,
     ):
@@ -121,7 +126,7 @@ class Emblemo:
         self._meta_dict: dict[str, str] = meta_dict
         if meta_dict is not None:
             self.dat.elements.append(
-                self._gen_svg_metadata(**meta_dict)
+                self.elem_metadata(**meta_dict)
             )
 
         if name:
@@ -157,7 +162,7 @@ class Emblemo:
         self,
         # noext means no extension
         output_path_noext: None|str = None,
-        output_exts: set[str] = {'.svg'}, # '.png'},
+        output_exts: set[str] = {'.svg'},
         verbose: bool = True,
     ):
         """Output to files.
@@ -173,28 +178,31 @@ class Emblemo:
         
         # output to .svg
         ext = '.svg'
-        output_exts = set(output_exts) - {ext}
         output_path = f"{output_path_noext}{ext}"
-        if verbose:
-            print(
-                f"Saving to '{output_path_noext}':" +
-                f"\n\t'{output_path}'...", end=' ')
-        with open(output_path, 'wb') as f:
-            f.write(
-                xml.dom.minidom.parseString(str(self.dat)).toprettyxml(
-                    indent="  ", encoding="utf-8",
-            ))
-        if verbose: print(f"Done;")
+        if os.path.exists(output_path) and ext not in output_exts:
+            if verbose: print(f"Skipping '{output_path}';")
+        else:
+            output_exts = set(output_exts) - {ext}
+            if verbose: print(f"Saving to '{output_path}'...", end=' ')
+            with open(output_path, 'wb') as f:
+                f.write(
+                    xml.dom.minidom.parseString(str(self.dat)).toprettyxml(
+                        indent="  ", encoding="utf-8"))
+            if verbose: print(f"Done;")
 
         for ext in output_exts:
-            output_path = f"{output_path_noext}{ext}"
-            if verbose:
-                print(f"\n\t'{output_path}'...", end=' ')
-            raise NotImplementedError
+            cmds: list[str] = [
+                'convert',
+                f'{output_path_noext}.svg',     # input
+                f'{output_path_noext}{ext}',    # output
+            ]
+            if verbose: print(f"\tRunning '{' '.join(cmds)}'...", end=' ')
+            subprocess.run(cmds)
             if verbose: print(f"Done;")
-        return
 
-    def _gen_svg_metadata(
+        return self
+
+    def elem_metadata(
         self,
         creator: str,
         license: None|str = None,    # e.g. 'CC BY-NC-SA 4.0',
@@ -578,18 +586,19 @@ if __name__ == '__main__':
         'creator': "HomeOnMars",
         'license': 'CC BY-NC-SA 4.0',
     }
-
     RdOFlagoTitle = "La Regno de Omnijo (RdO) flag (fictional) for my world-building project"
 
-    Emblemo("OCG",  meta_dict=meta_dict).save()
-    Emblemo("OCR",  meta_dict=meta_dict).save()
-    Emblemo("OCRR", meta_dict=meta_dict).save()
-    Emblemo("RdO",  meta_dict=meta_dict).save()
+    exts = {'.svg', '.png'}    # png files support transparent background
+    Emblemo("OCG",  meta_dict=meta_dict).save(None, exts)
+    Emblemo("OCR",  meta_dict=meta_dict).save(None, exts)
+    Emblemo("OCRR", meta_dict=meta_dict).save(None, exts)
+    Emblemo("RdO",  meta_dict=meta_dict).save(None, exts)
+    exts = {'.svg', '.jpg'}    # jpg files are smaller
     Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
-        ratio_xy=16/9).save()
-    # Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
-    #     ratio_xy=1/1,  scale_y=2160,).save("RdOFlago.emb", [".png"])
-    # Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
-    #     ratio_xy=16/9, scale_y=2160).save("RdOFlago.plen", [".png"])
+        ratio_xy=16/9).save(None, exts)
     Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
-        ratio_xy=5/3,  scale_y=2160).save("RdOFlago.x5y3")
+        ratio_xy=1/1,  scale_y=2160,).save("RdOFlago.emb", exts)
+    Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
+        ratio_xy=16/9, scale_y=2160).save("RdOFlago.plen", exts)
+    Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
+        ratio_xy=5/3,  scale_y=2160).save("RdOFlago.x5y3", exts)
