@@ -4,7 +4,7 @@
     <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
-        <dc:date>2025-10-14T23:57:09.072536+00:00</dc:date>
+        <dc:date>2025-10-15T00:11:36.592832+00:00</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:title>La Regno de Omnijo (RdO) flag (fictional) for my world-building project</dc:title>
         <dc:creator>HomeOnMars</dc:creator>
@@ -15,8 +15,8 @@
   <defs>
     <linearGradient gradientTransform="scale(0.5625 1) translate(0.35763888888888884) rotate(-33.690067525979785 0.5 0.5)" id="RdOColorGradient">
       <stop offset="0.1875" stop-opacity="0" stop-color="#00BFFF"/>
-      <stop offset="0.5" stop-opacity="1" stop-color="#95D0FC"/>
-      <stop offset="0.5" stop-opacity="1" stop-color="#D6B4FC"/>
+      <stop offset="0.4999990463256836" stop-opacity="1" stop-color="#95D0FC"/>
+      <stop offset="0.5000009536743164" stop-opacity="1" stop-color="#D6B4FC"/>
       <stop offset="0.8125" stop-opacity="0" stop-color="#9370DB"/>
     </linearGradient>
   </defs>

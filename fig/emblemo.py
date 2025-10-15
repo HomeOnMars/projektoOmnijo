@@ -471,6 +471,8 @@ class Emblemo:
         dx = tan_deg(angle)    # slash position changes (half)
         # ddx = 68/256 * 2.0          # color transition band width
         ddx = 80/256    # color transition band width (half)
+        ddd = 2**(-20)  # a tiny number
+                        # to make sure the color gradient is in correct order
 
         id_RdOColorGradient = "RdOColorGradient"
         self.draw(svg.Defs(elements=[
@@ -482,9 +484,9 @@ class Emblemo:
             ], elements=[
                 svg.Stop(offset=0.5-ddx,
                     stop_color=self.colors['C'],  stop_opacity=0),
-                svg.Stop(offset=0.5,
+                svg.Stop(offset=0.5-ddd,
                     stop_color=self.colors['x2'], stop_opacity=1),
-                svg.Stop(offset=0.5,
+                svg.Stop(offset=0.5+ddd,
                     stop_color=self.colors['x1'], stop_opacity=1),
                 svg.Stop(offset=0.5+ddx,
                     stop_color=self.colors['G'],  stop_opacity=0),
