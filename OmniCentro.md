@@ -13,8 +13,8 @@ for my fictional Cities: Skylines 2 city *OmniCentro*
 <!-- $~~~~~~~~~~~~~~~~$
 ![Omnija Centra Gvidantaro (OCG) emblem](fig/OCG.svg)   -->
 <!-- *La Regno de Omnijo* (RdO) flag and central authority
-*Omnija Centra Gvidantaro* (OCG) [emblem](OmniCentro/Emblemoj.md#emblemoj) -->
-*La Regno de Omnijo* (RdO) [flag](OmniCentro/Emblemoj.md#emblemoj)
+*Omnija Centra Gvidantaro* (OCG) [emblem](fig/Emblemo.md#emblemoj) -->
+*La Regno de Omnijo* (RdO) [flag](fig/Emblemo.md#desegnoj)
 (fictional)
 
 Legal
@@ -69,7 +69,7 @@ Teknikaj specifoj
 - [***ONKIO tablo*** | ONKIO table](teknikoj/ONKIO.md#onkio-tablo): ASCII table equivalent
 - [***Retoj*** | Networks](teknikoj/Retoj.md#retoj)
 - [***Arboj*** | Trees](teknikoj/Arboj.md#arboj)
-- [***Emblemoj*** | Emblems](OmniCentro/Emblemoj.md#emblemoj)
+- [***Emblemoj*** | Emblems](fig/Emblemo.md#emblemo)
 
 Fonrakontoj
 -------------------------------------------------------------------------------

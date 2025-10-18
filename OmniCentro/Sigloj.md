@@ -159,6 +159,7 @@ Examples:
 |    Vd   | **V**i**d**o         | Vista            |
 |    Vĝ   | **V**ila**ĝ**o       | Village          |
 |    Sc   | **S**ta**c**io       | Station          |
+|    Pk   | **P**ar**k**o        | Park             |
 ||| <!-- Road types --> |
 |  ~~Vj~~ | ~~**V**o**j**o~~     | [Road](../teknikoj/Retoj.md#vojoj)  <br>(Deprecated[^Deprecated-Vj]) |
 |    Ev   | f**E**r**v**ojo      | [Railway](../teknikoj/Retoj.md#metrooj--personaj-fervojoj) |
@@ -206,7 +207,7 @@ Naming rules examples: (See also [Lingvo](../teknikoj/Lingvo.md#nomi) page.)
 - `Ŭv#Σm` for Motorway 13 N->S `ŬΣm`,  
   or `Aŭtovojo #Σm`;
 - `St-Olivkrono #123` as a short version  
-  of `Strata-Olivkrona #123`,  
+  of `Strato-Olivkrono #123`,  
   ~~or `123 Olivkrono St`~~ (Deprecated);
 - ~~`Stacidomo #E` and `Stacidomo #U` for train and bus station respectively~~  
   (Just use `Stacidomo` so *Carto* Mod doesn't get confused);
@@ -229,7 +230,7 @@ Using the leading digit for identifying districts and areas:
 | `6` |  CC  | Mt-H  | Mt-Hejmeco     | |
 | `7` |  CC  | Am-F  | Am-Fortiko     | |
 | `8` |  CR  | Mt-E  | Mt-Espero      | |
-| `9` |  CC  | ??-?  | Royal Palace (TBD)  | <span style="color:Beige">█ #F5F5DC</span> |
+| `9` |  CC  | La-S  | La-Singulariso - Royal Palace (TBD)  | <span style="color:Beige">█ #F5F5DC</span> |
 | `Δ` |  NK  | Mt-F  | Mt-Fortiko     | <span style="color:MediumPurple">█ #9370DB</span> |
 |     |  NK  | Vd-F  | Vd-Fortiko     | <span style="color:#D6B4FC">█ #D6B4FC</span> |
 | `λ` |  NC  | Am-U  | Am-Unukorno    | <span style="color:Thistle">█ #D8BFD8</span> |
@@ -237,8 +238,8 @@ Using the leading digit for identifying districts and areas:
 | `Π` |  NK  | Me-R  | Me-Racio       | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 |     |  NK  | La-P  | La-Pordego     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 |     |  NK  | Dt-L  | Dt-Lumturo     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
-|     |  NK  | La-A  | La-Artezo      | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
-|     |  NK  | La-C  | La-Cirklo      | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
+|     |  NK  | Dt-A  | Dt-Artezo      | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
+|     |  NK  | Dt-C  | Dt-Cirklo      | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 | `Σ` |  NR  | Am-R  | Am-Racio       | |
 |  …  |      |       |                | |
 | `Ψ` |      |       | Eksteraj Konektoj  <br>Outside connections | |

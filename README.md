@@ -15,7 +15,7 @@ but ballooned into something more.
 
 ![RdO emblem](fig/RdOFlago.svg)
 
-*La Regno de Omnijo* (RdO) [flag](OmniCentro/Emblemoj.md) (fictional).
+*La Regno de Omnijo* (RdO) [flag](fig/Emblemo.md) (fictional).
 
 Legal
 -------------------------------------------------------------------------------

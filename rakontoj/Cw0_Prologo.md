@@ -185,14 +185,6 @@ For *him*, for *herself*, and for everything *they* believe in,
 > Again, opinions expressed by characters here
 > are **not** necessarily the same as my opinion.  
 
-<!-- <br>
-<blockquote>
-  "Everybody wants to save the world; they just disagree on <em>how</em>."<br>
-  <span style="color:grey">
-  —— <em>Fallout</em> S01E05 (2024)
-  </span>
-</blockquote> -->
-<br>
 <blockquote>
   <!-- You know what's even worse than being terridied all the time?
   The future. -->

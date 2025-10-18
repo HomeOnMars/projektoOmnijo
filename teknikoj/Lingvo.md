@@ -61,6 +61,7 @@ Changes of Esperanto++ from Esperanto include:
   inspired by [pinyin](https://en.wikipedia.org/wiki/Pinyin).  
   No words from *Epopo* are using those three letters yet;
   for now they are only used in naming.
+- `oŭ` is allowed and used in Epopo.
 - Total *Epopo* alphabet: 30 letters.
   - vs Esperanto: 1 letters less (no Ĥ) and 3 letters more (QɅX)
   - vs English:  2 letters less (no WY) and 6 letters more (ɅŬĈĜĴŜ)
@@ -297,46 +298,54 @@ Changes of Esperanto++ from Esperanto include:
 
 > Naming things
 
-- Proper Names (for places)
-  - Format 1: e.g. `Sc-Granda-Lumturo`  
-    - Start the name with the abbreviated 2\~4-letter *type classifier*
-      listed in [Sigloj](../OmniCentro/Sigloj.md#mallongigoj) page.
-      (See there for some examples also.)  
-    - If the Proper Name have multiple word,
-      string them up with *hyphens*.  
-    - Examples:
-      - 'Mt-Espero' as a name for a mountain;
-      - 'La-Kora-Tereno' as a name for a building;
-        <!-- Domo de la Arkitekto kaj la Ĉefinĝeniero-->
-      - 'Dt-Granda-Lumturo' as a name for a district;
-      - 'Sc-Granda-Lumturo' as the name for the transit hub in that district.
-        Alternatively, 'Dt-Granda-Lumtura Stacio' works too.  
-        This is because 'Dt-Granda-Lumtura' is one single conceptual element
-        refering to the district, and 'Stacio' as something located within it.
-  - Format 2: e.g. `Distrikta-Granda-Lumtura Stacio`
-    or `Dt-Granda-Lumtura Stacio`  
-    - Using 'Dt-Granda-Lumtura' as a locational indicator
-      to describe the location of the noun ('Stacio').  
-    - Always add *type classifier* in front of the name of the place/thing,
-      so it is clear that what follows is a name of a place/thing,
-      instead of whatever things the name itself point to.  
-      - e.g. in 'Distrikta-Granda-Lumtura', we know
-        'Granda-Lumtura' is the name of a district called 'Granda-Lumtura',
-        instead of
-        refering to a place that is a 'granda lumtura' (big lighthouse).
-      - *Exceptions*: Unique names that are clear
-        that it can only refer to that specific place/thing,
-        such as most cities and countries names.
-        e.g. 'OmniCentra RadioReto' is enough,
-        no need for 'Ub-OmniCentra RadioReto',
-        because we already know that
-        'OmniCentro' is and can only be referring to a specific city.
-    - Add hyphen within words of single conceptual elements,
-      especially if the word is not itself the name of a place.
-      This is so people know that in e.g. 'Distrikta-Granda-Lumtura Stacio',
-      'Granda' is part of the name of a place called 'Granda-Lumturo',
+#### Propraj nomoj por lokoj
+
+> Proper Names for places
+
+- Basic Format: e.g. `Sc-Granda-Lumturo`,  
+  as a short hand of `Stacio-Granda-Lumturo`,
+  which is a short hand of `Stacio de Dt-Granda-Lumturo`,
+  i.e. `Stacio de Distrikto-Granda-Lumturo`
+  - Start the name with the abbreviated 2\~4-letter *type classifier*
+    listed in [Sigloj](../OmniCentro/Sigloj.md#mallongigoj) page.
+    (See there for some examples also.)  
+  - If the Proper Name have multiple word,
+    string them up with *hyphens*.  
+  - Examples:
+    - 'Mt-Espero' as a name for a mountain;
+    - 'La-Kora-Tereno' as a name for a building;
+      <!-- Domo de la Arkitekto kaj la Ĉefinĝeniero-->
+    - 'Dt-Granda-Lumturo' as a name for a district;
+    - 'Sc-Granda-Lumturo' as the name for the transit hub in that district.
+  - Always add *type classifier* in front of the name of the place/thing,
+    so it is clear that what follows is a name of a place/thing,
+    instead of whatever things the name itself point to.  
+    - e.g. in 'Distrikto-Granda-Lumturo', we know
+      'Granda-Lumturo' is the name of a district called 'Granda-Lumturo',
       instead of
-      'Granda' as an adjective describing the 'Stacio' as 'Granda' (Big).
+      refering to a place that is a 'granda lumturo' (big lighthouse).
+    - *Exceptions*: Unique names that are clear
+      that it can only refer to that specific place/thing,
+      such as most cities and countries names.
+      e.g. 'OmniCentra RadioReto' is enough,
+      no need for 'Ub-OmniCentra RadioReto',
+      because we already know that
+      'OmniCentro' is and can only be referring to a specific city.
+  - No need to add 'La' in front of 'Dt' or 'Sc' etc type classifier.
+    Because it can already be infered that the phrase is pointing towards
+    a specific place even without the definite article 'La'.
+- Extended Format: e.g. `Dt-Granda-Lumtura Hospitalo`  
+  as a short hand of `Distrikto-Granda-Lumtura Hospitalo`.
+  - Using 'Dt-Granda-Lumtura' as a locational indicator
+    to describe the location of the noun ('Stacio').  
+  - Add hyphen within words of single conceptual elements,
+    especially if the word is not itself the name of a place.
+    This is so people know that in e.g. 'Stacio de Distrikto-Granda-Lumturo',
+    'Granda' is part of the name of a place called 'Granda-Lumturo',
+    instead of 'Granda' as an adjective
+    describing the 'Stacio' or 'Lumturo' as 'Granda' (Big).
+  - Do not do this with stations; just use the 'Sc' prefix in the Basic Format.
+    Stations are common enough places to deserve its own type classifier.
 
 ### Sekso
 

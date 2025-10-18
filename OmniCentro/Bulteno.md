@@ -56,11 +56,10 @@ and third closest being *Chile* \~Hx800 JU (\~Dx4100 km) away.
 [^Bulteno-Loko-1]: Coordinates are fictional-
   it should be open ocean there in real life.
 
-[^Bulteno-Loko-2]: Length unit $\textrm{JU}$ is approximately 2km,
-  see [Unuoj | Units](../teknikoj/Unuoj.md#longeco) page for more details;  
-  Hx means hexadecimal,
-  see [Lingvo | Langauge](../teknikoj/Lingvo.md#algebro) page
-  for more details.
+[^Bulteno-Loko-2]: Length unit JU is approximately 2km
+  (see also [Unuoj | Units](../teknikoj/Unuoj.md#longeco) page);  
+  Hx means hexadecimal
+  (see also [Lingvo | Langauge](../teknikoj/Lingvo.md#algebro) page).
 
 For more details,
 see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
@@ -87,7 +86,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 | Oficiala Religio  <br>Official Religion | Pastafarianismo[^Bulteno-Religio] (oficiala)<br>Homismo (maloficiala)[^Bulteno-Religio-2] |
 | Oficialaj Koloroj  <br>Official Colors   | <span style="color:Beige">Flavgriza/Beige #F5F5DC</span> [^Bulteno-Koloroj-Flavgriza]  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span> [^Bulteno-Koloroj-Bluo]  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span> [^Bulteno-Koloroj-Purpuro] |
 | Oficialaj Himno  <br>Official Anthem | *Oceans* (*Where Feet May Fail*), originally by Hillsong UNITED  <br>Modified acoustic Epopo version[^Bulteno-Himno]. |
-| Oficialaj Flago  <br>Official Flag | ![RdOFlago](../fig/RdOFlago.svg)  <br>See [emblem](Emblemoj.md#desegnoj) page for design explanation. |
+| Oficialaj Flago  <br>Official Flag | ![RdOFlago](../fig/RdOFlago.svg)  <br>See [emblem](../fig/Emblemo.md#desegnoj) page for design explanation. |
 
 [^Bulteno-RegistaraTipo]: Interviewer: "So, tell us what do you think
   the kind of government our new *RdO* governemnt *OCR* is?"
@@ -145,7 +144,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 [^Bulteno-Religio-2]: As is the case for many other things in RdO,
   it is often the official unofficial ones that does the load-bearing.
 
-[^Bulteno-Koloroj-Flavgriza]: Beige, symbolizing the harsh Unbending Reality,
+[^Bulteno-Koloroj-Flavgriza]: Beige, symbolizing the harsh unbending reality,
   where beauty and complexities hidden deep underneath.
   <span style="color:Beige">Serena</span>'s first choice was
   Arĝento/Silver (#C0C0C0),
