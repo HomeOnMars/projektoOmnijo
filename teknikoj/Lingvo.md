@@ -189,7 +189,7 @@ Changes of Esperanto++ from Esperanto include:
       This way to say extremely large numbers is **deprecated**
       and only listed here for technical completion reasons,
       since it would be very wordy for larger numbers such as
-      `kvarnia gilnia trinia jentnia dunia heknia munio` (Hx10000^Hx4321).  
+      `kvarnia gilnia trinia jentnia dunia heknia muni` (Hx10000^Hx4321).  
       **It is recommended to use instead `p`-notation**
       **for extremely large or extremely small numbers.**
   - `hekon`  (h) for   1/Dx16 (1p-1);
@@ -203,20 +203,25 @@ Changes of Esperanto++ from Esperanto include:
     - Warning: **Deprecated** for the same reason as above.
       use `p`-notation instead for extremely large or small numbers.
   - etc. etc.
-  - When saying one `hek`, one `jent`, or one `gil`,
-    always add prefix `u` to signify it as a number instead of a unit.  
-    E.g., say `ujent uhek` to express Hx110 (=Dx272);  
-    say `dujent uhek utroj` to express Hx210U (=Dx528U).  
-    This is to differentiate cases between e.g.
-    ~~`jent hekutroj`~~ (should be said as `ujent hekutroj`)
-    and ~~`jent hek utroj`~~ (should be said as `ujent uhek utroj`).
+  - When saying numbers with more than one word,
+    add `da` between them and the things they describe.  
+    (This is to differentiate cases between e.g.
+    ~~`jent du hekutroj`~~ (Hx1020U) and ~~`jent duhek utroj`~~ (Hx120U).)  
+    E.g.
+    - `jent duhek da utroj` to express Hx120U (=Dx288U);
+    - `jent du da hekutroj` to express Hx1020U (=Dx4128U);
+    - `jent utroj` (or 'unu jentutro') to express Hx100U (=Dx256U).
   - As a reference,
     Dx 9 100 000 000 = Hx 2 1Υ66 Ψλ00,
     pronounced as
-    `du duni, ugil ganjent seshek ses muni, fusgil lomjent`.
+    `du duni, gil ganjent seshek ses muni, fusgil lomjent`.
   - When saying one `muni`, one `duni`, etc, always add `unu` in front of it.
-  - Both `unu munio da utroj` and `unu muni utroj`
-    are acceptable ways of saying Dx 65 536 U.
+  - About `-o` suffix:  
+    `du muni da utroj` (and `du muniutroj`) is the acceptable way
+    of saying Dx 131 072 U;  
+    ~~`du munioj da utroj`~~ (like in Esperanto) is **deprecated** in *Epopo*.  
+    Do not add `-o` suffix for numbers.
+    Numbers are not nouns in Epopo. They are special.
   - Also you can just say `unu muniutro` directly, as 1 MU = Dx65536 U.
   - For fractions, add `-on` like in Esperanto. E.g. `munionutro`.
   - For prefix shorthands,
