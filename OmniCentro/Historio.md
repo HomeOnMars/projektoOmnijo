@@ -394,7 +394,7 @@ Ekstraj Rakontoj
 > Additional Content
 
 1. Ø-3⚝ \|
-  [La Perdita Princino](../rakontoj/Cw1_LaPerditaPrincino.md#enhavo) \| The Lost Princess  
+  [La Perdita Princino](../rakontspecimenoj/Cw1_LaPerditaPrincino.specimeno.md#enhavo) \| The Lost Princess  
   <span style="color:Beige">Serena</span>
   meeting the old King for the first time.
 
