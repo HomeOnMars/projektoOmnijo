@@ -263,6 +263,7 @@ Using the leading digit for identifying districts and areas:
 | Taksio-Korto             | Taxi Depot               |
 | Stacio                   | Station                  |
 | Stacidomo                | Station (Building)       |
+| Kargotrajna Terminalo    | Cargo Train Terminal     |
 | Parkejo                  | Parking Lot              |
 |||
 | Bazlernejo / ***Bl***    | Elementary School        |
