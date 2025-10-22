@@ -734,6 +734,12 @@ class Datotempo:
     _JAROJ4_Sw: np.int64 = np.int64(_JARO_Sw*4 + _TAGO_Sw)
     # number of Sw per 128 jaroj
     _JAROJ128_Sw: np.int64 = np.int64(_JAROJ4_Sw*32 - _TAGO_Sw)
+    # symbols to numbers
+    _SEMAJNO_SIMBOLOJ: dict[str, int] = {k: i for i, k in enumerate('OIQU')}
+    _TAGO_SIMBOLOJ: dict[str, int] = {k: i for i, k in enumerate('LABɅVSZ')}
+    # numbers to symbols
+    _SEMAJNO_SIMBOLOJ_INV = {i: k for k, i in _SEMAJNO_SIMBOLOJ.items()}
+    _TAGO_SIMBOLOJ_INV = {i: k for k, i in _TAGO_SIMBOLOJ.items()}
 
 
     def __init__(self, tempstampo: None|datetime|units.Quantity=None):
@@ -751,7 +757,7 @@ class Datotempo:
             datetime_iso = "\n\tNote: overflow for python native datetime lib"
 
         return (
-            f"Timestamp {self.__tempstampo:.0f} {type(self)._UNUO}"
+            f"Timestamp Dx {self.__tempstampo:.0f} {type(self)._UNUO}"
             + f"  since {type(self)._EPOKO.isoformat()}"
             + "\n\t" + self.onkio
             + "\n\t" + datetime_iso
@@ -891,14 +897,15 @@ class Datotempo:
         ss = {
             key: HX_SYMBOLS_INV_DICT['ONKIO'][int(it)]
             for key, it in nn.items()
+        } | {
+            'Semajno': cls._SEMAJNO_SIMBOLOJ_INV[int(n_Semajno)],
+            'Tago': cls._TAGO_SIMBOLOJ_INV[int(n_Tago)],
         }
-        s_Semajno = HX_SYMBOLS_INV_DICT['ONKIO'][int(n_Semajno)]
-        s_Tago = HX_SYMBOLS_INV_DICT['ONKIO'][int(n_Tago)]
 
         res = (
             f"Ø{presi_Hx(int(n_Jaro), plus_sign='+')}" +
-            f"‐{ss['Monato']}‐{s_Semajno}{s_Tago}ⅎ" +
-            f"{ss['Gw']}:{ss['Cw']};{ss['HSw']}{ss['Sw']}." +
+            f"‐{ss['Monato']}‐{ss['Semajno']}{ss['Tago']}ⅎ" +
+            f"{ss['Gw']}:{ss['Cw']}:{ss['HSw']}{ss['Sw']}." +
             f"{presi_Hx(int(rest_mSw)):0>4}"
         )
         return res

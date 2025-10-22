@@ -55,13 +55,20 @@ Changes of Esperanto++ from Esperanto include:
 
 > Alphabet
 
+#### Elementoj
+
 - Officially eliminated `Ĥ` from the *Epopo* alphabet
   (mostly replaced with `K`);
-- Adding `Q` (Q), `X` (X), `Ʌ` (ü) for more diverse sounds,
+- Adding `Q` (Qi-), `X` (Xi-), `Ʌ` (-ü) for more diverse sounds,
   inspired by [pinyin](https://en.wikipedia.org/wiki/Pinyin).  
   No words from *Epopo* are using those three letters yet;
   for now they are only used in naming.
 - `oŭ` is allowed and used in Epopo.
+- Note that 'Ʌ', 'JɅ', and 'ĴɅ' could sound similar.
+  Generally speaking, try not to add 'J' or 'Ĵ' in front of 'Ʌ'
+  when making up words.
+- Avoid putting 'C', 'G', 'J', 'S' in front of 'X' to avoid confusion
+  with the 'X' system.
 - Total *Epopo* alphabet: 30 letters.
   - vs Esperanto: 1 letters less (no Ĥ) and 3 letters more (QɅX)
   - vs English:  2 letters less (no WY) and 6 letters more (ɅŬĈĜĴŜ)
@@ -72,79 +79,86 @@ Changes of Esperanto++ from Esperanto include:
     `abcdefghijklmnopqrstuvʌxŭzĉĝĵŝ`  
     `0123456789ΔλΠΣΥΨ`  
     ``\{|}~`^@[]:;<=>?_!"#$%&'()*+ⅎ-—/ ‐.,``
-- Pronunciation guide  
 
-  See also International Phonetic Alphabet (IPA)
-  - [lernu: Esperanto Alphabet](https://lernu.net/gramatiko/skribo)
-  - [Wikipedia: IPA/Esperanto](https://en.wikipedia.org/wiki/Help:IPA/Esperanto)
-  - [Wikipedia: IPA/Mandarin](https://en.wikipedia.org/wiki/Help:IPA/Mandarin)
+#### Elparolo
 
-  <details>
-    <summary><b>Sound comparison table</b></summary>
-    Note: many of the sounds are approximations.
+> Pronunciation guide  
 
-    | Epopo | Pinyin | English |
-    | :-: | :----: | :-: |
-    |  Ĉ  | Ch-    | **ch**oice |
-    |  G  | G-     | yo**g**urt |
-    |  Ĝ  | J-     | **G**eorge |
-    |  J  | Y-     | **y**ogurt |
-    |  Ĵ  | ~~—~~  | plea**su**re |
-    |  Q  | Q-     | pun**ch**y |
-    |  Ŝ  | Sh-    | **sh**ip |
-    |  V  | ~~—~~  | **v**alid |
-    |  Ŭ  | W-     ||
-    |  X  | X-     | ~~—~~ |
-    | Zĉ  | Zh-    | ~~—~~ |
-    ||||
-    | a   | -a     | |
-    | aj  | -ai    | **I** |
-    | an  | -an    | |
-    | aŭn | -ang   | |
-    | aŭ  | -ao    | n**ow** |
-    | e   | -e     | |
-    | ej  | -ei    | **A** |
-    | en  | -en    | |
-    | eŭn | -eng   | |
-    | er  | -er    | |
-    | eŭ  | ~~—~~  | **L** |
-    | i   | -i     | |
-    | in  | -in    | |
-    | iŭn | -ing   | |
-    | ja  | -ia    | |
-    | jan | -ian   | |
-    | jaŭn| -iang  | |
-    | jaŭ | -iao   | |
-    | je  | -ie    | |
-    | jon | -iong  | |
-    | joŭ | -iu    | |
-    | o   | -o     | |
-    | oj  | ~~—~~  | j**oy** |
-    | oŭn | -ong   | |
-    | oŭ  | -ou    | **O** |
-    | u   | -u     | |
-    | uj  | ~~—~~  | ch**ewy** |
-    | ŭa  | -ua    | |
-    | ŭaj | -uai   | |
-    | ŭan | -uan   | |
-    | ŭaŭn| -uang  | |
-    | ŭej | -ui    | |
-    | ŭen | -un    | |
-    | ŭo  | -uo    | |
-    | ʌ   | -ü     | |
-    | ʌŭn | -üan   | |
-    | ʌe  | -üe    | |
-    | ʌn  | -ün    | |
+See also International Phonetic Alphabet (IPA).
 
-  </details>
+- [lernu: Esperanto Alphabet](https://lernu.net/gramatiko/skribo)
+- [Wikipedia: IPA/Esperanto](https://en.wikipedia.org/wiki/Help:IPA/Esperanto)
+- [Wikipedia: IPA/Mandarin](https://en.wikipedia.org/wiki/Help:IPA/Mandarin)
 
-- `w`-system
-  - Instead of the [X-system](https://en.wikipedia.org/wiki/Substitutions_of_the_Esperanto_alphabet#X-system) in Esperanto,
-    *Epopo* appends *w* instead of *x* to *CGJSUV*
-    to represent accented letters or Ʌ in ASCII,
-    since *x* is a real letter in *Epopo* as well.
-  - *w* was used instead of *y* because it fits my intuition better
-    how it would change the sound of the letter.
+<details>
+  <summary><b>Sound comparison table</b></summary>
+  Note: many of the sounds are approximations.
+
+  | Epopo | Pinyin | English |
+  | :-: | :----: | :-: |
+  |  Ĉ  | Ch-    | **ch**oice |
+  |  G  | G-     | yo**g**urt |
+  |  Ĝ  | J-     | **G**eorge |
+  |  J  | Y-     | **y**ogurt |
+  |  Ĵ  | ~~—~~  | plea**su**re |
+  |  Q  | Q-     | pun**ch**y |
+  |  Ŝ  | Sh-    | **sh**ip |
+  |  V  | ~~—~~  | **v**alid |
+  |  Ŭ  | W-     ||
+  |  X  | X-     | ~~—~~ |
+  | Zĉ  | Zh-    | ~~—~~ |
+  ||||
+  | a   | -a     | |
+  | aj  | -ai    | **I** |
+  | an  | -an    | |
+  | aŭn | -ang   | |
+  | aŭ  | -ao    | n**ow** |
+  | e   | -e     | |
+  | ej  | -ei    | **A** |
+  | en  | -en    | |
+  | eŭn | -eng   | |
+  | er  | -er    | |
+  | eŭ  | ~~—~~  | **L** |
+  | i   | -i     | |
+  | in  | -in    | |
+  | iŭn | -ing   | |
+  | ja  | -ia    | |
+  | jan | -ian   | |
+  | jaŭn| -iang  | |
+  | jaŭ | -iao   | |
+  | je  | -ie    | |
+  | jon | -iong  | |
+  | joŭ | -iu    | |
+  | o   | -o     | |
+  | oj  | ~~—~~  | j**oy** |
+  | oŭn | -ong   | |
+  | oŭ  | -ou    | **O** |
+  | u   | -u     | |
+  | uj  | ~~—~~  | ch**ewy** |
+  | ŭa  | -ua    | |
+  | ŭaj | -uai   | |
+  | ŭan | -uan   | |
+  | ŭaŭn| -uang  | |
+  | ŭej | -ui    | |
+  | ŭen | -un    | |
+  | ŭo  | -uo    | |
+  | ʌ   | -ü     | |
+  | ʌan | -üan   | |
+  | ʌe  | -üe    | |
+  | ʌn  | -ün    | |
+
+</details>
+
+#### w-sistemo
+
+> `w`-system
+
+- Instead of the [X-system](https://en.wikipedia.org/wiki/Substitutions_of_the_Esperanto_alphabet#X-system) in Esperanto,
+  *Epopo* appends *w* instead of *x* to *CGJSUV*
+  to represent accented letters or Ʌ in ASCII,
+  since *x* is a real letter in *Epopo* as well.
+- *w* was used instead of *y* because it fits my intuition better
+  how it would change the sound of the letter.
 
 ### Algebro
 
@@ -212,9 +226,9 @@ Changes of Esperanto++ from Esperanto include:
     - `jent du da hekutroj` to express Hx1020U (=Dx4128U);
     - `jent utroj` (or 'unu jentutro') to express Hx100U (=Dx256U).
   - As a reference,
-    Dx 9 100 000 000 = Hx 2 1Υ66 Ψλ00,
+    Dx 9 100 000 000 people = Hx 2 1Υ66 Ψλ00 homoj,
     pronounced as
-    `du duni, gil ganjent seshek ses muni, fusgil lomjent`.
+    `du duni, gil ganjent seshek ses muni, fusgil lomjent da homoj`.
   - When saying one `muni`, one `duni`, etc, always add `unu` in front of it.
   - About `-o` suffix:  
     `du muni da utroj` (and `du muniutroj`) is the acceptable way

@@ -278,56 +278,162 @@ which is also slowing down over millennia.)
     (midnight next day).  
     Companies have the freedom to shift the beginning of the workday
     to be up to 1Ĝ earlier.
+  - Seven days of the week  
+    The symbols should be selected to avoid
+    the ones already used in the base-32 ONKIO character set
+    (see [unuoj.py](unuoj.py) `TX_SYMBOLS_DICT['ONKIO']` dict),  
+
+    | Siglo | Epopo | Esperanto | English |
+    | :-: | ------ | -------- | --------- |
+    | L | Lundo    | Lundo    | Monday    |
+    | A | Mardo    | Mardo    | Tuesday   |
+    | B | Berkredo | Merkredo | Wednesday |
+    | Ʌ | Ʌaŭdo    | Ĵaŭdo    | Thursday  |
+    | V | Vendredo | Vendredo | Friday    |
+    | S | Sabato   | Sabato   | Saturday  |
+    | Z | Zimanĉo  | Dimanĉo  | Sunday    |
+
 - `⚝`: ***Semajno*** | Omnija Week
+  - Four weeks of the month:
+    labeled as `O`, `I`, `Q`, `U` in that order.
 - `☾`: ***Monato***  | Omnija Month
 - `Ĵ`: ***Ĵaro***    | Omnija Unit Year
   - Unit year - Length is precisely Dx365.25 (Hx16Σ.4) Omnija Days.
-- `J`: ***Jaro***    | Omnija Calendar Year (Earth-specific)  
-  *`Omnijaro`* Calendar System (Ø+\* (0xD8)):
+- `J`: ***Jaro***    | Omnija Calendar Year (Earth-specific)
   - Calendar year - Length varies depending on which year it is.
-  - Each non-leap year (*`komunjaro`*) has 13 months plus 1 day exactly,
-    and each months has 4 weeks exactly
+- `DŜ`: ***DuniŜekunto*** | Omnija Century (kinda)
+  - 1 DŜ = Hx10000⚻ ≈ Dx 179.43 yr
 
-    $$1J_\textrm{komun} = Σ_H ☾ + 1⚻ = 34_H ⚝ + 1⚻ = 16Σ_H ⚻ = 365_D ⚻$$
-  - Name for the months see [Lingvo](Lingvo.md#tempo) page.
-  - Leap year (*`superjaro`*) has 2 extra days outside the normal 13 months:
+#### Omnijaro
 
-    $$1J_\textrm{super} \simeq Σ ☾ + 2 ⚻ = 16Υ_H ⚻ = 366_D ⚻$$
-  - Leap year happens every 4 years, except every Dx128 years.
-    (So ~3 skipped leap years per 400 years-
-    the nice coincidence of hexadecimal system.)  
-    More specifically,
-    it happens at Ø+\* years ending with $0_H, 4_H, 8_H, Π_H$,
-    except Ø+\* years ending with $00_H, 80_H$.  
-    This is to sync the *Omnijaro* Calendar with
-    [Solar Year](https://en.wikipedia.org/wiki/Tropical_year),
-    so that solstices happens at around the same days in the year.
-  - Winter Solstice[^Tagoj-Solstico] always happens
-    on the first or last day of the year in the *Omnijaro* calendar.
-    The 1 or 2 extra days are added at the end of the year
-    as the "fake" Dx13th Month ($☾_Σ$, or *`Sigamonato`*),
-    which has only 1 or 2 days (plus potential extra seconds).
-  - Ø+\* years ending with $00_H, 80_H$ (i.e. the special non-leapyear)
-    have the solstice happening at approximately midnight
-    between the old and the new year.  
-    Because of this, one can imagine Ø+0 is set as 2026-06-22,
-    though I'd really rather left the definition open for interpretation.
-  - Dx13th Month $☾_Σ$ and the first week of the year are holidays.
-  - Solstices and Equinoxes are national holidays.
-  - Any changes to the calendar years system
-    (such as adding leap seconds to sync with Earth's orbit,
-    or more drastic changes in the event of
-    Earth's rotation period or orbit changes significantly)
-    should in principle only be added / removed in Dx13th Month $☾_Σ$.
-  - In other words, extra seconds may be added or substracted in $☾_Σ$
-    to keep the days in sync with
-    [Mean Solar Time](https://en.wikipedia.org/wiki/Solar_time#Mean_solar_time).
-    Usually this means adding $\sim 7.1$ minutes or Hx1Ĉ44Ŝ.
-  - This means that on average, one Omnija Calendar Year is approximately
-    $1 J \approx 365.24713_D ⚻$ currently,
-    considering both leap years and added seconds.
+> `Omnijaro` Calendar System (Ø+\* (0xD8))
+
+##### Omnijara Difino
+
+> Omnijaro definition
+
+- Each non-leap year (*`komunjaro`*) has 13 months plus 1 day exactly,
+  and each months has 4 weeks exactly
+
+  $$1J_\textrm{komun} = Σ_H ☾ + 1⚻ = 34_H ⚝ + 1⚻ = 16Σ_H ⚻ = 365_D ⚻$$
+- Name for the months see [Lingvo](Lingvo.md#tempo) page.
+- Leap year (*`superjaro`*) has 2 extra days outside the normal 13 months:
+
+  $$1J_\textrm{super} \simeq Σ ☾ + 2 ⚻ = 16Υ_H ⚻ = 366_D ⚻$$
+- Leap year happens every 4 years, except every Dx128 years.
+  (So ~3 skipped leap years per 400 years-
+  the nice coincidence of hexadecimal system.)  
+  More specifically,
+  it happens at Ø+\* years ending with $0_H, 4_H, 8_H, Π_H$,
+  except Ø+\* years ending with $00_H, 80_H$.  
+  This is to sync the *Omnijaro* Calendar with
+  [Solar Year](https://en.wikipedia.org/wiki/Tropical_year),
+  so that solstices happens at around the same days in the year.
+- Winter Solstice[^Tagoj-Solstico] always happens
+  on the first or last day of the year in the *Omnijaro* calendar.
+  The 1 or 2 extra days are added at the end of the year
+  as the "fake" Dx13th Month ($☾_Σ$, or *`Sigamonato`*),
+  which has only 1 or 2 days (plus potential extra seconds).
+- Ø+\* years ending with $00_H, 80_H$ (i.e. the special non-leapyear)
+  have the solstice happening at approximately midnight
+  between the old and the new year.  
+  Because of this, one can imagine Ø+0 is set as 2026-06-22,
+  though I'd really rather left the definition open for interpretation.
+- Dx13th Month $☾_Σ$ and the first week of the year are holidays.
+- Solstices and Equinoxes are national holidays.
+- Any changes to the calendar years system
+  (such as adding leap seconds to sync with Earth's orbit,
+  or more drastic changes in the event of
+  Earth's rotation period or orbit changes significantly)
+  should in principle only be added / removed in Dx13th Month $☾_Σ$.
+- In other words, extra seconds may be added or substracted in $☾_Σ$
+  to keep the days in sync with
+  [Mean Solar Time](https://en.wikipedia.org/wiki/Solar_time#Mean_solar_time).
+  Usually this means adding $\sim 7.1$ minutes or Hx1Ĉ44Ŝ.
+- This means that on average, one Omnija Calendar Year is approximately
+  $1 J \approx 365.24713_D ⚻$ currently,
+  considering both leap years and added seconds.
 
 [^Tagoj-Solstico]: a.k.a. Northern Solstice, since *la Insulo-Omnijo* is located in the Southern Hemisphere.
+
+##### Omnijara Notacio
+
+> Omnijaro Notations
+
+> [!IMPORTANT]
+> **Omnija Epoch**: `2026-06-21T08:24:00+00:00` (ISO 8601 format)  
+> Serena's coronation day, which also happens to be Northern Solstice 2026.
+
+See also [unuoj.py](unuoj.py) `Datotempo` class.
+
+Two styles:
+
+- Tempstampo (timestamp) style:  
+  Using the number of mŜ (in hexadecimal) after the Omnija Epoch.  
+  The benefits of the Omnija time unit system is that
+  one can easily read the number of days from the timestamp.
+
+  E.g. 2024-12-21T09:20:00+00:00 (Southern Solstice 2024):
+
+  > -222 Ψ7Ψ0 Σλ8Π
+
+  Here, '-222' is the number of days since the Omnija Epoch in hexadecimal,
+  and 'Ψ:7:Ψ0' is the Ĝoro:Ĉimuto:Ŝekunto in Omnija timezone,
+  and 'Σλ8Π' is the munionŜekuntoj left over.
+
+  Code Illustration:
+
+  ```python
+  from projektoOmnijo.teknikoj.unuoj import Datotempo, datetime, UTC, presi_Hx
+  tempstampo = Datotempo(datetime(2024, 12, 21, 9, 20, tzinfo=UTC)).tempstampo
+  print(f"Dx {tempstampo}")
+  print(presi_Hx(tempstampo, e_sep=''))
+  ```
+
+  Result:
+
+  ```text
+  Dx -2349211900812 mŜ
+  Hx -222Ψ7Ψ0Σλ8Π mŜ
+  ```
+
+- ONKIO style (Earth-specific):  
+  Aiming for more naturally readable.  
+  Start with the 'Ø' symbol to signify the ONKIO Omnijaro calendar format
+  (if dates are included),
+  followed by '-/+' sign and the calendar year (not unit year) number;  
+  use hyphen to connect year, month, and week-day;  
+  use letters instead of numbers to represent week and day;  
+  use 'ⅎ' to separate the dates from time;  
+  Write Ĝoro:Ĉimuto:Ŝekunto.
+  Ŝekunto has 2 digits while the other 2 has 1,
+  so you can easily tell which ones are which.
+  I.e. this helps differentiate between Δ:97 (ΔĈ 97Ŝ) and Δ:9 (ΔĜ 9Ĉ).
+
+  Default timezone is Omnijo timezone.
+
+  > [!NOTE]
+  > How to add time zone info: TBD.
+
+  E.g. 2024-12-21T09:20:00+00:00 (Southern Solstice 2024):
+
+  > Ø-2‐6‐QAⅎ0:Δ:97.247Π
+
+  Code Illustration:
+
+  ```python
+  from projektoOmnijo.teknikoj.unuoj import Datotempo, datetime, UTC
+  t = Datotempo(datetime(2024, 12, 21, 9, 20, tzinfo=UTC))
+  print(t.iso)
+  print(t.onkio)
+  ```
+
+  Result:
+
+  ```text
+  2024-12-21T09:20:00.000007+00:00
+  Ø-2‐6‐QAⅎ0:Δ:97.247Π
+  ```
 
 ### Temperaturo
 
