@@ -189,7 +189,7 @@ if __name__ == '__main__':
     #   (See Iveco Eurocargo specifications <https://www.iveco.com/Eurocargo>
     #   <https://static.iveco.com.au/download/media%2F5524d082-2a03-40c0-96de-9d6ab73f3681.pdf/Eurocargo%20Specifications.pdf>
     #   For Engine Maximum Output, GVM (Gross Vehicle Mass) and GCM (Gross Combination Mass) info))
-    Ux_pars = {
+    W_pars = {
         'engine_p' : 0x100*JLu, #(863*hp).to(hp),
         'engine_m' : 5*ton,
         'load_full': 29*ton,
@@ -197,17 +197,17 @@ if __name__ == '__main__':
         'C_d' : 0.8,
         'A_d': (2*3/1.25*(U/8)**2).to(u.m**2),
     }
-    print_info(grad=0*percent, v=0x9B*JoGx, **Ux_pars)
-    print_info(grad=3.7*percent, v=0x60*JoGx, **Ux_pars)
-    print_info(grad=5.1*percent, v=0x50*JoGx, **Ux_pars)
-    print_info(grad=7.0*percent, v=0x40*JoGx, **Ux_pars)
+    print_info(grad=0*percent, v=0x9B*JoGx, **W_pars)
+    print_info(grad=3.7*percent, v=0x60*JoGx, **W_pars)
+    print_info(grad=5.1*percent, v=0x50*JoGx, **W_pars)
+    print_info(grad=7.0*percent, v=0x40*JoGx, **W_pars)
 
 
     print("\nLocal Road\n")
     
-    print_info(grad=10*percent, v=0x30*JoGx, **Ux_pars)
-    print_info(grad=15*percent, v=0x20*JoGx, **Ux_pars)
-    print_info(grad=21*percent, v=0x18*JoGx, **Ux_pars)
-    print_info(grad=33*percent, v=0x10*JoGx, **Ux_pars)
+    print_info(grad=10*percent, v=0x30*JoGx, **W_pars)
+    print_info(grad=15*percent, v=0x20*JoGx, **W_pars)
+    print_info(grad=21*percent, v=0x18*JoGx, **W_pars)
+    print_info(grad=33*percent, v=0x10*JoGx, **W_pars)
 
 #------------------------------------------------------------------------------
