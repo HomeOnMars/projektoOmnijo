@@ -202,6 +202,33 @@ The RdO loading gauge for trains is \~29cm wider and \~59cm taller than the
 \~4cm wider & \~11cm taller than the
 [Chinese standards](https://en.wikipedia.org/wiki/Loading_gauge#China).
 
+#### Kontnera Mezurilo
+
+> Container dimensions
+
+Standard RdO container dimensions:
+
+- Width
+  - 5 hU (≈ Dx2.4539 m)
+    - \~Dx0.01 m wider than ISO standard.
+- Height
+  - 4 hU (≈ Dx1.9631 m)
+    - This allows cargo trains to stack double containers per car.
+  - 6 hU (≈ Dx2.9447 m)
+    - For single car use.
+- Length
+  - Hx λ.Ψ hU (≈ Dx5.8587 m)
+    - Approximately [TEU](https://en.wikipedia.org/wiki/Twenty-foot_equivalent_unit)-size (\~Dx0.199 m shorter).
+    - It is 1 jU (≈ Dx0.0307 m) smaller than half of Hx 18 hU,
+      to provide the gap for efficient stacking with the later units.
+  - Hx 18 hU (≈ Dx11.7787 m)
+    - Approximately FEU-size (\~Dx0.413 m shorter).
+
+The <span style="color:Beige">Queen</span> only really starts
+to push this standard (both on and off the island)
+after her 8th coronation anniversary, apparently triggered
+by the following short period of near-worldwide embargo on her island.
+
 ### Maso
 
 > Mass
