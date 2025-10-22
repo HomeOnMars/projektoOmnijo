@@ -78,10 +78,10 @@ class ONKIO:
     __KODOJ: dict[int, str] = {ascii_c: chr(ascii_c) for ascii_c in range(128)}
     __KODOJ.update({    # Differences
         # Letters
-        0x57: chr(0x245),   # W -> Ʌ
-        0x77: chr(0x28c),   # w -> ʌ
-        0x59: chr(0x16c),   # Y -> Ŭ
-        0x79: chr(0x16d),   # y -> ŭ
+        0x57: chr(0x16c),   # W -> Ŭ
+        0x77: chr(0x16d),   # w -> ŭ
+        0x59: chr(0x245),   # Y -> Ʌ
+        0x79: chr(0x28c),   # y -> ʌ
         0x5b: chr(0x108),   # [ -> Ĉ
         0x7b: chr(0x109),   # { -> ĉ
         0x5c: chr(0x11c),   # \ -> Ĝ
@@ -143,10 +143,10 @@ class ONKIO:
         0x135:  chr(0x1d),  # ĵ -> 0x1d
         0x15c:  chr(0x1e),  # Ŝ -> 0x1e
         0x15d:  chr(0x1f),  # ŝ -> 0x1f
-        0x245:  chr(0x57),  # Ʌ -> W
-        0x28c:  chr(0x77),  # ʌ -> w
-        0x16c:  chr(0x59),  # Ŭ -> Y
-        0x16d:  chr(0x79),  # ŭ -> y
+        0x16c:  chr(0x57),  # Ŭ -> W
+        0x16d:  chr(0x77),  # ŭ -> w
+        0x245:  chr(0x59),  # Ʌ -> Y
+        0x28c:  chr(0x79),  # ʌ -> y
     })
     # Normalize
     #    finish mirroring (should not be necessary, but just in case)

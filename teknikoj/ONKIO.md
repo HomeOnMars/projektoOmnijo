@@ -38,9 +38,9 @@ Differences from the ASCII table are highlighted with **bold** text.
 |  **0x\_4**  |    *EOT*    |    **~**    |      $      |      4      |      D      |      T      |      d      |      t      |
 |  **0x\_5**  |             |   **\`**    |      %      |      5      |      E      |      U      |      e      |      u      |
 |  **0x\_6**  |             |    **^**    |      &      |      6      |      F      |      V      |      f      |      v      |
-|  **0x\_7**  |   *BELL*    |   **\@**    |      '      |      7      |      G      |    **Ʌ**    |      g      |    **ʌ**    |
+|  **0x\_7**  |   *BELL*    |   **\@**    |      '      |      7      |      G      |    **Ŭ**    |      g      |    **ŭ**    |
 |  **0x\_8**  |  *BS \\b*   |   **\[**    |     \(      |      8      |      H      |      X      |      h      |      x      |
-|  **0x\_9**  |  *HT \\t*   |   **\]**    |     \)      |      9      |      I      |    **Ŭ**    |      i      |    **ŭ**    |
+|  **0x\_9**  |  *HT \\t*   |   **\]**    |     \)      |      9      |      I      |    **Ʌ**    |      i      |    **ʌ**    |
 |  **0x\_a**  |  *LF \\n*   |    **:**    |     \*      |    **Δ**    |      J      |      Z      |      j      |      z      |
 |  **0x\_b**  |  *VT \\v*   |    **;**    |     \+      |    **λ**    |      K      |    **Ĉ**    |      k      |    **ĉ**    |
 |  **0x\_c**  |  *FF \\f*   |   **\<**    |    **ⅎ**    |    **Π**    |      L      |    **Ĝ**    |      l      |    **ĝ**    |
@@ -78,8 +78,6 @@ Differences from the ASCII table are highlighted with **bold** text.
     so plain ASCII texts should hopefully still be mostly legible
     if conversion failed or missed.
     (Most punctuation marks will be messed up though.)
-  - `W` is replaced by `Ʌ` — and `Y` by `Ŭ` — instead of the other way around.
-    This is for aesthetic reasons (`Ʌ` looks better after `V`).
 
 ASCII Table
 -------------------------------------------------------------------------------

@@ -75,8 +75,8 @@ Changes of Esperanto++ from Esperanto include:
   - vs Pinyin:   1 consonant less (no 'Zh') and 2 consonants more (VĴ)
   - Characters  
     See also [ONKIO](ONKIO.md#onkio-tablo).  
-    `ABCDEFGHIJKLMNOPQRSTUVɅXŬZĈĜĴŜ`  
-    `abcdefghijklmnopqrstuvʌxŭzĉĝĵŝ`  
+    `ABCDEFGHIJKLMNOPQRSTUVŬXɅZĈĜĴŜ`  
+    `abcdefghijklmnopqrstuvŭxʌzĉĝĵŝ`  
     `0123456789ΔλΠΣΥΨ`  
     ``\{|}~`^@[]:;<=>?_!"#$%&'()*+ⅎ-—/ ‐.,``
 
