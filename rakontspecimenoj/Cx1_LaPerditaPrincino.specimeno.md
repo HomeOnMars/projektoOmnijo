@@ -23,7 +23,7 @@ Enhavo
 -------------------------------------------------------------------------------
 
 > [!NOTE]  
-> [Fona Prologo](Cw0_Prologo.specimeno.md)
+> [Fona Prologo](Cx0_Prologo.specimeno.md)
 > <br>
 > [Sekva Ĉapitro]()
 

@@ -26,7 +26,7 @@ Enhavo
 > [!NOTE]  
 > [Fona Historio](../OmniCentro/Historio.md)
 > <br>
-> [Sekva Ĉapitro](Cw1_LaPerditaPrincino.specimeno.md)
+> [Sekva Ĉapitro](Cx1_LaPerditaPrincino.specimeno.md)
 
 [TOC]
 

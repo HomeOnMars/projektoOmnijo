@@ -87,15 +87,15 @@ TX_SYMBOLS_INV_DICT = {
 }
 TX_SYMBOLS_INV = TX_SYMBOLS_INV_DICT['ONKIO']
 
-# translate Epopo characters to ASCII characters using w-system
+# translate Epopo characters to ASCII characters using x notation
 ASCIIIFY_CHR = {
-    'Ʌ': 'Vw','ʌ': 'vw',
-    'Ĉ': 'Cw','ĉ': 'cw',
-    'Ĝ': 'Gw','ĝ': 'gw',
-    'Ĵ': 'Jw','ĵ': 'jw',
-    'Ŝ': 'Sw','ŝ': 'sw',
-    'Ŭ': 'Uw','ŭ': 'uw',
-    'Ž': 'Zw','ž': 'zw',
+    'Ĉ': 'Cx','ĉ': 'cx',
+    'Ĝ': 'Gx','ĝ': 'gx',
+    'Ĵ': 'Jx','ĵ': 'jx',
+    'Ŝ': 'Sx','ŝ': 'sx',
+    'Ž': 'Zx','ž': 'zx',
+    'Ŭ': 'W', 'ŭ': 'w',
+    'Ʌ': 'Y', 'ʌ': 'y',
     '⚻': 'tago',  # capitalized ver already defined
     '⚝': 'Se',
     '☾': 'Monato',
@@ -376,7 +376,7 @@ u_rdo_prefixes = [
     ('S', ['Sesni' ], 0x10000**0x6),
     ('E', ['Sepni' ], 0x10000**0x7),
     ('K', ['Okni'  ], 0x10000**0x8),
-    ('N', ['Nauwni'], 0x10000**0x9),
+    ('N', ['Nauxni'], 0x10000**0x9),
     ('A', ['Delni' ], 0x10000**0xA),
     ('B', ['Lomni' ], 0x10000**0xB),
     ('C', ['Nakni' ], 0x10000**0xC),
@@ -522,35 +522,35 @@ units.def_unit(
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 #    temperature
 Z = u_rdo_defs['Z']
-deg_Zw = units.def_unit(
-    ['°Ž', 'deg_Zw', 'Zworumgrado'], namespace=u_rdo_defs)
+deg_Zx = units.def_unit(
+    ['°Ž', 'deg_Zx', 'Zxorumgrado'], namespace=u_rdo_defs)
 __Z_DIV_K: float = (1*u_rdo_defs['Z']).to_value(units.K)
 __K_DIV_Z: float = (1*units.K).to_value(u_rdo_defs['Z'])
 __Z_2_K = lambda Z: Z*__Z_DIV_K
 __K_2_Z = lambda K: K*__K_DIV_Z
-__degZw_2_K = lambda degZw: __Z_2_K(degZw + 0x100)
-__K_2_degZw = lambda K: (__K_2_Z(K) - 0x100)
+__degZx_2_K = lambda degZx: __Z_2_K(degZx + 0x100)
+__K_2_degZx = lambda K: (__K_2_Z(K) - 0x100)
 equivalencies_Zoro = [
     (
-        deg_Zw, u_rdo_defs['Z'],
-        lambda degZw: degZw + 0x100,
+        deg_Zx, u_rdo_defs['Z'],
+        lambda degZx: degZx + 0x100,
         lambda Z: Z - 0x100,
     ),
     (
-        deg_Zw, units.K,
-        __degZw_2_K,
-        __K_2_degZw,
+        deg_Zx, units.K,
+        __degZx_2_K,
+        __K_2_degZx,
     ),
 ]
 for eq in units.equivalencies.temperature():
     if eq[0] == units.K:
         _, X, __K_2_X, __X_2_K = eq
         equivalencies_Zoro.append((
-            deg_Zw, X,
+            deg_Zx, X,
             # note: using below to make sure K_2_X is referencing to the
             # correct func in units.equivalencies (instead of in parent scope)
-            (lambda K_2_X: lambda degZw: K_2_X(__degZw_2_K(degZw)))(__K_2_X),
-            (lambda X_2_K: lambda X: __K_2_degZw(X_2_K(X)))(__X_2_K),
+            (lambda K_2_X: lambda degZx: K_2_X(__degZx_2_K(degZx)))(__K_2_X),
+            (lambda X_2_K: lambda X: __K_2_degZx(X_2_K(X)))(__X_2_K),
         ))
         equivalencies_Zoro.append((
             Z, X,
@@ -560,9 +560,9 @@ for eq in units.equivalencies.temperature():
     elif eq[1] == units.K:
         X, _, __X_2_K, __K_2_X = eq
         equivalencies_Zoro.append((
-            X, deg_Zw,
-            (lambda X_2_K: lambda X: __K_2_degZw(X_2_K(X)))(__X_2_K),
-            (lambda K_2_X: lambda degZw: K_2_X(__degZw_2_K(degZw)))(__K_2_X),
+            X, deg_Zx,
+            (lambda X_2_K: lambda X: __K_2_degZx(X_2_K(X)))(__X_2_K),
+            (lambda K_2_X: lambda degZx: K_2_X(__degZx_2_K(degZx)))(__K_2_X),
         ))
         equivalencies_Zoro.append((
             X, Z,
@@ -709,31 +709,31 @@ konst = Konstantoj()
 
 class Datotempo:
     # unit used for storage
-    _UNUO : units.Unit = u.mSw
+    _UNUO : units.Unit = u.mSx
     # Omnija Epoch: Northern Solstice 2026
     _EPOKO: datetime = datetime(2026, 6, 21, 8, 24, tzinfo=UTC)
-    # POSIX Epoch's position in Omnija Epoch (in mSw)
+    # POSIX Epoch's position in Omnija Epoch (in mSx)
     _POSIX: np.int64 = np.int64((-_EPOKO.timestamp()*u.s).to_value(_UNUO))
-    # max storable POSIX timestamp in mSw
+    # max storable POSIX timestamp in mSx
     _POSIX_MAX: np.int64 = np.iinfo(np.int64).max + _POSIX
     # basic info
-    _MONATO_mSw:  np.int64 = np.int64((1*u.Monato).to_value(u.mSw))
-    _SEMAJNO_mSw: np.int64 = np.int64((1*u.Semajno).to_value(u.mSw))
-    _TAGO_mSw:    np.int64 = np.int64((1*u.Tago).to_value(u.mSw))
-    _Gw_mSw:      np.int64 = np.int64((1*u.Gw).to_value(u.mSw))
-    _Cw_mSw:      np.int64 = np.int64((1*u.Cw).to_value(u.mSw))
-    _HSw_mSw:     np.int64 = np.int64((1*u.HSw).to_value(u.mSw))
-    _Sw_mSw:      np.int64 = np.int64((1*u.Sw).to_value(u.mSw))
-    # number of Sw per added/skipped leap day
-    _TAGO_Sw: np.int64 = np.int64((1*u.MSw).to_value(u.Sw))
-    # number of Sw per komunjaro
-    _JARO_Sw: np.int64 = np.int64(
+    _MONATO_mSx:  np.int64 = np.int64((1*u.Monato).to_value(u.mSx))
+    _SEMAJNO_mSx: np.int64 = np.int64((1*u.Semajno).to_value(u.mSx))
+    _TAGO_mSx:    np.int64 = np.int64((1*u.Tago).to_value(u.mSx))
+    _Gx_mSx:      np.int64 = np.int64((1*u.Gx).to_value(u.mSx))
+    _Cx_mSx:      np.int64 = np.int64((1*u.Cx).to_value(u.mSx))
+    _HSx_mSx:     np.int64 = np.int64((1*u.HSx).to_value(u.mSx))
+    _Sx_mSx:      np.int64 = np.int64((1*u.Sx).to_value(u.mSx))
+    # number of Sx per added/skipped leap day
+    _TAGO_Sx: np.int64 = np.int64((1*u.MSx).to_value(u.Sx))
+    # number of Sx per komunjaro
+    _JARO_Sx: np.int64 = np.int64(
         # note: include the extra second added in 13th month
-        (365 * u.MSw + 0x144 * u.Sw).to_value(u.Sw))
-    # number of Sw per 3 komunjaro + 1 superjaro
-    _JAROJ4_Sw: np.int64 = np.int64(_JARO_Sw*4 + _TAGO_Sw)
-    # number of Sw per 128 jaroj
-    _JAROJ128_Sw: np.int64 = np.int64(_JAROJ4_Sw*32 - _TAGO_Sw)
+        (365 * u.MSx + 0x144 * u.Sx).to_value(u.Sx))
+    # number of Sx per 3 komunjaro + 1 superjaro
+    _JAROJ4_Sx: np.int64 = np.int64(_JARO_Sx*4 + _TAGO_Sx)
+    # number of Sx per 128 jaroj
+    _JAROJ128_Sx: np.int64 = np.int64(_JAROJ4_Sx*32 - _TAGO_Sx)
     # symbols to numbers
     _SEMAJNO_SIMBOLOJ: dict[str, int] = {k: i for i, k in enumerate('OIQU')}
     _TAGO_SIMBOLOJ: dict[str, int] = {k: i for i, k in enumerate('LABɅVSZ')}
@@ -743,7 +743,7 @@ class Datotempo:
 
 
     def __init__(self, tempstampo: None|datetime|units.Quantity=None):
-        # mSw since Datotempo._EPOKO
+        # mSx since Datotempo._EPOKO
         self.__tempstampo: np.int64 = np.int64(0)
 
         if tempstampo is not None:
@@ -818,7 +818,7 @@ class Datotempo:
         """Return POSIX timestamp.
         
         Warning: Last 2 digits for microseconds are not accurate,
-        since the accuracy is limited to Datotempo._UNUO (mSw, or ~20us)
+        since the accuracy is limited to Datotempo._UNUO (mSx, or ~20us)
         """
         if self.__tempstampo > type(self)._POSIX_MAX:
             raise NotImplementedError(
@@ -849,33 +849,33 @@ class Datotempo:
 
 
     @classmethod
-    def ak_Jaro_kaj_mSw(
+    def ak_Jaro_kaj_mSx(
         cls, tempstampo: units.Quantity
     ) -> tuple[np.int64, np.int64]:
         """Split a tempstampo into no of calaendar years and the rest."""
 
-        total_Sw, rest_mSw = divmod(tempstampo, 1*u.Sw)
-        total_Sw = np.int64(total_Sw)
-        rest_mSw = np.int64(rest_mSw.to_value(u.mSw))
+        total_Sx, rest_mSx = divmod(tempstampo, 1*u.Sx)
+        total_Sx = np.int64(total_Sx)
+        rest_mSx = np.int64(rest_mSx.to_value(u.mSx))
 
-        n_128J, rest_Sw = divmod(total_Sw, cls._JAROJ128_Sw)
-        rest_Sw += cls._TAGO_Sw    # account for the skipping leap year at 0
-        n_4J,   rest_Sw = divmod(rest_Sw,  cls._JAROJ4_Sw)
-        rest_Sw -= cls._TAGO_Sw
+        n_128J, rest_Sx = divmod(total_Sx, cls._JAROJ128_Sx)
+        rest_Sx += cls._TAGO_Sx    # account for the skipping leap year at 0
+        n_4J,   rest_Sx = divmod(rest_Sx,  cls._JAROJ4_Sx)
+        rest_Sx -= cls._TAGO_Sx
         if n_4J:    # not skipping leapyear
-            if rest_Sw < cls._TAGO_Sw:    # is first day
+            if rest_Sx < cls._TAGO_Sx:    # is first day
                 n_J = 0
             else:
-                rest_Sw -= cls._TAGO_Sw    # account for the leap year at 0
-                n_J, rest_Sw = divmod(rest_Sw,  cls._JARO_Sw)
-                rest_Sw += cls._TAGO_Sw
+                rest_Sx -= cls._TAGO_Sx    # account for the leap year at 0
+                n_J, rest_Sx = divmod(rest_Sx,  cls._JARO_Sx)
+                rest_Sx += cls._TAGO_Sx
         else:    # skipped leapyear
-            n_J, rest_Sw = divmod(rest_Sw,  cls._JARO_Sw)
+            n_J, rest_Sx = divmod(rest_Sx,  cls._JARO_Sx)
 
         n_Jaro = n_128J*128 + n_4J*4 + n_J
-        rest_mSw += rest_Sw*cls._Sw_mSw
+        rest_mSx += rest_Sx*cls._Sx_mSx
 
-        return n_Jaro, rest_mSw
+        return n_Jaro, rest_mSx
 
     @property
     def onkio(self) -> str:
@@ -885,14 +885,14 @@ class Datotempo:
 
         nn = {}
 
-        n_Jaro,       rest_mSw = cls.ak_Jaro_kaj_mSw(self.tempstampo)
-        nn['Monato'], rest_mSw = divmod(rest_mSw, cls._MONATO_mSw)
-        n_Semajno,    rest_mSw = divmod(rest_mSw, cls._SEMAJNO_mSw)
-        n_Tago,       rest_mSw = divmod(rest_mSw, cls._TAGO_mSw)
-        nn['Gw'],     rest_mSw = divmod(rest_mSw, cls._Gw_mSw)
-        nn['Cw'],     rest_mSw = divmod(rest_mSw, cls._Cw_mSw)
-        nn['HSw'],    rest_mSw = divmod(rest_mSw, cls._HSw_mSw)
-        nn['Sw'],     rest_mSw = divmod(rest_mSw, cls._Sw_mSw)
+        n_Jaro,       rest_mSx = cls.ak_Jaro_kaj_mSx(self.tempstampo)
+        nn['Monato'], rest_mSx = divmod(rest_mSx, cls._MONATO_mSx)
+        n_Semajno,    rest_mSx = divmod(rest_mSx, cls._SEMAJNO_mSx)
+        n_Tago,       rest_mSx = divmod(rest_mSx, cls._TAGO_mSx)
+        nn['Gx'],     rest_mSx = divmod(rest_mSx, cls._Gx_mSx)
+        nn['Cx'],     rest_mSx = divmod(rest_mSx, cls._Cx_mSx)
+        nn['HSx'],    rest_mSx = divmod(rest_mSx, cls._HSx_mSx)
+        nn['Sx'],     rest_mSx = divmod(rest_mSx, cls._Sx_mSx)
 
         ss = {
             key: HX_SYMBOLS_INV_DICT['ONKIO'][int(it)]
@@ -905,8 +905,8 @@ class Datotempo:
         res = (
             f"Ø{presi_Hx(int(n_Jaro), plus_sign='+')}" +
             f"‐{ss['Monato']}‐{ss['Semajno']}{ss['Tago']}ⅎ" +
-            f"{ss['Gw']}:{ss['Cw']}:{ss['HSw']}{ss['Sw']}." +
-            f"{presi_Hx(int(rest_mSw)):0>4}"
+            f"{ss['Gx']}:{ss['Cx']}:{ss['HSx']}{ss['Sx']}." +
+            f"{presi_Hx(int(rest_mSx)):0>4}"
         )
         return res
 
@@ -944,14 +944,14 @@ class TeraLoko:
     
     def __init__(
         self,
-        poswkodo: None|str = None,
+        posxkodo: None|str = None,
         lon: units.Quantity[units.deg] = 0*u.deg,
         lat: units.Quantity[units.deg] = 0*u.deg,
         alt: units.Quantity[units.m]   = 0*u.U,
     ):
         self._TeroP = self._WGS84
-        if poswkodo is not None:
-            loko = self._from_poswkodo(poswkodo)
+        if posxkodo is not None:
+            loko = self._from_posxkodo(posxkodo)
             lon, lat, alt = loko['lon'], loko['lat'], loko['alt']
         self.lon = lon.to(u.deg) % (360*u.deg)    # guaranteed to be within [0, 360]
         self.lat = lat
@@ -962,7 +962,7 @@ class TeraLoko:
 
     def __str__(self):
         return (
-            f"TeraLoko {self.get_poswkodo():16}: " +
+            f"TeraLoko {self.get_posxkodo():16}: " +
             f"lat {self.lat:9.5f}, lon {self.lon:9.5f}, alt {self.alt:6.0f}.")
 
     @property
@@ -1032,7 +1032,7 @@ class TeraLoko:
 
 
 
-    def get_poswkodo(
+    def get_posxkodo(
         self,
         offset: TeraLokoOffsetTipo = None,
         chrset: str = 'ONKIO',
@@ -1071,13 +1071,13 @@ class TeraLoko:
 
         loko = self.get_new_from_offset(offset)
         p_nd = {    # n digits
-            'cwelo': 10,    # cell index
+            'cxelo': 10,    # cell index
             'alt': 0,       # altitude - 1~3 digits
             # 'kon': 1,     # verify - must init as zero
         }
         pdat = {k: 0 for k in p_nd}
 
-        pdat['cwelo'] = healpy.ang2pix(
+        pdat['cxelo'] = healpy.ang2pix(
             self._NSIDE,
             loko.colat.to_value(u.rad),
             loko.lon.to_value(u.rad),
@@ -1089,9 +1089,9 @@ class TeraLoko:
         # alt_kodo_N = int(loko.alt.to_value(u.U)*4 + 0x4000)
         pdat['alt'] = int(np.floor(loko.alt.to_value(u.U)*8))
         if pdat['alt'] < 0:
-            # last digit of cwelo is odd number if below sea level,
+            # last digit of cxelo is odd number if below sea level,
             # even number if above
-            pdat['cwelo'] += 1
+            pdat['cxelo'] += 1
             pdat['alt'] *= -1
         if pdat['alt'] >= 0x8000:
             raise ValueError(
@@ -1109,102 +1109,102 @@ class TeraLoko:
             if len(pstr[k]) < p_nd[k]:
                 pstr[k] = '0' * (p_nd[k] - len(pstr[k])) + pstr[k]
 
-        poswkodo = (
-            f"{pstr['cwelo'][:5]}-"     # city & district (res: ~6.4km)
-            f"{pstr['cwelo'][5:9]}-"    # street (res: ~6.2m)
-            f"{pstr['cwelo'][9:]}"      # door (res: ~1.6m)
+        posxkodo = (
+            f"{pstr['cxelo'][:5]}-"     # city & district (res: ~6.4km)
+            f"{pstr['cxelo'][5:9]}-"    # street (res: ~6.2m)
+            f"{pstr['cxelo'][9:]}"      # door (res: ~1.6m)
             f"{pstr['alt'][::-1]}"      # altitude (res: 1m)
         )
 
         # add verification digit
         pdat['kon'] = np.sum([
-            Tx(v) for v in poswkodo
+            Tx(v) for v in posxkodo
         ]) % 0x20
 
         pstr['kon'] = presi_Tx(
             pdat['kon'], prefix='', e_sep='', symbols_inv=Tx_symbols_inv)
         
         assert len(pstr['kon']) == 1
-        poswkodo += pstr['kon']
+        posxkodo += pstr['kon']
 
-        return poswkodo
+        return posxkodo
     
 
 
     @classmethod
-    def normalize_poswkodo(cls, poswkodo: str) -> str:
+    def normalize_posxkodo(cls, posxkodo: str) -> str:
         """Normalize post code into str without hyphen; also check validity"""
 
-        pstr_list = poswkodo.split('-')
+        pstr_list = posxkodo.split('-')
 
         if not pstr_list or not pstr_list[0]:
             raise ValueError(
-                f"postcode '{poswkodo}' is empty, or its first field is empty.")
+                f"postcode '{posxkodo}' is empty, or its first field is empty.")
         
         if pstr_list[0][0] not in TX_SYMBOLS:
             raise NotImplementedError('City Name shorthand not yet implemented')
             # add shorthand comprehansion code here
 
-        poswkodo = ''.join(pstr_list)
+        posxkodo = ''.join(pstr_list)
 
-        if len(poswkodo) < 11:
+        if len(posxkodo) < 11:
             raise ValueError("Postcode too short")
 
-        for c in poswkodo:
+        for c in posxkodo:
             if c not in TX_SYMBOLS:
                 raise ValueError("Unrecognized Character in post code")
         
         # check integrity
         kon = np.sum([
-            Tx(v) for v in poswkodo[:-1]
+            Tx(v) for v in posxkodo[:-1]
         ]) % 0x20
-        kon_v = Tx(poswkodo[-1])
+        kon_v = Tx(posxkodo[-1])
         if kon != kon_v:
             raise ValueError(
                 "Verification failed: "
                 f"Last digit should be of value {kon}, but it is {kon_v}.")
         
-        return poswkodo
+        return posxkodo
 
 
     @classmethod
-    def _from_poswkodo(cls, poswkodo: str):
+    def _from_posxkodo(cls, posxkodo: str):
         """Return location dictionary from post code.
         
-        see TeraLoko.get_poswkodo() for more info.
+        see TeraLoko.get_posxkodo() for more info.
         """
         if not POVI_HEALPY:
             raise ModuleNotFoundError("healpy not found, cannot do post code.")
 
-        poswkodo = TeraLoko.normalize_poswkodo(poswkodo)
+        posxkodo = TeraLoko.normalize_posxkodo(posxkodo)
 
         # reconstruct lat and lon
         pdat = {
-            # note: raw data from poswkodo, not actual loko yet
-            'cwelo': int(Tx(poswkodo[:10])),
-            'alt'  : int(Tx(poswkodo[10:-1][::-1])),
-            'kon'  : int(Tx(poswkodo[-1])),
+            # note: raw data from posxkodo, not actual loko yet
+            'cxelo': int(Tx(posxkodo[:10])),
+            'alt'  : int(Tx(posxkodo[10:-1][::-1])),
+            'kon'  : int(Tx(posxkodo[-1])),
         }
         
-        colat, lon = healpy.pix2ang(cls._NSIDE, pdat['cwelo'] // 2, nest=True)
+        colat, lon = healpy.pix2ang(cls._NSIDE, pdat['cxelo'] // 2, nest=True)
         colat *= u.rad
         lon *= u.rad
 
         loko = {
             'lon': lon.to(u.deg),
             'lat': 90*u.deg - colat.to(u.deg),
-            'alt': pdat['alt'] * u.m_csl * (-1 if pdat['cwelo'] % 2 else 1),
+            'alt': pdat['alt'] * u.m_csl * (-1 if pdat['cxelo'] % 2 else 1),
         }
 
         return loko
     
     @classmethod
-    def from_poswkodo(cls, poswkodo: str):
+    def from_posxkodo(cls, posxkodo: str):
         """Return new class from post code.
         
-        see TeraLoko.get_poswkodo() for more info.
+        see TeraLoko.get_posxkodo() for more info.
         """
-        return TeraLoko(poswkodo=poswkodo)
+        return TeraLoko(posxkodo=posxkodo)
 
 
 
@@ -1237,10 +1237,10 @@ if __name__ == '__main__':
     # sidereal year <https://en.wikipedia.org/wiki/Sidereal_year> (2025-02-28)
     #u_yr = units.d * 365.256363004
     u_yr = units.yr
-    u_yr_b = (u_rdo.MSw / (1*u_yr - 1*u_rdo.Jw)).si * units.yr
+    u_yr_b = (u_rdo.MSx / (1*u_yr - 1*u_rdo.Jx)).si * units.yr
     print(f"\n# of years before needing to subtract a day: {u_yr_b:.1f}")
-    print(f"Added seconds per day: {(1*u_rdo.MSw - 1*units.day).to(units.s):.3f}")
-    print(f"Added minutes per year: {(1*u_rdo.Jw - 1*units.year).to(units.min):.3f}")
+    print(f"Added seconds per day: {(1*u_rdo.MSx - 1*units.day).to(units.s):.3f}")
+    print(f"Added minutes per year: {(1*u_rdo.Jx - 1*units.year).to(units.min):.3f}")
 
     print(
         "\nAbout currency:",
@@ -1281,16 +1281,16 @@ if __name__ == '__main__':
     print("\nTesting Post Code Calc System...")
     print(
         "\tZero point (lat=lon=alt=0) postcode: "
-        f"{LOKOJ['Nul'].get_poswkodo() = }")
-    print(f"\tOC postcode: {LOKOJ['OC'].get_poswkodo() = }")
-    assert TeraLoko.normalize_poswkodo(
-        LOKOJ['Nul'].get_poswkodo()) == '4M00000000Ŝ' # '4M000-0000-0000Ŝ'
-    assert TeraLoko.normalize_poswkodo(
-        LOKOJ['OC' ].get_poswkodo()) == 'Δ74D9M4TRΥD' # 'Δ74D9-M4TR-Υ000D'
+        f"{LOKOJ['Nul'].get_posxkodo() = }")
+    print(f"\tOC postcode: {LOKOJ['OC'].get_posxkodo() = }")
+    assert TeraLoko.normalize_posxkodo(
+        LOKOJ['Nul'].get_posxkodo()) == '4M00000000Ŝ' # '4M000-0000-0000Ŝ'
+    assert TeraLoko.normalize_posxkodo(
+        LOKOJ['OC' ].get_posxkodo()) == 'Δ74D9M4TRΥD' # 'Δ74D9-M4TR-Υ000D'
     def assert_loko(lat, lon, alt):
         loko = TeraLoko(lat=lat, lon=lon, alt=alt)
-        p1 = loko.get_poswkodo()
-        p2 = TeraLoko(p1).get_poswkodo()
+        p1 = loko.get_posxkodo()
+        p2 = TeraLoko(p1).get_posxkodo()
         print(f"\t\t{p1:16}\t{p2:16}\t{loko}")
         assert p1 == p2
         return loko

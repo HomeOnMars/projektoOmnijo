@@ -149,16 +149,14 @@ See also International Phonetic Alphabet (IPA).
 
 </details>
 
-#### w-sistemo
+#### x-sistemo
 
-> `w`-system
+> `x`-system
 
-- Instead of the [X-system](https://en.wikipedia.org/wiki/Substitutions_of_the_Esperanto_alphabet#X-system) in Esperanto,
-  *Epopo* appends *w* instead of *x* to *CGJSUV*
-  to represent accented letters or Ʌ in ASCII,
-  since *x* is a real letter in *Epopo* as well.
-- *w* was used instead of *y* because it fits my intuition better
-  how it would change the sound of the letter.
+- Similar to the [x-system](https://en.wikipedia.org/wiki/Substitutions_of_the_Esperanto_alphabet#X-system) in Esperanto,
+  *Epopo* appends *x* to *CGJS*
+  to represent accented letters.
+- However, *Ŭ* is simply replaced by *W*, and *Ʌ* by *Y*.
 
 ### Algebro
 
@@ -395,7 +393,7 @@ See also International Phonetic Alphabet (IPA).
 
 - Units and *`Omnijaro`* Calendar System (Ø+\* years)  
   See also the [Units](../teknikoj/Unuoj.md#tempo) page for explanation, and the
-  [(*Spoilers*) Timeline](../intrigmalkaswo/Kronologio.md#kronologio) page
+  [(*Spoilers*) Timeline](../intrigmalkasxo/Kronologio.md#kronologio) page
   for usage.
 
   | Siglo | Formo   | Nomo           |

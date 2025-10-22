@@ -52,7 +52,7 @@ Note: P/M follows positive and negative directions in mathematics (thus P for co
 |    H    | **H**omo/Piediranto | Human/Pedestrian    | $\geq$ 3.5m |
 |    B    | **B**iciklo         | Bike                |        ?    |
 |    J    | parke**J**o         | Parking Space       | $\geq$ 2m   |
-|  Ŭ / Uw | a**Ŭ**tomobilo      | Car                 |        3m   |
+|  Ŭ / Ux | a**Ŭ**tomobilo      | Car                 |        3m   |
 |    U    | b**U**so            | Bus                 |        3m   |
 |    T    | **T**ramo           | Tram                |        3m   |
 |    E    | f**E**rvojo/m**E**troo | Railway/Metro    |        4m   |
@@ -90,13 +90,13 @@ Note that the letters are overlapping other acronyms in other categories - and t
 | :-----: | ------------------- | ------------------- | ----------- |
 |    A    | **A**viadilo        | Airplane            | |
 |    B    | **B**iciklo         | Bike                | |
-|  Ŭ / Uw | a**Ŭ**tovojo        | Motorway            | |
+|  Ŭ / Ux | a**Ŭ**tovojo        | Motorway            | |
 |    U    | b**U**so            | Bus                 | |
 |    T    | **T**ramo           | Tram                | Regiona  <br>Regional |
 |    E    | f**E**rvojo/m**E**troo | Railway/Metro  <br>Monorail  <br>Train | Malaltrapida \($\leq$  200 km/h\)  <br>Low-speed |
 |    V    | **V**agonaro/Trajno | Train               | Altrapida \(\> 200 km/h\)  <br>High-speed |
 |    P    | **P**ramo           | Ferry               | Regiona  <br>Regional |
-|  Ŝ / Sw | **Ŝ**ipo            | Ship                | |
+|  Ŝ / Sx | **Ŝ**ipo            | Ship                | |
 |    H-   | **H**omo-/Pasaĝero- | Human-/Passenger-   | |
 |    K-   | **K**argo-          | Cargo-              | |
 
@@ -125,10 +125,10 @@ Examples:
 
 - Bus route 431 (i.e. 0x1af): `U1ΔΨ` (short for HB1ΔΨ)
 - High-speed Train line 3: `V3` (short for HV3)
-- Motorway 13 N->S: `ŬΣm` (or `UwDm` for ASCII encoding; m for Negative.)
+- Motorway 13 N->S: `ŬΣm` (or `UxDm` for ASCII encoding; m for Negative.)
 - Cargo train line 12: `KVΠ`
 - Cargo barge route 4: `KP4`
-- Cargo container ship route 14: `KŜΥ` (or KSwE for ASCII encoding;
+- Cargo container ship route 14: `KŜΥ` (or KSxE for ASCII encoding;
   Be careful `Υ` is the upper-case version of greek letter `γ`, not English Y.)
 - Cargo Airline 5: `KA5`
 
