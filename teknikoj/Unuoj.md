@@ -147,14 +147,21 @@ Track and loading gauges in *RdO* are:
 
 - Track gauge  
   3 hU (≈ Dx1.4723 m $= 35931_D \times  2^{101_D} \  l_P$)
-- Loading gauge (max width, trams)  
-  6 hU (≈ Dx2.9447 m)
-- Loading gauge (max width, trains/metros)  
-  7 hU (≈ Dx3.4354 m)
-- Loading gauge (max height, overhead wires)  
-  Δ hU (≈ Dx4.9078 m)
+- Loading gauge (max width)
+  - *Tram*  
+    6 hU (≈ Dx2.9447 m)
+  - *Train/Metro*  
+    7 hU (≈ Dx3.4354 m)
+- Loading gauge (max height, overhead wires, measured in-game in CSL2)  
+  - *Tram*  
+    Δ hU (≈ Dx4.9078 m)
+  - *Train*  
+    Π hU (≈ Dx5.8894 m)
 - Loading gauge (max height excl. pantograph)  
-  9 hU (≈ Dx4.4170 m)
+  - *Tram/Metro*  
+    9 hU (≈ Dx4.4170 m)
+  - *Train*  
+    λ hU (≈ Dx5.3986 m)
   - Note:
     keep a minimum 3/4 hU electrical clearance
     inbetween the top of trains and the overhead wires.
@@ -197,9 +204,9 @@ coming up with its own unit system in the first place.
 (The other being satisfying
 the <span style="color:Beige">Queen</span>'s OCD tendencies.)
 
-The RdO loading gauge for trains is \~29cm wider and \~59cm taller than the
+The RdO loading gauge for trains is \~29cm wider and \~75cm taller than the
 [European standards](https://en.wikipedia.org/wiki/Loading_gauge#European_standards), and
-\~4cm wider & \~11cm taller than the
+\~4cm wider and \~60cm taller than the
 [Chinese standards](https://en.wikipedia.org/wiki/Loading_gauge#China).
 
 #### Kontnera Mezurilo
@@ -212,10 +219,8 @@ Standard RdO container dimensions:
   - 5 hU (≈ Dx2.4539 m)
     - \~Dx0.01 m wider than ISO standard.
 - Height
-  - 4 hU (≈ Dx1.9631 m)
-    - This allows cargo trains to stack double containers per car.
-  - 6 hU (≈ Dx2.9447 m)
-    - For single car use.
+  - 5 hU (≈ Dx2.4539 m)
+    - This allows cargo trains to potentially stack double containers per car.
 - Length
   - Hx λ.Ψ hU (≈ Dx5.8587 m)
     - Approximately [TEU](https://en.wikipedia.org/wiki/Twenty-foot_equivalent_unit)-size (\~Dx0.199 m shorter).
@@ -306,7 +311,7 @@ which is also slowing down over millennia.)
     Companies have the freedom to shift the beginning of the workday
     to be up to 1Ĝ earlier.
   - Seven days of the week  
-    The symbols should be selected to avoid
+    The symbols are selected to avoid
     the ones already used in the base-32 ONKIO character set
     (see [unuoj.py](unuoj.py) `TX_SYMBOLS_DICT['ONKIO']` dict),  
 
@@ -621,11 +626,12 @@ $$
 > Bits and bytes
 
 > [!IMPORTANT]
-> Byte unit: ***Bajto*** `Baj` (Byte)
+> Base Bit unit: ***Bito*** `Bit` (Bit, or `B`)  
+> (Avoid using `B` to avoid confusion with SI byte $\textrm{B}_\textrm{SI}$.)
 
 > [!NOTE]
-> Base Bit unit: ***Bito*** `Bit` (Bit, or `B`)  
-> (avoid using `B` to avoid confusion with SI byte $\textrm{B}_\textrm{SI}$.)
+> Byte unit: ***Bajto*** `Baj` (Byte)  
+> (Avoid using this altogether to avoid confusion with *Bito*.)
 
 $$
   \textrm{Baj}
