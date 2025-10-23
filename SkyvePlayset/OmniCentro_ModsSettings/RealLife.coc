@@ -12,7 +12,7 @@ RealLife
     "university_grad_prob": 75,
     "enter_high_school_prob": 94,
     "adult_enter_high_school_prob": 12,
-    "worker_continue_education": 75,
+    "worker_continue_education": 50,
     "student_birth_rate_adjuster": -25,
     "base_birth_rate_adjuster": -25,
     "divorce_rate_adjuster": -6,
