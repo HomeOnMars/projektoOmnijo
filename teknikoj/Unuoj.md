@@ -154,19 +154,23 @@ Track and loading gauges in *RdO* are:
     7 hU (≈ Dx3.4354 m)
 - Loading gauge (max height, overhead wires, measured in-game in CSL2)  
   - *Tram*  
-    Δ hU (≈ Dx4.9078 m)
+    9 hU (≈ Dx4.4170 m)
+    - Tram track are fully embedded at ground level.
   - *Train*  
-    Π hU (≈ Dx5.8894 m)
+    Π hU (≈ Dx5.8894 m) (above ground)
+    - This includes 2 jU (≈ Dx6.13 cm) height of the train track.  
+      The pure height difference from top of the track to the overhead wires
+      is λ.Υ hU (≈ Dx5.8280 m).
 - Loading gauge (max height excl. pantograph)  
   - *Tram/Metro*  
-    9 hU (≈ Dx4.4170 m)
+    8 hU (≈ Dx3.9262 m)
   - *Train*  
     λ hU (≈ Dx5.3986 m)
   - Note:
     keep a minimum 3/4 hU electrical clearance
     inbetween the top of trains and the overhead wires.
 - Capacity  
-  Assuming each seat is 1 hU wide and 2 hU long, and cabin is 2 hU tall,
+  Assuming each seat is 1 hU wide and 2 hU long, and the cabin is 5 hU tall,
   This implies a capacity of passengers per U car length of
   - *Tram*:
     <!-- single floor, longitudinal seating layout,

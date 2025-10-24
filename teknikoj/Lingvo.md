@@ -67,6 +67,8 @@ Changes of Esperanto++ from Esperanto include:
 - Note that 'Ʌ', 'JɅ', and 'ĴɅ' could sound similar.
   Generally speaking, try not to add 'J' or 'Ĵ' in front of 'Ʌ'
   when making up words.
+- 'ĈɅ' and 'QɅ' could also sound similar.
+  In this case, avoid using 'ĈɅ' and replace them with 'QɅ'.
 - Avoid putting 'C', 'G', 'J', 'S' in front of 'X' to avoid confusion
   with the 'X' system.
 - Total *Epopo* alphabet: 30 letters.
@@ -155,7 +157,7 @@ See also International Phonetic Alphabet (IPA).
 
 - Similar to the [x-system](https://en.wikipedia.org/wiki/Substitutions_of_the_Esperanto_alphabet#X-system) in Esperanto,
   *Epopo* appends *x* to *CGJS*
-  to represent accented letters.
+  to represent accented letters when forced to operate within ASCII systems.
 - However, *Ŭ* is simply replaced by *W*, and *Ʌ* by *Y*.
 
 ### Algebro

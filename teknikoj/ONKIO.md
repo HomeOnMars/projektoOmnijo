@@ -50,6 +50,7 @@ Differences from the ASCII table are highlighted with **bold** text.
 
 ### Notes
 
+- See also *Epopo* specifications in the [Lingvo](Lingvo.md#epopo) page.
 - Built-in support for *hexadecimal* characters :-D
   - 10~15 are represented as greek letters `Δ λ Π Σ Υ Ψ`, as shown in the column `0x3_` in the above table.
   - Note that `Υ` is the greek letter `γ` (but capitalized), not English letter `Y`.
