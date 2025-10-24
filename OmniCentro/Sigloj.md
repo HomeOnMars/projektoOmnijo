@@ -189,6 +189,9 @@ Examples:
 |    v    | **v**ersio           | version          |
 |   Skp   | **S**av**k**o**p**io | Backup           |
 |    Ŝn   | **Ŝ**anĝo**n**oto    | Changelog        |
+||| <!-- Other Abbr --> |
+|   NKU   | Norma  KontenerUnuo  | (RdO) [Standard Container Unit](../teknikoj/Unuoj.md#kontnera-mezurilo) |
+|   DKU   | Duobla KontenerUnuo  | (RdO) [Double Container Unit](../teknikoj/Unuoj.md#kontnera-mezurilo) |
 
 [^Deprecated-Vj]: Deprecated: Vojo as a concept is too broad,
   as it could mean anything from motorways and rails to alleys and paths.

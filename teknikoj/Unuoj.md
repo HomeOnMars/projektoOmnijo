@@ -215,19 +215,46 @@ The RdO loading gauge for trains is \~29cm wider and \~75cm taller than the
 
 Standard RdO container dimensions:
 
-- Width
-  - 5 hU (≈ Dx2.4539 m)
-    - \~Dx0.01 m wider than ISO standard.
-- Height
-  - 5 hU (≈ Dx2.4539 m)
-    - This allows cargo trains to potentially stack double containers per car.
-- Length
-  - Hx λ.Ψ hU (≈ Dx5.8587 m)
-    - Approximately [TEU](https://en.wikipedia.org/wiki/Twenty-foot_equivalent_unit)-size (\~Dx0.199 m shorter).
-    - It is 1 jU (≈ Dx0.0307 m) smaller than half of Hx 18 hU,
-      to provide the gap for efficient stacking with the later units.
-  - Hx 18 hU (≈ Dx11.7787 m)
-    - Approximately FEU-size (\~Dx0.413 m shorter).
+| Name | Width (External, Hx jU) | Height (External, Hx jU) | Length (External, Hx jU) | Internal Dimensions (Hx jU) | Internal Volume (Hx hU^3) | Expected Net weight (Hx MP) | Max Net weight (Hx MP) | Max Gross weight (Hx MP) |
+| ---- | --: | --: | --: | :-------------: | :-----: | :-: | :--: | :-: |
+|  NKU |  54 |  54 |  Δ8 |  4Ψ x  4Π x  Δ0 |   ΥΔ.88 | 0.8 | 1.08 | 1.2 |
+|  DKU |  54 |  54 | 150 |  4Ψ x  4Π x 148 |  1Υ0.ΠΔ | 1.0 | 1.18 | 1.4 |
+
+- Width (External)
+  - Hx 5.4 hU (≈ Dx2.5766 m)
+    - \~Dx0.1382 m wider than ISO standard.
+    - This is constrained by the
+      [standard truck width](https://en.wikipedia.org/wiki/Lane#Lane_width) (2025-10-24)
+      (which is in turn limited by lane width for roads), which is Dx2.6m.
+    - Assume a gap of 1jU and a wall thickness of 1½jU on either side,
+      this means an internal width of 4.ΨhU (≈ Dx2.4232 m).
+- Height (External)
+  - Hx 5.4 hU (≈ Dx2.5766 m)
+    - \~Dx0.0142 m shorter than ISO standard.
+    - This allows cargo trains to vertically stack 2 containers per car.
+    - The matching width and height allows the containers to be
+      potentially stacked sideways
+      (with special inter-direction connecting units in-between),
+      which would hopefully benefit us once we get to space
+      where there is no more definitive concept of the "down" direction.
+    - Assume a gap of 4jU thick of wall + interlocking mechanism
+      on either side, this means an internal height of 4.ΠhU (≈ Dx2.3312 m).
+- Length (External)
+  - Hx Δ.8 hU (≈ Dx5.1532 m)
+    - > Container name: **NKU** (Norma KontenerUnuo)
+    - \~Dx0.9047 m shorter than ISO [TEU](https://en.wikipedia.org/wiki/Twenty-foot_equivalent_unit) (2025-10-24) standard.
+    - Assume a gap of 1jU and a 3jU thick of wall + door locking mechanism
+      on either side, this means an internal length of Δ.0hU (≈ Dx4.9078 m).
+    - Internal volume: Hx ΥΔ.88 hU^3 (≈ Dx27.72 m^3)
+  - Hx 15 hU (≈ Dx10.3064 m)
+    - > Container name: **DKU** (Duobla KontenerUnuo)
+    - \~Dx1.8856 m shorter than ISO FEU standard.
+    - Precisely 4 times longer than its widths and heights,
+      for easier stacking in any directions (e.g. in space)
+      (Now you can build a fort out of it!).
+    - Assume a gap of 1jU and a 3jU thick of wall + door locking mechanism
+      on either side, this means an internal length of 14.8hU (≈ Dx10.0610 m).
+    - Internal volume: Hx 1Υ0.ΠΔ hU^3 (≈ Dx56.84 m^3)
 
 The <span style="color:Beige">Queen</span> only really starts
 to push this standard (both on and off the island)
