@@ -63,7 +63,7 @@ class SkyvePlayset:
         except FileNotFoundError:
             mtime = 0
         for f in os.listdir(skyve_dir):
-            if f.startswith(name):
+            if f.startswith(name+' '):
                 fp = f"{skyve_dir}{f}"    # file path
                 new_mtime = int(os.path.getmtime(fp))
                 if mtime == 0.0 or new_mtime > mtime:

@@ -233,16 +233,19 @@ Using the leading digit for identifying districts and areas:
 | `6` |  CC  | Mt-H  | Mt-Hejmeco     | |
 | `7` |  CC  | Am-F  | Am-Fortiko     | |
 | `8` |  CR  | Mt-E  | Mt-Espero      | |
-| `9` |  CC  | La-S  | La-Singulariso - Royal Palace (TBD)  | <span style="color:Beige">█ #F5F5DC</span> |
+| `9` |  CC  | La-S  | La-Singulariso  <br>Royal Palace (TBD)  | <span style="color:Beige">█ #F5F5DC</span> |
 | `Δ` |  NK  | Mt-F  | Mt-Fortiko     | <span style="color:MediumPurple">█ #9370DB</span> |
 |     |  NK  | Vd-F  | Vd-Fortiko     | <span style="color:#D6B4FC">█ #D6B4FC</span> |
 | `λ` |  NC  | Am-U  | Am-Unukorno    | <span style="color:Thistle">█ #D8BFD8</span> |
 |     |  NC  | Mt-U  | Mt-Unukorno    | <span style="color:Thistle">█ #D8BFD8</span> |
 | `Π` |  NK  | Me-R  | Me-Racio       | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 |     |  NK  | La-P  | La-Pordego     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
-|     |  NK  | Dt-L  | Dt-Lumturo     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
-|     |  NK  | Dt-A  | Dt-Artezo      | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
-|     |  NK  | Dt-C  | Dt-Cirklo      | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
+|     |  NK  | Dt-L  | Dt-Lumturo     | |
+|     |      |       | Sc-Artezo      | |
+|     |      |       | Sc-Cirklo      | |
+|     |      |       | Sc-Senfinkordo | |
+|     |      |       | Sc-Klebotelo   | |
+|     |      |       | Sc-Levado      | |
 | `Σ` |  NR  | Am-R  | Am-Racio       | |
 |  …  |      |       |                | |
 | `Ψ` |      |       | Eksteraj Konektoj  <br>Outside connections | |

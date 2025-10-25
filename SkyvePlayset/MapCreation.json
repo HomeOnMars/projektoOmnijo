@@ -164,7 +164,14 @@
     "121256": {
       "Id": 121256,
       "Name": "Achievement Fixer",
-      "Version": "4",
+      "Version": "5",
+      "LoadOrder": 2147483645,
+      "IsEnabled": true
+    },
+    "79186": {
+      "Id": 79186,
+      "Name": "Simple Mod Checker Plus",
+      "Version": "40",
       "LoadOrder": 2147483646,
       "IsEnabled": true
     }
