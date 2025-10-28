@@ -58,7 +58,8 @@ Bazaj Unuoj
 $$
   \textrm{U}
   \equiv 11977_D \times 2^{105_D} \  l_P
-  = 2ΥΠ9_H \times 2^{69_H} \  l_P
+  % = 2ΥΠ9_H \times 2^{69_H} \  l_P
+  = 5.Σ92_H \times 10_H^{{1Σ}_H} \  l_P
   \approx 7.8525_D \  \textrm{m}
 $$
 
@@ -275,6 +276,8 @@ by the following short period of near-worldwide embargo on her island.
 $$
   \textrm{P}
   \equiv 2^{24_D} \  m_P
+  = 10_H^{6} m_P
+  % = \mathrm{JM} m_P
   \approx 0.365_D \  \textrm{kg}
 $$
 
@@ -298,7 +301,8 @@ which happens to be about 1 FEU container equivalent of goods.
 $$
   1 \  Ŝ
   \equiv 35931_D \times 2^{129_D} \  t_P
-  = 8Π5λ_H \times 2^{81_H} \  t_P
+  = 1.18λ6_H \times 10_H^{{24}_H} \  t_P
+  % = 1.18λ6_H \mathrm{K} t_P
   \approx 1.3183_D \  s
 $$
 <!-- 1 \  Ŝ \approx 1.518_H \  s -->

@@ -278,7 +278,7 @@ See also International Phonetic Alphabet (IPA).
     This is to help computer code differentiate variable names and operations.
   - Use hyphen to string up words inside Proper Names.
 - ~~'–' (En dash)~~  
-  En dash is cancelled in Epopo.  
+  En dash is *cancelled* in Epopo.  
   When needing to use an en dash, use the below instead:
   - use a ' ‐ ' (hyphen with surrounding space)
     to connect numbers representing ranges.  
@@ -289,12 +289,26 @@ See also International Phonetic Alphabet (IPA).
     so readers are not confused with how many words exactly are concerned.  
     E.g. "She is a brilliant Nobel‐prize—winning scientist."
 - '—' (Em dash)
-  - **Add spaces around em dash**.  
-    This is to help markdown formatting
-    (allowing splitting lines around em dash.)
-  - Use two em dashes ('——') with trailing space
-    to indicate author/origin of a quote.  
-    E.g.
+  - **Add spaces around em dash when using them in pairs.**  
+    I.e. when you are coming back to the main sentence,
+    or if what comes later is conceptually separate from the main.  
+    The surrounding spaces are to help markdown formatting,
+    as this allows splitting lines around em dash.  
+    E.g.  
+    "Serena — arriving at her new just-completed palace for the first time —
+    snaps her fingers in the grand hall and says, 'Let there be light.'"
+  - **Add one trailing space after the em dash for single use occasions.**  
+    I.e. when you are just adding extra details to the main sentence
+    (or just marking a change in tone etc),
+    and you are not planning to go back to the main sentence.  
+    E.g.  
+    "He is suprised— despite their trusting relationship,
+    Ĝejda usually isn't this much amenable towards
+    his many (admittedly questionable) ideas."
+  - **Use two em dashes ('——') with surrounding spaces to indicate author/origin of a quote.**  
+    E.g.  
+    "The truth springs from arguments amongst friends." —— David Hume.  
+    Or  <br>
     <blockquote>
       They enslave their children's children who make compromise with sin.<br>
       <span style="color:grey">
@@ -303,7 +317,8 @@ See also International Phonetic Alphabet (IPA).
       </span>
     </blockquote>
 - See also
-  - [Hyphen / En dash / Em dash Guideline](https://www.sjsu.edu/writingcenter/docs/handouts/Hyphens%20Dashes.pdf).
+  - [Hyphen / En dash / Em dash Guideline](https://www.sjsu.edu/writingcenter/docs/handouts/Hyphens%20Dashes.pdf) (2025-10-27).  
+    Note: Epopo does not always follow that guideline. See above.
 - Library of Unicode Punctuation Marks
   - ~~“‘Quotes’”~~
     (Use ASCII/ONKIO quotation marks instead within this repo,

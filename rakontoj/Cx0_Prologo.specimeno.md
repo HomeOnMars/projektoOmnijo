@@ -157,7 +157,7 @@ and a quiet undertone of melancholy —
 there is a deeply hidden and surpressed skepticism for her right now.
 She doesn't blame him, as they both know that for every possibility of her,
 there could be trillions and trillions of possibilities
-in which things went just a little bit wrong —
+in which things went just a little bit wrong—
 and that would be all it takes to cascade into catastrophes.
 But, in this particular version of reality,
 fate was threaded through the needle's eye, and she *is* with him.

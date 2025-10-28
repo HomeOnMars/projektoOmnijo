@@ -104,15 +104,15 @@ An obvious question with an obvious answer, the King thinks bitterly.
 It’s so obvious in hindsight that
 he wonders what takes himself and General Natasha so long to think of this move.
 People thinks he is getting old, slow, and forgetful,
-and increasingly desires a replacement — a
-young, attractive, unthreatening, and easily manipulatable replacement.
+and increasingly desires a replacement—
+a young, attractive, unthreatening, and easily manipulatable replacement.
 Put her out there in the public so no one can ignore her,
-then wait for him to die — better yet, remove him now and speed things along.
+then wait for him to die— better yet, remove him now and speed things along.
 Boom, Natasha gets her puppet Queen,
 pushes through that fat environment-destroying
 scenery-ruining foreign mining deal,
 and finally becomes the real ruler of the island,
-as she removes the only opposition left in the government — him.
+as she removes the only opposition left in the government— him.
 
 He almost wants to applaud her for thinking of this. Almost.
 
@@ -121,7 +121,7 @@ Pretending to be friendly had long ago become second nature.
 
 “No, thanks,” says Serena, gracefully pushing the cup of tea aside.
 
-The Old King watches her hands — steady, deliberate. So beautiful, he thinks.
+The Old King watches her hands— steady, deliberate. So beautiful, he thinks.
 Not in a crude way, but in a way that unravels him,
 just like her alleged mother did 19 years ago. Anna.
 His old flame, and perhaps the only person he truly loved without reservation.
@@ -129,11 +129,11 @@ He was already King back then,
 but still young enough to believe he could keep both the crown and her,
 a delusion lasted right up until his enemies caught the wind of it.
 As the press swarmed their little love nest, he left,
-thinking he was saving her. Maybe he did — but it didn’t save him.
+thinking he was saving her. Maybe he did— but it didn’t save him.
 
 Serena looks nothing like Anna.
-And yet, something in the way she sits — her posture, her presence — makes
-his brain uncontrollably want to label her as *younger Anna*.
+And yet, something in the way she sits — her posture, her presence —
+makes his brain uncontrollably want to label her as *younger Anna*.
 A younger, idealized echo; not the real woman,
 but a memory turned flesh.
 He couldn't help but feel the surge of warmth, affection,
@@ -141,11 +141,11 @@ and an almost paternal protectiveness rising in him[^K1].
 
 [^K1]: In a few years,
   when he looks back on this moment, he’ll call it what it was:
-  *Adversarial Brain Hacking* —
+  *Adversarial Brain Hacking*—
   the biological equivalent of
   [Adversarial Machine Learning](https://en.wikipedia.org/wiki/Adversarial_machine_learning).
   The same way you trick an AI with carefully calibrated pixels,
-  you trick a human brain with a carefully calibrated face —
+  you trick a human brain with a carefully calibrated face—
   personalized just for him.
   But today’s king doesn’t even know such thing is even a possibility;
   so when his brain searched for a possible explanation, it returned nothing,
@@ -156,11 +156,11 @@ Maybe… maybe she really *is* Anna’s daughter. A miracle. His blood.
 Maybe he doesn’t have to do what he must do next.
 
 The king forces his eyes away from her. *Stop.*
-Miracles might happen in real life — but they never happen to *you*.
+Miracles might happen in real life— but they never happen to *you*.
 Putting his life — and the whole kingdom’s future — on miracles
 would be the worst case of wishful thinking, and the king is no fool.
 Natasha had made her move; now, he has to make his.
-Such a shame for Serena — she won’t even know why.
+Such a shame for Serena— she won’t even know why.
 
 “Hmm,” he says, voice light.
 “How about a cocktail instead? I hear you turned eighteen this year.
@@ -174,7 +174,7 @@ and begin blending ingredients with a kind of regal awkwardness.
 
 *She’s so graceful,* the King thinks,
 carefully averting her attention from
-the subtle marking on the cupboard — the one
+the subtle marking on the cupboard— the one
 marking the glasses reserved only for *“special occasions”* like this one.
 Every motion of hers calls Anna to mind.
 Nineteen years have passed, but he still remembers her as if it were yesterday:
@@ -189,7 +189,7 @@ Serena echoes Anna in the strangest, most infuriating ways.
 Earlier today — during the ceremony,
 when dignitaries still filled this very room — she had accidentally
 knocked over that absurdly expensive vase in the corner.
-The one gifted by the ambassador of their biggest trade partner — the one
+The one gifted by the ambassador of their biggest trade partner— the one
 Natasha had personally handled and *insisted* be kept here “for safekeeping.”
 Serena hadn’t flinched. She smiled, apologized without lowering her eyes,
 defusing the tension like a seasoned diplomat. Like Anna would have.
@@ -198,7 +198,7 @@ not really, as the vase was almost certainly bugged.
 Now, he had an excuse to throw it out.
 
 *Maybe,* he thinks,
-*she really could have been a proper Queen — if she’d had more time…*
+*she really could have been a proper Queen— if she’d had more time…*
 He shakes that thought off from his head. *Best not to get distracted.*
 
 “I’m not with General Natasha, you know,” Serena says softly,
@@ -208,7 +208,7 @@ her voice empathetic but with hidden gravitas. “I’m not your enemy.”
 the Old King replies, slipping on his most paternal tone.
 It’s easier than it should be, real even, under her presence.
 But she’s not the first to say such things.
-Beautiful women, clever advisers, even childhood friends —
+Beautiful women, clever advisers, even childhood friends—
 they all said it once.
 And time and time again, it ends in *betrayal*.
 
@@ -219,14 +219,14 @@ And time and time again, it ends in *betrayal*.
 
 Serena doesn’t move at first. She just looks at him.
 There’s something in her eyes: not anger, not fear, but something quieter.
-Resignation. Empathy. A tired kind of understanding — like
+Resignation. Empathy. A tired kind of understanding— like
 someone who knows what’s coming and still hopes, foolishly,
 for a different ending.
 
-She lifts both glasses — the cocktail, and the untouched tea — and
-calmly empties them into the sink.
+She lifts both glasses — the cocktail, and the untouched tea —
+and calmly empties them into the sink.
 “Your Majesty,” she says gently,
-“if I may — you should be more careful leaving these around.
+“if I may— you should be more careful leaving these around.
 What if you forget what you’ve done,
 and accidentally drink them after I’m gone?”
 She sets the glasses down with care.
@@ -266,7 +266,7 @@ I destroyed the listening bug hidden in it too. That was not an accident.”
 The king says with a weird dry smile,
 as he silently reaches out to the hidden item underneath the counter.
 
-“All 47 of them have been disabled at that moment too —
+“All 47 of them have been disabled at that moment too—
 when her technicians check the record,
 they will find a rare software bug knocking out the whole network,
 triggered by the failure of the vase one.” Serena explains, “honestly,
@@ -418,7 +418,7 @@ power, fame, money, survival, protection, vision, or anything really —
 “And you think the title of Queen would be *enough*?”
 says the King with an sarcastic undertone as he gestures towards himself.
 
-“I know it’s not.” for a brief moment, Serena smiles back to the King —
+“I know it’s not.” for a brief moment, Serena smiles back to the King—
 not her usual smile, the one constantly on her face outside this room
 in the past few days; but a calmer, clearer, sincerer one,
 filled with resoution.
