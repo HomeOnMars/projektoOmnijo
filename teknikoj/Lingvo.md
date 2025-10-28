@@ -18,10 +18,10 @@ Legal
 
  <p xmlns:cc="http://creativecommons.org/ns#" >This work by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/HomeOnMars">HomeOnMars</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
 
-Epopo
+Fonrakonto de la Epopo
 -------------------------------------------------------------------------------
 
-> Epopo
+> Background story of Epopo
 > <br>
 > [Back to OmniCentro Content](../OmniCentro.md#detalaj-informoj)
 
@@ -32,24 +32,63 @@ a fictional variant of L. L. Zamenhof's artificial language
 with multiple changes specified by
 <span style="color:Beige">Reĝino Serena</span> herself,
 aiming to offer even more regularity and inclusivity,
-while conforming to the existing world as much as possible.[^Lingvo-Historio-1]
-<span style="color:Beige">Queen Serena</span> declared `Epopo`
-as the new official language of RdO about three months in her reign,
+while conforming to the existing world as much as possible[^Lingvo-Historio-1].
+It was declared the new official language of RdO by
+<span style="color:Beige">Queen Serena</span> about three months in her reign,
 set to gradually replace English in the next *hekjaro* (hexcade, i.e. 16 years)
 in all RdO official documentations and communications.
 
 [^Lingvo-Historio-1]: Contrary to what one might expect,
-  Many Esperantists are not really big fans of the Queen breaking the
-  traditions of their language unilaterally with the big big changes she made…
+  many Esperantists are not exactly big fans of the Queen breaking the
+  traditions of their language unilaterally with the many changes she made…
+  which is why <span style="color:Beige">Serena</span> decided
+  to give her langauge a new name.
 
-One would think that such random policy
-is surely going to cause massive civil unrest,
-but by that time the people have already gotten used to the
-<span style="color:Beige">Queen</span>'s ridiculous style;
-plus, they also have the chaotic implementation of
+While the <span style="color:Beige">Queen</span>'s motivation seems arbitrary,
+it is the case that the island has an aboriginal islander language,
+as the first people there developed their own distinct culture.
+It was suppressed during the British colonial period of the island, of course;
+during which the official language was forced into English,
+despite the co-existence of a smaller but sizable colonist population
+from mostly Spain and France (and later, China and India).
+Even after the island gained independence with some clever political maneuvers
+of the old king and the old general back in the days with the locals' support,
+English remained as the official languages on the island for everyone—
+from the dwindling British populations, to the aboriginals,
+to the local Spanish / French / Chinese / Indian communities.
+While the people were too caught up in the corruption, poverty,
+and political infighting to propose anything else,
+<span style="color:Beige">Serena</span>'s rise brought enough stablities
+such that different groups now have the political will
+to ask for something more—
+a new official language that will cast the island's colonial past away.  
+And lo and behold, everyone proposed their own language to be the one.  
+The <span style="color:Beige">Queen</span>, being a Gen-Z growing up in a
+mostly English-speaking environment with many multilingual neighbours (claimed),
+seems to have given up the constant negotiations with all the different sides,
+ditching them all in favor of a new common langauge for everyone instead—
+"A language befitting the future!"
+as <span style="color:Beige">she</span> declares.
+
+The result is Esperanto++, or *Epopo*.
+
+As <span style="color:Beige">Serena</span> pokes around Esperanto
+and adjusts her version of it to her liking,
+it's hard to say if she is doing this to "modernize" the language
+or simply because she is having fun making up rules.
+Nevertheless, one would think that such random policy
+is surely going to cause massive civil unrest;
+however, by that time people already got used to
+<span style="color:Beige">Serena</span>'s ridiculous style,
+and they also have the chaotic implementation of
 her new UBI (universal basic income) policy to worry about.
 
-Changes of Esperanto++ from Esperanto include:
+Epopo
+-------------------------------------------------------------------------------
+
+> Epopo
+
+Changes of Esperanto++ (*Epopo*) from Esperanto include:
 
 ### Alfabeto
 
@@ -326,7 +365,8 @@ See also International Phonetic Alphabet (IPA).
   - … Horizontal Ellipsis
     (Use Unicode symbol instead of three separate dots.)
   - ≈ Approx
-  - ½ Half
+  - ½ Half  
+    ¼ Quarter
 
 ### Nomi
 
@@ -430,6 +470,18 @@ See also International Phonetic Alphabet (IPA).
     (fake last month that has 1 or 2 day(s) plus potential extra seconds
     for time corrections with respect to Earth's orbit)
 
-#### Others
+### Vortaro
 
-- etc. etc.
+> Vocabulary
+
+#### Novaj Vortoj
+
+> New words
+
+- Sazeno  
+  1. [Sazen](https://www.lesswrong.com/posts/k9dsbn8LZ6tTesDS3/sazen) (2022-12-21, coined by Duncan Sabien):  
+  A "one-way summary"—
+  a conceptual pointer to a certain concept
+  that is easy for those who already knows the concept to recall what it is,
+  but can be unintelligible or misleading for those who don't.  
+  E.g. the explanation above is itself a sazen.

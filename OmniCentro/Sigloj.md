@@ -149,6 +149,7 @@ Examples:
 |  ~~Mr~~ | **M**a**r**o         | Sea  <br>(Deprecated - Use full form instead) |
 |    Is   | **I**n**s**ulo       | Island           |
 ||| <!-- District types --> |
+|    Ar   | **Ar**eo             | Area  <br>(Fallback type) |
 |    Dt   | **D**is**t**rikto    | District         |
 |    Ia   | **I**ndustri**a**reo | Industrial Area  |
 |  ~~Hv~~ | ~~**H**a**v**eno~~   | Port  <br>(Deprecated) |
@@ -242,10 +243,10 @@ Using the leading digit for identifying districts and areas:
 |     |  NK  | La-P  | La-Pordego     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 |     |  NK  | Dt-L  | Dt-Lumturo     | |
 |     |      |       | Sc-Artezo      | |
-|     |      |       | Sc-Cirklo      | |
+|     |      |       | Sc-Cirklado    | |
 |     |      |       | Sc-Senfinkordo | |
 |     |      |       | Sc-Klebotelo   | |
-|     |      |       | Sc-Levado      | |
+|     |      |       | Sc-Leviĝo      | |
 | `Σ` |  NR  | Am-R  | Am-Racio       | |
 |  …  |      |       |                | |
 | `Ψ` |      |       | Eksteraj Konektoj  <br>Outside connections | |
