@@ -33,6 +33,7 @@ Tags
 - `Redevelop::(Services,Road,Rail)`
 - `Detailing::(Trees,Props,Surfaces,Water)`
 - `Terrain`
+- `Resources`
 - `Naming`
 - `Transit`
 - `Taxes`

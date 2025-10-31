@@ -148,6 +148,7 @@ Examples:
 |    Rv   | **R**i**v**ero       | River            |
 |  ~~Mr~~ | **M**a**r**o         | Sea  <br>(Deprecated - Use full form instead) |
 |    Is   | **I**n**s**ulo       | Island           |
+|    Pn   | **P**o**n**to        | Bridge           |
 ||| <!-- District types --> |
 |    Ar   | **Ar**eo             | Area  <br>(Fallback type) |
 |    Dt   | **D**is**t**rikto    | District         |
