@@ -9,6 +9,86 @@
 Content
 -------------------------------------------------------------------------------
 
+### v4.0 <-- v3.0 | `2025-11-02` 
+
+> Update for v1.3.6f1.
+>
+> Building a hillside residential district in the Northwest.
+
+- `Meta::GameVer`: v1.3.6f1;
+- `Assets::Required`:
+  - 'China Pack' (100454);
+  - 'Eastern Europe Pack' (98960);
+  - 'UK Pack' (92859);
+  - 'USA Northeast Pack' (101948);
+- `Mods::Required`:
+  - 'Anarchy' (74604);
+  - 'Dummy Traffic Remover' (107683);
+  - 'Plop the Growables' (75826);
+  - 'Real Life' (86868);
+  - 'Realistic Trips' (77171);
+  - 'Recolor' (84638);
+  - 'Road Builder' (87190);
+  - 'Traffic' (80095);
+- `Mods::Optional`:
+  - 'All Aboard! (Faster Boarding Mod)' (86605);
+  - 'Better Bulldozer' (75250);
+  - 'Carto' (87428);
+  - 'Extra Networks and Areas' (77175);
+  - 'Find It' (77240);
+  - 'Hall of Fame' (90641);
+  - 'Map Texture Replacer' (76050);
+    - 'Alpine Theme' (76828);
+    - 'Volchoria Map Theme' (76896);
+  - 'Move It' (74324);
+  - 'Simple Mod Checker Plus' (79186);
+  - 'Skyve' (75804);
+  - 'Water Features' (75613);
+- `Mods::RealisticTrips`,`Note`:
+  - Settings 'Slow Time and Increase Day Length': set to **x2.5**;  
+    Note: A quick speed test in-game shows that
+    time in-game flows *x10* faster than suggested speed limits:  
+    (Test setup as a 8km track for trams to travel through at 40kph.
+    Trams took 1 in-game hr to go through at RealisticTrips::SlowTime set as x2.
+    After setting RealisticTrips::SlowTime to x2.5,
+    the same tram line took 48min as expected.)  
+    Setting it to x2.5 to get a good compromise between
+    being physically realistic and being playable and fun.
+    Now it's only x4 faster than what's suppose to be,
+    i.e. each citizen's commute will be only 4 times longer instead of 10 times.
+- `Mods::RoadBuilder`:
+  - Rename Road Types:
+    - 'Ŭj' to 'Ŭv';
+    - 'Ej' to 'Ev';
+    - 'Tj' to 'Tv';
+  - Remove Road Types:
+    - 'St-J \[HJAah\]';
+    - 'St-J \[HJŬUh\]';
+  - Modify Road Types:
+    - 'St-J \[HŬ2h\] bridge';
+    - 'Ev-K' series;
+  - Changed specs for :
+    - Reduce curve radius limit in name from 143U to 128U;
+    - Reduce speed limit from 185kph to 175kph;
+- `District::Dt-Lumturo`,`Expansion::(Zoning,Services,Rail)`,`Transit`:
+  - Build residential district Dt-Lumturo on the hill of Me-Racio (pt1);
+  - Build Telecom complex 'Ĉs-OCRR' on the top of the hill;
+  - Build hospital complex 'Kt-Arteza Hospitalo' to fix lack of ambulances;
+  - Add various tram/metro/train lines and hubs;
+- `District::La-Pordego`,`Expansion::(Services,Road,Rail)`,`Fixes`:
+  - Fix Recycling Center not working;
+  - Add Cargo Train Terminal;
+  - Improve Parking lot roads layout and add more parking;
+  - Rearrange services with the new buildings from Region packs and CCPS.
+- `District::Vĝ-Pioniro`,`Expansion::Zoning`:
+  - Add a row of temporary industry zones;
+- `Resources`:
+  - Add offshore oil near the sea;
+- `Naming`,`Fixes`:
+  - Various naming simplifications;
+
+-------------------------------------------------------------------------------
+
 ### v3.0 <-- v2.0 | `2025-06-21`
 
 > Northern Solstice update.  
