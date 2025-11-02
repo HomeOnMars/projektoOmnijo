@@ -1,0 +1,5 @@
+AllAboard
+{
+    "TrainMaxDwellDelaySlider": 11,
+    "BusMaxDwellDelaySlider": 6
+}

@@ -144,7 +144,11 @@ if __name__ == '__main__':
     remove_mods = mod_ids_radios
     skyve_dir = "../CSL2_SavesDir/ModsData/Skyve/Playsets/Shared/"
 
-    for playset_name in {'OmniCentro', 'OmniProvo', 'MapTesting', 'MapCreation'}:
+    for playset_name in {
+        'MapTesting', 'MapCreation',
+        'OmniCentro', 'OmniProvo',
+        'Aiosa',
+    }:
         playset = SkyvePlayset(playset_name, skyve_dir)
         if playset.temp_updated:
             playset.normalize(remove_mods=remove_mods).dump()

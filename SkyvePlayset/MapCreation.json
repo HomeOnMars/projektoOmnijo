@@ -219,7 +219,7 @@
       "Name": "Hall of Fame",
       "Version": "30",
       "LoadOrder": 2147483644,
-      "IsEnabled": true,
+      "IsEnabled": false,
       "IsVersionLocked": false,
       "PlaysetId": 0
     },

@@ -47,11 +47,11 @@ Retoj
 
   |             |  max Gradient $s$ (Dx) |  min Curve radius $R$ (Dx) | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | $\theta_\mathrm{64U}$ | $\theta_\mathrm{32U}$ | $\theta_\mathrm{16U}$ | $\theta_\mathrm{8U}$ | Notes |
   | ----------- | :-------: | :----------: | :--------: | :--------: | --- | --- | --- | --- | ----- |
-  | -           |  3.7 \%   |  616m (77u)  |  130 km/h  |  60 JoĜ | $101\degree$ | $135\degree$ | $157\degree$ | $169\degree$ | |
+  | -           |  3.7 \%   |  616m (77U)  |  130 km/h  |  60 JoĜ | $101\degree$ | $135\degree$ | $157\degree$ | $169\degree$ | |
   | -           |  5.1 \%   |  424m (53U)  |  110 km/h  |  50 JoĜ | -            | $118\degree$ | $147\degree$ | $163\degree$ | |
-  | Recommended |  7   \%   |  272m (34u)  |   90 km/h  |  40 JoĜ | -            |  $94\degree$ | $128\degree$ | $154\degree$ | |
-  | Soft Limit  | 10   \%   |  160m (20u)  |   65 km/h  |  30 JoĜ | -            | -            | $103\degree$ | $137\degree$ | Mountains Only |
-  | Hard Limit  | 20   \%   |   40m  (5u)  |   35 km/h  |  18 JoĜ | -            | -            | -            |  -           | Mountains Only |
+  | Recommended |  7   \%   |  272m (34U)  |   90 km/h  |  40 JoĜ | -            |  $94\degree$ | $128\degree$ | $154\degree$ | |
+  | Soft Limit  | 10   \%   |  160m (20U)  |   65 km/h  |  30 JoĜ | -            | -            | $103\degree$ | $137\degree$ | Mountains Only |
+  | Hard Limit  | 20   \%   |   40m  (5U)  |   35 km/h  |  18 JoĜ | -            | -            | -            |  -           | Mountains Only |
 
   - $\theta_{d}$ refers to the angle displayed
     when building a 2-phase curve of $d$ - $d$ in game.  

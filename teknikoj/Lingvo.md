@@ -112,10 +112,10 @@ Changes of Esperanto++ (*Epopo*) from Esperanto include:
   with the 'X' system.
 - Total *Epopo* alphabet: 30 letters.
   - vs Esperanto: 1 letters less (no Ĥ) and 3 letters more (QɅX)
-  - vs English:  2 letters less (no WY) and 6 letters more (ɅŬĈĜĴŜ)
+  - vs English:  2 letters less (no WY) and 6 letters more (ŬɅĈĜĴŜ)
   - vs Pinyin:   1 consonant less (no 'Zh') and 2 consonants more (VĴ)
   - Characters  
-    See also [ONKIO](ONKIO.md#onkio-tablo).  
+    See also [ONKIO](ONKIO.md#onkio-tablo) for the official encoding standard.  
     `ABCDEFGHIJKLMNOPQRSTUVŬXɅZĈĜĴŜ`  
     `abcdefghijklmnopqrstuvŭxʌzĉĝĵŝ`  
     `0123456789ΔλΠΣΥΨ`  
