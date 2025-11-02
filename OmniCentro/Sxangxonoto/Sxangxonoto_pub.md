@@ -67,9 +67,6 @@ Content
   - Modify Road Types:
     - 'St-J \[HŬ2h\] bridge';
     - 'Ev-K' series;
-  - Changed specs for :
-    - Reduce curve radius limit in name from 143U to 128U;
-    - Reduce speed limit from 185kph to 175kph;
 - `District::Dt-Lumturo`,`Expansion::(Zoning,Services,Rail)`,`Transit`:
   - Build residential district Dt-Lumturo on the hill of Me-Racio (pt1);
   - Build Telecom complex 'Ĉs-OCRR' on the top of the hill;

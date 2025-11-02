@@ -292,12 +292,15 @@ Using the leading digit for identifying districts and areas:
 | Kliniko                  | Clinic                   |
 | Hospitalo                | Hospital                 |
 | Tombejo                  | Cemetery                 |
-| Poŝtoficejo              | Post office              |
+| Poŝtoficejo              | Post Office              |
 |||
 | Bio-Reciklada Fabrikejo  <br>Kremaciejo | Bio-Recycling Plant  <br>Crematorium |
 | Rubodeponejo             | Landfill                 |
 | Reciklada Fabrikejo      | Recycling Plant          |
 |||
+| Farmo                    | Farm                     |
+| \- Fiŝbredejo            | Fish Farm                |
+| \- Fiŝkaptado            | Fishery                  |
 | Minejo                   | Mine                     |
 | \- Ŝtono                 | \- Stone                 |
 | \- Karbo                 | \- Coal                  |

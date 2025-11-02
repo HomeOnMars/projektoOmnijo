@@ -64,7 +64,7 @@
     "74604": {
       "Id": 74604,
       "Name": "Anarchy",
-      "Version": "35",
+      "Version": "36",
       "LoadOrder": 9,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -82,7 +82,7 @@
     "121812": {
       "Id": 121812,
       "Name": "Custom Chirps",
-      "Version": "3",
+      "Version": "5",
       "LoadOrder": 13,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -111,15 +111,6 @@
       "Name": "Dummy Traffic Remover",
       "Version": "2",
       "LoadOrder": 21,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "117020": {
-      "Id": 117020,
-      "Name": "Cheats",
-      "Version": "1",
-      "LoadOrder": 23,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -154,7 +145,7 @@
     "79186": {
       "Id": 79186,
       "Name": "Simple Mod Checker Plus",
-      "Version": "42",
+      "Version": "45",
       "LoadOrder": 34,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -163,7 +154,7 @@
     "98560": {
       "Id": 98560,
       "Name": "Asset UI Manager",
-      "Version": "7",
+      "Version": "11",
       "LoadOrder": 41,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -208,7 +199,7 @@
     "102147": {
       "Id": 102147,
       "Name": "Advanced Road Tools",
-      "Version": "15",
+      "Version": "16",
       "LoadOrder": 62,
       "IsEnabled": false,
       "IsVersionLocked": false,
@@ -333,8 +324,8 @@
     },
     "93523": {
       "Id": 93523,
-      "Name": "NavigationView (Updated for 1.3.3f1)",
-      "Version": "9",
+      "Name": "NavigationView",
+      "Version": "10",
       "LoadOrder": 99,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -399,15 +390,6 @@
       "Name": "Hall of Fame",
       "Version": "30",
       "LoadOrder": 108,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "77260": {
-      "Id": 77260,
-      "Name": "Water Visual Tweaks",
-      "Version": "10",
-      "LoadOrder": 109,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -532,7 +514,7 @@
     "75804": {
       "Id": 75804,
       "Name": "Skyve",
-      "Version": "57",
+      "Version": "58",
       "LoadOrder": 148,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -543,6 +525,15 @@
       "Name": "Asset Icon Library",
       "Version": "20",
       "LoadOrder": 149,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "86605": {
+      "Id": 86605,
+      "Name": "All Aboard! (Faster Boarding Mod)",
+      "Version": "12",
+      "LoadOrder": 2147483646,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
