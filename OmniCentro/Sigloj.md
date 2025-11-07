@@ -294,9 +294,9 @@ Using the leading digit for identifying districts and areas:
 | Tombejo                  | Cemetery                 |
 | Poŝtoficejo              | Post Office              |
 |||
-| Bio-Reciklada Fabrikejo  <br>Kremaciejo | Bio-Recycling Plant  <br>Crematorium |
+| Bio-Reciklada Fabriko  <br>Kremaciejo | Bio-Recycling Plant  <br>Crematorium |
 | Rubodeponejo             | Landfill                 |
-| Reciklada Fabrikejo      | Recycling Plant          |
+| Reciklada Fabriko        | Recycling Plant          |
 |||
 | Farmo                    | Farm                     |
 | \- Fiŝbredejo            | Fish Farm                |

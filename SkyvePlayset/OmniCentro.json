@@ -2,7 +2,7 @@
   "ContractFormatVersion": -1,
   "GeneralData": {
     "Id": 6505396,
-    "Name": "OmniCentro_v4",
+    "Name": "OmniCentro",
     "Color": "MediumPurple",
     "Usage": 1
   },
@@ -79,11 +79,20 @@
       "IsVersionLocked": false,
       "PlaysetId": 0
     },
+    "79186": {
+      "Id": 79186,
+      "Name": "Simple Mod Checker Plus",
+      "Version": "47",
+      "LoadOrder": 11,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
     "121812": {
       "Id": 121812,
       "Name": "Custom Chirps",
       "Version": "5",
-      "LoadOrder": 15,
+      "LoadOrder": 16,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -92,7 +101,16 @@
       "Id": 121256,
       "Name": "Achievement Fixer",
       "Version": "8",
-      "LoadOrder": 20,
+      "LoadOrder": 21,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "121130": {
+      "Id": 121130,
+      "Name": "Netherlands Pack",
+      "Version": "1",
+      "LoadOrder": 22,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -101,7 +119,7 @@
       "Id": 86605,
       "Name": "All Aboard! (Faster Boarding Mod)",
       "Version": "12",
-      "LoadOrder": 22,
+      "LoadOrder": 23,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -110,7 +128,7 @@
       "Id": 107683,
       "Name": "Dummy Traffic Remover",
       "Version": "2",
-      "LoadOrder": 23,
+      "LoadOrder": 24,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -119,7 +137,7 @@
       "Id": 113299,
       "Name": "Disable Mouse Hint",
       "Version": "1",
-      "LoadOrder": 30,
+      "LoadOrder": 31,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -128,16 +146,7 @@
       "Id": 91433,
       "Name": "InfoLoom",
       "Version": "32",
-      "LoadOrder": 32,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "79186": {
-      "Id": 79186,
-      "Name": "Simple Mod Checker Plus",
-      "Version": "45",
-      "LoadOrder": 34,
+      "LoadOrder": 33,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -165,7 +174,7 @@
       "Name": "Realistic Workplaces And Households",
       "Version": "43",
       "LoadOrder": 51,
-      "IsEnabled": false,
+      "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
     },
@@ -316,9 +325,9 @@
     "90641": {
       "Id": 90641,
       "Name": "Hall of Fame",
-      "Version": "30",
+      "Version": "31",
       "LoadOrder": 107,
-      "IsEnabled": false,
+      "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
     },

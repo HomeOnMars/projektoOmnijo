@@ -87,6 +87,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 | Oficialaj Koloroj  <br>Official Colors   | <span style="color:Beige">Flavgriza/Beige #F5F5DC</span> [^Bulteno-Koloroj-Flavgriza]  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span> [^Bulteno-Koloroj-Bluo]  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span> [^Bulteno-Koloroj-Purpuro] |
 | Oficialaj Himno  <br>Official Anthem | *Oceans* (*Where Feet May Fail*), originally by Hillsong UNITED  <br>Modified acoustic Epopo version[^Bulteno-Himno]. |
 | Oficialaj Flago  <br>Official Flag | ![RdOFlago](../fig/RdOFlago.svg)  <br>See [emblem](../fig/Emblemo.md#desegnoj) page for design explanation. |
+| Marko: Manĝaĵo  <br>Brand: Food | Omnimanao |
 
 [^Bulteno-RegistaraTipo]: Interviewer: "So, tell us what do you think
   the kind of government our new *RdO* governemnt *OCR* is?"
