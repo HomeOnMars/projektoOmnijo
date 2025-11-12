@@ -264,7 +264,11 @@ Standard RdO container dimensions:
 The <span style="color:Beige">Queen</span> only really starts
 to push this standard (both on and off the island)
 after her 8th coronation anniversary, apparently triggered
-by the following short period of near-worldwide embargo on her island.
+by the following short period of near-worldwide embargo on her island…
+But that's another story.  
+From there, the RdO containers standard gradually spreads across the world.
+
+TBD: decide if I should cave and set the NKU dimensions to be 1:2.5 instead of 1:2.
 
 ### Maso
 
@@ -465,7 +469,7 @@ Two styles:
   ```
 
 - ONKIO style (Earth-specific):  
-  Aiming for more naturally readable.  
+  Aiming for being more naturally readable.  
   Start with the 'Ø' symbol to signify the ONKIO Omnijaro calendar format
   (if dates are included),
   followed by '-/+' sign and the calendar year (not unit year) number;  
@@ -925,20 +929,28 @@ $$
 
 How much is 1 Sejro worth?
 Using energy price as calibration:
-In CSL2 game, each MW gives 🪙Dx2500 per hour when exported,
-though in-game we assume 1 day is 1 month (or 1/12 of a year).
-This means approximately **🪙Dx0.082 per kWh**.
+In CSL2 game, each MW gives 🪙Dx2500 per month when exported,
+which means approximately **🪙Dx0.0034 per kWh**.
 
 Considering the energy price in EU after tax in 2024 are
 around 0.1 €/kWh to 0.4 €/kWh
 (Reference see Figure 1 in [this eurostat webpage](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Electricity_price_statistics) (2025-03-15)),
-this means 1🪙 is approximately somewhere in between 1 € and 4 €.
+this means 1🪙 is approximately somewhere in between 30 € and 120 €.
 
-Due to energies are mostly generated cheaply from hydropower,
-it's probably more responsible to say that
-the currency situation in RdO should be more akin to Iceland,
-i.e.,
-**🪙1 ≈ €2**.
+<!-- As we presume that OmniCentro's money-making mechanism of exporting electricity
+here is through computation in data centers for world modeling and manipulation, -->
+Let us assume the energy price in RdO is somewhat akin to Iceland
+(which is also dominated by hydropower),
+i.e., **🪙1 ≈ € Dx60**.
+
+On the other hand,
+wage in CSL2 seems to be 🪙Dx2000 per month for Educated employees.
+Given that minimum wages in Europe is approximately € Dx2000 per month,
+it would be reasonable to assume **🪙1 ≈ €2**? (I am very confused.)
+
+Perhaps the energy price in CSL2 was meant to be 🪙Dx2500 per hour, not month?
+In this case, since CSL2 assumes 1 day equals 1 month,
+it would imply **🪙1 ≈ €2**, and the world makes sense again.
 
 ### Code illustrations
 

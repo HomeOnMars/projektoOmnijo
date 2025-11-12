@@ -1245,7 +1245,7 @@ if __name__ == '__main__':
     print(
         "\nAbout currency:",
         "Energy price in CSL2 game is",
-        f"{2500*u.Sejro / (u.MW*units.h*((units.yr/12)/units.day)).to(u.kW*units.h)}")
+        f"{2500*u.Sejro / (u.MW*(units.yr/12)).to(u.kW*units.h)}")
 
     print("\nTesting name collision with SI units... ", end='')
     # units.add_enabled_units(u_rdo_defs)

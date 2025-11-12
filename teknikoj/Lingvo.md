@@ -47,12 +47,13 @@ in all RdO official documentations and communications.
 While the <span style="color:Beige">Queen</span>'s motivation seems arbitrary,
 it is the case that the island has an aboriginal islander language,
 as the first people there developed their own distinct culture.
-It was suppressed during the British colonial period of the island, of course;
+It was suppressed during the British Colonial Period of the island, however;
 during which the official language was forced into English,
 despite the co-existence of a smaller but sizable colonist population
-from mostly Spain and France (and later, China and India).
-Even after the island gained independence with some clever political maneuvers
-of the old king and the old general back in the days with the locals' support,
+from mostly Spain and France (and later, China and India)
+who came along with the Brits.
+Even after the island gained independence with the clever political maneuvers
+from the old king (and the old general) decades ago with the locals' support,
 English remained as the official languages on the island for everyone—
 from the dwindling British populations, to the aboriginals,
 to the local Spanish / French / Chinese / Indian communities.
@@ -67,7 +68,7 @@ The <span style="color:Beige">Queen</span>, being a Gen-Z growing up in a
 mostly English-speaking environment with many multilingual neighbours (claimed),
 seems to have given up the constant negotiations with all the different sides,
 ditching them all in favor of a new common langauge for everyone instead—
-"A language befitting the future!"
+"A modern, sensible language befitting the future!"
 as <span style="color:Beige">she</span> declares.
 
 The result is Esperanto++, or *Epopo*.
@@ -268,14 +269,13 @@ See also International Phonetic Alphabet (IPA).
     Dx 9 100 000 000 people = Hx 2 1Υ66 Ψλ00 homoj,
     pronounced as
     `du duni, gil ganjent seshek ses muni, fusgil lomjent da homoj`.
-  - When saying one `muni`, one `duni`, etc, always add `unu` in front of it.
   - About `-o` suffix:  
     `du muni da utroj` (and `du muniutroj`) is the acceptable way
     of saying Dx 131 072 U;  
     ~~`du munioj da utroj`~~ (like in Esperanto) is **deprecated** in *Epopo*.  
     Do not add `-o` suffix for numbers.
     Numbers are not nouns in Epopo. They are special.
-  - Also you can just say `unu muniutro` directly, as 1 MU = Dx65536 U.
+  - Also you can just say `du muniutroj` directly, as 1 MU = Dx65536 U.
   - For fractions, add `-on` like in Esperanto. E.g. `munionutro`.
   - For prefix shorthands,
     always use no-hat capital letters for numbers \> 1
@@ -465,7 +465,7 @@ See also International Phonetic Alphabet (IPA).
   - `Unuamonato`: $☾_1$
   - `Duamonato`:  $☾_2$
   - …
-  - `Lomamonato`: $☾_Π$
+  - `Nakamonato`: $☾_Π$
   - `Sigamonato`: $☾_Σ$
     (fake last month that has 1 or 2 day(s) plus potential extra seconds
     for time corrections with respect to Earth's orbit)
