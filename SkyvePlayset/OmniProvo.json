@@ -73,7 +73,7 @@
     "77240": {
       "Id": 77240,
       "Name": "Find It",
-      "Version": "46",
+      "Version": "48",
       "LoadOrder": 10,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -91,7 +91,7 @@
     "121256": {
       "Id": 121256,
       "Name": "Achievement Fixer",
-      "Version": "6",
+      "Version": "8",
       "LoadOrder": 18,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -145,7 +145,7 @@
     "79186": {
       "Id": 79186,
       "Name": "Simple Mod Checker Plus",
-      "Version": "45",
+      "Version": "47",
       "LoadOrder": 34,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -154,17 +154,8 @@
     "98560": {
       "Id": 98560,
       "Name": "Asset UI Manager",
-      "Version": "11",
+      "Version": "12",
       "LoadOrder": 41,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "107257": {
-      "Id": 107257,
-      "Name": "System Clock",
-      "Version": "11",
-      "LoadOrder": 49,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -172,7 +163,7 @@
     "104707": {
       "Id": 104707,
       "Name": "Detailed Descriptions (Zone Lot Size Display)",
-      "Version": "6",
+      "Version": "8",
       "LoadOrder": 51,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -181,7 +172,7 @@
     "87755": {
       "Id": 87755,
       "Name": "Realistic Workplaces And Households",
-      "Version": "43",
+      "Version": "45",
       "LoadOrder": 52,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -199,7 +190,7 @@
     "102147": {
       "Id": 102147,
       "Name": "Advanced Road Tools",
-      "Version": "16",
+      "Version": "18",
       "LoadOrder": 62,
       "IsEnabled": false,
       "IsVersionLocked": false,
@@ -256,15 +247,6 @@
       "Version": "10",
       "LoadOrder": 70,
       "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "76662": {
-      "Id": 76662,
-      "Name": "Cim Route Highlighter",
-      "Version": "23",
-      "LoadOrder": 71,
-      "IsEnabled": false,
       "IsVersionLocked": false,
       "PlaysetId": 0
     },
@@ -388,7 +370,7 @@
     "90641": {
       "Id": 90641,
       "Name": "Hall of Fame",
-      "Version": "30",
+      "Version": "31",
       "LoadOrder": 108,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -397,7 +379,7 @@
     "77171": {
       "Id": 77171,
       "Name": "Realistic Trips",
-      "Version": "59",
+      "Version": "61",
       "LoadOrder": 114,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -442,7 +424,7 @@
     "78188": {
       "Id": 78188,
       "Name": "Extended Tooltip",
-      "Version": "17",
+      "Version": "20",
       "LoadOrder": 131,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -514,7 +496,7 @@
     "75804": {
       "Id": 75804,
       "Name": "Skyve",
-      "Version": "58",
+      "Version": "59",
       "LoadOrder": 148,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -533,6 +515,24 @@
       "Id": 86605,
       "Name": "All Aboard! (Faster Boarding Mod)",
       "Version": "12",
+      "LoadOrder": 2147483637,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "124553": {
+      "Id": 124553,
+      "Name": "La Clock (Show System Time)",
+      "Version": "4",
+      "LoadOrder": 2147483645,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "123738": {
+      "Id": 123738,
+      "Name": "Adjust Transit Capacity",
+      "Version": "8",
       "LoadOrder": 2147483646,
       "IsEnabled": true,
       "IsVersionLocked": false,
