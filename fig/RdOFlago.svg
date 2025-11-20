@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" width="480.0" height="270">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" width="480" height="270">
   <metadata>
     <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
-        <dc:date>2025-10-15T00:11:36.592832+00:00</dc:date>
+        <dc:date>2025-11-20T09:10:08.930773+00:00</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:title>La Regno de Omnijo (RdO) flag (fictional) for my world-building project</dc:title>
         <dc:creator>HomeOnMars</dc:creator>
@@ -13,16 +13,16 @@
     </rdf:RDF>
   </metadata>
   <defs>
-    <linearGradient gradientTransform="scale(0.5625 1) translate(0.35763888888888884) rotate(-33.690067525979785 0.5 0.5)" id="RdOColorGradient">
+    <linearGradient gradientTransform="scale(0.5625 1) translate(0.35416666666666663 0.0) rotate(-33.690067525979785 0.5 0.5)" id="RdOColorGradient">
       <stop offset="0.1875" stop-opacity="0" stop-color="#00BFFF"/>
       <stop offset="0.4999990463256836" stop-opacity="1" stop-color="#95D0FC"/>
       <stop offset="0.5000009536743164" stop-opacity="1" stop-color="#D6B4FC"/>
       <stop offset="0.8125" stop-opacity="0" stop-color="#9370DB"/>
     </linearGradient>
   </defs>
-  <path d="M 0 270 L 321.56249999999994 270 L 141.5625 0 L 0 0 Z " fill="#00BFFF"/>
-  <path d="M 480.0 270 L 480.0 0 L 141.5625 0 L 321.56249999999994 270 Z " fill="#9370DB"/>
-  <rect x="0" y="0" width="480.0" height="270" fill="url('#RdOColorGradient')"/>
-  <path stroke="#E6DAA6" stroke-width="14.765625" d="M 180.0793880378459 57.77533205676889 A 92.8125 92.8125 0.0 1 0 251.69635811629414 44.39763847667691" fill="none"/>
-  <path stroke="#E6DAA6" stroke-width="16.875" d="M 295.3313545894863 39.346718115770535 A 114.9609375 114.9609375 0.0 0 1 295.3313545894863 230.65328188422947" fill="none"/>
+  <path d="M 0 270 L 320.625 270 L 140.625 0 L 0 0 Z " fill="#00BFFF"/>
+  <path d="M 480 270 L 480 0 L 140.625 0 L 320.625 270 Z " fill="#9370DB"/>
+  <rect x="0" y="0" width="480" height="270" fill="url('#RdOColorGradient')"/>
+  <path stroke="#E6DAA6" stroke-width="13.125" d="M 184.86223381141858 66.35585071712791 A 82.5 82.5 0.0 1 0 248.52176277003923 54.46456753482392" fill="none"/>
+  <path stroke="#E6DAA6" stroke-width="15.0" d="M 287.3084263017656 49.97486054735159 A 102.1875 102.1875 0.0 0 1 287.3084263017656 220.0251394526484" fill="none"/>
 </svg>

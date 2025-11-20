@@ -4,7 +4,7 @@
     <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
-        <dc:date>2025-10-15T00:11:36.084604+00:00</dc:date>
+        <dc:date>2025-11-20T09:10:08.337130+00:00</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:title>RdO Emblem</dc:title>
         <dc:creator>HomeOnMars</dc:creator>
@@ -12,6 +12,6 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <path stroke="#E6DAA6" stroke-width="14.765625" d="M 70.8606380378459 57.77533205676889 A 92.8125 92.8125 0.0 1 0 142.47760811629414 44.39763847667691" fill="none"/>
-  <path stroke="#E6DAA6" stroke-width="16.875" d="M 186.1126045894863 39.346718115770535 A 114.9609375 114.9609375 0.0 0 1 186.1126045894863 230.65328188422947" fill="none"/>
+  <path stroke="#E6DAA6" stroke-width="14.765625" d="M 72.9700130378459 57.77533205676889 A 92.8125 92.8125 0.0 1 0 144.58698311629414 44.39763847667691" fill="none"/>
+  <path stroke="#E6DAA6" stroke-width="16.875" d="M 188.2219795894863 39.346718115770535 A 114.9609375 114.9609375 0.0 0 1 188.2219795894863 230.65328188422947" fill="none"/>
 </svg>

@@ -8,6 +8,7 @@ Author: HomeOnMars
 
 Note: Require inkscape in external env
     for converting from svg to png/jpg to work properly.
+    If unresponsive, try opening inkscape independently at least once.
 
 This work © 2024 by HomeOnMars is licensed under CC BY-NC-SA 4.0.
 To view a copy of this license, visit <https://creativecommons.org/licenses/by-nc-sa/4.0/>
@@ -99,10 +100,11 @@ class Emblemo:
         self,
         name: str = "",
         title: None|str = None, # if None, will be the same as name
-        scale_x: None|float = None, # if None, will be ratio_xy*scale_y
-        scale_y: float = 270,   #4320., # 8K resolution
-        ratio_xy: float = 1,    # x / y
+        scale_y: float = 270,   # 4320 for 8K resolution
+        halflim_y: float = 1.,  # half of the math coord limit
+        ratio_xy: float = 1.,   # x / y
         center: tuple[float, float] = (0., 0.), # coord of center in [-1, 1]
+                                            # might be overwritten during init
         colors: dict = KOLOROJ,
         # see kwargs in self.elem_metadata()
         meta_dict: None|dict[str, str] = None,
@@ -110,10 +112,13 @@ class Emblemo:
     ):
         self.name: str = name
         self.title: str = f"{self.name} Emblem" if title is None else title
-        self._scale_y: float = scale_y
-        self._scale_x: float = ratio_xy*scale_y if scale_x is None else scale_x
-        self._cx: float = 0.
-        self._cy: float = 0.
+        self._scale_y: int|float = scale_y
+        self._scale_x: int|float = None     # will be inited with `ratio_xy`
+        self._halflim_y: float = halflim_y
+        self._halflim_x: float = None   # will be inited with `ratio_xy`
+        self._cx: float = None  # will be inited with `center`
+        self._cy: float = None  # will be inited with `center`
+        self.ratio_xy = ratio_xy
         self.center = center
         self.colors: dict[str, str] = colors.copy()
 
@@ -183,12 +188,14 @@ class Emblemo:
             if verbose: print(f"Skipping '{output_path}';")
         else:
             output_exts = set(output_exts) - {ext}
-            if verbose: print(f"Saving to '{output_path}'...", end=' ')
+            if verbose:
+                print(f"Saving to '{output_path}'...", end=' ', flush=True)
             with open(output_path, 'wb') as f:
                 f.write(
                     xml.dom.minidom.parseString(str(self.dat)).toprettyxml(
                         indent="  ", encoding="utf-8"))
-            if verbose: print(f"Done;")
+            if verbose:
+                print(f"Done;", flush=True)
 
         for ext in output_exts:
             cmds: list[str] = [
@@ -196,9 +203,11 @@ class Emblemo:
                 f'{output_path_noext}.svg',     # input
                 f'{output_path_noext}{ext}',    # output
             ]
-            if verbose: print(f"\tRunning '{' '.join(cmds)}'...", end=' ')
+            if verbose:
+                print(f"\tRunning '{' '.join(cmds)}'...", end=' ', flush=True)
             subprocess.run(cmds)
-            if verbose: print(f"Done;")
+            if verbose:
+                print(f"Done;", flush=True)
 
         return self
 
@@ -249,7 +258,7 @@ class Emblemo:
     @property
     def scale(self) -> float:
         """Math unit to canvas unit."""
-        return self._scale_y / 2
+        return self.scale_y / self.lim_y
 
     @property
     def scale_x(self) -> float:
@@ -262,11 +271,21 @@ class Emblemo:
         return self._scale_y
 
     @property
+    def lim_x(self) -> float:
+        """Math coord width."""
+        return self._halflim_x * 2
+
+    @property
+    def lim_y(self) -> float:
+        """Math coord height."""
+        return self._halflim_y * 2
+
+    @property
     def center(self) -> tuple[float, float]:
         return (self._cx, self._cy)
 
     @center.setter
-    def center(self, value):
+    def center(self, value: tuple[float, float]):
         self._cx, self._cy = value
         return
 
@@ -274,21 +293,31 @@ class Emblemo:
     def ratio_xy(self) -> float:
         return self.scale_x / self.scale_y
 
+    @ratio_xy.setter
+    def ratio_xy(self, ratio_xy: float):
+        # Note: x dim will be contracted/extended
+        _scale_x = ratio_xy*self._scale_y
+        if isinstance(self._scale_y, int) and int(_scale_x) == _scale_x:
+            self._scale_x = int(_scale_x)
+        else:
+            self._scale_x = _scale_x
+        self._halflim_x = ratio_xy*self._halflim_y
+
     @property
     def xlims(self) -> tuple[float, float]:
-        return (-self.ratio_xy, self.ratio_xy)
+        return (-self._halflim_x-self._cx, self._halflim_x-self._cx)
 
     @property
     def ylims(self) -> tuple[float, float]:
-        return (-1, 1)
+        return (-self._halflim_y-self._cy, self._halflim_y-self._cy)
 
     def _x(self, x: float) -> float:
-        """Translate math x coord (-X/Y, X/Y) to canvas x coord (0, width)."""
-        return (self.ratio_xy + x + self._cx) * self.scale
+        """Translate math x coord (-X, X') to canvas x coord (0, width)."""
+        return (x - self.xlims[0]) / self.lim_x * self.scale_x
 
     def _y(self, y: float) -> float:
-        """Translate math y coord (-1, 1) to canvas y coord (height, 0)."""
-        return (1 - y - self._cy) * self.scale
+        """Translate math y coord (-Y, Y') to canvas y coord (height, 0)."""
+        return (self.ylims[1] - y) / self.lim_y * self.scale_y
 
     def _r(self, r: float) -> float:
         """Translate radius from math coord (-1, 1) to canvas coord."""
@@ -448,7 +477,7 @@ class Emblemo:
 
     def _set_as_RdO(self):
         """Draw the RdO emblem."""
-        self.center = (-1.5/16, 0)
+        self.center = (-1.25/16, 0)
         self._draw_RdO()
         return self
 
@@ -462,14 +491,16 @@ class Emblemo:
 
     def _set_as_RdOFlago(self, **kwargs):    # plot
         """Draw the RdO Flag."""
-        self.center = (-1/16, 0)
+        self.center = (-1.25/16, 0)
 
 
         # --- background
         dy_dx = -9/6
         angle = atan_deg(dy_dx) + 90
-        dx = tan_deg(angle)    # slash position changes (half)
-        # ddx = 68/256 * 2.0          # color transition band width
+        slash_loc_xs = (
+            self._x(-tan_deg(angle)*self.ylims[0]),    # bottom
+            self._x(-tan_deg(angle)*self.ylims[1]),    # top
+        )    # slash positions (canvas coord)
         ddx = 80/256    # color transition band width (half)
         ddd = 2**(-20)  # a tiny number
                         # to make sure the color gradient is in correct order
@@ -478,7 +509,10 @@ class Emblemo:
         self.draw(svg.Defs(elements=[
             svg.LinearGradient(id=id_RdOColorGradient, gradientTransform=[
                 svg.Scale(x=1/self.ratio_xy, y=1),
-                svg.Translate(x=(self.ratio_xy-1+self.center[0])/2),
+                svg.Translate(
+                    x = (self.lim_x/2 + self.center[0]) / self.lim_y - 0.5,
+                    y = -self.center[1] / self.lim_y,
+                ),
                 # Rotate(): x, y: center of rotation
                 svg.Rotate(-angle, x=0.5, y=0.5)
             ], elements=[
@@ -499,8 +533,8 @@ class Emblemo:
         self.draw(svg.Path(
             d=[
                 svg.MoveTo(0, self.scale_y),
-                svg.LineTo(self._x( dx), self.scale_y),
-                svg.LineTo(self._x(-dx), 0),
+                svg.LineTo(slash_loc_xs[0], self.scale_y),
+                svg.LineTo(slash_loc_xs[1], 0),
                 svg.LineTo(0, 0),
                 svg.Z(),
             ],
@@ -510,8 +544,8 @@ class Emblemo:
             d=[
                 svg.MoveTo(self.scale_x, self.scale_y),
                 svg.LineTo(self.scale_x, 0),
-                svg.LineTo(self._x(-dx), 0),
-                svg.LineTo(self._x( dx), self.scale_y),
+                svg.LineTo(slash_loc_xs[1], 0),
+                svg.LineTo(slash_loc_xs[0], self.scale_y),
                 svg.Z(),
             ],
             fill=self.colors['G'],
@@ -597,10 +631,10 @@ if __name__ == '__main__':
     Emblemo("RdO",  meta_dict=meta_dict).save(None, exts)
     exts = {'.svg', '.jpg'}    # jpg files are smaller
     Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
-        ratio_xy=16/9).save(None, exts)
+        halflim_y=9/8, ratio_xy=16/9).save(None, exts)
     Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
-        ratio_xy=1/1,  scale_y=2160,).save("RdOFlago.emb", exts)
+        halflim_y=1.0, ratio_xy=1/1,  scale_y=2160,).save("RdOFlago.emb", exts)
     Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
-        ratio_xy=16/9, scale_y=2160).save("RdOFlago.plen", exts)
+        halflim_y=9/8, ratio_xy=16/9, scale_y=2160).save("RdOFlago.plen", exts)
     Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
-        ratio_xy=5/3,  scale_y=2160).save("RdOFlago.x5y3", exts)
+        halflim_y=9/8, ratio_xy=5/3,  scale_y=2160).save("RdOFlago.x5y3", exts)
