@@ -103,8 +103,7 @@ class Emblemo:
         scale_y: float = 270,   # 4320 for 8K resolution
         halflim_y: float = 1.,  # half of the math coord limit
         ratio_xy: float = 1.,   # x / y
-        center: tuple[float, float] = (0., 0.), # coord of center in [-1, 1]
-                                            # might be overwritten during init
+        center: None|tuple[float, float] = None, # coord of center in [-1, 1]
         colors: dict = KOLOROJ,
         # see kwargs in self.elem_metadata()
         meta_dict: None|dict[str, str] = None,
@@ -116,10 +115,9 @@ class Emblemo:
         self._scale_x: int|float = None     # will be inited with `ratio_xy`
         self._halflim_y: float = halflim_y
         self._halflim_x: float = None   # will be inited with `ratio_xy`
-        self._cx: float = None  # will be inited with `center`
-        self._cy: float = None  # will be inited with `center`
+        self._cx: None|float = None  # will be inited with `center`
+        self._cy: None|float = None  # will be inited with `center`
         self.ratio_xy = ratio_xy
-        self.center = center
         self.colors: dict[str, str] = colors.copy()
 
         self._dat = svg.SVG(
@@ -138,7 +136,9 @@ class Emblemo:
             attr = f'_set_as_{name}'
             if attr not in dir(self):
                 raise ValueError(f"Unrecognized Emblem Name '{name}'.")
-            getattr(self, attr)(**kwargs)
+            getattr(self, attr)(center=center, **kwargs)
+        
+        self._set_center(center_default=(0, 0))
 
 
 
@@ -281,11 +281,17 @@ class Emblemo:
         return self._halflim_y * 2
 
     @property
-    def center(self) -> tuple[float, float]:
+    def center(self) -> None|tuple[float, float]:
+        if self._cx is None or self._cy is None:
+            return None
         return (self._cx, self._cy)
 
     @center.setter
-    def center(self, value: tuple[float, float]):
+    def center(self, value: None|tuple[float, float]):
+        if value is None:
+            self._cx = None
+            self._cy = None
+            return
         self._cx, self._cy = value
         return
 
@@ -458,7 +464,7 @@ class Emblemo:
         return self
 
     def _draw_R(
-        self, radius=13.625/16, linewidth_fac=16/128, R_h=None, angle=None,
+        self, radius=13.875/16, linewidth_fac=18/128, R_h=None, angle=None,
         color=None, **kwargs):
         if color is None: color = self.colors['O']
         if angle is None:
@@ -475,23 +481,38 @@ class Emblemo:
 
     # set as
 
-    def _set_as_RdO(self):
+    def _set_center(
+        self,
+        center: None|tuple[float, float] = None,
+        center_default: None|tuple[float, float] = (0., 0.),
+    ):
+        """Set self.center to centerif given, otherwise set to default."""
+        if center is not None:
+            self.center = center
+        elif self.center is None and center_default is not None:
+            self.center = center_default
+        return
+
+
+
+    def _set_as_RdO(self, center:None|tuple[float, float]=None):
         """Draw the RdO emblem."""
-        self.center = (-1.25/16, 0)
+        self._set_center(center, (-1.5/16, 0))
         self._draw_RdO()
         return self
 
     def _draw_RdO(self):
         # 16/128  21/(9*16) ~ 18.667
-        self._draw_O(linewidth_fac=14/128)#, zorder=0x1001)
+        self._draw_O(linewidth_fac=16/128)#, zorder=0x1001)
         self._draw_R(angle=atan_deg(9/6))#, zorder=0x1000)
         return self
 
 
 
-    def _set_as_RdOFlago(self, **kwargs):    # plot
+    def _set_as_RdOFlago(self, center:None|tuple[float, float]=None, **kwargs):
+        # plot
         """Draw the RdO Flag."""
-        self.center = (-1.25/16, 0)
+        self._set_center(center, (-1.5/16, 0))
 
 
         # --- background
@@ -565,8 +586,9 @@ class Emblemo:
 
 
 
-    def _set_as_OCG(self):
+    def _set_as_OCG(self, center:None|tuple[float, float]=None):
         """Draw the OCG emblem."""
+        self._set_center(center)
         # --- arcs
         self._draw_O()
         self._draw_C()
@@ -581,8 +603,9 @@ class Emblemo:
 
 
 
-    def _set_as_OCR(self):
+    def _set_as_OCR(self, center:None|tuple[float, float]=None):
         """Draw the OCR emblem."""
+        self._set_center(center)
         # --- arcs
         self._draw_O()
         self._draw_C()
@@ -593,9 +616,9 @@ class Emblemo:
 
 
 
-    def _set_as_OCRR(self):
+    def _set_as_OCRR(self, center:None|tuple[float, float]=None):
         """Draw the OCRR emblem."""
-        self.center=(-3/16, 0)
+        self._set_center(center, (-3/16, 0))
         # --- arcs
         #    wid is half line width
         O_rad, O_wid = 11/16, 18/128
@@ -631,10 +654,10 @@ if __name__ == '__main__':
     Emblemo("RdO",  meta_dict=meta_dict).save(None, exts)
     exts = {'.svg', '.jpg'}    # jpg files are smaller
     Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
-        halflim_y=9/8, ratio_xy=16/9).save(None, exts)
+        halflim_y=1.0, ratio_xy=16/9).save(None, exts)
     Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
         halflim_y=1.0, ratio_xy=1/1,  scale_y=2160,).save("RdOFlago.emb", exts)
     Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
-        halflim_y=9/8, ratio_xy=16/9, scale_y=2160).save("RdOFlago.plen", exts)
+        halflim_y=1.0, ratio_xy=16/9, scale_y=2160).save("RdOFlago.plen", exts)
     Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
         halflim_y=9/8, ratio_xy=5/3,  scale_y=2160).save("RdOFlago.x5y3", exts)
