@@ -9,9 +9,11 @@
 Content
 -------------------------------------------------------------------------------
 
-### v4.0 <-- v3.0 | `2025-11-02` 
+### v4.0 <-- v3.0 | `2025-11-02`
 
 > Update for v1.3.6f1.
+> (Uploaded on 2025-11-22
+> (delayed due to asset update bug from game patch v1.3.6f1).)
 >
 > Building a hillside residential district in the Northwest.
 
