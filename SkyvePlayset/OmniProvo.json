@@ -147,7 +147,7 @@
       "Name": "Dummy Traffic Remover",
       "Version": "2",
       "LoadOrder": 28,
-      "IsEnabled": true,
+      "IsEnabled": false,
       "IsVersionLocked": false,
       "PlaysetId": 0
     },
@@ -424,17 +424,8 @@
     "80095": {
       "Id": 80095,
       "Name": "Traffic",
-      "Version": "22",
-      "LoadOrder": 128,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "82544": {
-      "Id": 82544,
-      "Name": "Seaside Valley",
       "Version": "23",
-      "LoadOrder": 130,
+      "LoadOrder": 128,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -534,6 +525,15 @@
       "Name": "Asset Icon Library",
       "Version": "20",
       "LoadOrder": 152,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "124947": {
+      "Id": 124947,
+      "Name": "Outside Traffic Adjuster",
+      "Version": "1",
+      "LoadOrder": 2147483646,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0

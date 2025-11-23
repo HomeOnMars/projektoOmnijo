@@ -29,6 +29,7 @@ cp -vr ../../CSL2_SavesDir/ModsSettings/Carto      ModsSettings/
 cp -vr ../../CSL2_SavesDir/ModsSettings/RealisticWorkplacesAndHouseholds    ModsSettings/
 cp -vr ../../CSL2_SavesDir/ModsSettings/Time2Work  ModsSettings/
 cp -vr ../../CSL2_SavesDir/ModsSettings/AdjustTransitCapacity   ModsSettings/
+cp -vr ../../CSL2_SavesDir/ModsSettings/OutsideTrafficAdjuster  ModsSettings/
 
 # Reminders
 echo; echo

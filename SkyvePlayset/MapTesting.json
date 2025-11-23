@@ -541,17 +541,8 @@
     "80095": {
       "Id": 80095,
       "Name": "Traffic",
-      "Version": "22",
-      "LoadOrder": 121,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "82544": {
-      "Id": 82544,
-      "Name": "Seaside Valley",
       "Version": "23",
-      "LoadOrder": 123,
+      "LoadOrder": 121,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -695,7 +686,7 @@
       "Id": 121812,
       "Name": "Custom Chirps",
       "Version": "5",
-      "LoadOrder": 2147483635,
+      "LoadOrder": 2147483634,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -704,7 +695,7 @@
       "Id": 99048,
       "Name": "Resource Locator",
       "Version": "16",
-      "LoadOrder": 2147483636,
+      "LoadOrder": 2147483635,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -713,7 +704,7 @@
       "Id": 90794,
       "Name": "Tigon's Rail Infrastructure Pack",
       "Version": "14",
-      "LoadOrder": 2147483637,
+      "LoadOrder": 2147483636,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -722,7 +713,7 @@
       "Id": 107591,
       "Name": "Modular Service Blocks",
       "Version": "5",
-      "LoadOrder": 2147483638,
+      "LoadOrder": 2147483637,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -731,7 +722,7 @@
       "Id": 122865,
       "Name": "Road Wear Toggler",
       "Version": "2",
-      "LoadOrder": 2147483639,
+      "LoadOrder": 2147483638,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -740,7 +731,7 @@
       "Id": 77260,
       "Name": "Water Visual Tweaks",
       "Version": "10",
-      "LoadOrder": 2147483641,
+      "LoadOrder": 2147483640,
       "IsEnabled": false,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -749,7 +740,7 @@
       "Id": 121226,
       "Name": "[BETA] Realistic PathFinding",
       "Version": "14",
-      "LoadOrder": 2147483642,
+      "LoadOrder": 2147483641,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -758,7 +749,7 @@
       "Id": 123738,
       "Name": "Adjust Transit Capacity",
       "Version": "10",
-      "LoadOrder": 2147483643,
+      "LoadOrder": 2147483642,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -767,7 +758,7 @@
       "Id": 76662,
       "Name": "Cim Route Highlighter",
       "Version": "23",
-      "LoadOrder": 2147483645,
+      "LoadOrder": 2147483644,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -776,6 +767,15 @@
       "Id": 124553,
       "Name": "La Clock (Show System Time)",
       "Version": "5",
+      "LoadOrder": 2147483645,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "124947": {
+      "Id": 124947,
+      "Name": "Outside Traffic Adjuster",
+      "Version": "1",
       "LoadOrder": 2147483646,
       "IsEnabled": true,
       "IsVersionLocked": false,

@@ -361,7 +361,7 @@
     "80095": {
       "Id": 80095,
       "Name": "Traffic",
-      "Version": "22",
+      "Version": "23",
       "LoadOrder": 123,
       "IsEnabled": true,
       "IsVersionLocked": false,

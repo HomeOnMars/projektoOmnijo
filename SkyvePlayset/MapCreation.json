@@ -136,17 +136,8 @@
     "80095": {
       "Id": 80095,
       "Name": "Traffic",
-      "Version": "22",
-      "LoadOrder": 128,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "82544": {
-      "Id": 82544,
-      "Name": "Seaside Valley",
       "Version": "23",
-      "LoadOrder": 130,
+      "LoadOrder": 128,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0

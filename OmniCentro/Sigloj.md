@@ -275,6 +275,7 @@ Using the leading digit for identifying districts and areas:
 | Stacidomo                | Station (Building)       |
 | Kargotrajna Terminalo    | Cargo Train Terminal     |
 | Parkejo                  | Parking Lot              |
+| Bicikla Parkejo          | Bike Parking Lot         |
 |||
 | Bazlernejo / ***Bl***    | Elementary School        |
 | Mezlernejo / ***Ml***    | High School / Middle School |
