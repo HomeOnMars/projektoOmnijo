@@ -49,16 +49,17 @@ $\approx 2^{17_D} \  \textrm{km}^2$
 $\approx 132 \  000_D \  \textrm{km}^2$
 [^Bulteno-Loko-2].
 The island is incredibly remote and geographically isolated,
-with the closest land being *Antarctica* \~Hx400 JU (\~Dx2100 km) away,
-second closest being *New Zealand* \~Hx700 JU (\~Dx3600 km) away,
-and third closest being *Chile* \~Hx800 JU (\~Dx4100 km) away.
+with the closest land being *Antarctica* \~ 4 MU (\~Dx2100 km) away,
+second closest being *New Zealand* \~ 7 MU (\~Dx3600 km) away,
+and third closest being *Chile* \~ 8 MU (\~Dx4100 km) away.
 
 [^Bulteno-Loko-1]: Coordinates are fictional-
   it should be open ocean there in real life.
 
-[^Bulteno-Loko-2]: Length unit JU is approximately 2km
+[^Bulteno-Loko-2]: Length unit JU is approximately 2km,
+  and 1 MU ≈ Dx256 JU ≈ Dx500 km
   (see also [Unuoj | Units](../teknikoj/Unuoj.md#longeco) page);  
-  Hx means hexadecimal
+  H for hexadecimal, and D for decimal
   (see also [Lingvo | Langauge](../teknikoj/Lingvo.md#algebro) page).
 
 For more details,
@@ -118,16 +119,15 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
   universal basic income (UBI) policy for everyone on the island.
   Did I need to do any research on its effect on the economy
   before I implementing it?
-  Did I need to justify my reasons?
-  Or answer to anyone or anything?
+  Did I need to justify my reasons, or answer to anyone or anything?
   Nope! I just go and do that, and there's no one there to stop me,
   because everyone in the cabinet is my friend.
   This is textbook dictatorship!
-  And, honestly, this absolute power feels pretty nice.
+  And, honestly, this absolute power feels pretty nice, Mwa-ha-ha\~
   Oh, and sorry for drop the news about UBI here.
   It's gonna happen starting next week. Now you know!"
   <br>…<br>
-  The public's reactions to the interview are a bit mixed.
+  The public's reactions to the interview are reported to be "mixed".
   <!-- It certainly didn't help the emigration rate,
   which experienced a small increase after the interview was aired.
   But at this point we doubt if
@@ -142,8 +142,8 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
   <span style="color:Beige">Queen Serena</span> herself
   idenfies as only a "part-time" Pastafarian, whatever that means.
 
-[^Bulteno-Religio-2]: As is the case for many other things in RdO,
-  it is often the official unofficial ones that does the load-bearing.
+[^Bulteno-Religio-2]: As is the case for many things in RdO,
+  it is often the officially unofficial ones that does the actual load-bearing.
 
 [^Bulteno-Koloroj-Flavgriza]: Beige, symbolizing the harsh unbending reality,
   where beauty and complexities hidden deep underneath.

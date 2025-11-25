@@ -364,6 +364,7 @@ See also International Phonetic Alphabet (IPA).
     for easier whole word searches in vscode.)
   - … Horizontal Ellipsis
     (Use Unicode symbol instead of three separate dots.)
+  - • Bullet
   - ≈ Approx
   - ½ Half  
     ¼ Quarter

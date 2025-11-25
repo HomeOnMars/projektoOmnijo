@@ -245,6 +245,7 @@ Using the leading digit for identifying districts and areas:
 |     |  NK  | La-P  | La-Pordego     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 |     |      |       | Sc-Rokakabo    | |
 |     |  NK  | Dt-L  | Dt-Lumturo     | |
+|     |      |       | Ĉs-OCRR        | |
 |     |      |       | Sc-Artezo      | |
 |     |      |       | Sc-Cirklado    | |
 |     |      |       | Sc-Senfinkordo | |

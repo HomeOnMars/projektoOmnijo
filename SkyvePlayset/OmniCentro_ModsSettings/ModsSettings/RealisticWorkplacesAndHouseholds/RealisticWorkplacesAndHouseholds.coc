@@ -15,6 +15,7 @@ RealisticWorkplacesAndHouseholds
     "commercial_sqm_per_worker": 64,
     "commercial_sqm_per_worker_supermarket": 128,
     "commercial_sqm_per_worker_restaurants": 32,
+    "commercial_sqm_per_worker_rec_entertainment": 192,
     "office_sqm_per_worker": 24,
     "office_non_usable_space": 32,
     "office_elevators_per_sqm": 6000,
