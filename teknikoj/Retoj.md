@@ -123,7 +123,13 @@ Arterial / Collector / Local Roads:
 
 > Bike paths
 
-- TBD
+(TBD)
+
+|             | max Gradient $s$ (Dx) | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | Notes |
+| ----------- | :-------: | :-------: | :-------: | ----------- |
+|             |   4  \%   |  -        |  -      | |
+| Recommended |   7  \%   |  -        |  -      | |
+| Hard Limit  |  15  \%   |  20 km/h  |  10 JoĜ | |
 
 #### Piedvojoj
 
