@@ -66,14 +66,14 @@ De-capitalize for lanes with inverted directions.
 
 Road name format examples:
 
-- HBA2gi
-  - pedestrain path (H) - bike (B) - 2 car lanes (A2) - central median (g) - same for the other half of the road (i)
+- HBŬ2gi
+  - pedestrain path (H) — bike (B) — 2 car lanes (Ŭ2) — central median (g) — same for the other half of the road (i)
   - Median road with bike
-- Ha2Tgi
-  - pedestrain path (H) - 2 inverted car lanes (A2) - transit lane (T) - central median (g) - same for the other half (i)
+- Hŭ2Tgi
+  - pedestrain path (H) — 2 inverted car lanes (ŭ2) — non-inverted transit lane (T) — central median (g) — same for the other half (i)
   - Median road for diverging diamond interchanges
-- HA3a2h
-  - pedestrain path (H) - 3 car lanes (A3) - 2 inverted car lanes (A2) - inverted pedestrain path (h)
+- HŬ3ŭ2h
+  - pedestrain path (H) — 3 car lanes (Ŭ3) — 2 inverted car lanes (ŭ2) — inverted pedestrain path (h)
   - Asymmetrical median road
 
 See also:
@@ -153,8 +153,9 @@ Examples:
 |    Ar   | **Ar**eo             | Area  <br>(Fallback type) |
 |    Dt   | **D**is**t**rikto    | District         |
 |    Kt   | **K**var**t**alo     | Neighbourhood  <br>(Default for what Sc names after) |
-|    Ia   | **I**ndustri**a**reo | Industrial Area  |
+|    Iz   | **I**ndustri**z**ono | Industrial Park  |
 |  ~~Hv~~ | ~~**H**a**v**eno~~   | Port  <br>(Deprecated) |
+|   Shv   | **S**ek**h**aveno    | Dry port         |
 |   Mhv   | **M**ar**h**aveno    | Seaport          |
 |   Fhv   | **F**lug**h**aveno   | Airport          |
 |   Khv   | **K**osma**h**aveno  | Space Port       |
@@ -233,10 +234,12 @@ Using the leading digit for identifying districts and areas:
 | `3` |  SR  | Mt-O  | Mt-Olivkrono   | <span style="color:DarkSeaGreen">█ #8FBC8F</span> |
 | `4` |  CK  | Me-H  | Me-Hejmeco     | <span style="color:Silver">█ #C0C0C0</span> |
 | `5` |  CK  | Is-N  | Is-Niksino     | |
-| `6` |  CC  | Mt-H  | Mt-Hejmeco     | |
-| `7` |  CC  | Am-F  | Am-Fortiko     | |
+|     |      | Bs-N  | Bs-Niksino     | |
+| `6` |  CC  | Am-F  | Am-Fortiko     | |
+| `7` |  CC  | Mt-H  | Mt-Hejmeco     | |
 | `8` |  CR  | Mt-E  | Mt-Espero      | |
 | `9` |  CC  | La-S  | La-Singulariso  <br>Royal Palace (TBD)  | <span style="color:Beige">█ #F5F5DC</span> |
+|     |  CC  | Iz-Ĉ  | Iz-Ĉevaleto    | |
 | `Δ` |  NK  | Mt-F  | Mt-Fortiko     | <span style="color:MediumPurple">█ #9370DB</span> |
 |     |  NK  | Vd-F  | Vd-Fortiko     | <span style="color:#D6B4FC">█ #D6B4FC</span> |
 | `λ` |  NC  | Am-U  | Am-Unukorno    | <span style="color:Thistle">█ #D8BFD8</span> |
@@ -304,6 +307,7 @@ Using the leading digit for identifying districts and areas:
 | Farmo                    | Farm                     |
 | \- Fiŝbredejo            | Fish Farm                |
 | \- Fiŝkaptado            | Fishery                  |
+| Plantejo                 | Forestry Plantation      |
 | Minejo                   | Mine                     |
 | \- Ŝtono                 | \- Stone                 |
 | \- Karbo                 | \- Coal                  |

@@ -25,6 +25,7 @@ cp -v ../../CSL2_SavesDir/AllAboard.coc  ./
 cp -v ../../CSL2_SavesDir/Plop\ the\ Growables.coc  ./
 cp -v ../../CSL2_SavesDir/RealLife.coc ./
 cp -v ../../CSL2_SavesDir/RealPop.coc  ./
+cp -v ../../CSL2_SavesDir/RoadVisualTweaks.coc  ./
 cp -vr ../../CSL2_SavesDir/ModsSettings/Carto      ModsSettings/
 cp -vr ../../CSL2_SavesDir/ModsSettings/RealisticWorkplacesAndHouseholds    ModsSettings/
 cp -vr ../../CSL2_SavesDir/ModsSettings/Time2Work  ModsSettings/

@@ -99,7 +99,7 @@ Changes of Esperanto++ (*Epopo*) from Esperanto include:
 
 - Officially eliminated `Ĥ` from the *Epopo* alphabet
   (mostly replaced with `K`);
-- Adding `Q` (Qi-), `X` (Xi-), `Ʌ` (-ü) for more diverse sounds,
+- Added `Q` (Qi-), `X` (Xi-), `Ʌ` (-ü) for more diverse sounds,
   inspired by [pinyin](https://en.wikipedia.org/wiki/Pinyin).  
   No words from *Epopo* are using those three letters yet;
   for now they are only used in naming.
@@ -110,7 +110,7 @@ Changes of Esperanto++ (*Epopo*) from Esperanto include:
 - 'ĈɅ' and 'QɅ' could also sound similar.
   In this case, avoid using 'ĈɅ' and replace them with 'QɅ'.
 - Avoid putting 'C', 'G', 'J', 'S' in front of 'X' to avoid confusion
-  with the 'X' system.
+  with the [*x*-system](#x-sistemo).
 - Total *Epopo* alphabet: 30 letters.
   - vs Esperanto: 1 letters less (no Ĥ) and 3 letters more (QɅX)
   - vs English:  2 letters less (no WY) and 6 letters more (ŬɅĈĜĴŜ)
@@ -121,6 +121,15 @@ Changes of Esperanto++ (*Epopo*) from Esperanto include:
     `abcdefghijklmnopqrstuvŭxʌzĉĝĵŝ`  
     `0123456789ΔλΠΣΥΨ`  
     ``\{|}~`^@[]:;<=>?_!"#$%&'()*+ⅎ-—/ ‐.,``
+
+#### x-sistemo
+
+> `x`-system
+
+- Similar to the [x-system](https://en.wikipedia.org/wiki/Substitutions_of_the_Esperanto_alphabet#X-system) in Esperanto,
+  *Epopo* appends *x* to *CGJS*
+  to represent accented letters when forced to operate within ASCII systems.
+- However, *Ŭ* is simply replaced by *W*, and *Ʌ* by *Y*.
 
 #### Elparolo
 
@@ -190,15 +199,6 @@ See also International Phonetic Alphabet (IPA).
   | ʌn  | -ün    | |
 
 </details>
-
-#### x-sistemo
-
-> `x`-system
-
-- Similar to the [x-system](https://en.wikipedia.org/wiki/Substitutions_of_the_Esperanto_alphabet#X-system) in Esperanto,
-  *Epopo* appends *x* to *CGJS*
-  to represent accented letters when forced to operate within ASCII systems.
-- However, *Ŭ* is simply replaced by *W*, and *Ʌ* by *Y*.
 
 ### Algebro
 
