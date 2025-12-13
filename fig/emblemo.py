@@ -48,6 +48,7 @@ KOLOROJ : dict[str, str] = {
     # see also: <https://xkcd.com/color/rgb/>
     'O' : '#E6DAA6',  # Beige  E6DAA6 / Gold  FFD700 / Silver  C0C0C0
     'C' : '#00BFFF',  # Blue
+    'D' : '#D2691E',  # Orange
     'G' : '#9370DB',  # Purple
     'R' : '#5E9B8A',  # Green
     'x0': '#B7E1A1',  # ^ light grey green  B7E1A1 / beige  E6DAA6
@@ -586,6 +587,42 @@ class Emblemo:
 
 
 
+    def _set_as_OCFD(self, center:None|tuple[float, float]=None):
+        """Draw the OCFD emblem."""
+        self._set_center(center)
+
+        linewidth_fac: float = 16/128
+        radius: float = 10/16
+        color  : None = self.colors['D']
+        fill   : None|str = 'none'
+        kwargs = {}
+
+        angle  : float = atan_deg(8/6) # 60    # in deg
+
+        h = radius * cos_deg(angle)
+        r = radius
+        y0 = 3/256
+        stroke_width = self._r(linewidth_fac)
+
+        self.draw(svg.Path(d=[
+                svg.MoveTo(self._x(h*(6/9)), self._y(y0+h)),
+                svg.LineTo(self._x(-r*sin_deg(angle)), self._y(y0+h)),
+                svg.LineTo(self._x(0),  self._y(y0-radius)),
+                svg.LineTo(self._x( r*sin_deg(angle)), self._y(y0+h)),
+                svg.LineTo(
+                    self._x((r-linewidth_fac/4)*sin_deg(angle)), self._y(y0+h)),
+                svg.LineTo(
+                    self._x((-linewidth_fac/4)*sin_deg(angle)),
+                    self._y(y0-radius)),
+            ],
+            stroke=color, stroke_width=stroke_width, fill=fill,
+            **kwargs))
+        # self._draw_O(linewidth_fac=16/128)
+
+        return self
+
+
+
     def _set_as_OCG(self, center:None|tuple[float, float]=None):
         """Draw the OCG emblem."""
         self._set_center(center)
@@ -641,23 +678,35 @@ class Emblemo:
 
 if __name__ == '__main__':
 
+    redraw_all: bool = False
+    debug: bool = True
     meta_dict = {
         'creator': "HomeOnMars",
         'license': 'CC BY-NC-SA 4.0',
     }
     RdOFlagoTitle = "La Regno de Omnijo (RdO) flag (fictional) for my world-building project"
-
     exts = {'.svg', '.png'}    # png files support transparent background
-    Emblemo("OCG",  meta_dict=meta_dict).save(None, exts)
-    Emblemo("OCR",  meta_dict=meta_dict).save(None, exts)
-    Emblemo("OCRR", meta_dict=meta_dict).save(None, exts)
-    Emblemo("RdO",  meta_dict=meta_dict).save(None, exts)
-    exts = {'.svg', '.jpg'}    # jpg files are smaller
-    Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
-        halflim_y=1.0, ratio_xy=16/9).save(None, exts)
-    Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
-        halflim_y=1.0, ratio_xy=1/1,  scale_y=2160,).save("RdOFlago.emb", exts)
-    Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
-        halflim_y=1.0, ratio_xy=16/9, scale_y=2160).save("RdOFlago.plen", exts)
-    Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
-        halflim_y=9/8, ratio_xy=5/3,  scale_y=2160).save("RdOFlago.x5y3", exts)
+
+    if redraw_all:
+        Emblemo("OCFD",  meta_dict=meta_dict).save(None, exts)
+        Emblemo("OCG",  meta_dict=meta_dict).save(None, exts)
+        Emblemo("OCR",  meta_dict=meta_dict).save(None, exts)
+        Emblemo("OCRR", meta_dict=meta_dict).save(None, exts)
+        Emblemo("RdO",  meta_dict=meta_dict).save(None, exts)
+        exts = {'.svg', '.jpg'}    # jpg files are smaller
+        Emblemo("RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
+            halflim_y=1.0, ratio_xy=16/9).save(None, exts)
+        Emblemo(
+            "RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
+            halflim_y=1.0, ratio_xy=1/1,  scale_y=2160,
+            ).save("RdOFlago.emb", exts)
+        Emblemo(
+            "RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
+            halflim_y=1.0, ratio_xy=16/9, scale_y=2160
+            ).save("RdOFlago.plen", exts)
+        Emblemo(
+            "RdOFlago", meta_dict=meta_dict, title=RdOFlagoTitle,
+            halflim_y=9/8, ratio_xy=5/3,  scale_y=2160
+            ).save("RdOFlago.x5y3", exts)
+    if debug:
+        pass

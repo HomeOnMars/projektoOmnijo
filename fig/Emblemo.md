@@ -45,6 +45,9 @@ Here are the emblem designs for the acronyms listed in [Background Bulletin](../
 | OCG  | ![OCG](OCG.svg)   | Was it supposed to be a clock with [minutes Ĉ and hours Ĝ](../teknikoj/Unuoj.md#tempo) symbols inside? Or was there something else? Either way, <span style="color:Beige">Ŝia Reĝina Moŝto</span> is quite happy about it. Rock on! |
 | OCR  | ![OCR](OCR.svg)   | A maze-like symbol for the maze-like bureaucratic apparatus, with easy access enabled by smart technologies, where all government services are personalized for each citizen, handled in the official app with the same logo |
 | OCRR | ![OCRR](OCRR.svg) | Tune in to the radio with this symbol in classic dials style! |
+||||
+| OCFD | ![OCFD](OCFD.svg) | Defence Department's sigil. Full of *sharp* edges. |
+||||
 
 [^Emblemo-RdOFlago]: The official flag
   of the fictional island monarchy la Regno de Omnijo (RdO).  
