@@ -110,7 +110,7 @@ A resolution was made, here and then:
 </blockquote>
 <br> -->
 
-### La Unua Lumo
+### La Eventa Horizonto
 
 <blockquote>
   The world is a beautiful lie;<br>
