@@ -71,14 +71,14 @@ HX_SYMBOLS_INV_DICT = {
 }
 HX_SYMBOLS_INV_DICT['ASCII'] = {
     HX_SYMBOLS_DICT['ASCII'][k]: k
-    for k in '0123456789ABCDEF'
+    for k in '0123456789ABCZYW'
 }
 HX_SYMBOLS_INV = HX_SYMBOLS_INV_DICT['ONKIO']
 
 # base 0x20
 TX_SYMBOLS_DICT : dict[str, dict[str, int]] = {
-    'ASCII': {k: i for i, k in enumerate('0123456789ABCZYWQDEFGHJKMNPRSTVX')},
-    'ONKIO': {k: i for i, k in enumerate('0123456789ΔλΠΣΥΨĈDEFGHJKMNPRŜTŬX')},
+    'ASCII': {k: i for i, k in enumerate('0123456789ABCZYWDEFGHJKMNPQRSTUX')},
+    'ONKIO': {k: i for i, k in enumerate('0123456789ΔλΠΣΥΨĈEFGHJKMNPQRŜTUX')},
 }
 TX_SYMBOLS = TX_SYMBOLS_DICT['ASCII'] | TX_SYMBOLS_DICT['ONKIO']
 TX_SYMBOLS_INV_DICT = {
@@ -87,7 +87,43 @@ TX_SYMBOLS_INV_DICT = {
 }
 TX_SYMBOLS_INV = TX_SYMBOLS_INV_DICT['ONKIO']
 
-# translate Epopo characters to ASCII characters using x notation
+# base 0x40
+RX_SYMBOLS_DICT : dict[str, dict[str, int]] = {
+    'ASCII': {
+        k: i for i, k in enumerate(
+            '0123456789ABCZYW'
+            '_!|#$%^@()*+;-=?'
+            ' abcdefghijklmno'
+            'pqrstuvwxyz~`[].'
+        )
+    },
+    'ONKIO': {
+        k: i for i, k in enumerate(
+            '0123456789ΔλΠΣΥΨ'
+            '_!|#$%^@()*+;-=?'
+            ' abcdefghijklmno'
+            'pqrstuvŭxʌzĉĝĵŝ.'
+        )
+    },
+}
+RX_SYMBOLS = RX_SYMBOLS_DICT['ASCII'] | RX_SYMBOLS_DICT['ONKIO']
+RX_SYMBOLS_INV_DICT = {
+    c: {v: k for k, v in RX_SYMBOLS_DICT[c].items()}
+    for c in {'ASCII', 'ONKIO'}
+}
+RX_SYMBOLS_INV = RX_SYMBOLS_INV_DICT['ONKIO']
+
+ALL_SYMBOLS_DICT = {
+    chrset: (
+        TX_SYMBOLS_DICT[chrset] |
+        RX_SYMBOLS_DICT[chrset]
+    )
+    for chrset in TX_SYMBOLS_DICT
+}
+
+
+
+# translate Epopo characters to ASCII characters using x-system
 ASCIIIFY_CHR = {
     'Ĉ': 'Cx','ĉ': 'cx',
     'Ĝ': 'Gx','ĝ': 'gx',
@@ -115,7 +151,7 @@ def Hx(
     symbols: dict = HX_SYMBOLS,
     d_sep = '.',
     k_seps = " ,",
-    e_sep = 'p',
+    e_sep = 'ⅎ',    #'p'
 ) -> float:
     """Convert Hexadecimal str to float.
 
@@ -173,6 +209,13 @@ def Tx(n:str, symbols:dict=TX_SYMBOLS, **kwargs) -> float:
     """
     return Hx(n, base=0x20, symbols=symbols, **kwargs)
 
+def Rx(n:str, symbols:dict=RX_SYMBOLS, **kwargs) -> float:
+    """Convert Base Dx64 str to float.
+    
+    See Hx() for more info.
+    """
+    return Hx(n, base=0x40, symbols=symbols, **kwargs)
+
 
 
 def presi_Hx(
@@ -182,20 +225,21 @@ def presi_Hx(
     base: int = 0x10,
     symbols_inv: dict = HX_SYMBOLS_INV,
     d_sep: str = '.',
-    e_sep: None|str = None, # 'p',
+    e_sep: None|str = None, # 'ⅎ',
     plus_sign: str = "",
     prefix: None|str = None,
+    prefix_default: str = 'Hx ',
     **kwargs,
 ) -> str:
     """Convert Hexadecimal float to str.
 
-    To output without p-notation, set e_sep=''
+    To output without ⅎ-notation, set e_sep=''
 
     Warning: last digit may be an underestimate
     Warning: NOT suitable for long large integers when e_sep=''
 
-    with p-notation (e_sep='p'), max supported numbers are about ~'F.FFFF FFFF FF pFF'
-        min ~'1p-10C'
+    with ⅎ-notation (e_sep='ⅎ'), max supported numbers are about ~'F.FFFF FFFF FF ⅎFF'
+        min ~'1ⅎ-10C'
     
     sc: signifaj ciferoj, or significant digits
 
@@ -203,20 +247,23 @@ def presi_Hx(
 
     e_sep: exponent separator.
         if None, will use '' if the number is close to 1,
-        'p' if the number is very large or small.
+        'ⅎ' if the number is very large or small.
 
     plus_sign: str
         set it to "+" to add plus sign when n is not negative
 
     prefix: prefix string for output
-        if None, will use 'Hx ' if n is astropy units, else ''.
+    prefix_default: str
+        if None, will use `prefix_default` if n is astropy units, else ''.
+
     """
     
     # init and checks
 
     if sc < 1: raise ValueError("Significant digits 'sc' must >= 1.")
 
-    if prefix is None: prefix = 'Hx ' if isinstance(n, units.Quantity) else ''
+    if prefix is None:
+        prefix = prefix_default if isinstance(n, units.Quantity) else ''
 
     if isinstance(n, units.Quantity):
         ans_v = presi_Hx(
@@ -231,7 +278,7 @@ def presi_Hx(
         return (
             f"{prefix}{plus_sign}0{e_sep}+0" if e_sep
             else f"{prefix}{plus_sign}0")
-    if e_sep is None: e_sep = 'p' if n < 0x10**(-4) or n > 16**4 else ''
+    if e_sep is None: e_sep = 'ⅎ' if n < 0x10**(-4) or n > 16**4 else ''
     base = np.float64(base)
     log2_base = np.log2(base)
     # grandordo = order of magnitude
@@ -266,7 +313,8 @@ def presi_Hx(
 
 def presi_Tx(
     n: float|units.Quantity,
-    prefix: str = 'Tx ',
+    prefix_default: str = 'Tx ',
+    e_sep: None|str = '', # 'ⅎ',
     symbols_inv:dict=TX_SYMBOLS_INV,
     **kwargs,
 ) -> str:
@@ -275,8 +323,23 @@ def presi_Tx(
     See presi_Hx() for more info.
     """
     return presi_Hx(
-        n, base=0x20, prefix=prefix, symbols_inv=symbols_inv, **kwargs)
+        n, base=0x20, prefix_default=prefix_default, symbols_inv=symbols_inv,
+        e_sep=e_sep, **kwargs)
 
+def presi_Rx(
+    n: float|units.Quantity,
+    prefix_default: str = 'Rx ',
+    symbols_inv:dict=RX_SYMBOLS_INV,
+    e_sep: None|str = '', # 'ⅎ',
+    **kwargs,
+) -> str:
+    """Convert Base Dx64 float to str.
+
+    See presi_Hx() for more info.
+    """
+    return presi_Hx(
+        n, base=0x40, prefix_default=prefix_default, symbols_inv=symbols_inv,
+        e_sep=e_sep, **kwargs)
 
 
 
@@ -1221,6 +1284,9 @@ LOKOJ['RdO'] = LOKOJ['OC']
 
 
 if __name__ == '__main__':
+
+    import onkio; ONKIO = onkio.ONKIO()
+
     # temperature reference points
     temp_refs_C = [0., 22.85, 36.85, 100.] * units.deg_C
     temp_refs_K = temp_refs_C.to(units.K, equivalencies=units.equivalencies.temperature())
@@ -1254,17 +1320,32 @@ if __name__ == '__main__':
     u.enable()
     print("Pass.")
 
-    print("\nTesting Hx and Tx Symbols integrity...", end='')
+    print("\nTesting Hx/Tx/Rx Symbols integrity...", end='')
     assert not set('-#\'\"').intersection(set(HX_SYMBOLS.keys()))
     assert not set('-#\'\"').intersection(set(TX_SYMBOLS.keys()))
-    for c, ss in HX_SYMBOLS_INV_DICT.items():
+    # cs: char set; ss: str dict;
+    for cs, ss in HX_SYMBOLS_INV_DICT.items():
         for i in range(0x10):
             assert i in ss
-            assert ss[i] in HX_SYMBOLS_DICT[c]
-    for c, ss in TX_SYMBOLS_INV_DICT.items():
+            assert ss[i] in HX_SYMBOLS_DICT[cs]
+    for cs, ss in TX_SYMBOLS_INV_DICT.items():
         for i in range(0x20):
             assert i in ss
-            assert ss[i] in TX_SYMBOLS_DICT[c]
+            assert ss[i] in TX_SYMBOLS_DICT[cs]
+    for cs, ss in RX_SYMBOLS_INV_DICT.items():
+        for i in range(0x40):
+            assert i in ss
+            assert ss[i] in RX_SYMBOLS_DICT[cs]
+    for ck in range(0x61, 0x7F):
+        assert ONKIO[ck] in RX_SYMBOLS
+        assert RX_SYMBOLS[ONKIO[ck]] == ck-0x40
+    for cs, d in ALL_SYMBOLS_DICT.items():
+        for s, c in d.items():
+            if s in TX_SYMBOLS_DICT[cs]:
+                assert c == TX_SYMBOLS_DICT[cs][s], f"{cs=}, {c=}, {s=}, {TX_SYMBOLS_DICT[cs][s]=}"
+            if s in RX_SYMBOLS_DICT[cs]:
+                assert c == RX_SYMBOLS_DICT[cs][s], f"{cs=}, {c=}, {s=}, {RX_SYMBOLS_DICT[cs][s]=}"
+
     print("Pass.")
 
     print("\nTesting presi_Hx()...", end='')
@@ -1284,9 +1365,9 @@ if __name__ == '__main__':
         f"{LOKOJ['Nul'].get_posxkodo() = }")
     print(f"\tOC postcode: {LOKOJ['OC'].get_posxkodo() = }")
     assert TeraLoko.normalize_posxkodo(
-        LOKOJ['Nul'].get_posxkodo()) == '4M00000000Ŝ' # '4M000-0000-0000Ŝ'
+        LOKOJ['Nul'].get_posxkodo()) == '4N00000000Ŝ' # '4N000-0000-0Ŝ'
     assert TeraLoko.normalize_posxkodo(
-        LOKOJ['OC' ].get_posxkodo()) == 'Δ74D9M4TRΥD' # 'Δ74D9-M4TR-Υ000D'
+        LOKOJ['OC' ].get_posxkodo()) == 'Δ74E9N4TRΥE' # 'Δ74E9-N4TR-ΥE'
     def assert_loko(lat, lon, alt):
         loko = TeraLoko(lat=lat, lon=lon, alt=alt)
         p1 = loko.get_posxkodo()

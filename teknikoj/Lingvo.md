@@ -204,108 +204,154 @@ See also International Phonetic Alphabet (IPA).
 
 > Algebra
 
-- Decimal separator in *Epopo* is `.` instead of `,`;<br>
-  Thousands separator (decimal) / ten-thousands separator (hexadecimal) is
-  space(` `) instead of `.`;<!-- markdownlint-disable-line no-space-in-code -->
-- **Ordinal numerals start from 0th** instead of 1st.  
-  - This is akin to how numbers in arrays or sequences are referenced to
-    in most modern computer codes like C or python.
-    The value of ordinal number now refers to
-    the cardinal number of things coming before it.  
-  - Examples
-    - Floors start from 0th floor (ground level).
-    - In a competition, the winner is 0th, and 1st comes after.
-  - Cardinal numbers are not affected.
-    - Example:
-      2 people entered a room,
-      the 0th person going in is a man, and
-      the 1st person going in is a woman.
-    - When getting the total number from counting,
-      add one to the last ordinal number counted,
-      like one would do in programing.  
-      Example: 0th apple, 1st, 2nd, 3rd. There are 4 apples in the basket.
-- Marking numbers as decimal ('Dekuma') or hexadecimal ('Hekuma'):
-  - Dekuma  (base Dx10): prefixing `Dx`, or add a subscript $?_D$;
-  - Hekuma  (base Dx16): prefixing `Hx`, or add a subscript $?_H$;
-  - Trekuma (base Dx32): prefixing `Tx`, or add a subscript $?_T$;
-- Built-in support for ***hexadecimal*** algebra:
-  - `Δ λ Π Σ Υ Ψ` written/pronounced as `del lom nak sig gan fus`;
-  - `hek`    (H) for Dx           16 (= 2^Dx4,  or Hx          10);
-  - `jent`   (J) for Dx          256 (= 2^Dx8,  or Hx         100);
-  - `gil`    (G) for Dx        4 096 (= 2^Dx12, or Hx        1000);
-  - `muni`   (M) for Dx       65 536 (= 2^Dx16 = Dx65536^1, or Hx      1 0000);
-  - `duni`   (D) for Dx4 294 967 296 (= 2^Dx32 = Dx65536^2, or Hx 1 0000 0000);
-  - `trini`  (T) for Dx65536^3 (= Hx10000^3 = 1pΠ);
-  - `hekni`  (I) for Dx65536^Dx16 (= Hx10000^Hx10 = 1p40,
-    or approximately 1.158e77);
-  - ~~`heknia muni` for Dx65536^Dx17 (= Hx10000^Hx11 = 1p44 ≈ 7.59e81 );~~
-    - Warning:
-      This way to say extremely large numbers is **deprecated**
-      and only listed here for technical completion reasons,
-      since it would be very wordy for larger numbers such as
-      `kvarnia gilnia trinia jentnia dunia heknia muni` (Hx10000^Hx4321).  
-      **It is recommended to use instead `p`-notation**
-      **for extremely large or extremely small numbers.**
-  - `hekon`  (h) for   1/Dx16 (1p-1);
-  - `jenton` (j) for  1/Dx256 (1p-2);
-  - `gilon`  (g) for 1/Dx4096 (1p-3);
-  - `munion` (m) for 1/Dx65536 (1p-4);
-  - `dunion` (d) for 1/Dx65536^2 (1p-8);
-  - `trinion` (t) for 1p-Π;
-  - `heknion` (i) for 1p-40;
-  - ~~`hekniona munion` for 1p-44;~~
-    - Warning: **Deprecated** for the same reason as above.
-      use `p`-notation instead for extremely large or small numbers.
-  - etc. etc.
-  - When saying numbers with more than one word,
-    add `da` between them and the things they describe.  
-    (This is to differentiate cases between e.g.
-    ~~`jent du hekutroj`~~ (Hx1020U) and ~~`jent duhek utroj`~~ (Hx120U).)  
-    E.g.
-    - `jent duhek da utroj` to express Hx120U (=Dx288U);
-    - `jent du da hekutroj` to express Hx1020U (=Dx4128U);
-    - `jent utroj` (or 'unu jentutro') to express Hx100U (=Dx256U).
-  - As a reference,
-    Dx 9 100 000 000 people = Hx 2 1Υ66 Ψλ00 homoj,
-    pronounced as
-    `du duni, gil ganjent seshek ses muni, fusgil lomjent da homoj`.
-  - About `-o` suffix:  
-    `du muni da utroj` (and `du muniutroj`) is the acceptable way
-    of saying Dx 131 072 U;  
-    ~~`du munioj da utroj`~~ (like in Esperanto) is **deprecated** in *Epopo*.  
-    Do not add `-o` suffix for numbers.
-    Numbers are not nouns in Epopo. They are special.
-  - Also you can just say `du muniutroj` directly, as 1 MU = Dx65536 U.
-  - For fractions, add `-on` like in Esperanto. E.g. `munionutro`.
-  - For prefix shorthands,
-    always use no-hat capital letters for numbers \> 1
-    (e.g. H for Hx10 and J for Hx100 etc.)
-    and no-hat lowercase for numbers \< 1
-    (e.g. h for Hx0.1 and j for Hx0.01 etc.)
-  - For full list of prefix shorthands,
-    see `u_rdo_prefixes` `dict` in [unuoj.py](unuoj.py) file.
-  - Unit names must not start with `O`.
-    This is both to avoid confusion with 0 and with `-on` prefix suffix.
-  - For units shorthands (letter-based),
-    always use capital letter (hat or not) as the first letter,
-    and lowercase for the following letters.
-    This helps to differentiate between
-    the units part and prefix part of the shorthands.
-    E.g. [*Lu*](Unuoj.md#potenco) would be a unit by itself,
-    while *LU* would indicate the prefix 'L' (=1p38≈2.7e67)
-    combined with the unit [*U*](Unuoj.md#longeco).
-  - Always use letter-based unit symbols for base units
-    such as length ('U'), mass ('P'), time ('Ŝ'), etc.
-- `p`-notation:
-  - Similar to the [`e`-notation](https://en.wikipedia.org/wiki/Scientific_notation#E_notation)
-    of the decimal system, except **both sides of `p` are hexadecimal**.
-  - `p` must be lower case for better visibility,
-    i.e. easier to tell it from the numbers.
-    `p` is chosen over `h` or other letters for exactly this reason.
-  - E.g., `Hx 7 89Δλ ΠΣΥΨ 0000` can be shortened
-    as `7.89ΔλΠΣΥΨp+Π` or `7.89ΔλΠΣΥΨpΠ`;
-  - Pronunciation:
-    TBD.
+#### Apartigiloj
+
+> Separators
+
+Decimal separator in *Epopo* is `.` instead of `,`.
+
+Thousands separator (decimal) / ten-thousands separator (hexadecimal) is
+space(` `) instead of `.`.<!-- markdownlint-disable-line no-space-in-code -->
+
+#### Ordaj numeraloj
+
+> Ordinal numerals
+
+**Ordinal numerals start from 0th** instead of 1st.
+
+- This is akin to how numbers in arrays or sequences are referenced to
+  in most modern computer codes like C or python.
+  The value of ordinal number now refers to
+  the cardinal number of things coming before it.  
+- Examples
+  - Floors start from 0th floor (ground level).
+  - In a competition, the winner is 0th, and 1st comes after.
+- Cardinal numbers are not affected.
+  - Example:
+    2 people entered a room,
+    the 0th person going in is a man, and
+    the 1st person going in is a woman.
+  - When getting the total number from counting,
+    add one to the last ordinal number counted,
+    like one would do in programing.  
+    Example: 0th apple, 1st, 2nd, 3rd. There are 4 apples in the basket.
+
+#### Hekuma nombrosistemo
+
+> Hexadecimal number system
+
+Marking numbers as decimal ('Dekuma') or hexadecimal ('Hekuma'):
+
+- Dekuma  (base Dx10): prefixing `Dx`, or add a subscript $?_D$;
+- Hekuma  (base Dx16): prefixing `Hx`, or add a subscript $?_H$;
+- Trekuma (base Dx32): prefixing `Tx`, or add a subscript $?_T$;
+
+Built-in support for **hexadecimal algebra**:
+
+- `Δ λ Π Σ Υ Ψ` written/pronounced as `del lom nak sig gan fus`;
+- `hek`    (H) for Dx           16 (= 2^Dx4,  or Hx          10);
+- `jent`   (J) for Dx          256 (= 2^Dx8,  or Hx         100);
+- `gil`    (G) for Dx        4 096 (= 2^Dx12, or Hx        1000);
+- `muni`   (M) for Dx       65 536 (= 2^Dx16 = Dx65536^1, or Hx      1 0000);
+- `duni`   (D) for Dx4 294 967 296 (= 2^Dx32 = Dx65536^2, or Hx 1 0000 0000);
+- `trini`  (T) for Dx65536^3 (= Hx10000^3 = 1pΠ);
+- `hekni`  (I) for Dx65536^Dx16 (= Hx10000^Hx10 = 1p40,
+  or approximately 1.158e77);
+- ~~`heknia muni` for Dx65536^Dx17 (= Hx10000^Hx11 = 1p44 ≈ 7.59e81 );~~
+  - Warning:
+    This way to say extremely large numbers is **deprecated**
+    and only listed here for technical completion reasons,
+    since it would be very wordy for larger numbers such as
+    `kvarnia gilnia trinia jentnia dunia heknia muni` (Hx10000^Hx4321).  
+    **It is recommended to use instead [`ⅎ`-notation](#scienca-notacio)**
+    **for extremely large or extremely small numbers.**
+- `hekon`  (h) for   1/Dx16 (1p-1);
+- `jenton` (j) for  1/Dx256 (1p-2);
+- `gilon`  (g) for 1/Dx4096 (1p-3);
+- `munion` (m) for 1/Dx65536 (1p-4);
+- `dunion` (d) for 1/Dx65536^2 (1p-8);
+- `trinion` (t) for 1p-Π;
+- `heknion` (i) for 1p-40;
+- ~~`hekniona munion` for 1p-44;~~
+  - Warning: **Deprecated** for the same reason as above.
+    use [`ⅎ`-notation](#scienca-notacio) instead for extremely large or small numbers.
+- etc. etc.
+- Unlike in Esperanto, in Epopo please do write numbers together for `gil`:
+  E.g. `trigil`, not `tri gil`. This is done for regularity's sake.
+  Only separate the two on `muni` or higher level.
+- When saying numbers with more than one word,
+  add `da` between them and the things they describe.  
+  (This is to differentiate cases between e.g.
+  ~~`jent du hekutroj`~~ (Hx1020U) and ~~`jent duhek utroj`~~ (Hx120U).)  
+  E.g.
+  - `jent duhek da utroj` to express Hx120U (=Dx288U);
+  - `jent du da hekutroj` to express Hx1020U (=Dx4128U);
+  - `jent utroj` (or 'unu jentutro') to express Hx100U (=Dx256U).
+- As a reference,
+  Dx 9 100 000 000 people = Hx 2 1Υ66 Ψλ00 homoj,
+  pronounced as
+  `du duni, gil ganjent seshek ses muni, fusgil lomjent da homoj`.
+- About `-o` suffix:  
+  `du muni da utroj` (and `du muniutroj`) is the acceptable way
+  of saying Dx 131 072 U;  
+  ~~`du munioj da utroj`~~ (like in Esperanto) is **deprecated** in *Epopo*.  
+  Do not add `-o` suffix for numbers.
+  Numbers are not nouns in Epopo. They are special.
+- Also you can just say `du muniutroj` directly, as 1 MU = Dx65536 U.
+- For fractions, add `-on` like in Esperanto. E.g. `munionutro`.
+- For prefix shorthands,
+  always use no-hat capital letters for numbers \> 1
+  (e.g. H for Hx10 and J for Hx100 etc.)
+  and no-hat lowercase for numbers \< 1
+  (e.g. h for Hx0.1 and j for Hx0.01 etc.)
+- For full list of prefix shorthands,
+  see `u_rdo_prefixes` `dict` in [unuoj.py](unuoj.py) file.
+
+#### Unuoj
+
+> Units
+
+See also [Unuoj](Unuoj.md) page.
+
+- Unit names must not start with `O`.
+  This is both to avoid confusion with 0 and with `-on` prefix suffix.
+- For units shorthands (letter-based),
+  always use capital letter (hat or not) as the first letter,
+  and lowercase for the following letters.
+  This helps to differentiate between
+  the units part and prefix part of the shorthands.
+  E.g. [*Lu*](Unuoj.md#potenco) would be a unit by itself,
+  while *LU* would indicate the prefix 'L' (=1p38≈2.7e67)
+  combined with the unit [*U*](Unuoj.md#longeco).
+- Always use letter-based unit symbols for base units
+  such as length ('U'), mass ('P'), time ('Ŝ'), etc.
+
+#### Scienca notacio
+
+> Scientific notations
+
+`ⅎ`-notation:
+
+- Similar to the [`e`-notation](https://en.wikipedia.org/wiki/Scientific_notation#E_notation)
+  of the decimal system, except **both sides of `ⅎ` are hexadecimal**.
+- `ⅎ` is choosen over letters for better visibility
+  (and potential expansion to base Dx32/Dx64 systems
+  using letters and other punctuations marks—
+  See [unuoj.py](unuoj.py) `TX_SYMBOLS_DICT` and `RX_SYMBOLS_DICT`.)  
+  `ⅎ` is easier to tell from the numbers,
+  which is the main reason why it is choosen over `h` or `p`.
+- E.g., `Hx 7 89Δλ ΠΣΥΨ 0000` can be shortened
+  as `7.89ΔλΠΣΥΨⅎ+Π` or `7.89ΔλΠΣΥΨⅎΠ`;
+- If no number follows `ⅎ`, assume `-2` (as 'projento').
+  E.g. $3ⅎ = 0.03_H = 3/256_D$
+- Pronunciation:
+  `poheknente` (as a short hand for `multiplikite per X-a potenco de hek`).  
+  E.g. The Avogadro's number — approximately `7.Ψ86ⅎ13` —
+  can be pronounced as `Sep punkto fus ok ses poheknente hek tri`,  
+  which in itself is a shorthand for
+  `Sep punkto fus ok ses multiplikite per hek-tria potenco de hek`,
+
+TBD: Decide: Would it be better to use `⌄` (0x2304) instead of `ⅎ`?
 
 ### Interpunkcio
 
@@ -478,6 +524,10 @@ See also International Phonetic Alphabet (IPA).
 #### Novaj Vortoj
 
 > New words
+
+- Poheknente:
+  1. [Scientific notation operator](#scienca-notacio) in Epopo:  
+    Times Dx16 to the power of...  /  Multiplikite per X-a potenco de hek.
 
 - Sazeno  
   1. [Sazen](https://www.lesswrong.com/posts/k9dsbn8LZ6tTesDS3/sazen) (2022-12-21, coined by Duncan Sabien):  

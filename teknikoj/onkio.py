@@ -166,6 +166,9 @@ class ONKIO:
     def __init__(self):
         pass
 
+    def __getitem__(self, index: int) -> str:
+        return self.__KODOJ[index]
+
     @classmethod
     def al_ascii(cls, tkt_onkio: tkt|int) -> str:
         """Decode ONKIO string / code point into ASCII string."""
