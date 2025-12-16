@@ -139,7 +139,7 @@ ASCIIIFY_CHR = {
     '°': 'Deg',
     '🪙': 'OSR',
     chr(0x332): '_',
-    'ⅎ': 'projento',    # capitalized ver already defined
+    '⌄': 'projento',    # capitalized ver already defined
 }
 ASCIIIFY = {ord(k): v for k, v in ASCIIIFY_CHR.items()}
 
@@ -151,7 +151,7 @@ def Hx(
     symbols: dict = HX_SYMBOLS,
     d_sep = '.',
     k_seps = " ,",
-    e_sep = 'ⅎ',    #'p'
+    e_sep = '⌄',    #'p'
 ) -> float:
     """Convert Hexadecimal str to float.
 
@@ -225,7 +225,7 @@ def presi_Hx(
     base: int = 0x10,
     symbols_inv: dict = HX_SYMBOLS_INV,
     d_sep: str = '.',
-    e_sep: None|str = None, # 'ⅎ',
+    e_sep: None|str = None, # '⌄',
     plus_sign: str = "",
     prefix: None|str = None,
     prefix_default: str = 'Hx ',
@@ -233,13 +233,13 @@ def presi_Hx(
 ) -> str:
     """Convert Hexadecimal float to str.
 
-    To output without ⅎ-notation, set e_sep=''
+    To output without ⌄-notation, set e_sep=''
 
     Warning: last digit may be an underestimate
     Warning: NOT suitable for long large integers when e_sep=''
 
-    with ⅎ-notation (e_sep='ⅎ'), max supported numbers are about ~'F.FFFF FFFF FF ⅎFF'
-        min ~'1ⅎ-10C'
+    with ⌄-notation (e_sep='⌄'), max supported numbers are about ~'F.FFFF FFFF FF ⌄FF'
+        min ~'1⌄-10C'
     
     sc: signifaj ciferoj, or significant digits
 
@@ -247,7 +247,7 @@ def presi_Hx(
 
     e_sep: exponent separator.
         if None, will use '' if the number is close to 1,
-        'ⅎ' if the number is very large or small.
+        '⌄' if the number is very large or small.
 
     plus_sign: str
         set it to "+" to add plus sign when n is not negative
@@ -278,7 +278,7 @@ def presi_Hx(
         return (
             f"{prefix}{plus_sign}0{e_sep}+0" if e_sep
             else f"{prefix}{plus_sign}0")
-    if e_sep is None: e_sep = 'ⅎ' if n < 0x10**(-4) or n > 16**4 else ''
+    if e_sep is None: e_sep = '⌄' if n < 0x10**(-4) or n > 16**4 else ''
     base = np.float64(base)
     log2_base = np.log2(base)
     # grandordo = order of magnitude
@@ -314,7 +314,7 @@ def presi_Hx(
 def presi_Tx(
     n: float|units.Quantity,
     prefix_default: str = 'Tx ',
-    e_sep: None|str = '', # 'ⅎ',
+    e_sep: None|str = '', # '⌄',
     symbols_inv:dict=TX_SYMBOLS_INV,
     **kwargs,
 ) -> str:
@@ -330,7 +330,7 @@ def presi_Rx(
     n: float|units.Quantity,
     prefix_default: str = 'Rx ',
     symbols_inv:dict=RX_SYMBOLS_INV,
-    e_sep: None|str = '', # 'ⅎ',
+    e_sep: None|str = '', # '⌄',
     **kwargs,
 ) -> str:
     """Convert Base Dx64 float to str.
@@ -652,7 +652,7 @@ units.def_unit(
     namespace=u_rdo_defs)
 #    dimless
 units.def_unit(
-    ['ⅎ', 'Projento'], u_rdo_defs['Nuo'] / 0x100,
+    ['⌄', 'Projento'], u_rdo_defs['Nuo'] / 0x100,
     namespace=u_rdo_defs)
 
 
@@ -967,7 +967,7 @@ class Datotempo:
 
         res = (
             f"Ø{presi_Hx(int(n_Jaro), plus_sign='+')}" +
-            f"‐{ss['Monato']}‐{ss['Semajno']}{ss['Tago']}ⅎ" +
+            f"‐{ss['Monato']}‐{ss['Semajno']}{ss['Tago']}⌄" +
             f"{ss['Gx']}:{ss['Cx']}:{ss['HSx']}{ss['Sx']}." +
             f"{presi_Hx(int(rest_mSx)):0>4}"
         )

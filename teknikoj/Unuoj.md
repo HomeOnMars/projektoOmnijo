@@ -475,7 +475,7 @@ Two styles:
   followed by '-/+' sign and the calendar year (not unit year) number;  
   use hyphen to connect year, month, and week-day;  
   use letters instead of numbers to represent week and day;  
-  use 'ⅎ' to separate the dates from time;  
+  use '⌄' to separate the dates from time;  
   Write Ĝoro:Ĉimuto:Ŝekunto.
   Ŝekunto has 2 digits while the other 2 has 1,
   so you can easily tell which ones are which.
@@ -488,7 +488,7 @@ Two styles:
 
   E.g. 2024-12-21T09:20:00+00:00 (Southern Solstice 2024):
 
-  > Ø-2‐6‐QAⅎ0:Δ:97.247Π
+  > Ø-2‐6‐QA⌄0:Δ:97.247Π
 
   Code Illustration:
 
@@ -503,7 +503,7 @@ Two styles:
 
   ```text
   2024-12-21T09:20:00.000007+00:00
-  Ø-2‐6‐QAⅎ0:Δ:97.247Π
+  Ø-2‐6‐QA⌄0:Δ:97.247Π
   ```
 
 ### Temperaturo
@@ -649,11 +649,11 @@ $$
   \equiv 1
 $$
 
-*Projento*  (`ⅎ`):
+*Projento*  (`⌄`):
 Hexadecimal equivalent of percent
 
 $$
-  1 ⅎ
+  1 ⌄
   \equiv \frac{1}{100_H}
   = \frac{1}{256_D}
   % = 0.00390625_D

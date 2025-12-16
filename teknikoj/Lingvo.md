@@ -120,7 +120,7 @@ Changes of Esperanto++ (*Epopo*) from Esperanto include:
     `ABCDEFGHIJKLMNOPQRSTUVŬXɅZĈĜĴŜ`  
     `abcdefghijklmnopqrstuvŭxʌzĉĝĵŝ`  
     `0123456789ΔλΠΣΥΨ`  
-    ``\{|}~`^@[]:;<=>?_!"#$%&'()*+ⅎ-—/ ‐.,``
+    ``\{|}~`^@[]:;<=>?_!"#$%&'()*+⌄-—/ ‐.,``
 
 #### x-sistemo
 
@@ -263,7 +263,7 @@ Built-in support for **hexadecimal algebra**:
     and only listed here for technical completion reasons,
     since it would be very wordy for larger numbers such as
     `kvarnia gilnia trinia jentnia dunia heknia muni` (Hx10000^Hx4321).  
-    **It is recommended to use instead [`ⅎ`-notation](#scienca-notacio)**
+    **It is recommended to use instead [`⌄`-notation](#scienca-notacio)**
     **for extremely large or extremely small numbers.**
 - `hekon`  (h) for   1/Dx16 (1p-1);
 - `jenton` (j) for  1/Dx256 (1p-2);
@@ -274,7 +274,7 @@ Built-in support for **hexadecimal algebra**:
 - `heknion` (i) for 1p-40;
 - ~~`hekniona munion` for 1p-44;~~
   - Warning: **Deprecated** for the same reason as above.
-    use [`ⅎ`-notation](#scienca-notacio) instead for extremely large or small numbers.
+    use [`⌄`-notation](#scienca-notacio) instead for extremely large or small numbers.
 - etc. etc.
 - Unlike in Esperanto, in Epopo please do write numbers together for `gil`:
   E.g. `trigil`, not `tri gil`. This is done for regularity's sake.
@@ -330,28 +330,26 @@ See also [Unuoj](Unuoj.md) page.
 
 > Scientific notations
 
-`ⅎ`-notation:
+`⌄`-notation:
 
 - Similar to the [`e`-notation](https://en.wikipedia.org/wiki/Scientific_notation#E_notation)
-  of the decimal system, except **both sides of `ⅎ` are hexadecimal**.
-- `ⅎ` is choosen over letters for better visibility
+  of the decimal system, except **both sides of `⌄` are hexadecimal**.
+- `⌄` is choosen over letters for better visibility
   (and potential expansion to base Dx32/Dx64 systems
   using letters and other punctuations marks—
   See [unuoj.py](unuoj.py) `TX_SYMBOLS_DICT` and `RX_SYMBOLS_DICT`.)  
-  `ⅎ` is easier to tell from the numbers,
+  `⌄` is easier to tell from the numbers,
   which is the main reason why it is choosen over `h` or `p`.
 - E.g., `Hx 7 89Δλ ΠΣΥΨ 0000` can be shortened
-  as `7.89ΔλΠΣΥΨⅎ+Π` or `7.89ΔλΠΣΥΨⅎΠ`;
-- If no number follows `ⅎ`, assume `-2` (as 'projento').
-  E.g. $3ⅎ = 0.03_H = 3/256_D$
+  as `7.89ΔλΠΣΥΨ⌄+Π` or `7.89ΔλΠΣΥΨ⌄Π`;
+- If no number follows `⌄`, assume `-2` (as 'projento').
+  E.g. $3⌄ = 0.03_H = 3/256_D$
 - Pronunciation:
-  `poheknente` (as a short hand for `multiplikite per X-a potenco de hek`).  
-  E.g. The Avogadro's number — approximately `7.Ψ86ⅎ13` —
-  can be pronounced as `Sep punkto fus ok ses poheknente hek tri`,  
+  `pohekvʌ` (as a short hand for `multiplikite per X-a potenco de hek`).  
+  E.g. The Avogadro's number — approximately `7.Ψ86⌄13` —
+  can be pronounced as `Sep punkto fus ok ses pohekvʌ hek tri`,  
   which in itself is a shorthand for
-  `Sep punkto fus ok ses multiplikite per hek-tria potenco de hek`,
-
-TBD: Decide: Would it be better to use `⌄` (0x2304) instead of `ⅎ`?
+  `Sep punkto fus ok ses multiplikite per hek-tria potenco de hek`.
 
 ### Interpunkcio
 
@@ -525,7 +523,7 @@ TBD: Decide: Would it be better to use `⌄` (0x2304) instead of `ⅎ`?
 
 > New words
 
-- Poheknente:
+- Pohekvʌ:
   1. [Scientific notation operator](#scienca-notacio) in Epopo:  
     Times Dx16 to the power of...  /  Multiplikite per X-a potenco de hek.
 

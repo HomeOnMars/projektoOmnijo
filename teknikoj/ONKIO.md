@@ -43,7 +43,7 @@ Differences from the ASCII table are highlighted with **bold** text.
 |  **0x\_9**  |  *HT \\t*   |   **\]**    |     \)      |      9      |      I      |    **Ʌ**    |      i      |    **ʌ**    |
 |  **0x\_a**  |  *LF \\n*   |    **:**    |     \*      |    **Δ**    |      J      |      Z      |      j      |      z      |
 |  **0x\_b**  |  *VT \\v*   |    **;**    |     \+      |    **λ**    |      K      |    **Ĉ**    |      k      |    **ĉ**    |
-|  **0x\_c**  |  *FF \\f*   |   **\<**    |    **ⅎ**    |    **Π**    |      L      |    **Ĝ**    |      l      |    **ĝ**    |
+|  **0x\_c**  |  *FF \\f*   |   **\<**    |    **⌄**    |    **Π**    |      L      |    **Ĝ**    |      l      |    **ĝ**    |
 |  **0x\_d**  |  ***SUB***  |    **=**    |     \-      |    **Σ**    |      M      |    **Ĵ**    |      m      |    **ĵ**    |
 |  **0x\_e**  |  ***ESC***  |   **\>**    |    **—**    |    **Υ**    |      N      |    **Ŝ**    |      n      |    **ŝ**    |
 |  **0x\_f**  |  ***DEL***  |    **?**    |      /      |    **Ψ**    |      O      |   **\.**    |      o      |    **,**    |
@@ -65,7 +65,7 @@ Differences from the ASCII table are highlighted with **bold** text.
 - Only 16 control characters (all in the column `0x0_`) instead of 33 in ASCII table, as most of those extra control characters are obsolete in modern days.
 - Removed `CR \r` and moved `DEL` from `0x7f` to `0x0f` to maximize regularity.
 - Added symbols
-  - `ⅎ` (projento) for 'per Dx256'
+  - `⌄` (projento) for 'per Dx256', the scientific notation operator,
     and the separator in Omnijaro calendar expression.
   - `—` (em dash).
   - `‐` (hyphen).
