@@ -268,18 +268,18 @@ Using the leading digit for identifying districts and areas:
 
 | En esperanto  <br>In Esperanto | En la angla  <br>In English |
 | ------------------------ | ------------------------ |
-| Vojo-Konservkorto        | Road Maintenance Service |
-| Parko-Konservkorto       | Park Maintenance Depot   |
-| Buso-Korto               | Bus Depot                |
-| Fervojo-Korto            | Rail Yard                |
-| Metroo-Korto             | Subway Yard              |
-| Tramo-Korto              | Tram Depot               |
-| Taksio-Korto             | Taxi Depot               |
+| Vojkonservada-Servo      | Road Maintenance Service |
+| Parkkonservada-Servo     | Park Maintenance Depot   |
+| Busparkejo               | Bus Depot                |
+| Vagonparkejo             | Rail Yard                |
+| Vagonparkejo             | Subway Yard              |
+| Tramparkejo              | Tram Depot               |
+| Taksiparkejo             | Taxi Depot               |
 | Stacio                   | Station                  |
 | Stacidomo                | Station (Building)       |
 | Kargotrajna Terminalo    | Cargo Train Terminal     |
 | Parkejo                  | Parking Lot              |
-| Bicikla Parkejo          | Bike Parking Lot         |
+| Biciklparkejo            | Bike Parking Lot         |
 |||
 | Bazlernejo / ***Bl***    | Elementary School        |
 | Mezlernejo / ***Ml***    | High School / Middle School |
@@ -292,6 +292,7 @@ Using the leading digit for identifying districts and areas:
 |||
 | Policejo                 | Police Station           |
 | Fajrobrigado             | Fire Station/Brigade/Department |
+| Fajrobrigada Helikopterparkejo | Firefighting Helicopter Depot |
 | Gardoturo                | Watch Tower              |
 | Fajrogardista Turo       | Firewatch Tower          |
 | Bunkro                   | Shelter                  |
