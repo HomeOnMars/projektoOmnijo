@@ -37,7 +37,7 @@
     "75426": {
       "Id": 75426,
       "Name": "I18n Everywhere",
-      "Version": "58",
+      "Version": "59",
       "LoadOrder": 4,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -73,7 +73,7 @@
     "77240": {
       "Id": 77240,
       "Name": "Find It",
-      "Version": "51",
+      "Version": "54",
       "LoadOrder": 10,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -82,7 +82,7 @@
     "124553": {
       "Id": 124553,
       "Name": "La Clock (Show System Time)",
-      "Version": "7",
+      "Version": "9",
       "LoadOrder": 33,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -145,7 +145,7 @@
     "98560": {
       "Id": 98560,
       "Name": "Asset UI Manager",
-      "Version": "14",
+      "Version": "15",
       "LoadOrder": 68,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -199,7 +199,7 @@
     "99048": {
       "Id": 99048,
       "Name": "Resource Locator",
-      "Version": "17",
+      "Version": "18",
       "LoadOrder": 87,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -343,7 +343,7 @@
     "87190": {
       "Id": 87190,
       "Name": "Road Builder [BETA]",
-      "Version": "39",
+      "Version": "40",
       "LoadOrder": 139,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -352,7 +352,7 @@
     "80095": {
       "Id": 80095,
       "Name": "Traffic",
-      "Version": "25",
+      "Version": "26",
       "LoadOrder": 145,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -433,7 +433,7 @@
     "75728": {
       "Id": 75728,
       "Name": "ExtraLandscapingTools",
-      "Version": "12",
+      "Version": "13",
       "LoadOrder": 166,
       "IsEnabled": false,
       "IsVersionLocked": false,
@@ -451,7 +451,7 @@
     "75804": {
       "Id": 75804,
       "Name": "Skyve",
-      "Version": "64",
+      "Version": "67",
       "LoadOrder": 168,
       "IsEnabled": true,
       "IsVersionLocked": false,

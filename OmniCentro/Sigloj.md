@@ -246,7 +246,7 @@ Using the leading digit for identifying districts and areas:
 |     |  NC  | Mt-U  | Mt-Unukorno    | <span style="color:Thistle">█ #D8BFD8</span> |
 | `Π` |  NK  | Me-R  | Me-Racio       | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
 |     |  NK  | La-P  | La-Pordego     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
-|     |      |       | Sc-Rokakabo    | |
+|     |      |       | Kt-Rokakabo    | |
 |     |  NK  | Dt-L  | Dt-Lumturo     | |
 |     |      |       | Ĉs-OCRR        | |
 |     |      |       | Sc-Artezo      | |

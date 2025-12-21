@@ -9,6 +9,57 @@
 Content
 -------------------------------------------------------------------------------
 
+### v5.0 <-- v4.0 | `2025-12-21`
+
+> Southern Solstice update.
+>
+> Add ports, retrofit bikes, and expand and fix infrastructures.
+
+- `Meta::GameVer`: v1.5.3f1;
+- `Assets::Added`:
+  - 'Netherlands Pack' (121130);
+- `Mods::Added`:
+  - 'Adjust Transit Capacity' (123738);
+  - 'Citizen Cleaner' (117161);
+  - 'Outside Traffic Adjuster' (124947);
+  - 'Realistic Workplaces And Households' (87755);
+  - 'Road Visual Tweaks (formerly Road Wear Adjuster)' (96718);
+- `Mods::Removed`:
+  - 'Dummy Traffic Remover' (107683);
+- `District::La-Pordego`,`Expansion::(Services,Rail)`:
+  - Transform 'La-Pordego' into a port;
+  - Add fish-farming industries;
+  - Expand rock-mining industries;
+  - Update bridges with the new ones from B&P DLC;
+  - Expand train and metro rail yard;
+  - Add cargo rails;
+- `District::(La-Pordego,Dt-Lumturo)`,`Transit`:
+  - Retrofit bike infrastructure;
+- `District::(Kt-Rokakabo,Dt-Lumturo)`,`Expansion::Zoning`:
+  - Expand neighbourhoods (part);
+- `District::Mhv-Olivkrono`,`Expansion::Services`:
+  - Add a temporary small port for unlocking port parts;
+- `District::Iz-Ĉevaleto`,`Expansion::Industry`:
+  - Build a dry port and wood logging area near 'La-Singulariso';
+- `District::La-Singulariso`,`Expansion::(Road,Services)`:
+  - Reserve space for future palace area and custom assets;
+- `Expansion::Road`:
+  - Expand highway
+    - Add a shortcut from 'La-Singulariso' to 'La-Pordego';
+    - Add a shortcut from 'La-Singulariso' to 'Bs-Espero' outside connection;
+- `Expansion::Rail`:
+  - Connect the cargo rail networks between the north and the south;
+- `Expansion::Services`:
+  - Wired the remaining unwired dams;
+  - Add a Fire Helicopter Depot in 'Ab-Fortiko';
+  - Add more wind turbines;
+- `Naming`,`Fixes`:
+  - Change depots naming scheme (suffix from '-Korto' to 'parkejo');
+  - Fix missing water pipe underneath the road around the city;
+  - Fix missing electricity cable on road segments;
+
+-------------------------------------------------------------------------------
+
 ### v4.0 <-- v3.0 | `2025-11-02`
 
 > Update for v1.3.6f1.
