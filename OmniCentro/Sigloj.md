@@ -229,7 +229,7 @@ Using the leading digit for identifying districts and areas:
 | --- | ---- | ----- | ----- | -------------- |
 | `0` |      |       | Interdistrikto (sen eksteraj konektoj)  <br>Interdistrict (no outside connections) | <span style="color:Tan">█ #D2B48C</span> |
 | `1` |  SK  | Mt-K  | Mt-Kuraĝo      | |
-|     |  SK  | Vĝ-P  | Vilaĝo-Pioniro | <span style="color:Red">█ #FF0000</span> |
+|     |  SK  | Vĝ-P  | Vĝ-Pioniro     | <span style="color:Red">█ #FF0000</span> |
 | `2` |  SC  | Am-H  | Am-Hejmeco     | |
 | `3` |  SR  | Mt-O  | Mt-Olivkrono   | <span style="color:DarkSeaGreen">█ #8FBC8F</span> |
 | `4` |  CK  | Me-H  | Me-Hejmeco     | <span style="color:Silver">█ #C0C0C0</span> |

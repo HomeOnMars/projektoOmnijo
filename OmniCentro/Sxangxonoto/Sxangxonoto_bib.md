@@ -32,7 +32,7 @@ Tags
 - `Expansion::(Zoning,Parks,Industry,Services,Road,Rail)`
 - `Redevelop::(Services,Road,Rail)`
 - `Detailing::(Trees,Props,Surfaces,Water)`
-- `Terrain`
+- `Terrain::Water`
 - `Resources`
 - `Naming`
 - `Transit`
