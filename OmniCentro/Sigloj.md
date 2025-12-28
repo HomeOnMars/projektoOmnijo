@@ -167,18 +167,18 @@ Examples:
 ||| <!-- Road types --> |
 |  ~~Vj~~ | ~~**V**o**j**ʌ~~     | [Road](../teknikoj/Retoj.md#vojoj)  <br>(Deprecated[^Deprecated-Vj]) |
 |    Ev   | f**E**r**v**ojʌ      | [Railway](../teknikoj/Retoj.md#metrooj--personaj-fervojoj) |
-|  Ev-K   | Ev-**K**argʌ         | [Cargo railway](../teknikoj/Retoj.md#kargaj-kaj-malnovaj-personaj-fervojoj) |
-|  Ev-AR  | Ev-**A**lt**R**apidʌ | [High-speed railway](../teknikoj/Retoj.md#altrapidaj-fervojoj) |
-|  Ev-SL  | Ev-**S**upr**L**iniʌ | Regular railway (powered by overhead lines) |
-|  Ev-TR  | Ev-**T**ria**R**elʌ  | Subway railway (powered by third rail) |
-|    Tv   | Ev-**T**ramʌ         | [Tramway](../teknikoj/Retoj.md#tramoj)          |
+|  Ev-K   | **K**arga f**E**r**v**ojʌ         | [Cargo railway](../teknikoj/Retoj.md#kargaj-kaj-malnovaj-personaj-fervojoj) |
+|  Ev-AR  | **A**lt**R**apida f**E**r**v**ojʌ | [High-speed railway](../teknikoj/Retoj.md#altrapidaj-fervojoj) |
+|  Ev-SL  | **S**upr**L**inia f**E**r**v**ojʌ | Regular railway (powered by overhead lines) |
+|  Ev-TR  | **T**ria**R**ela f**E**r**v**ojʌ  | Subway railway (powered by third rail) |
+|    Tv   | **T**rama fer**v**ojʌ             | [Tramway](../teknikoj/Retoj.md#tramoj)          |
 |    Ŭv   | a**Ŭ**to**v**ojʌ     | [Motorway](../teknikoj/Retoj.md#aŭtovojoj) |
 |    St   | **S**tra**t**ʌ       | [Street](../teknikoj/Retoj.md#stratoj) |
-|  St-Dt  | St-**D**is**t**ribuʌ | Distributor Roads |
-|  St-Ĉf  | St-**Ĉ**e**f**ʌ      | Main  Roads      |
-|  St-Lk  | St-**L**o**k**ʌ      | Local Roads      |
-|  St-H   | St-**H**omʌ          | Pedestrian Roads |
-|  St-K   | St-**K**argʌ         | Industrial Roads |
+|  St-Dt  | **D**is**t**ribua **S**tra**t**ʌ | Distributor Roads |
+|  St-Ĉf  | **Ĉ**e**f**a **S**tra**t**ʌ      | Main  Roads      |
+|  St-Lk  | **L**o**k**a **S**tra**t**ʌ      | Local Roads      |
+|  St-H   | **H**oma **S**tra**t**ʌ          | Pedestrian Roads |
+|  St-K   | **K**arga **S**tra**t**ʌ         | Industrial Roads |
 ||| <!-- Edu types --> |
 |    Bl   | **B**az**l**ernejʌ   | Elementary School |
 |    Ml   | **M**ez**l**ernejʌ   | High School      |
@@ -201,7 +201,10 @@ Examples:
   as it could mean anything from motorways and rails to alleys and paths.
   Do not use.
 
-Naming rules examples: (See also [Lingvo](../teknikoj/Lingvo.md#nomi) page.)
+Naming rules examples:  
+(See also Lingvo page for
+[naming places](../teknikoj/Lingvo.md#propraj-nomoj-por-lokoj) and
+[-ʌ word ending](../teknikoj/Lingvo.md#-ʌ-sufikso).)
 
 - `Ab-O#1` (Good) as a short version  
   of `Ab-Olivkrono #1` (Good),  

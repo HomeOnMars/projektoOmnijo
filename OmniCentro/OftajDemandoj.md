@@ -99,7 +99,7 @@ as for liberty… depends on your definition of liberty:
   *Not really.*
   While it is respected as a fundamental human drive
   and as a part of human nature,
-  <span style="color:Beige">Reĝino Serena</span> acknowledges that
+  <span style="color:Beige">Reĝinʌ Serena</span> acknowledges that
   uncontrolled reproduction could lead to exponential increase in population,
   leading to overpopulation disasters,
   ~~especially since the <span style="color:Beige">Queen</span> is secretly researching immortality treatments in the hope of distributing them to the global public without international backlashes~~ *Nothing to see here!*
@@ -264,7 +264,7 @@ her *copyright reform* policy in three distinct stages:
   the information is still there for free
   for any country who isn't blocking.
 
-As <span style="color:Beige">Reĝino Serena</span> expects
+As <span style="color:Beige">Reĝinʌ Serena</span> expects
 significant international pushback from her radical idea.
 Which is why she delayed the announcement to `Ø+8J`
 when the kingdom is well-established and self-sufficient,

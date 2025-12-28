@@ -30,7 +30,7 @@ The official language in [RdO](Bulteno.md#fonrakonta-bulteno) is
 a fictional variant of L. L. Zamenhof's artificial language
 [*Esperanto*](https://lernu.net/esperanto) (1887),
 with multiple changes specified by
-<span style="color:Beige">Reĝino Serena</span> herself,
+<span style="color:Beige">Reĝinʌ Serena</span> herself,
 aiming to offer even more regularity and inclusivity,
 while conforming to the existing world as much as possible[^Lingvo-Historio-1].
 It was declared the new official language of RdO by
@@ -137,51 +137,98 @@ Changes of Esperanto++ (*Epopo*) from Esperanto include:
 
 In *Epopo*, ending a word with `-ʌ` means that the word is a type classifier,
 and what follows is the name of a specific thing of that type.
+In other words,
 
-For example,
+- `-o` refers to a thing / a class of things;
+- `-ʌ` implies that the following thing/person
+  "is of this type / is a member of this class";
+- `-a` implies that the following thing/person
+  "shares (some) characteristics of this type,
+  or is located within this place, etc. etc.";
 
-```text
-Distriktʌ Lumturo
-```
+It is important to distinguish between `-ʌ` and `-a`, i.e.
+"Something is of the type" and
+"Something shares the key properties of the type".
 
-refers to a specific "Distrikto" (District)
-that is called "Lumturo" (Lighthouse).  
-The equivalent in C# would be
-
-```Csharp
-var Lumturo = new Distrikto()
-```
-
-and in Esperanto it would be
+For example, (`Jen` in Esperanto/Epopo means "Behold")
 
 ```text
-La Lumtura Distrikto
+Jen Urba Distriktʌ Granda-Lumturo!
 ```
 
-(though this could be a bit unclear
-whether Lumtura is the name of the district,
-or a generic adjective describing the district;
-which is why `-ʌ` suffix is introduced in *Epopo*.)
+refers to a specific "urb**a** distrikt**o**" (urban district)
+that is called "Granda-Lumturo" (Great Lighthouse).  
+The equivalent in *python* would be
 
-A few things to note:
+```python
+from context import Urba, Distrikto
+class GrandaLumturo(UrbaDistrikto):
+    name = "Granda-Lumturo"
+    types = [UrbaDistrikto]
+    def __init__(self, **kwargs)
+        super.__init__(**kwargs)
+this = GrandaLumturo()
+```
+
+and in *Esperanto* it would be
+
+```text
+Jen la urba distrikto Granda-Lumturo!
+```
+
+(though this could be a bit confusing
+whether 'Granda-Lumturo' is the name of the district,
+or a separate thing (with a forgotten coma);
+which is partly why `-ʌ` suffix is introduced in *Epopo*.)
+
+It also works for people's titles:
+
+```text
+Jen venas la Reĝinʌ Doktorʌ Serena.
+```
+
+which means "Here comes Dr Serena the Queen".
+Here, two words with `-ʌ` endings were used before "Serena";
+in this case, it means Serena is members of both class,
+i.e. She is both a Queen and a Doctor.  
+In *python*, this would suggest multiple class inheritance:
+
+```python
+from context import Reĝino, Doktoro
+class Serena(Reĝino, Doktoro):
+    name = "Serena"
+    types = [Reĝino, Doktoro]
+    def __init__(self, **kwargs)
+        super.__init__(**kwargs)
+this = Serena()
+```
+
+To sum up,
 
 1. The word ending with `-ʌ`
   must be a generic type of things when ending with `-o`;
 2. The word following (link with hyphen if having multiple words),
-  assuming not ending with `-ʌ`, is the name of a specific thing of that type;
-3. The name can be a number (or letters/numbers-based identifier).
+  when not ending with `-ʌ` or `-a` or `-e`,
+  is the name of the specific thing of that type;
+3. The name can be a number (or letters-and-numbers-based identifier).
   In which case, that number/identifier should start with `#`.  
-  E.g. 'Mt-Racia Akvobaraĵʌ #0'.
-4. *Exception*: if the following word also ends with `-ʌ`,
-  then that following word shall be a subclass or specifier of the first word,
-  and third word (if not ending with `-ʌ`) is the name.
-5. No need to add 'La' in front of the `-ʌ` ending type classifier word.
+  E.g. 'Mt-Racia Akvobaraĵʌ #0'.  
+  (`#` symbol is not pronounced.)
+4. *Exception*: If the following word also ends with `-ʌ`,
+  then it is also a class that the thing/person is a member of.
+  The word after that is the name, if not ending with `-ʌ` or `-a` or `-e`.
+5. No need to add `La` in front of the `-ʌ` ending type classifier word.
   Because we already know it refers to a specific thing just by `-ʌ` alone.  
-  'La' refers to either an anonymous specific thing,
+  `La` refers to either an anonymous specific thing,
   or a specific thing with the following word as its name
-  (in which case, add hyphen between 'La' and the name, e.g. 'La-Pordego').
-
-For more information on naming things, see [Nomi](#nomi) section.
+  (in which case, add hyphen between `La` and the name, e.g. 'La-Pordego').
+6. The `-ʌ` ending word can often be simplified with abbreviations.
+  E.g. 'Distriktʌ Lumturo' to 'Dt-Lumturo'.
+  In which case, add hyphen between the abbreviation and the following name.
+  Pronounce abbreviations like '**D**o**t**ʌ' to preserve word ending.
+7. See [Siglo](../OmniCentro/Sigloj.md#mallongigoj) page
+  for more on abbreviations.
+8. For more information on naming things, see [Nomi](#nomi) section.
 
 #### Elparolo
 
@@ -397,9 +444,9 @@ See also [Unuoj](Unuoj.md) page.
 - If no number follows `⌄`, assume `-2` (as 'projento').
   E.g. $3⌄ = 0.03_H = 3/256_D$
 - Pronunciation:
-  `pohekvʌ` (as a short hand for `multiplikite per X-a potenco de hek`).  
+  `pohekve` (as a short hand for `multiplikite per X-a potenco de hek`).  
   E.g. The Avogadro's number — approximately `7.Ψ86⌄13` —
-  can be pronounced as `Sep punkto fus ok ses pohekvʌ hek tri`,  
+  can be pronounced as `Sep punkto fus ok ses pohekve hek tri`,  
   which in itself is a shorthand for
   `Sep punkto fus ok ses multiplikite per hek-tria potenco de hek`.
 
@@ -578,7 +625,7 @@ See also [Unuoj](Unuoj.md) page.
 
 > New words
 
-- Pohekvʌ:
+- Pohekve
   1. [Scientific notation operator](#scienca-notacio) in Epopo:  
     Times Dx16 to the power of...  /  Multiplikite per X-a potenco de hek.
 

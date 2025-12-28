@@ -230,7 +230,7 @@ about their own country?[^Historio-RdO-Serena-kmt4]
 …
 Or they could leave.
 Which is now easier-than-ever, by the way,
-as <span style="color:Beige">Reĝino Serena</span>
+as <span style="color:Beige">Reĝinʌ Serena</span>
 passed several laws
 allowing the renunciation of citizenship,
 recognizing dual citizenship, and

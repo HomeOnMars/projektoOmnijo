@@ -96,7 +96,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
   <span style="color:#D6B4FC">La Ĉefinĝeniero de OCFI</span>:
   "As stated in the constitution, we are a *Constitutional Monarchy*,
   which has never changed
-  since <span style="color:Beige">Reĝino Serena</span>'s coronation.
+  since <span style="color:Beige">Reĝinʌ Serena</span>'s coronation.
   As a gentle reminder, next year we are still going to vote
   for the new prime minister."
   <br>…<br> <!-- Say Benevolent Dictatorship, Believe Constitutional Monarchy -->
@@ -112,7 +112,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
   to the lives of everyone who chose to stay!
   I would say we are a *Benevolent Dictatorship*."
   <br>…<br> <!-- Say Totalitarian Regime, Try Benevolent Dictatorship -->
-  <span style="color:Beige">Reĝino Serena de Omnijo</span>:
+  <span style="color:Beige">Reĝinʌ Serena de Omnijo</span>:
   "I know many people outside our beloved island considered us
   fallen into a *Totalitarian Regime*… and I agree!
   Look, just yesterday I was thinking about putting together a
@@ -161,7 +161,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 
 [^Bulteno-Himno]: The new anthem is hand picked by -
   you guessed it -
-  <span style="color:Beige">Reĝino Serena</span> herself (Surprise, surprise),
+  <span style="color:Beige">Reĝinʌ Serena</span> herself (Surprise, surprise),
   even though she claims to be "not a religious person".<br>
   The official reason is that she "likes the sound of it";<br>
   The unofficial reason may be that it serves as
@@ -200,21 +200,21 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 
 | Org  | Koloro | Nomo |
 | ---- | ------ | ---- |
-| RdO  | #F5F5DC | <span style="color:Beige">█ Ŝia Reĝina Moŝto **Serena Novarika** de Omnijo</span>  <!--The Moderator-->  |
-| RdO  | #32CD32 | <span style="color:LimeGreen">█ Ĉefministro **Eriko Takesta** de Omnijo</span>  <!--The Observer-->  |
-| OCFD | #D2691E | <span style="color:Chocolate">█ Generalo **Laŭra Dovoluĉo** de Omnijo</span>  <!--The Guardian-->  |
-| OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ Kunordigestro **Dajanna Murfisko** de Omnijo</span>  <!--The Librarian-->  |
-| OCFI | #95D0FC | <span style="color:#95D0FC">█ Arkitekto **Nomo Redaktita** de OCFI</span> |
-| OCFI | #D6B4FC | <span style="color:#D6B4FC">█ Ĉefinĝeniero **Ĝejda Fenulo** de Omnijo</span>  <!--The Sovereign-->  |
+| RdO  | #F5F5DC | <span style="color:Beige">█ Ŝia Reĝina Moŝtʌ **Serena Novarika** de Omnijo</span>  <!--The Moderator-->  |
+| RdO  | #32CD32 | <span style="color:LimeGreen">█ Ĉefministrʌ **Eriko Takesta** de Omnijo</span>  <!--The Observer-->  |
+| OCFD | #D2691E | <span style="color:Chocolate">█ Generalʌ **Laŭra Dovoluĉo** de Omnijo</span>  <!--The Guardian-->  |
+| OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ Kunordigestrʌ **Dajanna Murfisko** de Omnijo</span>  <!--The Librarian-->  |
+| OCFI | #95D0FC | <span style="color:#95D0FC">█ Arkitektʌ **Nomo Redaktita** de OCFI</span> |
+| OCFI | #D6B4FC | <span style="color:#D6B4FC">█ Ĉefinĝenierʌ **Ĝejda Fenulo** de Omnijo</span>  <!--The Sovereign-->  |
 | OCFI | #9370DB | <span style="color:MediumPurple">█ *La Inteligento* de Omnijo</span>  <!--The Collective-->  |
-| OCFJ | #C0C0C0 | <span style="color:Silver">█ Prokuroro **Bejke Zĉoŭn** de Omnijo</span>  <!--The Introspector-->  |
-| OCME | #FFD700 | <span style="color:Gold">█ Ministro **Jonaso Kamarijo** de Omnijo</span>  <!--The Translator-->  |
-| OCME | #FFD700 | <span style="color:Gold">█ Parolanto **Natalia Zeĉoeva** de OCME</span> |
-| OCMF | #8FBC8F | <span style="color:DarkSeaGreen">█ Trezorestro **Alekso Ueslejo** de Omnijo</span>  <!--The Executive-->  |
-| OCMI | #D2B48C | <span style="color:Tan">█ Sekretario **Venesa Lulujanka** de Omnijo</span>  <!--The Humanist-->  |
+| OCFJ | #C0C0C0 | <span style="color:Silver">█ Prokurorʌ **Bejke Zĉoŭn** de Omnijo</span>  <!--The Introspector-->  |
+| OCME | #FFD700 | <span style="color:Gold">█ Ministrʌ **Jonaso Kamarijo** de Omnijo</span>  <!--The Translator-->  |
+| OCME | #FFD700 | <span style="color:Gold">█ Parolantʌ **Natalia Zeĉoeva** de OCME</span> |
+| OCMF | #8FBC8F | <span style="color:DarkSeaGreen">█ Trezorestrʌ **Alekso Ueslejo** de Omnijo</span>  <!--The Executive-->  |
+| OCMI | #D2B48C | <span style="color:Tan">█ Sekretariʌ **Venesa Lulujanka** de Omnijo</span>  <!--The Humanist-->  |
 ||| <!-- Semi-local --> |
-|  OC  | #FFFFFF | <span style="color:White">█ Urbestro **Ulio Klenoro** de OmniCentro</span> |
-| OCFF | #FF0000 | <span style="color:Red">█ Direktoro **Petrovo Sokolov** de Omnijo </span> |
-| OCFP | #4169E1 | <span style="color:RoyalBlue">█ Policestro **Tejler Vikila** de Omnijo</span>  <!--The Conduit-->  |
-| OCFS | #FFC0CB | <span style="color:Pink">█ Fakestro **Fiona Amirazi** de Omnijo</span> |
-| OCRR | #D8BFD8 | <span style="color:Thistle">█ Gastiganto **Karla Revin** de OCRR</span> |
+|  OC  | #FFFFFF | <span style="color:White">█ Urbestrʌ **Ulio Klenoro** de OmniCentro</span> |
+| OCFF | #FF0000 | <span style="color:Red">█ Direktorʌ **Petrovo Sokolov** de Omnijo </span> |
+| OCFP | #4169E1 | <span style="color:RoyalBlue">█ Policestrʌ **Tejler Vikila** de Omnijo</span>  <!--The Conduit-->  |
+| OCFS | #FFC0CB | <span style="color:Pink">█ Fakestrʌ **Fiona Amirazi** de Omnijo</span> |
+| OCRR | #D8BFD8 | <span style="color:Thistle">█ Gastigantʌ **Karla Revin** de OCRR</span> |
