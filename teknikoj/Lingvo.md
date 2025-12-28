@@ -131,6 +131,58 @@ Changes of Esperanto++ (*Epopo*) from Esperanto include:
   to represent accented letters when forced to operate within ASCII systems.
 - However, *Ŭ* is simply replaced by *W*, and *Ʌ* by *Y*.
 
+#### -ʌ sufikso
+
+> `-ʌ` suffix
+
+In *Epopo*, ending a word with `-ʌ` means that the word is a type classifier,
+and what follows is the name of a specific thing of that type.
+
+For example,
+
+```text
+Distriktʌ Lumturo
+```
+
+refers to a specific "Distrikto" (District)
+that is called "Lumturo" (Lighthouse).  
+The equivalent in C# would be
+
+```Csharp
+var Lumturo = new Distrikto()
+```
+
+and in Esperanto it would be
+
+```text
+La Lumtura Distrikto
+```
+
+(though this could be a bit unclear
+whether Lumtura is the name of the district,
+or a generic adjective describing the district;
+which is why `-ʌ` suffix is introduced in *Epopo*.)
+
+A few things to note:
+
+1. The word ending with `-ʌ`
+  must be a generic type of things when ending with `-o`;
+2. The word following (link with hyphen if having multiple words),
+  assuming not ending with `-ʌ`, is the name of a specific thing of that type;
+3. The name can be a number (or letters/numbers-based identifier).
+  In which case, that number/identifier should start with `#`.  
+  E.g. 'Mt-Racia Akvobaraĵʌ #0'.
+4. *Exception*: if the following word also ends with `-ʌ`,
+  then that following word shall be a subclass or specifier of the first word,
+  and third word (if not ending with `-ʌ`) is the name.
+5. No need to add 'La' in front of the `-ʌ` ending type classifier word.
+  Because we already know it refers to a specific thing just by `-ʌ` alone.  
+  'La' refers to either an anonymous specific thing,
+  or a specific thing with the following word as its name
+  (in which case, add hyphen between 'La' and the name, e.g. 'La-Pordego').
+
+For more information on naming things, see [Nomi](#nomi) section.
+
 #### Elparolo
 
 > Pronunciation guide  
@@ -422,9 +474,9 @@ See also [Unuoj](Unuoj.md) page.
 > Proper Names for places
 
 - Basic Format: e.g. `Sc-Granda-Lumturo`,  
-  as a short hand of `Stacio-Granda-Lumturo`,
-  which is a short hand of `Stacio de Dt-Granda-Lumturo`,
-  i.e. `Stacio de Distrikto-Granda-Lumturo`
+  as a short hand of `Staciʌ Granda-Lumturo`,
+  which generally refers to `Stacio de Dt-Granda-Lumturo`,
+  i.e. `Stacio de Distriktʌ Granda-Lumturo`
   - Start the name with the abbreviated 2\~4-letter *type classifier*
     listed in [Sigloj](../OmniCentro/Sigloj.md#mallongigoj) page.
     (See there for some examples also.)  
@@ -439,7 +491,7 @@ See also [Unuoj](Unuoj.md) page.
   - Always add *type classifier* in front of the name of the place/thing,
     so it is clear that what follows is a name of a place/thing,
     instead of whatever things the name itself point to.  
-    - e.g. in 'Distrikto-Granda-Lumturo', we know
+    - e.g. in 'Distriktʌ Granda-Lumturo', we know
       'Granda-Lumturo' is the name of a district called 'Granda-Lumturo',
       instead of
       refering to a place that is a 'granda lumturo' (big lighthouse).
@@ -449,17 +501,20 @@ See also [Unuoj](Unuoj.md) page.
       e.g. 'OmniCentra RadioReto' is enough,
       no need for 'Ub-OmniCentra RadioReto',
       because we already know that
-      'OmniCentro' is and can only be referring to a specific city.
+      'OmniCentro' is and can only be referring to a specific city.  
+      Note: Here 'OmniCentra' ends with '-a' instead of '-ʌ',
+      because 'OmniCentro' is not a generic type of things,
+      but a specific city.
   - No need to add 'La' in front of 'Dt' or 'Sc' etc type classifier.
     Because it can already be infered that the phrase is pointing towards
     a specific place even without the definite article 'La'.
 - Extended Format: e.g. `Dt-Granda-Lumtura Hospitalo`  
-  as a short hand of `Distrikto-Granda-Lumtura Hospitalo`.
+  as a short hand of `Distriktʌ Granda-Lumtura Hospitalo`.
   - Using 'Dt-Granda-Lumtura' as a locational indicator
     to describe the location of the noun ('Stacio').  
   - Add hyphen within words of single conceptual elements,
     especially if the word is not itself the name of a place.
-    This is so people know that in e.g. 'Stacio de Distrikto-Granda-Lumturo',
+    This is so people know that in e.g. 'Stacio de Distriktʌ Granda-Lumturo',
     'Granda' is part of the name of a place called 'Granda-Lumturo',
     instead of 'Granda' as an adjective
     describing the 'Stacio' or 'Lumturo' as 'Granda' (Big).

@@ -139,56 +139,56 @@ Examples:
 | Mallongigo  <br>Abbreviation | En Epopo  <br>In Epopo | En la angla  <br>In English |
 | :-----: | -------------------- | ---------------- |
 ||| <!-- Major Geological/Engineering Features -->  |
-|    Ab   | **A**kvo**b**araĵo   | Dam              |
-|    Mt   | **M**on**t**o        | Mountain         |
-|    Am   | **A**ntaŭ**m**onto   | Foothill         |
-|    Me   | **M**ont**e**to      | Hill             |
-|    Bs   | **B**a**s**eno       | Reservoir        |
-|    Lg   | **L**a**g**o         | Lake             |
-|    Rv   | **R**i**v**ero       | River            |
-|  ~~Mr~~ | **M**a**r**o         | Sea  <br>(Deprecated - Use full form instead) |
-|    Is   | **I**n**s**ulo       | Island           |
-|    Pn   | **P**o**n**to        | Bridge           |
+|    Ab   | **A**kvo**b**araĵʌ   | Dam              |
+|    Mt   | **M**on**t**ʌ        | Mountain         |
+|    Am   | **A**ntaŭ**m**ontʌ   | Foothill         |
+|    Me   | **M**ont**e**tʌ      | Hill             |
+|    Bs   | **B**a**s**enʌ       | Reservoir        |
+|    Lg   | **L**a**g**ʌ         | Lake             |
+|    Rv   | **R**i**v**erʌ       | River            |
+|  ~~Mr~~ | **M**a**r**ʌ         | Sea  <br>(Deprecated - Use full form instead) |
+|    Is   | **I**n**s**ulʌ       | Island           |
+|    Pn   | **P**o**n**tʌ        | Bridge           |
 ||| <!-- District types --> |
-|    Ar   | **Ar**eo             | Area  <br>(Fallback type) |
-|    Dt   | **D**is**t**rikto    | District         |
-|    Kt   | **K**var**t**alo     | Neighbourhood  <br>(Default for what Sc names after) |
-|    Iz   | **I**ndustri**z**ono | Industrial Park  |
-|  ~~Hv~~ | ~~**H**a**v**eno~~   | Port  <br>(Deprecated) |
-|   Shv   | **S**ek**h**aveno    | Dry port         |
-|   Mhv   | **M**ar**h**aveno    | Seaport          |
-|   Fhv   | **F**lug**h**aveno   | Airport          |
-|   Khv   | **K**osma**h**aveno  | Space Port       |
-|    Va   | **V**il**a**o        | Villa            |
-|    Vd   | **V**i**d**o         | Vista            |
-|    Vĝ   | **V**ila**ĝ**o       | Village          |
-|    Sc   | **S**ta**c**io       | Station          |
-|    Pk   | **P**ar**k**o        | Park             |
+|    Ar   | **Ar**eʌ             | Area  <br>(Fallback type) |
+|    Dt   | **D**is**t**riktʌ    | District         |
+|    Kt   | **K**var**t**alʌ     | Neighbourhood  <br>(Default for what Sc names after) |
+|    Iz   | **I**ndustri**z**onʌ | Industrial Park  |
+|  ~~Hv~~ | ~~**H**a**v**enʌ~~   | Port  <br>(Deprecated) |
+|   Shv   | **S**ek**h**avenʌ    | Dry port         |
+|   Mhv   | **M**ar**h**avenʌ    | Seaport          |
+|   Fhv   | **F**lug**h**avenʌ   | Airport          |
+|   Khv   | **K**osma**h**avenʌ  | Space Port       |
+|    Va   | **V**il**a**ʌ        | Villa            |
+|    Vd   | **V**i**d**ʌ         | Vista            |
+|    Vĝ   | **V**ila**ĝ**ʌ       | Village          |
+|    Sc   | **S**ta**c**iʌ       | Station          |
+|    Pk   | **P**ar**k**ʌ        | Park             |
 ||| <!-- Road types --> |
-|  ~~Vj~~ | ~~**V**o**j**o~~     | [Road](../teknikoj/Retoj.md#vojoj)  <br>(Deprecated[^Deprecated-Vj]) |
-|    Ev   | f**E**r**v**ojo      | [Railway](../teknikoj/Retoj.md#metrooj--personaj-fervojoj) |
-|  Ev-K   | Ev-**K**argo         | [Cargo railway](../teknikoj/Retoj.md#kargaj-kaj-malnovaj-personaj-fervojoj) |
-|  Ev-AR  | Ev-**A**lt**R**apido | [High-speed railway](../teknikoj/Retoj.md#altrapidaj-fervojoj) |
-|  Ev-SL  | Ev-**S**upraj**L**inioj | Regular railway (powered by overhead lines) |
-|  Ev-TR  | Ev-**T**ria**R**elo  | Subway railway (powered by third rail) |
-|    Tv   | Ev-**T**ramo         | [Tramway](../teknikoj/Retoj.md#tramoj)          |
-|    Ŭv   | a**Ŭ**to**v**ojo     | [Motorway](../teknikoj/Retoj.md#aŭtovojoj) |
-|    St   | **S**tra**t**o       | [Street](../teknikoj/Retoj.md#stratoj) |
-|  St-Dt  | St-**D**is**t**ribuo | Distributor Roads |
-|  St-Ĉf  | St-**Ĉ**e**f**o      | Main  Roads      |
-|  St-Lk  | St-**L**o**k**o      | Local Roads      |
-|  St-H   | St-**H**omo          | Pedestrian Roads |
-|  St-K   | St-**K**argo         | Industrial Roads |
+|  ~~Vj~~ | ~~**V**o**j**ʌ~~     | [Road](../teknikoj/Retoj.md#vojoj)  <br>(Deprecated[^Deprecated-Vj]) |
+|    Ev   | f**E**r**v**ojʌ      | [Railway](../teknikoj/Retoj.md#metrooj--personaj-fervojoj) |
+|  Ev-K   | Ev-**K**argʌ         | [Cargo railway](../teknikoj/Retoj.md#kargaj-kaj-malnovaj-personaj-fervojoj) |
+|  Ev-AR  | Ev-**A**lt**R**apidʌ | [High-speed railway](../teknikoj/Retoj.md#altrapidaj-fervojoj) |
+|  Ev-SL  | Ev-**S**upr**L**iniʌ | Regular railway (powered by overhead lines) |
+|  Ev-TR  | Ev-**T**ria**R**elʌ  | Subway railway (powered by third rail) |
+|    Tv   | Ev-**T**ramʌ         | [Tramway](../teknikoj/Retoj.md#tramoj)          |
+|    Ŭv   | a**Ŭ**to**v**ojʌ     | [Motorway](../teknikoj/Retoj.md#aŭtovojoj) |
+|    St   | **S**tra**t**ʌ       | [Street](../teknikoj/Retoj.md#stratoj) |
+|  St-Dt  | St-**D**is**t**ribuʌ | Distributor Roads |
+|  St-Ĉf  | St-**Ĉ**e**f**ʌ      | Main  Roads      |
+|  St-Lk  | St-**L**o**k**ʌ      | Local Roads      |
+|  St-H   | St-**H**omʌ          | Pedestrian Roads |
+|  St-K   | St-**K**argʌ         | Industrial Roads |
 ||| <!-- Edu types --> |
-|    Bl   | **B**az**l**ernejo   | Elementary School |
-|    Ml   | **M**ez**l**ernejo   | High School      |
-|    Al   | **A**lt**l**ernejo   | College          |
-|   Uni   | **Uni**versitato     | University       |
+|    Bl   | **B**az**l**ernejʌ   | Elementary School |
+|    Ml   | **M**ez**l**ernejʌ   | High School      |
+|    Al   | **A**lt**l**ernejʌ   | College          |
+|   Uni   | **Uni**versitatʌ     | University       |
 ||| <!-- Misc types --> |
-|    Ub   | **U**r**b**o         | City             |
-|    Ĉs   | **Ĉ**ef**s**idejo    | Headquarters     |
+|    Ub   | **U**r**b**ʌ         | City             |
+|    Ĉs   | **Ĉ**ef**s**idejʌ    | Headquarters     |
 |    La   | **La**               | The              |
-|    Ĉf   | **Ĉ**e**f**o         | Main             |
+|    Ĉf   | **Ĉ**e**f**a         | Main             |
 |    Pt   | **P**ar**t**o        | Part, Segment    |
 |    v    | **v**ersio           | version          |
 |   Skp   | **S**av**k**o**p**io | Backup           |
@@ -205,29 +205,29 @@ Naming rules examples: (See also [Lingvo](../teknikoj/Lingvo.md#nomi) page.)
 
 - `Ab-O#1` (Good) as a short version  
   of `Ab-Olivkrono #1` (Good),  
-  or `Akvobaraĵa-Olivkrono #1` (Meh),  
+  or `Akvobaraĵʌ Olivkrono #1` (Meh),  
   or `Mt-Olivkrona Akvobaraĵo #1` (Good);
 - `Mt-O` (Good) as a short version  
   of `Mt-Olivkrono` (Good),  
-  or `Monta-Olivkrono` (Good),  
-  ~~or `Olivkrona Monto`~~ (Deprecated);
+  or `Montʌ Olivkrono` (Good),  
+  ~~or `La Olivkrona Monto`~~ (Deprecated);
 - `Ŭv#Σm` for Motorway 13 N->S `ŬΣm`,  
-  or `Aŭtovojo #Σm`;
+  or `Aŭtovojʌ #Σm`;
 - `St-Olivkrono #123` as a short version  
-  of `Strato-Olivkrono #123`,  
-  ~~or `123 Olivkrono St`~~ (Deprecated);
-- ~~`Stacidomo #E` and `Stacidomo #U` for train and bus station respectively~~  
+  of `Stratʌ Olivkrono #123`,  
+  ~~or `123 Olivkrona St`~~ (Deprecated);
+- ~~`Stacidomʌ #E` and `Stacidomʌ #U` for train and bus station respectively~~  
   (Just use `Stacidomo` so *Carto* Mod doesn't get confused);
 
-### Distrikto Numerada Sistemo
+### Distrikta Numerada Sistemo
 
 > District Numbering System
 
 Using the leading digit for identifying districts and areas:
 
-| Areo Numero | Proksimuma Loko | Siglo | Plena Nomo | Koloro |
+| Area Numero | Proksimuma Loko | Siglo | Plena Nomo | Koloro |
 | --- | ---- | ----- | ----- | -------------- |
-| `0` |      |       | Interdistrikto (sen eksteraj konektoj)  <br>Interdistrict (no outside connections) | <span style="color:Tan">█ #D2B48C</span> |
+| `0` |      |       | Interdistrikte (sen eksteraj konektoj)  <br>Interdistrict (no outside connections) | <span style="color:Tan">█ #D2B48C</span> |
 | `1` |  SK  | Mt-K  | Mt-Kuraĝo      | |
 |     |  SK  | Vĝ-P  | Vĝ-Pioniro     | <span style="color:Red">█ #FF0000</span> |
 | `2` |  SC  | Am-H  | Am-Hejmeco     | |
@@ -256,7 +256,7 @@ Using the leading digit for identifying districts and areas:
 |     |      |       | Sc-Leviĝo      | |
 | `Σ` |  NR  | Am-R  | Am-Racio       | |
 |  …  |      |       |                | |
-| `Ψ` |      |       | Eksteraj Konektoj  <br>Outside connections | |
+| `Ψ` |      |       | Eksteraj konektoj  <br>Outside connections | |
 |  …  |      |       |                | |
 | N/A |  NC  | Mt-U  | Mt-Unukorno    | <span style="color:Thistle">█ #D8BFD8</span> |
 | N/A |  NR  | Mt-R  | Mt-Racio       | <span style="color:DeepSkyBlue">█ #00BFFF</span> |

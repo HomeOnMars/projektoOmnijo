@@ -39,7 +39,7 @@ who has already earned herself a reputation of arrogance and recklessness
 since her coronation just about half a year ago.
 
 *La Regno de Omnijo* is a fictional monarchy
-located on the fictional island *la Insulo-Omnijo*
+located on the fictional island *Insulʌ Omnijo*
 in the Southern Hemisphere somewhere in between Chile and New Zealand,
 near 56°15'S, 140°15'W [^Bulteno-Loko-1]. <!-- (WGS X=-140.25, Y=-56.25) -->
 The island has a size of approximately Iceland or Java island,

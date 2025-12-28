@@ -286,7 +286,7 @@ Content
     and the dam hill ('Ab-Olivkronaĵo');
 - `District::Am-Olivkrono`,`Expansion::Rail`,`Transit`:
   - Expanding Rail network near Am-O;
-- `District::Vilaĝo-Pioniro`,`Expansion::(Zoning,Services,Industry)`:
+- `District::Vĝ-Pioniro`,`Expansion::(Zoning,Services,Industry)`:
   - Added more housing and services, and a Grain farm;
 - `Redevelop::Rail`,`Transit`:
   - Updating the map original rail network

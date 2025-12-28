@@ -425,7 +425,7 @@ which is also slowing down over millennia.)
   $1 J \approx 365.24713_D ⚻$ currently,
   considering both leap years and added seconds.
 
-[^Tagoj-Solstico]: a.k.a. Northern Solstice, since *la Insulo-Omnijo* is located in the Southern Hemisphere.
+[^Tagoj-Solstico]: a.k.a. Northern Solstice, since *Insulʌ Omnijo* is located in the Southern Hemisphere.
 
 ##### Omnijara Notacio
 
