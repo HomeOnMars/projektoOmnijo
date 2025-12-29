@@ -625,6 +625,15 @@ See also [Unuoj](Unuoj.md) page.
 
 > New words
 
+- Ajʌon
+  1. [Aiúa](https://homosabiens.substack.com/p/aiua)
+    (2025-12-04, coined by Duncan Sabien):  
+    "Aiua— the soul wants what it wants, and goes where it will,
+    and you have (at best) partial and imperfect control over its motion."
+    —— Duncan Sabien  
+    The heart wants what it wants;
+    [Terminal goals cannot be stupid](https://youtu.be/hEUO6pjwFOo?t=437).
+
 - Pohekve
   1. [Scientific notation operator](#scienca-notacio) in Epopo:  
     Times Dx16 to the power of...  /  Multiplikite per X-a potenco de hek.
