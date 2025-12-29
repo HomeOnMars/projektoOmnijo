@@ -101,8 +101,9 @@ Changes of Esperanto++ (*Epopo*) from Esperanto include:
   (mostly replaced with `K`);
 - Added `Q` (Qi-), `X` (Xi-), `Ʌ` (-ü) for more diverse sounds,
   inspired by [pinyin](https://en.wikipedia.org/wiki/Pinyin).  
-  No words from *Epopo* are using those three letters yet;
+  No words from *Epopo* are using `Q, X` yet;
   for now they are only used in naming.
+  See [-ʌ suffix](#-ʌ-sufikso) section for `Ʌ` main usage.
 - `oŭ` is allowed and used in Epopo.
 - Note that 'Ʌ', 'JɅ', and 'ĴɅ' could sound similar.
   Generally speaking, try not to add 'J' or 'Ĵ' in front of 'Ʌ'
@@ -162,9 +163,9 @@ The equivalent in *python* would be
 
 ```python
 from context import Urba, Distrikto
-class GrandaLumturo(UrbaDistrikto):
+class GrandaLumturo(Urba(Distrikto)):
     name = "Granda-Lumturo"
-    types = [UrbaDistrikto]
+    types = [Urba(Distrikto)]
     def __init__(self, **kwargs)
         super.__init__(**kwargs)
 this = GrandaLumturo()
@@ -184,23 +185,23 @@ which is partly why `-ʌ` suffix is introduced in *Epopo*.)
 It also works for people's titles:
 
 ```text
-Jen venas la Reĝinʌ Doktorʌ Serena.
+Jen venas Ŝia Reĝina Moŝtʌ Honorinda Doktorʌ Serena Novarika.
 ```
 
-which means "Here comes Dr Serena the Queen".
-Here, two words with `-ʌ` endings were used before "Serena";
+which means "Here comes Her Majesty the Queen, Honorable Dr Serena Novarika".
+Here, two words with `-ʌ` endings were used before "Serena Novarika";
 in this case, it means Serena is members of both class,
 i.e. She is both a Queen and a Doctor.  
 In *python*, this would suggest multiple class inheritance:
 
 ```python
-from context import Reĝino, Doktoro
-class Serena(Reĝino, Doktoro):
-    name = "Serena"
-    types = [Reĝino, Doktoro]
+from context import Ŝia, Reĝina, Moŝto, Honorinda, Doktoro
+class SerenaNovarika(Ŝia(Reĝina(Moŝto)), Honorinda(Doktoro)):
+    name = "Serena Novarika"
+    types = [Ŝia(Reĝina(Moŝto)), Honorinda(Doktoro)]
     def __init__(self, **kwargs)
         super.__init__(**kwargs)
-this = Serena()
+this = SerenaNovarika()
 ```
 
 To sum up,
@@ -208,15 +209,16 @@ To sum up,
 1. The word ending with `-ʌ`
   must be a generic type of things when ending with `-o`;
 2. The word following (link with hyphen if having multiple words),
-  when not ending with `-ʌ` or `-a` or `-e`,
-  is the name of the specific thing of that type;
+  except when ending with `-ʌ` or `-a` or `-e`,
+  is the name of the specific thing of that type and a proper noun;
 3. The name can be a number (or letters-and-numbers-based identifier).
   In which case, that number/identifier should start with `#`.  
   E.g. 'Mt-Racia Akvobaraĵʌ #0'.  
   (`#` symbol is not pronounced.)
 4. *Exception*: If the following word also ends with `-ʌ`,
   then it is also a class that the thing/person is a member of.
-  The word after that is the name, if not ending with `-ʌ` or `-a` or `-e`.
+  The first proper noun after that (and any more subsequent `-ʌ` words)
+  is the name.
 5. No need to add `La` in front of the `-ʌ` ending type classifier word.
   Because we already know it refers to a specific thing just by `-ʌ` alone.  
   `La` refers to either an anonymous specific thing,
