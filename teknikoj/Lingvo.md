@@ -136,101 +136,137 @@ Changes of Esperanto++ (*Epopo*) from Esperanto include:
 
 > `-ʌ` suffix
 
-In *Epopo*, ending a word with `-ʌ` means that the word is a type classifier,
+In *Epopo*, ending a word with `-ʌ` means
+that the word is a **type classifier**,
 and what follows is the name of a specific thing of that type.
 In other words,
 
 - `-o` refers to a thing / a class of things;
-- `-ʌ` implies that the following thing/person
-  "is of this type / is a member of this class";
 - `-a` implies that the following thing/person
   "shares (some) characteristics of this type,
   or is located within this place, etc. etc.";
+- `-ʌ` implies that the following thing/person
+  "is of this type / is a member of this class";
 
 It is important to distinguish between `-ʌ` and `-a`, i.e.
 "Something is of the type" and
 "Something shares the key properties of the type".
 
-For example, (`Jen` in Esperanto/Epopo means "Behold")
+- Example 0  
+  Differentiating between different word endings:
 
-```text
-Jen Urba Distriktʌ Granda-Lumturo!
-```
+  - Mang***o*** Profesoro  
+    A professor related to mangos;
+    A professor who studies mangos.
+  - Mang***a*** Profesoro  
+    A professor who shares some of mangos' traits;
+    A mango-y professor.
+  - Mang***ʌ*** Profesoro  
+    A mango named "Professor".
 
-refers to a specific "urb**a** distrikt**o**" (urban district)
-that is called "Granda-Lumturo" (Great Lighthouse).  
-The equivalent in *python* would be
+  Similarly,
 
-```python
-from context import Urba, Distrikto
-class GrandaLumturo(Urba(Distrikto)):
-    name = "Granda-Lumturo"
-    types = [Urba(Distrikto)]
-    def __init__(self, **kwargs)
-        super.__init__(**kwargs)
-this = GrandaLumturo()
-```
+  - Profesor**o** Mango  
+    A mango related to professors (?)
+  - Profesor**a** Mango  
+    A mango who shares some of professors' traits;
+    A professor-y mango.
+  - Profesor**ʌ** Mango  
+    A professor named "Mango".
 
-and in *Esperanto* it would be
+- Example 1  
+  (`Jen` in Esperanto/Epopo means "Behold")
 
-```text
-Jen la urba distrikto Granda-Lumturo!
-```
+  ```text
+  Jen Urba Distriktʌ Granda-Lumturo!
+  ```
 
-(though this could be a bit confusing
-whether 'Granda-Lumturo' is the name of the district,
-or a separate thing (with a forgotten coma);
-which is partly why `-ʌ` suffix is introduced in *Epopo*.)
+  refers to a specific "urb**a** distrikt**o**" (urban district)
+  that is called "Granda-Lumturo" (Great Lighthouse).  
+  The equivalent in ***python*** would be
 
-It also works for people's titles:
+  ```python
+  from context import Urba, Distrikto    # Urba is a class decorator
+  this = Urba(Distrikto)(name="Granda-Lumturo")
+  ```
 
-```text
-Jen venas Ŝia Reĝina Moŝtʌ Honorinda Doktorʌ Serena Novarika.
-```
+  or more explicitly,
 
-which means "Here comes Her Majesty the Queen, Honorable Dr Serena Novarika".
-Here, two words with `-ʌ` endings were used before "Serena Novarika";
-in this case, it means Serena is members of both class,
-i.e. She is both a Queen and a Doctor.  
-In *python*, this would suggest multiple class inheritance:
+  ```python
+  from context import Urba, Distrikto    # Urba is a class decorator
+  class GrandaLumturo(Urba(Distrikto)):
+      name = "Granda-Lumturo"
+      types = [Urba(Distrikto)]
+      unique = True
+      def __init__(self, **kwargs)
+          super.__init__(**kwargs)
+  this = GrandaLumturo()
+  ```
 
-```python
-from context import Ŝia, Reĝina, Moŝto, Honorinda, Doktoro
-class SerenaNovarika(Ŝia(Reĝina(Moŝto)), Honorinda(Doktoro)):
-    name = "Serena Novarika"
-    types = [Ŝia(Reĝina(Moŝto)), Honorinda(Doktoro)]
-    def __init__(self, **kwargs)
-        super.__init__(**kwargs)
-this = SerenaNovarika()
-```
+  And in ***Esperanto*** this would be
 
-To sum up,
+  ```text
+  Jen la urba distrikto Granda-Lumturo!
+  ```
 
-1. The word ending with `-ʌ`
-  must be a generic type of things when ending with `-o`;
-2. The word following (link with hyphen if having multiple words),
-  except when ending with `-ʌ` or `-a` or `-e`,
-  is the name of the specific thing of that type and a proper noun;
-3. The name can be a number (or letters-and-numbers-based identifier).
-  In which case, that number/identifier should start with `#`.  
-  E.g. 'Mt-Racia Akvobaraĵʌ #0'.  
-  (`#` symbol is not pronounced.)
-4. *Exception*: If the following word also ends with `-ʌ`,
-  then it is also a class that the thing/person is a member of.
-  The first proper noun after that (and any more subsequent `-ʌ` words)
-  is the name.
-5. No need to add `La` in front of the `-ʌ` ending type classifier word.
-  Because we already know it refers to a specific thing just by `-ʌ` alone.  
-  `La` refers to either an anonymous specific thing,
-  or a specific thing with the following word as its name
-  (in which case, add hyphen between `La` and the name, e.g. 'La-Pordego').
-6. The `-ʌ` ending word can often be simplified with abbreviations.
-  E.g. 'Distriktʌ Lumturo' to 'Dt-Lumturo'.
-  In which case, add hyphen between the abbreviation and the following name.
-  Pronounce abbreviations like '**D**o**t**ʌ' to preserve word ending.
-7. See [Siglo](../OmniCentro/Sigloj.md#mallongigoj) page
-  for more on abbreviations.
-8. For more information on naming things, see [Nomi](#nomi) section.
+  (though this could be a bit confusing
+  whether 'Granda-Lumturo' is the name of the district,
+  or a separate thing (with a forgotten coma);
+  which is partly why `-ʌ` suffix is introduced in *Epopo*.)
+
+- Example 2  
+  It also works for people's titles:
+
+  ```text
+  Jen venas Ŝia Reĝina Moŝtʌ Honorinda Doktorʌ Serena Novarika.
+  ```
+
+  which means "Here comes Her Majesty the Queen, Honorable Dr Serena Novarika".
+  Here, two words with `-ʌ` endings were used before "Serena Novarika";
+  in this case, it means Serena is members of both class,
+  i.e. She is both a Queen and a Doctor.  
+  In ***python***, this would suggest multiple class inheritance:
+
+  ```python
+  from context import Ŝia, Reĝina, Moŝto, Honorinda, Doktoro
+  # Ŝia, Reĝina, Honorinda are class decorators
+  class SerenaNovarika(Ŝia(Reĝina(Moŝto)), Honorinda(Doktoro)):
+      name = "Serena Novarika"
+      types = [Ŝia(Reĝina(Moŝto)), Honorinda(Doktoro)]
+      unique = True
+      def __init__(self, **kwargs)
+          super.__init__(**kwargs)
+  this = SerenaNovarika()
+  ```
+
+- Summary and detailed rules
+  1. The word ending with `-ʌ`
+    must be a generic type of things when ending with `-o`;
+  2. The word following (link with hyphen if having multiple words),
+    except when ending with `-ʌ` or `-a` or `-e`,
+    is the name of the specific thing of that type and a proper noun;
+  3. The name can be a number (or letters-and-numbers-based identifier).
+    In which case, that number/identifier should start with `#`.  
+    E.g. 'Mt-Racia Akvobaraĵ***ʌ*** #0'.  
+    (`#` symbol is not pronounced.)  
+    'Mt-Racia Akvobaraĵ***o*** #0' is also okay,
+    since there's few ways to misinterpret that.
+  4. *Exception*: If the following word also ends with `-ʌ`,
+    then it is also a class that the thing/person is a member of.
+    The first proper noun after that (and after any more subsequent `-ʌ` words)
+    is the name.
+  5. No need to add `La` in front of the `-ʌ` ending type classifier word.
+    Because we already know it refers to a specific thing just by `-ʌ` alone.  
+    `La` refers to either an anonymous specific thing,
+    or a specific thing with the following word as its name
+    (in which case, add hyphen between `La` and the name, e.g. 'La-Pordego').
+  6. The `-ʌ` ending word can often be simplified with abbreviations.
+    E.g. 'Distriktʌ Lumturo' to 'Dt-Lumturo'.
+    In which case, add hyphen between the abbreviation and the following name.
+    Pronounce abbreviations like '**D**o**t**ʌ' to preserve word ending.
+  7. See [Siglo](../OmniCentro/Sigloj.md#mallongigoj) page
+    for more on abbreviations.
+  8. For more information on naming things, see [Nomi](#nomi) section.
 
 #### Elparolo
 
