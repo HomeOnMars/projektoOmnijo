@@ -29,7 +29,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” 
 """
 
 
-
+import numpy as np
 from numpy import sqrt, sin, cos, pi
 from astropy import units
 from astropy import constants as const
@@ -76,7 +76,7 @@ def n_car_f(
     rho_air = 1.225*units.kg/units.m**3,    # air density
     A_d  = (3*4/2*(U/8)**2).to(u.m**2),    # frontal area (for calc air drag)
 ):
-    # how many cars can this train engine haul
+    """Calc how many cars can this train engine haul."""
     #n_car = (engine_p / ((grad/sqrt(1+grad**2) + (1.+air_fac)*C_rr/sqrt(1+grad**2))*load_full*g*v) - engine_m/load_full).si
     n_car = (
         engine_p / v / (
@@ -93,11 +93,53 @@ def n_car_f(
     length= int(n_car+1)*car_len    # +1 to account train engine itself
     return n_car, capa, length
 
+
+def max_v_f(
+    grad,
+    load_full,  # total vehicle weight
+    engine_p,   # engine power
+    C_rr = 0.0003,  # rolling resistence
+    C_d  = 0.2,     # drag coefficient
+    rho_air = 1.225*units.kg/units.m**3,    # air density
+    A_d  = (3*4/2*(U/8)**2).to(u.m**2),     # frontal area (for calc air drag)
+):
+    """Calc max speed for this vehicle on the specified grads"""
+    # n_car = (
+    #     engine_p / v / (
+    #         # gravity and rolling resistance force
+    #         (grad/sqrt(1+grad**2) + C_rr/sqrt(1+grad**2))*load_full*g
+    #         # air drag force
+    #         + 0.5 * C_d * rho_air * A_d * v**2
+    #     )
+    # ).si
+    max_v_eq = np.polynomial.Polynomial([
+        -engine_p.si.value,
+        (
+            (grad/sqrt(1+grad**2) + C_rr/sqrt(1+grad**2))*load_full*g
+        ).si.value,  # * v
+        0,  # * v**2
+        (0.5 * C_d * rho_air * A_d).si.value,  # * v**3
+    ])
+    max_v_eq_roots = max_v_eq.roots()
+    max_v_roots = [
+        v for v in max_v_eq_roots[np.isreal(max_v_eq_roots)] if v > 0]
+    if len(max_v_roots) != 1:
+        # something went wrong
+        print(f"Error: root finding failed (v solved to be {max_v_roots})")
+    max_v = max_v_roots[0].real if len(max_v_roots) else np.nan
+    max_v = (max_v * (u.m / u.s)).to(JoGx)
+    return max_v
+
+
 def print_info(**params):
-    n_car, capa, length = n_car_f(**params)
     txt = f"\t{params = }"
-    txt += f"\n\t\tv =  {presi_Hx(params['v'].to_value(JoGx), sc=4, e_sep=''):>8} JoGx\t={params['v'].to(kphx):8.2f}"
-    txt += f"\n\t{n_car =:6.3f}\t{capa =:4.0f}\t{length =:4.0f}\n"
+    if 'v' in params:
+        n_car, capa, length = n_car_f(**params)
+        txt += f"\n\t\tv =  {presi_Hx(params['v'].to_value(JoGx), sc=4, e_sep=''):>8} JoGx\t={params['v'].to(kphx):8.2f}"
+        txt += f"\n\t{n_car = :6.3f}\t{capa = :4.0f}\t{length = :4.0f}\n"
+    else:
+        max_v = max_v_f(**params)
+        txt += f"\n\tmax_v = {presi_Hx(max_v, sc=4, e_sep='')}  |  {max_v.to(kphx):6.3f}\n"
     print(txt)
     return txt
 
@@ -108,7 +150,7 @@ if __name__ == '__main__':
     # remember we need to drag 24 cars, so n_car > 24 is minimum.
     #
     # For "per car" cases, we need to pull the car itself, so n_car must >= 1
-    
+
     print("\nRail\n")
     # As the steel-on-steel static friction coeff is only 0.15~0.6 (<https://hypertextbook.com/facts/2005/steel.shtml>),
     #   max grad should be <= 15% (on the safe side) to prevent wheelslip
@@ -124,7 +166,8 @@ if __name__ == '__main__':
     print_info(grad=1.6*percent, v=0x60*JoGx, **KE_pars)
     print_info(grad=3.6*percent, v=0x30*JoGx, **KE_pars)
     print_info(grad=5.5*percent, v=0x20*JoGx, **KE_pars)
-    
+
+
     print("\nHigh Speed Rail (per car)\n")
     # Using China Railway CRH3 (Velaro CN) info as reference / rough guideline
     #   see <https://pedestrianobservations.com/2012/03/13/table-of-train-weights>
@@ -149,8 +192,8 @@ if __name__ == '__main__':
     print_info(grad=5.5*percent, v=0x80*JoGx, **V_pars)
     print_info(grad=7.5*percent, v=0x60*JoGx, **V_pars)
     print_info(grad=23.5*percent,v=0x20*JoGx, **V_pars)
-    
-    
+
+
     print("\nMetro (per car)\n")
     #   Engine power exaggerated from 772hp (for a 24m car with a power ratio of 24kW/t) to "only" 1200hp
     #       Note: third rail cannot support high speed (>160kph),
@@ -165,7 +208,7 @@ if __name__ == '__main__':
     print_info(grad=3.5*percent, v=0x88*JoGx, **E_pars)
     print_info(grad=5.4*percent, v=0x60*JoGx, **E_pars)
     print_info(grad=7.3*percent, v=0x48*JoGx, **E_pars)
-    
+
 
     print("\nTram (per car)\n")
     T_pars = {
@@ -179,7 +222,7 @@ if __name__ == '__main__':
     print_info(grad= 9.6*percent, v=0x40*JoGx, **T_pars)
     print_info(grad=13.0*percent, v=0x30*JoGx, **T_pars)
     print_info(grad=20.0*percent, v=0x20*JoGx, **T_pars)
-    
+
 
     print("\nRoad\n")
     # As the rubber-on-asphalt(wet) static friction coeff is ~0.5 (<https://en.wikibooks.org/wiki/Physics_Study_Guide/Frictional_coefficients>)
@@ -191,23 +234,41 @@ if __name__ == '__main__':
     #   For Engine Maximum Output, GVM (Gross Vehicle Mass) and GCM (Gross Combination Mass) info))
     W_pars = {
         'engine_p' : 0x100*JLu, #(863*hp).to(hp),
-        'engine_m' : 5*ton,
-        'load_full': 29*ton,
+        # 'engine_m' : 5*ton,
+        # 'load_full': 40*ton,    # Semi truck (5/3*u.MP)
+        'load_full': 34.4*ton,    # box truck (23/16*u.MP)
         'C_rr': 0.006,
         'C_d' : 0.8,
         'A_d': (2*3/1.25*(U/8)**2).to(u.m**2),
     }
-    print_info(grad=0*percent, v=0x9B*JoGx, **W_pars)
-    print_info(grad=3.7*percent, v=0x60*JoGx, **W_pars)
-    print_info(grad=5.1*percent, v=0x50*JoGx, **W_pars)
-    print_info(grad=7.0*percent, v=0x40*JoGx, **W_pars)
+    print_info(grad=0*percent, **W_pars)
+    print_info(grad=3.7*percent, **W_pars)
+    print_info(grad=5.1*percent, **W_pars)
+    print_info(grad=7.0*percent, **W_pars)
 
 
     print("\nLocal Road\n")
     
-    print_info(grad=10*percent, v=0x30*JoGx, **W_pars)
-    print_info(grad=15*percent, v=0x20*JoGx, **W_pars)
-    print_info(grad=21*percent, v=0x18*JoGx, **W_pars)
-    print_info(grad=33*percent, v=0x10*JoGx, **W_pars)
+    print_info(grad=10*percent, **W_pars)
+    print_info(grad=15*percent, **W_pars)
+    print_info(grad=21*percent, **W_pars)
+    print_info(grad=33*percent, **W_pars)
+
+
+    print("\nBike\n")
+    # Ref: <https://en.wikipedia.org/wiki/Electric_bicycle#Range> (2025-12-30)
+    B_pars = {
+        'load_full': 0.1171875*ton,   # 1.25*u.JP
+        'engine_p' : 5/16*JLu,   # approx 786*u.W
+        'C_rr': 0.007,
+        'C_d' : 0.7,
+        'A_d': (0.4*u.m**2),
+    }
+    print_info(grad=0*percent, **B_pars)
+    print_info(grad=4*percent, **B_pars)
+    print_info(grad=7*percent, **B_pars)
+    print_info(grad=11*percent, **B_pars)
+    print_info(grad=15*percent, **B_pars)
+    print_info(grad=21*percent, **B_pars)
 
 #------------------------------------------------------------------------------

@@ -776,6 +776,10 @@ to   $7 \  \textrm{JoĜ}$ ($\approx 9.4_D \textrm{kph}$).
 Source: (2025-07-03)
 [Wikipedia](https://en.wikipedia.org/wiki/Jogging#Definition).
 
+Biking speed (e-bike, relaxing): ≈ Hx 10 JoĜ  (≈ Dx 21 kph).  
+Source: (2025-12-30)
+[Wikipedia](https://en.wikipedia.org/wiki/Electric_bicycle#Range).
+
 Walkable distances:
 
 | Time (Dxmin) | Time (HxĈ) | Distance (HxU) | Distance (DxU) | Distance (Dxkm_CSL) |

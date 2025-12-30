@@ -123,13 +123,17 @@ Arterial / Collector / Local Roads:
 
 > Bike paths
 
-(TBD)
+- Gradient limit:
 
-|             | max Gradient $s$ (Dx) | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | Notes |
-| ----------- | :-------: | :-------: | :-------: | ----------- |
-|             |   4  \%   |  -        |  -      | |
-| Recommended |   7  \%   |  -        |  -      | |
-| Hard Limit  |  15  \%   |  20 km/h  |  10 JoĜ | |
+  |             | max Gradient $s$ (Dx) | Speed limit $v_\mathrm{max}$ (Dx) | Speed limit $v_\mathrm{max}$ (Hx) | Notes |
+  | ----------- | :-------: | :-------: | :-------: | ----------- |
+  | Recommended |   7  \%   |  30 km/h  |  15 JoĜ | |
+  |             |  11  \%   |  20 km/h  |  10 JoĜ | |
+  |             |  15  \%   |  15 km/h  |   Π JoĜ | |
+  | Hard Limit  |  21  \%   |  10 km/h  |   8 JoĜ | |
+
+  - Assuming [e-bike](https://en.wikipedia.org/wiki/Electric_bicycle)
+    (2025-12-30).
 
 #### Piedvojoj
 
