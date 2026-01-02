@@ -109,7 +109,7 @@
     "90641": {
       "Id": 90641,
       "Name": "Hall of Fame",
-      "Version": "34",
+      "Version": "35",
       "LoadOrder": 112,
       "IsEnabled": true,
       "IsVersionLocked": false,

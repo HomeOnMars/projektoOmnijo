@@ -1,6 +1,7 @@
 RoadVisualTweaks
 {
     "CarRoadWearOverrideEnable": false,
+    "CarRoadWearTextureVariant": "Vanilla",
     "BusLaneTextureBrightness": 1.65,
     "BusLaneTextureHue": 0.7,
     "BicycleLaneOverrideEnable": true,

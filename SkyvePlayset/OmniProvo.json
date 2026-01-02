@@ -52,20 +52,11 @@
       "IsVersionLocked": false,
       "PlaysetId": 0
     },
-    "79020": {
-      "Id": 79020,
-      "Name": "Static Ploppables [UI Dependency]",
-      "Version": "20",
-      "LoadOrder": 6,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
     "75250": {
       "Id": 75250,
       "Name": "Better Bulldozer",
       "Version": "22",
-      "LoadOrder": 8,
+      "LoadOrder": 7,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -74,7 +65,7 @@
       "Id": 74604,
       "Name": "Anarchy",
       "Version": "37",
-      "LoadOrder": 9,
+      "LoadOrder": 8,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -83,529 +74,133 @@
       "Id": 77240,
       "Name": "Find It",
       "Version": "54",
+      "LoadOrder": 9,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128241": {
+      "Id": 128241,
+      "Name": "Static Ploppables 18: Skyscrapers",
+      "Version": "1",
       "LoadOrder": 10,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
     },
-    "96718": {
-      "Id": 96718,
-      "Name": "Road Visual Tweaks (formerly Road Wear Adjuster)",
-      "Version": "7",
+    "128240": {
+      "Id": 128240,
+      "Name": "Static Ploppables 17: Supply Chains",
+      "Version": "1",
       "LoadOrder": 11,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
     },
-    "107590": {
-      "Id": 107590,
-      "Name": "Modular Zoning Blocks",
-      "Version": "3",
+    "128239": {
+      "Id": 128239,
+      "Name": "Static Ploppables 16: Bridges & Ports",
+      "Version": "1",
       "LoadOrder": 12,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
     },
-    "118002": {
-      "Id": 118002,
-      "Name": "Modular Resource Blocks",
-      "Version": "2",
+    "128238": {
+      "Id": 128238,
+      "Name": "Static Ploppables 15: Netherlands Pack",
+      "Version": "1",
       "LoadOrder": 13,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
     },
-    "79021": {
-      "Id": 79021,
-      "Name": "Static Ploppables 01: Base Game",
-      "Version": "26",
+    "128234": {
+      "Id": 128234,
+      "Name": "Static Ploppables 11: US Northeast Pack",
+      "Version": "1",
+      "LoadOrder": 14,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128232": {
+      "Id": 128232,
+      "Name": "Static Ploppables 09: China Pack",
+      "Version": "1",
       "LoadOrder": 16,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
     },
-    "126355": {
-      "Id": 126355,
-      "Name": "Road Precision",
-      "Version": "5",
+    "128230": {
+      "Id": 128230,
+      "Name": "Static Ploppables 08: Eastern Europe Pack",
+      "Version": "1",
+      "LoadOrder": 17,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128226": {
+      "Id": 128226,
+      "Name": "Static Ploppables 06: Urban Promenades",
+      "Version": "1",
       "LoadOrder": 18,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
     },
-    "125866": {
-      "Id": 125866,
-      "Name": "Road Speed Adjuster",
-      "Version": "5",
+    "128225": {
+      "Id": 128225,
+      "Name": "Static Ploppables 05: Modern Architecture",
+      "Version": "1",
+      "LoadOrder": 19,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128224": {
+      "Id": 128224,
+      "Name": "Static Ploppables 04: UK Pack",
+      "Version": "1",
+      "LoadOrder": 20,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128223": {
+      "Id": 128223,
+      "Name": "Static Ploppables 03: German Pack",
+      "Version": "1",
+      "LoadOrder": 21,
+      "IsEnabled": false,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128222": {
+      "Id": 128222,
+      "Name": "Static Ploppables 02: French Pack",
+      "Version": "1",
+      "LoadOrder": 22,
+      "IsEnabled": false,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128043": {
+      "Id": 128043,
+      "Name": "Static Ploppables 01: Base Game",
+      "Version": "2",
+      "LoadOrder": 23,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "127946": {
+      "Id": 127946,
+      "Name": "Static Ploppables: UI Dependency",
+      "Version": "2",
       "LoadOrder": 24,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "125675": {
-      "Id": 125675,
-      "Name": "City Services Redux",
-      "Version": "12",
-      "LoadOrder": 25,
-      "IsEnabled": false,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "124947": {
-      "Id": 124947,
-      "Name": "Outside Traffic Adjuster",
-      "Version": "2",
-      "LoadOrder": 27,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "74285": {
-      "Id": 74285,
-      "Name": "Scene Explorer",
-      "Version": "20",
-      "LoadOrder": 28,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "124553": {
-      "Id": 124553,
-      "Name": "La Clock (Show System Time)",
-      "Version": "10",
-      "LoadOrder": 29,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "123738": {
-      "Id": 123738,
-      "Name": "Adjust Transit Capacity",
-      "Version": "14",
-      "LoadOrder": 32,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "107591": {
-      "Id": 107591,
-      "Name": "Modular Service Blocks",
-      "Version": "5",
-      "LoadOrder": 36,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "121812": {
-      "Id": 121812,
-      "Name": "Custom Chirps",
-      "Version": "5",
-      "LoadOrder": 37,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "121256": {
-      "Id": 121256,
-      "Name": "Achievement Fixer",
-      "Version": "17",
-      "LoadOrder": 42,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "121130": {
-      "Id": 121130,
-      "Name": "Netherlands Pack",
-      "Version": "1",
-      "LoadOrder": 43,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "86605": {
-      "Id": 86605,
-      "Name": "All Aboard! (Faster Boarding Mod)",
-      "Version": "14",
-      "LoadOrder": 44,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "117161": {
-      "Id": 117161,
-      "Name": "Citizen Cleaner",
-      "Version": "10",
-      "LoadOrder": 47,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "113299": {
-      "Id": 113299,
-      "Name": "Disable Mouse Hint",
-      "Version": "1",
-      "LoadOrder": 53,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "91433": {
-      "Id": 91433,
-      "Name": "InfoLoom",
-      "Version": "34",
-      "LoadOrder": 55,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "79186": {
-      "Id": 79186,
-      "Name": "Simple Mod Checker Plus",
-      "Version": "51",
-      "LoadOrder": 57,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "98560": {
-      "Id": 98560,
-      "Name": "Asset UI Manager",
-      "Version": "15",
-      "LoadOrder": 66,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "104707": {
-      "Id": 104707,
-      "Name": "Detailed Descriptions",
-      "Version": "9",
-      "LoadOrder": 72,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "87755": {
-      "Id": 87755,
-      "Name": "Realistic Workplaces And Households",
-      "Version": "48",
-      "LoadOrder": 73,
-      "IsEnabled": false,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "101948": {
-      "Id": 101948,
-      "Name": "USA Northeast Pack",
-      "Version": "1",
-      "LoadOrder": 74,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "100454": {
-      "Id": 100454,
-      "Name": "China Pack",
-      "Version": "1",
-      "LoadOrder": 85,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "99048": {
-      "Id": 99048,
-      "Name": "Resource Locator",
-      "Version": "18",
-      "LoadOrder": 86,
-      "IsEnabled": false,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "98960": {
-      "Id": 98960,
-      "Name": "Eastern Europe Pack",
-      "Version": "3",
-      "LoadOrder": 87,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "78622": {
-      "Id": 78622,
-      "Name": "TransportPolicyAdjuster",
-      "Version": "11",
-      "LoadOrder": 88,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "81568": {
-      "Id": 81568,
-      "Name": "Zone Color Changer",
-      "Version": "13",
-      "LoadOrder": 90,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "81157": {
-      "Id": 81157,
-      "Name": "AreaBucket",
-      "Version": "13",
-      "LoadOrder": 91,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "88893": {
-      "Id": 88893,
-      "Name": "Time & Weather Anarchy",
-      "Version": "14",
-      "LoadOrder": 94,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "87428": {
-      "Id": 87428,
-      "Name": "Carto",
-      "Version": "26",
-      "LoadOrder": 95,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "77175": {
-      "Id": 77175,
-      "Name": "Extra Networks and Areas",
-      "Version": "16",
-      "LoadOrder": 99,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "92859": {
-      "Id": 92859,
-      "Name": "UK Pack",
-      "Version": "4",
-      "LoadOrder": 101,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "83733": {
-      "Id": 83733,
-      "Name": "Show Text Trends",
-      "Version": "5",
-      "LoadOrder": 114,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "91931": {
-      "Id": 91931,
-      "Name": "German Pack",
-      "Version": "4",
-      "LoadOrder": 117,
-      "IsEnabled": false,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "93523": {
-      "Id": 93523,
-      "Name": "NavigationView",
-      "Version": "13",
-      "LoadOrder": 119,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "75816": {
-      "Id": 75816,
-      "Name": "Advanced Line Tool",
-      "Version": "35",
-      "LoadOrder": 121,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "75993": {
-      "Id": 75993,
-      "Name": "Tree Controller",
-      "Version": "25",
-      "LoadOrder": 122,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "91930": {
-      "Id": 91930,
-      "Name": "French Pack",
-      "Version": "4",
-      "LoadOrder": 123,
-      "IsEnabled": false,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "84638": {
-      "Id": 84638,
-      "Name": "Recolor",
-      "Version": "13",
-      "LoadOrder": 124,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "86868": {
-      "Id": 86868,
-      "Name": "Real Life",
-      "Version": "34",
-      "LoadOrder": 125,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "75826": {
-      "Id": 75826,
-      "Name": "Plop the Growables",
-      "Version": "21",
-      "LoadOrder": 126,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "90641": {
-      "Id": 90641,
-      "Name": "Hall of Fame",
-      "Version": "34",
-      "LoadOrder": 128,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "77171": {
-      "Id": 77171,
-      "Name": "Realistic Trips",
-      "Version": "65",
-      "LoadOrder": 133,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "87190": {
-      "Id": 87190,
-      "Name": "Road Builder [BETA]",
-      "Version": "40",
-      "LoadOrder": 138,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "80095": {
-      "Id": 80095,
-      "Name": "Traffic",
-      "Version": "26",
-      "LoadOrder": 144,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "79237": {
-      "Id": 79237,
-      "Name": "First Person Camera Continued",
-      "Version": "21",
-      "LoadOrder": 148,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "80931": {
-      "Id": 80931,
-      "Name": "Toggle Overlays",
-      "Version": "11",
-      "LoadOrder": 149,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "78188": {
-      "Id": 78188,
-      "Name": "Extended Tooltip",
-      "Version": "20",
-      "LoadOrder": 150,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "74324": {
-      "Id": 74324,
-      "Name": "Move It",
-      "Version": "33",
-      "LoadOrder": 158,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "76896": {
-      "Id": 76896,
-      "Name": "Volchoria Map Theme",
-      "Version": "2",
-      "LoadOrder": 161,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "76828": {
-      "Id": 76828,
-      "Name": "Alpine Theme",
-      "Version": "3",
-      "LoadOrder": 162,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "75749": {
-      "Id": 75749,
-      "Name": "Free Range Camera",
-      "Version": "5",
-      "LoadOrder": 164,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "75728": {
-      "Id": 75728,
-      "Name": "ExtraLandscapingTools",
-      "Version": "13",
-      "LoadOrder": 165,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "75613": {
-      "Id": 75613,
-      "Name": "Water Features",
-      "Version": "18",
-      "LoadOrder": 166,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "75804": {
-      "Id": 75804,
-      "Name": "Skyve",
-      "Version": "68",
-      "LoadOrder": 167,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "79634": {
-      "Id": 79634,
-      "Name": "Asset Icon Library",
-      "Version": "21",
-      "LoadOrder": 168,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -614,6 +209,528 @@
       "Id": 128269,
       "Name": "Zone Tools",
       "Version": "5",
+      "LoadOrder": 27,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "96718": {
+      "Id": 96718,
+      "Name": "Road Visual Tweaks (formerly Road Wear Adjuster)",
+      "Version": "8",
+      "LoadOrder": 36,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "107590": {
+      "Id": 107590,
+      "Name": "Modular Zoning Blocks",
+      "Version": "3",
+      "LoadOrder": 37,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "118002": {
+      "Id": 118002,
+      "Name": "Modular Resource Blocks",
+      "Version": "2",
+      "LoadOrder": 38,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "126355": {
+      "Id": 126355,
+      "Name": "Road Precision",
+      "Version": "5",
+      "LoadOrder": 42,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "125866": {
+      "Id": 125866,
+      "Name": "Road Speed Adjuster",
+      "Version": "5",
+      "LoadOrder": 46,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "125675": {
+      "Id": 125675,
+      "Name": "City Services Redux",
+      "Version": "12",
+      "LoadOrder": 47,
+      "IsEnabled": false,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "124947": {
+      "Id": 124947,
+      "Name": "Outside Traffic Adjuster",
+      "Version": "2",
+      "LoadOrder": 49,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "74285": {
+      "Id": 74285,
+      "Name": "Scene Explorer",
+      "Version": "20",
+      "LoadOrder": 50,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "124553": {
+      "Id": 124553,
+      "Name": "La Clock (Show System Time)",
+      "Version": "10",
+      "LoadOrder": 51,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "123738": {
+      "Id": 123738,
+      "Name": "Adjust Transit Capacity",
+      "Version": "14",
+      "LoadOrder": 54,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "107591": {
+      "Id": 107591,
+      "Name": "Modular Service Blocks",
+      "Version": "5",
+      "LoadOrder": 58,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "121812": {
+      "Id": 121812,
+      "Name": "Custom Chirps",
+      "Version": "5",
+      "LoadOrder": 59,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "121256": {
+      "Id": 121256,
+      "Name": "Achievement Fixer",
+      "Version": "17",
+      "LoadOrder": 62,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "121130": {
+      "Id": 121130,
+      "Name": "Netherlands Pack",
+      "Version": "1",
+      "LoadOrder": 63,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "86605": {
+      "Id": 86605,
+      "Name": "All Aboard! (Faster Boarding Mod)",
+      "Version": "14",
+      "LoadOrder": 64,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "117161": {
+      "Id": 117161,
+      "Name": "Citizen Cleaner",
+      "Version": "10",
+      "LoadOrder": 66,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "113299": {
+      "Id": 113299,
+      "Name": "Disable Mouse Hint",
+      "Version": "1",
+      "LoadOrder": 72,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "91433": {
+      "Id": 91433,
+      "Name": "InfoLoom",
+      "Version": "34",
+      "LoadOrder": 74,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "79186": {
+      "Id": 79186,
+      "Name": "Simple Mod Checker Plus",
+      "Version": "51",
+      "LoadOrder": 76,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "98560": {
+      "Id": 98560,
+      "Name": "Asset UI Manager",
+      "Version": "15",
+      "LoadOrder": 86,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "104707": {
+      "Id": 104707,
+      "Name": "Detailed Descriptions",
+      "Version": "9",
+      "LoadOrder": 91,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "87755": {
+      "Id": 87755,
+      "Name": "Realistic Workplaces And Households",
+      "Version": "49",
+      "LoadOrder": 92,
+      "IsEnabled": false,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "101948": {
+      "Id": 101948,
+      "Name": "USA Northeast Pack",
+      "Version": "1",
+      "LoadOrder": 93,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "100454": {
+      "Id": 100454,
+      "Name": "China Pack",
+      "Version": "1",
+      "LoadOrder": 103,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "99048": {
+      "Id": 99048,
+      "Name": "Resource Locator",
+      "Version": "18",
+      "LoadOrder": 104,
+      "IsEnabled": false,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "98960": {
+      "Id": 98960,
+      "Name": "Eastern Europe Pack",
+      "Version": "3",
+      "LoadOrder": 105,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "78622": {
+      "Id": 78622,
+      "Name": "TransportPolicyAdjuster",
+      "Version": "11",
+      "LoadOrder": 106,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "81568": {
+      "Id": 81568,
+      "Name": "Zone Color Changer",
+      "Version": "13",
+      "LoadOrder": 108,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "81157": {
+      "Id": 81157,
+      "Name": "AreaBucket",
+      "Version": "13",
+      "LoadOrder": 109,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "88893": {
+      "Id": 88893,
+      "Name": "Time & Weather Anarchy",
+      "Version": "14",
+      "LoadOrder": 112,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "87428": {
+      "Id": 87428,
+      "Name": "Carto",
+      "Version": "26",
+      "LoadOrder": 113,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "77175": {
+      "Id": 77175,
+      "Name": "Extra Networks and Areas",
+      "Version": "16",
+      "LoadOrder": 117,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "92859": {
+      "Id": 92859,
+      "Name": "UK Pack",
+      "Version": "4",
+      "LoadOrder": 119,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "83733": {
+      "Id": 83733,
+      "Name": "Show Text Trends",
+      "Version": "5",
+      "LoadOrder": 132,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "91931": {
+      "Id": 91931,
+      "Name": "German Pack",
+      "Version": "4",
+      "LoadOrder": 135,
+      "IsEnabled": false,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "93523": {
+      "Id": 93523,
+      "Name": "NavigationView",
+      "Version": "13",
+      "LoadOrder": 137,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "75816": {
+      "Id": 75816,
+      "Name": "Advanced Line Tool",
+      "Version": "35",
+      "LoadOrder": 139,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "75993": {
+      "Id": 75993,
+      "Name": "Tree Controller",
+      "Version": "25",
+      "LoadOrder": 140,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "91930": {
+      "Id": 91930,
+      "Name": "French Pack",
+      "Version": "4",
+      "LoadOrder": 141,
+      "IsEnabled": false,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "84638": {
+      "Id": 84638,
+      "Name": "Recolor",
+      "Version": "13",
+      "LoadOrder": 142,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "86868": {
+      "Id": 86868,
+      "Name": "Real Life",
+      "Version": "34",
+      "LoadOrder": 143,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "75826": {
+      "Id": 75826,
+      "Name": "Plop the Growables",
+      "Version": "21",
+      "LoadOrder": 144,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "90641": {
+      "Id": 90641,
+      "Name": "Hall of Fame",
+      "Version": "35",
+      "LoadOrder": 146,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "77171": {
+      "Id": 77171,
+      "Name": "Realistic Trips",
+      "Version": "65",
+      "LoadOrder": 151,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "87190": {
+      "Id": 87190,
+      "Name": "Road Builder [BETA]",
+      "Version": "40",
+      "LoadOrder": 156,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "80095": {
+      "Id": 80095,
+      "Name": "Traffic",
+      "Version": "26",
+      "LoadOrder": 162,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "79237": {
+      "Id": 79237,
+      "Name": "First Person Camera Continued",
+      "Version": "21",
+      "LoadOrder": 166,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "80931": {
+      "Id": 80931,
+      "Name": "Toggle Overlays",
+      "Version": "11",
+      "LoadOrder": 167,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "78188": {
+      "Id": 78188,
+      "Name": "Extended Tooltip",
+      "Version": "20",
+      "LoadOrder": 168,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "74324": {
+      "Id": 74324,
+      "Name": "Move It",
+      "Version": "33",
+      "LoadOrder": 176,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "76896": {
+      "Id": 76896,
+      "Name": "Volchoria Map Theme",
+      "Version": "2",
+      "LoadOrder": 179,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "76828": {
+      "Id": 76828,
+      "Name": "Alpine Theme",
+      "Version": "3",
+      "LoadOrder": 180,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "75749": {
+      "Id": 75749,
+      "Name": "Free Range Camera",
+      "Version": "5",
+      "LoadOrder": 182,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "75728": {
+      "Id": 75728,
+      "Name": "ExtraLandscapingTools",
+      "Version": "13",
+      "LoadOrder": 183,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "75613": {
+      "Id": 75613,
+      "Name": "Water Features",
+      "Version": "18",
+      "LoadOrder": 184,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "75804": {
+      "Id": 75804,
+      "Name": "Skyve",
+      "Version": "68",
+      "LoadOrder": 185,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "79634": {
+      "Id": 79634,
+      "Name": "Asset Icon Library",
+      "Version": "21",
+      "LoadOrder": 186,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "78601": {
+      "Id": 78601,
+      "Name": "No Pollution",
+      "Version": "27",
       "LoadOrder": 2147483646,
       "IsEnabled": true,
       "IsVersionLocked": false,

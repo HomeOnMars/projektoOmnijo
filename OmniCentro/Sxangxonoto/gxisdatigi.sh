@@ -22,6 +22,7 @@ cd OmniCentro_ModsSettings/
 pwd -P
 echo; echo
 cp -v ../../CSL2_SavesDir/AllAboard.coc  ./
+cp -v ../../CSL2_SavesDir/NoPollution.coc  ./
 cp -v ../../CSL2_SavesDir/Plop\ the\ Growables.coc  ./
 cp -v ../../CSL2_SavesDir/RealLife.coc ./
 cp -v ../../CSL2_SavesDir/RealPop.coc  ./

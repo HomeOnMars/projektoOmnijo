@@ -235,7 +235,7 @@
     "87755": {
       "Id": 87755,
       "Name": "Realistic Workplaces And Households",
-      "Version": "48",
+      "Version": "49",
       "LoadOrder": 47,
       "IsEnabled": false,
       "IsVersionLocked": false,
@@ -487,7 +487,7 @@
     "90641": {
       "Id": 90641,
       "Name": "Hall of Fame",
-      "Version": "34",
+      "Version": "35",
       "LoadOrder": 104,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -677,7 +677,7 @@
       "Id": 121812,
       "Name": "Custom Chirps",
       "Version": "5",
-      "LoadOrder": 2147483609,
+      "LoadOrder": 2147483595,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -686,7 +686,7 @@
       "Id": 99048,
       "Name": "Resource Locator",
       "Version": "18",
-      "LoadOrder": 2147483610,
+      "LoadOrder": 2147483596,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -695,7 +695,7 @@
       "Id": 90794,
       "Name": "Tigon's Rail Infrastructure Pack",
       "Version": "15",
-      "LoadOrder": 2147483611,
+      "LoadOrder": 2147483597,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -704,7 +704,7 @@
       "Id": 107591,
       "Name": "Modular Service Blocks",
       "Version": "5",
-      "LoadOrder": 2147483612,
+      "LoadOrder": 2147483598,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -713,7 +713,7 @@
       "Id": 122865,
       "Name": "Road Wear Toggler",
       "Version": "3",
-      "LoadOrder": 2147483613,
+      "LoadOrder": 2147483599,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -722,7 +722,7 @@
       "Id": 121226,
       "Name": "[BETA] Realistic PathFinding",
       "Version": "17",
-      "LoadOrder": 2147483615,
+      "LoadOrder": 2147483601,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -731,7 +731,7 @@
       "Id": 123738,
       "Name": "Adjust Transit Capacity",
       "Version": "14",
-      "LoadOrder": 2147483616,
+      "LoadOrder": 2147483602,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -740,7 +740,7 @@
       "Id": 76662,
       "Name": "Cim Route Highlighter",
       "Version": "23",
-      "LoadOrder": 2147483618,
+      "LoadOrder": 2147483604,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -749,7 +749,7 @@
       "Id": 124553,
       "Name": "La Clock (Show System Time)",
       "Version": "10",
-      "LoadOrder": 2147483619,
+      "LoadOrder": 2147483605,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -758,7 +758,7 @@
       "Id": 124947,
       "Name": "Outside Traffic Adjuster",
       "Version": "2",
-      "LoadOrder": 2147483620,
+      "LoadOrder": 2147483606,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -767,7 +767,7 @@
       "Id": 77923,
       "Name": "BetterMoonLight",
       "Version": "10",
-      "LoadOrder": 2147483621,
+      "LoadOrder": 2147483607,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -776,7 +776,7 @@
       "Id": 125675,
       "Name": "City Services Redux",
       "Version": "12",
-      "LoadOrder": 2147483622,
+      "LoadOrder": 2147483608,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -785,7 +785,7 @@
       "Id": 125866,
       "Name": "Road Speed Adjuster",
       "Version": "5",
-      "LoadOrder": 2147483623,
+      "LoadOrder": 2147483609,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -794,7 +794,7 @@
       "Id": 126355,
       "Name": "Road Precision",
       "Version": "5",
-      "LoadOrder": 2147483627,
+      "LoadOrder": 2147483613,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -803,25 +803,7 @@
       "Id": 126468,
       "Name": "Colored Bus Lane (CBL)",
       "Version": "2",
-      "LoadOrder": 2147483628,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "79020": {
-      "Id": 79020,
-      "Name": "Static Ploppables [UI Dependency]",
-      "Version": "20",
-      "LoadOrder": 2147483629,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "79021": {
-      "Id": 79021,
-      "Name": "Static Ploppables 01: Base Game",
-      "Version": "26",
-      "LoadOrder": 2147483630,
+      "LoadOrder": 2147483614,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -830,7 +812,7 @@
       "Id": 111552,
       "Name": "Multipurpose Cubes",
       "Version": "1",
-      "LoadOrder": 2147483631,
+      "LoadOrder": 2147483615,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -839,7 +821,7 @@
       "Id": 92952,
       "Name": "Citizen Model Manager",
       "Version": "5",
-      "LoadOrder": 2147483632,
+      "LoadOrder": 2147483616,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -848,7 +830,7 @@
       "Id": 118002,
       "Name": "Modular Resource Blocks",
       "Version": "2",
-      "LoadOrder": 2147483633,
+      "LoadOrder": 2147483617,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -857,7 +839,7 @@
       "Id": 107590,
       "Name": "Modular Zoning Blocks",
       "Version": "3",
-      "LoadOrder": 2147483634,
+      "LoadOrder": 2147483618,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -865,8 +847,8 @@
     "96718": {
       "Id": 96718,
       "Name": "Road Visual Tweaks (formerly Road Wear Adjuster)",
-      "Version": "7",
-      "LoadOrder": 2147483635,
+      "Version": "8",
+      "LoadOrder": 2147483619,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -875,7 +857,7 @@
       "Id": 126306,
       "Name": "Colored bike path (CBP)",
       "Version": "4",
-      "LoadOrder": 2147483636,
+      "LoadOrder": 2147483620,
       "IsEnabled": false,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -884,7 +866,7 @@
       "Id": 126486,
       "Name": "Brickworks Collection",
       "Version": "2",
-      "LoadOrder": 2147483637,
+      "LoadOrder": 2147483621,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -893,7 +875,7 @@
       "Id": 127078,
       "Name": "ELVIS Skyvescraper INC",
       "Version": "1",
-      "LoadOrder": 2147483638,
+      "LoadOrder": 2147483622,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -902,7 +884,7 @@
       "Id": 126623,
       "Name": "Germany Mixed Expansion",
       "Version": "1",
-      "LoadOrder": 2147483639,
+      "LoadOrder": 2147483623,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -911,7 +893,7 @@
       "Id": 127507,
       "Name": "Asset Migration Utility",
       "Version": "2",
-      "LoadOrder": 2147483640,
+      "LoadOrder": 2147483624,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -920,7 +902,7 @@
       "Id": 124304,
       "Name": "Advanced Simulation Speed",
       "Version": "3",
-      "LoadOrder": 2147483642,
+      "LoadOrder": 2147483626,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -929,7 +911,7 @@
       "Id": 128014,
       "Name": "Simple Tram Station",
       "Version": "3",
-      "LoadOrder": 2147483643,
+      "LoadOrder": 2147483627,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -938,7 +920,151 @@
       "Id": 128269,
       "Name": "Zone Tools",
       "Version": "5",
+      "LoadOrder": 2147483628,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "127946": {
+      "Id": 127946,
+      "Name": "Static Ploppables: UI Dependency",
+      "Version": "2",
+      "LoadOrder": 2147483631,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128043": {
+      "Id": 128043,
+      "Name": "Static Ploppables 01: Base Game",
+      "Version": "2",
+      "LoadOrder": 2147483632,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128222": {
+      "Id": 128222,
+      "Name": "Static Ploppables 02: French Pack",
+      "Version": "1",
+      "LoadOrder": 2147483633,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128223": {
+      "Id": 128223,
+      "Name": "Static Ploppables 03: German Pack",
+      "Version": "1",
+      "LoadOrder": 2147483634,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128224": {
+      "Id": 128224,
+      "Name": "Static Ploppables 04: UK Pack",
+      "Version": "1",
+      "LoadOrder": 2147483635,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128225": {
+      "Id": 128225,
+      "Name": "Static Ploppables 05: Modern Architecture",
+      "Version": "1",
+      "LoadOrder": 2147483636,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128226": {
+      "Id": 128226,
+      "Name": "Static Ploppables 06: Urban Promenades",
+      "Version": "1",
+      "LoadOrder": 2147483637,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128230": {
+      "Id": 128230,
+      "Name": "Static Ploppables 08: Eastern Europe Pack",
+      "Version": "1",
+      "LoadOrder": 2147483638,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128232": {
+      "Id": 128232,
+      "Name": "Static Ploppables 09: China Pack",
+      "Version": "1",
+      "LoadOrder": 2147483639,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128233": {
+      "Id": 128233,
+      "Name": "Static Ploppables 10: US Southwest Pack",
+      "Version": "1",
+      "LoadOrder": 2147483640,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128234": {
+      "Id": 128234,
+      "Name": "Static Ploppables 11: US Northeast Pack",
+      "Version": "1",
+      "LoadOrder": 2147483641,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128238": {
+      "Id": 128238,
+      "Name": "Static Ploppables 15: Netherlands Pack",
+      "Version": "1",
+      "LoadOrder": 2147483642,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128239": {
+      "Id": 128239,
+      "Name": "Static Ploppables 16: Bridges & Ports",
+      "Version": "1",
+      "LoadOrder": 2147483643,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128240": {
+      "Id": 128240,
+      "Name": "Static Ploppables 17: Supply Chains",
+      "Version": "1",
       "LoadOrder": 2147483644,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "128241": {
+      "Id": 128241,
+      "Name": "Static Ploppables 18: Skyscrapers",
+      "Version": "1",
+      "LoadOrder": 2147483645,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "78601": {
+      "Id": 78601,
+      "Name": "No Pollution",
+      "Version": "27",
+      "LoadOrder": 2147483646,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0

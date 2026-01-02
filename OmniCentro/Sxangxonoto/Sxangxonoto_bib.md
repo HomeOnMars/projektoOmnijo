@@ -29,7 +29,7 @@ Tags
 - `Assets::({AssetsPackName},Required,Optional,Added,Removed)`
 - `Reversion`
 - `District::({DistrictName})`
-- `Expansion::(Zoning,Parks,Industry,Services,Road,Rail)`
+- `Expansion::(Zoning,Parks,Industry,Services,Road,Rail,Path)`
 - `Redevelop::(Services,Road,Rail)`
 - `Detailing::(Trees,Props,Surfaces,Water)`
 - `Terrain::Water`

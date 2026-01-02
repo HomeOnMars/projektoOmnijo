@@ -1,0 +1,27 @@
+NoPollution
+{
+    "NoisePollutionSlider": 25,
+    "GroundMultiplier": 20,
+    "AirMultiplier": 40,
+    "NoiseMultiplier": 250,
+    "NetAirMultiplier": 1,
+    "NetNoiseMultiplier": 2,
+    "PlantAirMultiplier": 0.001,
+    "PlantGroundMultiplier": 0.001,
+    "FertilityGroundMultiplier": 1,
+    "AbandonedNoisePollutionMultiplier": 5,
+    "AirRadius": 100,
+    "GroundRadius": 500,
+    "NoiseRadius": 600,
+    "NetNoiseRadius": 3,
+    "AirFade": 5000,
+    "GroundFade": 4000,
+    "PlantFade": 2,
+    "AirPollutionNotificationLimit": -4,
+    "NoisePollutionNotificationLimit": -4,
+    "GroundPollutionNotificationLimit": -4,
+    "WindAdvectionSpeed": 30,
+    "DistanceExponent": 1.5,
+    "HomelessNoisePollution": 50,
+    "GroundPollutionLandValueDivisor": 500
+}
