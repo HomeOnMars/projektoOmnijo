@@ -55,6 +55,7 @@ Contents
 
 - Cities documentations
   - [***OmniCentro***](OmniCentro.md)
+  - [***Aiosa***](Aiosa.md) (TBD) 
 - Some python scripts I wrote for the CSL2
   [Extended Radio](https://mods.paradoxplaza.com/mods/75862/Windows) mod
   see `radio/` folder in the repository.

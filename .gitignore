@@ -6,6 +6,8 @@ temp.*
 *.png
 *.ogg
 CSL2_SavesDir
+Aiosa.md
+Aiosa/
 OmniCentro/Data
 OmniCentro/Sxangxonoto/Sxangxonoto.md
 fig/*.jpg
