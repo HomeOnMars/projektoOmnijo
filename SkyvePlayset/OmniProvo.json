@@ -261,8 +261,8 @@
     },
     "125675": {
       "Id": 125675,
-      "Name": "City Services Redux",
-      "Version": "12",
+      "Name": "Config-XML",
+      "Version": "13",
       "LoadOrder": 47,
       "IsEnabled": false,
       "IsVersionLocked": false,
@@ -514,7 +514,7 @@
     "83733": {
       "Id": 83733,
       "Name": "Show Text Trends",
-      "Version": "5",
+      "Version": "7",
       "LoadOrder": 132,
       "IsEnabled": true,
       "IsVersionLocked": false,
