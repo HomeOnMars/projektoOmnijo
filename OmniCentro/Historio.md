@@ -1,9 +1,9 @@
 <!-- -*- coding: utf-8 -*- -->
 
-OmniCentraj Specifoj - Historio
+OmniCentraj Specifoj: Historio
 ===============================================================================
 
-> OmniCentro Specifications - History
+> OmniCentro Specifications: History
 
 Background stories for my fictional Cities: Skylines 2 city *OmniCentro*.
 
@@ -88,7 +88,7 @@ and won her a dangerously fast increasing popularity among the islanders.
 
 But these corrupted ministers and councilors soon have bigger problems
 on their plate.
-More specifically- internal power struggles.
+More specifically— internal power struggles.
 Someone somehow broke the status quo and leaked the evidence of the corruption
 of a powerful minister at the most inconvenient time possible,
 leading to public outcry, him being sacked,
@@ -96,7 +96,7 @@ and his retaliation by leaking other politicians' dirty deeds.
 The situation quickly escalated in the most dramatic way possible,
 resulting in the resignment and/or fleeing of
 most of the high level government officials,
-while the rest - the highest ranked and actual power controllers -
+while the rest — the highest ranked and actual power controllers —
 died when conspiring in a building,
 as the adjacent factory blew up in a pure accident caused by a gas leak
 and several bad CO sensors malfunction and short-circuit at the same time.
@@ -209,8 +209,8 @@ about their own country?[^Historio-RdO-Serena-kmt4]
   Together with a few dozens more similar avoidable tragedies,
   a public outcry happened.<br>
   <span style="color:Beige">Serena</span> vowed to "fix the healthcare",
-  fired ALL of those doctors and nurses- at least the ones working in
-  public hospitals (with generous compensations for everyone, of course),
+  fired ALL of those doctors and nurses — at least the ones working in
+  public hospitals (with generous compensations for everyone, of course) —
   and re-hired all of the new staff OVERNIGHT.
   One would be crazy to think <span style="color:Beige">she</span>
   can pull this off this time, even though she has obviously been planning
@@ -246,7 +246,7 @@ As a counter measure, <span style="color:Beige">Serena</span>
 also passed laws to streamline immigration process
 as well as to encourage immigrants to move in,
 and the immigration influx did increase.
-However, it wasn't nearly enough to stop the population drop-
+However, it wasn't nearly enough to stop the population drop—
 in the beginning.
 
 [^Historio-RdO-Elmigrado-kmt1]: It almost felt like
@@ -264,15 +264,15 @@ La Regno de Omnijo, however, did surprisingly well (again),
 attracting people to stay (or rather, emigration becomes a lot harder).
 Actually, from an outsider perspective, Omnijo's response was almost perfect[^Historio-RdO-Recesio-bankoj].
 <span style="color:Beige">Serena</span> was even able to take the chance
-to re-nationalize many of the private companies in her country -
-from public transportation, to utilities, banks, manufacturing industries and more -
+to re-nationalize many of the private companies in her country —
+from public transportation, to utilities, banks, manufacturing industries and more —
 effectively buying out her own country.
 
 [^Historio-RdO-Recesio]: This time the recession was triggered by
   the bursting of the AI bubble weeks after the coronation day.<br>
   <span style="color:Beige">Serena</span>:
   "I guess this is what happens
-  when you temper with things you don't understand LOL-
+  when you temper with things you don't understand LOL—
   If you don't know how it works, you don't know why it stops working
   Muahahahahahaha(beep)" before her new PR officer rushed in
   to stop further recordings of her "evil laugh".<br>
@@ -281,24 +281,24 @@ effectively buying out her own country.
 [^Historio-RdO-Recesio-bankoj]: When the local banks
   (and foreign bank branches) failed,
   instead of bailing them out,
-  <span style="color:Beige">Serena</span> opted for directly taking them over-
-  Consolidated them into her own newly opened bank "Banko de Omnijo" one by one.
-  A move that many considered crazy-
+  <span style="color:Beige">Serena</span> opted for directly taking them over—
+  consolidated them into her own newly opened bank "Banko de Omnijo" one by one.
+  A move that many considered crazy—
   no one even know where she found enough money in the royal coffer
   to start her own bank (though some guessed that it might
   have something to do with the <span style="color:Beige">Queen</span>'s
-  recent involvement in the new cyptocurrency)-
+  recent involvement in the new cyptocurrency)—
   but ended up working better than expected, actually,
   with much more competent new management
   saving the day and integrating everything. <br>
   With this as an example, <span style="color:Beige">Serena</span>
   found it much easier for her governmental Office of Finance `OCMF`
-  to take over all kinds of businesses whenever they go bankrupt-
+  to take over all kinds of businesses whenever they go bankrupt—
   especially when most of them turned out to be easily savable afterall.
-  As for the old management-
+  As for the old management—
   many of them are already cashing out and enjoying the holiday elsewhere
   as Serena's new law allows them to do so and leave
-  (like all old employees that got fired-
+  (like all old employees that got fired—
   who each got very, very generous compensation),
   possibly explaining their over-tendency
   to declare bankruptcy so early and eagerly.<br>
@@ -352,12 +352,12 @@ and she now has the money and the power to live out her own fantasy.
   just sound like <span style="color:Beige">Serena</span>'s handiwork.
 
 The actual design of the city, though not many care,
-falls on <span style="color:Beige">Serena</span>'s two friends-
+falls on <span style="color:Beige">Serena</span>'s two friends—
 <span style="color:#D6B4FC">the Chief Engineer</span> and
 <span style="color:#95D0FC">the Architect</span>
 of the newly founded *Omnija Department of Infrastructure* (OCFI).
 It's decided that the new capital will be built
-in a valley where mountains meets the sea- a place called the
+in a valley where mountains meets the sea— a place called the
 [Seaside Valley](https://mods.paradoxplaza.com/mods/82544/Any),
 Or "Ĉemarvalo",
 about 300km away from the current capital.
@@ -370,7 +370,7 @@ are just brutal.
 Not to mention that
 the local farmers there are famous for not willing to give up their lands.
 The only easily capitalizable thing there
-is the several good spots for building dams[^Historio-OC-barajxo]-
+is the several good spots for building dams[^Historio-OC-barajxo]—
 but hey, who would ever want a dam / dams this close to the city??
 What if they break??
 

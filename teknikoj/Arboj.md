@@ -1,9 +1,9 @@
 <!-- -*- coding: utf-8 -*- -->
 
-Arboj Specifoj
+Specifoj: Arboj
 ===============================================================================
 
-> Trees Specifications
+> Specifications: Trees
 
 Technical specifications for my fictional Cities: Skylines 2 city *OmniCentro*.
 

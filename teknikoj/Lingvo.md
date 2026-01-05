@@ -1,9 +1,9 @@
 <!-- -*- coding: utf-8 -*- -->
 
-OmniCentraj Specifoj - Lingvo
+Specifoj: Lingvo
 ===============================================================================
 
-> OmniCentro Specifications - Language
+> Specifications: Language
 
 Background stories for my fictional Cities: Skylines 2 city *OmniCentro*.
 

@@ -42,6 +42,9 @@ Detalaj Informoj
 > ![Map of OmniCentro](map/OmniCentro_mapo-8K-4K.jpg)  
 > *OmniCentro* Map
 
+- Map:  [Seaside Valley](https://mods.paradoxplaza.com/mods/82544/Any);
+  City: [OmniCentro](https://mods.paradoxplaza.com/mods/97163/Any)
+- Established Date: 2024-12-21
 - [***Bulteno*** | Bulletin](OmniCentro/Bulteno.md#bulteno)
   - [***Fonrakontaj Resumoj*** | Backstories Summaries](OmniCentro/Bulteno.md#fonrakontaj-resumoj): Brief summary here!
 - [***Sigloj***  | Acronyms](OmniCentro/Sigloj.md#sigloj)

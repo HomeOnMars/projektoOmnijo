@@ -1,9 +1,9 @@
 <!-- -*- coding: utf-8 -*- -->
 
-OmniCentraj Specifoj - Sigloj
+OmniCentraj Specifoj: Sigloj
 ===============================================================================
 
-> OmniCentro Specifications - Acronyms
+> OmniCentro Specifications: Acronyms
 
 Specifications for my fictional Cities: Skylines 2 city *OmniCentro*.
 

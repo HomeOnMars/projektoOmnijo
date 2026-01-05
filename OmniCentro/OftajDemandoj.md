@@ -1,9 +1,9 @@
 <!-- -*- coding: utf-8 -*- -->
 
-OmniCentraj Specifoj - Oftaj Demandoj
+OmniCentraj Specifoj: Oftaj Demandoj
 ===============================================================================
 
-> OmniCentro Specifications - Frequently Asked Questions
+> OmniCentro Specifications: Frequently Asked Questions
 
 FAQs for my fictional Cities: Skylines 2 city *OmniCentro*
 and its fictional host country *la Regno de Omnijo*.

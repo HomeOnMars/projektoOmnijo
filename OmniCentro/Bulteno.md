@@ -1,9 +1,9 @@
 <!-- -*- coding: utf-8 -*- -->
 
-OmniCentraj Specifoj - Bulteno
+OmniCentraj Specifoj: Bulteno
 ===============================================================================
 
-> OmniCentro Specifications - Bulletin
+> OmniCentro Specifications: Bulletin
 
 Background stories for my fictional Cities: Skylines 2 city *OmniCentro*.
 
