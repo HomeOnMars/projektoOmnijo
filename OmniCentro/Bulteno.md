@@ -31,6 +31,11 @@ Bulteno
 
 > Backstories Summaries
 
+> *Absolute power* implies *absolute accountability*;
+> Never forget that second part.  
+> —— *Reĝinʌ Serena Novarika*
+<!-- > paraphrasing *Three Worlds Collide* [*part 5*](https://www.lesswrong.com/posts/Z263n4TXJimKn6A8Z/three-worlds-decide-5-8) (2009) by *Eliezer Yudkowsky* -->
+
 **OmniCentro** is the new planned capital
 of the fictional island country **la Regno de Omnijo**,
 as commissioned by Omnijo's young new queen
@@ -79,7 +84,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 
 | (Fikciaj) Fonaj Informoj  <br>(Fictional) Background Information | Priskribo  <br>Description |
 | :---------------- | ---- |
-| Ŝtatestro  <br>Head of State   | <span style="color:Beige">Ŝia Reĝina Moŝto **Serena Novarika** de la Regno de Omnijo</span> |
+| Ŝtatestro  <br>Head of State   | <span style="color:Beige">Ŝia Reĝina Moŝtʌ **Serena Novarika** de la Regno de Omnijo</span> |
 | Registara Tipo  <br>Government Type   | Konstitucia Monarkio / Bonfara Diktaturo / Totalisma Reĝimo, depende de kiu vi demandas[^Bulteno-RegistaraTipo]. |
 | Urbaj Projektistoj  <br>City Designers | <span style="color:#95D0FC">La Arkitekto</span>  kaj  <span style="color:#D6B4FC">la Ĉefinĝeniero</span> de OCFI |
 | Reĝa Palaco  <br>Royal Palace | La Spajro-Singulariso |
