@@ -39,27 +39,29 @@ Bulteno
 
 > Backstories Summaries
 
-> A problem could not exist if no one could be held responsible for it.  
-> —— *Aiosa City Hall's alleged motto*
+> If there's no one to blame, does it really matter?  
+> —— *Aiosa City Hall's alleged* [*motto*](https://www.250bpm.com/p/accountability-sinks)
 
 P • A • R • K • I • N • G • L • O • T • S
 
 Situated somewhere in the northwest part of the North America,
-the *fictional* city of **Aiosa** is the polar opposite of
-[OmniCentro](../OmniCentro/Bulteno.md#fonrakontaj-resumoj).  
+it can be said that the *fictional* city of **Aiosa** is the polar opposite of
+[OmniCentro](../OmniCentro/Bulteno.md#fonrakontaj-resumoj).
 Here, city-building is driven by reactive responses
 and ad hoc developments instead of proactive centralized designs;
 Cars are expected to be cims' default ways of getting around,
 and it's the other transport modes (walking, transit, cycling)
 that are often neglected— or at best, retrofitted for;
-Top-level planning is intentionally being kept at minimal.  
-*Aiosa* was built in the name of
-[*freedom*](https://homosabiens.substack.com/i/144789378/i-civilization-as-self-restraint),
-which many of its residents held as their highest value;
-and freedom they do get!
-At the mere cost of *effective coordination*, as
-[*Moloch*](https://www.slatestarcodexabridged.com/Meditations-On-Moloch)
-reigns supreme.
+Top-level planning is intentionally being kept at minimal.
+
+In its core, *Aiosa* was built in the name of *freedom*,
+which many of its residents held as their highest value...
+
+*And freedom they shall get.*
+<!-- At the mere cost of
+[*effective coordination*](https://homosabiens.substack.com/i/144789378/i-civilization-as-self-restraint),
+as [*Moloch*](https://www.slatestarcodexabridged.com/Meditations-On-Moloch)
+reigns supreme. -->
 
 <!-- *Until...* -->
 
