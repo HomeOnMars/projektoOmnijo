@@ -1,6 +1,6 @@
 <!-- -*- coding: utf-8 -*- -->
 
-Ajoŭsa Specifoj
+Ajoŭsaj Specifoj
 ===============================================================================
 
 > Aiosa Specifications
@@ -32,7 +32,7 @@ Detalaj Informoj
 > Detailed Information
 
 - Map: [Volchoria](https://mods.paradoxplaza.com/mods/76483/Windows);
-  City: (TBD) 
+  City: Aiosa (TBD) 
 - Established Date: 2025-12-27
 - [***Bulteno*** | Bulletin](Aiosa/Bulteno.md#bulteno)
   - [***Fonrakontaj Resumoj*** | Backstories Summaries](Aiosa/Bulteno.md#fonrakontaj-resumoj): Brief summary here!

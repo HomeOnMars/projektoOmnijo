@@ -55,7 +55,7 @@ that are often neglected— or at best, retrofitted for;
 Top-level planning is intentionally being kept at minimal.
 
 In its core, *Aiosa* was built in the name of *freedom*,
-which many of its residents held as their highest value...
+which many of its residents held as their highest value—
 
 *And freedom they shall get.*
 <!-- At the mere cost of

@@ -500,14 +500,15 @@ See also [Unuoj](Unuoj.md) page.
 - ~~'–' (En dash)~~  
   En dash is *cancelled* in Epopo.  
   When needing to use an en dash, use the below instead:
-  - use a ' ‐ ' (hyphen with surrounding space)
+  - use a '\~' (tilde with *no* surrounding space)
     to connect numbers representing ranges.  
-    E.g. "During 2024 - 2025, the city finished its planning phase."
-  - use '—' (Em dash with *no* surrounding space)
+    E.g. "During 2024\~2025, the city finished its planning phase."  
+    Or "The temperature fluctuates around -42\~-3."
+  - use '--' (double hyphen with *no* surrounding space)
     to connect multi-words adjectives.
-    Remember to string up those multi-words adjectives with '‐' (hyphen),
+    Remember to string up those multi-words adjectives with '‐' (single hyphen),
     so readers are not confused with how many words exactly are concerned.  
-    E.g. "She is a brilliant Nobel‐prize—winning scientist."
+    E.g. "She is a brilliant Nobel‐prize--winning scientist."
 - '—' (Em dash)
   - **Add spaces around em dash when using them in pairs.**  
     I.e. when you are coming back to the main sentence,
