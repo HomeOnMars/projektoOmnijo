@@ -500,10 +500,17 @@ See also [Unuoj](Unuoj.md) page.
 - ~~'–' (En dash)~~  
   En dash is *cancelled* in Epopo.  
   When needing to use an en dash, use the below instead:
-  - use a '\~' (tilde with *no* surrounding space)
-    to connect numbers representing ranges.  
-    E.g. "During 2024\~2025, the city finished its planning phase."  
-    Or "The temperature fluctuates around -42\~-3."
+  - use a '\~' (tilde with *no* surrounding space, though this is not strict)
+    to connect *numbers* representing ranges.  
+    E.g.
+    "During 2024\~2025, the city finished its planning phase."  
+    Or
+    "The temperature fluctuates around -42°C\~-3°C."
+  - use a ' \~ ' (tilde with surrounding spaces)
+    to connect *words* that representing ranges.  
+    E.g.
+    "Serena's Coronation ~ Her first anniversary:
+    the dam finished construction."
   - use '--' (double hyphen with *no* surrounding space)
     to connect multi-words adjectives.
     Remember to string up those multi-words adjectives with '‐' (single hyphen),
@@ -526,6 +533,10 @@ See also [Unuoj](Unuoj.md) page.
     "He is suprised— despite their trusting relationship,
     Ĝejda usually isn't this much amenable towards
     his many (admittedly questionable) ideas."
+    - When the following is a direct explanation of the phrase before,
+      *consider using colon ':' instead of em dash '—'.*  
+      E.g.
+      "The book: an explanation on Epopo's history"
   - **Use two em dashes ('——') with surrounding spaces to indicate author/origin of a quote.**  
     E.g.  
     "The truth springs from arguments amongst friends." —— David Hume.  
