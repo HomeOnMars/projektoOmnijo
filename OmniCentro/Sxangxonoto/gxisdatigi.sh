@@ -18,7 +18,7 @@ python3 skyveplayset.py
 
 # ModsSettings
 echo; echo
-cd OmniCentro_ModsSettings/
+cd OmniCentro/
 pwd -P
 echo; echo
 cp -v ../../CSL2_SavesDir/AllAboard.coc  ./
@@ -32,6 +32,7 @@ cp -vr ../../CSL2_SavesDir/ModsSettings/RealisticWorkplacesAndHouseholds    Mods
 cp -vr ../../CSL2_SavesDir/ModsSettings/Time2Work  ModsSettings/
 cp -vr ../../CSL2_SavesDir/ModsSettings/AdjustTransitCapacity   ModsSettings/
 cp -vr ../../CSL2_SavesDir/ModsSettings/OutsideTrafficAdjuster  ModsSettings/
+cp -vr ../../CSL2_SavesDir/ModsData/Mods_Yenyang_Tree_Controller/CustomSets ModsData/Mods_Yenyang_Tree_Controller/
 
 # Reminders
 echo; echo

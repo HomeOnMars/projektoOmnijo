@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<CustomSetRepository xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PrefabNames>
+    <string>PineTree01</string>
+    <string>SpruceTree01</string>
+  </PrefabNames>
+  <Version>2</Version>
+  <AdvancedForestBrushEntries>
+    <AdvancedForestBrushEntry>
+      <SelectedAges>4</SelectedAges>
+      <Name>PineTree01</Name>
+      <MinimumElevation>0</MinimumElevation>
+      <MaximumElevation>4096</MaximumElevation>
+      <ProbabilityWeight>100</ProbabilityWeight>
+    </AdvancedForestBrushEntry>
+    <AdvancedForestBrushEntry>
+      <SelectedAges>4</SelectedAges>
+      <Name>SpruceTree01</Name>
+      <MinimumElevation>640</MinimumElevation>
+      <MaximumElevation>4096</MaximumElevation>
+      <ProbabilityWeight>100</ProbabilityWeight>
+    </AdvancedForestBrushEntry>
+  </AdvancedForestBrushEntries>
+</CustomSetRepository>

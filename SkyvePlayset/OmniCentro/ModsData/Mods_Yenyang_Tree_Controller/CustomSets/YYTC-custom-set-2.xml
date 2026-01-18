@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<CustomSetRepository xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PrefabNames>
+    <string>BirchTree01</string>
+    <string>PineTree01</string>
+  </PrefabNames>
+  <Version>1</Version>
+</CustomSetRepository>

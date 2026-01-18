@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<CustomSetRepository xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PrefabNames>
+    <string>CoconutPalmTree01</string>
+    <string>FloridaPalmTree01</string>
+    <string>RoyalPalmTree01</string>
+  </PrefabNames>
+  <Version>1</Version>
+  <AdvancedForestBrushEntries>
+    <AdvancedForestBrushEntry>
+      <SelectedAges>4</SelectedAges>
+      <Name>CoconutPalmTree01</Name>
+      <MinimumElevation>0</MinimumElevation>
+      <MaximumElevation>160</MaximumElevation>
+      <ProbabilityWeight>100</ProbabilityWeight>
+    </AdvancedForestBrushEntry>
+    <AdvancedForestBrushEntry>
+      <SelectedAges>4</SelectedAges>
+      <Name>FloridaPalmTree01</Name>
+      <MinimumElevation>0</MinimumElevation>
+      <MaximumElevation>160</MaximumElevation>
+      <ProbabilityWeight>100</ProbabilityWeight>
+    </AdvancedForestBrushEntry>
+    <AdvancedForestBrushEntry>
+      <SelectedAges>4</SelectedAges>
+      <Name>RoyalPalmTree01</Name>
+      <MinimumElevation>0</MinimumElevation>
+      <MaximumElevation>160</MaximumElevation>
+      <ProbabilityWeight>100</ProbabilityWeight>
+    </AdvancedForestBrushEntry>
+  </AdvancedForestBrushEntries>
+</CustomSetRepository>
