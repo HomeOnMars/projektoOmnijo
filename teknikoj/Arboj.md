@@ -31,23 +31,20 @@ Arboj
 
 ### Brushes Configuration
 
-- Brush   3: Altitude $<$ 100m; Beaches
+- Brush   3: Altitude $<$ 40m; Beaches
   - Palm Trees (Coconut, Florida, Royal)
 - Brush W-D: Altitude  100m to  600m
-  - Briches
+  - Birches
   - etc.
-- Brush   2: Altitude  600m to 1000m
-  - Briches
-  - Pines
-- Brush   1: Altitude 1000m to 1400m
-  - Briches
-  - Pines
-  - Spruces
-- Brush E-G: Altitude 1400m to 2500m
-  - Pines
-  - Spruces
 - Brush N/A: Very steep terrain
   - Spruces
+- Brush   1
+  - Alder     (Altitude    0m\~1000m, Probability  75%)
+  - Birches   (Altitude  120m\~1440m, Probability 150%)
+  - Chestnuts (Altitude    0m\~2800m, Probability 100%)
+  - Pines     (Altitude    0m\~4000m, Probability  75%)
+  - Oaks      (Altitude    0m\~4000m, Probability  50%)
+  - Spruces   (Altitude  520m\~4000m, Probability 150%)
 
 ### Species
 
@@ -57,18 +54,43 @@ Arboj
     so they are not really appropriate here.
     Still, they look so cool! So I am taking some liberties.
   - Source: (2024-09-12) [Wikipedia](https://en.wikipedia.org/wiki/Arecaceae#Range_and_habitat)
-- Briches
+- Alder
+  - Esperanto Name: Alno
+  - Altitude:    0m to 1000m
+  - Sources
+    - (2026-01-18) [European Commission](https://forest.jrc.ec.europa.eu/en/european-atlas/qr-trees/black-alder/)
+- Birches
   - Esperanto Name: Betulo
-  - Altitude:  600m to 1400m
-  - Source: (2024-09-12) [US Dept. of Agriculture](https://www.srs.fs.usda.gov/pubs/misc/ag_654/volume_2/betula/lenta.htm)
+  - Altitude:  120m to 1440m
+  - Sources
+    - (2024-09-12) [US Dept. of Agriculture](https://www.srs.fs.usda.gov/pubs/misc/ag_654/volume_2/betula/lenta.htm)
+    - (2026-01-18) Jonczak et al. (2020), [*The influence of birch trees (Betula spp.) on soil environment – A review*](https://www.sciencedirect.com/science/article/abs/pii/S037811272031255X)
+    - (2026-01-18) [Dwarf birch facts @ treesforlife.org.uk](https://treesforlife.org.uk/into-the-forest/trees-plants-animals/trees/birch/dwarf-birch-facts)
+- Chestnut Trees
+  - Esperanto Name: Kaŝtanarbo
+  - Altitude: 0m to 2800m
+  - Sources
+    - (2026-01-18) [Wikipedia: Chestnut](https://en.wikipedia.org/wiki/Chestnut#Climate_and_seasonal_germination_cycle)
+    - (2026-01-18) [Wikipedia: Castanea mollissima](https://en.wikipedia.org/wiki/Castanea_mollissima#Distribution_and_habitat)
 - Pines
   - Esperanto Name: Pino
-  - Altitude: 1100m to 4000m
-  - Source: (2024-09-12) [US Dept. of Agriculture](https://research.fs.usda.gov/rmrs/projects/high-elevation-white-pines)
+  - Altitude: 0m to 3600m
+  - Sources
+    - (2024-09-12) [US Dept. of Agriculture](https://research.fs.usda.gov/rmrs/projects/high-elevation-white-pines)
+    - (2026-01-18) [Scots pine facts @ treesforlife.org.uk](https://treesforlife.org.uk/into-the-forest/trees-plants-animals/trees/scots-pine/scots-pine-facts)
 - Spruces
   - Esperanto Name: Piceo
-  - Altitude: 2000m to 3500m
-  - Source: (2024-09-12) [Colorado State University](https://csfs.colostate.edu/colorado-trees/colorados-major-tree-species/)
+  - Altitude: 520m to 3600m
+  - Sources
+    - (2024-09-12) [Colorado State University](https://csfs.colostate.edu/colorado-trees/colorados-major-tree-species/)
+    - (2026-01-18) Wardle (1968), [*Engelmann Spruce (Picea Engelmannii Engel.) at Its Upper Limits on the Front Range, Colorado*](https://esajournals.onlinelibrary.wiley.com/doi/10.2307/1934115)
+    - (2026-01-18) [Wikipedia: Picea engelmannii](https://en.wikipedia.org/wiki/Picea_engelmannii#Distribution)
+- Oaks
+  - Esperanto Name: Kverko
+  - Altitude: 0m to 4000m
+  - Sources
+    - (2026-01-18) Yang et al. (2020), [*Explaining the exceptional 4270 m high elevation limit of an evergreen oak in the south-eastern Himalayas*](https://academic.oup.com/treephys/article-abstract/40/10/1327/5849839?redirectedFrom=fulltext)
+    - (2026-01-18) [Oak facts and information @ treesforlife.org.uk](https://treesforlife.org.uk/into-the-forest/trees-plants-animals/trees/oak/oak-facts/)
 
 ### See Also
 
