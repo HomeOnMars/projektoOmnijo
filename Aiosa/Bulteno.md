@@ -40,12 +40,13 @@ Bulteno
 > Backstories Summaries
 
 > If there's no one to blame, does it really matter?  
-> —— *Aiosa City Hall's alleged* [*motto*](https://www.250bpm.com/p/accountability-sinks)
+> —— *Alleged* [*motto*](https://www.250bpm.com/p/accountability-sinks) *of Aiosa City Hall*
 
 P • A • R • K • I • N • G • L • O • T • S
+<!-- F • R • E • E • D • O • M -->
 
 Situated somewhere in the northwest part of the North America,
-it can be said that the *fictional* city of **Aiosa** is the polar opposite of
+one could say that the *fictional* city of **Aiosa** is the polar opposite of
 [OmniCentro](../OmniCentro/Bulteno.md#fonrakontaj-resumoj).
 Here, city-building is driven by reactive responses
 and ad hoc developments instead of proactive centralized designs;
@@ -72,3 +73,22 @@ reigns supreme. -->
 | Settings                | Acronym | Name                     |
 | :---------------------- | :-----: | :----------------------: |
 | City Name               |   AS    | Aiosa / Ajoŭso           |
+
+### Listo de Inspiraĵoj
+
+> List of inspirations
+
+#### Urboj
+
+> Cities
+
+- [Portland](https://www.google.com/maps/place/Portland,+OR,+USA/@45.542596,-122.819194,37860m/), Oregon, USA
+- [Salem](https://www.google.com/maps/place/Salem,+OR,+USA/@44.9167567,-123.1604992,19198m), Oregon, USA
+- [Seattle](https://www.google.com/maps/place/Seattle,+WA,+USA/@47.6082925,-122.6516233,36445m/), Washington, USA
+- [Vancouver](https://www.google.com/maps/place/Vancouver,+BC,+Canada/@49.2577062,-123.2063046,17640m/), British Columbia, Canada
+
+#### Jutubo
+
+> YouTube
+
+- [Why Are City Boundaries So Weird?](https://www.youtube.com/watch?v=smWArwVNq6k)
