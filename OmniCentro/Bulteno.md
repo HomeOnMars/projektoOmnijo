@@ -31,8 +31,8 @@ Bulteno
 
 > Backstories Summaries
 
-> *Absolute power* implies *absolute accountability*;
-> and never forget that second part.  
+> *Absolute power* implies *absolute accountability*;  
+> *Never* forget that second part.  
 > —— *Reĝinʌ Serena Novarika*
 <!-- > paraphrasing *Three Worlds Collide* [*part 5*](https://www.lesswrong.com/posts/Z263n4TXJimKn6A8Z/three-worlds-decide-5-8) (2009) by *Eliezer Yudkowsky* -->
 

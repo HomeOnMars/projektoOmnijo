@@ -316,6 +316,8 @@ Using the leading digit for identifying districts and areas:
 | \- Ŝtono                 | \- Stone                 |
 | \- Karbo                 | \- Coal                  |
 | \- Erco                  | \- Ore                   |
+| Naftohaveno              | Crude Oil Harbour        |
+| \- Naftorafinejo         | \- Oil Refinery          |
 |||
 | Radioturo                | Telecom Tower            |
 | Transformilejo           | Transformer station      |

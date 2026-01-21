@@ -183,24 +183,32 @@ It is important to distinguish between `-ʌ` and `-a`, i.e.
 
   refers to a specific "urb**a** distrikt**o**" (urban district)
   that is called "Granda-Lumturo" (Great Lighthouse).  
-  The equivalent in ***python*** would be
+  The equivalent in ***python*** would be something like
 
   ```python
-  from context import Urba, Distrikto    # Urba is a class decorator
-  this = Urba(Distrikto)(name="Granda-Lumturo")
+  import context
+  from context import Urba, Distrikto, Jen
+  # Urba is a class decorator
+  # Jen is a function
+  Jen(context.get_or_create(Urba(Distrikto)(name="Granda-Lumturo")))
   ```
 
   or more explicitly,
 
   ```python
-  from context import Urba, Distrikto    # Urba is a class decorator
+  from context import Urba, Distrikto, Jen
+  # Urba is a class decorator
+  # Jen is a function
   class GrandaLumturo(Urba(Distrikto)):
       name = "Granda-Lumturo"
       types = [Urba(Distrikto)]
       unique = True
       def __init__(self, **kwargs)
           super.__init__(**kwargs)
+          if self not in context: context.register(self)
+          self.instance = context.get_reference(self)
   this = GrandaLumturo()
+  Jen(this)
   ```
 
   And in ***Esperanto*** this would be
@@ -228,22 +236,26 @@ It is important to distinguish between `-ʌ` and `-a`, i.e.
   In ***python***, this would suggest multiple class inheritance:
 
   ```python
-  from context import Ŝia, Reĝina, Moŝto, Honorinda, Doktoro
+  from context import Ŝia, Reĝina, Moŝto, Honorinda, Doktoro, Jen
   # Ŝia, Reĝina, Honorinda are class decorators
+  # Jen is a function
   class SerenaNovarika(Ŝia(Reĝina(Moŝto)), Honorinda(Doktoro)):
       name = "Serena Novarika"
       types = [Ŝia(Reĝina(Moŝto)), Honorinda(Doktoro)]
       unique = True
       def __init__(self, **kwargs)
           super.__init__(**kwargs)
+          if self not in context: context.register(self)
+          self.instance = context.get_reference(self)
   this = SerenaNovarika()
+  Jen(this)
   ```
 
 - Summary and detailed rules
   1. The word ending with `-ʌ`
     must be a generic type of things when ending with `-o`;
-  2. The word following (link with hyphen if having multiple words),
-    except when ending with `-ʌ` or `-a` or `-e`,
+  2. The word following (link with hyphen if having multiple words) —
+    except when ending with `-ʌ` or `-a` or `-e` —
     is the name of the specific thing of that type and a proper noun;
   3. The name can be a number (or letters-and-numbers-based identifier).
     In which case, that number/identifier should start with `#`.  

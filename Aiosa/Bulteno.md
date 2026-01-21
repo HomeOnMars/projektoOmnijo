@@ -39,8 +39,11 @@ Bulteno
 
 > Backstories Summaries
 
-> If there's no one to blame, does it really matter?  
-> —— *Alleged* [*motto*](https://www.250bpm.com/p/accountability-sinks) *of Aiosa City Hall*
+> If no one can be [*blamed*](https://www.250bpm.com/p/accountability-sinks),
+> does it matter?  
+> If no one [*cares*](https://www.slatestarcodexabridged.com/Meditations-On-Moloch) to [*act*](https://homosabiens.substack.com/i/144789378/i-civilization-as-self-restraint),
+> why even bother?  
+> —— *Alleged motto of Aiosa City Hall*
 
 P • A • R • K • I • N • G • L • O • T • S
 <!-- F • R • E • E • D • O • M -->
@@ -59,12 +62,6 @@ In its core, *Aiosa* was built in the name of *freedom*,
 which many of its residents held as their highest value—
 
 *And freedom they shall get.*
-<!-- At the mere cost of
-[*effective coordination*](https://homosabiens.substack.com/i/144789378/i-civilization-as-self-restraint),
-as [*Moloch*](https://www.slatestarcodexabridged.com/Meditations-On-Moloch)
-reigns supreme. -->
-
-<!-- *Until...* -->
 
 ### Fonrakonta Bulteno
 
