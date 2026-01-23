@@ -369,9 +369,13 @@ which is also slowing down over millennia.)
     labeled as `O`, `I`, `Q`, `U` in that order.
 - `☾`: ***Monato***  | Omnija Month
 - `Ĵ`: ***Ĵaro***    | Omnija Unit Year
-  - Unit year - Length is precisely Dx365.25 (Hx16Σ.4) Omnija Days.
+  - Unit year — Length is precisely Hx 16Σ 3Ψ44 Ŝ (Dx 23 936 836 Ŝ,
+    or about 365.24218465 SI days).  
+    Hx 80 Ĵ is exactly Hx 80 J
+    under the [Omnijaro calendar rules](#omnijara-difino),
+    assuming no extra leap seconds added or subtracted.
 - `J`: ***Jaro***    | Omnija Calendar Year (Earth-specific)
-  - Calendar year - Length varies depending on which year it is.
+  - Calendar year — Length varies depending on which year it is.
 - `DŜ`: ***DuniŜekunto*** | Omnija Century (kinda)
   - 1 DŜ = Hx10000⚻ ≈ Dx 179.43 yr
 
@@ -831,24 +835,51 @@ $$
   \approx 9.8264_D \  \textrm{W}
 $$
 
-OC's target power poduction is
-about Hx8000⚡(Dx21.1GW) to Hx10000⚡(Dx42.2GW).
-
-Notably, Hx10⚡≈ Dx10MW.
-
-The output of the sun is
+In CSL2, 1 [electricity unit](https://skylines.paradoxwikis.com/Asset_Properties)
 
 $$
-  L_\odot
-  \approx 3.828_D \times 10_D^{17_D} \textrm{GW}
-  \approx 20.394_H \textrm{VLu}
-  \approx 2.0394_H \times 10_H^{11_H} ⚡
-  \approx 20 \  3945 \  851Π \  039Π \  0000_H ⚡
+  \textrm{E}_\textrm{CSL}
+  \equiv 16 \textrm{kW}_\textrm{CSL}
+  \approx 16.1 \textrm{kW}
+  \equiv \frac{1}{40_D}⚡
 $$
 
-The solar energy received by Earth
-(including those reflected into space before reaching ground)
-is approximately
+The equivalency of $\textrm{E}_\textrm{CSL} \equiv \frac{1}{40_D}⚡$
+is imposed by me to simplify calculations.
+
+#### Skalkomparo: Potenco
+
+> Scale Comparison
+
+- m⚡=   Lu ≈ Dx9.8W  
+  Approximately one light bulb's power consumption.
+- g⚡=  HLu ≈ Dx156W  
+  Approximately one human's food energy intake rate (\~Dx100W)
+  or a gaming laptop's power consumption (Dx100W\~Dx300W).
+  Allocate \~4HLu power production per citizen
+  for food/electricity/heating etc.
+- j⚡=  JLu ≈ Dx2.5kW  
+  Approximately the country's power consumption per **1** person
+  (by *RdO* standards), given residential power consumption takes
+  approx 1/4 of total power consumption (incl industrial and commercial etc).  
+  Or 4 people's total power consumption (electricity + food & heating etc.),  
+  or 8 people (3 household)'s electricity consumption
+  (electricity only, \~Dx1/3kW per person).  
+  A 10 million population mega city requires Dx25GW of power production.
+- ⚡ =  MLu ≈ Dx0.64MW = Dx 40 E_csl
+- H⚡= HMLu ≈ Dx10MW  
+  Approximately of the scale of a large wind turbine.
+- J⚡= JMLu ≈ Dx163MW  
+  Supports a small town of 65k population.
+- G⚡= GMLu ≈ Dx2.6GW
+- M⚡=  DLu ≈ Dx42GW  
+  Supports a city of 1⌄6 = Dx 16 777 216 ≈ 16 million people.  
+  [OmniCentro](../OmniCentro.md)'s target power poduction
+  is 1 M⚡(Dx41.94304GW).
+- D⚡ = TLu  
+  Total solar energy received by Earth
+  (including those reflected into space before reaching ground)
+  is about 4 HD⚡:
 
 $$
   \frac{\pi R_{\oplus}^2}{4 \pi (\textrm{au})^2} L_\odot
@@ -858,7 +889,17 @@ $$
   \approx 3Υ \  Υ4Πλ \  466λ_H ⚡
 $$
 
-<!-- \approx 3Υ Υ501 0Π25_H ⚡ -->
+  <!-- \approx 3Υ Υ501 0Π25_H ⚡ -->
+- R⚡ = VLu  
+  The luminosity output of the sun is about 2 HR⚡:
+
+$$
+  L_\odot
+  \approx 3.828_D \times 10_D^{17_D} \textrm{GW}
+  \approx 20.394_H \textrm{VLu}
+  \approx 2.0394_H \times 10_H^{11_H} ⚡
+  \approx 20 \  3945 \  851Π \  039Π \  0000_H ⚡
+$$
 
 Kromaĵo
 -------------------------------------------------------------------------------

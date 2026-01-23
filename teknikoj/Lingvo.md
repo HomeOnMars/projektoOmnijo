@@ -540,15 +540,18 @@ See also [Unuoj](Unuoj.md) page.
   - **Add one trailing space after the em dash for single use occasions.**  
     I.e. when you are just adding extra details to the main sentence
     (or just marking a change in tone etc),
-    and you are not planning to go back to the main sentence.  
+    and you are not planning to go back to the main sentence.
+
+    Exception:
+    - the sentence before is not a full sentence,
+    but a phrase that requires explanation which comes after the em dash.
+    In which case, add spaces around em dash (both before and after).
+
     E.g.  
-    "He is suprised— despite their trusting relationship,
-    Ĝejda usually isn't this much amenable towards
-    his many (admittedly questionable) ideas."
-    - When the following is a direct explanation of the phrase before,
-      *consider using colon ':' instead of em dash '—'.*  
-      E.g.
-      "The book: an explanation on Epopo's history"
+    - "He is suprised— despite their trusting relationship,
+      Ĝejda usually isn't this much amenable towards
+      his many (admittedly questionable) ideas."
+    - "Book 0 — an explanation on Epopo's history"
   - **Use two em dashes ('——') with surrounding spaces to indicate author/origin of a quote.**  
     E.g.  
     "The truth springs from arguments amongst friends." —— David Hume.  

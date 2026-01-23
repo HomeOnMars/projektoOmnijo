@@ -581,7 +581,7 @@ units.def_unit(
 units.def_unit(
     ['☾', 'Monato'],  4 * u_rdo_defs['Semajno'], namespace=u_rdo_defs)
 units.def_unit(
-    ['Ĵ', 'Ĵaro'], 365.25 * u_rdo_defs['MŜ'],
+    ['Ĵ', 'Ĵaro'], 0x16D3F44 * u_rdo_defs['Ŝ'],
     prefixes=u_rdo_prefixes, namespace=u_rdo_defs)
 #    temperature
 Z = u_rdo_defs['Z']
@@ -677,10 +677,17 @@ units.def_unit(
 #    speed
 units.def_unit(
     ['kph_csl', 'CSL_kph'], u_csl_defs['km_csl'] / u_csl_defs['h_csl'],
+    format={'latex': r' \mathrm{kph}_\mathrm{CSL} '},
     prefixes=True, namespace=u_csl_defs)
 #    power
 units.def_unit(
-    ['W_csl', 'CSL_W'], u_csl_base['power'],
+    ['E_csl', 'CSL_E', 'Electricity_csl', 'CSL_Electricity'],
+    u_rdo_defs['MLu'] / 40,
+    format={'latex': r' E_\mathrm{CSL} '},
+    prefixes=True, namespace=u_csl_defs)
+units.def_unit(
+    ['W_csl', 'CSL_W'], u_csl_defs['E_csl'] / 16 / 1e3,
+    format={'latex': r' \mathrm{kW}_\mathrm{CSL} '},
     prefixes=True, namespace=u_csl_defs)
 
 
@@ -1307,6 +1314,7 @@ if __name__ == '__main__':
     print(f"\n# of years before needing to subtract a day: {u_yr_b:.1f}")
     print(f"Added seconds per day: {(1*u_rdo.MSx - 1*units.day).to(units.s):.3f}")
     print(f"Added minutes per year: {(1*u_rdo.Jx - 1*units.year).to(units.min):.3f}")
+    assert (128*u.Jx).to_value(u.Sx) == Datotempo._JAROJ128_Sx
 
     print(
         "\nAbout currency:",
