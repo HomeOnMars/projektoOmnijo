@@ -39,11 +39,24 @@ Bulteno
 
 > Backstories Summaries
 
-> If no one can be [*blamed*](https://www.250bpm.com/p/accountability-sinks),
+<!-- > If no one can be [*blamed*](https://www.250bpm.com/p/accountability-sinks),
 > does it matter?  
 > If no one [*cares*](https://www.slatestarcodexabridged.com/Meditations-On-Moloch) to [*act*](https://homosabiens.substack.com/i/144789378/i-civilization-as-self-restraint),
 > why even bother?  
-> —— *Alleged motto of Aiosa City Hall*
+> After all, everyone are entitled to their own "*truth*", and
+> [*no laws are broken if we are all committing the same crime*](https://music.youtube.com/watch?v=pAv-2tsc9Yo).  
+> —— *Aiosa City Hall alleged motto* -->
+
+<!-- > *It is okay because everybody does it*  
+> *No laws are broken if we are all committing the same crime*  
+> —— [*White light*](https://music.youtube.com/watch?v=pAv-2tsc9Yo)
+> by Vienna Teng -->
+
+<!-- > And the rockets' red glare, the bombs bursting in air,  
+> Gave proof through the night that our flag was still there;   -->
+> O say does that star-spangled banner yet wave,  
+> ⁠O'er the land of the free and the home of the brave?  
+> —— [*The Star-Spangled Banner*](https://en.wikipedia.org/wiki/The_Star-Spangled_Banner#Lyrics)
 
 P • A • R • K • I • N • G • L • O • T • S
 <!-- F • R • E • E • D • O • M -->
@@ -56,7 +69,7 @@ and ad hoc developments instead of proactive centralized designs;
 Cars are expected to be cims' default ways of getting around,
 and it's the other transport modes (walking, transit, cycling)
 that are often neglected— or at best, retrofitted for;
-Top-level planning is intentionally being kept at minimal.
+Top-level planning is being intentionally kept at minimal.
 
 In its core, *Aiosa* was built in the name of *freedom*,
 which many of its residents held as their highest value—
