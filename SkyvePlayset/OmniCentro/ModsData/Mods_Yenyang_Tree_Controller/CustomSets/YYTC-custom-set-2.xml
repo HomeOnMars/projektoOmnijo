@@ -3,6 +3,70 @@
   <PrefabNames>
     <string>BirchTree01</string>
     <string>PineTree01</string>
+    <string>OakTree01</string>
+    <string>NA_LondonPlaneTree01</string>
+    <string>NA_LindenTree01</string>
+    <string>NA_HickoryTree01</string>
+    <string>AppleTree01</string>
+    <string>SpruceTree01</string>
   </PrefabNames>
   <Version>1</Version>
+  <AdvancedForestBrushEntries>
+    <AdvancedForestBrushEntry>
+      <SelectedAges>4</SelectedAges>
+      <Name>BirchTree01</Name>
+      <MinimumElevation>0</MinimumElevation>
+      <MaximumElevation>4096</MaximumElevation>
+      <ProbabilityWeight>50</ProbabilityWeight>
+    </AdvancedForestBrushEntry>
+    <AdvancedForestBrushEntry>
+      <SelectedAges>4</SelectedAges>
+      <Name>PineTree01</Name>
+      <MinimumElevation>0</MinimumElevation>
+      <MaximumElevation>4096</MaximumElevation>
+      <ProbabilityWeight>50</ProbabilityWeight>
+    </AdvancedForestBrushEntry>
+    <AdvancedForestBrushEntry>
+      <SelectedAges>4</SelectedAges>
+      <Name>OakTree01</Name>
+      <MinimumElevation>0</MinimumElevation>
+      <MaximumElevation>4096</MaximumElevation>
+      <ProbabilityWeight>100</ProbabilityWeight>
+    </AdvancedForestBrushEntry>
+    <AdvancedForestBrushEntry>
+      <SelectedAges>4</SelectedAges>
+      <Name>NA_LondonPlaneTree01</Name>
+      <MinimumElevation>0</MinimumElevation>
+      <MaximumElevation>4096</MaximumElevation>
+      <ProbabilityWeight>100</ProbabilityWeight>
+    </AdvancedForestBrushEntry>
+    <AdvancedForestBrushEntry>
+      <SelectedAges>4</SelectedAges>
+      <Name>NA_LindenTree01</Name>
+      <MinimumElevation>0</MinimumElevation>
+      <MaximumElevation>4096</MaximumElevation>
+      <ProbabilityWeight>100</ProbabilityWeight>
+    </AdvancedForestBrushEntry>
+    <AdvancedForestBrushEntry>
+      <SelectedAges>4</SelectedAges>
+      <Name>NA_HickoryTree01</Name>
+      <MinimumElevation>0</MinimumElevation>
+      <MaximumElevation>4096</MaximumElevation>
+      <ProbabilityWeight>200</ProbabilityWeight>
+    </AdvancedForestBrushEntry>
+    <AdvancedForestBrushEntry>
+      <SelectedAges>4</SelectedAges>
+      <Name>AppleTree01</Name>
+      <MinimumElevation>0</MinimumElevation>
+      <MaximumElevation>4096</MaximumElevation>
+      <ProbabilityWeight>100</ProbabilityWeight>
+    </AdvancedForestBrushEntry>
+    <AdvancedForestBrushEntry>
+      <SelectedAges>4</SelectedAges>
+      <Name>SpruceTree01</Name>
+      <MinimumElevation>795</MinimumElevation>
+      <MaximumElevation>4096</MaximumElevation>
+      <ProbabilityWeight>25</ProbabilityWeight>
+    </AdvancedForestBrushEntry>
+  </AdvancedForestBrushEntries>
 </CustomSetRepository>
