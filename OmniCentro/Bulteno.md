@@ -223,3 +223,4 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 | OCFP | #4169E1 | <span style="color:RoyalBlue">█ Policestrʌ **Tejler Vikila** de Omnijo</span>  <!--The Conduit-->  |
 | OCFS | #FFC0CB | <span style="color:Pink">█ Fakestrʌ **Fiona Amirazi** de Omnijo</span> |
 | OCRR | #D8BFD8 | <span style="color:Thistle">█ Gastigantʌ **Karla Revin** de OCRR</span> |
+| OCRR | #000000 | <span style="color:Black">█ Gastigantʌ **Rŭolan Han** de OCRR</span> |
