@@ -31,20 +31,26 @@ Arboj
 
 ### Brushes Configuration
 
-- Brush   3: Altitude $<$ 40m; Beaches
-  - Palm Trees (Coconut, Florida, Royal)
-- Brush W-D: Altitude  100m to  600m
+- Brush N/A:
+  Very steep terrain
+  - Spruces
+- [Brush W-D](../SkyvePlayset/OmniCentro/ModsData/Mods_Yenyang_Tree_Controller/CustomSets/YYTC-wild-deciduous-trees.xml):
+  Altitude  100m to  600m
   - Birches
   - etc.
-- Brush N/A: Very steep terrain
-  - Spruces
-- Brush   1
+- [Brush 1](../SkyvePlayset/OmniCentro/ModsData/Mods_Yenyang_Tree_Controller/CustomSets/YYTC-custom-set-1.xml):
+  [*OmniCentro*](../OmniCentro.md)
   - Alder     (Altitude    0m\~1000m, Probability  75%)
   - Birches   (Altitude  120m\~1440m, Probability 150%)
   - Chestnuts (Altitude    0m\~2800m, Probability 100%)
   - Pines     (Altitude    0m\~4000m, Probability  75%)
   - Oaks      (Altitude    0m\~4000m, Probability  50%)
   - Spruces   (Altitude  520m\~4000m, Probability 150%)
+- [Brush 2](../SkyvePlayset/OmniCentro/ModsData/Mods_Yenyang_Tree_Controller/CustomSets/YYTC-custom-set-2.xml):
+  [*Aiosa*](../Aiosa.md)
+- [Brush 3](../SkyvePlayset/OmniCentro/ModsData/Mods_Yenyang_Tree_Controller/CustomSets/YYTC-custom-set-3.xml):
+  Beaches
+  - Palm Trees (Coconut, Florida, Royal) (Altitude 0m\~40m)
 
 ### Species
 
