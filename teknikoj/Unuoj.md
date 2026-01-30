@@ -176,13 +176,15 @@ Track and loading gauges in *RdO* are:
   - *Tram*:
     <!-- single floor, longitudinal seating layout,
     2 seats + 2 standing per 1 hU length, i.e.   -->
-    Dx64 passengers/U (excluding driver's cabins at both ends),  
+    7 passengers/m / 9 passengers/m (door)
+    Dx60 passengers/U (excluding driver's cabins at both ends),  
     or Dx224 passengers per 4U-long tram.
   - *Metro*:
     <!-- single floor, longitudinal seating layout, driverless,
     2 seats + 3 standing per 1 hU length, i.e.   -->
-    Dx80 passengers/U,  
-    or Dx960 passengers per 12U-long metro train.
+    8 passengers/m (window) / Δ passengers/m (door)  
+    Dx68 passengers/U,  
+    or Dx816 passengers per 12U-long metro train.
   - *Train (local)*:
     <!-- double-decker, transverse seating layout, driverless,
     6 seats per 2 hU length (plus 1 empty hU for corridors),
@@ -194,10 +196,14 @@ Track and loading gauges in *RdO* are:
   - *Train (high speed)*:
     <!-- single floor, transverse seating layout, driverless,
     6 seats per 2 hU length (plus 1 empty hU for corridors), i.e.   -->
+    6 passengers/m  
     Dx48 passengers/U
     (excluding driver's cabins, toilets, first class, etc),  
     or Dx120 passengers per 3U-long train car,  
     or Dx960 passengers per 24U-long train.
+  - *Train (cargo)*:
+    <!-- double-stack, i.e. 2MP/car, i.e.   -->
+    1MP/U, i.e. 50t per car, i.e. 1kt per engine (hauling 20 cars each)
 
 Yes, the RdO track gauge is incompatible
 with the standard gauge (Dx 1.4351 m) with a difference of 3.7 cm.

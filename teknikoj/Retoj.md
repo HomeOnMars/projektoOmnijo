@@ -168,7 +168,12 @@ Arterial / Collector / Local Roads:
   - Note: Liberties have been taken for the hard limit of $s$ due to steep terrain in the map. Also steeper is more fun.
   - Speed unit 'JoĜ' see [Units](Unuoj.md#rapido) page.
 - Length / Power
-  - train length: 25 (16m/2U-long) cars (**400m/50U**): 1 engine + 24 trailers.
+  - Train length:
+    25 (16m/2U-long) cars (**400m/50U**, 1 engine + 24 trailers)  
+    In practice, use
+    21 (16m/2U-long) cars (**336m/42U**, 1 engine & 20 trailers)
+    to fit the vanilla port intermodal train station.  
+    Extra long trains may go up to 126 cars (2km, 6 engines & 120 trailers).
   - For track intersections: $\geq$ 448m/56U.
   - Assumed power consumption:
     9496hp / 7.1MW / λ⚡ per engine.
@@ -310,10 +315,9 @@ Arterial / Collector / Local Roads:
   - Assumed EMU (Electric Multiple Unit).
   - Assumed non-tilting trains.
   - Train length
-    - 6  (16m/2U-long)  train cars (**96m/12U**)
-    - 9  (12m/1½U-long) train cars (**96m/12U**)
-    - 12 ( 8m/1U-long)  train cars (**96m/12U**)
-    - 1/3 and 2/3 length permitted
+    - 8  (10m/1¼U-long) tram cars (**80m/10U**)
+    - 1/4, 2/4, 3/4 length permitted
+    - 3/2 length permitted on special considerations
   - Track and loading gauges see [Unuoj page](Unuoj.md#trakmezurilo).
   - Assumed power consumption:
     810hp / 0.6MW / Hx0.Ψ⚡ per (16m/2U-long) train car —
