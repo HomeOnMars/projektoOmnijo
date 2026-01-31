@@ -792,11 +792,11 @@ Source: (2025-12-30)
 
 Walkable distances:
 
-| Time (Dxmin) | Time (HxĈ) | Distance (HxU) | Distance (DxU) | Distance (Dxkm_CSL) |
-| :-------- | :----: | :-----: | :-----: | ---------: |
-| Dx  6 min | Hx  1Ĉ | Hx  40U | Dx  64U | Dx  0.5 km |
-| Dx 11 min | Hx  2Ĉ | Hx  80U | Dx 128U | Dx  1.0 km |
-| Dx 17 min | Hx  3Ĉ | Hx  Π0U | Dx 192U | Dx  1.5 km |
+| Time (Dx min) | Time (HxĈ) | Distance (HxU) | Distance (DxU) | Distance (Dxkm_CSL) |
+| :-------- | :-: | :-----: | :-----: | ---------: |
+| Dx  6 min |  1Ĉ | Hx  40U | Dx  64U | Dx  0.5 km |
+| Dx 11 min |  2Ĉ | Hx  80U | Dx 128U | Dx  1.0 km |
+| Dx 17 min |  3Ĉ | Hx  Π0U | Dx 192U | Dx  1.5 km |
 
 #### Speed limits examples
 
@@ -877,9 +877,11 @@ is imposed by me to simplify calculations.
   Approximately of the scale of a large wind turbine.
 - J⚡= JMLu ≈ Dx163MW  
   Supports a small town of 65k population.
-- G⚡= GMLu ≈ Dx2.6GW
+- G⚡= GMLu ≈ Dx2.6GW  
+  Approximately the output of a well-designed hydroelectric dam in-game,
+  or a mini fusion power plant in RdO lore.
 - M⚡=  DLu ≈ Dx42GW  
-  Supports a city of 1⌄6 = Dx 16 777 216 ≈ 16 million people.  
+  Supports a city of 1⌄6 = Dx 16 777 216 ≈ 17 million people.  
   [OmniCentro](../OmniCentro.md)'s target power poduction
   is 1 M⚡(Dx41.94304GW).
 - D⚡ = TLu  
