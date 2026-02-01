@@ -37,7 +37,7 @@
     "75426": {
       "Id": 75426,
       "Name": "I18n Everywhere",
-      "Version": "60",
+      "Version": "61",
       "LoadOrder": 4,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -516,6 +516,15 @@
       "Name": "Asset Icon Library",
       "Version": "22",
       "LoadOrder": 197,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "133208": {
+      "Id": 133208,
+      "Name": "Vanilla Trains Variants",
+      "Version": "1",
+      "LoadOrder": 2147483646,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
