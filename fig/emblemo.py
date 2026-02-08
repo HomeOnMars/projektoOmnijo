@@ -623,6 +623,65 @@ class Emblemo:
 
 
 
+    def _set_as_OCFI(
+        self,
+        center:None|tuple[float, float]=None,
+        fill:bool=True,
+    ):
+        """Draw the OCFI emblem."""
+        self._set_center(center)
+
+        linewidth_fac: float = 8/128
+        stroke_width = self._r(linewidth_fac)
+        stroke_linejoin = 'round'  # "Literal['miter', 'round', 'bevel', 'inherit'] | None"
+        radius: float = 10/16
+        kwargs = {}
+
+        # u for unit
+        # The OCFI sigil is based on a hexagon of side length of 4u
+        u = radius / 3
+        # x1 is the x coord of the right side of that hexagon
+        x1 = 4*u*cos_deg(30)
+
+        self.draw(svg.Path(d=[
+                svg.MoveTo(self._x(0),   self._y(-u)),
+                svg.LineTo(self._x(-x1), self._y(u)),
+                svg.LineTo(self._x(-x1), self._y(-u)),
+                svg.LineTo(self._x(0),   self._y(-3*u)),
+                svg.Z()
+            ],
+            stroke=self.colors['G'],
+            fill=(self.colors['x2'] if fill else None),
+            stroke_width=stroke_width, stroke_linejoin=stroke_linejoin,
+            **kwargs))
+        self.draw(svg.Path(d=[
+                svg.MoveTo(self._x(0),  self._y(-u)),
+                svg.LineTo(self._x(x1), self._y(u)),
+                svg.LineTo(self._x(x1), self._y(-u)),
+                svg.LineTo(self._x(0),  self._y(-3*u)),
+                svg.Z()
+            ],
+            stroke=self.colors['G'],
+            fill=(self.colors['x1'] if fill else None),
+            stroke_width=stroke_width, stroke_linejoin=stroke_linejoin,
+            **kwargs))
+        self.draw(svg.Path(d=[
+                svg.MoveTo(self._x(0), self._y(-u)),
+                svg.LineTo(self._x(x1/2), self._y(0)),
+                svg.LineTo(self._x(0), self._y(3*u)),
+                svg.LineTo(self._x(-x1/2), self._y(0)),
+                svg.Z()
+            ],
+            stroke=self.colors['G'],
+            fill=(self.colors['O'] if fill else None),
+            stroke_width=stroke_width, stroke_linejoin=stroke_linejoin,
+            **kwargs))
+        # self._draw_O(linewidth_fac=16/128)
+
+        return self
+
+
+
     def _set_as_OCG(self, center:None|tuple[float, float]=None):
         """Draw the OCG emblem."""
         self._set_center(center)
@@ -689,6 +748,7 @@ if __name__ == '__main__':
 
     if redraw_all:
         Emblemo("OCFD",  meta_dict=meta_dict).save(None, exts)
+        Emblemo("OCFI",  meta_dict=meta_dict).save(None, exts)
         Emblemo("OCG",  meta_dict=meta_dict).save(None, exts)
         Emblemo("OCR",  meta_dict=meta_dict).save(None, exts)
         Emblemo("OCRR", meta_dict=meta_dict).save(None, exts)
@@ -709,4 +769,5 @@ if __name__ == '__main__':
             halflim_y=9/8, ratio_xy=5/3,  scale_y=2160
             ).save("RdOFlago.x5y3", exts)
     if debug:
-        pass
+        # pass
+        Emblemo("OCFI",  meta_dict=meta_dict).save(None, exts)
