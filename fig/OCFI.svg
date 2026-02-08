@@ -4,7 +4,7 @@
     <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <cc:Work>
         <dc:type rdf:resource="http://purl.org/dc/dcmitype/Image"/>
-        <dc:date>2026-02-08T13:08:13.104323+00:00</dc:date>
+        <dc:date>2026-02-08T14:48:37.010360+00:00</dc:date>
         <dc:format>image/svg+xml</dc:format>
         <dc:title>OCFI Emblem</dc:title>
         <dc:creator>HomeOnMars</dc:creator>
@@ -12,7 +12,16 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <path stroke="#9370DB" stroke-width="10.546875" d="M 135.0 92.8125 L 98.46455327784399 71.71875 L 98.46455327784399 198.28125 L 135.0 219.375 Z " stroke-linejoin="round" fill="none"/>
-  <path stroke="#9370DB" stroke-width="10.546875" d="M 135.0 92.8125 L 171.53544672215602 71.71875 L 171.53544672215602 198.28125 L 135.0 219.375 Z " stroke-linejoin="round" fill="none"/>
-  <path stroke="#9370DB" stroke-width="10.546875" d="M 135.0 92.8125 L 171.53544672215602 71.71875 L 135.0 50.625 L 98.46455327784399 71.71875 Z " stroke-linejoin="round" fill="none"/>
+  <g transform="rotate(-60 135.0 135.0)">
+    <path stroke="#9370DB" stroke-width="10.546875" d="M 180.1602957369067 101.25 L 89.8397042630933 101.25 L 135.0 185.625 Z " stroke-linejoin="round" fill="none"/>
+    <path stroke="#9370DB" stroke-width="10.546875" d="M 135.0 50.625 L 89.8397042630933 101.25 L 180.1602957369067 101.25 Z " stroke-linejoin="round" fill="none"/>
+    <path stroke="#9370DB" stroke-width="10.546875" d="M 135.0 50.625 L 61.92910655568798 92.8125 L 89.8397042630933 101.25 Z " stroke-linejoin="round" fill="none"/>
+    <path stroke="#9370DB" stroke-width="10.546875" d="M 61.92910655568798 92.8125 L 61.92910655568798 177.1875 L 89.8397042630933 101.25 Z " stroke-linejoin="round" fill="none"/>
+    <path stroke="#9370DB" stroke-width="10.546875" d="M 61.92910655568798 177.1875 L 135.0 185.625 L 89.8397042630933 101.25 Z " stroke-linejoin="round" fill="none"/>
+    <path stroke="#9370DB" stroke-width="10.546875" d="M 61.92910655568798 177.1875 L 135.0 219.375 L 135.0 185.625 Z " stroke-linejoin="round" fill="none"/>
+    <path stroke="#9370DB" stroke-width="10.546875" d="M 135.0 219.375 L 208.07089344431202 177.1875 L 135.0 185.625 Z " stroke-linejoin="round" fill="none"/>
+    <path stroke="#9370DB" stroke-width="10.546875" d="M 208.07089344431202 177.1875 L 180.1602957369067 101.25 L 135.0 185.625 Z " stroke-linejoin="round" fill="none"/>
+    <path stroke="#9370DB" stroke-width="10.546875" d="M 208.07089344431202 177.1875 L 208.07089344431202 92.8125 L 180.1602957369067 101.25 Z " stroke-linejoin="round" fill="none"/>
+    <path stroke="#9370DB" stroke-width="10.546875" d="M 208.07089344431202 92.8125 L 135.0 50.625 L 180.1602957369067 101.25 Z " stroke-linejoin="round" fill="none"/>
+  </g>
 </svg>

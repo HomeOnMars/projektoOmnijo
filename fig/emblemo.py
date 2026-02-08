@@ -122,7 +122,8 @@ class Emblemo:
         self.colors: dict[str, str] = colors.copy()
 
         self._dat = svg.SVG(
-            width=self.scale_x, height=self.scale_y, elements=[],
+            width=self.scale_x, height=self.scale_y,
+            elements=[],
             preserveAspectRatio = svg.PreserveAspectRatio(
                 alignment='xMidYMid', scale_type='meet'),
         )
@@ -132,6 +133,7 @@ class Emblemo:
             self.dat.elements.append(
                 self.elem_metadata(**meta_dict)
             )
+        self.dat.elements.append(svg.G(elements=[]))
 
         if name:
             attr = f'_set_as_{name}'
@@ -157,8 +159,13 @@ class Emblemo:
         return self._dat
 
     @property
+    def cg(self):
+        """Current Group"""
+        return self.dat.elements[-1]
+
+    @property
     def elems(self):
-        return self.dat.elements
+        return self.cg.elements
 
     def draw(self, elem: svg.Element):
         self.elems.append(elem)
@@ -626,7 +633,7 @@ class Emblemo:
     def _set_as_OCFI(
         self,
         center:None|tuple[float, float]=None,
-        fill:bool=True,
+        fill:bool=False,
     ):
         """Draw the OCFI emblem."""
         self._set_center(center)
@@ -637,46 +644,58 @@ class Emblemo:
         radius: float = 10/16
         kwargs = {}
 
-        # u for unit
+        # a for unit
         # The OCFI sigil is based on a hexagon of side length of 2u
-        u = radius / 4
+        u = radius / 2
         # x1 is the x coord of the right side of that hexagon
         x1 = 2*u*cos_deg(30)
+        # x2 is the x coord of the central triangle
+        x2 = 2*x1*sin_deg(18)
 
-        self.draw(svg.Path(d=[
-                svg.MoveTo(self._x(0),   self._y(2*u)),
-                svg.LineTo(self._x(-x1), self._y(3*u)),
-                svg.LineTo(self._x(-x1), self._y(-3*u)),
-                svg.LineTo(self._x(0),   self._y(-4*u)),
-                svg.Z()
-            ],
-            stroke=self.colors['G'],
-            fill=(self.colors['x2'] if fill else 'none'),
-            stroke_width=stroke_width, stroke_linejoin=stroke_linejoin,
-            **kwargs))
-        self.draw(svg.Path(d=[
-                svg.MoveTo(self._x(0),  self._y(2*u)),
-                svg.LineTo(self._x(x1), self._y(3*u)),
-                svg.LineTo(self._x(x1), self._y(-3*u)),
-                svg.LineTo(self._x(0),  self._y(-4*u)),
-                svg.Z()
-            ],
-            stroke=self.colors['G'],
-            fill=(self.colors['x1'] if fill else 'none'),
-            stroke_width=stroke_width, stroke_linejoin=stroke_linejoin,
-            **kwargs))
-        self.draw(svg.Path(d=[
-                svg.MoveTo(self._x(0), self._y(2*u)),
-                svg.LineTo(self._x(x1), self._y(3*u)),
-                svg.LineTo(self._x(0), self._y(4*u)),
-                svg.LineTo(self._x(-x1), self._y(3*u)),
-                svg.Z()
-            ],
-            stroke=self.colors['G'],
-            fill=(self.colors['O'] if fill else 'none'),
-            stroke_width=stroke_width, stroke_linejoin=stroke_linejoin,
-            **kwargs))
-        # self._draw_O(linewidth_fac=16/128)
+        pts = [
+            # external hexagon
+            (  0,  2*u),    # 0
+            (-x1,    u),    # 1
+            (-x1,   -u),    # 2
+            (  0, -2*u),    # 3
+            ( x1,   -u),    # 4
+            ( x1,    u),    # 5
+            # internal triangle (moved slightly downward to improve looks)
+            ( x2,  0.8*u),    # 6
+            (-x2,  0.8*u),    # 7
+            (  0, -1.2*u),    # 8
+        ]
+        tridefs = [
+            # {'d': (0, 1, 2, 3, 4, 5), 'fill': None},
+            {'d': (6, 7, 8), 'fill': 'O'}, # central triangle
+            {'d': (0, 7, 6), 'fill': 'x1'}, # middle upper
+            {'d': (0, 1, 7), 'fill': 'x2'}, # left upper
+            {'d': (1, 2, 7), 'fill': 'x2'}, # left middle
+            {'d': (2, 8, 7), 'fill': 'x1'}, # left middle
+            {'d': (2, 3, 8), 'fill': 'x2'}, # left lower
+            {'d': (3, 4, 8), 'fill': 'x2'}, # right lower
+            {'d': (4, 6, 8), 'fill': 'x1'}, # right middle
+            {'d': (4, 5, 6), 'fill': 'x2'}, # right middle
+            {'d': (5, 0, 6), 'fill': 'x2'}, # right upper
+        ]
+
+        for tridef in tridefs:
+            self.draw(svg.Path(
+                d=[svg.MoveTo(
+                    self._x(pts[tridef['d'][0]][0]),
+                    self._y(pts[tridef['d'][0]][1]))]
+                + [
+                    svg.LineTo(self._x(pts[d][0]), self._y(pts[d][1]))
+                    for d in tridef['d'][1:]]
+                + [svg.Z()],
+                stroke=self.colors['G'],
+                fill = (
+                    self.colors.get(tridef.get('fill', None), 'none')
+                    if fill else 'none'
+                ),
+                stroke_width=stroke_width, stroke_linejoin=stroke_linejoin,
+                **kwargs))
+        self.cg.transform = svg.Rotate(-60, self._x(0), self._y(0))
 
         return self
 
@@ -748,7 +767,9 @@ if __name__ == '__main__':
 
     if redraw_all:
         Emblemo("OCFD", meta_dict=meta_dict).save(None, exts)
-        Emblemo("OCFI", meta_dict=meta_dict, fill=None).save(None, exts)
+        Emblemo("OCFI", meta_dict=meta_dict).save(None, exts)
+        Emblemo("OCFI", meta_dict=meta_dict, fill=True).save(
+            "OCFI.kolor", exts)
         Emblemo("OCG",  meta_dict=meta_dict).save(None, exts)
         Emblemo("OCR",  meta_dict=meta_dict).save(None, exts)
         Emblemo("OCRR", meta_dict=meta_dict).save(None, exts)
@@ -770,4 +791,6 @@ if __name__ == '__main__':
             ).save("RdOFlago.x5y3", exts)
     if debug:
         # pass
-        Emblemo("OCFI", meta_dict=meta_dict, fill=None).save(None, exts)
+        Emblemo("OCFI", meta_dict=meta_dict).save(None, exts)
+        Emblemo("OCFI", meta_dict=meta_dict, fill=True).save(
+            "OCFI.kolor", exts)
