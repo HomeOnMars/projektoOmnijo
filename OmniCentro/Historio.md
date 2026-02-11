@@ -388,14 +388,16 @@ Our (soon-to-be) legendary duo now begins the journey,
 of building the so-called "impossible" capital city,
 in the valley of *Ĉemarvalo*.
 
+<!--
 Ekstraj Rakontoj
 -------------------------------------------------------------------------------
 
 > Additional Content
 
 1. Ø-3⚝ \|
-  [La Perdita Princino](../rakontoj/Cx1_LaPerditaPrincino.specimeno.md#enhavo) \| The Lost Princess  
+  [La Perdita Princino](../rakontoj/Libro0/Cx1_LaPerditaPrincino.md#enhavo) \| The Lost Princess  
   <span style="color:Beige">Serena</span>
   meeting the old King for the first time.
 
 -------------------------------------------------------------------------------
+-->
