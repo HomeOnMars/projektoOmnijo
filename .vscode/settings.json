@@ -1,4 +1,6 @@
 {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
     "markdownlint.config": {
         "MD003": {
             "style": "setext_with_atx",
@@ -17,5 +19,9 @@
         },
         "MD059": false,
         "MD060": false
-    }
+    },
+    "chat.agent.enabled": false,
+    "chat.commandCenter.enabled": false,
+    "inlineChat.accessibleDiffView": "off",
+    "terminal.integrated.initialHint": false
 }
