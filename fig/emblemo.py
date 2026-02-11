@@ -133,7 +133,7 @@ class Emblemo:
             self.dat.elements.append(
                 self.elem_metadata(**meta_dict)
             )
-        self.dat.elements.append(svg.G(elements=[]))
+        self.add_group()
 
         if name:
             attr = f'_set_as_{name}'
@@ -162,6 +162,10 @@ class Emblemo:
     def cg(self):
         """Current Group"""
         return self.dat.elements[-1]
+
+    def add_group(self):
+        self.dat.elements.append(svg.G(elements=[]))
+        return self
 
     @property
     def elems(self):
@@ -587,9 +591,9 @@ class Emblemo:
             fill=f"url('#{id_RdOColorGradient}')",
         ))
 
-
-
+        # main symbol
         self._draw_RdO()
+
         return self
 
 
@@ -624,7 +628,9 @@ class Emblemo:
             ],
             stroke=color, stroke_width=stroke_width, fill=fill,
             **kwargs))
-        # self._draw_O(linewidth_fac=16/128)
+
+        # self.add_group()
+        # self._draw_RdO()
 
         return self
 
@@ -696,6 +702,9 @@ class Emblemo:
                 stroke_width=stroke_width, stroke_linejoin=stroke_linejoin,
                 **kwargs))
         self.cg.transform = svg.Rotate(-60, self._x(0), self._y(0))
+
+        # self.add_group()
+        # self._draw_RdO()
 
         return self
 
@@ -791,6 +800,7 @@ if __name__ == '__main__':
             ).save("RdOFlago.x5y3", exts)
     if debug:
         # pass
+        Emblemo("OCFD", meta_dict=meta_dict).save(None, exts)
         Emblemo("OCFI", meta_dict=meta_dict).save(None, exts)
         Emblemo("OCFI", meta_dict=meta_dict, fill=True).save(
             "OCFI.kolor", exts)
