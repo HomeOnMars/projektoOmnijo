@@ -55,6 +55,7 @@ KOLOROJ : dict[str, str] = {
     'x1': '#D6B4FC',  # < light violet  D6B4FC
     'x2': '#95D0FC',  # > light blue  95D0FC
     'Radio': '#FFD700', # Gold
+    'White': '#FFFFFF', # as background
 }
 colors_dict = KOLOROJ.copy()
 
@@ -161,10 +162,15 @@ class Emblemo:
     @property
     def cg(self):
         """Current Group"""
-        return self.dat.elements[-1]
+        return self._dat.elements[-1]
 
     def add_group(self):
-        self.dat.elements.append(svg.G(elements=[]))
+        self._dat.elements.append(svg.G(elements=[]))
+        return self
+
+    def define(self, elem: svg.Element):
+        """Add defs such as markers or color transitions."""
+        self._dat.elements.insert(0 if self._meta_dict is None else 1, elem)
         return self
 
     @property
@@ -337,10 +343,17 @@ class Emblemo:
         """Translate math y coord (-Y, Y') to canvas y coord (height, 0)."""
         return (self.ylims[1] - y) / self.lim_y * self.scale_y
 
+    def _xy(self, xy: tuple[float, float]) -> tuple[float, float]:
+        """Translate math xy coord to canvas xy coord."""
+        return self._x(xy[0]), self._y(xy[1])
+
     def _r(self, r: float) -> float:
         """Translate radius from math coord (-1, 1) to canvas coord."""
         return r * self.scale
 
+    @staticmethod
+    def _url(id: str) -> str:
+        return f"url('#{id}')"
 
 
     # drawing components
@@ -539,7 +552,7 @@ class Emblemo:
                         # to make sure the color gradient is in correct order
 
         id_RdOColorGradient = "RdOColorGradient"
-        self.draw(svg.Defs(elements=[
+        self.define(svg.Defs(elements=[
             svg.LinearGradient(id=id_RdOColorGradient, gradientTransform=[
                 svg.Scale(x=1/self.ratio_xy, y=1),
                 svg.Translate(
@@ -588,7 +601,7 @@ class Emblemo:
         self.draw(svg.Rect(
             x=0, y=0,
             width=self.scale_x, height=self.scale_y,
-            fill=f"url('#{id_RdOColorGradient}')",
+            fill=self._url(id_RdOColorGradient),
         ))
 
         # main symbol
@@ -603,7 +616,7 @@ class Emblemo:
         self._set_center(center)
 
         linewidth_fac: float = 16/128
-        radius: float = 10/16
+        radius: float = 9/16
         color  : None = self.colors['D']
         fill   : None|str = 'none'
         kwargs = {}
@@ -636,6 +649,77 @@ class Emblemo:
 
 
 
+    def _set_as_OCFE(self, center:None|tuple[float, float]=None):
+        """Draw the OCFE emblem."""
+        self._set_center(center)
+
+        linewidth_fac: float = 6/128
+        stroke_width = self._r(linewidth_fac)
+        stroke_linejoin = 'round'  # "Literal['miter', 'round', 'bevel', 'inherit'] | None"
+        radius: float = 8.5/16
+        kwargs = {}
+
+        id_OCFEMarker = "OCFEMarker"
+        self.define(svg.Marker(
+            id=id_OCFEMarker,
+            markerUnits='strokeWidth',
+            refX=2.5,
+            refY=2.5,
+            markerWidth=5,
+            markerHeight=5,
+            elements=[
+                svg.Circle(
+                    cx=2.5,
+                    cy=2.5,
+                    r=1.5,
+                    fill=self.colors['White'],
+                    stroke=self.colors['C'],
+                ),
+            ],
+        ))
+
+        # h = radius * 0.625 / 8
+        # d = radius * 0.625
+        d0 = radius * cos_deg(atan_deg(9/6))
+        h0 = radius * sin_deg(atan_deg(9/6))
+        h1 = h0 / 8 * 5
+        d1 = sqrt(radius**2 - h1**2)
+
+        ptss = [[ # layer 0
+            (-d0,  h0),
+            (-radius, 0),
+            (-d0, -h0),
+        ], [ # layer 1
+            ( d1,  h1),
+            ( d1, -h1),
+        ]]
+
+        self.draw(svg.Path(
+            d=[
+                # svg.MoveTo(*self._xy(ptss[1][0])),
+                svg.MoveTo(*self._xy(ptss[0][0])),
+                svg.LineTo(*self._xy(ptss[1][1])),
+                svg.LineTo(*self._xy(ptss[0][1])),
+                svg.LineTo(*self._xy(ptss[1][0])),
+                svg.LineTo(*self._xy(ptss[0][2])),
+                # svg.LineTo(*self._xy(ptss[1][1])),
+            ],
+            fill='none',
+            stroke=self.colors['C'],
+            stroke_width=stroke_width,
+            stroke_linejoin=stroke_linejoin,
+            marker_start=self._url(id_OCFEMarker),
+            marker_mid=self._url(id_OCFEMarker),
+            marker_end=self._url(id_OCFEMarker),
+            **kwargs))
+
+        # self.add_group()
+        # self._draw_RdO()
+
+        return self
+
+
+
     def _set_as_OCFI(
         self,
         center:None|tuple[float, float]=None,
@@ -647,10 +731,10 @@ class Emblemo:
         linewidth_fac: float = 10/128
         stroke_width = self._r(linewidth_fac)
         stroke_linejoin = 'round'  # "Literal['miter', 'round', 'bevel', 'inherit'] | None"
-        radius: float = 10/16
+        radius: float = 9.25/16
         kwargs = {}
 
-        # a for unit
+        # u for unit
         # The OCFI sigil is based on a hexagon of side length of 2u
         u = radius / 2
         # x1 is the x coord of the right side of that hexagon
@@ -687,19 +771,19 @@ class Emblemo:
 
         for tridef in tridefs:
             self.draw(svg.Path(
-                d=[svg.MoveTo(
-                    self._x(pts[tridef['d'][0]][0]),
-                    self._y(pts[tridef['d'][0]][1]))]
+                d=[
+                    svg.MoveTo(*self._xy(pts[tridef['d'][0]]))]
                 + [
-                    svg.LineTo(self._x(pts[d][0]), self._y(pts[d][1]))
+                    svg.LineTo(*self._xy(pts[d]))
                     for d in tridef['d'][1:]]
                 + [svg.Z()],
-                stroke=self.colors['G'],
                 fill = (
                     self.colors.get(tridef.get('fill', None), 'none')
                     if fill else 'none'
                 ),
-                stroke_width=stroke_width, stroke_linejoin=stroke_linejoin,
+                stroke=self.colors['G'],
+                stroke_width=stroke_width,
+                stroke_linejoin=stroke_linejoin,
                 **kwargs))
         self.cg.transform = svg.Rotate(-60, self._x(0), self._y(0))
 
@@ -776,6 +860,7 @@ if __name__ == '__main__':
 
     if redraw_all:
         Emblemo("OCFD", meta_dict=meta_dict).save(None, exts)
+        Emblemo("OCFE", meta_dict=meta_dict).save(None, exts)
         Emblemo("OCFI", meta_dict=meta_dict).save(None, exts)
         Emblemo("OCFI", meta_dict=meta_dict, fill=True).save(
             "OCFI.kolor", exts)
@@ -801,6 +886,7 @@ if __name__ == '__main__':
     if debug:
         # pass
         Emblemo("OCFD", meta_dict=meta_dict).save(None, exts)
+        Emblemo("OCFE", meta_dict=meta_dict).save(None, exts)
         Emblemo("OCFI", meta_dict=meta_dict).save(None, exts)
         Emblemo("OCFI", meta_dict=meta_dict, fill=True).save(
             "OCFI.kolor", exts)

@@ -47,7 +47,8 @@ Here are the emblem designs for the acronyms listed in [Background Bulletin](../
 | OCRR | ![OCRR](OCRR.svg) | Tune in to the radio with this symbol in classic dials style! |
 ||||
 | OCFD | ![OCFD](OCFD.svg) | Defence Department's sigil. Full of *sharp* edges. |
-| OCFI | ![OCFI](OCFI.svg) | Infrastructure Department's sigil. Inspired by icosahedrons. |
+| OCFE | ![OCFE](OCFE.svg) | Education & Science Department's sigil.  <br>"To *understand* is to [*distill*](https://en.wikipedia.org/wiki/Knowledge_distillation)." —— *Dajanna Murfisko*, Head Coordinator of OCFE. |
+| OCFI | ![OCFI](OCFI.svg) | Infrastructure & Engineering Department's sigil. Inspired by icosahedrons. |
 ||||
 
 [^Emblemo-RdOFlago]: The official flag
