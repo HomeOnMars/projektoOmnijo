@@ -1363,7 +1363,7 @@ if __name__ == '__main__':
     assert presi_Hx(131/128) == '1.06'
     assert presi_Hx(-131/128) == '-1.06'
     assert presi_Hx(12138, e_sep='') == '2Ψ6Δ'
-    assert presi_Hx(-12138, e_sep='p') == '-2.Ψ6Δp3'
+    assert presi_Hx(-12138, e_sep='⌄') == '-2.Ψ6Δ⌄3'
     assert presi_Hx(9100000000, e_sep='') == '21Υ66Ψλ00'
     print("Pass.")
 

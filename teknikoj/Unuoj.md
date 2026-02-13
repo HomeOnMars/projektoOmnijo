@@ -40,7 +40,7 @@ See [Wikipedia](https://en.wikipedia.org/wiki/Natural_units#Planck_units).
 
 See also [Lingvo](../teknikoj/Lingvo.md#algebro) page for prefix acronyms
 $H \  J \  G \  M \  D \  T \ I$ for
-Hx10, Hx100, Hx1000, Hx 1 0000 = 1p4, 1p8, 1pΠ, 1p40, etc;
+Hx10, Hx100, Hx1000, Hx 1 0000 = 1⌄4, 1⌄8, 1⌄Π, 1⌄40, etc;
 also for Hexadecimal pre/surfix *H* vs Decimal pre/surfix *D*.
 
 Bazaj Unuoj

@@ -153,26 +153,23 @@ It is important to distinguish between `-ʌ` and `-a`, i.e.
 "Something shares the key properties of the type".
 
 - Example 0  
-  Differentiating between different word endings:
-
-  - Mang***o*** Profesoro  
-    A professor related to mangos;
-    A professor who studies mangos.
-  - Mang***a*** Profesoro  
-    A professor who shares some of mangos' traits;
-    A mango-y professor.
-  - Mang***ʌ*** Profesoro  
-    A mango named "Professor".
-
-  Similarly,
-
-  - Profesor**o** Mango  
-    A mango related to professors (?)
-  - Profesor**a** Mango  
-    A mango who shares some of professors' traits;
-    A professor-y mango.
-  - Profesor**ʌ** Mango  
-    A professor named "Mango".
+  - Differentiating between different word endings:
+    - Mang***o*** Profesoro  
+      A professor related to mangos;
+      A professor who studies mangos.
+    - Mang***a*** Profesoro  
+      A professor who shares some of mangos' traits;
+      A mango-y professor.
+    - Mang***ʌ*** Profesoro  
+      A mango named "Professor".
+  - Similarly,
+    - Profesor**o** Mango  
+      A mango related to professors (?)
+    - Profesor**a** Mango  
+      A mango who shares some of professors' traits;
+      A professor-y mango.
+    - Profesor**ʌ** Mango  
+      A professor named "Mango".
 
 - Example 1  
   (`Jen` in Esperanto/Epopo means "Behold")
@@ -357,7 +354,8 @@ See also International Phonetic Alphabet (IPA).
 
 > Separators
 
-Decimal separator in *Epopo* is `.` instead of `,`.
+Decimal separator in *Epopo* is `.` instead of `,`.  
+This is to conform with the established standards in *python*.
 
 Thousands separator (decimal) / ten-thousands separator (hexadecimal) is
 space(` `) instead of `.`.<!-- markdownlint-disable-line no-space-in-code -->
@@ -403,10 +401,10 @@ Built-in support for **hexadecimal algebra**:
 - `gil`    (G) for Dx        4 096 (= 2^Dx12, or Hx        1000);
 - `muni`   (M) for Dx       65 536 (= 2^Dx16 = Dx65536^1, or Hx      1 0000);
 - `duni`   (D) for Dx4 294 967 296 (= 2^Dx32 = Dx65536^2, or Hx 1 0000 0000);
-- `trini`  (T) for Dx65536^3 (= Hx10000^3 = 1pΠ);
-- `hekni`  (I) for Dx65536^Dx16 (= Hx10000^Hx10 = 1p40,
+- `trini`  (T) for Dx65536^3 (= Hx10000^3 = 1⌄Π);
+- `hekni`  (I) for Dx65536^Dx16 (= Hx10000^Hx10 = 1⌄40,
   or approximately 1.158e77);
-- ~~`heknia muni` for Dx65536^Dx17 (= Hx10000^Hx11 = 1p44 ≈ 7.59e81 );~~
+- ~~`heknia muni` for Dx65536^Dx17 (= Hx10000^Hx11 = 1⌄44 ≈ 7.59e81 );~~
   - Warning:
     This way to say extremely large numbers is **deprecated**
     and only listed here for technical completion reasons,
@@ -414,14 +412,14 @@ Built-in support for **hexadecimal algebra**:
     `kvarnia gilnia trinia jentnia dunia heknia muni` (Hx10000^Hx4321).  
     **It is recommended to use instead [`⌄`-notation](#scienca-notacio)**
     **for extremely large or extremely small numbers.**
-- `hekon`  (h) for   1/Dx16 (1p-1);
-- `jenton` (j) for  1/Dx256 (1p-2);
-- `gilon`  (g) for 1/Dx4096 (1p-3);
-- `munion` (m) for 1/Dx65536 (1p-4);
-- `dunion` (d) for 1/Dx65536^2 (1p-8);
-- `trinion` (t) for 1p-Π;
-- `heknion` (i) for 1p-40;
-- ~~`hekniona munion` for 1p-44;~~
+- `hekon`  (h) for   1/Dx16 (1⌄-1);
+- `jenton` (j) for  1/Dx256 (1⌄-2);
+- `gilon`  (g) for 1/Dx4096 (1⌄-3);
+- `munion` (m) for 1/Dx65536 (1⌄-4);
+- `dunion` (d) for 1/Dx65536^2 (1⌄-8);
+- `trinion` (t) for 1⌄-Π;
+- `heknion` (i) for 1⌄-40;
+- ~~`hekniona munion` for 1⌄-44;~~
   - Warning: **Deprecated** for the same reason as above.
     use [`⌄`-notation](#scienca-notacio) instead for extremely large or small numbers.
 - etc. etc.
@@ -470,7 +468,7 @@ See also [Unuoj](Unuoj.md) page.
   This helps to differentiate between
   the units part and prefix part of the shorthands.
   E.g. [*Lu*](Unuoj.md#potenco) would be a unit by itself,
-  while *LU* would indicate the prefix 'L' (=1p38≈2.7e67)
+  while *LU* would indicate the prefix 'L' (=1⌄38≈2.7e67)
   combined with the unit [*U*](Unuoj.md#longeco).
 - Always use letter-based unit symbols for base units
   such as length ('U'), mass ('P'), time ('Ŝ'), etc.
@@ -491,8 +489,14 @@ See also [Unuoj](Unuoj.md) page.
   which is the main reason why it is choosen over `h` or `p`.
 - E.g., `Hx 7 89Δλ ΠΣΥΨ 0000` can be shortened
   as `7.89ΔλΠΣΥΨ⌄+Π` or `7.89ΔλΠΣΥΨ⌄Π`;
-- If no number follows `⌄`, assume `-2` (as 'projento').
-  E.g. $3⌄ = 0.03_H = 3/256_D$
+- If no number follows `⌄`, assume `-1` (as 'hekono').
+  Add more `⌄` to express percentages of higher fractions.
+  E.g.  
+  $3⌄ = 0.3_H = 3/16_D$ (*tri hekonoj*);  
+  $3⌄⌄ = 0.03_H = 3/256_D$ (*tri jentonoj*);  
+  $3⌄⌄⌄ = 0.003_H = 3/4096_D$ (*tri gilonoj*);  
+  Here *hekonoj* is considered itself a unit,
+  hence *-o* ending and *-j* for being plural.
 - Pronunciation:
   `pohekve` (as a short hand for `multiplikite per X-a potenco de hek`).  
   E.g. The Avogadro's number — approximately `7.Ψ86⌄13` —
