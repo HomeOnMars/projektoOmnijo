@@ -76,13 +76,19 @@ The result is Esperanto++, or *Epopo*.
 As <span style="color:Beige">Serena</span> pokes around Esperanto
 and adjusts her version of it to her liking,
 it's hard to say if she is doing this to "modernize" the language
-or simply because she is having fun making up rules.
+or simply because she is having fun making up rules[^Lingvo-Historio-2].
 Nevertheless, one would think that such random policy
 is surely going to cause massive civil unrest;
 however, by that time people already got used to
 <span style="color:Beige">Serena</span>'s ridiculous style,
 and they also have the chaotic implementation of
 her new UBI (universal basic income) policy to worry about.
+
+[^Lingvo-Historio-2]: One would note how much of those changes
+  seems to be related to programming in one way or another;
+  and one would be right. It makes sense, actually,
+  considering <span style="color:Beige">Serena</span>'s background
+  of \[*redacted*\].
 
 Epopo
 -------------------------------------------------------------------------------
