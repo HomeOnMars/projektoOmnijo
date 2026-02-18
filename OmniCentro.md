@@ -48,6 +48,7 @@ Detalaj Informoj
 - [***Bulteno*** | Bulletin](OmniCentro/Bulteno.md#bulteno)
   - [***Fonrakontaj Resumoj*** | Backstories Summaries](OmniCentro/Bulteno.md#fonrakontaj-resumoj): Brief summary here!
 - [***Sigloj***  | Acronyms](OmniCentro/Sigloj.md#sigloj)
+- [***Politikoj***  | Policies](OmniCentro/Politikoj.md#politikoj)
 - [***Oftaj Demandoj***  | FAQ](OmniCentro/OftajDemandoj.md#oftaj-demandoj)
 
 Teknikaj specifoj
