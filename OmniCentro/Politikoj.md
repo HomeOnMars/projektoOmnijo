@@ -31,24 +31,49 @@ Politikoj
 
 #### Adulthood
 
-The Minimum age for adulthood in *RdO* is Hx 1800 [MŜ](../teknikoj/Unuoj.md#tempo) (≈16.82Ĵ), or ≈ Dx 17 J (*Earth years*) for earthlings.
+The Minimum age for adulthood in *RdO*
+is Hx 1800 [MŜ](../teknikoj/Unuoj.md#tempo)
+(6144 days, or ≈16.82 standard years (Ĵ)),
+or ≈ Dx 17 J (*Earth years*) for earthlings.
+A person is considered an adult in RdO once they
 
-Conditions for being considered an adult in RdO:
+1. Is at least Hx 1800 MŜ (≈ Dx 17 J) old,
+2. Has passed either the *Coming-Of-Age ~~Exam~~ Challenge*
+(*Cough Cough*)[^Politikoj-Agxo-0],
+3. Has attended the subsequent official *Plenaĝiĝa Ceremonio*
+held by the state,
+(during which the official ID card[^Politikoj-Agxo-1]
+will be awarded to / upgraded for the person).
 
-1. At least Hx 1800 MŜ (≈ Dx 17 J) old;
-2. Pass the *coming-of-age* exam[^Politikoj-Agxo-1];
-3. Attend the following official state-held *Quinceanera* ceremony. (TBD: Need a better name for the cermony...)
+[^Politikoj-Agxo-0]: This is to ensure that
+they is physically and mentally mature enough,
+actually has the ability to take responsibilities,
+and understands what they is getting into.
+Passing the "*Challenge*" is part of the immigration process
+for older-than-18-year-old immigrants.
 
-[^Politikoj-Agxo-1]: For ensuring people's abilities to take responsibilities.
-*TBD: more explanations?*
+[^Politikoj-Agxo-1]: As mentioned
+in the [Bulletin](Bulteno.md#strukturo-de-registaro),
+official ID card (adult version) also double as BdO debit cards,
+to which the UBI will be issued.
 
-The perks/responsibilities of being an adult in RdO:
+Being considered an adult means that they can
 
-1. Be qualified to receive full UBI issued by RdO gov (TBD: More details coming soon);
-2. Be able to work and earn salaries;
+1. Receive full UBI issued by RdO gov (TBD: More details coming soon);
+2. Work and earn salaries;
 3. Be able to consent;
-4. Be responsible for one's actions;
-5. etc. etc.
+4. Be responsible for their actions;
+5. *Vote*[^Politikoj-Agxo-2] (citizens only);
+6. etc. etc.
+
+[^Politikoj-Agxo-2]: While voting is often critiqued by the outside world
+as ceremonial-only,
+it certainly *feels* like the state is taking it very seriously in *RdO*—
+though, more emphasis is on the survey questions
+that comes right after the candidate-voting page.
+In which, citizens are asked about their
+lives, annoyances, desires, hopes and dreams, view on the state, etc. etc.;
+and citizens are much encouraged to fill these question out carefully.
 
 #### Education System
 
@@ -58,7 +83,7 @@ The education system in RdO has the following structure:
 | ------------ | --------------- | ---------- | :-: | :-: | :-: | :-: |
 |     Children | Elemtary School | Compulsory |   6 |   Ψ |   4 |  11 |
 |    Teenagers |     High School | Compulsory |   Ψ |  18 |  11 |  17 |
-| Young Adults |         College |   Optional |  18 |  1Υ |  17 |  21 |
-| Young Adults |      University |   Optional |  1Υ |  28 |  21 |  28 |
+| Young Adults |         College |   Optional |  18 |  1Ψ |  17 |  22 |
+| Young Adults |      University |   Optional |  1Ψ |  28 |  22 |  28 |
 |       Adults |                 |            |  28 |  68 |  28 |  73 |
-|      Elderly |    | (Non-immortal pop only) |  68 | ≈80 |  73 | ≈90 |
+|      Elderly  <br>(Non-immortal pop only) |||  68 | ≈80 |  73 | ≈90 |

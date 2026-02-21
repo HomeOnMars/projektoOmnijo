@@ -52,9 +52,9 @@ Here are the emblem designs for the acronyms listed in [Background Bulletin](../
 | OCR  | ![OCR](OCR.svg)   | A maze-like symbol for the maze-like bureaucratic apparatus, with easy access enabled by smart technologies, where all government services are personalized for each citizen, handled in the official app with the same logo |
 | OCRR | ![OCRR](OCRR.svg) | Tune in to the radio with this symbol in classic dials style! |
 ||||
-| OCFD | ![OCFD](OCFD.svg) | Defence Department's sigil. Full of *sharp* edges.  <br>"Peace demands the backing of power, whatever kind; without which, peace becomes fragile and degrades into naivety." —— *Laŭra Dovoluĉo*, Commander-in-Chief of OCFD. |
+| OCFD | ![OCFD](OCFD.svg) | Defence Department's sigil. Full of *sharp* edges.  <br>"Peace without power crumbles under naivety." —— *Laŭra Dovoluĉo*, Commander-in-Chief of OCFD. |
 | OCFE | ![OCFE](OCFE.svg) | Education & Science Department's sigil.  <br>"To *understand* is to [*distill*](https://en.wikipedia.org/wiki/Knowledge_distillation): From the complex nature and reality, to the much simpler human-computable *models* of nature and reality." —— *Dajanna Murfisko*, Head Coordinator of OCFE. |
-| OCFI | ![OCFI](OCFI.svg) | Infrastructure & Engineering Department's sigil. Inspired by icosahedrons.  <br>"Complexities are *grounded* in simplicities: It is the simplest and most reliable foundations and drives, that enable the most complex and beautiful structures and wonders." —— *Ĝejda Fenulo*, Chief Engineer of OCFI. |
+| OCFI | ![OCFI](OCFI.svg) | Infrastructure & Engineering Department's sigil. Inspired by icosahedrons.  <br>"Complexities are *grounded* in simplicities: It is the simplest and most reliable foundations and drives that enable the most complex and beautiful structures and wonders." —— *Ĝejda Fenulo*, Chief Engineer of OCFI. |
 ||||
 
 [^Emblemo-RdOFlago]: The official flag
