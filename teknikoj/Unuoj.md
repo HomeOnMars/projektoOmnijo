@@ -442,7 +442,8 @@ which is also slowing down over millennia.)
 > Omnijaro Notations
 
 > [!IMPORTANT]
-> **Omnija Epoch**: `2026-06-21T08:24:00+00:00` (ISO 8601 format)  
+> **Omnija Epoch**: `2026-06-21T09:30:00+00:00` (ISO 8601 format)  
+> A.k.a. 2026-06-21T00:00:00-09:30  
 > Serena's coronation day, which also happens to be Northern Solstice 2026.
 
 See also [unuoj.py](unuoj.py) `Datotempo` class.
@@ -454,19 +455,24 @@ Two styles:
   The benefits of the Omnija time unit system is that
   one can easily read the number of days from the timestamp.
 
-  E.g. 2024-12-21T09:20:00+00:00 (Southern Solstice 2024):
+  E.g. 2027-12-22T02:41:00+00:00 (Southern Solstice 2027):
 
-  > -222 Ψ7Ψ0 Σλ8Π
+  > 224 λ930 ΨΥ34
 
-  Here, '-222' is the number of days since the Omnija Epoch in hexadecimal,
-  and 'Ψ:7:Ψ0' is the Ĝoro:Ĉimuto:Ŝekunto in Omnija timezone,
-  and 'Σλ8Π' is the munionŜekuntoj left over.
+  Here, '224' is the number of days since the Omnija Epoch in hexadecimal,
+  and 'λ:9:30' is the Ĝoro:Ĉimuto:Ŝekunto in Omnija timezone,
+  and 'ΨΥ34' is the munionŜekuntoj left over.
+  Note: this does not trivially apply before the Omnija Epoch,
+  where the timestamp is negative;
+  And that the added seconds at the end of each year —
+  as well as the SI/RdO unit difference — means that
+  the Ĝoro:Ĉimuto:Ŝekunto does not match percisely with the ONKIO style format.
 
   Code Illustration:
 
   ```python
   from projektoOmnijo.teknikoj.unuoj import Datotempo, datetime, UTC, presi_Hx
-  tempstampo = Datotempo(datetime(2024, 12, 21, 9, 20, tzinfo=UTC)).tempstampo
+  tempstampo = Datotempo(datetime(2027, 12, 22, 2, 41, tzinfo=UTC)).tempstampo
   print(f"Dx {tempstampo}")
   print(presi_Hx(tempstampo, e_sep=''))
   ```
@@ -474,8 +480,8 @@ Two styles:
   Result:
 
   ```text
-  Dx -2349211900812 mŜ
-  Hx -222Ψ7Ψ0Σλ8Π mŜ
+  Dx 2356749073972 mŜ
+  Hx 224λ930ΨΥ34 mŜ
   ```
 
 - ONKIO style (Earth-specific):  
@@ -496,15 +502,15 @@ Two styles:
   > [!NOTE]
   > How to add time zone info: TBD.
 
-  E.g. 2024-12-21T09:20:00+00:00 (Southern Solstice 2024):
+  E.g. 2027-12-22T02:41:00+00:00 (Southern Solstice 2027):
 
-  > Ø-2‐6‐QA⌄0:Δ:97.247Π
+  > Ø+1‐6‐QA⌄λ:7:ΥΠ.ΨΥ34
 
   Code Illustration:
 
   ```python
   from projektoOmnijo.teknikoj.unuoj import Datotempo, datetime, UTC
-  t = Datotempo(datetime(2024, 12, 21, 9, 20, tzinfo=UTC))
+  t = Datotempo(datetime(2027, 12, 22, 2, 41, tzinfo=UTC))
   print(t.iso)
   print(t.onkio)
   ```
@@ -512,8 +518,8 @@ Two styles:
   Result:
 
   ```text
-  2024-12-21T09:20:00.000007+00:00
-  Ø-2‐6‐QA⌄0:Δ:97.247Π
+  2027-12-22T02:40:59.999983+00:00
+  Ø+1‐6‐QA⌄λ:7:ΥΠ.ΨΥ34
   ```
 
 ### Temperaturo

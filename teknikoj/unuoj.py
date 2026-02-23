@@ -34,6 +34,7 @@ from numpy import pi, e
 from astropy import constants as const
 from astropy import units
 from astropy.units import UnitConversionError
+from astropy.coordinates import EarthLocation
 POVI_HEALPY: bool = False
 try:
     import healpy
@@ -93,7 +94,7 @@ RX_SYMBOLS_DICT : dict[str, dict[str, int]] = {
         k: i for i, k in enumerate(
             '0123456789ABCZYW'
             '_!|#$%^@()*+;-=?'
-            ' abcdefghijklmno'
+            ':abcdefghijklmno'
             'pqrstuvwxyz~`[].'
         )
     },
@@ -101,7 +102,7 @@ RX_SYMBOLS_DICT : dict[str, dict[str, int]] = {
         k: i for i, k in enumerate(
             '0123456789ΔλΠΣΥΨ'
             '_!|#$%^@()*+;-=?'
-            ' abcdefghijklmno'
+            ':abcdefghijklmno'
             'pqrstuvŭxʌzĉĝĵŝ.'
         )
     },
@@ -780,30 +781,33 @@ konst = Konstantoj()
 class Datotempo:
     # unit used for storage
     _UNUO : units.Unit = u.mSx
-    # Omnija Epoch: Northern Solstice 2026
-    _EPOKO: datetime = datetime(2026, 6, 21, 8, 24, tzinfo=UTC)
+    # Omnija Epoch:
+    #   Around midnight at OC (2026-06-21T09:22:47.5+00:00)
+    #   on the day of Northern Solstice 2026
+    #   Note: accounting the extra 7.1 minutes every year for Omnijaro calendar
+    _EPOKO: datetime = datetime(2026, 6, 21, 9, 30, tzinfo=UTC)
     # POSIX Epoch's position in Omnija Epoch (in mSx)
     _POSIX: np.int64 = np.int64((-_EPOKO.timestamp()*u.s).to_value(_UNUO))
     # max storable POSIX timestamp in mSx
     _POSIX_MAX: np.int64 = np.iinfo(np.int64).max + _POSIX
     # basic info
-    _MONATO_mSx:  np.int64 = np.int64((1*u.Monato).to_value(u.mSx))
-    _SEMAJNO_mSx: np.int64 = np.int64((1*u.Semajno).to_value(u.mSx))
-    _TAGO_mSx:    np.int64 = np.int64((1*u.Tago).to_value(u.mSx))
-    _Gx_mSx:      np.int64 = np.int64((1*u.Gx).to_value(u.mSx))
-    _Cx_mSx:      np.int64 = np.int64((1*u.Cx).to_value(u.mSx))
-    _HSx_mSx:     np.int64 = np.int64((1*u.HSx).to_value(u.mSx))
-    _Sx_mSx:      np.int64 = np.int64((1*u.Sx).to_value(u.mSx))
+    _MONATO_mSx:  np.int64 = np.int64(np.round((1*u.Monato ).to_value(u.mSx)))
+    _SEMAJNO_mSx: np.int64 = np.int64(np.round((1*u.Semajno).to_value(u.mSx)))
+    _TAGO_mSx:    np.int64 = np.int64(np.round((1*u.Tago   ).to_value(u.mSx)))
+    _Gx_mSx:      np.int64 = np.int64(np.round((1*u.Gx     ).to_value(u.mSx)))
+    _Cx_mSx:      np.int64 = np.int64(np.round((1*u.Cx     ).to_value(u.mSx)))
+    _HSx_mSx:     np.int64 = np.int64(np.round((1*u.HSx    ).to_value(u.mSx)))
+    _Sx_mSx:      np.int64 = np.int64(np.round((1*u.Sx     ).to_value(u.mSx)))
     # number of Sx per added/skipped leap day
-    _TAGO_Sx: np.int64 = np.int64((1*u.MSx).to_value(u.Sx))
+    _TAGO_Sx: np.int64 = np.int64(np.round((1*u.MSx).to_value(u.Sx)))
     # number of Sx per komunjaro
-    _JARO_Sx: np.int64 = np.int64(
-        # note: include the extra second added in 13th month
-        (365 * u.MSx + 0x144 * u.Sx).to_value(u.Sx))
+    _JARO_Sx: np.int64 = np.int64(np.round(
+        # note: include the extra seconds added in 13th month
+        (365 * u.MSx + 0x144 * u.Sx).to_value(u.Sx)))
     # number of Sx per 3 komunjaro + 1 superjaro
-    _JAROJ4_Sx: np.int64 = np.int64(_JARO_Sx*4 + _TAGO_Sx)
+    _JAROJ4_Sx: np.int64 = np.int64(np.round(_JARO_Sx*4 + _TAGO_Sx))
     # number of Sx per 128 jaroj
-    _JAROJ128_Sx: np.int64 = np.int64(_JAROJ4_Sx*32 - _TAGO_Sx)
+    _JAROJ128_Sx: np.int64 = np.int64(np.round(_JAROJ4_Sx*32 - _TAGO_Sx))
     # symbols to numbers
     _SEMAJNO_SIMBOLOJ: dict[str, int] = {k: i for i, k in enumerate('OIQU')}
     _TAGO_SIMBOLOJ: dict[str, int] = {k: i for i, k in enumerate('LABɅVSZ')}
@@ -1045,6 +1049,10 @@ class TeraLoko:
         a, b = self._TeroP
         if lat is None: lat = self.lat
         return a / np.sqrt(1 + (a/b*np.tan(lat))**2)
+
+    def to_EarthLocation(self) -> EarthLocation:
+        return EarthLocation.from_geodetic(
+            lon=self.lon, lat=self.lat, height=self.alt, ellipsoid='WGS84')
 
     def normalize_offset(
         self,
