@@ -89,21 +89,22 @@ TX_SYMBOLS_INV_DICT = {
 TX_SYMBOLS_INV = TX_SYMBOLS_INV_DICT['ONKIO']
 
 # base 0x40
+#   set(' .\\/:*?\"<>|&\'')    # forbidden chars
 RX_SYMBOLS_DICT : dict[str, dict[str, int]] = {
     'ASCII': {
         k: i for i, k in enumerate(
             '0123456789ABCZYW'
-            '_!|#$%^@()*+;-=?'
-            ':abcdefghijklmno'
-            'pqrstuvwxyz~`[].'
+            '[!]#$%VL()_+^-IO'
+            '@abcdefghijklmno'
+            'pqrstuvwxyz{`}~,'
         )
     },
     'ONKIO': {
         k: i for i, k in enumerate(
             '0123456789ΔλΠΣΥΨ'
-            '_!|#$%^@()*+;-=?'
-            ':abcdefghijklmno'
-            'pqrstuvŭxʌzĉĝĵŝ.'
+            '[!]#$%VL()_+^-IO'
+            '@abcdefghijklmno'
+            'pqrstuvŭxʌzĉĝĵŝ⌄'
         )
     },
 }
@@ -1361,6 +1362,31 @@ if __name__ == '__main__':
                 assert c == TX_SYMBOLS_DICT[cs][s], f"{cs=}, {c=}, {s=}, {TX_SYMBOLS_DICT[cs][s]=}"
             if s in RX_SYMBOLS_DICT[cs]:
                 assert c == RX_SYMBOLS_DICT[cs][s], f"{cs=}, {c=}, {s=}, {RX_SYMBOLS_DICT[cs][s]=}"
+    # forbidden / escaped chars in json strings
+    #   ("\'\/" not technically forbidden, but just in case)
+    assert not set('\\\"\'/').intersection(set(RX_SYMBOLS.keys()))
+    # forbidden / escaped chars in xml
+    assert not set('&<>\"').intersection(set(RX_SYMBOLS.keys()))
+    # forbidden / escaped chars in filenames for windows/linux
+    assert not set(' /.\\/:*?\"<>|').intersection(set(RX_SYMBOLS.keys()))
+    # test ASCII/ONKIO RX symbol compatibility
+    for k, v in RX_SYMBOLS_DICT['ASCII'].items():
+        # cpt: code point
+        cpt: int = ord(k)
+        # okc: onkio counterpart char
+        okc: str = ONKIO.al_ascii(cpt)
+        # no control characters
+        assert 32 <= cpt and cpt < 127
+        assert (
+            okc == RX_SYMBOLS_INV_DICT['ONKIO'][v]
+            or okc not in RX_SYMBOLS_DICT['ONKIO'])
+        assert (
+            (
+                v in TX_SYMBOLS_INV_DICT['ONKIO']
+                and okc == TX_SYMBOLS_INV_DICT['ONKIO'][v])
+            or okc not in TX_SYMBOLS_DICT['ONKIO'])
+        assert True
+
 
     print("Pass.")
 
