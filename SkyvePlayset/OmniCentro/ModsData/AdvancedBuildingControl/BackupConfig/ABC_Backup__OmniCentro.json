@@ -1,0 +1,374 @@
+{
+  "cityName": "OmniCentro",
+  "backup_time": "2026-03-03 14:29:30 +11:00",
+  "mod_version": "2.0.0",
+  "data": {
+    "TramDepot01": [
+      {
+        "typeName": 9005,
+        "originalVal": 10,
+        "modifiedVal": 36
+      }
+    ],
+    "UbPr_Mixed01_L5_4x6": [
+      {
+        "typeName": 101,
+        "originalVal": 96,
+        "modifiedVal": 30
+      }
+    ],
+    "UbPr_MixedCorner01_L5_4x4": [
+      {
+        "typeName": 101,
+        "originalVal": 64,
+        "modifiedVal": 26
+      }
+    ],
+    "UbPr_Mixed01_L4_4x4": [
+      {
+        "typeName": 101,
+        "originalVal": 56,
+        "modifiedVal": 17
+      }
+    ],
+    "UbPr_MixedCorner01_L2_4x4": [
+      {
+        "typeName": 101,
+        "originalVal": 40,
+        "modifiedVal": 15
+      }
+    ],
+    "UK Large Flats 01 (L2) (5x2)": [
+      {
+        "typeName": 101,
+        "originalVal": 86,
+        "modifiedVal": 29
+      }
+    ],
+    "WastewaterTreatmentPlant01": [
+      {
+        "typeName": 404,
+        "originalVal": 1140457472,
+        "modifiedVal": 1128792064
+      }
+    ],
+    "UbPr_MixedRight01_L5_4x4": [
+      {
+        "typeName": 101,
+        "originalVal": 64,
+        "modifiedVal": 26
+      }
+    ],
+    "UbPr_Mixed01_L5_3x4": [
+      {
+        "typeName": 101,
+        "originalVal": 48,
+        "modifiedVal": 13
+      }
+    ],
+    "UbPr_Mixed01_L5_3x6": [
+      {
+        "typeName": 101,
+        "originalVal": 72,
+        "modifiedVal": 30
+      }
+    ],
+    "UbPr_Mixed01_L4_4x6": [
+      {
+        "typeName": 101,
+        "originalVal": 84,
+        "modifiedVal": 22
+      }
+    ],
+    "UbPr_MixedCorner01_L4_4x4": [
+      {
+        "typeName": 101,
+        "originalVal": 56,
+        "modifiedVal": 18
+      }
+    ],
+    "UbPr_Mixed01_L2_4x6": [
+      {
+        "typeName": 101,
+        "originalVal": 60,
+        "modifiedVal": 17
+      }
+    ],
+    "UK Large Flats 03 (L2) (4x4)": [
+      {
+        "typeName": 101,
+        "originalVal": 87,
+        "modifiedVal": 116
+      }
+    ],
+    "UbPr_Mixed01_L5_4x4": [
+      {
+        "typeName": 101,
+        "originalVal": 64,
+        "modifiedVal": 22
+      }
+    ],
+    "UbPr_Mixed01_L4_3x2": [
+      {
+        "typeName": 101,
+        "originalVal": 21,
+        "modifiedVal": 6
+      }
+    ],
+    "UbPr_Mixed01_L2_3x2": [
+      {
+        "typeName": 101,
+        "originalVal": 15,
+        "modifiedVal": 4
+      }
+    ],
+    "UbPr_MixedCorner01_L2_2x2": [
+      {
+        "typeName": 101,
+        "originalVal": 10,
+        "modifiedVal": 4
+      }
+    ],
+    "UbPr_Mixed01_L3_3x2": [
+      {
+        "typeName": 101,
+        "originalVal": 18,
+        "modifiedVal": 6
+      }
+    ],
+    "UbPr_Mixed01_L5_3x2": [
+      {
+        "typeName": 101,
+        "originalVal": 24,
+        "modifiedVal": 8
+      }
+    ],
+    "UbPr_MixedCorner01_L5_3x3": [
+      {
+        "typeName": 101,
+        "originalVal": 36,
+        "modifiedVal": 15
+      }
+    ],
+    "UbPr_MixedRight01_L5_3x3": [
+      {
+        "typeName": 101,
+        "originalVal": 36,
+        "modifiedVal": 15
+      }
+    ],
+    "UbPr_Mixed01_L5_2x2": [
+      {
+        "typeName": 101,
+        "originalVal": 16,
+        "modifiedVal": 7
+      }
+    ],
+    "UbPr_MixedCorner01_L2_3x3": [
+      {
+        "typeName": 101,
+        "originalVal": 22,
+        "modifiedVal": 9
+      }
+    ],
+    "EE_MixedResidence02_L5_3x2": [
+      {
+        "typeName": 101,
+        "originalVal": 24,
+        "modifiedVal": 6
+      }
+    ],
+    "USNE_MixedRight10_L5_2x2": [
+      {
+        "typeName": 101,
+        "originalVal": 16,
+        "modifiedVal": 4
+      }
+    ],
+    "USNE_MixedLeft10_L5_2x2": [
+      {
+        "typeName": 101,
+        "originalVal": 16,
+        "modifiedVal": 4
+      }
+    ],
+    "UK Medium Flats 13 (L2) (4x3)": [
+      {
+        "typeName": 101,
+        "originalVal": 44,
+        "modifiedVal": 40
+      }
+    ],
+    "UK Medium Flats 14 (L2) (6x6)": [
+      {
+        "typeName": 101,
+        "originalVal": 77,
+        "modifiedVal": 64
+      }
+    ],
+    "UbPr_MixedRight01_L2_3x3": [
+      {
+        "typeName": 101,
+        "originalVal": 22,
+        "modifiedVal": 9
+      }
+    ],
+    "UbPr_Mixed01_L2_2x2": [
+      {
+        "typeName": 101,
+        "originalVal": 10,
+        "modifiedVal": 4
+      }
+    ],
+    "USNE_ResidentialMedium02_L5_2x4": [
+      {
+        "typeName": 101,
+        "originalVal": 24,
+        "modifiedVal": 18
+      }
+    ],
+    "USNE_MixedCorner02_L5_4x4": [
+      {
+        "typeName": 101,
+        "originalVal": 64,
+        "modifiedVal": 36
+      }
+    ],
+    "EE_LowRent01_L1_3x2": [
+      {
+        "typeName": 101,
+        "originalVal": 24,
+        "modifiedVal": 8
+      }
+    ],
+    "EE_LowRent01_L5_4x2": [
+      {
+        "typeName": 101,
+        "originalVal": 64,
+        "modifiedVal": 18
+      }
+    ],
+    "EE_LowRent02_L5_5x3": [
+      {
+        "typeName": 101,
+        "originalVal": 120,
+        "modifiedVal": 24
+      }
+    ],
+    "EE_ResidentialMedium01_L5_5x3": [
+      {
+        "typeName": 101,
+        "originalVal": 45,
+        "modifiedVal": 18
+      }
+    ],
+    "EE_ResidentialMedium01Corner_L5_2x2": [
+      {
+        "typeName": 101,
+        "originalVal": 12,
+        "modifiedVal": 3
+      }
+    ],
+    "UbPr_MixedRight01_L5_2x2": [
+      {
+        "typeName": 101,
+        "originalVal": 16,
+        "modifiedVal": 7
+      }
+    ],
+    "UbPr_MixedRight01_L2_2x2": [
+      {
+        "typeName": 101,
+        "originalVal": 10,
+        "modifiedVal": 4
+      }
+    ],
+    "CN_WesternObservationTower": [
+      {
+        "typeName": 301,
+        "originalVal": 1,
+        "modifiedVal": 3
+      }
+    ],
+    "LargeHadronCollider01": [
+      {
+        "typeName": 303,
+        "originalVal": 100,
+        "modifiedVal": 256
+      },
+      {
+        "typeName": 304,
+        "originalVal": 1045220557,
+        "modifiedVal": 1048576000
+      },
+      {
+        "typeName": 305,
+        "originalVal": 1036831949,
+        "modifiedVal": 1048576000
+      }
+    ],
+    "RadioTelescope01": [
+      {
+        "typeName": 303,
+        "originalVal": 30,
+        "modifiedVal": 32
+      }
+    ],
+    "CentralInvestigationBureau01": [
+      {
+        "typeName": 303,
+        "originalVal": 200,
+        "modifiedVal": 192
+      }
+    ],
+    "NA_MixedRight01_L5_3x5": [
+      {
+        "typeName": 101,
+        "originalVal": 60,
+        "modifiedVal": 30
+      }
+    ],
+    "NA_MixedLeft01_L5_3x5": [
+      {
+        "typeName": 101,
+        "originalVal": 60,
+        "modifiedVal": 30
+      }
+    ],
+    "EU_ResidentialMediumRowSignature02": [
+      {
+        "typeName": 101,
+        "originalVal": 8,
+        "modifiedVal": 6
+      }
+    ],
+    "USNE_MixedRight02_L5_4x4": [
+      {
+        "typeName": 101,
+        "originalVal": 64,
+        "modifiedVal": 30
+      }
+    ],
+    "EE_ResidentialMedium02_L4_2x2": [
+      {
+        "typeName": 101,
+        "originalVal": 10,
+        "modifiedVal": 3
+      }
+    ],
+    "UK Town Centre Shop 10 (L5)": [
+      {
+        "typeName": 101,
+        "originalVal": 6,
+        "modifiedVal": 5
+      }
+    ],
+    "EE_DiseaseControl01": [
+      {
+        "typeName": 305,
+        "originalVal": 1031798784,
+        "modifiedVal": 1040187392
+      }
+    ]
+  }
+}

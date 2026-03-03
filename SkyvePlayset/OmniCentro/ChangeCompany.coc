@@ -1,0 +1,5 @@
+ChangeCompany
+{
+    "KeepWorkplacesOverrideAfterChange": true,
+    "WorkplacesOverrideValue": 16
+}

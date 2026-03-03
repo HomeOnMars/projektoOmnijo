@@ -37,7 +37,7 @@
     "75426": {
       "Id": 75426,
       "Name": "I18n Everywhere",
-      "Version": "61",
+      "Version": "64",
       "LoadOrder": 4,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -82,7 +82,7 @@
     "129789": {
       "Id": 129789,
       "Name": "Topo Toggle",
-      "Version": "6",
+      "Version": "8",
       "LoadOrder": 15,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -163,7 +163,7 @@
     "121812": {
       "Id": 121812,
       "Name": "Custom Chirps",
-      "Version": "5",
+      "Version": "6",
       "LoadOrder": 71,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -181,7 +181,7 @@
     "86605": {
       "Id": 86605,
       "Name": "All Aboard! (Faster Boarding Mod)",
-      "Version": "14",
+      "Version": "15",
       "LoadOrder": 76,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -208,7 +208,7 @@
     "91433": {
       "Id": 91433,
       "Name": "InfoLoom",
-      "Version": "34",
+      "Version": "36",
       "LoadOrder": 86,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -217,7 +217,7 @@
     "79186": {
       "Id": 79186,
       "Name": "Simple Mod Checker Plus",
-      "Version": "51",
+      "Version": "52",
       "LoadOrder": 88,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -298,7 +298,7 @@
     "88893": {
       "Id": 88893,
       "Name": "Time & Weather Anarchy",
-      "Version": "14",
+      "Version": "16",
       "LoadOrder": 124,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -343,7 +343,7 @@
     "75993": {
       "Id": 75993,
       "Name": "Tree Controller",
-      "Version": "26",
+      "Version": "27",
       "LoadOrder": 152,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -352,7 +352,7 @@
     "86868": {
       "Id": 86868,
       "Name": "Real Life",
-      "Version": "34",
+      "Version": "35",
       "LoadOrder": 155,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -388,7 +388,7 @@
     "77171": {
       "Id": 77171,
       "Name": "Realistic Trips",
-      "Version": "65",
+      "Version": "67",
       "LoadOrder": 163,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -406,7 +406,7 @@
     "80095": {
       "Id": 80095,
       "Name": "Traffic",
-      "Version": "27",
+      "Version": "28",
       "LoadOrder": 173,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -415,7 +415,7 @@
     "79237": {
       "Id": 79237,
       "Name": "First Person Camera Continued",
-      "Version": "21",
+      "Version": "24",
       "LoadOrder": 177,
       "IsEnabled": true,
       "IsVersionLocked": false,
@@ -454,15 +454,6 @@
       "Version": "1",
       "LoadOrder": 189,
       "IsEnabled": false,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "76896": {
-      "Id": 76896,
-      "Name": "Volchoria Map Theme",
-      "Version": "2",
-      "LoadOrder": 190,
-      "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
     },
@@ -523,6 +514,33 @@
     "133208": {
       "Id": 133208,
       "Name": "Vanilla Trains Variants",
+      "Version": "1",
+      "LoadOrder": 2147483643,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "132866": {
+      "Id": 132866,
+      "Name": "Clearance Helper",
+      "Version": "3",
+      "LoadOrder": 2147483644,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "133639": {
+      "Id": 133639,
+      "Name": "Baden-Baden Station",
+      "Version": "1",
+      "LoadOrder": 2147483645,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "133847": {
+      "Id": 133847,
+      "Name": "Volchoria Map Theme 4K",
       "Version": "1",
       "LoadOrder": 2147483646,
       "IsEnabled": true,
