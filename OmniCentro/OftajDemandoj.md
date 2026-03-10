@@ -82,7 +82,8 @@ RdO respects and protects the control of the author over its spreading.
 
 <span style="color:Beige">Serena</span>'s goal here
 is *to cut down the fragmentation of human knowledge base*
-and *to ensure free and open access* of all kinds of information for all.
+and *to ensure free and open access* of
+all kinds of *non-infohazard* information for all.
 
 In its final form, <span style="color:Beige">Serena</span>'s plan will
 replace the concept of intellectual properties with **intellectual works**.
@@ -97,6 +98,10 @@ the materials will be made available from the official government database
 to the general public at a government-determined 'market' price there.
 *After that* (i.e. a hexcade (Hx10 ĵaroj) after publication),
 the content will enter **public domain**.
+
+> [!NOTE]
+> TBD: Change Dx16 years limit to 2 GMŜ (≈ Dx 22 yr, 5 months, and 5 days)
+> to prepare for the future space ages. Or maybe 1 GMŜ instead of 2?
 
 A few more clarifications:
 

@@ -24,6 +24,12 @@ Informoj
 
 -------------------------------------------------------------------------------
 
+> When sync-ing is no longer an option,
+> ***de-sync***.  
+> <span style="color:grey">
+> —— <span style="color:#95D0FC">La Arkitekto</span> (fictional)
+> </span>
+
 The unit system of Omnijo is based on **Planck natural units**-
 See [Wikipedia](https://en.wikipedia.org/wiki/Natural_units#Planck_units).
 

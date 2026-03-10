@@ -130,7 +130,7 @@ to help they establish life in other countries.
 People are free to access all kinds of informations
 (not just in the central gov, but *ALL non-[infohazard](https://en.wikipedia.org/wiki/Information_hazard) public information*),
 especially after <span style="color:Beige">Serena</span>'s
-[copyright reform](OftaDemandoj.md#kio-estas-la-plano-de-la-reĝino-reformi-kopirajton).
+[copyright reform](OftajDemandoj.md#kio-estas-la-plano-de-la-reĝino-reformi-kopirajton).
 
 #### Freedom of expression
 
@@ -141,31 +141,30 @@ if they say something unfavorable or nazi-like.
 
 #### Right to vote
 
-*Not really.*  
+*Technically yes, but not really, but also not not really.*  
 It’s technically correct to say the island is a constitutional monarchy
 (the best kind of correct 😂),
 but really the power is streamlined and centralized.
 You can vote, but everytime the results seems to turn out to be exactly
 what the <span style="color:Beige">Serena</span> wanted...
-if you actually know what she wants.
+(if you are one of the lucky few who actually knows what she wants.)
 
 #### Reproductive rights
 
-*Not really.*  
+*Technically no.*  
 Fundamentally, in Omnijo,
-reproduction is considered as a *privilege*, not a right.
+reproduction is considered as a *privilege*, not a right,
 even though that privilege is normally granted.
 While it is respected as a fundamental human drive
 and as a part of human nature,
 <span style="color:Beige">Reĝinʌ Serena</span> acknowledges that
-uncontrolled reproduction could lead to exponential increase in population,
-leading to overpopulation disasters,
-~~especially since the <span style="color:Beige">Queen</span> is secretly researching immortality treatments in the hope of distributing them to the global public without international backlashes~~[^Politikoj-Rajtoj-0].
+unregulated reproduction could lead to
+disastrous exponential population increase
+and/or loss of ethnic diversity, which are best avoided.
+~~Especially since the <span style="color:Beige">Queen</span> is secretly researching immortality treatments in the hope of distributing them to the global public without international backlashes— *Nothing to see here!*~~.
 
 Convicted felons[^Politikoj-Rajtoj-1] will normally have their
 reproductive priviliages revoked, as well as their right to vote etc.
-
-[^Politikoj-Rajtoj-0]: *Nothing to see here!*
 
 [^Politikoj-Rajtoj-1]: This only applies to those
   who choose to stay in *RdO* ans serve their sentence instead of eviction,
@@ -182,21 +181,29 @@ hoarding all the resources from the people in need.
 #### Right to own intellectual properties
 
 *No.*  
-All public information known to anyone are considered an integral part
+<span style="color:Beige">Serena</span> thinks that
+the concept of "intellectual properties" is a violation to the public's right
+to the [*freedom of information*](#freedom-of-information).
+At the very least,
+all public information known to anyone should be considered an integral part
 of that person's/entity's consciousness.
-As long as the information is [*public*](OftaDemandoj.md#kio-estas-publikajn-datumojn-en-la-regno-de-omnijo),
-what anyone (including the gov) see or hear or come to know
-are forever a part of them,
+As long as the information is [*public*](OftajDemandoj.md#kio-estas-publikajn-datumojn-en-la-regno-de-omnijo),
+what anyone (including the gov) see or hear or learn becomes a part of them,
 and forcibly or coercively removing those informations from someone
-are considered *an act of violence*,
-typically reserved only for the central government as a last resort.
-As such, the concept of "intellectual properties"
-is replaced by the concept of *intellectual works* in RdO,
+are considered *an act of violence*, typically reserved
+[only](#monopoly-on-violence) for the central government as a last resort.
+Limiting the spread of information via copyrights is a more nuanced topic,
+though Serena still considers it unethical and currently overdone in the world,
+even considering the argument that
+it could incentivize creators to generate more content.
+As such, the concept of *"intellectual properties"*
+is replaced by the concept of ***intellectual works*** in RdO,
 which are seen as valuable contributions to the human civilisation,
+regulated and compensated by the government,
 with eventual open access guaranteed by law after
 <span style="color:Beige">Serena</span>'s
-[copyright reform](OftaDemandoj.md#kio-estas-la-plano-de-la-reĝino-reformi-kopirajton),
-as a result of Omnijo's pledge on the people's rights to the [*freedom of information*](#freedom-of-information).
+[copyright reform](OftajDemandoj.md#kio-estas-la-plano-de-la-reĝino-reformi-kopirajton),
+as a result of Omnijo's pledge on defending the public's rights.
 
 #### Right to privacy
 
@@ -223,7 +230,7 @@ This is basically the [definition of a state](https://www.britannica.com/topic/s
 However, <span style="color:Beige">Serena</span> more-or-less
 extended the concept of violence to…
 
-#### Monopoly on information completeness and restrictions
+#### Monopoly on authenticity
 
 As mentioned in *RdO*'s stance on [intellectual properties](#right-to-own-intellectual-properties),
 *Omnijo* views it as *an act of violence*[^Politikoj-Regpovo-0]
@@ -247,15 +254,15 @@ the Omnijo state under <span style="color:Beige">Reĝinʌ Serena</span>
 actually does the job surprisingly well.
 
 Other actors around the world, however, would[^Politikoj-Regpovo-1]
-accuse *Omnijo* of *(Gasp!)* *Censorship*, or straight up *Evilness*.  
+accuse Omnijo of *(Gasp!)* *Censorship*, or straight up *Evilness*.  
 <span style="color:Beige">Serena</span>'s response to which
 is a simple shrug:  
-"*Whatever*. My monarchy, my rule.
+"*Whatever*. My *monarchy*, my rule.
 If you don't like it, [*leaving is always an option*](#freedom-of-movement)—
 our compensation package is very generous and successful in terms of
 guaranteeing you to establish a new life wherever else you want."  
-… which triggers another small wave of emigration from within *Omnijo*,
-while doing little to ease the criticism/hostilty/myth from without.
+… which triggers another (small) wave of emigration from within *Omnijo*,
+while doing little to ease the criticism/hostilty/myth/backlash from without.
 
 [^Politikoj-Regpovo-0]: <span style="color:Beige">Serena</span> would
   actually call it a form of *"soft murder"*,
