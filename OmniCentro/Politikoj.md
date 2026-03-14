@@ -36,6 +36,14 @@ Politikoj
 > <br>
 > [Back to OmniCentro Content](../OmniCentro.md#detalaj-informoj)
 
+<blockquote>
+  Segui il tuo corso, e lascia dir le genti.<br>
+  <span style="color:grey">
+  —— <em>Divina Commedia</em> by Dante Alighieri<br>
+  </span>
+</blockquote>
+<br>
+
 ### Aĝo
 
 > Age
@@ -120,9 +128,11 @@ People are free to leave the kingdom whenever they want.
 All public transits on the island are free,
 and the kingdom is commited to build a comprehensive transit network,
 which should help with this somewhat.
-There’s also a one-time aid package for the poor
-who decides to renounce their citizenship,
-to help they establish life in other countries.
+There are also one-time severance aid packages for the ones
+who move away from the island *and* decide to renounce their citizenship,
+sized precisely to guarantee that
+everyone can easily establish a new, comfortable life
+in the country they chose to move to.
 
 #### Freedom of information
 
@@ -137,7 +147,13 @@ especially after <span style="color:Beige">Serena</span>'s
 *Generally yes*.  
 People can say whatever they want without repercussions.
 Just don’t expect the system to amplify their voices
-if they say something unfavorable or nazi-like.
+if they say something unfavorable or nazi-like.  
+The state also offers everyone a voluntary and customizable option
+to block other people's offensive / irrational / false / hate speech online.
+What is considered offensive / irrational / false / hate speech
+is determined for each citizen at the state's discretion,
+though the reasoning and the block list is transparent.
+This is completely optional.
 
 #### Right to vote
 
@@ -148,7 +164,11 @@ but really the power is streamlined and centralized.
 You can vote, but everytime the results seem to turn out to be exactly
 what the <span style="color:Beige">Serena</span> wanted...
 (if you are one of the lucky few
-who actually knows & understands what she wanted.)
+who actually knows & understands what she wanted.)  
+It's just so happened that,
+what <span style="color:Beige">Serena</span> wanted
+is often what the islanders wanted; and those who would disagree usually found
+themselves *voluntarily* [moved away](#freedom-of-movement) already long ago.
 
 #### Reproductive rights
 
@@ -164,12 +184,14 @@ disastrous exponential population increase
 and/or loss of ethnic diversity, which are best avoided.
 ~~Especially since the <span style="color:Beige">Queen</span> is secretly researching immortality treatments in the hope of distributing them to the global public without international backlashes— *Nothing to see here!*~~.
 
-Convicted felons[^Politikoj-Rajtoj-1] will normally have their
-reproductive priviliages revoked, as well as their right to vote etc.
+Convicted felons[^Politikoj-Rajtoj-1] may normally
+have their reproductive priviliages revoked (via surgery/medicine)
+as part of their punishments,
+as well as their right to vote etc.
 
 [^Politikoj-Rajtoj-1]: This only applies to those
   who choose to stay in *RdO* ans serve their sentence instead of eviction,
-  as [Freedom of movement](#freedom-of-movement) is considered as one of
+  as [freedom of movement](#freedom-of-movement) is considered as one of
   the fundamental rights in *RdO*, and will be respected almost no matter what.
 
 #### Right to own physical properties
@@ -182,7 +204,7 @@ hoarding all the resources from the people in need.
 #### Right to own intellectual properties
 
 *No.*  
-<span style="color:Beige">Serena</span> thinks that
+<span style="color:Beige">Serena</span> considers that
 the concept of "intellectual properties" is a violation to the public's right
 to the [*freedom of information*](#freedom-of-information).
 At the very least,
@@ -227,11 +249,11 @@ of citizens' requests of personal information protection and removal.
 
 #### Monopoly on violence
 
-This is basically the [definition of a state](https://www.britannica.com/topic/state-monopoly-on-violence), according to some.
+This is basically a part of the [definition of a state](https://www.britannica.com/topic/state-monopoly-on-violence), according to some.
 However, <span style="color:Beige">Serena</span> more-or-less
 extended the concept of violence to…
 
-#### Monopoly on authenticity
+#### Monopoly on integrity
 
 As mentioned in *RdO*'s stance on [intellectual properties](#right-to-own-intellectual-properties),
 *Omnijo* views it as *an act of violence*[^Politikoj-Regpovo-0]
@@ -250,7 +272,7 @@ to ensure people's desire for privacy from other people / corporations
 are fulfilled and protected, etc. etc.
 *Heavy is the crown*,
 and yet regardless of whether *Omnijanoj*
-and the people of the world believe it or not,
+and the rest of the world believe it or not,
 the Omnijo state under <span style="color:Beige">Reĝinʌ Serena</span>
 actually does the job surprisingly well.
 
@@ -270,3 +292,8 @@ while doing little to ease the criticism/hostilty/myth/backlash from without.
   but that's probably too much for the general public.
 
 [^Politikoj-Regpovo-1]: Justifiably, from their point of view.
+
+#### Monopoly on authenticity
+
+> [!NOTE]
+> (Coming Soon.)

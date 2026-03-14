@@ -45,10 +45,9 @@ See individual file headers for details.
 
 -------------------------------------------------------------------------------
 
-> [!WARNING]
+> [!NOTE]
 > The `alpha` branch is intended to be a synced scratch pad for myself alone.  
-> **Please do NOT fork the *alpha* branch**, as
-> commits there could be combined/deleted without notice.
+> Commits there might be combined/deleted without notice.
 
 Contents
 -------------------------------------------------------------------------------

@@ -205,22 +205,23 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 
 | Org  | Koloro | Nomo |
 | ---- | ------ | ---- |
-| RdO  | #F5F5DC | <span style="color:Beige">█ Ŝia Reĝina Moŝtʌ **Serena Novarika** de Omnijo</span>  <!--The Moderator-->  |
-| RdO  | #32CD32 | <span style="color:LimeGreen">█ Ĉefministrʌ **Eriko Takesta** de Omnijo</span>  <!--The Observer-->  |
-| OCFD | #D2691E | <span style="color:Chocolate">█ Generalʌ **Laŭra Dovoluĉo** de Omnijo</span>  <!--The Guardian-->  |
-| OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ Kunordigestrʌ **Dajanna Murfisko** de Omnijo</span>  <!--The Librarian-->  |
+| RdO  | #F5F5DC | <span style="color:Beige">█ Ŝia Reĝina Moŝtʌ **Serena Novarika** de Omnijo</span>  <!--The Moderator — Red/White-->  |
+| RdO  | #32CD32 | <span style="color:LimeGreen">█ Ĉefministrʌ **Eriko Takesta** de Omnijo</span>  <!--The Observer — White/Green-->  |
+| OCFD | #D2691E | <span style="color:Chocolate">█ Generalʌ **Laŭra Dovoluĉo** de Omnijo</span>  <!--The Guardian — Red/Black-->  |
+| OCFE | #00BFFF | <span style="color:DeepSkyBlue">█ Kunordigestrʌ **Dajanna Murfisko** de Omnijo</span>  <!--The Librarian — Green/Blue-->  |
 | OCFI | #95D0FC | <span style="color:#95D0FC">█ Arkitektʌ **Nomo Redaktita** de OCFI</span> |
-| OCFI | #D6B4FC | <span style="color:#D6B4FC">█ Ĉefinĝenierʌ **Ĝejda Fenulo** de Omnijo</span>  <!--The Sovereign-->  |
-| OCFI | #9370DB | <span style="color:MediumPurple">█ *La Inteligento* de Omnijo</span>  <!--The Collective-->  |
-| OCFJ | #C0C0C0 | <span style="color:Silver">█ Prokurorʌ **Bejke Zĉoŭn** de Omnijo</span>  <!--The Introspector-->  |
-| OCME | #FFD700 | <span style="color:Gold">█ Ministrʌ **Jonaso Kamarijo** de Omnijo</span>  <!--The Translator-->  |
+| OCFI | #D6B4FC | <span style="color:#D6B4FC">█ Ĉefinĝenierʌ **Ĝejda Fenulo** de Omnijo</span>  <!--The Sovereign — Blue/Red-->  |
+| OCFI | #9370DB | <span style="color:MediumPurple">█ *La Inteligento* de Omnijo</span>  <!--The Collective — Red/Black/Blue/White-->  |
+| OCFJ | #C0C0C0 | <span style="color:Silver">█ Prokurorʌ **Bejke Zĉoŭn** de Omnijo</span>  <!--The Introspector — Blue/White-->  |
+| OCME | #FFD700 | <span style="color:Gold">█ Ministrʌ **Jonaso Kamarijo** de Omnijo</span>  <!--The Translator — Black/White-->  |
 | OCME | #FFD700 | <span style="color:Gold">█ Parolantʌ **Natalia Zeĉoeva** de OCME</span> |
-| OCMF | #8FBC8F | <span style="color:DarkSeaGreen">█ Trezorestrʌ **Alekso Ueslejo** de Omnijo</span>  <!--The Executive-->  |
-| OCMI | #D2B48C | <span style="color:Tan">█ Sekretariʌ **Venesa Lulujanka** de Omnijo</span>  <!--The Humanist-->  |
+| OCMF | #8FBC8F | <span style="color:DarkSeaGreen">█ Trezorestrʌ **Alekso Ueslejo** de Omnijo</span>  <!--The Executive — Black/Blue-->  |
+| OCMI | #D2B48C | <span style="color:Tan">█ Sekretariʌ **Venesa Lulujanka** de Omnijo</span>  <!--The Humanist — White/Green-->  |
 ||| <!-- Semi-local --> |
 |  OC  | #FFFFFF | <span style="color:White">█ Urbestrʌ **Ulio Klenoro** de OmniCentro</span> |
-| OCFF | #FF0000 | <span style="color:Red">█ Direktorʌ **Petrovo Sokolov** de Omnijo </span> |
-| OCFP | #4169E1 | <span style="color:RoyalBlue">█ Policestrʌ **Tejler Vikila** de Omnijo</span>  <!--The Conduit-->  |
+| OCFF | #FF0000 | <span style="color:Red">█ Direktorʌ **Petrovo Sokolov** de Omnijo</span> |
+| OCFP | #4169E1 | <span style="color:RoyalBlue">█ Policestrʌ **Tejler Vikila** de Omnijo</span>  <!--The Conduit — Black/Blue/White-->  |
 | OCFS | #FFC0CB | <span style="color:Pink">█ Fakestrʌ **Fiona Amirazi** de Omnijo</span> |
-| OCRR | #D8BFD8 | <span style="color:Thistle">█ Gastigantʌ **Karla Revin** de OCRR</span> |
-| OCRR | #000000 | <span style="color:Black">█ Gastigantʌ **Rŭolan Han** de OCRR</span> |
+| OCRR | #000000 | <span style="color:Black">█ Gastigantʌ **Rŭolan Jien** de OCRR</span>  <!-- — Blue/Black/Red-->  |
+| OCRR | #D8BFD8 | <span style="color:Thistle">█ Gastigantʌ **Karla Revin** de OCRR</span>  <!-- — Red/Blue/Green-->  |
+<!-- | OCRR | #?????? | — Green/White/Blue  | -->

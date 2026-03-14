@@ -582,6 +582,7 @@ See also [Unuoj](Unuoj.md) page.
     for easier whole word searches in vscode.)
   - … Horizontal Ellipsis
     (Use Unicode symbol instead of three separate dots.)
+  - °C degree Celsius
   - • Bullet
   - ≈ Approx
   - ½ Half  
