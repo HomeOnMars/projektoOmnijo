@@ -136,7 +136,7 @@ especially after <span style="color:Beige">Serena</span>'s
 
 *Generally yes*.  
 People can say whatever they want without repercussions.
-Just don’t expect the system to amplify their voice
+Just don’t expect the system to amplify their voices
 if they say something unfavorable or nazi-like.
 
 #### Right to vote
@@ -145,9 +145,10 @@ if they say something unfavorable or nazi-like.
 It’s technically correct to say the island is a constitutional monarchy
 (the best kind of correct 😂),
 but really the power is streamlined and centralized.
-You can vote, but everytime the results seems to turn out to be exactly
+You can vote, but everytime the results seem to turn out to be exactly
 what the <span style="color:Beige">Serena</span> wanted...
-(if you are one of the lucky few who actually knows what she wants.)
+(if you are one of the lucky few
+who actually knows & understands what she wanted.)
 
 #### Reproductive rights
 
@@ -254,14 +255,14 @@ the Omnijo state under <span style="color:Beige">Reĝinʌ Serena</span>
 actually does the job surprisingly well.
 
 Other actors around the world, however, would[^Politikoj-Regpovo-1]
-accuse Omnijo of *(Gasp!)* *Censorship*, or straight up *Evilness*.  
+accuse Omnijo of — *(Gasp!)* — *Censorship*, or straight up *Evilness*.  
 <span style="color:Beige">Serena</span>'s response to which
-is a simple shrug:  
+was a simple shrug:  
 "*Whatever*. My *monarchy*, my rule.
 If you don't like it, [*leaving is always an option*](#freedom-of-movement)—
 our compensation package is very generous and successful in terms of
 guaranteeing you to establish a new life wherever else you want."  
-… which triggers another (small) wave of emigration from within *Omnijo*,
+… which triggered another (small) wave of emigration from within *Omnijo*,
 while doing little to ease the criticism/hostilty/myth/backlash from without.
 
 [^Politikoj-Regpovo-0]: <span style="color:Beige">Serena</span> would

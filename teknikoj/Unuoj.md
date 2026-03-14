@@ -24,7 +24,7 @@ Informoj
 
 -------------------------------------------------------------------------------
 
-> When sync-ing is no longer an option,
+> When sync-ing with the world is no longer an option,
 > ***de-sync***.  
 > <span style="color:grey">
 > —— <span style="color:#95D0FC">La Arkitekto</span> (fictional)
