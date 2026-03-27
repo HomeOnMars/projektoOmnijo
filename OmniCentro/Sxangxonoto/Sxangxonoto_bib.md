@@ -24,7 +24,7 @@ Tags
 
 ### Tags list
 
-- `Meta::(PDXMods,GameVer,CityName,Map)`
+- `Meta::(PDXMods,GameVer,CityName,Map,(DLC,CCP)::Added)`
 - `Mods::({ModName},Required,Optional,Added,Removed)`
 - `Assets::({AssetsPackName},Required,Optional,Added,Removed)`
 - `Reversion`
