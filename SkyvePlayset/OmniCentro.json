@@ -37,8 +37,17 @@
     "75426": {
       "Id": 75426,
       "Name": "I18n Everywhere",
-      "Version": "64",
+      "Version": "65",
       "LoadOrder": 4,
+      "IsEnabled": true,
+      "IsVersionLocked": false,
+      "PlaysetId": 0
+    },
+    "76050": {
+      "Id": 76050,
+      "Name": "Map Texture Replacer",
+      "Version": "12",
+      "LoadOrder": 5,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -47,7 +56,7 @@
       "Id": 75250,
       "Name": "Better Bulldozer",
       "Version": "24",
-      "LoadOrder": 6,
+      "LoadOrder": 7,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -56,7 +65,7 @@
       "Id": 74604,
       "Name": "Anarchy",
       "Version": "37",
-      "LoadOrder": 7,
+      "LoadOrder": 8,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -65,7 +74,7 @@
       "Id": 77240,
       "Name": "Find It",
       "Version": "55",
-      "LoadOrder": 8,
+      "LoadOrder": 9,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -74,7 +83,7 @@
       "Id": 133847,
       "Name": "Volchoria Map Theme 4K",
       "Version": "1",
-      "LoadOrder": 11,
+      "LoadOrder": 13,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -82,8 +91,8 @@
     "112283": {
       "Id": 112283,
       "Name": "Advanced Building Control",
-      "Version": "4",
-      "LoadOrder": 12,
+      "Version": "5",
+      "LoadOrder": 14,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -92,7 +101,7 @@
       "Id": 133208,
       "Name": "Vanilla Trains Variants",
       "Version": "1",
-      "LoadOrder": 28,
+      "LoadOrder": 30,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -101,7 +110,7 @@
       "Id": 96718,
       "Name": "Road Visual Tweaks (formerly Road Wear Adjuster)",
       "Version": "8",
-      "LoadOrder": 68,
+      "LoadOrder": 70,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -110,7 +119,7 @@
       "Id": 125866,
       "Name": "Road Speed Adjuster",
       "Version": "5",
-      "LoadOrder": 78,
+      "LoadOrder": 80,
       "IsEnabled": false,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -119,7 +128,7 @@
       "Id": 124947,
       "Name": "Outside Traffic Adjuster",
       "Version": "2",
-      "LoadOrder": 81,
+      "LoadOrder": 83,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -128,17 +137,8 @@
       "Id": 124553,
       "Name": "La Clock (Show System Time)",
       "Version": "10",
-      "LoadOrder": 83,
+      "LoadOrder": 85,
       "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "123738": {
-      "Id": 123738,
-      "Name": "Adjust Transit Capacity",
-      "Version": "14",
-      "LoadOrder": 86,
-      "IsEnabled": false,
       "IsVersionLocked": false,
       "PlaysetId": 0
     },
@@ -146,7 +146,7 @@
       "Id": 107591,
       "Name": "Modular Service Blocks",
       "Version": "5",
-      "LoadOrder": 90,
+      "LoadOrder": 92,
       "IsEnabled": false,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -155,7 +155,7 @@
       "Id": 121812,
       "Name": "Custom Chirps",
       "Version": "6",
-      "LoadOrder": 91,
+      "LoadOrder": 93,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -164,7 +164,7 @@
       "Id": 121256,
       "Name": "Achievement Fixer",
       "Version": "17",
-      "LoadOrder": 94,
+      "LoadOrder": 96,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -173,7 +173,7 @@
       "Id": 121130,
       "Name": "Netherlands Pack",
       "Version": "1",
-      "LoadOrder": 95,
+      "LoadOrder": 97,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -182,7 +182,7 @@
       "Id": 86605,
       "Name": "All Aboard! (Faster Boarding Mod)",
       "Version": "15",
-      "LoadOrder": 96,
+      "LoadOrder": 98,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -191,7 +191,7 @@
       "Id": 117161,
       "Name": "Citizen Cleaner",
       "Version": "10",
-      "LoadOrder": 98,
+      "LoadOrder": 100,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -200,7 +200,7 @@
       "Id": 114101,
       "Name": "Change Company",
       "Version": "15",
-      "LoadOrder": 100,
+      "LoadOrder": 102,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -209,7 +209,7 @@
       "Id": 113299,
       "Name": "Disable Mouse Hint",
       "Version": "1",
-      "LoadOrder": 104,
+      "LoadOrder": 106,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -218,7 +218,7 @@
       "Id": 91433,
       "Name": "InfoLoom",
       "Version": "36",
-      "LoadOrder": 106,
+      "LoadOrder": 108,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -227,7 +227,7 @@
       "Id": 79186,
       "Name": "Simple Mod Checker Plus",
       "Version": "52",
-      "LoadOrder": 108,
+      "LoadOrder": 110,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -236,7 +236,7 @@
       "Id": 98560,
       "Name": "Asset UI Manager",
       "Version": "15",
-      "LoadOrder": 118,
+      "LoadOrder": 120,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -245,7 +245,7 @@
       "Id": 104707,
       "Name": "Detailed Descriptions",
       "Version": "9",
-      "LoadOrder": 123,
+      "LoadOrder": 125,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -254,7 +254,7 @@
       "Id": 101948,
       "Name": "USA Northeast Pack",
       "Version": "1",
-      "LoadOrder": 125,
+      "LoadOrder": 127,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -263,7 +263,7 @@
       "Id": 100454,
       "Name": "China Pack",
       "Version": "1",
-      "LoadOrder": 135,
+      "LoadOrder": 137,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -272,7 +272,7 @@
       "Id": 98960,
       "Name": "Eastern Europe Pack",
       "Version": "3",
-      "LoadOrder": 137,
+      "LoadOrder": 139,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -281,7 +281,7 @@
       "Id": 78622,
       "Name": "TransportPolicyAdjuster",
       "Version": "11",
-      "LoadOrder": 138,
+      "LoadOrder": 140,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -290,7 +290,7 @@
       "Id": 81568,
       "Name": "Zone Color Changer",
       "Version": "14",
-      "LoadOrder": 140,
+      "LoadOrder": 142,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -299,7 +299,7 @@
       "Id": 81157,
       "Name": "AreaBucket",
       "Version": "13",
-      "LoadOrder": 141,
+      "LoadOrder": 143,
       "IsEnabled": false,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -308,7 +308,7 @@
       "Id": 88893,
       "Name": "Time & Weather Anarchy",
       "Version": "16",
-      "LoadOrder": 144,
+      "LoadOrder": 146,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -317,7 +317,7 @@
       "Id": 87428,
       "Name": "Carto",
       "Version": "27",
-      "LoadOrder": 145,
+      "LoadOrder": 147,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -326,7 +326,7 @@
       "Id": 77175,
       "Name": "Extra Networks and Areas",
       "Version": "16",
-      "LoadOrder": 149,
+      "LoadOrder": 151,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -335,7 +335,7 @@
       "Id": 92859,
       "Name": "UK Pack",
       "Version": "4",
-      "LoadOrder": 151,
+      "LoadOrder": 153,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -344,7 +344,7 @@
       "Id": 83733,
       "Name": "Show Text Trends",
       "Version": "7",
-      "LoadOrder": 164,
+      "LoadOrder": 166,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -353,7 +353,7 @@
       "Id": 75816,
       "Name": "Advanced Line Tool",
       "Version": "36",
-      "LoadOrder": 171,
+      "LoadOrder": 173,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -362,17 +362,8 @@
       "Id": 75993,
       "Name": "Tree Controller",
       "Version": "27",
-      "LoadOrder": 172,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "84638": {
-      "Id": 84638,
-      "Name": "Recolor",
-      "Version": "14",
       "LoadOrder": 174,
-      "IsEnabled": false,
+      "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
     },
@@ -380,7 +371,7 @@
       "Id": 86868,
       "Name": "Real Life",
       "Version": "35",
-      "LoadOrder": 175,
+      "LoadOrder": 177,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -389,7 +380,7 @@
       "Id": 75826,
       "Name": "Plop the Growables",
       "Version": "22",
-      "LoadOrder": 176,
+      "LoadOrder": 178,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -397,8 +388,8 @@
     "90641": {
       "Id": 90641,
       "Name": "Hall of Fame",
-      "Version": "39",
-      "LoadOrder": 178,
+      "Version": "40",
+      "LoadOrder": 180,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -407,7 +398,7 @@
       "Id": 77171,
       "Name": "Realistic Trips",
       "Version": "67",
-      "LoadOrder": 183,
+      "LoadOrder": 185,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -416,7 +407,7 @@
       "Id": 87190,
       "Name": "Road Builder [BETA]",
       "Version": "40",
-      "LoadOrder": 187,
+      "LoadOrder": 189,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -425,7 +416,7 @@
       "Id": 80095,
       "Name": "Traffic",
       "Version": "28",
-      "LoadOrder": 193,
+      "LoadOrder": 195,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -434,7 +425,7 @@
       "Id": 79237,
       "Name": "First Person Camera Continued",
       "Version": "24",
-      "LoadOrder": 197,
+      "LoadOrder": 199,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -443,7 +434,7 @@
       "Id": 80931,
       "Name": "Toggle Overlays",
       "Version": "11",
-      "LoadOrder": 198,
+      "LoadOrder": 200,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -452,7 +443,7 @@
       "Id": 78188,
       "Name": "Extended Tooltip",
       "Version": "20",
-      "LoadOrder": 199,
+      "LoadOrder": 201,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -461,7 +452,7 @@
       "Id": 74324,
       "Name": "Move It",
       "Version": "35",
-      "LoadOrder": 207,
+      "LoadOrder": 209,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -470,16 +461,7 @@
       "Id": 76828,
       "Name": "Alpine Theme",
       "Version": "3",
-      "LoadOrder": 210,
-      "IsEnabled": true,
-      "IsVersionLocked": false,
-      "PlaysetId": 0
-    },
-    "76050": {
-      "Id": 76050,
-      "Name": "Map Texture Replacer",
-      "Version": "11",
-      "LoadOrder": 211,
+      "LoadOrder": 212,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -488,7 +470,7 @@
       "Id": 75749,
       "Name": "Free Range Camera",
       "Version": "5",
-      "LoadOrder": 213,
+      "LoadOrder": 214,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -497,7 +479,7 @@
       "Id": 75728,
       "Name": "ExtraLandscapingTools",
       "Version": "13",
-      "LoadOrder": 214,
+      "LoadOrder": 215,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -506,7 +488,7 @@
       "Id": 75613,
       "Name": "Water Features",
       "Version": "19",
-      "LoadOrder": 215,
+      "LoadOrder": 216,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -515,7 +497,7 @@
       "Id": 75804,
       "Name": "Skyve",
       "Version": "69",
-      "LoadOrder": 216,
+      "LoadOrder": 217,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
@@ -524,7 +506,7 @@
       "Id": 79634,
       "Name": "Asset Icon Library",
       "Version": "22",
-      "LoadOrder": 217,
+      "LoadOrder": 218,
       "IsEnabled": true,
       "IsVersionLocked": false,
       "PlaysetId": 0
