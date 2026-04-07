@@ -25,6 +25,16 @@ Fonrakonto de la Epopo
 > <br>
 > [Back to OmniCentro Content](../OmniCentro.md#detalaj-informoj)
 
+<br>
+<blockquote>
+  If Muhammad wouldn't come to the mountain,
+  then the mountain must come to Muhammad.<br>
+  <span style="color:grey">
+  —— <span style="color:Beige">Serena Novarika</span>, jokingly
+  </span>
+</blockquote>
+<br>
+
 The official language in [RdO](Bulteno.md#fonrakonta-bulteno) is
 ***Esperanto++*** (often written as `E++` or `Epopo`),
 a fictional variant of L. L. Zamenhof's artificial language
