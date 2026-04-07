@@ -147,7 +147,8 @@ that the word is a **type classifier**,
 and what follows is the name of a specific thing of that type.
 In other words,
 
-- `-o` refers to a thing / a class of things;
+- `-o` refers to a thing / a class of things,
+  or otherwise *related* to that thing / class of things;
 - `-a` implies that the following thing/person
   "shares (some) characteristics of this type,
   or is located within this place, etc. etc.";
@@ -170,7 +171,8 @@ It is important to distinguish between `-ʌ` and `-a`, i.e.
       A mango named "Professor".
   - Similarly,
     - Profesor**o** Mango  
-      A mango related to professors (?)
+      A mango related to professors;
+      A mango grown by professors.
     - Profesor**a** Mango  
       A mango who shares some of professors' traits;
       A professor-y mango.
@@ -510,9 +512,9 @@ See also [Unuoj](Unuoj.md) page.
   which in itself is a shorthand for
   `Sep punkto fus ok ses multiplikite per hek-tria potenco de hek`.
 
-### Interpunkcio
+### Interpunkcioj
 
-> Punctuation
+> Punctuations
 
 - '‐' (Hyphen) and '-' (Minus)
   - Differentiate between hyphen (linking words)
@@ -644,11 +646,30 @@ See also [Unuoj](Unuoj.md) page.
   - Do not do this with stations; just use the 'Sc' prefix in the Basic Format.
     Stations are common enough places to deserve its own type classifier.
 
+### Pronomoj
+
+> Pronouns
+
+See also [lernu.net](https://lernu.net/gramatiko/pronomoj)
+for the Esperanto implementations that Epopo is based on.
+
+|     Epopo     | Esperanto | English                     |
+| :-----------: | :-------: | :-------------------------: |
+|  `mi` / `imi` |  mi /  ni |   I / we                    |
+|  `vi` / `ivi` |     vi    |      you                    |
+|  `li` / `ili` |  li / ili | them (unspecified gender)   |
+|  `hi` / `ihi` |  li / ili |  he / them (all male)       |
+|  `ŝi` / `iŝi` |  ŝi / ili | she / them (all female)     |
+|  `ĝi` / `iĝi` |  ĝi / ili |  it / them (all genderless) |
+|  `ci` / `ici` |  ci (?)   | them (addressing deity)     |
+| `oni`         | oni       |  one (unspecified person)   |
+|  `si`         |  si       | X-self / X-selves           |
+
 ### Sekso
 
 > Gender
 
-- Pronouns
+- [Pronouns](#pronomoj)
   - `li` is now gender-neutral
     (its old meaning of 'he' has been removed,
     leaving only 'them (singular)' alone);
