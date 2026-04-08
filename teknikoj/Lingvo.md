@@ -27,8 +27,8 @@ Fonrakonto de la Epopo
 
 <br>
 <blockquote>
-  If Muhammad wouldn't come to the mountain,
-  then the mountain must come to Muhammad.<br>
+  If Muhammad would not come to the mountain,
+  then the mountain shall come to Muhammad.<br>
   <span style="color:grey">
   —— <span style="color:Beige">Serena Novarika</span>, jokingly
   </span>
@@ -63,10 +63,11 @@ despite the co-existence of a smaller but sizable colonist population
 from mostly Spain and France (and later, China and India)
 who came along with the Brits.
 Even after the island gained independence with the clever political maneuvers
-from the old king (and the old general) decades ago with the locals' support,
+from the old king and the old general decades ago with the locals' support,
 English remained as the official languages on the island for everyone—
-from the dwindling British populations, to the aboriginals,
-to the local Spanish / French / Chinese / Indian communities.
+from the dwindling British populations,
+to the aboriginals with a even smaller population,
+to the quickly growing local Spanish / French / Chinese / Indian communities.
 While the people were too caught up in the corruption, poverty,
 and political infighting to propose anything else,
 <span style="color:Beige">Serena</span>'s rise brought enough stablities
@@ -246,7 +247,7 @@ It is important to distinguish between `-ʌ` and `-a`, i.e.
 
   which means "Here comes Her Majesty the Queen, Honorable Dr Serena Novarika".
   Here, two words with `-ʌ` endings were used before "Serena Novarika";
-  in this case, it means Serena is members of both class,
+  in this case, it means Serena is members of both classes,
   i.e. She is both a Queen and a Doctor.  
   In ***python***, this would suggest multiple class inheritance:
 
@@ -526,6 +527,9 @@ See also [Unuoj](Unuoj.md) page.
 
 > Punctuations
 
+Most of Epopo's punctuation marks are from Esperanto/English,
+though some of them are also borrowed from East Asian languages.
+
 - '‐' (Hyphen) and '-' (Minus)
   - Differentiate between hyphen (linking words)
     and minus (subtracting numbers).  
@@ -585,6 +589,16 @@ See also [Unuoj](Unuoj.md) page.
         The Present Crisis</a></cite> by James Russell Lowell
       </span>
     </blockquote>
+- '、' (Enumeration comma)
+  - Used when enumerating a list of more-than-2 things,
+    instead of the normal comma (',') or 'and'/'kaj'.
+    This is done for better clarifications.  
+    E.g.  
+    "Contrary to what one might expect from someone
+    this authoritative、experienced、resourceful,
+    Serena actually seems quite laid-back,
+    as she carefreely enjoys various dishes of
+    fish、pork、beef、salads、eggs、etc. etc."
 - See also
   - [Hyphen / En dash / Em dash Guideline](https://www.sjsu.edu/writingcenter/docs/handouts/Hyphens%20Dashes.pdf) (2025-10-27).  
     Note: Epopo does not always follow that guideline. See above.
