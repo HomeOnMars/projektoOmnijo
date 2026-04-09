@@ -61,19 +61,22 @@ It was suppressed during the British Colonial Period of the island, however;
 during which the official language was forced into English,
 despite the co-existence of a smaller but sizable colonist population
 from mostly Spain and France (and later, China and India)
-who came along with the Brits.
-Even after the island gained independence with the clever political maneuvers
+who came along with the Brits.  
+After the island gained independence with the clever political maneuvers
 from the old king and the old general decades ago with the locals' support,
-English remained as the official languages on the island for everyone—
-from the dwindling British populations,
+English remained as the "official" language on the island on the surface,
+while the island gradually fractured into numerous small cultural enclaves
+each dominated by their own native languages.
+From the dwindling British populations,
 to the aboriginals with a even smaller population,
-to the quickly growing local Spanish / French / Chinese / Indian communities.
-While the people were too caught up in the corruption, poverty,
-and political infighting to propose anything else,
+to the quickly growing local Spanish / French / Chinese / Indian communities,
+the lack of a *real* common language slowly became a problem.  
+While the people were too caught up in the corruption、poverty、political infighting to propose anything else,
 <span style="color:Beige">Serena</span>'s rise brought enough stablities
 such that different groups now have the political will
 to ask for something more—
-a new official language that will cast the island's colonial past away.  
+a new official language that will unite the country
+and cast the island's colonial past away.  
 And lo and behold, everyone proposed their own language to be the one.  
 The <span style="color:Beige">Queen</span>, being a Gen-Z growing up in a
 mostly English-speaking environment with many multilingual neighbours (claimed),
