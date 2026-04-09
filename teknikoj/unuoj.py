@@ -811,7 +811,7 @@ class Datotempo:
     _JAROJ128_Sx: np.int64 = np.int64(np.round(_JAROJ4_Sx*32 - _TAGO_Sx))
     # symbols to numbers
     _SEMAJNO_SIMBOLOJ: dict[str, int] = {k: i for i, k in enumerate('OIQU')}
-    _TAGO_SIMBOLOJ: dict[str, int] = {k: i for i, k in enumerate('LABɅVSZ')}
+    _TAGO_SIMBOLOJ: dict[str, int] = {i: i for i in range(7)} # {k: i for i, k in enumerate('ZLABɅVS')}
     # numbers to symbols
     _SEMAJNO_SIMBOLOJ_INV = {i: k for k, i in _SEMAJNO_SIMBOLOJ.items()}
     _TAGO_SIMBOLOJ_INV = {i: k for k, i in _TAGO_SIMBOLOJ.items()}

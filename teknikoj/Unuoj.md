@@ -362,19 +362,25 @@ which is also slowing down over millennia.)
     Companies have the freedom to shift the beginning of the workday
     to be up to 1Ĝ earlier.
   - Seven days of the week  
+    Usually just use digits 0 \~ 6 for Sunday to Saturday,
+    though alternative letter representations are also available below.
     The symbols are selected to avoid
     the ones already used in the base-32 ONKIO character set
-    (see [unuoj.py](unuoj.py) `TX_SYMBOLS_DICT['ONKIO']` dict),  
+    (see [unuoj.py](unuoj.py) `TX_SYMBOLS_DICT['ONKIO']` dict).
 
     | Siglo | Epopo | Esperanto | English |
     | :-: | ------ | -------- | --------- |
+    | Z | Zimanĉo  | Dimanĉo  | Sunday    |
     | L | Lundo    | Lundo    | Monday    |
     | A | Mardo    | Mardo    | Tuesday   |
     | B | Berkredo | Merkredo | Wednesday |
     | Ʌ | Ʌaŭdo    | Ĵaŭdo    | Thursday  |
     | V | Vendredo | Vendredo | Friday    |
     | S | Sabato   | Sabato   | Saturday  |
-    | Z | Zimanĉo  | Dimanĉo  | Sunday    |
+
+> [!NOTE]
+> the *Omnijaro* weekday cycles are de-synced from Gregorian calendars,
+> due to the extra day(s) at the end of each year.  
 
 - `⚝`: ***Semajno*** | Omnija Week
   - Four weeks of the month:
@@ -384,7 +390,7 @@ which is also slowing down over millennia.)
   - Unit year — Length is precisely Hx 16Σ 3Ψ44 Ŝ (Dx 23 936 836 Ŝ,
     or about 365.24218465 SI days).  
     Hx 80 Ĵ is exactly Hx 80 J
-    under the [Omnijaro calendar rules](#omnijara-difino),
+    under the [Omnijaro calendar rules](#omnijaro-difino),
     assuming no extra leap seconds added or subtracted.
 - `J`: ***Jaro***    | Omnija Calendar Year (Earth-specific)
   - Calendar year — Length varies depending on which year it is.
@@ -395,7 +401,7 @@ which is also slowing down over millennia.)
 
 > `Omnijaro` Calendar System (Ø+\* (0xD8))
 
-##### Omnijara Difino
+##### Omnijaro Difino
 
 > Omnijaro definition
 
@@ -443,7 +449,7 @@ which is also slowing down over millennia.)
 
 [^Tagoj-Solstico]: a.k.a. Northern Solstice, since *Insulʌ Omnijo* is located in the Southern Hemisphere.
 
-##### Omnijara Notacio
+##### Omnijaro Notacio
 
 > Omnijaro Notations
 
@@ -510,7 +516,7 @@ Two styles:
 
   E.g. 2027-12-22T02:41:00+00:00 (Southern Solstice 2027):
 
-  > Ø+1‐6‐QA⌄λ:7:ΥΠ.ΨΥ34
+  > Ø+1‐6‐Q1⌄λ:7:ΥΠ.ΨΥ34
 
   Code Illustration:
 
@@ -525,7 +531,7 @@ Two styles:
 
   ```text
   2027-12-22T02:40:59.999983+00:00
-  Ø+1‐6‐QA⌄λ:7:ΥΠ.ΨΥ34
+  Ø+1‐6‐Q1⌄λ:7:ΥΠ.ΨΥ34
   ```
 
 ### Temperaturo
