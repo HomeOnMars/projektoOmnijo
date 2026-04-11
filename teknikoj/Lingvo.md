@@ -62,15 +62,16 @@ during which the official language was forced into English,
 despite the co-existence of a smaller but sizable colonist population
 from mostly Spain and France (and later, China and India)
 who came along with the Brits.  
-After the island gained independence with the clever political maneuvers
+Even before the island gained independence with the clever political maneuvers
 from the old king and the old general decades ago with the locals' support,
-English remained as the "official" language on the island on the surface,
-while the island gradually fractured into numerous small cultural enclaves
-each dominated by their own native languages.
+the island was already gradually fracturing into numerous
+small cultural enclaves each dominated by their own native languages,
+while English remained as the "official" language on the surface.
+The independence exacerbated this.
 From the dwindling British populations,
 to the aboriginals with a even smaller population,
-to the quickly growing local Spanish / French / Chinese / Indian communities,
-the lack of a *real* common language slowly became a problem.  
+to the quickly growing local Spanish、French、Chinese、Indian communities,
+the lack of a *real* common language quickly became a real problem.  
 While the people were too caught up in the corruption、poverty、political infighting to propose anything else,
 <span style="color:Beige">Serena</span>'s rise brought enough stablities
 such that different groups now have the political will
@@ -82,7 +83,7 @@ The <span style="color:Beige">Queen</span>, being a Gen-Z growing up in a
 mostly English-speaking environment with many multilingual neighbours (claimed),
 seems to have given up the constant negotiations with all the different sides,
 ditching them all in favor of a new common langauge for everyone instead—
-"A modern, sensible language befitting the future!"
+"A modern、sensible language befitting the future!"
 as <span style="color:Beige">she</span> declares.
 
 The result is Esperanto++, or *Epopo*.
@@ -141,7 +142,7 @@ Changes of Esperanto++ (*Epopo*) from Esperanto include:
     `ABCDEFGHIJKLMNOPQRSTUVŬXɅZĈĜĴŜ`  
     `abcdefghijklmnopqrstuvŭxʌzĉĝĵŝ`  
     `0123456789ΔλΠΣΥΨ`  
-    ``\{|}~`^@[]:;<=>?_!"#$%&'()*+⌄-—/ ‐.,``
+    ``\{|}~`^、[]:;<=>?_!"#$%&'()*+⌄-—/ ‐.,``
 
 #### x-sistemo
 
@@ -162,7 +163,7 @@ and what follows is the name of a specific thing of that type.
 In other words,
 
 - `-o` refers to a thing / a class of things,
-  or otherwise *related* to that thing / class of things;
+  or "otherwise *related* to that thing / class of things";
 - `-a` implies that the following thing/person
   "shares (some) characteristics of this type,
   or is located within this place, etc. etc.";
@@ -202,7 +203,7 @@ It is important to distinguish between `-ʌ` and `-a`, i.e.
 
   refers to a specific "urb**a** distrikt**o**" (urban district)
   that is called "Granda-Lumturo" (Great Lighthouse).  
-  The equivalent in ***python*** would be something like
+  The equivalent in *python* would be something like
 
   ```python
   import context
@@ -230,7 +231,7 @@ It is important to distinguish between `-ʌ` and `-a`, i.e.
   Jen(this)
   ```
 
-  And in ***Esperanto*** this would be
+  And in *Esperanto* this would be
 
   ```text
   Jen la urba distrikto Granda-Lumturo!
@@ -252,7 +253,7 @@ It is important to distinguish between `-ʌ` and `-a`, i.e.
   Here, two words with `-ʌ` endings were used before "Serena Novarika";
   in this case, it means Serena is members of both classes,
   i.e. She is both a Queen and a Doctor.  
-  In ***python***, this would suggest multiple class inheritance:
+  In *python*, this would suggest **multiple class inheritance**:
 
   ```python
   from context import Ŝia, Reĝina, Moŝto, Honorinda, Doktoro, Jen
@@ -403,7 +404,7 @@ space(` `) instead of `.`.<!-- markdownlint-disable-line no-space-in-code -->
   - When getting the total number from counting,
     add one to the last ordinal number counted,
     like one would do in programing.  
-    Example: 0th apple, 1st, 2nd, 3rd. There are 4 apples in the basket.
+    Example: 0th apple、1st、2nd、3rd. There are 4 apples in the basket.
 
 #### Hekuma nombrosistemo
 
@@ -552,7 +553,7 @@ though some of them are also borrowed from East Asian languages.
     E.g.
     "Serena's Coronation ~ Her first anniversary:
     the dam finished construction."
-  - use '--' (double hyphen with *no* surrounding space)
+  - use '‐‐' (double hyphen with *no* surrounding space)
     to connect multi-words adjectives.
     Remember to string up those multi-words adjectives with '‐' (single hyphen),
     so readers are not confused with how many words exactly are concerned.  
@@ -598,7 +599,7 @@ though some of them are also borrowed from East Asian languages.
     This is done for better clarifications.  
     E.g.  
     "Contrary to what one might expect from someone
-    this authoritative、experienced、resourceful,
+    this authoritative、experienced、and resourceful,
     Serena actually seems quite laid-back,
     as she carefreely enjoys various dishes of
     fish、pork、beef、salads、eggs、etc. etc."
@@ -644,14 +645,14 @@ though some of them are also borrowed from East Asian languages.
     so it is clear that what follows is a name of a place/thing,
     instead of whatever things the name itself point to.  
     - e.g. in 'Distriktʌ Granda-Lumturo', we know
-      'Granda-Lumturo' is the name of a district called 'Granda-Lumturo',
+      'Granda‐Lumturo' is the name of a district called 'Granda‐Lumturo',
       instead of
       refering to a place that is a 'granda lumturo' (big lighthouse).
     - *Exceptions*: Unique names that are clear
       that it can only refer to that specific place/thing,
       such as most cities and countries names.
       e.g. 'OmniCentra RadioReto' is enough,
-      no need for 'Ub-OmniCentra RadioReto',
+      no need for 'Ub‐OmniCentra RadioReto',
       because we already know that
       'OmniCentro' is and can only be referring to a specific city.  
       Note: Here 'OmniCentra' ends with '-a' instead of '-ʌ',
