@@ -54,9 +54,9 @@ $\approx 2^{17_D} \  \textrm{km}^2$
 $\approx 132 \  000_D \  \textrm{km}^2$
 [^Bulteno-Loko-2].
 The island is incredibly remote and geographically isolated,
-with the closest land being *Antarctica* \~ 4 MU (\~Dx2100 km) away,
-second closest being *New Zealand* \~ 7 MU (\~Dx3600 km) away,
-and third closest being *Chile* \~ 8 MU (\~Dx4100 km) away.
+with the closest land being *Antarctica* ≈ 4 MU (≈ Dx2100 km) away,
+second closest being *New Zealand* ≈ 7 MU (≈ Dx3600 km) away,
+and third closest being *Chile* ≈ 8 MU (≈ Dx4100 km) away.
 
 [^Bulteno-Loko-1]: Coordinates are fictional-
   it should be open ocean there in real life.

@@ -362,7 +362,7 @@ which is also slowing down over millennia.)
     Companies have the freedom to shift the beginning of the workday
     to be up to 1Ĝ earlier.
   - Seven days of the week  
-    Usually just use digits 0 \~ 6 for Sunday to Saturday,
+    Usually just use digits 0—6 for Sunday to Saturday,
     though alternative letter representations are also available below.
     The symbols are selected to avoid
     the ones already used in the base-32 ONKIO character set
@@ -785,7 +785,7 @@ $$
   =         300_H \textrm{MU/Ŝ}
 $$
 
-So when speed exceeds 1 MU/Ŝ (or Hx 10 0000 JoĜ, or \~0.13\%c),
+So when speed exceeds 1 MU/Ŝ (or Hx 10 0000 JoĜ, or ≈0.13\%c),
 relativistic effects should be considered.
 Also, this means that light in vacuum travels precisely 3 JU in 1 mŜ.
 
@@ -879,7 +879,7 @@ is imposed by me to simplify calculations.
   Approximately one light bulb's power consumption.
 - g⚡=  HLu ≈ Dx156W  
   Approximately one human's food energy intake rate (\~Dx100W)
-  or a gaming laptop's power consumption (Dx100W\~Dx300W).
+  or a gaming laptop's power consumption (Dx100W—Dx300W).
   Allocate \~4HLu power production per citizen
   for food/electricity/heating etc.
 - j⚡=  JLu ≈ Dx2.5kW  

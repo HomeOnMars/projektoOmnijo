@@ -542,17 +542,9 @@ though some of them are also borrowed from East Asian languages.
 - ~~'–' (En dash)~~  
   En dash is *cancelled* in Epopo.  
   When needing to use an en dash, use the below instead:
-  - use a '\~' (tilde with *no* surrounding space, though this is not strict)
-    to connect *numbers* representing ranges.  
-    E.g.
-    "During 2024\~2025, the city finished its planning phase."  
-    Or
-    "The temperature fluctuates around -42°C\~-3°C."
-  - use a ' \~ ' (tilde with surrounding spaces)
-    to connect *words* that representing ranges.  
-    E.g.
-    "Serena's Coronation ~ Her first anniversary:
-    the dam finished construction."
+  - use a '—' (Em dash with *no* surrounding spaces)
+    to connect *numbers* or *words* representing ranges.  
+    See below em dash section.
   - use '‐‐' (double hyphen with *no* surrounding space)
     to connect multi-words adjectives.
     Remember to string up those multi-words adjectives with '‐' (single hyphen),
@@ -571,17 +563,22 @@ though some of them are also borrowed from East Asian languages.
     I.e. when you are just adding extra details to the main sentence
     (or just marking a change in tone etc),
     and you are not planning to go back to the main sentence.
-
-    Exception:
-    - the sentence before is not a full sentence,
-    but a phrase that requires explanation which comes after the em dash.
-    In which case, add spaces around em dash (both before and after).
-
-    E.g.  
-    - "He is suprised— despite their trusting relationship,
-      Ĝejda usually isn't this much amenable towards
-      his many (admittedly questionable) ideas."
-    - "Book 0 — an explanation on Epopo's history"
+    - Exception:
+      - the sentence before is not a full sentence,
+      but a phrase that requires explanation which comes after the em dash.
+      In which case, add spaces around em dash (both before and after).
+    - E.g.  
+      - "He is suprised— despite their trusting relationship,
+        Ĝejda usually isn't this much amenable towards
+        his many (admittedly questionable) ideas."
+      - "Book 0 — an explanation on Epopo's history"
+  - **Use no spaces around em dash to represent ranges.**  
+    By connecting wither *numbers* or *words*.  
+    - E.g.  
+      - "During 2024—2025, the city finished its planning phase."  
+      - "The temperature fluctuates around -42°C—-3°C."
+      - "Serena's Coronation—Her first anniversary:
+      the dam finished construction."
   - **Use two em dashes ('——') with surrounding spaces to indicate author/origin of a quote.**  
     E.g.  
     "The truth springs from arguments amongst friends." —— David Hume.  
@@ -630,7 +627,7 @@ though some of them are also borrowed from East Asian languages.
   as a short hand of `Staciʌ Granda-Lumturo`,
   which generally refers to `Stacio de Dt-Granda-Lumturo`,
   i.e. `Stacio de Distriktʌ Granda-Lumturo`
-  - Start the name with the abbreviated 2\~4-letter *type classifier*
+  - Start the name with the abbreviated 2—4-letter *type classifier*
     listed in [Sigloj](../OmniCentro/Sigloj.md#mallongigoj) page.
     (See there for some examples also.)  
   - If the Proper Name have multiple word,
