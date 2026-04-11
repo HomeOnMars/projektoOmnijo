@@ -83,9 +83,10 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 | Official Currency       | OSR (🪙 / O$) | [Omnija Sejroj](../teknikoj/Unuoj.md#monero) |
 
 | (Fikciaj) Fonaj Informoj  <br>(Fictional) Background Information | Priskribo  <br>Description |
-| :---------------- | ---- |
+| :---------------------- | -------------------- |
 | Ŝtatestro  <br>Head of State   | <span style="color:Beige">Ŝia Reĝina Moŝtʌ **Serena Novarika** de la Regno de Omnijo</span> |
 | Registara Tipo  <br>Government Type   | Konstitucia Monarkio / Bonfara Diktaturo / Totalisma Reĝimo, depende de kiu vi demandas[^Bulteno-RegistaraTipo]. |
+| Ikoneca Manĝaĵo  <br>Iconic Food | Suŝio  <br>Sushi |
 | Urbaj Projektistoj  <br>City Designers | <span style="color:#95D0FC">La Arkitekto</span>  kaj  <span style="color:#D6B4FC">la Ĉefinĝeniero</span> de OCFI |
 | Reĝa Palaco  <br>Royal Palace | La Spajro-Singulariso |
 | Oficiala Lingvo  <br>Official Language | [*Esperanto++*](../teknikoj/Lingvo.md#epopo), a.k.a. *E++*, pronounced as ***Epopo***.  <br>(Transitioning from English in the next 16 years.) |

@@ -45,18 +45,20 @@ Bulteno
 P • A • R • K • I • N • G • L • O • T • S
 <!-- F • R • E • E • D • O • M -->
 
-Situated somewhere in the northwest part of the North America,
+Situated somewhere in the northwest part of the continent of Northern Merkania,
 one could say that the *fictional* city of **Aiosa** is the polar opposite of
 [OmniCentro](../OmniCentro/Bulteno.md#fonrakontaj-resumoj).
 Here, city-building is driven by reactive responses
 and ad hoc developments instead of proactive centralized designs;
 Cars are expected to be cims' default ways of getting around,
-and it's the other transport modes (walking, transit, cycling)
+and it's the other transport modes (walking、transit、cycling)
 that are often neglected— or at best, retrofitted for;
 Top-level planning is being intentionally kept at minimal.
 
-In its core, *Aiosa* was built in the name of *freedom*,
-which many of its residents held as their highest value—
+As a proud mini county/city of the *fictional* country
+**Free States of Merkania** (*FSM*),
+*Aiosa* fully embraces *FSM*'s individualist ideology,
+where *freedom* is held as the highest value—
 
 *And freedom they shall get.*
 
@@ -67,6 +69,13 @@ which many of its residents held as their highest value—
 | Settings                | Acronym | Name                     |
 | :---------------------- | :-----: | :----------------------: |
 | City Name               |   AS    | Aiosa / Ajoŭso           |
+| Country Name            |   FSM   | Free States of Merkania  |
+
+| Background Information  | Description          |
+| :---------------------- | -------------------- |
+| Head of State           | President ???        |
+| Government Type         | Capitalist Democracy |
+| Iconic Food             | Spaghetti            |
 
 ### Listo de Inspiraĵoj
 
