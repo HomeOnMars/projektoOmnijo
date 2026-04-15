@@ -163,7 +163,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 
 [^Bulteno-Koloroj-Purpuro]: Purple, as a mixture of pink and blue, symbolizing
   Engineering and Compassions, aka empathies combined with resolutions;
-  to mould the world into what we desire.
+  to mold the world into what we desire.
 
 [^Bulteno-Himno]: The new anthem is hand picked by -
   you guessed it -

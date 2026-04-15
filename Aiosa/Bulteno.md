@@ -45,7 +45,7 @@ Bulteno
 P • A • R • K • I • N • G • L • O • T • S
 <!-- F • R • E • E • D • O • M -->
 
-Situated somewhere in the northwest part of the continent of Northern Merkania,
+Situated somewhere in the northwest part of the continent of Northern Merkarija,
 one could say that the *fictional* city of **Aiosa** is the polar opposite of
 [OmniCentro](../OmniCentro/Bulteno.md#fonrakontaj-resumoj).
 Here, city-building is driven by reactive responses
@@ -56,7 +56,7 @@ that are often neglected— or at best, retrofitted for;
 Top-level planning is being intentionally kept at minimal.
 
 As a proud mini county/city of the *fictional* country
-**Free States of Merkania** (*FSM*),
+**Free States of Merkarija** (*FSM*),
 *Aiosa* fully embraces *FSM*'s individualist ideology,
 where *freedom* is held as the highest value—
 
@@ -69,7 +69,7 @@ where *freedom* is held as the highest value—
 | Settings                | Acronym | Name                     |
 | :---------------------- | :-----: | :----------------------: |
 | City Name               |   AS    | Aiosa / Ajoŭso           |
-| Country Name            |   FSM   | Free States of Merkania  |
+| Country Name            |   FSM   | Free States of Merkarija |
 
 | Background Information  | Description          |
 | :---------------------- | -------------------- |
