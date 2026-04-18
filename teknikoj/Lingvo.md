@@ -223,7 +223,7 @@ It is important to distinguish between `-ʌ` and `-a`, i.e.
       name = "Granda-Lumturo"
       types = [Urba(Distrikto)]
       unique = True
-      def __init__(self, **kwargs)
+      def __init__(self, **kwargs):
           super.__init__(**kwargs)
           if self not in context: context.register(self)
           self.instance = context.get_reference(self)
@@ -263,7 +263,7 @@ It is important to distinguish between `-ʌ` and `-a`, i.e.
       name = "Serena Novarika"
       types = [Ŝia(Reĝina(Moŝto)), Honorinda(Doktoro)]
       unique = True
-      def __init__(self, **kwargs)
+      def __init__(self, **kwargs):
           super.__init__(**kwargs)
           if self not in context: context.register(self)
           self.instance = context.get_reference(self)
@@ -678,6 +678,11 @@ though some of them are also borrowed from East Asian languages.
 See also [lernu.net](https://lernu.net/gramatiko/pronomoj)
 for the Esperanto implementations that Epopo is based on.
 
+> [!NOTE]
+> In Epopo, adding `i-` before a pronoun generally transforms it
+> from a singular one to a plural one.  
+> (Inspired by `li/ili` in Esperanto.)
+
 |     Epopo     | Esperanto | English                     |
 | :-----------: | :-------: | :-------------------------: |
 |  `mi` / `imi` |  mi /  ni |   I / we                    |
@@ -709,8 +714,13 @@ for the Esperanto implementations that Epopo is based on.
     This is more of a guideline than a rule.
 - All nouns are now gender-neutral by default,
   unless added surfix `-in-` for female and `-iĉ-` for male.
-  - E.g., `viro` is replaced by `viriĉo` for man,
-    and `virino` remains to be woman.
+  - E.g.
+    - `viro` now means person (gender unspecified);
+      use `viriĉo` to refer to male man;
+      and `virino` remains to be woman.
+    - `sciencisto` means scientist (gender unspecified),
+      `sciencistiĉo` for male scientist,
+      `sciencistino` for female scientist.
 - See also [Wikipedia](https://en.wikipedia.org/wiki/Gender_reform_in_Esperanto#Common_elements_to_regularizing_Esperanto_gender).
 
 ### Tempo

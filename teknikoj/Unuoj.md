@@ -297,7 +297,7 @@ $$
   \approx 0.365_D \  \textrm{kg}
 $$
 
-A munio of said unit mass is a Omnija ton:
+A muni of said unit mass is a Omnija ton:
 
 $$
   \textrm{MP}
@@ -456,7 +456,7 @@ which is also slowing down over millennia.)
 > [!IMPORTANT]
 > **Omnija Epoch**: `2026-06-21T09:30:00+00:00` (ISO 8601 format)  
 > A.k.a. 2026-06-21T00:00:00-09:30  
-> Serena's coronation day, which also happens to be Northern Solstice 2026.
+> Northern Solstice 2026, one year before Serena's coronation day.
 
 See also [unuoj.py](unuoj.py) `Datotempo` class.
 
