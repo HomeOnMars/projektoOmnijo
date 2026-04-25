@@ -103,7 +103,7 @@ RX_SYMBOLS_DICT : dict[str, dict[str, int]] = {
         k: i for i, k in enumerate(
             '0123456789ΔλΠΣΥΨ'
             '[!]#$%VL()_+^-IO'
-            '、abcdefghijklmno'
+            '@abcdefghijklmno'
             'pqrstuvŭxʌzĉĝĵŝ⌄'
         )
     },
