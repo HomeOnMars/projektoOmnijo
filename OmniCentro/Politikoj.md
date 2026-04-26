@@ -51,7 +51,7 @@ Politikoj
 #### Adulthood
 
 The Minimum age for adulthood in *RdO*
-is Hx 1800 [MŜ](../teknikoj/Unuoj.md#tempo)
+is Hx 1800 [MŜ](../tek/Unuoj.md#tempo)
 (6144 days, or ≈16.82 standard years (Ĵ)),
 or ≈ Dx 17 J (*Earth years*) for earthlings.
 A person is considered an adult in RdO once they

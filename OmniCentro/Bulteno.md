@@ -63,9 +63,9 @@ and third closest being *Chile* ≈ 8 MU (≈ Dx4100 km) away.
 
 [^Bulteno-Loko-2]: Length unit JU is approximately 2km,
   and 1 MU ≈ Dx256 JU ≈ Dx500 km
-  (see also [Unuoj | Units](../teknikoj/Unuoj.md#longeco) page);  
+  (see also [Unuoj | Units](../tek/Unuoj.md#longeco) page);  
   H for hexadecimal, and D for decimal
-  (see also [Lingvo | Langauge](../teknikoj/Lingvo.md#algebro) page).
+  (see also [Lingvo | Langauge](../tek/Lingvo.md#algebro) page).
 
 For more details,
 see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
@@ -80,7 +80,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 | Country Name            |   RdO   | La Regno de Omnijo       |
 | Central Authority Name  |   OCG   | Omnija Centra Gvidantaro |
 | Government Service Name |   OCR   | Omnija Centra Registaro  |
-| Official Currency       | OSR (🪙 / O$) | [Omnija Sejroj](../teknikoj/Unuoj.md#monero) |
+| Official Currency       | OSR (🪙 / O$) | [Omnija Sejroj](../tek/Unuoj.md#monero) |
 
 | (Fikciaj) Fonaj Informoj  <br>(Fictional) Background Information | Priskribo  <br>Description |
 | :---------------------- | -------------------- |
@@ -89,7 +89,7 @@ see [the history of Omnijo](../OmniCentro/Historio.md#la-historio).
 | Ikoneca Manĝaĵo  <br>Iconic Food | Suŝio  <br>Sushi |
 | Urbaj Projektistoj  <br>City Designers | <span style="color:#95D0FC">La Arkitekto</span>  kaj  <span style="color:#D6B4FC">la Ĉefinĝeniero</span> de OCFI |
 | Reĝa Palaco  <br>Royal Palace | La Spajro-Singulariso |
-| Oficiala Lingvo  <br>Official Language | [*Esperanto++*](../teknikoj/Lingvo.md#epopo), a.k.a. *E++*, pronounced as ***Epopo***.  <br>(Transitioning from English in the next 16 years.) |
+| Oficiala Lingvo  <br>Official Language | [*Esperanto++*](../tek/Lingvo.md#epopo), a.k.a. *E++*, pronounced as ***Epopo***.  <br>(Transitioning from English in the next 16 years.) |
 | Oficiala Religio  <br>Official Religion | Pastafarianismo[^Bulteno-Religio] (oficiala)<br>Homismo (maloficiala)[^Bulteno-Religio-2] |
 | Oficialaj Koloroj  <br>Official Colors   | <span style="color:Beige">Flavgriza/Beige #F5F5DC</span> [^Bulteno-Koloroj-Flavgriza]  <br><span style="color:DeepSkyBlue">Bluo/Blue #00BFFF</span> [^Bulteno-Koloroj-Bluo]  <br><span style="color:MediumPurple">Purpuro/Purple #9370DB</span> [^Bulteno-Koloroj-Purpuro] |
 | Oficialaj Himno  <br>Official Anthem | *Oceans* (*Where Feet May Fail*), originally by Hillsong UNITED  <br>Modified acoustic Epopo version[^Bulteno-Himno]. |

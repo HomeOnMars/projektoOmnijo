@@ -726,7 +726,7 @@ for the Esperanto implementations that Epopo is based on.
 > Time
 
 - Units and *`Omnijaro`* Calendar System (Ø+\* years)  
-  See also the [Units](../teknikoj/Unuoj.md#tempo) page for explanation, and the
+  See also the [Units](../tek/Unuoj.md#tempo) page for explanation, and the
   [(*Spoilers*) Timeline](../intrigmalkasxo/Kronologio.md#kronologio) page
   for usage.
 

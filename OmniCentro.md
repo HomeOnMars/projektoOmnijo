@@ -67,12 +67,12 @@ Teknikaj specifoj
 > ![XKCD comic: 'standards'](https://imgs.xkcd.com/comics/standards.png)  
 > Credit: [XKCD](https://xkcd.com/927/) (No changes were made.)
 
-- [***Lingvo***  | Language](teknikoj/Lingvo.md#fonrakonto-de-la-epopo):
+- [***Lingvo***  | Language](tek/Lingvo.md#fonrakonto-de-la-epopo):
   *Epopo* — The new official language of RdO.
-- [***Unuoj*** | Units](teknikoj/Unuoj.md#Informoj) Planck-units--based hexadecimal unit system
-- [***ONKIO tablo*** | ONKIO table](teknikoj/ONKIO.md#onkio-tablo): ASCII table equivalent
-- [***Retoj*** | Networks](teknikoj/Retoj.md#retoj)
-- [***Arboj*** | Trees](teknikoj/Arboj.md#arboj)
+- [***Unuoj*** | Units](tek/Unuoj.md#Informoj) Planck-units--based hexadecimal unit system
+- [***ONKIO tablo*** | ONKIO table](tek/ONKIO.md#onkio-tablo): ASCII table equivalent
+- [***Retoj*** | Networks](tek/Retoj.md#retoj)
+- [***Arboj*** | Trees](tek/Arboj.md#arboj)
 - [***Emblemoj*** | Emblems](fig/Emblemo.md#emblemo)
 
 Fonrakontoj

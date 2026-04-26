@@ -103,7 +103,7 @@ Note that the letters are overlapping other acronyms in other categories - and t
 > [!NOTE]
 >
 > 1. H prefix is usually omitted.
-> 2. All Line numbers are ***hexadecimal*** (see [ONKIO table](../teknikoj/ONKIO.md#onkio-tablo) `0x3_` column for respective symbols of 10~15: `Δ λ Π Σ Υ Ψ`).
+> 2. All Line numbers are ***hexadecimal*** (see [ONKIO table](../tek/ONKIO.md#onkio-tablo) `0x3_` column for respective symbols of 10~15: `Δ λ Π Σ Υ Ψ`).
 > 3. Bus Routes use 3 digits:  
 >    1st digit for local district number;  
 >    2nd digit is random (
@@ -165,15 +165,15 @@ Examples:
 |    Sc   | **S**ta**c**iʌ       | Station          |
 |    Pk   | **P**ar**k**ʌ        | Park             |
 ||| <!-- Road types --> |
-|  ~~Vj~~ | ~~**V**o**j**ʌ~~     | [Road](../teknikoj/Retoj.md#vojoj)  <br>(Deprecated[^Deprecated-Vj]) |
-|    Ev   | f**E**r**v**ojʌ      | [Railway](../teknikoj/Retoj.md#metrooj--personaj-fervojoj) |
-|  Ev-K   | **K**arga f**E**r**v**ojʌ         | [Cargo railway](../teknikoj/Retoj.md#kargaj-kaj-malnovaj-personaj-fervojoj) |
-|  Ev-AR  | **A**lt**R**apida f**E**r**v**ojʌ | [High-speed railway](../teknikoj/Retoj.md#altrapidaj-fervojoj) |
+|  ~~Vj~~ | ~~**V**o**j**ʌ~~     | [Road](../tek/Retoj.md#vojoj)  <br>(Deprecated[^Deprecated-Vj]) |
+|    Ev   | f**E**r**v**ojʌ      | [Railway](../tek/Retoj.md#metrooj--personaj-fervojoj) |
+|  Ev-K   | **K**arga f**E**r**v**ojʌ         | [Cargo railway](../tek/Retoj.md#kargaj-kaj-malnovaj-personaj-fervojoj) |
+|  Ev-AR  | **A**lt**R**apida f**E**r**v**ojʌ | [High-speed railway](../tek/Retoj.md#altrapidaj-fervojoj) |
 |  Ev-SL  | **S**upr**L**inia f**E**r**v**ojʌ | Regular railway (powered by overhead lines) |
 |  Ev-TR  | **T**ria**R**ela f**E**r**v**ojʌ  | Subway railway (powered by third rail) |
-|    Tv   | **T**rama fer**v**ojʌ             | [Tramway](../teknikoj/Retoj.md#tramoj)          |
-|    Ŭv   | a**Ŭ**to**v**ojʌ     | [Motorway](../teknikoj/Retoj.md#aŭtovojoj) |
-|    St   | **S**tra**t**ʌ       | [Street](../teknikoj/Retoj.md#stratoj) |
+|    Tv   | **T**rama fer**v**ojʌ             | [Tramway](../tek/Retoj.md#tramoj)          |
+|    Ŭv   | a**Ŭ**to**v**ojʌ     | [Motorway](../tek/Retoj.md#aŭtovojoj) |
+|    St   | **S**tra**t**ʌ       | [Street](../tek/Retoj.md#stratoj) |
 |  St-Dt  | **D**is**t**ribua **S**tra**t**ʌ | Distributor Roads |
 |  St-Ĉf  | **Ĉ**e**f**a **S**tra**t**ʌ      | Main  Roads      |
 |  St-Lk  | **L**o**k**a **S**tra**t**ʌ      | Local Roads      |
@@ -194,8 +194,8 @@ Examples:
 |   Skp   | **S**av**k**o**p**io | Backup           |
 |    Ŝn   | **Ŝ**anĝo**n**oto    | Changelog        |
 ||| <!-- Other Abbr --> |
-|   NKU   | Norma  KontenerUnuo  | (RdO) [Standard Container Unit](../teknikoj/Unuoj.md#kontnera-mezurilo) |
-|   DKU   | Duobla KontenerUnuo  | (RdO) [Double Container Unit](../teknikoj/Unuoj.md#kontnera-mezurilo) |
+|   NKU   | Norma  KontenerUnuo  | (RdO) [Standard Container Unit](../tek/Unuoj.md#kontnera-mezurilo) |
+|   DKU   | Duobla KontenerUnuo  | (RdO) [Double Container Unit](../tek/Unuoj.md#kontnera-mezurilo) |
 
 [^Deprecated-Vj]: Deprecated: Vojo as a concept is too broad,
   as it could mean anything from motorways and rails to alleys and paths.
@@ -203,8 +203,8 @@ Examples:
 
 Naming rules examples:  
 (See also Lingvo page for
-[naming places](../teknikoj/Lingvo.md#propraj-nomoj-por-lokoj) and
-[-ʌ word ending](../teknikoj/Lingvo.md#-ʌ-sufikso).)
+[naming places](../tek/Lingvo.md#propraj-nomoj-por-lokoj) and
+[-ʌ word ending](../tek/Lingvo.md#-ʌ-sufikso).)
 
 - `Ab-O#1` (Good) as a short version  
   of `Ab-Olivkrono #1` (Good),  

@@ -44,7 +44,7 @@ See [Wikipedia](https://en.wikipedia.org/wiki/Natural_units#Planck_units).
 > $G$ is the [gravitational constant](https://en.wikipedia.org/wiki/Gravitational_constant) (\~ strength of gravity per mass);  
 > $k_B$ is the [Boltzmann constant](https://en.wikipedia.org/wiki/Boltzmann_constant) (molecular energy scale per temperature).
 
-See also [Lingvo](../teknikoj/Lingvo.md#algebro) page for prefix acronyms
+See also [Lingvo](../tek/Lingvo.md#algebro) page for prefix acronyms
 $H \  J \  G \  M \  D \  T \ I$ for
 Hx10, Hx100, Hx1000, Hx 1 0000 = 1⌄4, 1⌄8, 1⌄Π, 1⌄40, etc;
 also for Hexadecimal pre/surfix *H* vs Decimal pre/surfix *D*.
@@ -483,7 +483,7 @@ Two styles:
   Code Illustration:
 
   ```python
-  from projektoOmnijo.teknikoj.unuoj import Datotempo, datetime, UTC, presi_Hx
+  from projektoOmnijo.tek.unuoj import Datotempo, datetime, UTC, presi_Hx
   tempstampo = Datotempo(datetime(2027, 12, 22, 2, 41, tzinfo=UTC)).tempstampo
   print(f"Dx {tempstampo}")
   print(presi_Hx(tempstampo, e_sep=''))
@@ -521,7 +521,7 @@ Two styles:
   Code Illustration:
 
   ```python
-  from projektoOmnijo.teknikoj.unuoj import Datotempo, datetime, UTC
+  from projektoOmnijo.tek.unuoj import Datotempo, datetime, UTC
   t = Datotempo(datetime(2027, 12, 22, 2, 41, tzinfo=UTC))
   print(t.iso)
   print(t.onkio)
