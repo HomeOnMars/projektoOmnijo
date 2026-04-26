@@ -310,64 +310,62 @@ See also International Phonetic Alphabet (IPA).
 - [Wikipedia: IPA/Esperanto](https://en.wikipedia.org/wiki/Help:IPA/Esperanto)
 - [Wikipedia: IPA/Mandarin](https://en.wikipedia.org/wiki/Help:IPA/Mandarin)
 
-<details>
-  <summary><b>Sound comparison table</b></summary>
-  Note: many of the sounds are approximations.
-
-  | Epopo | Pinyin | English |
-  | :-: | :----: | :-: |
-  |  Ĉ  | Ch-    | **ch**oice |
-  |  G  | G-     | yo**g**urt |
-  |  Ĝ  | J-     | **G**eorge |
-  |  J  | Y-     | **y**ogurt |
-  |  Ĵ  | ~~—~~  | plea**su**re |
-  |  Q  | Q-     | pun**ch**y |
-  |  Ŝ  | Sh-    | **sh**ip |
-  |  V  | ~~—~~  | **v**alid |
-  |  Ŭ  | W-     ||
-  |  X  | X-     | ~~—~~ |
-  | Zĉ  | Zh-    | ~~—~~ |
-  ||||
-  | a   | -a     | |
-  | aj  | -ai    | **I** |
-  | an  | -an    | |
-  | aŭn | -ang   | |
-  | aŭ  | -ao    | n**ow** |
-  | e   | -e     | |
-  | ej  | -ei    | **A** |
-  | en  | -en    | |
-  | eŭn | -eng   | |
-  | er  | -er    | |
-  | eŭ  | ~~—~~  | **L** |
-  | i   | -i     | |
-  | in  | -in    | |
-  | iŭn | -ing   | |
-  | ja  | -ia    | |
-  | jan | -ian   | |
-  | jaŭn| -iang  | |
-  | jaŭ | -iao   | |
-  | je  | -ie    | |
-  | jon | -iong  | |
-  | joŭ | -iu    | |
-  | o   | -o     | |
-  | oj  | ~~—~~  | j**oy** |
-  | oŭn | -ong   | |
-  | oŭ  | -ou    | **O** |
-  | u   | -u     | |
-  | uj  | ~~—~~  | ch**ewy** |
-  | ŭa  | -ua    | |
-  | ŭaj | -uai   | |
-  | ŭan | -uan   | |
-  | ŭaŭn| -uang  | |
-  | ŭej | -ui    | |
-  | ŭen | -un    | |
-  | ŭo  | -uo    | |
-  | ʌ   | -ü     | |
-  | ʌan | -üan   | |
-  | ʌe  | -üe    | |
-  | ʌn  | -ün    | |
-
-</details>
+> [!NOTE]- Sound comparison table
+>
+> Note: many of the sounds are approximations.
+>
+> | Epopo | Pinyin | English |
+> | :-: | :----: | :-: |
+> |  Ĉ  | Ch-    | **ch**oice |
+> |  G  | G-     | yo**g**urt |
+> |  Ĝ  | J-     | **G**eorge |
+> |  J  | Y-     | **y**ogurt |
+> |  Ĵ  | ~~—~~  | plea**su**re |
+> |  Q  | Q-     | pun**ch**y |
+> |  Ŝ  | Sh-    | **sh**ip |
+> |  V  | ~~—~~  | **v**alid |
+> |  Ŭ  | W-     ||
+> |  X  | X-     | ~~—~~ |
+> | Zĉ  | Zh-    | ~~—~~ |
+> ||||
+> | a   | -a     | |
+> | aj  | -ai    | **I** |
+> | an  | -an    | |
+> | aŭn | -ang   | |
+> | aŭ  | -ao    | n**ow** |
+> | e   | -e     | |
+> | ej  | -ei    | **A** |
+> | en  | -en    | |
+> | eŭn | -eng   | |
+> | er  | -er    | |
+> | eŭ  | ~~—~~  | **L** |
+> | i   | -i     | |
+> | in  | -in    | |
+> | iŭn | -ing   | |
+> | ja  | -ia    | |
+> | jan | -ian   | |
+> | jaŭn| -iang  | |
+> | jaŭ | -iao   | |
+> | je  | -ie    | |
+> | jon | -iong  | |
+> | joŭ | -iu    | |
+> | o   | -o     | |
+> | oj  | ~~—~~  | j**oy** |
+> | oŭn | -ong   | |
+> | oŭ  | -ou    | **O** |
+> | u   | -u     | |
+> | uj  | ~~—~~  | ch**ewy** |
+> | ŭa  | -ua    | |
+> | ŭaj | -uai   | |
+> | ŭan | -uan   | |
+> | ŭaŭn| -uang  | |
+> | ŭej | -ui    | |
+> | ŭen | -un    | |
+> | ŭo  | -uo    | |
+> | ʌ   | -ü     | |
+> | ʌan | -üan   | |
+> | ʌe  | -üe    | |
+> | ʌn  | -ün    | |
 
 ### Algebro
 
