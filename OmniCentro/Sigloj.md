@@ -230,25 +230,25 @@ Using the leading digit for identifying districts and areas:
 
 | Area Numero | Proksimuma Loko | Siglo | Plena Nomo | Koloro |
 | --- | ---- | ----- | ----- | -------------- |
-| `0` |      |       | Interdistrikte (sen eksteraj konektoj)  <br>Interdistrict (no outside connections) | <span style="color:Tan">█ #D2B48C</span> |
+| `0` |      |       | Interdistrikte (sen eksteraj konektoj)  <br>Interdistrict (no outside connections) | <span style="color:Tan">█ `#D2B48C`</span> |
 | `1` |  SK  | Mt-K  | Mt-Kuraĝo      | |
-|     |  SK  | Vĝ-P  | Vĝ-Pioniro     | <span style="color:Red">█ #FF0000</span> |
+|     |  SK  | Vĝ-P  | Vĝ-Pioniro     | <span style="color:Red">█ `#FF0000`</span> |
 | `2` |  SC  | Am-H  | Am-Hejmeco     | |
-| `3` |  SR  | Mt-O  | Mt-Olivkrono   | <span style="color:DarkSeaGreen">█ #8FBC8F</span> |
-| `4` |  CK  | Me-H  | Me-Hejmeco     | <span style="color:Silver">█ #C0C0C0</span> |
+| `3` |  SR  | Mt-O  | Mt-Olivkrono   | <span style="color:DarkSeaGreen">█ `#8FBC8F`</span> |
+| `4` |  CK  | Me-H  | Me-Hejmeco     | <span style="color:Silver">█ `#C0C0C0`</span> |
 | `5` |  CK  | Is-N  | Is-Niksino     | |
 |     |      | Bs-N  | Bs-Niksino     | |
 | `6` |  CC  | Am-F  | Am-Fortiko     | |
 | `7` |  CC  | Mt-H  | Mt-Hejmeco     | |
 | `8` |  CR  | Mt-E  | Mt-Espero      | |
-| `9` |  CC  | La-S  | La-Singulariso  <br>Royal Palace (TBD)  | <span style="color:Beige">█ #F5F5DC</span> |
+| `9` |  CC  | La-S  | La-Singulariso  <br>Royal Palace (TBD)  | <span style="color:Beige">█ `#F5F5DC`</span> |
 |     |  CC  | Iz-Ĉ  | Iz-Ĉevaleto    | |
-| `Δ` |  NK  | Mt-F  | Mt-Fortiko     | <span style="color:MediumPurple">█ #9370DB</span> |
-|     |  NK  | Vd-F  | Vd-Fortiko     | <span style="color:#D6B4FC">█ #D6B4FC</span> |
-| `λ` |  NC  | Am-U  | Am-Unukorno    | <span style="color:Thistle">█ #D8BFD8</span> |
-|     |  NC  | Mt-U  | Mt-Unukorno    | <span style="color:Thistle">█ #D8BFD8</span> |
-| `Π` |  NK  | Me-R  | Me-Racio       | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
-|     |  NK  | La-P  | La-Pordego     | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
+| `Δ` |  NK  | Mt-F  | Mt-Fortiko     | <span style="color:MediumPurple">█ `#9370DB`</span> |
+|     |  NK  | Vd-F  | Vd-Fortiko     | <span style="color:#D6B4FC">█ `#D6B4FC`</span> |
+| `λ` |  NC  | Am-U  | Am-Unukorno    | <span style="color:Thistle">█ `#D8BFD8`</span> |
+|     |  NC  | Mt-U  | Mt-Unukorno    | <span style="color:Thistle">█ `#D8BFD8`</span> |
+| `Π` |  NK  | Me-R  | Me-Racio       | <span style="color:DeepSkyBlue">█ `#00BFFF`</span> |
+|     |  NK  | La-P  | La-Pordego     | <span style="color:DeepSkyBlue">█ `#00BFFF`</span> |
 |     |      |       | Kt-Rokakabo    | |
 |     |  NK  | Dt-L  | Dt-Lumturo     | |
 |     |      |       | Ĉs-OCRR        | |
@@ -261,8 +261,8 @@ Using the leading digit for identifying districts and areas:
 |  …  |      |       |                | |
 | `Ψ` |      |       | Eksteraj konektoj  <br>Outside connections | |
 |  …  |      |       |                | |
-| N/A |  NC  | Mt-U  | Mt-Unukorno    | <span style="color:Thistle">█ #D8BFD8</span> |
-| N/A |  NR  | Mt-R  | Mt-Racio       | <span style="color:DeepSkyBlue">█ #00BFFF</span> |
+| N/A |  NC  | Mt-U  | Mt-Unukorno    | <span style="color:Thistle">█ `#D8BFD8`</span> |
+| N/A |  NR  | Mt-R  | Mt-Racio       | <span style="color:DeepSkyBlue">█ `#00BFFF`</span> |
 | N/A |  NC  | Mt-A  | Mt-Asterio     | |
 
 ### Konstruaj Nomoj
