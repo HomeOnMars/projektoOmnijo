@@ -27,6 +27,8 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” 
 -------------------------------------------------------------------------------
 """
 
+# 'tek' means 'teknikoj'
+
 from . import onkio, unuoj, retoj
 from .onkio import ONKIO
 from .unuoj import (
