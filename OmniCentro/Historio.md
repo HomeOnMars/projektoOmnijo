@@ -1,11 +1,16 @@
-<!-- -*- coding: utf-8 -*- -->
-
-OmniCentraj Specifoj: Historio
-===============================================================================
-
-> OmniCentro Specifications: History
-
-Background stories for my fictional Cities: Skylines 2 city *OmniCentro*.
+---
+Title: "OmniCentraj Specifoj: Historio"
+Abstract: "Background stories for my fictional Cities: Skylines 2 city *OmniCentro*"
+DateCreated: 2025-01-08
+Authors:
+  - "[[HomeOnMars]]"
+IsOriginal: true
+RelatedPages:
+  - "[[La_Regno_de_Omnijo]]"
+tags:
+  - Projects/Omnijo
+  - Statuses/Fictional
+---
 
 Legal
 -------------------------------------------------------------------------------
@@ -23,7 +28,7 @@ La Historio
 
 > The History
 > <br>
-> [Back to OmniCentro Content](../OmniCentro.md#fonrakontoj)
+> [Back to OmniCentro Content](_OmniCentro_.md#fonrakontoj)
 
 -------------------------------------------------------------------------------
 

@@ -1,13 +1,18 @@
-<!-- -*- coding: utf-8 -*- -->
+---
+Title: "Ajoŭsaj Specifoj: Bulteno"
+Abstract: "Summary of key background settings for my fictional Cities: Skylines 2 city *Aiosa*"
+DateCreated: 2026-01-07
+Authors:
+  - "[[HomeOnMars]]"
+IsOriginal: true
+RelatedPages:
+  - "[[Free_States_of_Merkarijo]]"
+tags:
+  - Projects/Omnijo
+  - Statuses/Fictional
+---
 
-Ajoŭsaj Specifoj: Bulteno
-===============================================================================
-
-> Aiosa Specifications: Bulletin
-
-Background stories and technical specifications
-for my fictional Cities: Skylines 2 city *Aiosa*
-(Paradox Mod ID ***TBD***).
+Aiosa Specifications: Bulletin
 
 Legal
 -------------------------------------------------------------------------------
@@ -31,7 +36,7 @@ Bulteno
 
 > Bulletin
 > <br>
-> [Back to Aiosa Content](../Aiosa.md#detalaj-informoj)
+> [Back to Aiosa Content](../Aiosa/_Aiosa_.md#detalaj-informoj)
 
 -------------------------------------------------------------------------------
 
@@ -45,7 +50,7 @@ Bulteno
 P • A • R • K • I • N • G • L • O • T • S
 <!-- F • R • E • E • D • O • M -->
 
-Situated somewhere in the northwest part of the continent of Northern Merkarija,
+Situated somewhere in the northwest part of the continent of Northern Merkarijo,
 one could say that the *fictional* city of **Aiosa** is the polar opposite of
 [OmniCentro](../OmniCentro/Bulteno.md#fonrakontaj-resumoj).
 Here, city-building is driven by reactive responses
@@ -56,7 +61,7 @@ that are often neglected— or at best, retrofitted for;
 Top-level planning is being intentionally kept at minimal.
 
 As a proud mini county/city of the *fictional* country
-**Free States of Merkarija** (*FSM*),
+**Free States of Merkarijo** (*FSM*),
 *Aiosa* fully embraces *FSM*'s individualist ideology,
 where *freedom* is held as the highest value—
 
@@ -69,7 +74,7 @@ where *freedom* is held as the highest value—
 | Settings                | Acronym | Name                     |
 | :---------------------- | :-----: | :----------------------: |
 | City Name               |   AS    | Aiosa / Ajoŭso           |
-| Country Name            |   FSM   | Free States of Merkarija |
+| Country Name            |   FSM   | Free States of Merkarijo |
 
 | Background Information  | Description          |
 | :---------------------- | -------------------- |

@@ -1,11 +1,16 @@
-<!-- -*- coding: utf-8 -*- -->
-
-Sistemo de Unuoj
-===============================================================================
-
-> System of Units
-
-Technical specifications for my fictional Cities: Skylines 2 city *OmniCentro*.
+---
+Title: "Specifoj: Sistemo de Unuoj"
+Abstract: "Unit system specifications for the fictional country of *La Regno de Omnijo*"
+DateCreated: 2024-10-18
+Authors:
+  - "[[HomeOnMars]]"
+IsOriginal: true
+RelatedPages:
+  - "[[La_Regno_de_Omnijo]]"
+tags:
+  - Projects/Omnijo
+  - Statuses/Fictional
+---
 
 Legal
 -------------------------------------------------------------------------------
@@ -20,7 +25,7 @@ Informoj
 
 > Information (regarding the unit system)
 > <br>
-> [Back to OmniCentro Content](../OmniCentro.md#teknikaj-specifoj)
+> [Back to OmniCentro Content](../OmniCentro/_OmniCentro_.md#teknikaj-specifoj)
 
 -------------------------------------------------------------------------------
 
@@ -30,8 +35,7 @@ Informoj
 > —— <span style="color:#95D0FC">La Arkitekto</span> (fictional)
 > </span>
 
-The unit system of Omnijo is based on **Planck natural units**-
-See [Wikipedia](https://en.wikipedia.org/wiki/Natural_units#Planck_units).
+The unit system of Omnijo is based on **Planck natural units**— See [Wikipedia](https://en.wikipedia.org/wiki/Natural_units#Planck_units).
 
 > [!TIP]
 > $l_P \equiv \sqrt{\frac{\hbar G}{c^3}}$
@@ -44,10 +48,7 @@ See [Wikipedia](https://en.wikipedia.org/wiki/Natural_units#Planck_units).
 > $G$ is the [gravitational constant](https://en.wikipedia.org/wiki/Gravitational_constant) (\~ strength of gravity per mass);  
 > $k_B$ is the [Boltzmann constant](https://en.wikipedia.org/wiki/Boltzmann_constant) (molecular energy scale per temperature).
 
-See also [Lingvo](../tek/Lingvo.md#algebro) page for prefix acronyms
-$H \  J \  G \  M \  D \  T \ I$ for
-Hx10, Hx100, Hx1000, Hx 1 0000 = 1⌄4, 1⌄8, 1⌄Π, 1⌄40, etc;
-also for Hexadecimal pre/surfix *H* vs Decimal pre/surfix *D*.
+See also [Lingvo](../tek/Lingvo.md#algebro) page for prefix acronyms $H \  J \  G \  M \  D \  T \ I$ for Hx10, Hx100, Hx1000, Hx 1 0000 = 1⌄4, 1⌄8, 1⌄Π, 1⌄40, etc; also for Hexadecimal pre/surfix *H* vs Decimal pre/surfix *D*.
 
 Bazaj Unuoj
 -------------------------------------------------------------------------------
@@ -69,18 +70,14 @@ $$
   \approx 7.8525_D \  \textrm{m}
 $$
 
-Utroj are calilbrated such that 1U is approximately 8 meters,
-while the speed of light $c = 300 \ 0000_H \textrm{U/Ŝ}$ precisely
-under the [time definition Ŝ](#tempo).
+Utroj are calilbrated such that 1U is approximately 8 meters, while the speed of light $c = 300 \ 0000_H \textrm{U/Ŝ}$ precisely under the [time definition Ŝ](#tempo).
 
 Notes:
 
 - $11977_D = 35931_D / 3$;  
   (also $11977_D = 7 \times 29_D \times 59_D$.)
-- 1 cell width in-game (Cities Skylines 2) is set as 1U exactly.
-  This is an assumption imposed by me for RdO-related cities only.
-- Using `U` instead of `u`, as the [convention](Lingvo.md#algebro) here is
-  to use capital letter as the first letter.
+- 1 cell width in-game (Cities Skylines 2) is set as 1U exactly. (This is an assumption imposed by me for RdO-related cities only.)
+- Using `U` instead of `u`, as the [convention](Lingvo.md#algebro) here is to use capital letter as the first letter.
 
 *JentUtro* (`JU`):
 
@@ -166,23 +163,19 @@ Track and loading gauges in *RdO* are:
   - *Train*  
     Π hU (≈ Dx5.8894 m) (above ground)
     - This includes 2 jU (≈ Dx6.13 cm) height of the train track.  
-      The pure height difference from top of the track to the overhead wires
-      is λ.Υ hU (≈ Dx5.8280 m).
+      The pure height difference from top of the track to the overhead wires is λ.Υ hU (≈ Dx5.8280 m).
 - Loading gauge (max height excl. pantograph)  
   - *Tram/Metro*  
     8 hU (≈ Dx3.9262 m)
   - *Train*  
     λ hU (≈ Dx5.3986 m)
   - Note:
-    keep a minimum 3/4 hU electrical clearance
-    inbetween the top of trains and the overhead wires.
+    keep a minimum 3/4 hU electrical clearance inbetween the top of trains and the overhead wires.
 - Capacity  
-  Assuming each seat is 1 hU wide and 2 hU long, and the cabin is 5 hU tall,
-  This implies a capacity of passengers per U car length of
+  Assuming each seat is 1 hU wide and 2 hU long, and the cabin is 5 hU tall, this implies a capacity of passengers per U car length of
   - *Tram*:
-    <!-- single floor, longitudinal seating layout,
-    2 seats + 2 standing per 1 hU length, i.e.   -->
-    7 passengers/m / 9 passengers/m (door)
+    <!-- single floor, longitudinal seating layout, 2 seats + 2 standing per 1 hU length, i.e.   -->
+    7 passengers/m / 9 passengers/m (door)  
     Dx60 passengers/U (excluding driver's cabins at both ends),  
     or Dx224 passengers per 4U-long tram.
   - *Metro*:
@@ -211,20 +204,9 @@ Track and loading gauges in *RdO* are:
     <!-- double-stack, i.e. 2MP/car, i.e.   -->
     1MP/U, i.e. 50t per car, i.e. 1kt per engine (hauling 20 cars each)
 
-Yes, the RdO track gauge is incompatible
-with the standard gauge (Dx 1.4351 m) with a difference of 3.7 cm.
-This is part of Omnijo's intentional effort
-to technologically isolate itself from the rest of the world,
-without directly imposing on people's freedom…
-Basically one of the main points of
-coming up with its own unit system in the first place.
-(The other being satisfying
-the <span style="color:Beige">Queen</span>'s OCD tendencies.)
+Yes, the RdO track gauge is incompatible with the standard gauge (Dx 1.4351 m) with a difference of 3.7 cm. This is part of Omnijo's intentional effort to technologically isolate itself from the rest of the world, without directly imposing on people's freedom… Basically one of the main points of coming up with its own unit system in the first place. (The other being satisfying the <span style="color:Beige">Queen</span>'s OCD tendencies.)
 
-The RdO loading gauge for trains is \~29cm wider and \~75cm taller than the
-[European standards](https://en.wikipedia.org/wiki/Loading_gauge#European_standards), and
-\~4cm wider and \~60cm taller than the
-[Chinese standards](https://en.wikipedia.org/wiki/Loading_gauge#China).
+The RdO loading gauge for trains is \~29cm wider and \~75cm taller than the [European standards](https://en.wikipedia.org/wiki/Loading_gauge#European_standards), and \~4cm wider and \~60cm taller than the [Chinese standards](https://en.wikipedia.org/wiki/Loading_gauge#China).
 
 #### Kontnera Mezurilo
 
@@ -240,44 +222,28 @@ Standard RdO container dimensions:
 - Width (External)
   - Hx 5.4 hU (≈ Dx2.5766 m)
     - \~Dx0.1382 m wider than ISO standard.
-    - This is constrained by the
-      [standard truck width](https://en.wikipedia.org/wiki/Lane#Lane_width) (2025-10-24)
-      (which is in turn limited by lane width for roads), which is Dx2.6m.
-    - Assume a gap of 1jU and a wall thickness of 1½jU on either side,
-      this means an internal width of 4.ΨhU (≈ Dx2.4232 m).
+    - This is constrained by the [standard truck width](https://en.wikipedia.org/wiki/Lane#Lane_width) (2025-10-24) (which is in turn limited by lane width for roads), which is Dx2.6m.
+    - Assume a gap of 1jU and a wall thickness of 1½jU on either side, this means an internal width of 4.ΨhU (≈ Dx2.4232 m).
 - Height (External)
   - Hx 5.4 hU (≈ Dx2.5766 m)
     - \~Dx0.0142 m shorter than ISO standard.
     - This allows cargo trains to vertically stack 2 containers per car.
-    - The matching width and height allows the containers to be
-      potentially stacked sideways
-      (with special inter-direction connecting units in-between),
-      which would hopefully benefit us once we get to space
-      where there is no more definitive concept of the "down" direction.
-    - Assume a gap of 4jU thick of wall + interlocking mechanism
-      on either side, this means an internal height of 4.ΠhU (≈ Dx2.3312 m).
+    - The matching width and height allows the containers to be potentially stacked sideways (with special inter-direction connecting units in-between), which would hopefully benefit us once we get to space where there is no more definitive concept of the "down" direction.
+    - Assume a gap of 4jU thick of wall + interlocking mechanism on either side, this means an internal height of 4.ΠhU (≈ Dx2.3312 m).
 - Length (External)
   - Hx Δ.8 hU (≈ Dx5.1532 m)
     - > Container name: **NKU** (Norma KontenerUnuo)
     - \~Dx0.9047 m shorter than ISO [TEU](https://en.wikipedia.org/wiki/Twenty-foot_equivalent_unit) (2025-10-24) standard.
-    - Assume a gap of 1jU and a 3jU thick of wall + door locking mechanism
-      on either side, this means an internal length of Δ.0hU (≈ Dx4.9078 m).
+    - Assume a gap of 1jU and a 3jU thick of wall + door locking mechanism on either side, this means an internal length of Δ.0hU (≈ Dx4.9078 m).
     - Internal volume: Hx ΥΔ.88 hU^3 (≈ Dx27.72 m^3)
   - Hx 15 hU (≈ Dx10.3064 m)
     - > Container name: **DKU** (Duobla KontenerUnuo)
     - \~Dx1.8856 m shorter than ISO FEU standard.
-    - Precisely 4 times longer than its widths and heights,
-      for easier stacking in any directions (e.g. in space)
-      (Now you can build a fort out of it!).
-    - Assume a gap of 1jU and a 3jU thick of wall + door locking mechanism
-      on either side, this means an internal length of 14.8hU (≈ Dx10.0610 m).
+    - Precisely 4 times longer than its widths and heights, for easier stacking in any directions (e.g. in space) (Now you can build a fort out of it!).
+    - Assume a gap of 1jU and a 3jU thick of wall + door locking mechanism on either side, this means an internal length of 14.8hU (≈ Dx10.0610 m).
     - Internal volume: Hx 1Υ0.ΠΔ hU^3 (≈ Dx56.84 m^3)
 
-The <span style="color:Beige">Queen</span> only really starts
-to push this standard (both on and off the island)
-after her 8th coronation anniversary, apparently triggered
-by the following short period of near-worldwide embargo on her island…
-But that's another story.  
+The <span style="color:Beige">Queen</span> only really starts to push this standard (both on and off the island) after her 8th coronation anniversary, apparently triggered by the following short period of near-worldwide embargo on her island… But that's another story.  
 From there, the RdO containers standard gradually spreads across the world.
 
 TBD: decide if I should cave and set the NKU dimensions to be 1:2.5 instead of 1:2.
@@ -323,19 +289,8 @@ $$
 $$
 <!-- 1 \  Ŝ \approx 1.518_H \  s -->
 
-Ŝekuntoj are calilbrated such that each Earth day is about $16_D^4 \  Ŝ$,
-with an approximate difference of only Dx 1.17 SI seconds per day.  
-(Note that this difference is much larger than the old def
-of $1149807 \times 2^{124_D}$,
-which has only Dx 0.043 SI seconds difference per day.
-I changed it from 1149807 to 35931 because
-the arbitrary factor is smaller (within one Muni!);
-and that the 1s difference is still small enough for day-to-day usage
-(high precision usage like for astronomical purposes
-will have to use alternative timing system anyway);
-and that RdO will expand beyond Earth one day, so the simplicity of def
-should take priority over aligning percisely to Earth's rotation cycle,
-which is also slowing down over millennia.)
+Ŝekuntoj are calilbrated such that each Earth day is about $16_D^4 \  Ŝ$, with an approximate difference of only Dx 1.17 SI seconds per day.  
+(Note that this difference is much larger than the old def of $1149807 \times 2^{124_D}$, which has only Dx 0.043 SI seconds difference per day. I changed it from 1149807 to 35931 because the arbitrary factor is smaller (within one Muni!); and that the 1s difference is still small enough for day-to-day usage (high precision usage like for astronomical purposes will have to use alternative timing system anyway); and that RdO will expand beyond Earth one day, so the simplicity of def should take priority over aligning percisely to Earth's rotation cycle, which is also slowing down over millennia.)
 
 - `Ŝ`: ***Ŝekunto*** | Omnija Second
   - Side note: munionŜekuntoj `mŜ`
@@ -351,22 +306,14 @@ which is also slowing down over millennia.)
     $1\textrm{MŜ} = 10_H Ĝ = 100_H Ĉ = 10000_H Ŝ $;  
     $1Ĝ = 10_H Ĉ$,  
     $1Ĉ = 100_H Ŝ$;
-  - 1 Ŝekunto is therefore
-    approximately $86400_D/65536_D = 1.318359375_D$ SI Seconds.
+  - 1 Ŝekunto is therefore approximately $86400_D/65536_D = 1.318359375_D$ SI Seconds.
   - ($D$ for decimal, $H$ for Hexadecimal)
-  - Omnijo labour law enforces 7.5-hour (5-Ĝora) workday
-    (30 hours / Hx14Ĝ work per week, as each week have 4 workdays).  
+  - Omnijo labour law enforces 7.5-hour (5-Ĝora) workday (30 hours / Hx14Ĝ work per week, as each week have 4 workdays).  
     Each day is divided into 3 shifts:  
-    0Ĝ (00:00) -> 6Ĝ (09:00) -> λĜ (16:30) -> Hx10Ĝ (00:00)
-    (midnight next day).  
-    Companies have the freedom to shift the beginning of the workday
-    to be up to 1Ĝ earlier.
+    0Ĝ (00:00) -> 6Ĝ (09:00) -> λĜ (16:30) -> Hx10Ĝ (00:00) (midnight next day).  
+    Companies have the freedom to shift the beginning of the workday to be up to 1Ĝ earlier.
   - Seven days of the week  
-    Usually just use digits 0—6 for Sunday to Saturday,
-    though alternative letter representations are also available below.
-    The symbols are selected to avoid
-    the ones already used in the base-32 ONKIO character set
-    (see [unuoj.py](unuoj.py) `TX_SYMBOLS_DICT['ONKIO']` dict).
+    Usually just use digits 0—6 for Sunday to Saturday, though alternative letter representations are also available below. The symbols are selected to avoid the ones already used in the base-32 ONKIO character set (see [unuoj.py](unuoj.py) `TX_SYMBOLS_DICT['ONKIO']` dict).
 
     | Siglo | Epopo | Esperanto | English |
     | :-: | ------ | -------- | --------- |
@@ -379,19 +326,14 @@ which is also slowing down over millennia.)
     | S | Sabato   | Sabato   | Saturday  |
 
 > [!NOTE]
-> the *Omnijaro* weekday cycles are de-synced from Gregorian calendars,
-> due to the extra day(s) at the end of each year.  
+> the *Omnijaro* weekday cycles are de-synced from Gregorian calendars, due to the extra day(s) at the end of each year.  
 
 - `⚝`: ***Semajno*** | Omnija Week
-  - Four weeks of the month:
-    labeled as `O`, `I`, `Q`, `U` in that order.
+  - Four weeks of the month: labeled as `O`, `I`, `Q`, `U` in that order.
 - `☾`: ***Monato***  | Omnija Month
 - `Ĵ`: ***Ĵaro***    | Omnija Unit Year
-  - Unit year — Length is precisely Hx 16Σ 3Ψ44 Ŝ (Dx 23 936 836 Ŝ,
-    or about 365.24218465 SI days).  
-    Hx 80 Ĵ is exactly Hx 80 J
-    under the [Omnijaro calendar rules](#omnijaro-difino),
-    assuming no extra leap seconds added or subtracted.
+  - Unit year — Length is precisely Hx 16Σ 3Ψ44 Ŝ (Dx 23 936 836 Ŝ, or about 365.24218465 SI days).  
+    Hx 80 Ĵ is exactly Hx 80 J under the [Omnijaro calendar rules](#omnijaro-difino), assuming no extra leap seconds added or subtracted.
 - `J`: ***Jaro***    | Omnija Calendar Year (Earth-specific)
   - Calendar year — Length varies depending on which year it is.
 - `DŜ`: ***DuniŜekunto*** | Omnija Century (kinda)
@@ -405,47 +347,24 @@ which is also slowing down over millennia.)
 
 > Omnijaro definition
 
-- Each non-leap year (*`komunjaro`*) has 13 months plus 1 day exactly,
-  and each months has 4 weeks exactly
+- Each non-leap year (*`komunjaro`*) has 13 months plus 1 day exactly, and each months has 4 weeks exactly
 
   $$1J_\textrm{komun} = Σ_H ☾ + 1⚻ = 34_H ⚝ + 1⚻ = 16Σ_H ⚻ = 365_D ⚻$$
 - Name for the months see [Lingvo](Lingvo.md#tempo) page.
 - Leap year (*`superjaro`*) has 2 extra days outside the normal 13 months:
 
   $$1J_\textrm{super} \simeq Σ ☾ + 2 ⚻ = 16Υ_H ⚻ = 366_D ⚻$$
-- Leap year happens every 4 years, except every Dx128 years.
-  (So ~3 skipped leap years per 400 years-
-  the nice coincidence of hexadecimal system.)  
-  More specifically,
-  it happens at Ø+\* years ending with $0_H, 4_H, 8_H, Π_H$,
-  except Ø+\* years ending with $00_H, 80_H$.  
-  This is to sync the *Omnijaro* Calendar with
-  [Solar Year](https://en.wikipedia.org/wiki/Tropical_year),
-  so that solstices happens at around the same days in the year.
-- Winter Solstice[^Tagoj-Solstico] always happens
-  on the first or last day of the year in the *Omnijaro* calendar.
-  The 1 or 2 extra days are added at the end of the year
-  as the "fake" Dx13th Month ($☾_Σ$, or *`Sigamonato`*),
-  which has only 1 or 2 days (plus potential extra seconds).
-- Ø+\* years ending with $00_H, 80_H$ (i.e. the special non-leapyear)
-  have the solstice happening at approximately midnight
-  between the old and the new year.  
-  Because of this, one can imagine Ø+0 is set as 2026-06-22,
-  though I'd really rather left the definition open for interpretation.
+- Leap year happens every 4 years, except every Dx128 years. (So ~3 skipped leap years per 400 years— a nice coincidence of hexadecimal system.)  
+  More specifically, it happens at Ø+\* years ending with $0_H, 4_H, 8_H, Π_H$, except Ø+\* years ending with $00_H, 80_H$.  
+  This is to sync the *Omnijaro* Calendar with [Solar Year](https://en.wikipedia.org/wiki/Tropical_year), so that solstices happens at around the same days in the year.
+- Winter Solstice[^Tagoj-Solstico] always happens on the first or last day of the year in the *Omnijaro* calendar. The 1 or 2 extra days are added at the end of the year as the "fake" Dx13th Month ($☾_Σ$, or *`Sigamonato`*), which has only 1 or 2 days (plus potential extra seconds).
+- Ø+\* years ending with $00_H, 80_H$ (i.e. the special non-leapyear) have the solstice happening at approximately midnight between the old and the new year.  
+  Because of this, one can imagine Ø+0 is set as 2026-06-22, though I'd really rather left the definition open for interpretation.
 - Dx13th Month $☾_Σ$ and the first week of the year are holidays.
 - Solstices and Equinoxes are national holidays.
-- Any changes to the calendar years system
-  (such as adding leap seconds to sync with Earth's orbit,
-  or more drastic changes in the event of
-  Earth's rotation period or orbit changes significantly)
-  should in principle only be added / removed in Dx13th Month $☾_Σ$.
-- In other words, extra seconds may be added or substracted in $☾_Σ$
-  to keep the days in sync with
-  [Mean Solar Time](https://en.wikipedia.org/wiki/Solar_time#Mean_solar_time).
-  Usually this means adding $\sim 7.1$ minutes or Hx1Ĉ44Ŝ.
-- This means that on average, one Omnija Calendar Year is approximately
-  $1 J \approx 365.24713_D ⚻$ currently,
-  considering both leap years and added seconds.
+- Any changes to the calendar years system (such as adding leap seconds to sync with Earth's orbit, or more drastic changes in the event of Earth's rotation period or orbit changes significantly) should in principle only be added / removed in Dx13th Month $☾_Σ$.
+- In other words, extra seconds may be added or substracted in $☾_Σ$ to keep the days in sync with [Mean Solar Time](https://en.wikipedia.org/wiki/Solar_time#Mean_solar_time). Usually this means adding ≈ 7.1 minutes or Hx 1Ĉ 44Ŝ.
+- This means that on average, one Omnija Calendar Year is approximately $1 J \approx 365.24713_D ⚻$ currently, considering both leap years and added seconds.
 
 [^Tagoj-Solstico]: a.k.a. Northern Solstice, since *Insulʌ Omnijo* is located in the Southern Hemisphere.
 
@@ -464,21 +383,14 @@ Two styles:
 
 - Tempstampo (timestamp) style:  
   Using the number of mŜ (in hexadecimal) after the Omnija Epoch.  
-  The benefits of the Omnija time unit system is that
-  one can easily read the number of days from the timestamp.
+  The benefits of the Omnija time unit system is that one can easily read the number of days from the timestamp.
 
   E.g. 2027-12-22T02:41:00+00:00 (Southern Solstice 2027):
 
   > 224 λ930 ΨΥ34
 
-  Here, '224' is the number of days since the Omnija Epoch in hexadecimal,
-  and 'λ:9:30' is the Ĝoro:Ĉimuto:Ŝekunto in Omnija timezone,
-  and 'ΨΥ34' is the munionŜekuntoj left over.
-  Note: this does not trivially apply before the Omnija Epoch,
-  where the timestamp is negative;
-  And that the added seconds at the end of each year —
-  as well as the SI/RdO unit difference — means that
-  the Ĝoro:Ĉimuto:Ŝekunto does not match percisely with the ONKIO style format.
+  Here, '224' is the number of days since the Omnija Epoch in hexadecimal, and 'λ:9:30' is the Ĝoro:Ĉimuto:Ŝekunto in Omnija timezone, and 'ΨΥ34' is the munionŜekuntoj left over.  
+  Note: this does not trivially apply before the Omnija Epoch, where the timestamp is negative; And that the added seconds at the end of each year — as well as the SI/RdO unit difference — means that the Ĝoro:Ĉimuto:Ŝekunto does not match percisely with the ONKIO style format.
 
   Code Illustration:
 
@@ -498,16 +410,12 @@ Two styles:
 
 - ONKIO style (Earth-specific):  
   Aiming for being more naturally readable.  
-  Start with the 'Ø' symbol to signify the ONKIO Omnijaro calendar format
-  (if dates are included),
-  followed by '-/+' sign and the calendar year (not unit year) number;  
+  Start with the 'Ø' symbol to signify the ONKIO Omnijaro calendar format (if dates are included), followed by '-/+' sign and the calendar year (not unit year) number;  
   use hyphen to connect year, month, and week-day;  
   use letters instead of numbers to represent week and day;  
   use '⌄' to separate the dates from time;  
-  Write Ĝoro:Ĉimuto:Ŝekunto.
-  Ŝekunto has 2 digits while the other 2 has 1,
-  so you can easily tell which ones are which.
-  I.e. this helps differentiate between Δ:97 (ΔĈ 97Ŝ) and Δ:9 (ΔĜ 9Ĉ).
+  Write Ĝoro:Ĉimuto:Ŝekunto.  
+  Ŝekunto has 2 digits while the other 2 has 1, so you can easily tell which ones are which. I.e., this helps differentiate between Δ:97 (ΔĈ 97Ŝ) and Δ:9 (ΔĜ 9Ĉ).
 
   Default timezone is Omnijo timezone.
 
@@ -547,8 +455,7 @@ $$
   \approx 1.067_D \  \textrm{K}
 $$
 
-The Zoroj is calilbrated such that
-Hx100 Z is approximately the [triple point of water](https://en.wikipedia.org/wiki/Triple_point#Triple_point_of_water):
+The Zoroj is calilbrated such that Hx100 Z is approximately the [triple point of water](https://en.wikipedia.org/wiki/Triple_point#Triple_point_of_water):
 
 $$
   \textrm{jZ}
@@ -600,8 +507,7 @@ $$
   \approx 0.98516_D \  \textrm{C}
 $$
 
-Multiplied by 1/3 because quarks have -1/3 e or 2/3 e charges.
-Elektrio is short for Elektronkvarnitriono.
+Multiplied by 1/3 because quarks have -1/3 e or 2/3 e charges. *Elektrio* is short for *Elektronkvarnitriono*.
 
 ### Angulo
 
@@ -659,11 +565,9 @@ $$
   \approx 0.30175_D \  \textrm{mas}
 $$
 
-Note: The angular diameter of the closest star, Proxima Centauri,
-is Dx1.02 ± 0.08 mas, or approximately Hx3.61 dCk.
-(Reference see this ESO article
-"[How Small are Small Stars Really?](https://www.eso.org/public/news/eso0232/)"
-(2025-05-21))
+Note: The angular diameter of the closest star, Proxima Centauri, is Dx1.02 ± 0.08 mas[^Unuoj-0], or approximately Hx3.61 dCk.
+
+[^Unuoj-0]: Reference see this ESO article "[How Small are Small Stars Really?](https://www.eso.org/public/news/eso0232/)" (2025-05-21)
 
 ### Nombro
 
@@ -785,28 +689,24 @@ $$
   =         300_H \textrm{MU/Ŝ}
 $$
 
-So when speed exceeds 1 MU/Ŝ (or Hx 10 0000 JoĜ, or ≈0.13\%c),
-relativistic effects should be considered.
-Also, this means that light in vacuum travels precisely 3 JU in 1 mŜ.
+So when speed exceeds 1 MU/Ŝ (or Hx 10 0000 JoĜ, or ≈0.13\%c), relativistic effects should be considered. Also, this means that light in vacuum travels precisely 3 JU in 1 mŜ.
 
 #### Human walking speed
 
-Human walking speed $\approx 4 \  \textrm{JoĜ} \approx 5.4_D \textrm{kph}$,
-or $3 \sim 4.8_H \  \textrm{JoĜ}$ ($4.0_D \sim 6.0_D \textrm{kph}$).  
-Source: (2025-07-03)
-[Wikipedia](https://en.wikipedia.org/wiki/Preferred_walking_speed).  
-A 1Ĉ (≈5.6min) walking distance can thus be defined as Hx40U or **Dx64U**,
-which is approximately Dx503m (or Dx512 CSL meters)
+Human walking speed $\approx 4 \  \textrm{JoĜ} \approx 5.4_D \textrm{kph}$, or $3 \sim 4.8_H \  \textrm{JoĜ}$ ($4.0_D \sim 6.0_D \textrm{kph}$)[^Unuoj-1].
+A 1Ĉ (≈5.6min) walking distance can thus be defined as Hx40U or **Dx64U**, which is approximately Dx503m (or Dx512 CSL meters).
+
+[^Unuoj-1]: Source (2025-07-03) [Wikipedia](https://en.wikipedia.org/wiki/Preferred_walking_speed).
 
 Human jogging speed ranges
 from $5 \  \textrm{JoĜ}$ ($\approx 6.7_D \textrm{kph}$)
-to   $7 \  \textrm{JoĜ}$ ($\approx 9.4_D \textrm{kph}$).  
-Source: (2025-07-03)
-[Wikipedia](https://en.wikipedia.org/wiki/Jogging#Definition).
+to   $7 \  \textrm{JoĜ}$ ($\approx 9.4_D \textrm{kph}$)[^Unuoj-2].
 
-Biking speed (e-bike, relaxing): ≈ Hx 10 JoĜ  (≈ Dx 21 kph).  
-Source: (2025-12-30)
-[Wikipedia](https://en.wikipedia.org/wiki/Electric_bicycle#Range).
+[^Unuoj-2]: Source: (2025-07-03) [Wikipedia](https://en.wikipedia.org/wiki/Jogging#Definition).
+
+Biking speed (e-bike, relaxing): ≈ Hx 10 JoĜ  (≈ Dx 21 kph)[^Unuoj-3].
+
+[^Unuoj-3]: Source: (2025-12-30) [Wikipedia](https://en.wikipedia.org/wiki/Electric_bicycle#Range).
 
 Walkable distances:
 
@@ -868,8 +768,7 @@ $$
   \equiv \frac{1}{40_D}⚡
 $$
 
-The equivalency of $\textrm{E}_\textrm{CSL} \equiv \frac{1}{40_D}⚡$
-is imposed by me to simplify calculations.
+The equivalency of $\textrm{E}_\textrm{CSL} \equiv \frac{1}{40_D}⚡$ is imposed by me to simplify calculations.
 
 #### Skalkomparo: Potenco
 
@@ -878,14 +777,9 @@ is imposed by me to simplify calculations.
 - m⚡=   Lu ≈ Dx9.8W  
   Approximately one light bulb's power consumption.
 - g⚡=  HLu ≈ Dx156W  
-  Approximately one human's food energy intake rate (\~Dx100W)
-  or a gaming laptop's power consumption (Dx100W—Dx300W).
-  Allocate \~4HLu power production per citizen
-  for food/electricity/heating etc.
+  Approximately one human's food energy intake rate (\~Dx100W) or a gaming laptop's power consumption (Dx100W—Dx300W). Allocate \~4HLu power production per citizen for food/electricity/heating etc.
 - j⚡=  JLu ≈ Dx2.5kW  
-  Approximately the country's power consumption per **1** person
-  (by *RdO* standards), given residential power consumption takes
-  approx 1/4 of total power consumption (incl industrial and commercial etc).  
+  Approximately the country's power consumption per **1** person (by *RdO* standards), given residential power consumption takes approx 1/4 of total power consumption (incl industrial and commercial etc).  
   Or 4 people's total power consumption (electricity + food & heating etc.),  
   or 8 people (3 household)'s electricity consumption
   (electricity only, \~Dx1/3kW per person).  
@@ -896,16 +790,12 @@ is imposed by me to simplify calculations.
 - J⚡= JMLu ≈ Dx163MW  
   Supports a small town of 65k population.
 - G⚡= GMLu ≈ Dx2.6GW  
-  Approximately the output of a well-designed hydroelectric dam in-game,
-  or a mini fusion power plant in RdO lore.
+  Approximately the output of a well-designed hydroelectric dam in-game, or a mini fusion power plant in RdO lore.
 - M⚡=  DLu ≈ Dx42GW  
   Supports a city of 1⌄6 = Dx 16 777 216 ≈ 17 million people.  
-  [OmniCentro](../OmniCentro.md)'s target power poduction
-  is 1 M⚡(Dx41.94304GW).
+  [OmniCentro](../OmniCentro/_OmniCentro_.md)'s target power poduction is 1 M⚡(Dx41.94304GW).
 - D⚡ = TLu  
-  Total solar energy received by Earth
-  (including those reflected into space before reaching ground)
-  is about 4 HD⚡:
+  Total solar energy received by Earth (including those reflected into space before reaching ground) is about 4 HD⚡:
 
 $$
   \frac{\pi R_{\oplus}^2}{4 \pi (\textrm{au})^2} L_\odot
@@ -938,8 +828,7 @@ Kromaĵo
 
 Some helpful constants and factors:
 
-As mentioned before for [Utro](#longeco),
-  the speed of light is exactly
+As mentioned before for [Utro](#longeco), the speed of light is exactly
 
 $$
   c
@@ -966,10 +855,7 @@ $$
   \approx 6.1748_D \times 10_D^{{-36}_D} \  \textrm{U}^2\textrm{P}/\textrm{Ŝ}
 $$
 
-(Unfortunately the seemingly arbitrary number
-here Hx5Σ92 = Dx23954 = 2 \* Dx11977
-comes from the length of a day from the rotation of the Earth-
-it cannot be removed easily without other trade-offs.)
+(Unfortunately the seemingly arbitrary number here Hx5Σ92 = Dx23954 = 2 \* Dx11977 comes from the length of a day from the rotation of the Earth— it cannot be removed easily without other trade-offs.)
 
 Gravitational constant is
 
@@ -998,30 +884,18 @@ $$
 <!-- `💲` (0x1F4B2) -->
 <!-- `🪙` (0x1FA99) -->
 
-How much is 1 Sejro worth?
-Using energy price as calibration:
-In CSL2 game, each MW gives 🪙Dx2500 per month when exported,
-which means approximately **🪙Dx0.0034 per kWh**.
+How much is 1 Sejro worth? Using energy price as calibration: In CSL2 game, each MW gives 🪙Dx2500 per month when exported, which means approximately **🪙Dx0.0034 per kWh**.
 
-Considering the energy price in EU after tax in 2024 are
-around 0.1 €/kWh to 0.4 €/kWh
-(Reference see Figure 1 in [this eurostat webpage](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Electricity_price_statistics) (2025-03-15)),
-this means 1🪙 is approximately somewhere in between 30 € and 120 €.
+Considering the energy price in EU after tax in 2024 are around 0.1 €/kWh to 0.4 €/kWh[^Unuoj-4], this means 1🪙 is approximately somewhere in between 30 € and 120 €.
 
-<!-- As we presume that OmniCentro's money-making mechanism of exporting electricity
-here is through computation in data centers for world modeling and manipulation, -->
-Let us assume the energy price in RdO is somewhat akin to Iceland
-(which is also dominated by hydropower),
-i.e., **🪙1 ≈ € Dx60**.
+[^Unuoj-4]: See Figure 1 in [this eurostat webpage](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Electricity_price_statistics) (2025-03-15).
 
-On the other hand,
-wage in CSL2 seems to be 🪙Dx2000 per month for Educated employees.
-Given that minimum wages in Europe is approximately € Dx2000 per month,
-it would be reasonable to assume **🪙1 ≈ €2**? (I am very confused.)
+<!-- As we presume that OmniCentro's money-making mechanism of exporting electricity here is through computation in data centers for world modeling and manipulation, -->
+Let us assume the energy price in RdO is somewhat akin to Iceland (which is also dominated by hydropower), i.e., **🪙1 ≈ € Dx60**.
 
-Perhaps the energy price in CSL2 was meant to be 🪙Dx2500 per hour, not month?
-In this case, since CSL2 assumes 1 day equals 1 month,
-it would imply **🪙1 ≈ €2**, and the world makes sense again.
+On the other hand, wage in CSL2 seems to be 🪙Dx2000 per month for Educated employees. Given that minimum wages in Europe is approximately € Dx2000 per month, it would be reasonable to assume **🪙1 ≈ €2**? (I am very confused.)
+
+Perhaps the energy price in CSL2 was meant to be 🪙Dx2500 per hour, not month? In this case, since CSL2 assumes 1 day equals 1 month, it would imply **🪙1 ≈ €2**, and the world makes sense again.
 
 ### Code illustrations
 

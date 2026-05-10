@@ -1,11 +1,16 @@
-<!-- -*- coding: utf-8 -*- -->
-
-OmniCentraj Specifoj: Sigloj
-===============================================================================
-
-> OmniCentro Specifications: Acronyms
-
-Specifications for my fictional Cities: Skylines 2 city *OmniCentro*.
+---
+Title: "OmniCentraj Specifoj: Sigloj"
+Abstract: "Acronym specifications for my fictional Cities: Skylines 2 city *OmniCentro*"
+DateCreated: 2025-01-05
+Authors:
+  - "[[HomeOnMars]]"
+IsOriginal: true
+RelatedPages:
+  - "[[La_Regno_de_Omnijo]]"
+tags:
+  - Projects/Omnijo
+  - Statuses/Fictional
+---
 
 Legal
 -------------------------------------------------------------------------------
@@ -23,7 +28,7 @@ Sigloj
 
 > Acronyms
 > <br>
-> [Back to OmniCentro Content](../OmniCentro.md#detalaj-informoj)
+> [Back to OmniCentro Content](_OmniCentro_.md#detalaj-informoj)
 
 ### Direktoj
 

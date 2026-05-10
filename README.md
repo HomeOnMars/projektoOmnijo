@@ -10,7 +10,7 @@ set in the fictional country of *la Regno de Omnijo*.
 It began as a background story I wrote for my Cities: Skylines 2 city
 *OmniCentro*
 ([PDX Mod link](https://mods.paradoxplaza.com/mods/97163/Any);
-[My other documentations](OmniCentro.md)),
+[My other documentations](OmniCentro/_OmniCentro_.md)),
 but ballooned into something more.
 
 ![RdO emblem](fig/RdOFlago.svg)
@@ -53,8 +53,8 @@ Contents
 -------------------------------------------------------------------------------
 
 - Cities documentations
-  - [***OmniCentro***](OmniCentro.md)
-  - [***Aiosa***](Aiosa.md) (TBD) 
+  - [***OmniCentro***](OmniCentro/_OmniCentro_.md)
+  - [***Aiosa***](Aiosa/_Aiosa_.md) (TBD) 
 - Some python scripts I wrote for the CSL2
   [Extended Radio](https://mods.paradoxplaza.com/mods/75862/Windows) mod
   see `radio/` folder in the repository.

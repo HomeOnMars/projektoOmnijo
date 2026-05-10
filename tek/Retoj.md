@@ -1,11 +1,16 @@
-<!-- -*- coding: utf-8 -*- -->
-
-Retaj normoj por vojoj kaj reloj
-===============================================================================
-
-> Networks standards for roads and rails
-
-Technical specifications for my fictional Cities: Skylines 2 city *OmniCentro*.
+---
+Title: "Specifoj: Retoj"
+Abstract: "Road and rail networks specifications for my Cities: Skylines 2 cities"
+DateCreated: 2025-01-08
+Authors:
+  - "[[HomeOnMars]]"
+IsOriginal: true
+RelatedPages:
+  - "[[La_Regno_de_Omnijo]]"
+tags:
+  - Projects/Omnijo
+  - Statuses/Fictional
+---
 
 Legal
 -------------------------------------------------------------------------------
@@ -25,7 +30,7 @@ Retoj
 
 > Networks
 > <br>
-> [Back to OmniCentro Content](../OmniCentro.md#teknikaj-specifoj)
+> [Back to OmniCentro Content](../OmniCentro/_OmniCentro_.md#teknikaj-specifoj)
 
 -------------------------------------------------------------------------------
 

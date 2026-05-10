@@ -1,18 +1,16 @@
-<!-- ---
-Title: OmniCentraj Specifoj- Politikoj
-Author: HomeOnMars
-Abstract: Specifications for my fictional Cities: Skylines 2 city *OmniCentro*.
+---
+Title: "OmniCentraj Specifoj: Politikoj"
+Abstract: "Policies specifications for my fictional Cities: Skylines 2 city *OmniCentro* and its fictional host country *la Regno de Omnijo*"
+DateCreated: 2026-02-19
+Authors:
+  - "[[HomeOnMars]]"
+IsOriginal: true
+RelatedPages:
+  - "[[La_Regno_de_Omnijo]]"
 tags:
-  - Urboj/OmniCentro
-  - Specifoj/Politikoj
---- -->
-
-OmniCentraj Specifoj: Politikoj
-===============================================================================
-
-> OmniCentro Specifications: Policies
-
-Specifications for my fictional Cities: Skylines 2 city *OmniCentro*.
+  - Projects/Omnijo
+  - Statuses/Fictional
+---
 
 Legal
 -------------------------------------------------------------------------------
@@ -34,7 +32,7 @@ Politikoj
 
 > Policies
 > <br>
-> [Back to OmniCentro Content](../OmniCentro.md#detalaj-informoj)
+> [Back to OmniCentro Content](_OmniCentro_.md#detalaj-informoj)
 
 <blockquote>
   Segui il tuo corso, e lascia dir le genti.<br>

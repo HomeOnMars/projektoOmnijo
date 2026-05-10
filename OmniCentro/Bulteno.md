@@ -1,11 +1,16 @@
-<!-- -*- coding: utf-8 -*- -->
-
-OmniCentraj Specifoj: Bulteno
-===============================================================================
-
-> OmniCentro Specifications: Bulletin
-
-Background stories for my fictional Cities: Skylines 2 city *OmniCentro*.
+---
+Title: "OmniCentraj Specifoj: Bulteno"
+Abstract: "Summary of key background settings for my fictional Cities: Skylines 2 city *OmniCentro*"
+DateCreated: 2025-01-05
+Authors:
+  - "[[HomeOnMars]]"
+IsOriginal: true
+RelatedPages:
+  - "[[La_Regno_de_Omnijo]]"
+tags:
+  - Projects/Omnijo
+  - Statuses/Fictional
+---
 
 Legal
 -------------------------------------------------------------------------------
@@ -23,7 +28,7 @@ Bulteno
 
 > Bulletin
 > <br>
-> [Back to OmniCentro Content](../OmniCentro.md#detalaj-informoj)
+> [Back to OmniCentro Content](_OmniCentro_.md#detalaj-informoj)
 
 -------------------------------------------------------------------------------
 

@@ -1,12 +1,20 @@
-<!-- -*- coding: utf-8 -*- -->
+---
+Title: "Specifoj: ONKIO"
+Abstract: "Character encoding standard specifications for the fictional country of *La Regno de Omnijo*"
+DateCreated: 2024-10-24
+Authors:
+  - "[[HomeOnMars]]"
+IsOriginal: true
+RelatedPages:
+  - "[[La_Regno_de_Omnijo]]"
+tags:
+  - Projects/Omnijo
+  - Statuses/Fictional
+---
 
-ONKIO
-===============================================================================
-
+> [!Important]
 > ONKIO: **O**mnija **N**orma **K**odo por **I**nformo-interŝanĝ**O**
 <!-- > ONKIO: Omnija Norma Kodo por Informo-Interŝanĝo -->
-
-Technical specifications for my fictional Cities: Skylines 2 city *OmniCentro*.
 
 Legal
 -------------------------------------------------------------------------------
@@ -22,7 +30,7 @@ ONKIO Tablo
 
 > ONKIO Table
 > <br>
-> [Back to OmniCentro Content](../OmniCentro.md#teknikaj-specifoj)
+> [Back to OmniCentro Content](../OmniCentro/_OmniCentro_.md#teknikaj-specifoj)
 
 -------------------------------------------------------------------------------
 

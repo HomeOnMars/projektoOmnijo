@@ -1,12 +1,16 @@
-<!-- -*- coding: utf-8 -*- -->
-
-OmniCentraj Specifoj: Oftaj Demandoj
-===============================================================================
-
-> OmniCentro Specifications: Frequently Asked Questions
-
-FAQs for my fictional Cities: Skylines 2 city *OmniCentro*
-and its fictional host country *la Regno de Omnijo*.
+---
+Title: "OmniCentraj Specifoj: Oftaj Demandoj"
+Abstract: "FAQs for my fictional Cities: Skylines 2 city *OmniCentro* and its fictional host country *la Regno de Omnijo*"
+DateCreated: 2025-03-14
+Authors:
+  - "[[HomeOnMars]]"
+IsOriginal: true
+RelatedPages:
+  - "[[La_Regno_de_Omnijo]]"
+tags:
+  - Projects/Omnijo
+  - Statuses/Fictional
+---
 
 Legal
 -------------------------------------------------------------------------------
@@ -24,7 +28,7 @@ Oftaj Demandoj
 
 > Frequently Asked Questions
 > <br>
-> [Back to OmniCentro Content](../OmniCentro.md#detalaj-informoj)
+> [Back to OmniCentro Content](_OmniCentro_.md#detalaj-informoj)
 
 -------------------------------------------------------------------------------
 

@@ -1,11 +1,16 @@
-<!-- -*- coding: utf-8 -*- -->
-
-Specifoj: Lingvo
-===============================================================================
-
-> Specifications: Language
-
-Background stories for my fictional Cities: Skylines 2 city *OmniCentro*.
+---
+Title: "Specifoj: Lingvo"
+Abstract: "Language specifications of *Epopo*, a fictional language for the fictional country of *La Regno de Omnijo*"
+DateCreated: 2025-01-05
+Authors:
+  - "[[HomeOnMars]]"
+IsOriginal: true
+RelatedPages:
+  - "[[La_Regno_de_Omnijo]]"
+tags:
+  - Projects/Omnijo
+  - Statuses/Fictional
+---
 
 Legal
 -------------------------------------------------------------------------------
@@ -23,7 +28,7 @@ Fonrakonto de la Epopo
 
 > Background story of Epopo
 > <br>
-> [Back to OmniCentro Content](../OmniCentro.md#detalaj-informoj)
+> [Back to OmniCentro Content](../OmniCentro/_OmniCentro_.md#detalaj-informoj)
 
 <br>
 <blockquote>

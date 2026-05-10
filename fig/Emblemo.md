@@ -1,11 +1,16 @@
-<!-- -*- coding: utf-8 -*- -->
-
-Emblem-desegnoj
-===============================================================================
-
-> Emblem designs
-
-Emblem/logo/flag designs for my fictional Cities: Skylines 2 city *OmniCentro*.
+---
+Title: "Emblem-desegnoj"
+Abstract: "Emblem/logo/flag designs for my fictional Cities: Skylines 2 city *OmniCentro*"
+DateCreated: 2025-01-08
+Authors:
+  - "[[HomeOnMars]]"
+IsOriginal: true
+RelatedPages:
+  - "[[La_Regno_de_Omnijo]]"
+tags:
+  - Projects/Omnijo
+  - Statuses/Fictional
+---
 
 Legal
 -------------------------------------------------------------------------------
@@ -29,7 +34,7 @@ Emblemo
 
 > Emblem
 > <br>
-> [Back to OmniCentro Content](../OmniCentro.md#teknikaj-specifoj)
+> [Back to OmniCentro Content](../OmniCentro/_OmniCentro_.md#teknikaj-specifoj)
 
 -------------------------------------------------------------------------------
 

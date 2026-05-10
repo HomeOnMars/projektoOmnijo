@@ -1,13 +1,19 @@
-<!-- -*- coding: utf-8 -*- -->
+---
+Title: Ajoŭsaj Specifoj
+Abstract: "Table of contents regarding the background stories and technical specifications for my fictional Cities: Skylines 2 city *Aiosa*."
+DateCreated: 2026-01-07
+Authors:
+  - "[[HomeOnMars]]"
+IsOriginal: true
+Location: "[[Free_States_of_Merkarijo]]"
+URL: https://github.com/HomeOnMars/projektoOmnijo/blob/master/Aiosa/_Aiosa_.md
+tags:
+  - Projects/Omnijo
+  - Statuses/Fictional
+---
 
-Ajoŭsaj Specifoj
-===============================================================================
-
-> Aiosa Specifications
-
-Background stories and technical specifications
-for my fictional Cities: Skylines 2 city *Aiosa*
-(Paradox Mod ID ***TBD***).
+Aiosa Specifications:  
+Table of contents regarding the background stories and technical specifications for my fictional Cities: Skylines 2 city *Aiosa* (Paradox Mod ID ***TBD***).
 
 Legal
 -------------------------------------------------------------------------------
@@ -34,5 +40,5 @@ Detalaj Informoj
 - Map: [Volchoria](https://mods.paradoxplaza.com/mods/76483/Windows);
   City: Aiosa (TBD) 
 - Established Date: 2025-12-27
-- [***Bulteno*** | Bulletin](Aiosa/Bulteno.md#bulteno)
-  - [***Fonrakontaj Resumoj*** | Backstories Summaries](Aiosa/Bulteno.md#fonrakontaj-resumoj): Brief summary here!
+- [***Bulteno*** | Bulletin](Bulteno.md#bulteno)
+  - [***Fonrakontaj Resumoj*** | Backstories Summaries](Bulteno.md#fonrakontaj-resumoj): Brief summary here!

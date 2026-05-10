@@ -1,11 +1,16 @@
-<!-- -*- coding: utf-8 -*- -->
-
-Specifoj: Arboj
-===============================================================================
-
-> Specifications: Trees
-
-Technical specifications for my fictional Cities: Skylines 2 city *OmniCentro*.
+---
+Title: "Specifoj: Arboj"
+Abstract: "Trees and forests specifications"
+DateCreated: 2025-01-08
+Authors:
+  - "[[HomeOnMars]]"
+IsOriginal: true
+RelatedPages:
+  - "[[La_Regno_de_Omnijo]]"
+tags:
+  - Projects/Omnijo
+  - Statuses/Fictional
+---
 
 Legal
 -------------------------------------------------------------------------------
@@ -25,7 +30,7 @@ Arboj
 
 > Trees
 > <br>
-> [Back to OmniCentro Content](../OmniCentro.md#teknikaj-specifoj)
+> [Back to OmniCentro Content](../OmniCentro/_OmniCentro_.md#teknikaj-specifoj)
 
 -------------------------------------------------------------------------------
 
@@ -39,7 +44,7 @@ Arboj
   - Birches
   - etc.
 - [Brush 1](../SkyvePlayset/OmniCentro/ModsData/Mods_Yenyang_Tree_Controller/CustomSets/YYTC-custom-set-1.xml):
-  [*OmniCentro*](../OmniCentro.md)
+  [*OmniCentro*](../OmniCentro/_OmniCentro_.md)
   - Alder     (Altitude    0m—1000m, Probability  75%)
   - Birches   (Altitude  120m—1440m, Probability 150%)
   - Chestnuts (Altitude    0m—2800m, Probability 100%)
@@ -47,7 +52,7 @@ Arboj
   - Oaks      (Altitude    0m—4000m, Probability  50%)
   - Spruces   (Altitude  520m—4000m, Probability 150%)
 - [Brush 2](../SkyvePlayset/OmniCentro/ModsData/Mods_Yenyang_Tree_Controller/CustomSets/YYTC-custom-set-2.xml):
-  [*Aiosa*](../Aiosa.md)
+  [*Aiosa*](../Aiosa/_Aiosa_.md)
 - [Brush 3](../SkyvePlayset/OmniCentro/ModsData/Mods_Yenyang_Tree_Controller/CustomSets/YYTC-custom-set-3.xml):
   Beaches
   - Palm Trees (Coconut, Florida, Royal) (Altitude 0m—40m)
