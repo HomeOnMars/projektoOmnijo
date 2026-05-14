@@ -40,7 +40,7 @@ Detalaj Informoj
 
 > Detailed Information
 
-> ![Map of OmniCentro](../map/OmniCentro_mapo-8K-4K.jpg)  
+> ![Map of OmniCentro](../map/OmniCentro_mapo-8K.avif)  
 > *OmniCentro* Map
 
 - Map:  [Seaside Valley](https://mods.paradoxplaza.com/mods/82544/Any);

@@ -48,31 +48,16 @@ Politikoj
 
 #### Adulthood
 
-The Minimum age for adulthood in *RdO*
-is Hx 1800 [MŜ](../tek/Unuoj.md#tempo)
-(6144 days, or ≈16.82 standard years (Ĵ)),
-or ≈ Dx 17 J (*Earth years*) for earthlings.
-A person is considered an adult in RdO once they
+The Minimum age for adulthood in *RdO* is Hx 1800 [MŜ](../tek/Unuoj.md#tempo) (6144 days, or ≈16.82 standard years (Ĵ)), or ≈ Dx 17 J (*Earth years*) for earthlings. A person is considered an adult in RdO once they
 
 1. Is at least Hx 1800 MŜ (≈ Dx 17 J) old,
 2. Has passed either the *Coming-Of-Age ~~Exam~~ Challenge*
 (*Cough Cough*)[^Politikoj-Agxo-0],
-3. Has attended the subsequent official *Plenaĝiĝa Ceremonio*
-held by the state,
-(during which the official ID card[^Politikoj-Agxo-1]
-will be awarded to / upgraded for the person).
+3. Has attended the subsequent official *Plenaĝiĝa Ceremonio* held by the state, (during which the official ID card[^Politikoj-Agxo-1] will be awarded to / upgraded for the person).
 
-[^Politikoj-Agxo-0]: This is to ensure that
-they is physically and mentally mature enough,
-actually has the ability to take responsibilities,
-and understands what they is getting into.
-Passing the "*Challenge*" is part of the immigration process
-for older-than-18-year-old immigrants.
+[^Politikoj-Agxo-0]: This is to ensure that they is physically and mentally mature enough, actually has the ability to take responsibilities, and understands what they is getting into. Passing the "*Challenge*" is part of the immigration process for older-than-18-year-old immigrants.
 
-[^Politikoj-Agxo-1]: As mentioned
-in the [Bulletin](Bulteno.md#strukturo-de-registaro),
-official ID card (adult version) also double as BdO debit cards,
-to which the UBI will be issued.
+[^Politikoj-Agxo-1]: As mentioned in the [Bulletin](Bulteno.md#strukturo-de-registaro), official ID card (adult version) also double as BdO debit cards, to which the UBI will be issued.
 
 Being considered an adult means that they can
 
@@ -83,14 +68,7 @@ Being considered an adult means that they can
 5. *Vote*[^Politikoj-Agxo-2] (citizens only);
 6. etc. etc.
 
-[^Politikoj-Agxo-2]: While voting is often critiqued by the outside world
-as ceremonial-only,
-it certainly *feels* like the state is taking it very seriously in *RdO*—
-though, more emphasis is on the survey questions
-that comes right after the candidate-voting page.
-In which, citizens are asked about their
-lives, annoyances, desires, hopes and dreams, view on the state, etc. etc.;
-and citizens are much encouraged to fill these question out carefully.
+[^Politikoj-Agxo-2]: While voting is often critiqued by the outside world as ceremonial-only, it certainly *feels* like the state is taking it very seriously in *RdO*— though, more emphasis is on the survey questions that comes right after the candidate-voting page. In which, citizens are asked about their lives, annoyances, desires, hopes and dreams, view on the state, etc. etc.; and citizens are much encouraged to fill these question out carefully.
 
 #### Education System
 
@@ -109,137 +87,68 @@ The education system in RdO has the following structure:
 
 > Rights (of the people)
 
-While the <span style="color:Beige">Queen</span> does fundamentally respect
-and desire to improve human conditions and standards of living,
-she also notices that, *sometimes*,
-the needs of the few get in the way of the needs of the many.
-As reckless as someone she is,
-the human rights section on the island starts to look a bit... *'unique'*,
-as she gradually extends her influences on her country's laws.
+While the <span style="color:Beige">Queen</span> does fundamentally respect and desire to improve human conditions and standards of living, she also notices that, *sometimes*, the needs of the few get in the way of the needs of the many. As reckless as someone she is, the human rights section on the island starts to look a bit... *'unique'*, as she gradually extends her influences on her country's laws.
 
 Here are some key points after her changes on people's rights in *RdO*:
 
 #### Freedom of movement
 
-*Yes*.  
-People are free to leave the kingdom whenever they want.
-All public transits on the island are free,
-and the kingdom is commited to build a comprehensive transit network,
-which should help with this somewhat.
-There are also one-time severance aid packages for the ones
-who move away from the island *and* decide to renounce their citizenship,
-sized precisely to guarantee that
-everyone can easily establish a new, comfortable life
-in the country they chose to move to.
+*Yes*.
+
+People are free to leave the kingdom whenever they want. All public transits on the island are free, and the kingdom is commited to build a comprehensive transit network, which should help with this somewhat. There are also one-time severance aid packages for the ones who move away from the island *and* decide to renounce their citizenship, sized precisely to guarantee that everyone can easily establish a new, comfortable life in the country they chose to move to.
 
 #### Freedom of information
 
-*Yes*.  
-People are free to access all kinds of informations
-(not just in the central gov, but *ALL non-[infohazard](https://en.wikipedia.org/wiki/Information_hazard) public information*),
-especially after <span style="color:Beige">Serena</span>'s
-[copyright reform](OftajDemandoj.md#kio-estas-la-plano-de-la-reĝino-reformi-kopirajton).
+*Yes*.
+
+People are free to access all kinds of informations (not just in the central gov, but *ALL non-[infohazard](https://en.wikipedia.org/wiki/Information_hazard) public information*), especially after <span style="color:Beige">Serena</span>'s [copyright reform](OftajDemandoj.md#kio-estas-la-plano-de-la-reĝino-reformi-kopirajton).
 
 #### Freedom of expression
 
-*Generally yes*.  
-People can say whatever they want without repercussions.
-Just don’t expect the system to amplify their voices
-if they say something unfavorable or nazi-like.  
-The state also offers everyone a voluntary and customizable option
-to block other people's offensive / irrational / false / hate speech online.
-What is considered offensive / irrational / false / hate speech
-is determined for each citizen at the state's discretion,
-though the reasoning and the block list is transparent.
-This is completely optional.
+*Generally yes*.
+
+People can say whatever they want without repercussions. Just don’t expect the system to amplify their voices if they say something unfavorable or nazi-like.  
+The state also offers everyone a voluntary and customizable option to block other people's offensive / irrational / false / hate speech online. What is considered offensive / irrational / false / hate speech is determined for each citizen at the state's discretion, though the reasoning and the block list is transparent. This is completely optional.
 
 #### Right to vote
 
-*Technically yes, but not really, but also not not really.*  
+*Technically yes, but not really, but also not not really.*
+
 It’s technically correct to say the island is a constitutional monarchy
-(the best kind of correct 😂),
-but really the power is streamlined and centralized.
-You can vote, but everytime the results seem to turn out to be exactly
-what the <span style="color:Beige">Serena</span> wanted...
-(if you are one of the lucky few
-who actually knows & understands what she wanted.)  
-It's just so happened that,
-what <span style="color:Beige">Serena</span> wanted
-is often what the islanders wanted; and those who would disagree usually found
-themselves *voluntarily* [moved away](#freedom-of-movement) already long ago.
+(the best kind of correct :-p), but really the power is streamlined and centralized. You can vote, but everytime the results seem to turn out to be exactly what the <span style="color:Beige">Serena</span> wanted... (if you are one of the lucky few who actually knows & understands what she wanted.)  
+It's just so happened that, what <span style="color:Beige">Serena</span> wanted is often what the islanders wanted; and those who would disagree usually found themselves *voluntarily* [moved away](#freedom-of-movement) already long ago.
 
 #### Reproductive rights
 
-*Technically no.*  
-Fundamentally, in Omnijo,
-reproduction is considered as a *privilege*, not a right,
-even though that privilege is normally granted.
-While it is respected as a fundamental human drive
-and as a part of human nature,
-<span style="color:Beige">Reĝinʌ Serena</span> acknowledges that
-unregulated reproduction could lead to
-disastrous exponential population increase
-and/or loss of ethnic diversity, which are best avoided.
-~~Especially since the <span style="color:Beige">Queen</span> is secretly researching immortality treatments in the hope of distributing them to the global public without international backlashes— *Nothing to see here!*~~.
+*Technically no.*
 
-Convicted felons[^Politikoj-Rajtoj-1] may normally
-have their reproductive priviliages revoked (via surgery/medicine)
-as part of their punishments,
-as well as their right to vote etc.
+Fundamentally, in Omnijo, reproduction is considered as a *privilege*, not a right, even though that privilege is normally granted. While it is respected as a fundamental human drive and as a part of human nature, <span style="color:Beige">Reĝinʌ Serena</span> acknowledges that unregulated reproduction could lead to disastrous exponential population increase and/or loss of ethnic diversity, which are best avoided. ~~Especially since the <span style="color:Beige">Queen</span> is secretly researching immortality treatments in the hope of distributing them to the global public without international backlashes— *Nothing to see here!*~~.
 
-[^Politikoj-Rajtoj-1]: This only applies to those
-  who choose to stay in *RdO* ans serve their sentence instead of eviction,
-  as [freedom of movement](#freedom-of-movement) is considered as one of
-  the fundamental rights in *RdO*, and will be respected almost no matter what.
+Convicted felons[^Politikoj-Rajtoj-1] may normally have their reproductive priviliages revoked (via surgery/medicine) as part of their punishments, as well as their right to vote etc.
+
+[^Politikoj-Rajtoj-1]: This only applies to those who choose to stay in *RdO* ans serve their sentence instead of eviction, as [freedom of movement](#freedom-of-movement) is considered as one of the fundamental rights in *RdO*, and will be respected almost no matter what.
 
 #### Right to own physical properties
 
-*Respected but heavily regulated*,  
-through tiered taxes (for people) and acquisitions (for companies),
-to improve equity and prevent anyone (other than the central gov)
-hoarding all the resources from the people in need.
+*Respected but heavily regulated*,
+
+through tiered taxes (for people) and acquisitions (for companies), to improve equity and prevent anyone (other than the central gov) hoarding all the resources from the people in need.
 
 #### Right to own intellectual properties
 
-*No.*  
-<span style="color:Beige">Serena</span> considers that
-the concept of "intellectual properties" is a violation to the public's right
-to the [*freedom of information*](#freedom-of-information).
-At the very least,
-all public information known to anyone should be considered an integral part
-of that person's/entity's consciousness.
-As long as the information is [*public*](OftajDemandoj.md#kio-estas-publikajn-datumojn-en-la-regno-de-omnijo),
-what anyone (including the gov) see or hear or learn becomes a part of them,
-and forcibly or coercively removing those informations from someone
-are considered *an act of violence*, typically reserved
-[only](#monopoly-on-violence) for the central government as a last resort.
-Limiting the spread of information via copyrights is a more nuanced topic,
-though Serena still considers it unethical and currently overdone in the world,
-even considering the argument that
-it could incentivize creators to generate more content.
-As such, the concept of *"intellectual properties"*
-is replaced by the concept of ***intellectual works*** in RdO,
-which are seen as valuable contributions to the human civilisation,
-regulated and compensated by the government,
-with eventual open access guaranteed by law after
-<span style="color:Beige">Serena</span>'s
-[copyright reform](OftajDemandoj.md#kio-estas-la-plano-de-la-reĝino-reformi-kopirajton),
-as a result of Omnijo's pledge on defending the public's rights.
+*No.*
+
+<span style="color:Beige">Serena</span> considers that the concept of "intellectual properties" is a violation to the public's right to the [*freedom of information*](#freedom-of-information). At the very least, all public information known to anyone is considered an integral part of that person's/entity's consciousness. As long as the information is [*public*](OftajDemandoj.md#kio-estas-publikajn-datumojn-en-la-regno-de-omnijo), what anyone (including the gov) see or hear or learn becomes a part of them, and forcibly or coercively removing those informations from someone is considered *an act of violence*, typically reserved [only](#monopoly-on-violence) for the central government as a last resort.  
+Limiting the spread of information via copyrights is a more nuanced topic, though Serena still considers it unethical and currently overdone in the world, even considering the argument that it could incentivize creators to generate more content. As such, the concept of *"intellectual properties"* is replaced by the concept of ***intellectual works*** in RdO, which are seen as valuable contributions to the human civilisation, regulated and compensated by the government, with eventual open access guaranteed by law after <span style="color:Beige">Serena</span>'s [copyright reform](OftajDemandoj.md#kio-estas-la-plano-de-la-reĝino-reformi-kopirajton), as a result of Omnijo's pledge on defending the public's rights.
 
 #### Right to privacy
 
-*Depends.*  
-People are free to withhold information anytime without repercussions.
-*However*, the central gov are *constitutionally* allowed to and *will* use
-whatever non-confrontational methods to gather informations
-about the state of the *world* (even outside its borders),
-which includes everyone.
-Generally speaking, *all citizens should assume that the central gov already knows everything about them*.
+*Depends.*
+
+People are free to withhold information anytime without repercussions. *However*, the central gov are *constitutionally* allowed to and *will* use whatever non-confrontational methods to gather informations about the state of the *world* (even outside its borders), which includes everyone. Generally speaking, *all citizens should assume that the central gov already knows everything about them*.
 
 As for privacy against others and corporations, this is much more protected
-and well-enforced in *RdO*—
-as the state have the actual power and knowledge to ensure the enforcement
-of citizens' requests of personal information protection and removal.
+and well-enforced in *RdO*— as the state have the actual power and knowledge to ensure the enforcement of citizens' requests of personal information protection and removal.
 
 ### Regpovo
 
@@ -247,47 +156,20 @@ of citizens' requests of personal information protection and removal.
 
 #### Monopoly on violence
 
-This is basically a part of the [definition of a state](https://www.britannica.com/topic/state-monopoly-on-violence), according to some.
-However, <span style="color:Beige">Serena</span> more-or-less
-extended the concept of violence to…
+This is basically a part of the [definition of a state](https://www.britannica.com/topic/state-monopoly-on-violence), according to some. However, <span style="color:Beige">Serena</span> more-or-less extended the concept of violence to…
 
 #### Monopoly on integrity
 
-As mentioned in *RdO*'s stance on [intellectual properties](#right-to-own-intellectual-properties),
-*Omnijo* views it as *an act of violence*[^Politikoj-Regpovo-0]
-to remove or restrict
-people's access to the information they already acquried in their past,
-which means that, within *RdO*, it falls under the state's responsiblity
-for its [monopoly on violence](#monopoly-on-violence),
-as it uses (or not uses) it to improve the public good.
+As mentioned in *RdO*'s stance on [intellectual properties](#right-to-own-intellectual-properties), *Omnijo* views it as *an act of violence*[^Politikoj-Regpovo-0] to remove or restrict people's access to the information they already acquried in their past, which means that, within *RdO*, it falls under the state's responsiblity for its [monopoly on violence](#monopoly-on-violence), as it uses (or not uses) it to improve the public good.
 
-In *la Regno*, the state has the sole discretion and responsibility
-to discern the actual full state of the world,
-to determine what counts as *infohazard*,
-to disseminate public information so that people's
-[freedom of information](#freedom-of-information) rights are guaranteed,
-to ensure people's desire for privacy from other people / corporations
-are fulfilled and protected, etc. etc.
-*Heavy is the crown*,
-and yet regardless of whether *Omnijanoj*
-and the rest of the world believe it or not,
-the Omnijo state under <span style="color:Beige">Reĝinʌ Serena</span>
-actually does the job surprisingly well.
+In *la Regno*, the state has the sole discretion and responsibility to discern the actual full state of the world, to determine what counts as *infohazard*, to disseminate public information so that people's [freedom of information](#freedom-of-information) rights are guaranteed, to ensure people's desire for privacy from other people / corporations are fulfilled and protected, etc. etc. *Heavy is the crown*, and yet regardless of whether *Omnijanoj* and the rest of the world believe it or not, the Omnijo state under <span style="color:Beige">Reĝinʌ Serena</span> actually does the job surprisingly well.
 
-Other actors around the world, however, would[^Politikoj-Regpovo-1]
-accuse Omnijo of — *(Gasp!)* — *Censorship*, or straight up *Evilness*.  
-<span style="color:Beige">Serena</span>'s response to which
-was a simple shrug:  
-"*Whatever*. My *monarchy*, my rule.
-If you don't like it, [*leaving is always an option*](#freedom-of-movement)—
-our compensation package is very generous and successful in terms of
-guaranteeing you to establish a new life wherever else you want."  
-… which triggered another (small) wave of emigration from within *Omnijo*,
-while doing little to ease the criticism/hostilty/myth/backlash from without.
+Other actors around the world, however, would[^Politikoj-Regpovo-1] accuse Omnijo of — *(Gasp!)* — *Censorship*, or straight up *Evilness*.  
+<span style="color:Beige">Serena</span>'s response to which was a simple shrug:  
+"*Whatever*. My *monarchy*, my rule. If you don't like it, [*leaving is always an option*](#freedom-of-movement)— our compensation package is very generous and successful in terms of guaranteeing you to establish a new life wherever else you want."  
+… which triggered another (small) wave of emigration from within *Omnijo*, while doing little to ease the criticism/hostilty/myth/backlash from without.
 
-[^Politikoj-Regpovo-0]: <span style="color:Beige">Serena</span> would
-  actually call it a form of *"soft murder"*,
-  but that's probably too much for the general public.
+[^Politikoj-Regpovo-0]: <span style="color:Beige">Serena</span> would actually call it a form of *"soft murder"*, but that's probably too much for the general public.
 
 [^Politikoj-Regpovo-1]: Justifiably, from their point of view.
 
